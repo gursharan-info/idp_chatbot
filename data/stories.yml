@@ -28,3 +28,32 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq
+  - action: utter_faq/about_idp
+  - intent: faq
+  - action: utter_faq/count_of_datasets
+  - intent: goodbye
+  - action: utter_goodbye
+  
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq
+  - action: utter_faq/count_of_datasets
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq
+  - action: utter_faq/about_idp
+  - intent: affirm
+  - action: utter_happy
+  - intent: faq
+  - action: utter_faq/count_of_datasets

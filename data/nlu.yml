@@ -36,6 +36,7 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - hey thanks
 - intent: deny
   examples: |
     - no
@@ -90,10 +91,13 @@ nlu:
     - hey quickie about indian data portal
     - wanted to have quick info about india data portal
     - will you be able to tell me something about IDP
+    - what about idp
+    - anything you can tell me iDP
 - intent: faq/count_of_datasets
   examples: |
     - what are the number of datasets supported on IDP?
     - How many datasets are available on Indian Dta portal
     - How many datasets are available on the IDP?
     - count of Data sets on idpp
-    - how many datasets are listed on india data portal.
+    - how many datasets are listed on india data portal
+

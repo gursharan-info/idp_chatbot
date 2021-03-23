@@ -3,11 +3,11 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- greet
+- affirm
 - faq:
     is_retrieval_intent: true
+- greet
 - goodbye
-- affirm
 - deny
 - mood_great
 - mood_unhappy

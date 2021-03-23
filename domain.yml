@@ -4,8 +4,8 @@ session_config:
   carry_over_slots_to_new_session: true
 intents:
 - affirm
-- faq:
-    is_retrieval_intent: true
+- faq
+    # is_retrieval_intent: true
 - greet
 - goodbye
 - deny
@@ -30,13 +30,21 @@ responses:
   - text: Your one-stop destination for open-access data on agriculture, rural development and financial inclusion in India.The portal contains a data repository with processed and documented public datasets on related themes. For agriculture, these include crops, water, livestock, public investments, etc at levels such as districts, tehsils, and villages with a largely rural focus and socio-economic characteristics in both rural and urban areas at granular spatial scales like district, town and ward spanning the entire country.
   utter_faq/count_of_datasets:
   - text: There will be about 20 datasets available on the IDP portal by end July.
-actions:
-- utter_cheer_up
-- utter_did_that_help
-- utter_faq
-- utter_faq/about_idp
-- utter_faq/count_of_datasets
-- utter_goodbye
-- utter_greet
-- utter_happy
-- utter_iamabot
+
+  utter_faq/type_of_viz:
+  - text: The list of visualizations available is wide (about 30 kinds of visualisations). They range from :-Lollipop, stacked bar plot, maps, grouped bar plots, grouped scattered plots, treemap, donut, Sankey, infographic, frequency histogram, Grouped Bubble chart, beeswarm plot, 
+
+  utter_faq/why_idp:
+  - text: With the help of IDP, a user can use the multiple datasets available, which have been already cleaned and vetted and have been presented in easy to understand manner. The users can make visualisations based on the chosen parameters as per the requirement of their writing. What’s even more exciting is that these visualisations are easily downloadable and can be inserted straight away in a story. 
+# actions:
+# - utter_faq/why_idp
+# - utter_faq/type_of_viz
+# - utter_cheer_up
+# - utter_did_that_help
+# - utter_faq
+# - utter_faq/about_idp
+# - utter_faq/count_of_datasets
+# - utter_goodbye
+# - utter_greet
+# - utter_happy
+# - utter_iamabot

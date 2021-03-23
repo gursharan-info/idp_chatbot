@@ -100,4 +100,18 @@ nlu:
     - How many datasets are available on the IDP?
     - count of Data sets on idpp
     - how many datasets are listed on india data portal
+- intent: faq/type_of_viz
+  examples: |
+    - what type of visulaisations are suuported by India data portal
+    - Unique vizulations present on IDP are?
+    - what type of visulaisations are present by Indian data portal
+    - various vis. that can be seen on IDP?
+    - IDP supports how many diffrent or unique visulaisations
+- intent: faq/why_idp
+  examples: |
+    - Why should I use IDP?
+    - What is the main reason that i should choose idp
+    - What is USP of Indian data portal
+    - unique speciality about idp can you tell
+    - how indian data portal is best for me ?
 

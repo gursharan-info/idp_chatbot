@@ -9,51 +9,38 @@ stories:
   - intent: mood_great
   - action: utter_happy
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: faq
-  - action: utter_faq/about_idp
-  - intent: faq
-  - action: utter_faq/count_of_datasets
-  - intent: goodbye
-  - action: utter_goodbye
+# - story: interactive_story_1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: faq/about_idp
+#   - action: utter_faq/about_idp
+#   - intent: faq/count_of_datasets
+#   - action: utter_faq/count_of_datasets
+#   - intent: goodbye
+#   - action: utter_goodbye
   
 
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: faq
-  - action: utter_faq/count_of_datasets
+# - story: interactive_story_1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: faq
+#   - action: utter_faq/why_idp
+
+# - story: interactive_story_1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: faq
+#   - action: utter_faq/type_of_viz
+#   - intent: affirm
+#   - action: utter_happy
+
 
 - story: interactive_story_1
   steps:
   - intent: greet
   - action: utter_greet
   - intent: faq
-  - action: utter_faq/about_idp
-  - intent: affirm
-  - action: utter_happy
-  - intent: faq
-  - action: utter_faq/count_of_datasets
+  - action: utter_faq

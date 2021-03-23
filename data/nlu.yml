@@ -90,3 +90,19 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: faq/about_idp
+  examples: |
+    - can you tell me something about idp.
+    - What is idp?
+    - hey quickie about indian data portal
+    - wanted to have quick info about india data portal
+    - will you be able to tell me something about IDP
+  
+- intent: faq/count_of_datasets
+  examples: |
+    - what are the number of datasets supported on IDP?
+    - How many datasets are available on Indian Dta portal
+    - How many datasets are available on the IDP?
+    - count of Data sets on idpp
+    - how many datasets are listed on india data portal.

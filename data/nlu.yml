@@ -78,12 +78,14 @@ nlu:
     - extremly sad
     - so saad
     - so sad
-- intent: bot_challenge
+- intent: idp_bot_intro
   examples: |
     - are you a bot?
-    - are you a human?
+    - can you tell me something about yourself
     - am I talking to a bot?
-    - am I talking to a human?
+    - What about you
+    - who are you
+    - Who developed you 
 - intent: faq/about_idp
   examples: |
     - can you tell me something about idp.
@@ -107,6 +109,7 @@ nlu:
     - what type of visulaisations are present by Indian data portal
     - various vis. that can be seen on IDP?
     - IDP supports how many diffrent or unique visulaisations
+    - can i see diff vis on this platform  
 - intent: faq/why_idp
   examples: |
     - Why should I use IDP?
@@ -114,4 +117,46 @@ nlu:
     - What is USP of Indian data portal
     - unique speciality about idp can you tell
     - how indian data portal is best for me ?
+    - why only Indian DP?
+
+- intent: faq/source_of_data
+  examples: |
+    - What is the source of the data? 
+    - What is the source of the data present on indian data portal
+    - from where data is coming on IDP
+    - various sources that have been considered for taking data present here
+    - Are all sources presnt here legit?
+
+- intent: faq/will_addtional_sources_be_added
+  examples: |
+    - Will additional training materials/videos for different visualization scenarios be posted on the website?
+    - in future can i expect to see more datasets on this platform
+    - will this platform be updated in future?
+    - do any data-sets will be coming on this website in near future
+    - In future are there any chances that i will see different repos over here
+    - in coming future will more data be presnt on here.
+
+- intent: faq/different_langauges_availability
+  examples: |
+    -  Is it available in other Indian languages? If yes, which ones?
+    - possible to see IDP in other indian langs like bengali,telugu oriya etc
+    - can i see indian data portal in other indic languages
+    - Indian data portal can be accessed in other regional languages
+    - how can i access IDP in my regional languages
+    - Does this provide support for major indian language except English
+    - how many langs suport do you give  
+
+- intent: faq/paid_service_or_not
+  examples: |
+    - is it a paid service?
+    - Do I have to pay to use this platform
+    - how much i have to pay to use this website
+    - does IDP charge any money
+    - is it completely free
+    - are there any monthly or yearly subsciptions
+    - Monthly cost ?
+    - yearly fee ?
+    - is this platform have any fees ?
+    - any monthly subsciption fee?
+    - any type of money do you charge?
 

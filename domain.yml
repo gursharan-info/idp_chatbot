@@ -11,7 +11,8 @@ intents:
 - deny
 - mood_great
 - mood_unhappy
-- bot_challenge
+- idp_bot_intro
+
 responses:
   utter_greet:
   - text: Hey! How are you?
@@ -25,9 +26,12 @@ responses:
   utter_goodbye:
   - text: Bye
   utter_iamabot:
-  - text: I am a bot, powered by Rasa.
+  - text: I am a bot that is here to help you for INDIAN DATA portal
+  - text: Hey I am a chatbot to help you here
+  - text: I am bot made by IDP
+
   utter_faq/about_idp:
-  - text: Your one-stop destination for open-access data on agriculture, rural development and financial inclusion in India.The portal contains a data repository with processed and documented public datasets on related themes. For agriculture, these include crops, water, livestock, public investments, etc at levels such as districts, tehsils, and villages with a largely rural focus and socio-economic characteristics in both rural and urban areas at granular spatial scales like district, town and ward spanning the entire country.
+  - text: IDP is Your one-stop destination for open-access data on agriculture, rural development and financial inclusion in India.The portal contains a data repository with processed and documented public datasets on related themes. For agriculture, these include crops, water, livestock, public investments, etc at levels such as districts, tehsils, and villages with a largely rural focus and socio-economic characteristics in both rural and urban areas at granular spatial scales like district, town and ward spanning the entire country.
   utter_faq/count_of_datasets:
   - text: There will be about 20 datasets available on the IDP portal by end July.
 
@@ -35,7 +39,37 @@ responses:
   - text: The list of visualizations available is wide (about 30 kinds of visualisations). They range from :-Lollipop, stacked bar plot, maps, grouped bar plots, grouped scattered plots, treemap, donut, Sankey, infographic, frequency histogram, Grouped Bubble chart, beeswarm plot, 
 
   utter_faq/why_idp:
-  - text: With the help of IDP, a user can use the multiple datasets available, which have been already cleaned and vetted and have been presented in easy to understand manner. The users can make visualisations based on the chosen parameters as per the requirement of their writing. What’s even more exciting is that these visualisations are easily downloadable and can be inserted straight away in a story. 
+  - text: "With the help of IDP, a user can use the multiple datasets available, 
+  which have been already cleaned and vetted and have been presented in easy to understand 
+  manner. The users can make visualisations based on the chosen parameters as per the 
+  requirement of their writing. What’s even more exciting is that these visualisations 
+  are easily downloadable and can be inserted straight away in a story. "
+
+  utter_faq/source_of_data:
+  - text: "The IDP uses multiple sources for the data but mostly relies on 
+  publically available and have been shared by government institutions, who
+   frankly are the only bodies in the country to have that kind of data collection
+    capabilities. The repository for visualization is exhaustive with overlapping as well 
+    as independent well-established remote-sensing and satellite products."
+  
+  utter_faq/will_addtional_sources_be_added:
+  - text: " The IDP endeavours to regularly add more training material/videos/etc 
+  as we move forward. The feedback from users would also help us in adding more
+   material and features to the portal. "
+
+  utter_faq/different_langauges_availability:
+  - text: " The IDP portal is presently available in 5 languages
+   Bengali, English, Hindi, Oriya, Telugu."
+  
+  utter_faq/paid_service_or_not:
+  - text: "All the datasets and visualizations on the IDP are completely free and 
+  open to all the users. 
+  To make full use of the portal it is advisable to create your login ID. 
+What’s even more exciting is that we will be running competitions to select 
+best visualizations created by our users (by all of you). And the winners will 
+take home exciting prizes. "
+
+
 # actions:
 # - utter_faq/why_idp
 # - utter_faq/type_of_viz

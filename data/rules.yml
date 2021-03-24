@@ -7,8 +7,8 @@ rules:
   - intent: faq
   - action: utter_faq
 
-# - rule: Say 'I am a bot' anytime the user challenges
-#   steps:
-#   - intent: bot_challenge
-#   - action: utter_iamabot
+- rule: for idp bot
+  steps:
+  - intent: idp_bot_intro
+  - action: utter_iamabot
 

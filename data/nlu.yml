@@ -160,3 +160,11 @@ nlu:
     - any monthly subsciption fee?
     - any type of money do you charge?
 
+# - intent: faq/most-reviewed-datasets
+#   examples: |
+#     - What are the most reviewed datasets on IDP
+#     - What are the most reviewed datasets on Indian Dta portal
+#     - Indian portal has got most clicks for which data set
+#     - IDP ---> most reviewed DATASETS
+
+

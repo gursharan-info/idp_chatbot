@@ -1,0 +1,21 @@
+version: "2.0"
+
+nlu:
+- intent: faq-visulaisation-b1/compare-datasets-on-idp
+  examples: |
+    - how can we compare datasets on IDP?
+    - is there any way to comapre datasets on IDP
+    - any path way to comapre datasets on IDP
+    - can i ask is there any way to diffrentiate bw diffrents data sets on platform?
+    - any way we can make a contrast on dissimilar datasets on IDP
+    - can we comapre datasets on IDP?
+    - is there way to make distinction between diff. datasets ?
+
+- intent: faq-visulaisation-b1/add-dataset-on-idp
+  examples: |
+    - How to add dataset
+    - can we upload datasets on IDP
+    - is there any way to add new data on IDP
+    - Does Indian data portal supports adding personal custom data on IDP
+    - any way to upload additional datasets on IDP
+    - can we make our own datasets available on IDP

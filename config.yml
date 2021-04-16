@@ -33,6 +33,10 @@ pipeline:
   - name: ResponseSelector
     epochs: 100
     retrieval_intent: faq
+  
+  - name: ResponseSelector
+    epochs: 100
+    retrieval_intent: faq-visulaisation-b1
 
 
 

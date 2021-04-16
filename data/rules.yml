@@ -7,6 +7,11 @@ rules:
   - intent: faq
   - action: utter_faq
 
+- rule: for faq visualisation batch1
+  steps:
+    - intent: faq-visulaisation-b1
+    - action: utter_faq-visulaisation-b1
+
 - rule: for idp bot
   steps:
   - intent: idp_bot_intro

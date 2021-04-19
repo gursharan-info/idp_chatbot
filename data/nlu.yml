@@ -94,6 +94,7 @@ nlu:
     - wanted to have quick info about india data portal
     - will you be able to tell me something about IDP
     - what about idp
+    - could you pls get me brief info about IDP   
     - anything you can tell me iDP
 - intent: faq/count_of_datasets
   examples: |

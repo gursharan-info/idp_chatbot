@@ -47,6 +47,7 @@ nlu:
     - to plot diff. visualisation is it compulsory to select location 
     - selecting location is a pre requisite for making diffrent visualisation?
     - is it really important to select loaction for plot visualisation?
+    -  what norms are mandatory for selection of visualisations.
   
 - intent:  faq-visulaisation-b1/can-i-select-dis-without-state 
   examples: |

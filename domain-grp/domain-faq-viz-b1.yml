@@ -48,7 +48,7 @@ responses:
   with gear and pencil which enable you to change the color pallet of visualisations"
   
   utter_faq-visulaisation-b1/can-we-save-viz:
-  - text: "On right side of the second menu bar, there is "Save To" button which can save your visualisation on the portal.
+  - text: "On right side of the second menu bar, there is Save To button which can save your visualisation on the portal.
           My Graphics, saves it to your personal gallery
           Graphic Gallery saves it to a public gallery where you can also see visualisations saved by others"
 

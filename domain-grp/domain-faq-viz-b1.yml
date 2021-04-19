@@ -1,24 +1,24 @@
-# version: '2.0'
-# session_config:
-#   session_expiration_time: 60
-#   carry_over_slots_to_new_session: true
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
 
-# intents:
-# - affirm
-# - faq
-# - greet
-# - goodbye
-# - deny
-# - mood_great
-# - mood_unhappy
-# - idp_bot_intro
-# - faq-visulaisation-b1
+intents:
+- affirm
+- faq
+- greet
+- goodbye
+- deny
+- mood_great
+- mood_unhappy
+- idp_bot_intro
+- faq-visulaisation-b1
 
 responses:
-  # utter_faq-visulaisation-b1/compare-datasets-on-idp: 
-  #   - text: "Go to the visualize page, and on the left hand 
-  #   side, you will see the Add Dataset option. You can add upto
-  #     2 datasets one by one for comparison"
+  utter_faq-visulaisation-b1/compare-datasets-on-idp: 
+    - text: "Go to the visualize page, and on the left hand 
+    side, you will see the Add Dataset option. You can add upto
+      2 datasets one by one for comparison"
 
   # utter_faq-visulaisation-b1/add-dataset-on-idp: 
   #   - text: "In the left side bar on visualize page, 

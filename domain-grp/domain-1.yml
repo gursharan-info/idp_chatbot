@@ -119,8 +119,9 @@ take home exciting prizes. "
   utter_faq-visulaisation-b1/do-i-have-to-share-number: 
   - text: "No, IDP directly opens the web whatsapp on 
   your browser which works with QR code scanned with your phone"
-  utter_faq-visulaisation-b1/which-social-media-platform-supported-for-sharing-vis: 
-  - text: "IDP can share on Facebook, Linkedin, Twitter &  Instagram. Apart from that 
-  you can also copy the visualisation link and share it anywhere on the internet."
+  
+  # utter_faq-visulaisation-b1/which-social-media-platform-supported-for-sharing-vis: 
+  # - text: "IDP can share on Facebook, Linkedin, Twitter &  Instagram. Apart from that 
+  # you can also copy the visualisation link and share it anywhere on the internet."
 
  

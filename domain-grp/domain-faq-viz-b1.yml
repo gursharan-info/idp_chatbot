@@ -15,10 +15,10 @@ intents:
 - faq-visulaisation-b1
 
 responses:
-  utter_faq-visulaisation-b1/compare-datasets-on-idp: 
-    - text: "Go to the visualize page, and on the left hand 
-    side, you will see the Add Dataset option. You can add upto
-      2 datasets one by one for comparison"
+  # utter_faq-visulaisation-b1/compare-datasets-on-idp: 
+  #   - text: "Go to the visualize page, and on the left hand 
+  #   side, you will see the Add Dataset option. You can add upto
+  #     2 datasets one by one for comparison"
 
   # utter_faq-visulaisation-b1/add-dataset-on-idp: 
   #   - text: "In the left side bar on visualize page, 
@@ -63,6 +63,6 @@ responses:
   # utter_faq-visulaisation-b1/do-i-have-to-share-number: 
   # - text: "No, IDP directly opens the web whatsapp on 
   # your browser which works with QR code scanned with your phone"
-  # utter_faq-visulaisation-b1/which-social-media-platform-supported-for-sharing-vis: 
-  # - text: "IDP can share on Facebook, Linkedin, Twitter &  Instagram. Apart from that 
-  # you can also copy the visualisation link and share it anywhere on the internet."
+  utter_faq-visulaisation-b1/which-social-media-platform-supported-for-sharing-vis: 
+  - text: "IDP can share on Facebook, Linkedin, Twitter &  Instagram. Apart from that 
+  you can also copy the visualisation link and share it anywhere on the internet."

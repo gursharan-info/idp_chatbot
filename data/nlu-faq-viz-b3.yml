@@ -1,0 +1,225 @@
+version: "2.0"
+
+nlu:
+- intent: faq-visulaisation-b3/why-add-dataset
+  examples: |
+    - How to add dataset?
+    - Are there any steps to add dataset?
+    - How can I add more data?
+    - Can you append data?
+    - May I know the steps to add any dataset?
+    - Is there any document for reference to add dataset?
+    - Help me to add dataset
+    - Need assitance in adding dataset
+    - Need assist in adding dataset
+    - can you assist in adding data
+    - I am having a problem in uploading dataset
+    - I am having a problem in adding a dataset, please help
+    - Please guide how to add dataset
+    - Is there any support for adding dataset?
+    - Please advise/advice if there is any way to add dataset.
+
+- intent: faq-visulaisation-b3/options-to-make-chart-builder
+  examples: |
+    - How many options should we select on chart builder?
+    - What are the options on chart builder?
+    - Which icons to be clicked on chart builder?
+    - Can I choose only one indicator and multiple crops in chart builder?
+    - Can I choose multiple options on chart builder?
+    - What are minimum options required to build chart?
+    - I get below message "No Data for filters applied. Please modify filters and try again!" How do I create chart using chart builder?
+    - What are mandatory options required to build a chart?
+    - I applied all options still there is no chart built, please help.
+    - How to build chart?
+    - Chart not built, how to make a chart?
+
+- intent: faq-visulaisation-b3/to-create-state-level-chart
+  examples: |
+    - How do we create state level chart?
+    - Can I select all states to make a chart?
+    - I selected few states but chart is not made, what do I do?
+    - Please help me create state level chart
+    - State level chart
+    - Options to choose for state level chart
+    - State chart options
+    - Documentation on state level chart
+
+- intent: faq-visulaisation-b3/to-create-district-level-chart
+  examples: |
+    - How do we create district level chart?
+    - Can I select all districts to make a chart?
+    - I selected few districts but chat is not made, what do I do?
+    - Please help me create district level chart
+    - district level chart
+    - Options to choose for distict level chart
+    - district chart options
+    - Documentation on distrct level chart
+
+- intent: faq-visulaisation-b3/why-select-crops
+  examples: |
+    - Why crops should be selected
+    - Is crops mandatory selection?
+    - Can I skip crop selection?
+    - Can I choose all crops?
+    - can I clear all filters on crops?
+    - I selected few crops but chart was not created, what do I do?
+    - Help me selct crops for chart
+
+- intent: faq-visulaisation-b3/why-farm-size-category
+  examples: |
+    - Why farm size category should be selected
+    - What is farm size category?
+    - Can the farm size field be skippd?
+    - Can I build the chart without field size category?
+    - Is there any other way than selecting size category of field?
+    - Form size category
+    - Form size cat.
+    - What is Form size option?
+
+- intent: faq-visulaisation-b3/why-crop-type-selected
+  examples: |
+    - Why crop type should be selected
+    - What crop should I select?
+    - Can new crop be selected?
+    - Can a new crop be added and then selected?
+    - Why should I choose crp type in chart builder?
+    - Crop type
+    - Crop typ
+    - tupe crop selection
+    - assist in choosing crop type
+    - Error after selecting crop type
+  
+- intent: faq-visulaisation-b3/why-social-grp-selected
+  examples: |
+    - Why social group should be selected
+    - What social should I select?
+    - Can new sociale grp be selected?
+    - Can a new spocial group be added and then selected?
+    - Why should I choose social group in chart builder?
+    - social group
+    - socal group
+    - social group selection
+    - assist in choosing social group
+    - Error after selecting social group
+
+- intent: faq-visulaisation-b3/what-happens-if-we-select-all-on-chart-builder
+  examples: |
+    - What happens if we select all the options on chart builder
+    - can I slect all optins on chat builder?
+    - can I select all options on chart builder?
+    - may I choose all options on chart buuilder?
+    - May I choice every option on chart builder?
+    - May I choose all options on bisualizer?
+    - May I choose all options on Visualizer?
+    - Help me select all options on visualiser
+    - All options of chart buuilder
+    - all options on chrt builder
+    - eevery option on chart buukder
+
+- intent: faq-visulaisation-b3/why-farm-size-class-selected
+  examples: |
+    - Why farm size class should be selected
+    - what is farm size?
+    - why farm size?
+    - what selection for farm size?
+    - error in farm size selection
+    - help for farm sizeselect
+    - help required in fam size selection
+    - how to select farm size?
+    - form size selecttion
+  
+- intent: faq-visulaisation-b3/how-access-full-data
+  examples: |
+    - How can I access the full data?
+    - Fool data access
+    - full data visualize
+    - can I check full data in dataset/
+    - can I see fukl data?
+    - can you tell me how to access full data?
+    - Guide in checking full data
+    - Access issue with full data view
+    - not able to access full dataset
+    - data full view
+
+- intent: faq-visulaisation-b3/how-to-create-indicators
+  examples: |
+    - How to create new indicators?
+    - Create new indicators
+    - Help create new indicator
+    - Indictor creation
+    - How do I make new indicator?
+    - Making new indicator
+    - can I add new indicator?
+
+- intent: faq-visulaisation-b3/where-is-graph
+  examples: |
+    - I can't see anything. Where is the graph?
+    - graph not coming
+    - there is error in graph, it is not coming up whateevr selection I do
+    - help my graph is not coming up
+    - Guide how to see the graph, there is no data
+    - Whatever selection I do, graph doesn’t come up
+    - How to troubleshoot graph not seen?
+    - Graph not generated
+    - Graph has a problem
+    - graph has issue
+
+- intent: faq-visulaisation-b3/what-to-select-first
+  examples: |
+    - What do I select first?
+    - First step to visualize dataset
+    - steps to make chart
+    - how to use this chart builder?
+    - chart buuld help
+    - selection help
+    - what to select?
+    - auto select possible?
+
+- intent: faq-visulaisation-b3/how-can-select-graph
+  examples: |
+    - how to Visualize using different style of graph
+    - How to change visualization of datset?
+    - I want another type of graph. How can I select my graph type?
+    - Where do I import different graph type?
+    - how can i slect my grpah type i wnat another type of graph
+
+#- intent: faq-visulaisation-b3/  ### 96 Tomato sales question
+
+- intent: faq-visulaisation-b3/diff-bw-crop-and-crop-type
+  examples: |
+    - What is the difference between crop and crop type?
+    - What is a crop and crop type?
+    - Difference between crop and type
+    - how is crop and crop type different?
+    - why are there crop and crop types?
+    - types of crop and crop, difference?
+
+- intent: faq-visulaisation-b3/how-change-color-of-chat
+  examples: |
+    - How can I change the colours of the chat?
+    - Skin colour change for the chat box
+    - How do I change background of chat?
+    - Can I change color of chat?
+    - Help me pick color for chatbox
+    - asist me in choosing colour for chat
+    - what is the step to change background colour of chat?
+    - FAQ on colour change of chaat.
+
+# - intent: faq-visulaisation-b3/need-to-apply-filter # No answer given
+#   examples:  |
+#     - Do I need to apply filters?
+#     - How to apply filters?
+#     - Why do I need to apply filter?
+#     - Which filters I need to check?
+#     - Which filters should I use?
+#     - Apply fliter
+#     - Help with applying filters
+#     - how many filters to apply?
+  
+# - intent: faq-visulaisation-b3/comapre-datasets copy-112
+
+# - intent: faq-visulaisation-b3/what-are-filters ## no answer given
+
+
+
+

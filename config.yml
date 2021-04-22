@@ -36,7 +36,10 @@ pipeline:
     retrieval_intent: faq
   - name: ResponseSelector
     epochs: 100
-    retrieval_intent: faq-visulaisation-b1
+    retrieval_intent: faq-visulaisation-b1 # from faq number 34 to 54
+  - name: ResponseSelector
+    epochs: 100
+    retrieval_intent: faq-visulaisation-b3 # from faq number 80 to 100
 
 
 

@@ -7,10 +7,15 @@ rules:
   - intent: faq
   - action: utter_faq
 
-- rule: for faq visualisation batch1
+- rule: for faq visualisation batch1 # 34 to 54
   steps:
     - intent: faq-visulaisation-b1
     - action: utter_faq-visulaisation-b1
+
+- rule: for faq visualisation batch3 # 80 to 100
+  steps:
+    - intent: faq-visulaisation-b3
+    - action: utter_faq-visulaisation-b3
 
 - rule: for idp bot
   steps:

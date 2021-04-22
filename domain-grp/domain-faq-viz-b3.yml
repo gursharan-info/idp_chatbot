@@ -59,7 +59,7 @@ responses:
   - text: If the user wants to see the disaggregated data accross the farm size category they should select this option.
   
   utter_faq-visulaisation-b3/how-access-full-data:
-  - text:You can access the full data everytime in our portal
+  - text: You can access the full data everytime in our portal
 
   utter_faq-visulaisation-b3/how-to-create-indicators:
   - text: On the top right corner of the indicator popup you will see create new indicator button. Click it and then you will get another popup and there is a dropdown named dataset and after that there is a section to select the indicators. After selecting the indicators use the mathematical icons to define the relationship between the selected indicators. Then name the new indicator and name its unit and click on create indicator.

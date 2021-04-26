@@ -54,6 +54,47 @@ responses:
   utter_faq-visualisation-b4/diff-bw-mygraphics-graphics-gallery: # 122
   - text: In my graphics only you can see your past saved visualizations after logging in. But in graphics gallary your published visualizations can be seen by other users also.
 
+  utter_faq-visualisation-b4/why-personal-info-to-publish-graphs: #123
+  - text: Users can view your graphs which are saved by your name only. There is no other private information that is shared.
+
+  utter_faq-visualisation-b4/where-is-data-coming-from: #124
+  - text: We have collected the data from reliable government sourcs. You can also see the links in the 'about dataset' page in the source link section
+
+  utter_faq-visualisation-b4/will-update-affect-my-saved-graphics: #125
+  - text: Yes if you update the dataset another new graphics will be saved to my graphics not updating thre old one
+
+  utter_faq-visualisation-b4/how-add-shapes-icons-on-graph: #126
+  - text: As of now you cannot add shapes and icons to your graphs
+
+  utter_faq-visualisation-b4/how-change-legend-of-graph: #127
+  - text: As of now you cannot change the legends of the graph
+
+  utter_faq-visualisation-b4/cannot-see-title-after-downloading-graph: #128
+  - text: As of now you cannot see the title of your chart.
+
+  utter_faq-visualisation-b4/what-is-svg: #129
+  - text: Scalable Vector Graphics(SVG) is an Extensible Markup Language-based vector image format for two-dimensional graphics with support for interactivity and animation.
+
+  utter_faq-visualisation-b4/diff-bw-svg-png: #130
+  - text: A png (Portable Network Graphics) file is a raster or bitmap image file format. A svg (Scalable Vector Graphics) file is a vector image file format.
+  
+  utter_faq-visualisation-b4/assist-me-in-graph: #131
+  - text: Please write to us. we will definitely assist you. We have masterclass and workshop tutorials every month attending which you can get a very clear idea about the portal
+
+  utter_faq-visualisation-b4/can-you-connect-me-with-team: #132
+  - text: Please write to us. we will definitely connect you to our team
+
+  utter_faq-visualisation-b4/can-add-three-datasets: #133
+  - text: As of now you only can add two datasets.
+
+  utter_faq-visualisation-b4/chart-wrong: #138
+  - text: If you have any doubt on the chart kindly see the indicators and the dimensions of the dataset first. Then check the time frame that you have selected. Also refer to other charts that are coming
+
+  utter_faq-visualisation-b4/download-all-treemaps: #139
+  - text: You can download tree maps by clinking on the three dots button on the top left corner of the visualization page
+
+  utter_faq-visualisation-b4/remove-all-selections-once: #140
+  - text: You can remove all the selections by clicking on 'clear all' button on the top of any popup window
 
 
  

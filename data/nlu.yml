@@ -147,7 +147,7 @@ nlu:
     - Does this provide support for major indian language except English
     - how many langs suport do you give  
 
-- intent: faq/paid_service_or_not
+- intent: faq/paid_service_or_not 
   examples: |
     - is it a paid service?
     - Do I have to pay to use this platform

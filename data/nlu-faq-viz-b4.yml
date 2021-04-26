@@ -1,0 +1,80 @@
+version: "2.0"
+
+nlu:
+
+- intent: faq-visualisation-b4/how-many-datasets-compare #112
+  examples: |
+    - How many datasets can I compare at a time?
+    - How much dataset i can compare at a time?
+    - what Number of dataset compare at a time?
+    - At a time How many dataste we can compare?
+    - can i comapre 2 and more dataset at a time?
+    - Is it possible to compare all dataset at a time?
+
+- intent: faq-visualisation-b4/sort-data-in-graph-how #113
+  examples: |
+    - How can I sort data in my graph?
+    - Procedure of sorting data in y graph?
+    - can i sort data inmy graph,how?
+    - How can i sort data?
+    - sort Data in Inda data portal?
+    - How oragnise data in my graph?
+    - Arrange data in graphs?
+
+- intent: faq-visualisation-b4/upload-my-data #114
+  examples: |
+    - I want to add my dataset for visualisation. How can I upload data?
+    - is there any way to upload data i wnat to use my datasets for vizz
+    - for vizualisation purposes i want to add my dataset is there any way
+    - can i upload my data so that i can use it for visuaalisation
+
+- intent: faq-visualisation-b4/why-data-available-for-some-years # 118
+  examples: |
+    - Why is data availble only for some years?
+    - Is there any reason data deleted after some years?
+    - why data is deleted after some years?
+    - what is the reason behind some years avability of data?
+    - What is the reason that data is deleted after some years?
+    - why india data portal don't have data after some years?
+    - what happend after some year of data in india data portal?
+
+- intent: faq-visualisation-b4/how-add-labels #119
+  examples: |
+    - How can I add labels to my graph?
+    - procedure of adding labels on graph?
+    - adding labels on my graph it is possible?
+    - How can i modify labels on my graph?
+    - give me steps of adding labels to my graph?
+    - how can i make changes on lable on my graph?
+    - Is there any way to add label to my graph?
+    - Can i add labels to my graph,how?
+
+- intent:  faq-visualisation-b4/what-my-graphics #120
+  examples: |
+    - what does that mean by graphics?
+    - Graphics?
+    - Give me information about graphics?
+    - I waant to know about graphics?
+    - Meaning of graphics?
+    - Defination of graphics?
+
+- intent: faq-visualisation-b4/what-graphics-gallery #121
+  examples: |
+    - What is graphics gallery?
+    - meaning of graphics gallery?
+    - What do you mean by graphics gallery?
+    - What contain graphics gallery?
+    - Graphics gallery?
+    - Give me information about graphics gallery?
+    - I wanna know about graphics gallery?
+
+- intent: faq-visualisation-b4/diff-bw-mygraphics-graphics-gallery # 122
+  examples: |
+    - What is the difference between my graphics and graphic gallery?
+    - How graphics different from graphics gallery?
+    - How graphics and graphic galary seprated to each other?
+    - What is graphic and graphic gallery?
+    - Is graphics gallery unique from graphics,how?
+    - is graphics and graphics gallery same?
+    - Tell me about both graphic and graphic gallery?
+

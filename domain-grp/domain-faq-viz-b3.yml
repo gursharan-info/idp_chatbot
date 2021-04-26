@@ -79,6 +79,27 @@ responses:
   utter_faq-visulaisation-b3/how-change-color-of-chat:
   - text: On the top left side of the visualisation there is a button after clicking which you will get the colour palette from which you can choose colours of your choice
 
+  utter_faq-visulaisation-b3/share-viz-of-personal-proj: #102
+  - text: Yes you can definitely use this visualisation for personal use. Only do credit us while publishing
+
+  utter_faq-visulaisation-b3/give-credit-to-idp: #103
+  - text: Yes it is good if you cite or credit IDP whenever you are sharing visualisation from our portal
+  
+  utter_faq-visulaisation-b3/can-i-share-my-viz: #104
+  - text: Yes you can share the visualizaion by clicking on the share option which is on the top right corner on the page of visualisation
+
+  utter_faq-visulaisation-b3/how-tochange-chart-not-liked-first-one: #107
+  - text: If you visualize a dataset there are multiple charts that will come. Choose a chart which you like most and would depict the information according to your need.
+
+  utter_faq-visulaisation-b3/graphs-diff-after-download: #108
+  - text: There might be a loss in clarity after downloading the chart.
+
+  utter_faq-visulaisation-b3/bar-graphs-too-wide: #109
+  - text: As of now there is no provision of adjusting the chart size
+
+  utter_faq-visulaisation-b3/not-able-to-understand-viz: #110
+  - text: Please check the indicators and dimensions and relate to what story you need to find and then click on build your chart. If you dont understand one chart look for the other ones.
+  
 actions: []
 forms: {}
 e2e_actions: []

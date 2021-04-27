@@ -17,10 +17,21 @@ rules:
     - intent: faq-visulaisation-b3
     - action: utter_faq-visulaisation-b3
 
-- rule: for faq visualisation batch3 # 110 to 140
+- rule: for faq visualisation batch4 # 110 to 140
   steps:
     - intent: faq-visualisation-b4
     - action: utter_faq-visualisation-b4
+
+- rule: for faq visualisation batch5 # 140 to 180
+  steps:
+    - intent: faq-visualisation-b5
+    - action: utter_faq-visualisation-b5
+
+- rule: for faq visualisation batch6 # 180 to 225
+  steps:
+    - intent: faq-visualisation-b6
+    - action: utter_faq-visualisation-b6
+
 
 - rule: for idp bot
   steps:

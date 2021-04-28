@@ -1,2 +1,256 @@
 version: "2.0"
 nlu:
+
+- intent: faq-visualisation-b5/why-not-add-two-datasets #141
+  examples: |
+    - why am i not able to add more than two datasets ?
+    - why can't i add more than two datasets ?
+    - Why is it not possible for me to add more than two datasets ?
+    - How to add more than two datasets ?
+    - Is there a way to add more than two datasets ?
+    - I have problem adding more than two datasets
+    - Can i append more than two datasets
+    - Need help with adding more than two datasets
+    - Is it possible to add more than two datasets ?
+    - help add more than 2 datasets
+
+- intent: faq-visualisation-b5/help-understand-indicators #143
+  examples: |
+    - Can you help me understand the indicators
+    - Can you describe how the indicators works
+    - what does indicators do ?
+    - Is there any description for indicators ?
+    - What is the meaning of indicators 
+    - indicators help
+    - Help understanding indicators
+
+- intent: faq-visualisation-b5/tutorial-making-graphs-visualisations #145
+  examples: |
+    - Is there any tutorial for making graphs/visualisation ? 
+    - Is there any tutorial available on India data portal making graphs/visualisation ?
+    - How to create graphs/visualisations
+    - How to make graphs/visualisations
+    - Help me with making graphs/visualisation
+    - Can you help me with graphs/visualisation
+    - I need help with graohs/visualisation
+    - graphs help
+    - help with graphs/visualisation
+
+- intent: faq-visualisation-b5/only-see-states-find-district-village #146
+  examples: |
+    - How to find district/ village names ?
+    - How can i find district/village names ?
+    - I am not able to find district/village names.
+    - why am i not able to find district/village names ?
+    - why can't i find district/village names ?
+    - states help
+    - help with village names
+    - district names help
+    - assist with district/village names
+
+- intent: faq-visualisation-b5/Why-not-see-all-selected-language #151
+  examples: |
+    - why am i not able to see all the text in selected language ?
+    - why i cannot see all the text in selected language ?
+    - I am not able to see all the text in selected language 
+    - It is not showing all the text in the selected language
+    - Text in selected language is not showing
+    - There is incomplete text in selected language
+
+- intent: faq-visualisation-b5/graph-not-see-loading #152
+  examples: |
+    - I am not able te see the graph
+    - something is wrong with my graph
+    - my graph isn't showing
+    - my graph is showing nothing
+    - i can't see my graph
+    - My graph is not showing
+    - why am i not able to see my graph
+
+- intent: faq-visualisation-b5/How-change-title #154
+  examples: |
+    - How to change the title ?
+    - Is it possible to change the title ?
+    - where can i change the title ?
+    - What is the procedure to change the title ?
+    - Help me changing the title
+    - title change
+    - how to title change
+    - problem with title change
+
+- intent: faq-visualisation-b5/What-numbers-in-brackets #155
+  examples: |
+    - what does numbers in the bracket refers to ?
+    - what does the numbers in bracket means ?
+    - what are those numbers in the bracket ?
+    - what is the meaning of those numbers in bracket ?
+    - where can i use those numbers in the brackets ?
+
+- intent: faq-visualisation-b5/Do-have-select-filters #156
+  examples: |
+    - Do i really have to select filters ?
+    - Is it necessary to select filters ?
+    - Is it compulsory to select filters ?
+    - Is it mandatory to select filters ?
+    - Do i have to select filter for visulisation
+    - filters selection help
+    - help filter selection
+    - trouble filter select
+
+- intent: faq-visualisation-b5/What-JumpStartIndia-ISB #157
+  examples: |
+    - What is the meaning of jumpStartIndia@IDP ?
+    - What does jumpStartIndia@ISB means ?
+    - What does jumpStartIndia@ISB refers to ?
+    - What do you mean by jumpStartIndia@ISB ?
+    - what does jumpStartIndia refers to?
+    - What does jumpStartIndia represents ?
+    - What do you mean by jumpStartIndia@Indian dat portal ?
+
+- intent: faq-visualisation-b5/Can-zoom-chart #158
+  examples: |
+    - Is it possible to zoom into chart ?
+    - How can i zoom into chart ?
+    - How to zoom on chart ?
+    - Is there any way to zoom on the chart ?
+    - What is the procedure to zoom into the chart ?
+    - Shortcut for zooming into the chart
+    - chart zooming
+    - how zooming in chart 
+
+- intent: faq-visualisation-b5/Should-select-location-always #162
+  examples: |
+    - what location should i select ?
+    - It is important to select a locattion?
+    - It is necessary to select location always?
+    - Necessary to select location always?
+    - Manadatory to select location?
+
+- intent: faq-visualisation-b5/How-many-indicators-select-at-time #163
+  examples: |
+    - Which indicator should i select?
+    - Can i use two indicators together?
+    - When i select al indicators?
+    - May i choose more than one indicators?
+    - How many indicators should i choose ?
+
+- intent: faq-visualisation-b5/How-select-two-datasets-visualizing-together #165
+  examples: |
+    - How to select two different datasets for visualizing together?
+    - Can i select more than one different datasets for visualizing together?
+    - How to build chart with two datasets?
+    - Can I add two datasets for visualization?
+    - May I choose two or more datasets for chart building?
+    - help me build chart for two datasets
+
+- intent: faq-visualisation-b5/What-you-mean-time #167
+  examples: |
+    - Meaning of time?
+    - Define time?
+    - What is time on visualize data?
+    - Describe time on chrt bhuilder?
+    - How many years to choose on time on chart bulder?
+
+- intent: faq-visualisation-b5/Why-click-options-popping-out-in-Build-Chart #168
+  examples: |
+    - How to diversifiy visualization on chart buildeR?
+    - What's the reason for giving options on chart builder?
+    - why do i use the options on visualize dataset?
+    - what is the need to use all options on visualize dataset?
+    - why to click on options on visualize?
+
+- intent: faq-visualisation-b5/How-many-ways-create-graph #169
+  examples: |
+    - What are the ways to create a graph?
+    - What types of ways to create graph?
+    - Alternate ways to generate graph
+    - tell me ways to build graphs
+    - Help me to find ways to build graphs
+
+- intent: faq-visualisation-b5/How-multiple-colours-available-Select-at-time #170
+  examples: |
+    - how many colours are avaiable on options for chart?
+    - Different colour palets for chart
+    - Help me with all colours available for visualization
+    - Can I get FAQ link for checking all colours available on chart?
+    - Help me to find multiple colours on chart
+    - Can I seelct more than one colour on chart?
+    - Is there multi selection possible on colours?
+
+- intent: faq-visualisation-b5/how-change-units-entity #171
+  examples: |
+    - how can I change enetity units?
+    - help change entity units
+    - help convert entity unts
+    - advice/advise how to change entity units
+    - FAQ for changing entity units
+
+- intent: faq-visualisation-b5/How-change-different-colours-bar #172
+  examples: |
+    - how to chnge color scheeme?
+    - right click option on every bar is available for changing colours?
+    - Errror in changign colours on each bar help
+    - help me change colour on every bar of graph
+    - how to change colour on bar graph
+
+- intent: faq-visualisation-b5/How-many-ways-download-graph #174
+  examples: |
+    - how to downlod graph?
+    - how can i export graph?
+    - how to save my graph?
+    - Is there a way to download a grapy?
+    - Is there more than one way to download a graph?
+
+- intent: faq-visualisation-b5/Can-share-graphs-on-social-media #175
+  examples: |
+    - share option fir whatsapp?
+    - share option fir facebook?
+    - share option for bluetooth?
+    - share option for linkedln?
+    - share option on one drive?
+    - can i copy the link of graph?
+
+- intent: faq-visualisation-b5/compare-more-datasets-single-visualization #176
+  examples: |
+    - Can i compare more than two datasets in a single visualization?
+    - How to select two different datasets for visualizing together?
+    - Can i select more than one different datasets for visualizing together?
+    - How to build chart with two datasets?
+    - Can I add two datasets for visualization?
+    - May I choose two or more datasets for chart building?
+    - help me build chart for two datasets
+
+- intent: faq-visualisation-b5/How-many-maximum-number-locations-select-which-creating-graph #177
+  examples: |
+    - Is there any minimum location which I should select to make a graph?
+    - what location should i select ?
+    - It is important to select more than one locattion?
+    - It is necessary to select location always?
+    - Necessary to select location always?
+    - Manadatory to select location?
+
+- intent: faq-visualisation-b5/How-many-visualisations-create-single-selected-data #178
+  examples: |
+    - What are the different types of graph?
+    - is there a bar chart?
+    - how to seelct a pie chart?
+    - what kind of visualizations are available?
+    - Help me to find ways to build graphs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -29,8 +29,8 @@ rules:
 
 - rule: for faq visualisation batch6 # 180 to 225
   steps:
-    - intent: faq-visualisation-b6
-    - action: utter_faq-visualisation-b6
+    - intent: faq-visulaisation-b6
+    - action: utter_faq-visulaisation-b6
 
 
 - rule: for idp bot

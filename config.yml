@@ -45,13 +45,13 @@ pipeline:
     epochs: 100
     retrieval_intent: faq-visualisation-b4 # from faq number 110 to 140
 
-- name: ResponseSelector
+  - name: ResponseSelector
     epochs: 100
     retrieval_intent: faq-visualisation-b5 # from faq number 140 to 180
 
-- name: ResponseSelector
+  - name: ResponseSelector
     epochs: 100
-    retrieval_intent: faq-visualisation-b6 # from faq number 180 to 225
+    retrieval_intent: faq-visulaisation-b6 # from faq number 180 to 225
 
   
 

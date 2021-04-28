@@ -126,7 +126,7 @@ nlu:
     - Necessary to select location always?
     - Manadatory to select location?
 
-- intent: faq-visualisation-b5/How-many-indicators-select-at-time #163
+- intent: faq-visualisation-b5/How-many-indicators-select-at-time  #163
   examples: |
     - Which indicator should i select?
     - Can i use two indicators together?

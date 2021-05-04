@@ -205,6 +205,8 @@ nlu:
     - is it important to select a location first?
     - selection of location is necessary?
     - how can i select a location?
+    - is it necessary to select loaction
+    - is it necessary to select location
 
 - intent: faq-visualisation-b2/donot-select-location-possible-visualization #77
   examples: |

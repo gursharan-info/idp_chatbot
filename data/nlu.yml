@@ -86,7 +86,7 @@ nlu:
     - What about you
     - who are you
     - Who developed you 
-- intent: faq/about_idp
+- intent: faq/about_idp #2
   examples: |
     - can you tell me something about idp.
     - What is idp?
@@ -96,7 +96,7 @@ nlu:
     - what about idp
     - could you pls get me brief info about IDP   
     - anything you can tell me iDP
-- intent: faq/count_of_datasets
+- intent: faq/count_of_datasets #4
   examples: |
     - what are the number of datasets supported on IDP?
     - How many datasets are available on Indian Dta portal
@@ -120,7 +120,7 @@ nlu:
     - how indian data portal is best for me ?
     - why only Indian DP?
 
-- intent: faq/source_of_data
+- intent: faq/source_of_data #9
   examples: |
     - What is the source of the data? 
     - What is the source of the data present on indian data portal
@@ -137,7 +137,7 @@ nlu:
     - In future are there any chances that i will see different repos over here
     - in coming future will more data be presnt on here.
 
-- intent: faq/different_langauges_availability
+- intent: faq/different_langauges_availability #29
   examples: |
     -  Is it available in other Indian languages? If yes, which ones?
     - possible to see IDP in other indian langs like bengali,telugu oriya etc
@@ -147,7 +147,7 @@ nlu:
     - Does this provide support for major indian language except English
     - how many langs suport do you give  
 
-- intent: faq/paid_service_or_not 
+- intent: faq/paid_service_or_not #31
   examples: |
     - is it a paid service?
     - Do I have to pay to use this platform
@@ -160,4 +160,85 @@ nlu:
     - is this platform have any fees ?
     - any monthly subsciption fee?
     - any type of money do you charge?
+  ######################### prashant
+- intent: faq/frequently-data-updated #10
+  examples: |
+    - When data updated
+    - how many time data updated in a year?
+    - is data update in quaterly basis
+    - when next time data updating
+    - when we can update data on india data portal
+    - frequency of uploading data on IDP in a year
+
+- intent: faq/part-available-data  #14
+  examples: |
+    - What are the sectors of available data?   
+    - what part of available data?
+    - name of parts of available data
+    - what type of data available on india data portal
+    - parts of available data?
+    - name of sectors of data on india data portal
+
+- intent: faq/alternate-sources-data  #19
+  examples: |
+    - Are there any alternate sources for data?
+    - is there any other source of data?
+    - source of india data portal data
+    - where is the data come from
+    - who collect data of idp data
+    - who is data source of data
+
+- intent: faq/share-upload-dataset  #21
+  examples: |
+    - How do I share/ upload a dataset from IDP
+    - steps of share dataset
+    - how i can share dataset
+    - how i can upload dataset
+    - procedure of share/upload dataset
+    - how can i share dataset file  
+
+- intent: faq/multiple-data-set-same-parameters-which-useful #23
+  examples: | 
+    - how can we know which dataset has been found more useful by users?
+    - would there be multiple data sets for the same parameters?
+    - Since this is an Open Source initiative, would there be multiple data sets for the same parameters? If yes, how can we know which dataset has been found more useful by users?
+    - in multiple data sets which dataset is more useful
+    - how user know about more useful dataset in multiple datasets
+
+- intent: faq/help-technical-issues-portal #24
+  examples: | 
+    - How can I report any technical issues with the portal?
+    - How can i report a issue?
+    - help with tecnical isseue
+    - have a problem with portal, i need help
+    - how i can contact you?
+    - i need help i am facing isseu
+
+- intent: faq/trust-data-sourced-from-government-agencies #26
+  examples: |
+    - How do we trust this data since the data is sourced from government agencies? 
+    - why we trust this data?
+    - where is refrence of this data
+    - can i trust this source
+    - is this data reliable?
+
+- intent: faq/materials-videos-different-visualization-posted-website #27
+  examples: |
+    - Will additional training materials/videos for different visualization scenarios be posted on the website? 
+    - meririal or videos of visualization posted on website?
+    - metarial/videos of visualization is regularly posted on portal?
+    - portal is contuniously uploaded visulization videos?
+    - visulixation senerio regularly uploaded?
+
+- intent: faq/visualisations-made-downloaded-other-languages #30
+  examples: |
+    - Can the visualisations be made and downloaded in other languages?
+    - visulization support other languages?
+    - visulisation run in other languages?
+    - visulisation creted in other languade?
+    - can we download visualization in different language?
+    - present visualisation in different languages
+
+
+
 

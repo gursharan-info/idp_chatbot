@@ -1,0 +1,243 @@
+
+version: "2.0"
+nlu:
+
+- intent: faq-visualisation-b2/delete-visualisation-from-graphic-gallery #55
+  examples: |
+    - How i delete visualisation from graphics gallery?
+    - do i  delete a visualisation ?
+    - Can i remove visualisation and how?
+    - How visualization from graphics gallery is deleted?
+    - Can i delete visualisation from graphics gallery and how?
+    - will you assist me to delete the visualisation?
+    - is visualisation deleted?
+    - do i erase the visualisation from the graphics gallery?
+
+- intent: faq-visualisation-b2/possible-share-live-visualisation #56
+  examples: |
+    - do i share interactive / live visualisation
+    - is it possible to share an interactive/live visualisation
+    - how live visualisation can be shared?
+    - which link is used to share the live /interactive visualisation?
+    - is live /interactive visualisation possible?
+    - do i share  an interactive/live visualisation?
+    - share the interactive visualisation.
+    - steps to share the live /interactive visualisation.
+    - will you assist me in share an interactive /live visualisation.
+
+- intent: faq-visualisation-b2/login-create-visualisation #57
+  examples: |
+    - is it important to login first to create the visualisation?
+    - assist me to create the visualisation.
+    - what if i can't login before creating the visualisation?
+    - steps to login for visualisations
+    - login to create any visualisation steps?
+    - procedure to login to create any visualisation.
+
+- intent: faq-visualisation-b2/shared-visualisation-link-not-seen #58
+  examples: |
+    - is login required to see any visualisation?
+    - how can i see my friend shared visualisation link?
+    - i was unable to see my friend's shared link, how do i?
+    - i am not able to see my friend's shared link .how do i do ?
+    - what if i can't login ,is it possible to see my friend's work?
+
+- intent: faq-visualisation-b2/automatically-redirect-shared-visualisation-link-after-login #59
+  examples: |
+    - after we login will it automatically redirect to shared visualisation link?
+    - steps to use the visualisation link directly after login .
+    - is it automatically redirect to shared visualisation link?
+    - do i automatically redirect to shared visualisation link?
+    - can i automatically redirect  to visualisation link shared by others?
+    - how can i do the redirect to visualisation link after login?
+
+- intent: faq-visualisation-b2/select-all-indicators-together #60
+  examples: |
+    - all the indicators are selected together ?
+    - is it valid to select all the indicsators together?
+    - is it fine if we select the indicators one by one?
+    - can i select all the indicators together?
+    - how i select the indicators together?
+    - how all the indicators are selected  together?  
+
+- intent: faq-visualisation-b2/add-indicators-from-other-datasets #61
+  examples: |
+    - can i add indicators from other datasets?
+    - add indicators from other datasets.
+    - how indicators are added from other datasets?
+    - can we add indicators ?
+    - from other datasets can we add indicators?
+    - how can i add indicators from other datasets?
+    - add indicators from other datasets,how?
+    - others datasets are helpful to add indicators.
+    - will you assist me to add indicators from other datasets?
+    - is indicators added from other datasets?
+    - add the indicators from other datasets.
+    - steps to add indicators from others datasets
+    - indicators are added from other datasets?
+
+- intent: faq-visualisation-b2/create-new-indicator #62
+  examples: |
+    - new indicator.
+    - create new indicator
+    - how new indicator is created?
+    - create a new indicator
+    - steps to create a new indicator
+    - how can i create a new indicator?
+    - is it possible to create a new indicator?
+    - assist me to create a new indicator.
+    
+- intent: faq-visualisation-b2/create-new-visualizations-using-new-indicator-two-different-datasets #63
+  examples: |
+    - can  i create new visualizations using new indicator from two different datasets?
+    - how we create  new visualizations using new indicator from two different datasets?
+    - is it possible to create new visualization using new indicator from two different datasets?
+    - create new visualizations using new indicator from two different datasets
+    - create new visualizations using new indicator from two different datasets ,how?
+    - do i create new visualizations using new indicator from two different datasets?
+
+- intent: faq-visualisation-b2/new-indicators-added-visualization #64
+  examples: |
+    - add new indicators in visualization
+    - what number of indicators are added in a visualization?
+    - can i add new indicators in a visualization?
+    - do i add new indicators in a visualization?
+    - is it possible to add new indicators in a visualization?
+    - new indicators are added in  a visualization, how?
+
+- intent: faq-visualisation-b2/create-new-indicators #65
+  examples: |
+    - create new indicators
+    - why we are required to create new indicators?
+    - do i prefer to create new indicators?
+    - why do we create new indicators?is it required urgently?
+    - is it important to create new indicator?
+    - is it essential to create new indicators?
+    - why do we create new indicators ?is it essential to create?
+
+- intent: faq-visualisation-b2/define-unit-new-indicator #66
+  examples: |
+    - unit of a new indicator.
+    - define unit of a new indicator
+    - steps to define unit of a new indicator.
+    - assist me to define the unit of a new indicator
+    - how i define the unit of a new indicator?
+    - how can i define the unit of a new indicator?
+
+- intent: faq-visualisation-b2/necessity-select-dimensions-Visualisation-option #67
+  examples: |
+    - is it necessary to select  dimensions visualisation options? 
+    - why we select  dimensions on visualisation option?
+    - is it essential to select dimensions on visualisation option?
+    - why do we select dimensions on visualization option?
+    - is it important to create select dimensions on visualisation option?
+    - do i prefer to select dimensions  on visualisation option?
+
+- intent: faq-visualisation-b2/any-dimension-not-selected #68
+  examples: |
+    - is it necessary to select the dimensions?
+    - do i prefer to select any dimensions?
+    - what happens if we can't select any dimensions?
+    - if we can't select any dimensions then what happens?
+    - is selection of any dimension required?
+    - what had happened if we can't select any dimensions?
+
+- intent: faq-visualisation-b2/save-new-indicators-how #69
+  examples: |
+    - how to save the new indicators ?
+    - is the new indicators saved automatically?
+    - do we save the new indicator?how?
+    - how do i save the new indicators?
+    - can i save the new indicators?
+    - save the new indicator.
+    - are we able to save the new indicators?
+
+- intent: faq-visualisation-b2/remove-created-new-indicators #70
+  examples: |
+    - how to remove new indicators?
+    - remove new indicators
+    - do we remove the new indicators?
+    - assist me to remove the new indicators.
+    - will i remove a new indicators?
+    - how can i remove  a new indicators.
+    - how new indicators are removed?
+    - can we remove the created new indicators.
+
+- intent: faq-visualisation-b2/select-maximum-number-dimensions-for-visualization #71
+  examples: |
+    - Give the maximum number of dimensions  selected for visualisation.
+    - For visualisation,what is the maximum number of dimensions selected?
+    - I want to select the maximum number of dimensions ,do i?
+    - what is the maximum number of dimensions can be selected for visualisation?
+    - how many max. number of dimensions  are selected?
+    - ways to select  maximum number of dimensions at a time.
+
+- intent: faq-visualisation-b2/How-search-dimension #72
+  examples: |
+    - search for a dimensions
+    - can we do a search for dimensions?
+    - how can i do search for dimensions?
+    - steps to search a dimensions.
+    - procedure for dimension's search.
+    - will i search for dimensions?
+
+- intent: faq-visualisation-b2/edit-dimensions-selected-for-visualization #73
+  examples: |
+    - edit the dimensions selected for visualization
+    - selected dimensions are edited for visualization,how?
+    - can  we edit the dimensions selected for visualization?
+    - How can i  edit the dimensions selected for visualization?
+    - steps to  edit the dimensions selected for visualization.
+
+- intent: faq-visualisation-b2/How-visualize-trend #75
+  examples: |
+    - visualize a trend 
+    - how do i visualise a trend?
+    - can we visualise a treend?
+    - is it possible to visualise a trend?
+    - visualising a trend ,how?
+    - do i visualise the trend?
+
+- intent: faq-visualisation-b2/select-location #76
+  examples: |
+    - select a location
+    - how to select a location?
+    - is it important to select a location first?
+    - selection of location is necessary?
+    - how can i select a location?
+
+- intent: faq-visualisation-b2/donot-select-location-possible-visualization #77
+  examples: |
+    - visualisation is possible without location?
+    - without location is it possible to visualise?
+    - is it possible to see a visualization without location?
+    - can we visualise without location?
+    - how can i see the visualization without location?
+    - what to do to see the visualisation withou location?
+    - can i see the visualization without location?
+    - steps to visualise without location
+    - visualise without location
+
+- intent: faq-visualisation-b2/select-Districts-after-states-necessary #78
+  examples: |
+    - Is it important to select Districts after states?
+    - select Districts after states
+    - steps to select Districts after states
+    - Is it necessary to select Districts after states?
+    - do we need to select Districts after states?
+    - we need to  select states first?
+    - states are selected first isn't?
+    - districts are selected after states isn't?
+
+- intent: faq-visualisation-b2/add-dataset #80
+  examples: |
+    - add datasets
+    - datasets are added?
+    - is datasets added?
+    - can we add datasets?
+    - how we add datasets?
+    - can you assist me to add datasets?
+    - steps to add datasets.
+
+
+

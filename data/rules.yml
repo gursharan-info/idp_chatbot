@@ -12,6 +12,13 @@ rules:
     - intent: faq-visulaisation-b1
     - action: utter_faq-visulaisation-b1
 
+    
+
+- rule: for faq visualisation batch2 # 55 to 80
+  steps:
+    - intent: faq-visualisation-b2
+    - action: utter_faq-visualisation-b2
+
 - rule: for faq visualisation batch3 # 80 to 110
   steps:
     - intent: faq-visulaisation-b3

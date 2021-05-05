@@ -45,3 +45,8 @@ rules:
   - intent: idp_bot_intro
   - action: utter_iamabot
 
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
+

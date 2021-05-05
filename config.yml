@@ -56,6 +56,10 @@ pipeline:
   - name: ResponseSelector
     epochs: 100
     retrieval_intent: faq-visulaisation-b6 # from faq number 180 to 225
+    
+  - name: FallbackClassifier
+    threshold: 0.7
+
 
   
 

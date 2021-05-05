@@ -76,6 +76,9 @@ responses:
   - text: Yes we will be uploading new training videos in our portal
   utter_faq/visualisations-made-downloaded-other-languages: #30
   - text: Yes the visualisations can be made and downloaded in the languages available in the Portal 
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+
 actions: []
 forms: {}
 e2e_actions: []

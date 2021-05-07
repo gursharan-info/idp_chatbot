@@ -23,42 +23,55 @@ pipeline:
   - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
+    alias: "convert-cvf-1"
+
   - name: CountVectorsFeaturizer
     analyzer: char_wb
     min_ngram: 1
     max_ngram: 4
   - name: DIETClassifier
     epochs: 100
-  - name: CRFEntityExtractor
-  - name: EntitySynonymMapper
+  # - name: CRFEntityExtractor # specific parts of pipeline to be use dfor entity extraction only
+  # - name: EntitySynonymMapper #it just maps synonyms
   - name: ResponseSelector
     epochs: 100
+    featurizers : ["convert-cvf-1"] # we want response selector to use features from 
+                                    # count vector featurizer and not from regex featurizer and 
+                                    # lexical syntatic featurizer
     retrieval_intent: faq
+
   - name: ResponseSelector
     epochs: 100
+    featurizers: ["convert-cvf-1"]
     retrieval_intent: faq-visulaisation-b1 # from faq number 34 to 54
+
   - name: ResponseSelector
     epochs: 100
+    featurizers: ["convert-cvf-1"]
     retrieval_intent: faq-visualisation-b2 # from faq number 55 to 80
 
   - name: ResponseSelector
     epochs: 100
+    featurizers: ["convert-cvf-1"]
     retrieval_intent: faq-visulaisation-b3 # from faq number 80 to 110
 
   - name: ResponseSelector
     epochs: 100
+    featurizers: ["convert-cvf-1"]
     retrieval_intent: faq-visualisation-b4 # from faq number 110 to 140
 
   - name: ResponseSelector
     epochs: 100
+    featurizers: ["convert-cvf-1"]
     retrieval_intent: faq-visualisation-b5 # from faq number 140 to 180
 
   - name: ResponseSelector
     epochs: 100
+    featurizers: ["convert-cvf-1"]
     retrieval_intent: faq-visulaisation-b6 # from faq number 180 to 225
     
   - name: FallbackClassifier
-    threshold: 0.7
+    threshold: 0.8
 
 
   
@@ -77,3 +90,9 @@ policies:
     epochs: 100
     # constrain_similarities: true
   - name: RulePolicy
+  # Confidence threshold for the `core_fallback_action_name` to apply.
+  # The action will apply if no other action was predicted with
+  # a confidence >= core_fallback_threshold
+    core_fallback_threshold: 0.5
+    core_fallback_action_name: "action_default_fallback"
+    enable_fallback_prediction: True

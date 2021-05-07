@@ -23,7 +23,7 @@ intents:
     use_entities: true
 - faq-visulaisation-b1:
     use_entities: true
-- faq-visulaisation-b2:
+- faq-visualisation-b2:
     use_entities: true   
 - faq-visulaisation-b3:
     use_entities: true

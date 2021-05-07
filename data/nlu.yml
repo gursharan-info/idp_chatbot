@@ -239,6 +239,20 @@ nlu:
     - can we download visualization in different language?
     - present visualisation in different languages
 
+-  intent: out_of_scope #for fallback
+   examples: |
+    - can i see you in india
+    - where is my food
+    - what is jeremy
+    - where is ATM
+    - what is ISSR
+    - where is my pizza
+    - where are toilets
+    - who's India's president
+    - what is programming
+    - visual studio code ?
+
+
 
 
 

@@ -75,9 +75,12 @@ responses:
   utter_faq/materials-videos-different-visualization-posted-website: #27
   - text: Yes we will be uploading new training videos in our portal
   utter_faq/visualisations-made-downloaded-other-languages: #30
-  - text: Yes the visualisations can be made and downloaded in the languages available in the Portal 
-  utter_please_rephrase:
+  - text: Yes the visualisations can be made and downloaded in the languages available in the Portal
+
+  utter_out_of_scope: # for low confidences classified intents
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+
+
 
 actions: []
 forms: {}

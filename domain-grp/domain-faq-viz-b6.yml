@@ -29,7 +29,7 @@ intents:
     use_entities: true
 - faq-visualisation-b5:
     use_entities: true
-- faq-visualisation-b6:
+- faq-visulaisation-b6:
     use_entities: true
 entities: []
 slots: {}

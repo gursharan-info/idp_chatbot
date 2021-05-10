@@ -23,6 +23,8 @@ intents:
     use_entities: true
 - faq-visulaisation-b1:
     use_entities: true
+- out_of_scope:
+    use_entities: true
 entities: []
 slots: {}
 responses:
@@ -77,7 +79,9 @@ responses:
   utter_faq/visualisations-made-downloaded-other-languages: #30
   - text: Yes the visualisations can be made and downloaded in the languages available in the Portal
 
-  utter_out_of_scope: # for low confidences classified intents
+  utter_out_of_scope:
+  - text: "Out of my knowledge can you pls rephrase"
+  utter_please_rephrase: # for low confidences classified intents
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
 
 

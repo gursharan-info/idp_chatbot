@@ -58,7 +58,7 @@ pipeline:
     retrieval_intent: faq-visulaisation-b6 # from faq number 180 to 225
 
   - name: FallbackClassifier
-    threshold: 0.8
+    threshold: 0.75
     ambiguity_threshold : 0.1
 
 

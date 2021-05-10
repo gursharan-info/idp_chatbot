@@ -237,9 +237,9 @@ nlu:
     - visulisation run in other languages?
     - visulisation creted in other languade?
     - can we download visualization in different language?
-    - present visualisation in different languages
+    - present viz in different languages
 
--  intent: out_of_scope #for fallback
+-  intent: out_of_scope #for out of scope
    examples: |
     - can i see you in india
     - where is my food
@@ -251,7 +251,12 @@ nlu:
     - who's India's president
     - what is programming
     - visual studio code ?
-
+    - 9
+    - 677020239
+    - ewdjskds
+    - 9+0
+    - j&k
+    - 5/9
 
 
 

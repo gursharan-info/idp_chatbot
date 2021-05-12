@@ -9,7 +9,10 @@
 > rasa run -m models --enable-api --cors "*"
 #### To run Docker image of chatbot
 
-> docker build -t sahib-bot-idp . # you can replace sahib-bot-idp with your bot name
+##### you can replace sahib-bot-idp with your bot name
+
+> docker build -t sahib-bot-idp . 
+
 > docker run -it  -p 5005:5005 sahib-bot-idp:latest
 
 #### To run chatbot in shell using docker container

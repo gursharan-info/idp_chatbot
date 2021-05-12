@@ -6,6 +6,6 @@
 rasa run actions --actions actions&
 
 # Start rasa server with nlu model
-rasa run -m /app/models --enable-api --cors "*" \
+rasa run -m /app/models/ --enable-api --cors "*" \
         --endpoints /app/endpoints.yml \
         --credentials /app/credentials.yml \

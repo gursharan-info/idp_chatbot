@@ -2,11 +2,13 @@
 
 #### To train model locally
 ```
-> rasa train --domain domain-grp/
+rasa train --domain domain-grp/
+
 ```
 #### To talk to bot in shell
 ```
-> rasa shell
+rasa shell
+
 ```
 
 #### To see bot working locally with UI
@@ -17,9 +19,9 @@
 
 > **you can replace sahib-bot-idp with your bot name**
 ```
-> docker build -t sahib-bot-idp . 
+docker build -t sahib-bot-idp . 
 
-> docker run -it  -p 5005:5005 sahib-bot-idp:latest
+docker run -it  -p 5005:5005 sahib-bot-idp:latest
 ```
 #### To run chatbot in shell using docker container
 ```

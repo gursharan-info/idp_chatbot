@@ -13,7 +13,7 @@ rasa shell
 
 #### To see bot working locally with UI
 ``` 
-> rasa run -m models --enable-api --cors "*" 
+rasa run -m models --enable-api --cors "*" 
 ```
 #### To run Docker image of chatbot
 

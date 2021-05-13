@@ -22,7 +22,9 @@
 > docker run -it  -p 5005:5005 sahib-bot-idp:latest
 ```
 #### To run chatbot in shell using docker container
-```docker run  -it --workdir /app sahib-bot-idp bash ./scripts/start_shell.sh
+```
+docker run  -it --workdir /app sahib-bot-idp bash ./scripts/start_shell.sh
+
 ```
 #### To stop Docker container
 ```

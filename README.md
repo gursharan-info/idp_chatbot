@@ -38,3 +38,4 @@ docker image rm -f sahib-bot-idp:latest
 2. Have to work on Deployment phase
 3. Permission error ( How to save model after training from docker image itself --if possible )
 4. Have to see why docker-compose is creating error with ` --cors "*" ` command in rasa 
+5. How to test RASA for multiple Domain and NLU files

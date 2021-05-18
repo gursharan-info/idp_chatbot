@@ -33,7 +33,7 @@ entities: []
 slots: {}
 responses:
   utter_faq-visualisation-b5/why-not-add-two-datasets: #141
-  - text: As of now you can add only two datasets at one time
+  - text: As of now you can add only two datasets at one 
 
   utter_faq-visualisation-b5/help-understand-indicators: #143
   - text: As of now we dont have a detailed description of the indicators

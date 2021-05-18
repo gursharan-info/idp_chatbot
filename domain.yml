@@ -232,7 +232,7 @@ responses:
   utter_faq/paid_service_or_not:
   - text: "All the datasets and visualizations on the IDP are completely free and\
       \ open to all the users. To make full use of the portal it is advisable to create\
-      \ your login ID. Whats even more exciting is that we will be running competitions\
+      \ your login ID. What\u2019s even more exciting is that we will be running competitions\
       \ to select best visualizations created by our users (by all of you). And the\
       \ winners will take home exciting prizes. "
   utter_faq/frequently-data-updated:

@@ -44,6 +44,41 @@ docker run  -it --workdir /app sahib-bot-idp bash ./scripts/start_shell.sh
 docker stop <container-id>
 docker image rm -f sahib-bot-idp:latest
 ```
+
+
+## Problem we faced while connecting RASA X with Github
+
+To connect rasa x to Github via UI RASA X expects files to be of same structure as we get after
+```
+rasa init
+```
+
+Prerequisites for making **build-domain.py** file 
+```
+pip3 install HiYaPyCo
+
+```
+Means it does not support multiple domain files 
+But What we have done is we have written a script **build-domain.py** and gave it path of all domain files so what it does is it takes all domain files combines them to make **domain.yml** 
+so that we can connect RASA X to github via UI.
+
+Now whenever we make multiple domain files before every re training
+run
+
+```
+python3 build-domain.py
+
+rasa train
+
+```
+
+### No need of below command now
+
+```
+rasa train --domain domain-grp/
+
+```
+
 ## To do
 1. Have to solve the issue of chatbot giving False Positives ( Menas correct answer for wrong answer)
 2. Have to work on Deployment phase

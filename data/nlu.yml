@@ -36,6 +36,7 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - perfectly said
     - hey thanks
 - intent: deny
   examples: |

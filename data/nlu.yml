@@ -18,6 +18,8 @@ nlu:
     - Hi bro what's up
     - Hi
     - ਹਾਂ bai
+    - Hii
+    - Hello
 - intent: goodbye
   examples: |
     - good afternoon
@@ -31,6 +33,7 @@ nlu:
     - see you around
     - bye bye
     - see you later
+    - Bye
 - intent: affirm
   examples: |
     - yes
@@ -103,6 +106,7 @@ nlu:
     - anything you can tell me iDP
     - Can I know something about idp
     - what is IDP
+    - Idp
 - intent: faq/count_of_datasets
   examples: |
     - what are the number of datasets supported on IDP?

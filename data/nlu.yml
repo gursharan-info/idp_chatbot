@@ -17,6 +17,7 @@ nlu:
     - good afternoon
     - Hi bro what's up
     - Hi
+    - ਹਾਂ bai
 - intent: goodbye
   examples: |
     - good afternoon
@@ -101,6 +102,7 @@ nlu:
     - could you pls get me brief info about IDP
     - anything you can tell me iDP
     - Can I know something about idp
+    - what is IDP
 - intent: faq/count_of_datasets
   examples: |
     - what are the number of datasets supported on IDP?
@@ -108,6 +110,7 @@ nlu:
     - How many datasets are available on the IDP?
     - count of Data sets on idpp
     - how many datasets are listed on india data portal
+    - What datasets are available on IDP
 - intent: faq/type_of_viz
   examples: |
     - what type of visulaisations are suuported by India data portal
@@ -148,6 +151,7 @@ nlu:
     - how can i access IDP in my regional languages
     - Does this provide support for major indian language except English
     - how many langs suport do you give
+    - What diff langs you support
 - intent: faq/paid_service_or_not
   examples: |
     - is it a paid service?
@@ -253,3 +257,10 @@ nlu:
     - Pizzaa
     - Fuddi hai
     - Wah ji wah
+    - Can I see siri
+    - Are you mad??
+    - Physiotherapy
+    - ??
+    - Can you tell me something about physiotherapy?
+    - Pls u want to see maps
+    - Blabla

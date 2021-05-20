@@ -28,8 +28,10 @@ docker ps
 > if your conatiner is running if yes stop it 
 > and if no container is running and it is still saying the same
  
-> rasa run -m models --enable-api --cors "*" -p <port-number> and also make sure
-> that this port number is also present in IDP.html in **socketUrl : <ip>:<port-number>
+> rasa run -m models --enable-api --cors "*" -p <port-number> 
+
+
+> and also make sure that this port number is also present in IDP.html in **socketUrl** : <ip>:<port-number>
 
 #### To run Docker image of chatbot
 

@@ -20,14 +20,12 @@ rasa run -m models --enable-api --cors "*"
 
 if if gives error port 5005 already in use 
 check with
-1. ``` docker ps ```
-> if your conatiner is running if yes stop it 
-> and if no container is running and it is still saying the same
+    1. ``` docker ps ```
+    > if your conatiner is running if yes stop it 
+    > and if no container is running and it is still saying the same
  
-```
-rasa run -m models --enable-api --cors "*" -p [ port-number ]
-```
-> and also make sure that this port number is also present in IDP.html in **socketUrl** : [ ip-address ]: [ port-number ]
+    2. ``` rasa run -m models --enable-api --cors "*" -p [ port-number ] ```
+    > and also make sure that this port number is also present in IDP.html in **socketUrl** : [ ip-address ]: [ port-number ]
 
 
 #### To run Docker image of chatbot

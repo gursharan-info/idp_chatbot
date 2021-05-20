@@ -18,17 +18,17 @@ rasa shell
 rasa run -m models --enable-api --cors "*" 
 ```
 
-if if gives error port 5005 already in use 
+If it gives error port 5005 already in use 
 check with
-    1. ``` docker ps ```
+1. ``` docker ps ```
     > if your conatiner is running if yes stop it 
-    > and if no container is running and it is still saying the same
+    > and if no container is running and it is still saying the same.
  
-    2. ``` rasa run -m models --enable-api --cors "*" -p [ port-number ] ```
+2. ``` rasa run -m models --enable-api --cors "*" -p [ port-number ] ```
     > and also make sure that this port number is also present in IDP.html in **socketUrl** : [ ip-address ]: [ port-number ]
 
 
-#### To run Docker image of chatbot
+## To run Docker image of chatbot
 
 > **you can replace sahib-bot-idp with your bot name**
 ```
@@ -36,6 +36,13 @@ docker build -t sahib-bot-idp .
 
 docker run -it  -p 5005:5005 sahib-bot-idp:latest
 ```
+
+If it gives an error port 5005 already in use
+
+1. ``` docker run -it  -p [ port-number]:5005 sahib-bot-idp:latest ```
+
+This will map your localhost [ port-number ] to 5005 and that 5005 port is used by docker container
+But make sure  that this port number is also present in IDP.html in **socketUrl** : [ localhost ]: [ port-number ]
 #### To run chatbot in shell using docker container
 ```
 docker run  -it --workdir /app sahib-bot-idp bash ./scripts/start_shell.sh

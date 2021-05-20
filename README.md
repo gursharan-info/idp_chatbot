@@ -49,6 +49,11 @@ docker run  -it --workdir /app sahib-bot-idp bash ./scripts/start_shell.sh
 #### To stop Docker container
 ```
 docker stop <container-id>
+```
+
+#### To remove docker image
+
+```
 docker image rm -f sahib-bot-idp:latest
 ```
 

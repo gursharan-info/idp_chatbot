@@ -31,7 +31,7 @@ docker ps
 > rasa run -m models --enable-api --cors "*" -p <port-number> 
 
 
-> and also make sure that this port number is also present in IDP.html in **socketUrl** : <ip>:<port-number>
+> and also make sure that this port number is also present in IDP.html in **socketUrl** : [ip]:[port-number]
 
 #### To run Docker image of chatbot
 

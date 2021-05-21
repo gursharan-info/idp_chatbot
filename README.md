@@ -93,9 +93,71 @@ rasa train --domain domain-grp/
 
 ```
 
+# To setup Rasa x on server
+
+
+Use step 1,2,3,4 from below link
+
+https://rasa.com/docs/rasa-x/installation-and-setup/install/docker-compose/
+
+
+# Server
+
+1. After connecting rasa x to github ( considering we have made file structure same as **rasa init**) because then only rasa x connects to github.
+
+2. cd /etc/rasa/
+
+3. ``` sudo docker-compose down ```
+
+4. Make changes to **credentials.yml**
+
+5. ``` sudo docker-compose up -d ```
+
+
+6. Open the [ Ip-address ] your RASA x is working
+
+# To connect Personal Website to Server using socket io
+
+1. Made an Folder in server
+
+2. Installed rasa (rasa 2.6.0)
+    ```
+    pip3 install -U pip
+    pip3 install rasa
+    ```
+
+3. git pull from repo to get the latest code
+
+4. ``` rasa train ```
+
+5. Open html file where you embedded the script from [here](https://github.com/botfront/rasa-webchat)
+    ( any html file that can be present locally can be used just make sure
+        1. In socketUrl : [ ip-address]:5005 of server )
+
+6. Make sure the port you are mentioning is open  ( from Server UI you can do this )
+    ( In our case we had to manually to open port **5005 from Azure server** because rasa by default runs on port 5005 )
+7. ``` rasa run -m models --enable-api --cors "*"  ```
+
+# To stop the Rasa Server connected via socket io
+
+1. ``` lsof -i:5005 ``` ( to see which service is running on port 5005 and what is the PID)
+
+2. ``` 
+    kill $(lsof -t -i:8080)
+
+    or
+
+    kill -9 $(lsof -t -i:8080)
+    ```
+
+# To stop Rasa X server
+
+1. ``` cd /etc/rasa/  ```
+
+2. ``` sudo docker-compose down ```
+
 ## To do
 1. Have to solve the issue of chatbot giving False Positives ( Menas correct answer for wrong answer)
-2. Have to work on Deployment phase
-3. Permission error ( How to save model after training from docker image itself --if possible )
-4. Have to see why docker-compose is creating error with ` --cors "*" ` command in rasa 
-5. How to test RASA for multiple Domain and NLU files
+
+2. Permission error ( How to save model after training from docker image itself --if possible )
+

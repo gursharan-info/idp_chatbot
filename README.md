@@ -138,10 +138,9 @@ https://rasa.com/docs/rasa-x/installation-and-setup/install/docker-compose/
     ( In our case we had to manually to open port **5005 from Azure server** because rasa by default runs on port 5005 )
 7. ``` rasa run -m models --enable-api --cors "*"  ```
     **or**
-8. ``` docker build -t sahib-bot-idp . 
+8. ``` docker build -t sahib-bot-idp . ```
 
-docker run -it  -p 5005:5005 sahib-bot-idp:latest
-``` 
+8.a ``` docker run -it  -p 5005:5005 sahib-bot-idp:latest ``` 
 
 # To stop the Rasa Server connected via socket io
 

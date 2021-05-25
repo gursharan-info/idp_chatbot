@@ -173,7 +173,10 @@ sudo apt-get update
 sudo apt-get install certbot
 ```
 1. sudo certbot certonly -d  [ domain name ].
-    1.a Example ---> ``` sudo certbot certonly -d chatbot.idp.tatrasdata.com ```
+
+    1.a Example ---> 
+    
+    ``` sudo certbot certonly -d chatbot.idp.tatrasdata.com ```
 2. ``` cd /etc/letsencrypt/archive/<domain name>/ ```
 
 Copy the certificates files :- 

@@ -143,19 +143,61 @@ https://rasa.com/docs/rasa-x/installation-and-setup/install/docker-compose/
 1. ``` lsof -i:5005 ``` ( to see which service is running on port 5005 and what is the PID)
 
 2. ``` 
-    kill $(lsof -t -i:8080)
+    kill $(lsof -t -i:5005)
 
     or
 
-    kill -9 $(lsof -t -i:8080)
+    kill -9 $(lsof -t -i:5005)
     ```
-
 # To stop Rasa X server
 
 1. ``` cd /etc/rasa/  ```
 
 2. ``` sudo docker-compose down ```
 
+
+
+# SSL certificates
+
+#### Install certbot
+```
+sudo apt-get update
+sudo apt-get install software-properties-common
+sudo add-apt-repository universe
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get update
+sudo apt-get install certbot
+```
+1. sudo certbot certonly -d  [ domain name ].
+    1.a Example ---> ``` sudo certbot certonly -d chatbot.idp.tatrasdata.com ```
+2. ``` cd /etc/letsencrypt/archive/<domain name>/ ```
+
+Copy the certificates files :- 
+Example ( copyinf certificates from /etc to inside our chatbot)
+3. ``` cp /etc/letsencrypt/archive/chatbot.idp.tatrasdata.com/ /home/idp-chat/idp_chatbot/certs ```
+
+4. Give Permissions to files ( Go to path where they are copied in chatbot)
+    ``` chmod +rwx cert1.pem fullchain1.pem privkey1.pem chain1.pem ```
+5. Give access of running command to User
+Example ---> ``` sudo chown -R chatbotadmin . ``` 
+( It means give running access to username =chatbotadmin)
+
+Make changes to **HTML** we will run in Browser
+set it's socketurl with DOMAIN NAME you BOUGHT
+```  socketUrl: "https://chatbot.idp.tatrasdata.com:5005",```
+
+
+6. Command to Run Chatbot having SSL 
+``` rasa run --ssl-certificate ./certs/chatbot.idp.tatrasdata.com/cert1.pem --ssl-keyfile ./certs/chatbot.idp.tatrasdata.com/privkey1.pem -m models --enable-api --cors "*" ```
+
+
+#  whenever any difficulty with No spca required
+
+1. ``` sudo docker system prune --volumes -a ```
+
+or 
+
+2. ``` sudo docker system prune ```
 ## To do
 1. Have to solve the issue of chatbot giving False Positives ( Menas correct answer for wrong answer)
 

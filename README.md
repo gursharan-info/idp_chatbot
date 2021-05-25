@@ -180,21 +180,29 @@ sudo apt-get install certbot
 2. ``` cd /etc/letsencrypt/archive/<domain name>/ ```
 
 Copy the certificates files :- 
-Example ( copyinf certificates from /etc to inside our chatbot)
+Example ( copying certificates from /etc to inside our chatbot)
+
 3. ``` cp /etc/letsencrypt/archive/chatbot.idp.tatrasdata.com/ /home/idp-chat/idp_chatbot/certs ```
 
 4. Give Permissions to files ( Go to path where they are copied in chatbot)
+
     ``` chmod +rwx cert1.pem fullchain1.pem privkey1.pem chain1.pem ```
+
 5. Give access of running command to User
-Example ---> ``` sudo chown -R chatbotadmin . ``` 
+
+Example ---> 
+
+``` sudo chown -R chatbotadmin . ``` 
 ( It means give running access to username =chatbotadmin)
 
 Make changes to **HTML** we will run in Browser
 set it's socketurl with DOMAIN NAME you BOUGHT
+
 ```  socketUrl: "https://chatbot.idp.tatrasdata.com:5005",```
 
 
 6. Command to Run Chatbot having SSL 
+
 ``` rasa run --ssl-certificate ./certs/chatbot.idp.tatrasdata.com/cert1.pem --ssl-keyfile ./certs/chatbot.idp.tatrasdata.com/privkey1.pem -m models --enable-api --cors "*" ```
 
 

@@ -20,6 +20,9 @@ nlu:
     - ਹਾਂ bai
     - Hii
     - Hello
+    - hiiii
+    - Hiii
+    - hanji
 - intent: goodbye
   examples: |
     - good afternoon
@@ -107,6 +110,7 @@ nlu:
     - Can I know something about idp
     - what is IDP
     - Idp
+    - what is iDP
 - intent: faq/count_of_datasets
   examples: |
     - what are the number of datasets supported on IDP?
@@ -268,3 +272,7 @@ nlu:
     - Can you tell me something about physiotherapy?
     - Pls u want to see maps
     - Blabla
+    - let's meet at aprty
+    - I want to buy some bins and trash cans
+    - what about cool things
+    - can you pls help up

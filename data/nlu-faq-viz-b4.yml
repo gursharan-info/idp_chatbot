@@ -1,7 +1,6 @@
 version: "2.0"
 nlu:
-
-- intent: faq-visualisation-b4/how-many-datasets-compare #112
+- intent: faq-visualisation-b4/how-many-datasets-compare
   examples: |
     - How many datasets can I compare at a time?
     - How much dataset i can compare at a time?
@@ -9,8 +8,7 @@ nlu:
     - At a time How many dataste we can compare?
     - can i comapre 2 and more dataset at a time?
     - Is it possible to compare all dataset at a time?
-
-- intent: faq-visualisation-b4/sort-data-in-graph-how #113
+- intent: faq-visualisation-b4/sort-data-in-graph-how
   examples: |
     - How can I sort data in my graph?
     - Procedure of sorting data in y graph?
@@ -19,15 +17,15 @@ nlu:
     - sort Data in Inda data portal?
     - How oragnise data in my graph?
     - Arrange data in graphs?
-
-- intent: faq-visualisation-b4/upload-my-data #114
+    - sort data in graph
+- intent: faq-visualisation-b4/upload-my-data
   examples: |
     - I want to add my dataset for visualisation. How can I upload data?
     - is there any way to upload data i wnat to use my datasets for vizz
     - for vizualisation purposes i want to add my dataset is there any way
     - can i upload my data so that i can use it for visuaalisation
-
-- intent: faq-visualisation-b4/why-data-available-for-some-years # 118
+    - how can I upload my data?
+- intent: faq-visualisation-b4/why-data-available-for-some-years
   examples: |
     - Why is data availble only for some years?
     - Is there any reason data deleted after some years?
@@ -36,8 +34,9 @@ nlu:
     - What is the reason that data is deleted after some years?
     - why india data portal don't have data after some years?
     - what happend after some year of data in india data portal?
-
-- intent: faq-visualisation-b4/how-add-labels #119
+    - data avalaible for some years
+    - why is data available only for some years?
+- intent: faq-visualisation-b4/how-add-labels
   examples: |
     - How can I add labels to my graph?
     - procedure of adding labels on graph?
@@ -47,8 +46,7 @@ nlu:
     - how can i make changes on lable on my graph?
     - Is there any way to add label to my graph?
     - Can i add labels to my graph,how?
-
-- intent:  faq-visualisation-b4/what-my-graphics #120
+- intent: faq-visualisation-b4/what-my-graphics
   examples: |
     - what does that mean by graphics?
     - Graphics?
@@ -56,8 +54,8 @@ nlu:
     - I waant to know about graphics?
     - Meaning of graphics?
     - Defination of graphics?
-
-- intent: faq-visualisation-b4/what-graphics-gallery #121
+    - what is graphics
+- intent: faq-visualisation-b4/what-graphics-gallery
   examples: |
     - What is graphics gallery?
     - meaning of graphics gallery?
@@ -66,8 +64,7 @@ nlu:
     - Graphics gallery?
     - Give me information about graphics gallery?
     - I wanna know about graphics gallery?
-
-- intent: faq-visualisation-b4/diff-bw-mygraphics-graphics-gallery # 122
+- intent: faq-visualisation-b4/diff-bw-mygraphics-graphics-gallery
   examples: |
     - What is the difference between my graphics and graphic gallery?
     - How graphics different from graphics gallery?
@@ -76,8 +73,8 @@ nlu:
     - Is graphics gallery unique from graphics,how?
     - is graphics and graphics gallery same?
     - Tell me about both graphic and graphic gallery?
-
-- intent: faq-visualisation-b4/why-personal-info-to-publish-graphs #123
+    - what is the difference between my graphics and graphic gallery?
+- intent: faq-visualisation-b4/why-personal-info-to-publish-graphs
   examples: |
     - Why should I give personal information to publish graphs in graphic gallery?
     - Why i give personol information to publish graphs in gallery?
@@ -89,8 +86,7 @@ nlu:
     - personal information to public graphs in graphic gallery is required but why?
     - Why personal information is required to publish graphs in graphic gallery?
     - To publish graph in graphic gallery why should I give personal information?
-
-- intent: faq-visualisation-b4/where-is-data-coming-from #124
+- intent: faq-visualisation-b4/where-is-data-coming-from
   examples: |
     - Where is the data coming from?
     - From where we get the data?
@@ -101,8 +97,7 @@ nlu:
     - how we come to know the data location?
     - not able to see the data coming from
     - how we fetch the data location?
-
-- intent: faq-visualisation-b4/will-update-affect-my-saved-graphics #125
+- intent: faq-visualisation-b4/will-update-affect-my-saved-graphics
   examples: |
     - I saved my graph in my graphics. Will it change if you update the dataset?
     - after saving the graphs in my graphics will i make the changes in the datasets?
@@ -110,8 +105,7 @@ nlu:
     - i had done the changes in dataset will it be updated after saving
     - after the successful saving of graphs in my graphics .Will it change if you update the dataset?
     - afterward  the saving of graphs in my graphics will it make change if you update the datasets?
-
-- intent: faq-visualisation-b4/how-add-shapes-icons-on-graph #126
+- intent: faq-visualisation-b4/how-add-shapes-icons-on-graph
   examples: |
     - How can I add shapes and icons to my graph?
     - how shapes and icons are added to my graphs?
@@ -122,8 +116,7 @@ nlu:
     - how i add figures and images in my graphs?
     - how i add configurations  and potraits in  my graphs?
     - how i add dimensions and images in my graphs?
-
-- intent: faq-visualisation-b4/how-change-legend-of-graph #127
+- intent: faq-visualisation-b4/how-change-legend-of-graph
   examples: |
     - How can I change the legends of the graph?
     - how can i make the change in the legends of graph?
@@ -134,41 +127,37 @@ nlu:
     - methods to change the legends.
     - how the legends of graphs are changed?
     - can i change the legends of graphs but how?
-
-- intent: faq-visualisation-b4/cannot-see-title-after-downloading-graph #128
+    - can I change the legends of the graph?
+- intent: faq-visualisation-b4/cannot-see-title-after-downloading-graph
   examples: |
     - Why can't I see the title after downloading my graph?
     - why  my title  is not  visible after downloading my graphs?
-    - even after downloading my graphs .why can't i see the title? 
+    - even after downloading my graphs .why can't i see the title?
     - why i can't see the title even after offloading my graphs?
     - why i can' t spot the title even after  downlink my graphs?
     - After downloading my graphs .why i can't find the glimpse of the title?
-
-- intent: faq-visualisation-b4/what-is-svg #129
+- intent: faq-visualisation-b4/what-is-svg
   examples: |
     - Define SVG
     - what is SVG
     - Explain SVG.
-    - What do you meant by SVG? 
-    - Describe the term SVG. 
-    - What does SVG mean? 
+    - What do you meant by SVG?
+    - Describe the term SVG.
+    - What does SVG mean?
     - SVG?
     - what are SVG's?
     - Brief description of SVG
-
-- intent: faq-visualisation-b4/diff-bw-svg-png # 130
+- intent: faq-visualisation-b4/diff-bw-svg-png
   examples: |
     - What is the difference between SVG and PNG?
-    - Explain the variation between SVG and PNG. 
-    - Show the distinction between my SVG and PNG 
-    - Differentiate between my SVG and PNG. 
-    - Show some contradiction between SVG and PNG. 
+    - Explain the variation between SVG and PNG.
+    - Show the distinction between my SVG and PNG
+    - Differentiate between my SVG and PNG.
+    - Show some contradiction between SVG and PNG.
     - difference in SVG and PNG.
     - compare SVG and PNG.
-    - Gulf between SVG and PNG. 
-
-
-- intent: faq-visualisation-b4/assist-me-in-graph #131
+    - Gulf between SVG and PNG.
+- intent: faq-visualisation-b4/assist-me-in-graph
   examples: |
     - Can you assist me in making this graph?
     - can you help me in making the graphs?
@@ -179,8 +168,8 @@ nlu:
     - steps for graph making
     - steps to make a graphs
     - how to make a graph?
-
-- intent: faq-visualisation-b4/can-you-connect-me-with-team #132
+    - can you assist me in making the graph?
+- intent: faq-visualisation-b4/can-you-connect-me-with-team
   examples: |
     - Can you connect me to your team?
     - can you join me to your team?
@@ -189,8 +178,7 @@ nlu:
     - please can you  connect me to your team?
     - add me to your team
     - is your team happy if i add?
-
-- intent: faq-visualisation-b4/can-add-three-datasets #133
+- intent: faq-visualisation-b4/can-add-three-datasets
   examples: |
     - Can I add three datasets?
     - I want to add 3 datasets, can I?
@@ -200,18 +188,7 @@ nlu:
     - What is the procedure to add 3 datasets?
     - Can 3 datasets be added?
     - sum of three datasets
-
-# - intent: faq-visualisation-b4/cannot-see-40-graphs # 134  # NO ANSWER
-#   examples: |
-#     - Why can't I see all the 40+ graphs for all datasets?
-#     - i can't see all the 40+ graphs for all datasets,why?
-#     - what is the reason i can't see all the 40+ graphs for all the datasets?
-#     - what makes all the 40+ graphs for all the datasets visible?
-#     - why all 40+ graphs for datasets is invisible?
-#     - why i can't find all the 40+ graphs for all the datasets?
-#     - 40+ graphs for all the datasets are not visible, why?
-
-- intent:  faq-visualisation-b4/chart-wrong # 138
+- intent: faq-visualisation-b4/chart-wrong
   examples: |
     - The chart is not correct.
     - The chart is wrong
@@ -221,8 +198,7 @@ nlu:
     - The chart is inaccurate.
     - my chart is full of errors.
     - The chart is incorrect.
-
-- intent: faq-visualisation-b4/download-all-treemaps #139
+- intent: faq-visualisation-b4/download-all-treemaps
   examples: |
     - How can I download all the treemaps?
     - How to download all the treemaps?
@@ -231,8 +207,7 @@ nlu:
     - How is it possible to download all the treemaps?
     - How can i downlink all the treemaps?
     - How offloading of all the treemaps can be done?
-    
-- intent: faq-visualisation-b4/remove-all-selections-once #140
+- intent: faq-visualisation-b4/remove-all-selections-once
   examples: |
     - How can I remove all my selections at once?
     - How my all selections are removed at once?
@@ -242,3 +217,4 @@ nlu:
     - Can i delete all my selections at once and how?
     - will you assist me to remove my all selections?
     - is  my all selections are removed at once?
+    - how can I remove my selections?

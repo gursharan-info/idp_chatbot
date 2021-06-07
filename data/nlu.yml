@@ -23,6 +23,7 @@ nlu:
     - hiiii
     - Hiii
     - hanji
+    - hnaji bai
 - intent: goodbye
   examples: |
     - good afternoon
@@ -47,6 +48,8 @@ nlu:
     - correct
     - perfectly said
     - hey thanks
+    - Ok
+    - OK sure
 - intent: deny
   examples: |
     - no
@@ -72,6 +75,7 @@ nlu:
     - so so perfect
     - so good
     - so perfect
+    - Fine
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -111,6 +115,13 @@ nlu:
     - what is IDP
     - Idp
     - what is iDP
+    - what is idp?
+    - idp?
+    - what is indian data portal
+    - what is idp
+    - idp
+    - What is idp
+    - What is IDP
 - intent: faq/count_of_datasets
   examples: |
     - what are the number of datasets supported on IDP?
@@ -119,6 +130,7 @@ nlu:
     - count of Data sets on idpp
     - how many datasets are listed on india data portal
     - What datasets are available on IDP
+    - how many datasets are available in idp?
 - intent: faq/type_of_viz
   examples: |
     - what type of visulaisations are suuported by India data portal
@@ -142,6 +154,7 @@ nlu:
     - from where data is coming on IDP
     - various sources that have been considered for taking data present here
     - Are all sources presnt here legit?
+    - what are the sources ?
 - intent: faq/will_addtional_sources_be_added
   examples: |
     - Will additional training materials/videos for different visualization scenarios be posted on the website?
@@ -173,6 +186,8 @@ nlu:
     - is this platform have any fees ?
     - any monthly subsciption fee?
     - any type of money do you charge?
+    - is idp free?
+    - is idp paid?
 - intent: faq/frequently-data-updated
   examples: |
     - When data updated
@@ -220,6 +235,8 @@ nlu:
     - have a problem with portal, i need help
     - how i can contact you?
     - i need help i am facing isseu
+    - how can I report an issue?
+    - how can I get help?
 - intent: faq/trust-data-sourced-from-government-agencies
   examples: |
     - How do we trust this data since the data is sourced from government agencies?
@@ -227,6 +244,7 @@ nlu:
     - where is refrence of this data
     - can i trust this source
     - is this data reliable?
+    - how can we trust this data?
 - intent: faq/materials-videos-different-visualization-posted-website
   examples: |
     - Will additional training materials/videos for different visualization scenarios be posted on the website?
@@ -276,3 +294,7 @@ nlu:
     - I want to buy some bins and trash cans
     - what about cool things
     - can you pls help up
+    - who is prime minister of india?
+    - CAN I GET SOME PIZZA
+    - where is my phone
+    - where is my charger

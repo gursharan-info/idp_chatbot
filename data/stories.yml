@@ -1,4 +1,4 @@
-version: "2.0"
+version: '2.0'
 stories:
 - story: happy path
   steps:
@@ -12,16 +12,6 @@ stories:
   - action: utter_greet
   - intent: faq
   - action: utter_faq
-- story: greet + about idp
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: faq
-  - action: utter_faq
-  - intent: faq
-  - action: utter_faq
-  - intent: affirm
-  - action: utter_affirm
 - story: add dataset + compare dataset
   steps:
   - intent: greet
@@ -30,5 +20,15 @@ stories:
   - action: utter_faq-visulaisation-b1
   - intent: faq-visulaisation-b1
   - action: utter_faq-visulaisation-b1
+  - intent: affirm
+  - action: utter_affirm
+- story: greet + about idp
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq
+  - action: utter_faq
+  - intent: faq
+  - action: utter_faq
   - intent: affirm
   - action: utter_affirm

@@ -1,0 +1,34 @@
+version: "2.0"
+stories:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq
+  - action: utter_faq
+- story: greet + about idp
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq
+  - action: utter_faq/about_idp
+  - intent: faq
+  - action: utter_faq/why_idp
+  - intent: affirm
+  - action: utter_affirm
+- story: add dataset + compare dataset
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq-visulaisation-b1
+  - action: utter_faq-visulaisation-b1/add-dataset-on-idp
+  - intent: faq-visulaisation-b1
+  - action: utter_faq-visulaisation-b1/compare-datasets-on-idp
+  - intent: affirm
+  - action: utter_affirm

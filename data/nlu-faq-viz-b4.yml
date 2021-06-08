@@ -25,6 +25,8 @@ nlu:
     - for vizualisation purposes i want to add my dataset is there any way
     - can i upload my data so that i can use it for visuaalisation
     - how can I upload my data?
+    - how many datasets i can upload
+    - how many datasets i can put in
 - intent: faq-visualisation-b4/why-data-available-for-some-years
   examples: |
     - Why is data availble only for some years?
@@ -97,6 +99,7 @@ nlu:
     - how we come to know the data location?
     - not able to see the data coming from
     - how we fetch the data location?
+    - how can I find the source of this dataset?
 - intent: faq-visualisation-b4/will-update-affect-my-saved-graphics
   examples: |
     - I saved my graph in my graphics. Will it change if you update the dataset?

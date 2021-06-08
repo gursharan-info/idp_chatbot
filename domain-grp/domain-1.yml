@@ -38,7 +38,7 @@ responses:
   utter_happy:
   - text: Great, carry on!
   utter_goodbye:
-  - text: Bye
+  - text: Bye It was very nice meeting you
   utter_iamabot:
   - text: I am a bot that is here to help you for INDIAN DATA portal
   - text: ' Hey I am a chatbot to help you here'

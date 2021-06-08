@@ -11,8 +11,6 @@ intents:
     use_entities: true
 - greet:
     use_entities: true
-- goodbye:
-    use_entities: true
 - deny:
     use_entities: true
 - mood_great:

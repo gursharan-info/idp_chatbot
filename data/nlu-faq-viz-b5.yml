@@ -182,6 +182,7 @@ nlu:
     - how to save my graph?
     - Is there a way to download a grapy?
     - Is there more than one way to download a graph?
+    - can I download my chart?
 - intent: faq-visualisation-b5/Can-share-graphs-on-social-media
   examples: |
     - share option fir whatsapp?

@@ -87,6 +87,7 @@ nlu:
     - does IDP allows me to share visualisation on social media
     - How do I share vis on Reddit
     - can i share my viz on social media
+    - can I share this on my social media?
 - intent: faq-visulaisation-b1/do-i-have-to-share-number
   examples: |
     - Do I have to share my phone number to share on whatsapp

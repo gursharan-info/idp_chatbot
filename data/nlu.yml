@@ -101,6 +101,7 @@ nlu:
     - who are you
     - Who developed you
     - Hlo how are you
+    - who made you
 - intent: faq/about_idp
   examples: |
     - can you tell me something about idp.
@@ -122,6 +123,7 @@ nlu:
     - idp
     - What is idp
     - What is IDP
+    - can you talk to me about IDP
 - intent: faq/count_of_datasets
   examples: |
     - what are the number of datasets supported on IDP?
@@ -147,6 +149,7 @@ nlu:
     - unique speciality about idp can you tell
     - how indian data portal is best for me ?
     - why only Indian DP?
+    - whys should I use idp?
 - intent: faq/source_of_data
   examples: |
     - What is the source of the data?
@@ -173,6 +176,7 @@ nlu:
     - Does this provide support for major indian language except English
     - how many langs suport do you give
     - What diff langs you support
+    - is the portal available in hindi?
 - intent: faq/paid_service_or_not
   examples: |
     - is it a paid service?
@@ -188,6 +192,7 @@ nlu:
     - any type of money do you charge?
     - is idp free?
     - is idp paid?
+    - does idp have any paid features?
 - intent: faq/frequently-data-updated
   examples: |
     - When data updated
@@ -237,6 +242,9 @@ nlu:
     - i need help i am facing isseu
     - how can I report an issue?
     - how can I get help?
+    - how can I report a bug?
+    - how can i report an issue?
+    - how can i suggest changes?
 - intent: faq/trust-data-sourced-from-government-agencies
   examples: |
     - How do we trust this data since the data is sourced from government agencies?
@@ -298,3 +306,6 @@ nlu:
     - CAN I GET SOME PIZZA
     - where is my phone
     - where is my charger
+    - how many datasets i can out in
+    - where is rasa x
+    - how many datasets i can upload to IDP

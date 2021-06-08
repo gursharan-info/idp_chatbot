@@ -11,17 +11,9 @@ intents:
     use_entities: true
 - greet:
     use_entities: true
-- deny:
-    use_entities: true
-- mood_great:
-    use_entities: true
 - mood_unhappy:
     use_entities: true
 - faq-visulaisation-b1:
-    use_entities: true
-- faq-visulaisation-b3:
-    use_entities: true
-- faq-visualisation-b4:
     use_entities: true
 - faq-visualisation-b5:
     use_entities: true
@@ -33,11 +25,7 @@ intents:
     use_entities: true
 - mood_great:
     use_entities: true
-- mood_unhappy:
-    use_entities: true
 - idp_bot_intro:
-    use_entities: true
-- faq-visulaisation-b1:
     use_entities: true
 - out_of_scope:
     use_entities: true
@@ -50,6 +38,8 @@ intents:
 entities: []
 slots: {}
 responses:
+  utter_affirm:
+  - text: Glad I could Help :)
   utter_faq-visualisation-b5/why-not-add-two-datasets:
   - text: As of now you can add only two datasets at one
   utter_faq-visualisation-b5/help-understand-indicators:

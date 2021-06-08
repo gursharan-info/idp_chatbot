@@ -17,9 +17,9 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: faq
-  - action: utter_faq/about_idp
+  - action: utter_faq
   - intent: faq
-  - action: utter_faq/why_idp
+  - action: utter_faq
   - intent: affirm
   - action: utter_affirm
 - story: add dataset + compare dataset
@@ -27,8 +27,8 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: faq-visulaisation-b1
-  - action: utter_faq-visulaisation-b1/add-dataset-on-idp
+  - action: utter_faq-visulaisation-b1
   - intent: faq-visulaisation-b1
-  - action: utter_faq-visulaisation-b1/compare-datasets-on-idp
+  - action: utter_faq-visulaisation-b1
   - intent: affirm
   - action: utter_affirm

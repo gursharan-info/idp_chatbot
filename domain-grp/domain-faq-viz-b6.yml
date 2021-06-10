@@ -114,6 +114,18 @@ responses:
   utter_faq-visulaisation-b6/export-selected-data: #225
   - text: India Data Portal doesn't give you the option to export data from the site. 
 
+  utter_faq-visulaisation-b6/change-visulaisation-to-local-language: #231
+  - text: To change the visualisation into your local language, click on the top right option on your screen which shows  'A/आ'. Here you can find thw various languages available. 
+
+  utter_faq-visulaisation-b6/write-title-in-local-language: #232
+  - text: Yes, you can write the title in your preffered choice of language which is available 
+
+  utter_faq-visulaisation-b6/search-previously-created-visulaisation: #235
+  - text: You can view your saved visualizations in My graphics or Graphic Gallery 
+
+  utter_faq-visulaisation-b6/search-visualisation-in-graphic-gallery: #236
+  - text: On the top bar under News and Graphics, you can find the Graphic Gallery. Once you are in the Graphic Gallery there will be a search box
+
 
 actions: []
 forms: {}

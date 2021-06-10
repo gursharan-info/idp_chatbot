@@ -88,10 +88,10 @@ responses:
   - text: You can edit by clicking on Clear all button which is on the top of the dimensions popup 
 
   utter_faq-visualisation-b2/How-visualize-trend: #75
-  - text: If there is only one year in the dataset then no need to select time. But if there are multiple years in a dataset and you have to select a time
+  - text: if you have selected two dimensions and want to see their postion over time. ft then a trend chart can be obtained
 
   utter_faq-visualisation-b2/select-location: #76
-  - text: if you have selected two dimensions and want to see their postion over time. ft then a trend chart can be obtained
+  - text: Yes its necessary to select a location in a dataset to visualize
 
   utter_faq-visualisation-b2/donot-select-location-possible-visualization: #77
   - text: It will give you an error that please select atleast one location

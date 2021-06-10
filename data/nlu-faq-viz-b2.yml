@@ -123,6 +123,7 @@ nlu:
     - why do we select dimensions on visualization option?
     - is it important to create select dimensions on visualisation option?
     - do i prefer to select dimensions  on visualisation option?
+    - Is it necessary to select a location?
 - intent: faq-visualisation-b2/any-dimension-not-selected
   examples: |
     - is it necessary to select the dimensions?
@@ -152,6 +153,7 @@ nlu:
     - how new indicators are removed?
     - can we remove the created new indicators.
     - how to remove an indicator?
+    - how can I remove an indicator?
 - intent: faq-visualisation-b2/select-maximum-number-dimensions-for-visualization
   examples: |
     - Give the maximum number of dimensions  selected for visualisation.
@@ -184,6 +186,7 @@ nlu:
     - is it possible to visualise a trend?
     - visualising a trend ,how?
     - do i visualise the trend?
+    - How to visualize a trend?
 - intent: faq-visualisation-b2/select-location
   examples: |
     - select a location

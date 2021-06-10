@@ -8,6 +8,7 @@ nlu:
     - How many number of datasets that i can compare at a time?
     - Number of datasets that can be comapre at a time
     - At that time how many datasets compared at a time?
+    - What is the maximum number of datasets that I can compare at a time
 - intent: faq-visulaisation-b6/create-new-indicators
   examples: |
     - Procedure of creating a new indicator?
@@ -23,6 +24,7 @@ nlu:
     - choropleth map?
     - information about Choloropleth map
     - I want to know about choropleth map?
+    - What is a Choropleth map
 - intent: faq-visulaisation-b6/new-indicator-using-seperate-datasets
   examples: |
     - Can i have permission to create a new indicator using two separate datasets?
@@ -30,6 +32,7 @@ nlu:
     - Using two dataset i want to create a indicator
     - Is it possible to create a new indicator using two dataset
     - Am i able to create a new indicator using two seprate datasets
+    - Can I create a new indicator using two separate datasets
 - intent: faq-visulaisation-b6/possibility-creating-three-dimensional-graph
   examples: |
     - I want to create 3 dimentional graph
@@ -54,6 +57,7 @@ nlu:
     - Can I use a choropleth map?
     - When i can acces to use choropleth map?
     - Can i able to use choropleth map?
+    - When should I use a Choropleth map
 - intent: faq-visulaisation-b6/possibility-sorting-bars
   examples: |
     - Can i am able to sort my bars?
@@ -69,6 +73,7 @@ nlu:
     - How much number indicator fit in one visialization?
     - One visulization contain max number of indicators?
     - Number of indicator present in one visualization at a time?
+    - How many new indicators can be added in a visualization?
 - intent: faq-visulaisation-b6/save-visualisations-among-my-graphics-my-gallery
   examples: |
     - Where my visualization store among graphics and gallery?
@@ -97,6 +102,8 @@ nlu:
     - downloading of any visualization  is carried out with which format?
     - which format is suggested for downloading any visualization?
     - what is the suggested format for downloading my visual?
+    - Download the visualization?
+    - What is the suggested format for downloading any visual
 - intent: faq-visulaisation-b6/add-dataset-compare-dataset-difference
   examples: |
     - Differentiate between Add Dataset and Compare Dataset
@@ -171,6 +178,7 @@ nlu:
     - How is it possible to change the font style on the visualization?
     - steps to change the font style
     - font style is need to be changed for visualization ,how?
+    - Can I change the font style on the visualizations
 - intent: faq-visulaisation-b6/create-my-own-visualisation
   examples: |
     - How to create my own visualization?
@@ -204,6 +212,7 @@ nlu:
     - can i rearrange the legends in visualization part?
     - do i prefer to change the lengend in visualization part?
     - visualization part requires a rearrangement of legends?
+    - Can I rearrange the visulization parts like legend as per my choice
 - intent: faq-visulaisation-b6/possibility-customize-bins-in-histogram
   examples: |
     - customizing bin in a histogram.
@@ -240,3 +249,6 @@ nlu:
     - trouble exporting selected data
     - trouble with data export
     - issue with data exporting
+- intent: faq-visulaisation-b1/can-we-export-viz
+  examples: |
+    - can I download the visualization in jpeg?

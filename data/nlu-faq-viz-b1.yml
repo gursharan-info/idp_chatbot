@@ -53,6 +53,7 @@ nlu:
     - does IDP provides me with option of having to select district without selecting state
     - is it feasible to select a district without having to select a state
     - is it viable to select a district without having to select a state
+    - Is it mandatory to select Districts after states?
 - intent: faq-visulaisation-b1/can-change-color-of-viz
   examples: |
     - How do I change color in visualisation?
@@ -60,6 +61,7 @@ nlu:
     - can i swap colors for VISUALISATION here?
     - is it possible to switch colors for output of datasets
     - How do I change color in viz drawn on indian data portal
+    - how to change the color of my chart?
 - intent: faq-visulaisation-b1/can-we-save-viz
   examples: |
     - Can we save a visualisation
@@ -106,3 +108,8 @@ nlu:
     - does IDp supports sharing visualisation on fb
     - can can i share my visualisation on Reddit
     - can i share my visualisation on Internet
+- intent: faq-visualisation-b4/what-my-graphics
+  examples: |
+    - Can graphics be doanloaded?
+    - Can the graphics be saved?
+    - What is my graphics?

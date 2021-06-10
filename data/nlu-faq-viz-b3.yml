@@ -138,6 +138,7 @@ nlu:
     - How do I make new indicator?
     - Making new indicator
     - can I add new indicator?
+    - How do I create a new indicator
 - intent: faq-visulaisation-b3/where-is-graph
   examples: |
     - I can't see anything. Where is the graph?
@@ -160,6 +161,7 @@ nlu:
     - selection help
     - what to select?
     - auto select possible?
+    - New to IDP, how to navigate?
 - intent: faq-visulaisation-b3/how-can-select-graph
   examples: |
     - how to Visualize using different style of graph

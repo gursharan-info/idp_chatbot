@@ -8,6 +8,7 @@ nlu:
     - At a time How many dataste we can compare?
     - can i comapre 2 and more dataset at a time?
     - Is it possible to compare all dataset at a time?
+    - How many datasets can I compare at a time (copy-112)
 - intent: faq-visualisation-b4/sort-data-in-graph-how
   examples: |
     - How can I sort data in my graph?
@@ -18,6 +19,7 @@ nlu:
     - How oragnise data in my graph?
     - Arrange data in graphs?
     - sort data in graph
+    - how can I sort my chart?
 - intent: faq-visualisation-b4/upload-my-data
   examples: |
     - I want to add my dataset for visualisation. How can I upload data?
@@ -150,6 +152,7 @@ nlu:
     - SVG?
     - what are SVG's?
     - Brief description of SVG
+    - What is SVG?
 - intent: faq-visualisation-b4/diff-bw-svg-png
   examples: |
     - What is the difference between SVG and PNG?
@@ -181,6 +184,7 @@ nlu:
     - please can you  connect me to your team?
     - add me to your team
     - is your team happy if i add?
+    - How can i catchup with IDP team
 - intent: faq-visualisation-b4/can-add-three-datasets
   examples: |
     - Can I add three datasets?

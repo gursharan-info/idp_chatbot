@@ -12,6 +12,7 @@ nlu:
     - Need help with adding more than two datasets
     - Is it possible to add more than two datasets ?
     - help add more than 2 datasets
+    - I am not able to add more than two datasets. Why?
 - intent: faq-visualisation-b5/help-understand-indicators
   examples: |
     - Can you help me understand the indicators
@@ -21,6 +22,7 @@ nlu:
     - What is the meaning of indicators
     - indicators help
     - Help understanding indicators
+    - What is an indicator?
 - intent: faq-visualisation-b5/tutorial-making-graphs-visualisations
   examples: |
     - Is there any tutorial for making graphs/visualisation ?
@@ -32,6 +34,7 @@ nlu:
     - I need help with graohs/visualisation
     - graphs help
     - help with graphs/visualisation
+    - is there any tutorial available?
 - intent: faq-visualisation-b5/only-see-states-find-district-village
   examples: |
     - How to find district/ village names ?
@@ -43,6 +46,8 @@ nlu:
     - help with village names
     - district names help
     - assist with district/village names
+    - I can only see states. Where can I find district/village names?
+    - I can't find district. Why?
 - intent: faq-visualisation-b5/Why-not-see-all-selected-language
   examples: |
     - why am i not able to see all the text in selected language ?
@@ -61,6 +66,8 @@ nlu:
     - My graph is not showing
     - why am i not able to see my graph
     - why is my graph not loading?
+    - My graph is not loading.
+    - why is my graph not loading
 - intent: faq-visualisation-b5/How-change-title
   examples: |
     - How to change the title ?
@@ -79,6 +86,7 @@ nlu:
     - what are those numbers in the bracket ?
     - what is the meaning of those numbers in bracket ?
     - where can i use those numbers in the brackets ?
+    - What are the numbers in the brackets?
 - intent: faq-visualisation-b5/Do-have-select-filters
   examples: |
     - Do i really have to select filters ?
@@ -145,6 +153,7 @@ nlu:
     - why do i use the options on visualize dataset?
     - what is the need to use all options on visualize dataset?
     - why to click on options on visualize?
+    - Why should I click on the options popping out in Build Your Chart
 - intent: faq-visualisation-b5/How-many-ways-create-graph
   examples: |
     - What are the ways to create a graph?
@@ -175,6 +184,7 @@ nlu:
     - Errror in changign colours on each bar help
     - help me change colour on every bar of graph
     - how to change colour on bar graph
+    - how can I change the colors?
 - intent: faq-visualisation-b5/How-many-ways-download-graph
   examples: |
     - how to downlod graph?
@@ -183,6 +193,11 @@ nlu:
     - Is there a way to download a grapy?
     - Is there more than one way to download a graph?
     - can I download my chart?
+    - Download the graphics?
+    - Download IDP data?
+    - Can data from IDP be downloaded?
+    - Can the visualization be saved?
+    - is tutorials available?
 - intent: faq-visualisation-b5/Can-share-graphs-on-social-media
   examples: |
     - share option fir whatsapp?
@@ -202,6 +217,7 @@ nlu:
     - Can I add two datasets for visualization?
     - May I choose two or more datasets for chart building?
     - help me build chart for two datasets
+    - can i compare two datasets?
 - intent: faq-visualisation-b5/How-many-maximum-number-locations-select-which-creating-graph
   examples: |
     - Is there any minimum location which I should select to make a graph?

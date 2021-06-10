@@ -11,9 +11,19 @@ intents:
     use_entities: true
 - greet:
     use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
 - mood_unhappy:
     use_entities: true
+- idp_bot_intro:
+    use_entities: true
 - faq-visulaisation-b1:
+    use_entities: true
+- faq-visulaisation-b3:
+    use_entities: true
+- faq-visualisation-b4:
     use_entities: true
 - faq-visualisation-b5:
     use_entities: true
@@ -25,7 +35,11 @@ intents:
     use_entities: true
 - mood_great:
     use_entities: true
+- mood_unhappy:
+    use_entities: true
 - idp_bot_intro:
+    use_entities: true
+- faq-visulaisation-b1:
     use_entities: true
 - out_of_scope:
     use_entities: true
@@ -38,8 +52,6 @@ intents:
 entities: []
 slots: {}
 responses:
-  utter_affirm:
-  - text: Glad I could Help :)
   utter_faq-visualisation-b5/why-not-add-two-datasets:
   - text: As of now you can add only two datasets at one
   utter_faq-visualisation-b5/help-understand-indicators:
@@ -181,6 +193,18 @@ responses:
   - text: You will reset all the selection you have made.
   utter_faq-visulaisation-b6/export-selected-data:
   - text: India Data Portal doesn't give you the option to export data from the site.
+  utter_faq-visulaisation-b6/change-visulaisation-to-local-language:
+  - text: "To change the visualisation into your local language, click on the top\
+      \ right option on your screen which shows  'A/\u0906'. Here you can find thw\
+      \ various languages available."
+  utter_faq-visulaisation-b6/write-title-in-local-language:
+  - text: Yes, you can write the title in your preffered choice of language which
+      is available
+  utter_faq-visulaisation-b6/search-previously-created-visulaisation:
+  - text: You can view your saved visualizations in My graphics or Graphic Gallery
+  utter_faq-visulaisation-b6/search-visualisation-in-graphic-gallery:
+  - text: On the top bar under News and Graphics, you can find the Graphic Gallery.
+      Once you are in the Graphic Gallery there will be a search box
   utter_greet:
   - text: Hey! How are you?
   utter_cheer_up:
@@ -323,11 +347,10 @@ responses:
   - text: You can edit by clicking on Clear all button which is on the top of the
       dimensions popup
   utter_faq-visualisation-b2/How-visualize-trend:
-  - text: If there is only one year in the dataset then no need to select time. But
-      if there are multiple years in a dataset and you have to select a time
-  utter_faq-visualisation-b2/select-location:
   - text: if you have selected two dimensions and want to see their postion over time.
       ft then a trend chart can be obtained
+  utter_faq-visualisation-b2/select-location:
+  - text: Yes its necessary to select a location in a dataset to visualize
   utter_faq-visualisation-b2/donot-select-location-possible-visualization:
   - text: It will give you an error that please select atleast one location
   utter_faq-visualisation-b2/select-Districts-after-states-necessary:

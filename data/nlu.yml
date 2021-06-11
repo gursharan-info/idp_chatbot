@@ -199,6 +199,7 @@ nlu:
     - how many langs suport do you give
     - What diff langs you support
     - is the portal available in hindi?
+    - Can I write the title in my Local Language
 - intent: faq/paid_service_or_not
   examples: |
     - is it a paid service?
@@ -250,6 +251,7 @@ nlu:
     - who collect data of idp data
     - who is data source of data
     - is this portal available in hindy?
+    - where can I  find the source of this data set
 - intent: faq/share-upload-dataset
   examples: |
     - How do I share/ upload a dataset from IDP
@@ -265,6 +267,7 @@ nlu:
     - Since this is an Open Source initiative, would there be multiple data sets for the same parameters? If yes, how can we know which dataset has been found more useful by users?
     - in multiple data sets which dataset is more useful
     - how user know about more useful dataset in multiple datasets
+    - List the datasets covered on the portal
 - intent: faq/help-technical-issues-portal
   examples: |
     - How can I report any technical issues with the portal?
@@ -281,6 +284,7 @@ nlu:
     - how can I get in touch with idp i ahve some issue?
     - Can I speak to someone
     - can I get a phone number?
+    - how can I get in touch with idp?
 - intent: faq/trust-data-sourced-from-government-agencies
   examples: |
     - How do we trust this data since the data is sourced from government agencies?
@@ -346,4 +350,4 @@ nlu:
     - how many datasets i can out in
     - where is rasa x
     - how many datasets i can upload to IDP
-   
+    - how can i know more about the competitions?

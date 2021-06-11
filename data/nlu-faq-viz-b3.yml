@@ -187,6 +187,7 @@ nlu:
     - asist me in choosing colour for chat
     - what is the step to change background colour of chat?
     - FAQ on colour change of chaat.
+    - how to change the color of my chart?>
 - intent: faq-visulaisation-b3/share-viz-of-personal-proj
   examples: |
     - Can I use this visualisation for my personal project?

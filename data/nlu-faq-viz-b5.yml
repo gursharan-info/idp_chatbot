@@ -56,6 +56,7 @@ nlu:
     - It is not showing all the text in the selected language
     - Text in selected language is not showing
     - There is incomplete text in selected language
+    - Why can't I see all the text in the selected language?
 - intent: faq-visualisation-b5/graph-not-see-loading
   examples: |
     - I am not able te see the graph
@@ -139,6 +140,7 @@ nlu:
     - Can I add two datasets for visualization?
     - May I choose two or more datasets for chart building?
     - help me build chart for two datasets
+    - How can I select two different datasets for visualizing it together
 - intent: faq-visualisation-b5/What-you-mean-time
   examples: |
     - Meaning of time?
@@ -185,6 +187,7 @@ nlu:
     - help me change colour on every bar of graph
     - how to change colour on bar graph
     - how can I change the colors?
+    - How can I have different colours on each Bar
 - intent: faq-visualisation-b5/How-many-ways-download-graph
   examples: |
     - how to downlod graph?
@@ -233,3 +236,4 @@ nlu:
     - how to seelct a pie chart?
     - what kind of visualizations are available?
     - Help me to find ways to build graphs
+    - How many visualisations can I create for a single selected data

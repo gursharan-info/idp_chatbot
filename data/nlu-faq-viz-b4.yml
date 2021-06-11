@@ -9,6 +9,7 @@ nlu:
     - can i comapre 2 and more dataset at a time?
     - Is it possible to compare all dataset at a time?
     - How many datasets can I compare at a time (copy-112)
+    - Can I compare 2 or more datasets in a single visualization
 - intent: faq-visualisation-b4/sort-data-in-graph-how
   examples: |
     - How can I sort data in my graph?

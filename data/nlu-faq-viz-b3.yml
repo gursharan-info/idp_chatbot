@@ -213,6 +213,15 @@ nlu:
     - Does India data portal allow us to use visualisation on personal blog/website?
     - does iDp provides me with the sevice that i can share viz on my blog
     - does iDp provides me with the sevice that i can share viz on my webiste
+
+- intent: faq-visulaisation-b3/change-axis-of-graph: #105
+  examples: |
+    - How can I change the axis of my graph?
+    - is there any to change axis of graph
+    - Any way i can change axis of graph
+    - I wanted to change axis of my visulaisation in IDP
+    - can i alter axis of graphs on Indian data portal
+    
 - intent: faq-visulaisation-b3/how-tochange-chart-not-liked-first-one
   examples: |
     - I don't like my chart. How can I get another chart?

@@ -85,6 +85,9 @@ responses:
   utter_faq-visualisation-b4/can-add-three-datasets: #133
   - text: As of now you only can add two datasets.
 
+  utter_faq-visualisation-b4/selecte-district-no-result: #137
+  - text: Please check if you have selected time dimension and one indicator atleast from the indicator list.
+
   utter_faq-visualisation-b4/chart-wrong: #138
   - text: If you have any doubt on the chart kindly see the indicators and the dimensions of the dataset first. Then check the time frame that you have selected. Also refer to other charts that are coming
 

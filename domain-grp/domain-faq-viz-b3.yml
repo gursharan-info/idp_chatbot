@@ -86,6 +86,9 @@ responses:
   utter_faq-visulaisation-b3/can-i-share-my-viz: #104
   - text: Yes you can share the visualizaion by clicking on the share option which is on the top right corner on the page of visualisation
 
+  utter_faq-visulaisation-b3/change-axis-of-graph: #105
+  - text: On right hand side, top corner there is a drop down menu from where the user can select to switch axis. 
+  
   utter_faq-visulaisation-b3/how-tochange-chart-not-liked-first-one: #107
   - text: If you visualize a dataset there are multiple charts that will come. Choose a chart which you like most and would depict the information according to your need.
 

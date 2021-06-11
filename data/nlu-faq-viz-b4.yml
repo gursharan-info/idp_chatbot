@@ -195,6 +195,14 @@ nlu:
     - What is the procedure to add 3 datasets?
     - Can 3 datasets be added?
     - sum of three datasets
+
+- intent: faq-visualisation-b4/selecte-district-no-result
+  examples:
+    - I have selected district but nothing is coming up. Why?
+    - selected distrcit no results
+    - No results after selecting district
+    - I have selected district but no output
+    - AFter selecting district we have no reslyts
 - intent: faq-visualisation-b4/chart-wrong
   examples: |
     - The chart is not correct.

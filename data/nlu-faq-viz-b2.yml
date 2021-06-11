@@ -22,6 +22,7 @@ nlu:
     - share the interactive visualisation.
     - steps to share the live /interactive visualisation.
     - will you assist me in share an interactive /live visualisation.
+    - Can I share an interactive / live visualisation
 - intent: faq-visualisation-b2/login-create-visualisation
   examples: |
     - is it important to login first to create the visualisation?
@@ -31,6 +32,8 @@ nlu:
     - login to create any visualisation steps?
     - procedure to login to create any visualisation.
     - Do I have to be logged in to create a visualisation
+    - do i have to be logged in to create a visualization?
+    - Do I have to be logged in to create a visualization?
 - intent: faq-visualisation-b2/shared-visualisation-link-not-seen
   examples: |
     - is login required to see any visualisation?
@@ -196,6 +199,7 @@ nlu:
     - how can i select a location?
     - is it necessary to select loaction
     - is it necessary to select location
+    - Should I select the location always
 - intent: faq-visualisation-b2/donot-select-location-possible-visualization
   examples: |
     - visualisation is possible without location?

@@ -62,6 +62,7 @@ nlu:
     - is it possible to switch colors for output of datasets
     - How do I change color in viz drawn on indian data portal
     - how to change the color of my chart?
+    - how can i change the colors of my graph?
 - intent: faq-visulaisation-b1/can-we-save-viz
   examples: |
     - Can we save a visualisation
@@ -79,6 +80,7 @@ nlu:
     - is it possible to export image
     - would it be possible some how download our output
     - can we dowload image to local computer from IDP
+    - can I download the visualization in jpeg?
 - intent: faq-visulaisation-b1/can-share-viz-on-social-media
   examples: |
     - How do I share visualization on Facebook

@@ -21,15 +21,18 @@ intents:
     use_entities: true
 - idp_bot_intro:
     use_entities: true
-- faq-visulaisation-b1:
-    use_entities: true
 - out_of_scope:
     use_entities: true
 entities: []
 slots: {}
 responses:
   utter_greet:
-  - text: Hey! How are you?
+  - text: Hey! How are you? How can i help you
+    buttons:
+    - title: "Portal"
+      payload : "/faq"
+    - title : "Visualisations"
+      payload : "/faq-visulaisation-b1"
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'

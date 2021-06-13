@@ -20,5 +20,3 @@ stories:
   - action: utter_faq-visulaisation-b1
   - intent: faq-visulaisation-b1
   - action: utter_faq-visulaisation-b1
-  - intent: affirm
-  - action: utter_affirm

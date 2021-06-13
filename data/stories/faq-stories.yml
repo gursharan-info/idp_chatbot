@@ -8,5 +8,3 @@ stories:
   - action: utter_faq
   - intent: faq
   - action: utter_faq
-  - intent: affirm
-  - action: utter_affirm

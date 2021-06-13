@@ -215,7 +215,7 @@ nlu:
     - does iDp provides me with the sevice that i can share viz on my blog
     - does iDp provides me with the sevice that i can share viz on my webiste
 
-- intent: faq-visulaisation-b3/change-axis-of-graph: #105
+- intent: faq-visulaisation-b3/change-axis-of-graph #105
   examples: |
     - How can I change the axis of my graph?
     - is there any to change axis of graph

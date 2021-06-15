@@ -21,15 +21,23 @@ intents:
     use_entities: true
 - idp_bot_intro:
     use_entities: true
-- faq-visulaisation-b1:
-    use_entities: true
 - out_of_scope:
     use_entities: true
-entities: []
-slots: {}
+- ok
+
+- portal
+entities:
+- intent_button
+slots:
+  intent_button:
+    type: list
+    influence_conversation: true
+
 responses:
+  utter_ok:
+  - text: Ok go ahead :)
   utter_greet:
-  - text: Hey! How are you?
+  - text: Hey! How are you? How can i help you
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
@@ -43,13 +51,13 @@ responses:
   - text: I am a bot that is here to help you for INDIAN DATA portal
   - text: ' Hey I am a chatbot to help you here'
   - text: I am bot made by IDP
-  utter_faq/about_idp:
+  utter_portal/about_idp:
   - text: IDP is Your one-stop destination for open-access data on agriculture, rural development and financial inclusion in India.The portal contains a data repository with processed and documented public datasets on related themes. For agriculture, these include crops, water, livestock, public investments, etc at levels such as districts, tehsils, and villages with a largely rural focus and socio-economic characteristics in both rural and urban areas at granular spatial scales like district, town and ward spanning the entire country.
   utter_faq/count_of_datasets:
   - text: There will be about 20 datasets available on the IDP portal by end July.
   utter_faq/type_of_viz:
   - text: The list of visualizations available is wide (about 30 kinds of visualisations). They range from :-Lollipop, stacked bar plot, maps, grouped bar plots, grouped scattered plots, treemap, donut, Sankey, infographic, frequency histogram, Grouped Bubble chart, beeswarm plot,
-  utter_faq/why_idp:
+  utter_portal/why_idp:
   - text: 'With the help of IDP, a user can use the multiple datasets available, which have been already cleaned and vetted and have been presented in easy to understand manner. The users can make visualisations based on the chosen parameters as per the requirement of their writing. What’s even more exciting is that these visualisations are easily downloadable and can be inserted straight away in a story. '
   utter_faq/source_of_data:
   - text: The IDP uses multiple sources for the data but mostly relies on publically available and have been shared by government institutions, who frankly are the only bodies in the country to have that kind of data collection capabilities. The repository for visualization is exhaustive with overlapping as well as independent well-established remote-sensing and satellite products.
@@ -86,6 +94,9 @@ responses:
 
 
 
-actions: []
+actions: 
+- action_slot_setter
+- action_viz_faq
+- action_portal_faq
 forms: {}
 e2e_actions: []

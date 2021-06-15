@@ -2,43 +2,62 @@ version: "2.0"
 
 rules:
 
+
+- rule : greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: action_slot_setter
+
+
+- rule: for portal
+  steps:
+  - intent: portal
+  - action : action_portal_faq
+
 - rule: for faq
   steps:
   - intent: faq
-  - action: utter_faq
+  # - action: utter_faq
+  - action : action_viz_faq
 
 - rule: for faq visualisation batch1 # 34 to 54
   steps:
-    - intent: faq-visulaisation-b1
-    - action: utter_faq-visulaisation-b1
+    - intent: faq-visualisation-b1
+    # - action: utter_faq-visualisation-b1
+    - action : action_viz_faq
 
     
 
 - rule: for faq visualisation batch2 # 55 to 80
   steps:
     - intent: faq-visualisation-b2
-    - action: utter_faq-visualisation-b2
+    # - action: utter_faq-visualisation-b2
+    - action : action_viz_faq
 
 - rule: for faq visualisation batch3 # 80 to 110
   steps:
-    - intent: faq-visulaisation-b3
-    - action: utter_faq-visulaisation-b3
+    - intent: faq-visualisation-b3
+    # - action: utter_faq-visualisation-b3
+    - action  : action_viz_faq
 
 - rule: for faq visualisation batch4 # 110 to 140
   steps:
     - intent: faq-visualisation-b4
-    - action: utter_faq-visualisation-b4
+    # - action: utter_faq-visualisation-b4
+    - action : action_viz_faq
 
 - rule: for faq visualisation batch5 # 140 to 180
   steps:
     - intent: faq-visualisation-b5
-    - action: utter_faq-visualisation-b5
+    # - action: utter_faq-visualisation-b5
+    - action : action_viz_faq
 
 - rule: for faq visualisation batch6 # 180 to 225
   steps:
-    - intent: faq-visulaisation-b6
-    - action: utter_faq-visulaisation-b6
-
+    - intent: faq-visualisation-b6
+    # - action: utter_faq-visualisation-b6
+    - action : action_viz_faq
 
 - rule: for idp bot
   steps:

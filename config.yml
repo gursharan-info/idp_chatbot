@@ -22,6 +22,10 @@ pipeline:
 
   - name: ResponseSelector
     epochs: 100
+    retrieval_intent: portal # for portal specific questions
+
+  - name: ResponseSelector
+    epochs: 100
     featurizers : ["convert-cvf-1", "cvf-word"] # we want response selector to use features from 
                                   # count vector featurizer and not from regex featurizer and 
                                   # lexical syntatic featurizer
@@ -30,7 +34,7 @@ pipeline:
   - name: ResponseSelector
     epochs: 100
     featurizers: ["convert-cvf-1", "cvf-word"]
-    retrieval_intent: faq-visulaisation-b1 # from faq number 34 to 54
+    retrieval_intent: faq-visualisation-b1 # from faq number 34 to 54
 
   - name: ResponseSelector
     epochs: 100
@@ -40,7 +44,7 @@ pipeline:
   - name: ResponseSelector
     epochs: 100
     featurizers: ["convert-cvf-1", "cvf-word"]
-    retrieval_intent: faq-visulaisation-b3 # from faq number 80 to 110
+    retrieval_intent: faq-visualisation-b3 # from faq number 80 to 110
 
   - name: ResponseSelector
     epochs: 100
@@ -55,7 +59,7 @@ pipeline:
   - name: ResponseSelector
     epochs: 100
     featurizers: ["convert-cvf-1", "cvf-word"]
-    retrieval_intent: faq-visulaisation-b6 # from faq number 180 to 225
+    retrieval_intent: faq-visualisation-b6 # from faq number 180 to 225
 
   - name: FallbackClassifier
     threshold: 0.75
@@ -106,7 +110,7 @@ pipeline:
   # - name: ResponseSelector
   #   epochs: 100
   #   # featurizers: ["convert-cvf-1", "cvf-word"]
-  #   retrieval_intent: faq-visulaisation-b1 # from faq number 34 to 54
+  #   retrieval_intent: faq-visualisation-b1 # from faq number 34 to 54
 
   # - name: ResponseSelector
   #   epochs: 100
@@ -116,7 +120,7 @@ pipeline:
   # - name: ResponseSelector
   #   epochs: 100
   #   # featurizers: ["convert-cvf-1", "cvf-word"]
-  #   retrieval_intent: faq-visulaisation-b3 # from faq number 80 to 110
+  #   retrieval_intent: faq-visualisation-b3 # from faq number 80 to 110
 
   # - name: ResponseSelector
   #   epochs: 100
@@ -131,7 +135,7 @@ pipeline:
   # - name: ResponseSelector
   #   epochs: 100
   #   # featurizers: ["convert-cvf-1", "cvf-word"]
-  #   retrieval_intent: faq-visulaisation-b6 # from faq number 180 to 225
+  #   retrieval_intent: faq-visualisation-b6 # from faq number 180 to 225
     
 
 

@@ -1,24 +1,52 @@
 version: "2.0"
 stories:
+# - story: happy path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+
 - story: happy path
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-- story: interactive_story_1
+  - action: action_slot_setter
+
+
+- story: ok story
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: faq
-  - action: utter_faq
-- story: add dataset + compare dataset
+  # - intent: ok_faq3
+  - intent : ok
+    entities:
+      - intent_button: "Visualisation"
+  - slot_was_set:
+      - intent_button: "Visualisation"
+  # - action : utter_ok_faq3
+  - action: utter_ok
+
+- story: ok story
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: faq-visulaisation-b1
-  - action: utter_faq-visulaisation-b1
-  - intent: faq-visulaisation-b1
-  - action: utter_faq-visulaisation-b1
-  - intent: affirm
-  - action: utter_affirm
+  - intent : ok
+    entities:
+      - intent_button: "portal"
+  - slot_was_set:
+      - intent_button: "portal"
+  - action : utter_ok
+
+#   - intent: mood_great
+#   - action: utter_happy
+
+
+# - story: interactive_story_1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: faq
+#   - action: utter_faq
+# - story: add dataset + compare dataset
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: faq-visualisation-b1
+#   - action: utter_faq-visualisation-b1
+#   - intent: faq-visualisation-b1
+#   - action: utter_faq-visualisation-b1

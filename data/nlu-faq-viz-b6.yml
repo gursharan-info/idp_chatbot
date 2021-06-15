@@ -1,6 +1,6 @@
 version: "2.0"
 nlu:
-- intent: faq-visulaisation-b6/maximum-number-datasets-compare
+- intent: faq-visualisation-b6/maximum-number-datasets-compare
   examples: |
     - How much of dataset compare at a time?
     - What is biggest number of dataset compare at a time?
@@ -9,14 +9,14 @@ nlu:
     - Number of datasets that can be comapre at a time
     - At that time how many datasets compared at a time?
     - What is the maximum number of datasets that I can compare at a time
-- intent: faq-visulaisation-b6/create-new-indicators
+- intent: faq-visualisation-b6/create-new-indicators
   examples: |
     - Procedure of creating a new indicator?
     - How can i made a new indicator?
     - steps of creating a new indicator/
     - How a indicator produce?
     - Machinism of creating a new indicator
-- intent: faq-visulaisation-b6/choropleth-map
+- intent: faq-visualisation-b6/choropleth-map
   examples: |
     - what do you mean by choropleth map?
     - tell me about choropleth map
@@ -25,7 +25,7 @@ nlu:
     - information about Choloropleth map
     - I want to know about choropleth map?
     - What is a Choropleth map
-- intent: faq-visulaisation-b6/new-indicator-using-seperate-datasets
+- intent: faq-visualisation-b6/new-indicator-using-seperate-datasets
   examples: |
     - Can i have permission to create a new indicator using two separate datasets?
     - I want create a new indicator using two separate datasets?
@@ -33,7 +33,7 @@ nlu:
     - Is it possible to create a new indicator using two dataset
     - Am i able to create a new indicator using two seprate datasets
     - Can I create a new indicator using two separate datasets
-- intent: faq-visulaisation-b6/possibility-creating-three-dimensional-graph
+- intent: faq-visualisation-b6/possibility-creating-three-dimensional-graph
   examples: |
     - I want to create 3 dimentional graph
     - india data portal allow to create 3 dimentional graph
@@ -41,7 +41,7 @@ nlu:
     - Am i able to create 3 dimentional graph?
     - Can i have accesss to create a 3 dimetional graph?
     - Can i have a permission on india data portal to create a 3 dimetional graph?
-- intent: faq-visulaisation-b6/creating-three-dimensional-graph
+- intent: faq-visualisation-b6/creating-three-dimensional-graph
   examples: |
     - Procedure of creating 3 dimentional graph?
     - Steps of creating 3 dimentional graph?
@@ -49,7 +49,7 @@ nlu:
     - what i have to do create 3 dimentional graph?
     - How 3 dimentional graph created?
     - Give me idea about how do i create 3 dimentional graph
-- intent: faq-visulaisation-b6/when-use-choropleth-map
+- intent: faq-visualisation-b6/when-use-choropleth-map
   examples: |
     - Now can i use a choropleth map?
     - What situation suitable for use a choropleth map?
@@ -58,7 +58,7 @@ nlu:
     - When i can acces to use choropleth map?
     - Can i able to use choropleth map?
     - When should I use a Choropleth map
-- intent: faq-visulaisation-b6/possibility-sorting-bars
+- intent: faq-visualisation-b6/possibility-sorting-bars
   examples: |
     - Can i am able to sort my bars?
     - I want to sort the bars
@@ -66,7 +66,7 @@ nlu:
     - Is it possible to me sort the bars?
     - can i have permission to sort my bars?
     - Is India data portal allow to sort the bars?
-- intent: faq-visulaisation-b6/maximum-indicators-one-visulisation
+- intent: faq-visualisation-b6/maximum-indicators-one-visulisation
   examples: |
     - How many number of indicators i can show in one visualization?
     - Max number of indicator i can fix in one visualization
@@ -74,7 +74,7 @@ nlu:
     - One visulization contain max number of indicators?
     - Number of indicator present in one visualization at a time?
     - How many new indicators can be added in a visualization?
-- intent: faq-visulaisation-b6/save-visualisations-among-my-graphics-my-gallery
+- intent: faq-visualisation-b6/save-visualisations-among-my-graphics-my-gallery
   examples: |
     - Where my visualization store among graphics and gallery?
     - where i save my visualization other then graphic and my gallery?
@@ -82,7 +82,7 @@ nlu:
     - Is visualization save any other apart My graphics and my Gallery?
     - I don't want My graphics and gallery than where is my visualization saved?
     - Where do I save my visualizaitons among My Graphics and My Gallery
-- intent: faq-visulaisation-b6/why-save-svg-format
+- intent: faq-visualisation-b6/why-save-svg-format
   examples: |
     - What is reason behind to save in SVG format?
     - How to save in SVG format ?
@@ -91,7 +91,7 @@ nlu:
     - Why it is required to save in SVG format?
     - Why it is important to save in SVG format?
     - saving in SVG format.
-- intent: faq-visulaisation-b6/download-visual-suggested-format
+- intent: faq-visualisation-b6/download-visual-suggested-format
   examples: |
     - What is the prior format  for downloading any visualization?
     - What is the right format for downloading any visualization?
@@ -105,7 +105,7 @@ nlu:
     - what is the suggested format for downloading my visual?
     - Download the visualization?
     - What is the suggested format for downloading any visual
-- intent: faq-visulaisation-b6/add-dataset-compare-dataset-difference
+- intent: faq-visualisation-b6/add-dataset-compare-dataset-difference
   examples: |
     - Differentiate between Add Dataset and Compare Dataset
     - How do you differentiate between Add Dataset and Compare Dataset?
@@ -116,7 +116,7 @@ nlu:
     - contradict between add dataset and compare dataset.
     - add dataset and compare dataset?
     - show the difference between add dataset and compare dataset.
-- intent: faq-visulaisation-b6/minimum-indicators-and-dimension-to-create-snakey-graph
+- intent: faq-visualisation-b6/minimum-indicators-and-dimension-to-create-snakey-graph
   examples: |
     - What number of minimum indicators and dimensions are required to create a Sankey Graph?
     - What is the minimum number of indicators and dimensions are needed to create a Sankey Graph?
@@ -125,7 +125,7 @@ nlu:
     - To create a Sankey Graph, which minimum number is required for indicators and dimensions?
     - create a sankey graph with minimum indicators and dimensions.
     - explain the usage of minimum indicators and dimensions to create a sankey graph
-- intent: faq-visulaisation-b6/how-to-read-sankey-chart
+- intent: faq-visualisation-b6/how-to-read-sankey-chart
   examples: |
     - How to read the Sankey Chart?
     - How can I read the Sankey Chart?
@@ -136,7 +136,7 @@ nlu:
     - read the sankey chart ,how?
     - how do i prefer the sankey chart reading?
     - How do I read the Sankey Chart
-- intent: faq-visulaisation-b6/where-give-chart-title
+- intent: faq-visualisation-b6/where-give-chart-title
   examples: |
     - how to giuve the title of the chart ?
     - address the chart's title.
@@ -150,7 +150,7 @@ nlu:
     - ways to add the title of chart
     - can you guide me how to add the chart's title?
     - Where can I give the title of Chart
-- intent: faq-visulaisation-b6/send-visualisation-on-email-id
+- intent: faq-visualisation-b6/send-visualisation-on-email-id
   examples: |
     - Is it possible to send visualization on my email I'd?
     - Is it allowed to send visualization on my email I'd?
@@ -161,7 +161,7 @@ nlu:
     - steps to send the visualizationon my mail id?
     - can you assist me how to send the visualization on my mail.
     - Can I send visualizaiton on my email id
-- intent: faq-visulaisation-b6/change-font-title
+- intent: faq-visualisation-b6/change-font-title
   examples: |
     - is it possible to change the font of the title?
     - how the font of the title is changed?
@@ -174,7 +174,7 @@ nlu:
     - define the steps to change the font of the title.
     - ways to change the title's font ,how?
     - How can I change the font of the titles
-- intent: faq-visulaisation-b6/change-font-style-on-visualisation
+- intent: faq-visualisation-b6/change-font-style-on-visualisation
   examples: |
     - Is it possible to change the font style on the visualization?
     - How can I change the font style on the visualization?
@@ -184,7 +184,7 @@ nlu:
     - steps to change the font style
     - font style is need to be changed for visualization ,how?
     - Can I change the font style on the visualizations
-- intent: faq-visulaisation-b6/create-my-own-visualisation
+- intent: faq-visualisation-b6/create-my-own-visualisation
   examples: |
     - How to create my own visualization?
     - Is it possible to create my own visualization?
@@ -193,7 +193,7 @@ nlu:
     - I need to create my own visualization but how can I do so?
     - create my visualization but how?
     - Can I create my own visualization
-- intent: faq-visulaisation-b6/maximum-visualisation-generated-for-dataset-at-a-time
+- intent: faq-visualisation-b6/maximum-visualisation-generated-for-dataset-at-a-time
   examples: |
     - Give the maximum number of visualizations generated for any selected datasets at a time.
     - For selected datasets at a time,what is the maximum number of visualization generated?
@@ -202,7 +202,7 @@ nlu:
     - at a time ,how many max. number of visualizations are generated?
     - ways to generate maximum number of visualization at a time.
     - What is the maximum number of visualizations generated for any selected datasets at a time
-- intent: faq-visulaisation-b6/select-dimension-or-indicator-by-default
+- intent: faq-visualisation-b6/select-dimension-or-indicator-by-default
   examples: |
     - can i select the dimensions or indicators by default?
     - by default , selection of dimensions or indicators is possible ?
@@ -211,7 +211,7 @@ nlu:
     - what if i  select the dimensions and indicators by default?
     - selection of dimensions and indicatiors can be done by default, isn't?
     - Should I by default select the dimension or indicator
-- intent: faq-visulaisation-b6/possibility-rearranging-visualisation-parts-like-legends-as-my-choice
+- intent: faq-visualisation-b6/possibility-rearranging-visualisation-parts-like-legends-as-my-choice
   examples: |
     - rearrange the visualization part
     - how can i  rearrange the visulization parts like legend as per my choice
@@ -220,7 +220,7 @@ nlu:
     - do i prefer to change the lengend in visualization part?
     - visualization part requires a rearrangement of legends?
     - Can I rearrange the visulization parts like legend as per my choice
-- intent: faq-visulaisation-b6/possibility-customize-bins-in-histogram
+- intent: faq-visualisation-b6/possibility-customize-bins-in-histogram
   examples: |
     - customizing bin in a histogram.
     - do i prefer customization in histogram?
@@ -229,7 +229,7 @@ nlu:
     - in a histogram ,customization is required?
     - in a histogram , is a customization is done?
     - Can I customize bins in a Histogram
-- intent: faq-visulaisation-b6/maximum-visualizations-I-can-download
+- intent: faq-visualisation-b6/maximum-visualizations-I-can-download
   examples: |
     - Give the maximum number of visualizations downloaded  for any selected datasets for any point.
     - For selected datasets ,what is the maximum number of visualization download?
@@ -239,7 +239,7 @@ nlu:
     - ways to download maximum number of visualization at  any point of time.
     - download maximum number of visualizations.
     - What is the maximum number of visualizations I can download for any point of time
-- intent: faq-visulaisation-b6/what-happen-when-click-reset-all
+- intent: faq-visualisation-b6/what-happen-when-click-reset-all
   examples: |
     - what will happen if i click reset all
     - click reset means ?
@@ -248,7 +248,7 @@ nlu:
     - help with reset
     - what is reset all do ?
     - what is gonna happen with reset all?
-- intent: faq-visulaisation-b6/export-selected-data
+- intent: faq-visualisation-b6/export-selected-data
   examples: |
     - how to export selected data ?
     - help to export data
@@ -258,7 +258,7 @@ nlu:
     - trouble exporting selected data
     - trouble with data export
     - issue with data exporting
-- intent: faq-visulaisation-b6/change-visulaisation-to-local-language
+- intent: faq-visualisation-b6/change-visulaisation-to-local-language
   examples: |
     - change my visualisation into local language
     - help with visualisation in local language
@@ -270,7 +270,7 @@ nlu:
     - how to change language
     - change language
     - How can I change my visualization into my local language
-- intent: faq-visulaisation-b6/write-title-in-local-language
+- intent: faq-visualisation-b6/write-title-in-local-language
   examples: |
     - local language title
     - change title language to local language
@@ -278,7 +278,7 @@ nlu:
     - wrtie title in local language
     - change title language
     - writting title language in local language
-- intent: faq-visulaisation-b6/search-previously-created-visulaisation
+- intent: faq-visualisation-b6/search-previously-created-visulaisation
   examples: |
     - searching perviously created visualisations
     - help with finding perviously created visualisations
@@ -288,7 +288,7 @@ nlu:
     - precodeure to find previously created visualisations
     - can i see my previously created visualisation
     - Can I search for my previously created visualizations
-- intent: faq-visulaisation-b6/search-visualisation-in-graphic-gallery
+- intent: faq-visualisation-b6/search-visualisation-in-graphic-gallery
   examples: |
     - help with searcjing for visualisation in graphic gallery
     - visulatsation search help

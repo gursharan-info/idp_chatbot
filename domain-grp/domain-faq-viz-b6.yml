@@ -5,125 +5,103 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- affirm:
-    use_entities: true
-- faq:
-    use_entities: true
-- greet:
-    use_entities: true
 
-- deny:
-    use_entities: true
-- mood_great:
-    use_entities: true
-- mood_unhappy:
-    use_entities: true
-- idp_bot_intro:
-    use_entities: true
-- faq-visulaisation-b1:
-    use_entities: true
-- faq-visulaisation-b3:
-    use_entities: true
-- faq-visualisation-b4:
-    use_entities: true
-- faq-visualisation-b5:
-    use_entities: true
-- faq-visulaisation-b6:
+- faq-visualisation-b6:
     use_entities: true
 entities: []
 slots: {}
 responses:
-  utter_faq-visulaisation-b6/maximum-number-datasets-compare: #181
+  utter_faq-visualisation-b6/maximum-number-datasets-compare: #181
   - text: You can compare a maximum of 2 datasets at a time
 
-  utter_faq-visulaisation-b6/create-new-indicators: #182
+  utter_faq-visualisation-b6/create-new-indicators: #182
   - text: On the Visualise page, go to the left hand side of the page where you will find the indicators option under the data set tab. Click on indicators and on the right hand side of the pop-up, there will be an option to create your own indicator.
 
-  utter_faq-visulaisation-b6/choropleth-map: #185
+  utter_faq-visualisation-b6/choropleth-map: #185
   - text: choropleth map is a type of thematic map in which a set of pre-defined areas is colored or patterned in proportion to a statistical variable that represents an aggregate summary of a geographic characteristic within each area.
 
-  utter_faq-visulaisation-b6/new-indicator-using-seperate-datasets: #187
+  utter_faq-visualisation-b6/new-indicator-using-seperate-datasets: #187
   - text: A new indicator can be created for the respective datasets that is selected
   
-  utter_faq-visulaisation-b6/possibility-creating-three-dimensional-graph: #188
+  utter_faq-visualisation-b6/possibility-creating-three-dimensional-graph: #188
   - text: Currently we do not have the option to create a 3 dimensional graph
 
-  utter_faq-visulaisation-b6/creating-three-dimensional-graph: #189
+  utter_faq-visualisation-b6/creating-three-dimensional-graph: #189
   - text: Currently we do not have the option to create a 3 dimensional graph
 
-  utter_faq-visulaisation-b6/when-use-choropleth-map: #191
+  utter_faq-visualisation-b6/when-use-choropleth-map: #191
   - text: A choropleth map is best used to represents an aggregate summary of a geographic characteristic within each area, such as population density or per-capita income.
 
-  utter_faq-visulaisation-b6/possibility-sorting-bars: #193
+  utter_faq-visualisation-b6/possibility-sorting-bars: #193
   - text: Yes, you can sort the bars in ascending or descending order and you can sort them alphabetically or by indicator value 
 
-  utter_faq-visulaisation-b6/maximum-indicators-one-visulisation: #194
+  utter_faq-visualisation-b6/maximum-indicators-one-visulisation: #194
   - text: You can select as many indicator available in the dataset
 
-  utter_faq-visulaisation-b6/save-visualisations-among-my-graphics-my-gallery: #199
+  utter_faq-visualisation-b6/save-visualisations-among-my-graphics-my-gallery: #199
   - text: My graphics is you personal space for saving visualisation and graphics gallery lets you share your visualisation with everyon else. It is completly your choice where to save your visualisation. 
 
-  utter_faq-visulaisation-b6/why-save-svg-format: #202
+  utter_faq-visualisation-b6/why-save-svg-format: #202
   - text: SVG (Scaleable Vector Graphics) files are ideal for saving, as the name suggests is infinitely scaleable; they will never lose their sharpness.
 
-  utter_faq-visulaisation-b6/download-visual-suggested-format: #203
+  utter_faq-visualisation-b6/download-visual-suggested-format: #203
   - text: The formats available in India Data Portal is SVG an PNG. You can download whichever you like depending on the need
 
-  utter_faq-visulaisation-b6/add-dataset-compare-dataset-difference: #204
+  utter_faq-visualisation-b6/add-dataset-compare-dataset-difference: #204
   - text: Add data set option will let you add another data set for the purpose of comparision. The Compare data set option starts with having two data set boxes to directly go into comparing data sets
 
-  utter_faq-visulaisation-b6/minimum-indicators-and-dimension-to-create-snakey-graph: #207
+  utter_faq-visualisation-b6/minimum-indicators-and-dimension-to-create-snakey-graph: #207
   - text: To create a Sankey Graph you need 2 or more indicator with any number of dimensions and in the visualise pop up additional 2 or more dimension or location needs to be selected 
 
-  utter_faq-visulaisation-b6/how-to-read-sankey-chart: #208
+  utter_faq-visualisation-b6/how-to-read-sankey-chart: #208
   - text: Sankey diagrams show the flow of resources. The key to reading and interpreting Sankey Diagrams is remembering that the width is proportional to the quantity represented.
 
-  utter_faq-visulaisation-b6/where-give-chart-title: #209
+  utter_faq-visualisation-b6/where-give-chart-title: #209
   - text: Right next to the chart name displaye on the centre top of your visualisation space, there is a small pencil icon. Click on this icon to change the title of your chart. 
 
-  utter_faq-visulaisation-b6/send-visualisation-on-email-id: #210
+  utter_faq-visualisation-b6/send-visualisation-on-email-id: #210
   - text: You can copy the shareable link by clicking on the share icon on the top right corner of your visualisation space. 
 
-  utter_faq-visulaisation-b6/change-font-title: #211
+  utter_faq-visualisation-b6/change-font-title: #211
   - text: It is not possible to change the font of your title
 
-  utter_faq-visulaisation-b6/change-font-style-on-visualisation: #212
+  utter_faq-visualisation-b6/change-font-style-on-visualisation: #212
   - text: It is not possible to change the font size of your visualisation 
 
-  utter_faq-visulaisation-b6/create-my-own-visualisation: #213
+  utter_faq-visualisation-b6/create-my-own-visualisation: #213
   - text: Once you have identified the data set to work on, you add the necesarry filters and then click on the Build your Chart option. After selecting this option a pop-up will ask for additional information, you can fill this in if needed and click on Visualise at the bottom. 
 
-  utter_faq-visulaisation-b6/maximum-visualisation-generated-for-dataset-at-a-time: #215
+  utter_faq-visualisation-b6/maximum-visualisation-generated-for-dataset-at-a-time: #215
   - text: You can create upto 48 different types of visualisation using India Data Portal
 
-  utter_faq-visulaisation-b6/select-dimension-or-indicator-by-default: #216
+  utter_faq-visualisation-b6/select-dimension-or-indicator-by-default: #216
   - text: You should select a dimension and indicator for creating a visualisation
 
-  utter_faq-visulaisation-b6/possibility-rearranging-visualisation-parts-like-legends-as-my-choice: #217
+  utter_faq-visualisation-b6/possibility-rearranging-visualisation-parts-like-legends-as-my-choice: #217
   - text: No, legends cannot be rearranged as per choice
 
-  utter_faq-visulaisation-b6/possibility-customize-bins-in-histogram: #218
+  utter_faq-visualisation-b6/possibility-customize-bins-in-histogram: #218
   - text: No, it is not possible to customise bins in a Histogram 
 
-  utter_faq-visulaisation-b6/maximum-visualizations-I-can-download: #220
+  utter_faq-visualisation-b6/maximum-visualizations-I-can-download: #220
   - text: You can download as many visualisations as you want at any point in time
 
-  utter_faq-visulaisation-b6/what-happen-when-click-reset-all: #223
+  utter_faq-visualisation-b6/what-happen-when-click-reset-all: #223
   - text: You will reset all the selection you have made.
 
-  utter_faq-visulaisation-b6/export-selected-data: #225
+  utter_faq-visualisation-b6/export-selected-data: #225
   - text: India Data Portal doesn't give you the option to export data from the site. 
 
-  utter_faq-visulaisation-b6/change-visulaisation-to-local-language: #231
+  utter_faq-visualisation-b6/change-visulaisation-to-local-language: #231
   - text: To change the visualisation into your local language, click on the top right option on your screen which shows  'A/आ'. Here you can find thw various languages available. 
 
-  utter_faq-visulaisation-b6/write-title-in-local-language: #232
+  utter_faq-visualisation-b6/write-title-in-local-language: #232
   - text: Yes, you can write the title in your preffered choice of language which is available 
 
-  utter_faq-visulaisation-b6/search-previously-created-visulaisation: #235
+  utter_faq-visualisation-b6/search-previously-created-visulaisation: #235
   - text: You can view your saved visualizations in My graphics or Graphic Gallery 
 
-  utter_faq-visulaisation-b6/search-visualisation-in-graphic-gallery: #236
+  utter_faq-visualisation-b6/search-visualisation-in-graphic-gallery: #236
   - text: On the top bar under News and Graphics, you can find the Graphic Gallery. Once you are in the Graphic Gallery there will be a search box
 
 

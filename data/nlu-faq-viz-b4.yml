@@ -198,7 +198,7 @@ nlu:
     - sum of three datasets
 
 - intent: faq-visualisation-b4/selecte-district-no-result
-  examples:
+  examples: |
     - I have selected district but nothing is coming up. Why?
     - selected distrcit no results
     - No results after selecting district

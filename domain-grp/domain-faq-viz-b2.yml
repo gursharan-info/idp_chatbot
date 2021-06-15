@@ -5,28 +5,11 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- affirm:
-    use_entities: true
-- faq:
-    use_entities: true
-- greet:
-    use_entities: true
-- deny:
-    use_entities: true
-- mood_great:
-    use_entities: true
-- mood_unhappy:
-    use_entities: true
-- idp_bot_intro:
-    use_entities: true
-- faq-visulaisation-b1:
-    use_entities: true
+
+
 - faq-visualisation-b2:
     use_entities: true   
-- faq-visulaisation-b3:
-    use_entities: true
-- faq-visualisation-b4:
-    use_entities: true
+
 entities: []
 slots: {}
 responses:

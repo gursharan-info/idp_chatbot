@@ -1,6 +1,6 @@
 version: "2.0"
 nlu:
-- intent: faq-visulaisation-b3/why-add-dataset
+- intent: faq-visualisation-b3/why-add-dataset
   examples: |
     - How to add dataset?
     - Are there any steps to add dataset?
@@ -17,7 +17,7 @@ nlu:
     - Please guide how to add dataset
     - Is there any support for adding dataset?
     - Please advise/advice if there is any way to add dataset.
-- intent: faq-visulaisation-b3/options-to-make-chart-builder
+- intent: faq-visualisation-b3/options-to-make-chart-builder
   examples: |
     - How many options should we select on chart builder?
     - What are the options on chart builder?
@@ -30,7 +30,7 @@ nlu:
     - I applied all options still there is no chart built, please help.
     - How to build chart?
     - Chart not built, how to make a chart?
-- intent: faq-visulaisation-b3/to-create-state-level-chart
+- intent: faq-visualisation-b3/to-create-state-level-chart
   examples: |
     - How do we create state level chart?
     - Can I select all states to make a chart?
@@ -40,7 +40,7 @@ nlu:
     - Options to choose for state level chart
     - State chart options
     - Documentation on state level chart
-- intent: faq-visulaisation-b3/to-create-district-level-chart
+- intent: faq-visualisation-b3/to-create-district-level-chart
   examples: |
     - How do we create district level chart?
     - Can I select all districts to make a chart?
@@ -50,7 +50,7 @@ nlu:
     - Options to choose for distict level chart
     - district chart options
     - Documentation on distrct level chart
-- intent: faq-visulaisation-b3/why-select-crops
+- intent: faq-visualisation-b3/why-select-crops
   examples: |
     - Why crops should be selected
     - Is crops mandatory selection?
@@ -59,7 +59,7 @@ nlu:
     - can I clear all filters on crops?
     - I selected few crops but chart was not created, what do I do?
     - Help me selct crops for chart
-- intent: faq-visulaisation-b3/why-farm-size-category
+- intent: faq-visualisation-b3/why-farm-size-category
   examples: |
     - Why farm size category should be selected
     - What is farm size category?
@@ -69,7 +69,7 @@ nlu:
     - Form size category
     - Form size cat.
     - What is Form size option?
-- intent: faq-visulaisation-b3/why-crop-type-selected
+- intent: faq-visualisation-b3/why-crop-type-selected
   examples: |
     - Why crop type should be selected
     - What crop should I select?
@@ -81,7 +81,7 @@ nlu:
     - tupe crop selection
     - assist in choosing crop type
     - Error after selecting crop type
-- intent: faq-visulaisation-b3/why-social-grp-selected
+- intent: faq-visualisation-b3/why-social-grp-selected
   examples: |
     - Why social group should be selected
     - What social should I select?
@@ -93,7 +93,7 @@ nlu:
     - social group selection
     - assist in choosing social group
     - Error after selecting social group
-- intent: faq-visulaisation-b3/what-happens-if-we-select-all-on-chart-builder
+- intent: faq-visualisation-b3/what-happens-if-we-select-all-on-chart-builder
   examples: |
     - What happens if we select all the options on chart builder
     - can I slect all optins on chat builder?
@@ -106,7 +106,7 @@ nlu:
     - All options of chart buuilder
     - all options on chrt builder
     - eevery option on chart buukder
-- intent: faq-visulaisation-b3/why-farm-size-class-selected
+- intent: faq-visualisation-b3/why-farm-size-class-selected
   examples: |
     - Why farm size class should be selected
     - what is farm size?
@@ -117,7 +117,7 @@ nlu:
     - help required in fam size selection
     - how to select farm size?
     - form size selecttion
-- intent: faq-visulaisation-b3/how-access-full-data
+- intent: faq-visualisation-b3/how-access-full-data
   examples: |
     - How can I access the full data?
     - Fool data access
@@ -129,7 +129,7 @@ nlu:
     - Access issue with full data view
     - not able to access full dataset
     - data full view
-- intent: faq-visulaisation-b3/how-to-create-indicators
+- intent: faq-visualisation-b3/how-to-create-indicators
   examples: |
     - How to create new indicators?
     - Create new indicators
@@ -139,7 +139,7 @@ nlu:
     - Making new indicator
     - can I add new indicator?
     - How do I create a new indicator
-- intent: faq-visulaisation-b3/where-is-graph
+- intent: faq-visualisation-b3/where-is-graph
   examples: |
     - I can't see anything. Where is the graph?
     - graph not coming
@@ -151,7 +151,7 @@ nlu:
     - Graph not generated
     - Graph has a problem
     - graph has issue
-- intent: faq-visulaisation-b3/what-to-select-first
+- intent: faq-visualisation-b3/what-to-select-first
   examples: |
     - What do I select first?
     - First step to visualize dataset
@@ -162,14 +162,14 @@ nlu:
     - what to select?
     - auto select possible?
     - New to IDP, how to navigate?
-- intent: faq-visulaisation-b3/how-can-select-graph
+- intent: faq-visualisation-b3/how-can-select-graph
   examples: |
     - how to Visualize using different style of graph
     - How to change visualization of datset?
     - I want another type of graph. How can I select my graph type?
     - Where do I import different graph type?
     - how can i slect my grpah type i wnat another type of graph
-- intent: faq-visulaisation-b3/diff-bw-crop-and-crop-type
+- intent: faq-visualisation-b3/diff-bw-crop-and-crop-type
   examples: |
     - What is the difference between crop and crop type?
     - What is a crop and crop type?
@@ -177,7 +177,7 @@ nlu:
     - how is crop and crop type different?
     - why are there crop and crop types?
     - types of crop and crop, difference?
-- intent: faq-visulaisation-b3/how-change-color-of-chat
+- intent: faq-visualisation-b3/how-change-color-of-chat
   examples: |
     - How can I change the colours of the chat?
     - Skin colour change for the chat box
@@ -188,7 +188,7 @@ nlu:
     - what is the step to change background colour of chat?
     - FAQ on colour change of chaat.
     - how to change the color of my chart?>
-- intent: faq-visulaisation-b3/share-viz-of-personal-proj
+- intent: faq-visualisation-b3/share-viz-of-personal-proj
   examples: |
     - Can I use this visualisation for my personal project?
     - It is possible to use this visualisation for my personal project?
@@ -196,14 +196,14 @@ nlu:
     - It is valid to use this visualisation for my personal project?
     - Can we use india data portal's visualisation for our personal project?
     - Does India data portal publicly allow the use of visualisation?
-- intent: faq-visulaisation-b3/give-credit-to-idp
+- intent: faq-visualisation-b3/give-credit-to-idp
   examples: |
     - Do I have to cite/give credit to IDP?
     - Is it necessary to cite/give credit to India data portal?
     - Do I have to cite/give credit to India data portal?
     - will i have to give credit to idp for my wok ?
     - do i have to give credit to idp?
-- intent: faq-visulaisation-b3/can-i-share-my-viz
+- intent: faq-visualisation-b3/can-i-share-my-viz
   examples: |
     - Can I share Visualisation on my blog/website?
     - Can we share Visualisation on our blog/website?
@@ -215,7 +215,7 @@ nlu:
     - does iDp provides me with the sevice that i can share viz on my blog
     - does iDp provides me with the sevice that i can share viz on my webiste
 
-- intent: faq-visulaisation-b3/change-axis-of-graph #105
+- intent: faq-visualisation-b3/change-axis-of-graph #105
   examples: |
     - How can I change the axis of my graph?
     - is there any to change axis of graph
@@ -223,7 +223,7 @@ nlu:
     - I wanted to change axis of my visulaisation in IDP
     - can i alter axis of graphs on Indian data portal
     
-- intent: faq-visulaisation-b3/how-tochange-chart-not-liked-first-one
+- intent: faq-visualisation-b3/how-tochange-chart-not-liked-first-one
   examples: |
     - I don't like my chart. How can I get another chart?
     - How can I replace my chart with new one?
@@ -234,7 +234,7 @@ nlu:
     - The procedure of geting another chart?
     - How can we move to another chart?
     - How can i get two charts?
-- intent: faq-visulaisation-b3/graphs-diff-after-download
+- intent: faq-visualisation-b3/graphs-diff-after-download
   examples: |
     - Why does the graph look different after downloading?
     - my grph is diff after i have downloaded
@@ -242,7 +242,7 @@ nlu:
     - is there any reasons why my grpah is diff as compared to on platform
     - is there any reasons why my grpah is diff when i downloaded
     - why does the graph look different while downloading?
-- intent: faq-visulaisation-b3/bar-graphs-too-wide
+- intent: faq-visualisation-b3/bar-graphs-too-wide
   examples: |
     - My bar graph is too wide. How can I make it fit in one screen?
     - How can I manage my bar graph?
@@ -251,7 +251,7 @@ nlu:
     - How can I fit my bar graph in one screen?
     - How can i adjust length/width of my bar graph?
     - How can I adjust bar graph in one screen?
-- intent: faq-visulaisation-b3/not-able-to-understand-viz
+- intent: faq-visualisation-b3/not-able-to-understand-viz
   examples: |
     - I am not able to understand my visualisation.
     - I can not understand my visualisation.

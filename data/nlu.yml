@@ -102,7 +102,7 @@ nlu:
     - Who developed you
     - Hlo how are you
     - who made you
-- intent: faq/about_idp
+- intent: portal/about_idp
   examples: |
     - can you tell me something about idp.
     - What is idp?
@@ -157,7 +157,7 @@ nlu:
     - What graphics are possible?
     - What visualizations are possible on IDP?\
     - What visualizations are possible?
-- intent: faq/why_idp
+- intent: portal/why_idp
   examples: |
     - Why should I use IDP?
     - What is the main reason that i should choose idp

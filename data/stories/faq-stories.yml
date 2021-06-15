@@ -1,10 +1,36 @@
 version: "2.0"
 stories:
-- story: greet + about idp
+# - story: greet + about idp
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: faq
+#   - action: utter_faq
+#   - intent: faq
+#   - action: utter_faq
+- story: happy path
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: faq
-  - action: utter_faq
-  - intent: faq
-  - action: utter_faq
+  - action: action_slot_setter
+
+
+- story: ok story
+  steps:
+  # - intent: ok_faq3
+  - intent : ok
+    entities:
+      - intent_button: "Visualisation"
+  - slot_was_set:
+      - intent_button: "Visualisation"
+  # - action : utter_ok_faq3
+  - action: utter_ok
+
+- story: ok story
+  steps:
+  - intent : ok
+    entities:
+      - intent_button: "dataset"
+  - slot_was_set:
+      - intent_button: "dataset"
+  - action : utter_ok

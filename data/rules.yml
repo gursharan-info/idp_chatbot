@@ -12,12 +12,12 @@ rules:
 
 - rule: for portal
   steps:
-  - intent: portal
-  - action : action_portal_faq
+  - intent: faq-portal-b0
+  - action : action_viz_faq
 
 - rule: for faq
   steps:
-  - intent: faq
+  - intent: faq-visualisation-b0
   # - action: utter_faq
   - action : action_viz_faq
 

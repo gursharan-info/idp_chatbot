@@ -102,7 +102,7 @@ nlu:
     - Who developed you
     - Hlo how are you
     - who made you
-- intent: portal/about_idp
+- intent: faq-portal-b0/about_idp
   examples: |
     - can you tell me something about idp.
     - What is idp?
@@ -130,7 +130,7 @@ nlu:
     - What is India Data Portal?
     - what is india data portal?
     - is this portal avilable in hindi?
-- intent: faq/count_of_datasets
+- intent: faq-visualisation-b0/count_of_datasets
   examples: |
     - what are the number of datasets supported on IDP?
     - How many datasets are available on Indian Dta portal
@@ -142,7 +142,7 @@ nlu:
     - What datasets are available on IDP?
     - What datasets are available on the portal?
     - How many datasets are available on the India Data Portal?
-- intent: faq/type_of_viz
+- intent: faq-visualisation-b0/type_of_viz
   examples: |
     - what type of visulaisations are suuported by India data portal
     - Unique vizulations present on IDP are?
@@ -155,9 +155,9 @@ nlu:
     - what graphics are possible on IDP?
     - What graphics are available?
     - What graphics are possible?
-    - What visualizations are possible on IDP?\
+    - What visualizations are possible on IDP?
     - What visualizations are possible?
-- intent: portal/why_idp
+- intent: faq-portal-b0/why_idp
   examples: |
     - Why should I use IDP?
     - What is the main reason that i should choose idp
@@ -170,7 +170,7 @@ nlu:
     - How do I learn about India Data Portal?
     - How do I learn about IDP?
     - What features are available in IDP?
-- intent: faq/source_of_data
+- intent: faq-visualisation-b0/source_of_data
   examples: |
     - What is the source of the data?
     - What is the source of the data present on indian data portal
@@ -179,7 +179,7 @@ nlu:
     - Are all sources presnt here legit?
     - what are the sources ?
     - Is there any private data on the portal?
-- intent: faq/will_addtional_sources_be_added
+- intent: faq-visualisation-b0/will_addtional_sources_be_added
   examples: |
     - Will additional training materials/videos for different visualization scenarios be posted on the website?
     - in future can i expect to see more datasets on this platform
@@ -188,7 +188,7 @@ nlu:
     - In future are there any chances that i will see different repos over here
     - in coming future will more data be presnt on here.
     - how can I get training to use idp?
-- intent: faq/different_langauges_availability
+- intent: faq-visualisation-b0/different_langauges_availability
   examples: |
     - Is it available in other Indian languages? If yes, which ones?
     - possible to see IDP in other indian langs like bengali,telugu oriya etc
@@ -200,7 +200,7 @@ nlu:
     - What diff langs you support
     - is the portal available in hindi?
     - Can I write the title in my Local Language
-- intent: faq/paid_service_or_not
+- intent: faq-visualisation-b0/paid_service_or_not
   examples: |
     - is it a paid service?
     - Do I have to pay to use this platform
@@ -217,7 +217,7 @@ nlu:
     - is idp paid?
     - does idp have any paid features?
     - Is IDP paid or free?
-- intent: faq/frequently-data-updated
+- intent: faq-visualisation-b0/frequently-data-updated
   examples: |
     - When data updated
     - how many time data updated in a year?
@@ -226,7 +226,7 @@ nlu:
     - when we can update data on india data portal
     - frequency of uploading data on IDP in a year
     - How frequently is the data updated?
-- intent: faq/part-available-data
+- intent: faq-visualisation-b0/part-available-data
   examples: |
     - What are the sectors of available data?
     - what part of available data?
@@ -242,7 +242,7 @@ nlu:
     - What are these 20 datasets?
     - Is there data on agriculture?
     - Is there Financial Inclusion data on the portal?
-- intent: faq/alternate-sources-data
+- intent: faq-visualisation-b0/alternate-sources-data
   examples: |
     - Are there any alternate sources for data?
     - is there any other source of data?
@@ -252,7 +252,7 @@ nlu:
     - who is data source of data
     - is this portal available in hindy?
     - where can I  find the source of this data set
-- intent: faq/share-upload-dataset
+- intent: faq-visualisation-b0/share-upload-dataset
   examples: |
     - How do I share/ upload a dataset from IDP
     - steps of share dataset
@@ -260,7 +260,7 @@ nlu:
     - how i can upload dataset
     - procedure of share/upload dataset
     - how can i share dataset file
-- intent: faq/multiple-data-set-same-parameters-which-useful
+- intent: faq-visualisation-b0/multiple-data-set-same-parameters-which-useful
   examples: |
     - how can we know which dataset has been found more useful by users?
     - would there be multiple data sets for the same parameters?
@@ -268,7 +268,7 @@ nlu:
     - in multiple data sets which dataset is more useful
     - how user know about more useful dataset in multiple datasets
     - List the datasets covered on the portal
-- intent: faq/help-technical-issues-portal
+- intent: faq-visualisation-b0/help-technical-issues-portal
   examples: |
     - How can I report any technical issues with the portal?
     - How can i report a issue?
@@ -285,7 +285,7 @@ nlu:
     - Can I speak to someone
     - can I get a phone number?
     - how can I get in touch with idp?
-- intent: faq/trust-data-sourced-from-government-agencies
+- intent: faq-visualisation-b0/trust-data-sourced-from-government-agencies
   examples: |
     - How do we trust this data since the data is sourced from government agencies?
     - why we trust this data?
@@ -293,7 +293,7 @@ nlu:
     - can i trust this source
     - is this data reliable?
     - how can we trust this data?
-- intent: faq/materials-videos-different-visualization-posted-website
+- intent: faq-visualisation-b0/materials-videos-different-visualization-posted-website
   examples: |
     - Will additional training materials/videos for different visualization scenarios be posted on the website?
     - meririal or videos of visualization posted on website?
@@ -301,7 +301,7 @@ nlu:
     - portal is contuniously uploaded visulization videos?
     - visulixation senerio regularly uploaded?
     - are training materials available?
-- intent: faq/visualisations-made-downloaded-other-languages
+- intent: faq-visualisation-b0/visualisations-made-downloaded-other-languages
   examples: |
     - Can the visualisations be made and downloaded in other languages?
     - visulization support other languages?

@@ -97,6 +97,6 @@ responses:
 actions: 
 - action_slot_setter
 - action_viz_faq
-- action_portal_faq
+# - action_portal_faq
 forms: {}
 e2e_actions: []

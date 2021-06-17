@@ -19,24 +19,40 @@ nlu:
     - can i ask is there any way to diffrentiate bw diffrents data sets on platform?
     - any way we can make a contrast on dissimilar datasets on IDP
     - can we comapre datasets on IDP?
+    - how do we compare the datasets on idp?
+    - how do you compare datasets in idp?
+    - how can we compare datasets on indian data porttal
+    - can you list the datasets that compare data on indian data portal
+    - can you list the datasets that compare data on idp?
     - is there way to make distinction between diff. datasets ?
+
 - intent: faq-visualisation-b1/add-dataset-on-idp
   examples: |
     - How to add dataset
     - can we upload datasets on IDP
-    - is there any way to add new data on IDP
+    - is there any way to add new data on Iindiadataportal
     - Does Indian data portal supports adding personal custom data on IDP
     - any way to upload additional datasets on IDP
     - can we make our own datasets available on IDP
     - How to add a dataset
+    - how do you upload additional datasets on the indian data portal
+    - is there a way to add further datasets on idp
     - how add dataset
+    - dataset uploading present on Indian data portal?
+    - how do i upload additional datasets to the indiandataportal
+    - how can i upload datasets to indian data portal
+    - Ahmm how can i upload datasets to indian dp
+
 - intent: faq-visualisation-b1/location-meaning-idp
   examples: |
     - What does location mean in IDP
     - what does the loaction indicator signifies on Indian data portal
     - i saw location button on IDP what does that signify
     - what does loaction indicator suggest on IDP
+    - what does location in indaindataportal mean?
+    - location what does it really mean on Indiaan data portal
     - does location indicator signify something important on INDIAN DATA PORTAL?
+
 - intent: faq-visualisation-b1/only-india-is-covered
   examples: |
     - Does is cover only India
@@ -53,18 +69,23 @@ nlu:
   examples: |
     - Is it mandatory to select a location for visualisation
     - is it necessary to salect location for making viz
-    - to plot diff. visualisation is it compulsory to select location
+    - to plot diff. visualisation is it compulsory to select location on iDP
     - selecting location is a pre requisite for making diffrent visualisation?
     - is it really important to select loaction for plot visualisation?
-    - what norms are mandatory for selection of visualisations.
+    - what norms are mandatory for crafting vizss on INDDIAN DATA PRTAL
+    - what norms are mandatory for making of visualisations on INDIAN DATA PORTAL
+    
 - intent: faq-visualisation-b1/can-i-select-dis-without-state
   examples: |
     - Can I select a District without selecting a State
+    - can i choose a district without selecting a state?
+    - is there a way to select a district without selecting a state?
     - is it possible to select district without having selected a state
     - does IDP provides me with option of having to select district without selecting state
     - is it feasible to select a district without having to select a state
     - is it viable to select a district without having to select a state
     - Is it mandatory to select Districts after states?
+    
 - intent: faq-visualisation-b1/can-change-color-of-viz
   examples: |
     - How do I change color in visualisation?

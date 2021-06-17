@@ -198,6 +198,9 @@ nlu:
     - Does this provide support for major indian language except English
     - how many langs suport do you give
     - What diff langs you support
+    - how many langauges on IDP ?
+    - how many langs aere on INDIAN DATA PORTAL PRESENT?
+    - presently you suppport which indina langs?
     - is the portal available in hindi?
     - Can I write the title in my Local Language
 - intent: faq-visualisation-b0/paid_service_or_not

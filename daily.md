@@ -12,4 +12,4 @@
 
 4. Have to Show sir about button functionality added
 
-5. Have to discuss with baval is there any way we can see changes on server code if we make changes in Local Repo from here ( Important )
+5. :heavy_check_mark: Have to discuss with baval is there any way we can see changes on server code if we make changes in Local Repo from here ( Important ) ---> ( we have to make a shell file and have to write a cron job)

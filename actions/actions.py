@@ -70,11 +70,15 @@ class ActionVizFaq(Action):
         
         # dictionary for mapped retrieval intents
         mapped_intent= { "faq-portal" : "Portal",
-                        "faq-visualisation":"Visualisation"}
+                        "faq-visualisation":"Visualisation",
+                        None: "No-option"}
 
         # to get a slot value (here --> slot is intent_button)
         print("slots value is ",tracker.slots['intent_button']) 
-        slot_value_clicked = tracker.slots['intent_button']
+        if tracker.slots['intent_button'] ==None:
+            slot_value_clicked = mapped_intent[tracker.slots['intent_button']]
+        else:
+            slot_value_clicked = tracker.slots['intent_button']
 
         # to get intent of user message
         _intent=tracker.latest_message['intent'].get('name')
@@ -87,7 +91,7 @@ class ActionVizFaq(Action):
         print("retrieval we found ",intent_found)
 
         
-        print(slot_value_clicked[0],_intent[:-3])
+        # print(mapped_intent[tracker.slots['intent_button']],_intent[:-3])
 
         if _intent[:-3] == slot_value_clicked[0] :
             """ if intent found is same as faq-visualisation or faq-portal or any other category
@@ -99,9 +103,16 @@ class ActionVizFaq(Action):
             intent_found = f'utter_{eval(intent_found)}'
             
             dispatcher.utter_message(response = intent_found) # use response for defining intent name
+      
+
+           
+        elif mapped_intent[tracker.slots['intent_button']] == 'No-option':
+             dispatcher.utter_message(text = "Please select any option first",buttons=buttons )
+            #  dispatcher.utter_message(text = f"Do you want to ask question from {mapped_intent[slot_value_clicked[0]]} otherwise select options from"
+            #  ,buttons=buttons)
         else:
-             dispatcher.utter_message(text = f"Please select your questions from {mapped_intent[slot_value_clicked[0]]}"
-             ,buttons=buttons)
+            dispatcher.utter_message(text = f"Do you want to ask question from {mapped_intent[ _intent[:-3]]} ,'\n', if yes please select an options from below"
+            ,buttons=buttons)
 
         return []
 

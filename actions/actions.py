@@ -106,12 +106,12 @@ class ActionVizFaq(Action):
       
 
            
-        elif mapped_intent[tracker.slots['intent_button']] == 'No-option':
+        elif slot_value_clicked == 'No-option':
              dispatcher.utter_message(text = "Please select any option first",buttons=buttons )
             #  dispatcher.utter_message(text = f"Do you want to ask question from {mapped_intent[slot_value_clicked[0]]} otherwise select options from"
             #  ,buttons=buttons)
         else:
-            dispatcher.utter_message(text = f"Do you want to ask question from {mapped_intent[ _intent[:-3]]} ,'\n', if yes please select an options from below"
+            dispatcher.utter_message(text = f"Do you want to ask question from {mapped_intent[ _intent[:-3]]} , If yes please select an options from below"
             ,buttons=buttons)
 
         return []

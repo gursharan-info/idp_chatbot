@@ -102,34 +102,7 @@ nlu:
     - Who developed you
     - Hlo how are you
     - who made you
-- intent: faq-portal-b0/about_idp
-  examples: |
-    - can you tell me something about idp.
-    - What is idp?
-    - hey quickie about indian data portal
-    - wanted to have quick info about india data portal
-    - will you be able to tell me something about IDP
-    - what about idp
-    - could you pls get me brief info about IDP
-    - anything you can tell me iDP
-    - Can I know something about idp
-    - what is IDP
-    - Idp
-    - what is iDP
-    - what is idp?
-    - idp?
-    - what is indian data portal
-    - what is idp
-    - idp
-    - What is idp
-    - What is IDP
-    - can you talk to me about IDP
-    - I want to learn about IDP
-    - What is India Data Portal used for?
-    - What is IDP?
-    - What is India Data Portal?
-    - what is india data portal?
-    - is this portal avilable in hindi?
+
 - intent: faq-visualisation-b0/count_of_datasets
   examples: |
     - what are the number of datasets supported on IDP?
@@ -157,19 +130,7 @@ nlu:
     - What graphics are possible?
     - What visualizations are possible on IDP?
     - What visualizations are possible?
-- intent: faq-portal-b0/why_idp
-  examples: |
-    - Why should I use IDP?
-    - What is the main reason that i should choose idp
-    - What is USP of Indian data portal
-    - unique speciality about idp can you tell
-    - how indian data portal is best for me ?
-    - why only Indian DP?
-    - whys should I use idp?
-    - Can journalists use the portal?
-    - How do I learn about India Data Portal?
-    - How do I learn about IDP?
-    - What features are available in IDP?
+
 - intent: faq-visualisation-b0/source_of_data
   examples: |
     - What is the source of the data?
@@ -229,22 +190,7 @@ nlu:
     - when we can update data on india data portal
     - frequency of uploading data on IDP in a year
     - How frequently is the data updated?
-- intent: faq-visualisation-b0/part-available-data
-  examples: |
-    - What are the sectors of available data?
-    - what part of available data?
-    - name of parts of available data
-    - what type of data available on india data portal
-    - parts of available data?
-    - name of sectors of data on india data portal
-    - What sectors are covered in IDP?
-    - Domains covered in the portal
-    - What domains are covered in IDP?
-    - What sectors are covered in the portal?
-    - What are the categories of data available?
-    - What are these 20 datasets?
-    - Is there data on agriculture?
-    - Is there Financial Inclusion data on the portal?
+
 - intent: faq-visualisation-b0/alternate-sources-data
   examples: |
     - Are there any alternate sources for data?

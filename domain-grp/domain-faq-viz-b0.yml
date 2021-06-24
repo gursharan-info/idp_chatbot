@@ -26,6 +26,8 @@ intents:
 - ok
 
 - faq-portal-b0
+
+
 entities:
 - intent_button
 slots:
@@ -51,14 +53,12 @@ responses:
   - text: I am a bot that is here to help you for INDIAN DATA portal
   - text: ' Hey I am a chatbot to help you here'
   - text: I am bot made by IDP
-  utter_faq-portal-b0/about_idp:
-  - text: IDP is Your one-stop destination for open-access data on agriculture, rural development and financial inclusion in India.The portal contains a data repository with processed and documented public datasets on related themes. For agriculture, these include crops, water, livestock, public investments, etc at levels such as districts, tehsils, and villages with a largely rural focus and socio-economic characteristics in both rural and urban areas at granular spatial scales like district, town and ward spanning the entire country.
+  
   utter_faq-visualisation-b0/count_of_datasets:
   - text: There will be about 20 datasets available on the IDP portal by end July.
   utter_faq-visualisation-b0/type_of_viz:
   - text: The list of visualizations available is wide (about 30 kinds of visualisations). They range from :-Lollipop, stacked bar plot, maps, grouped bar plots, grouped scattered plots, treemap, donut, Sankey, infographic, frequency histogram, Grouped Bubble chart, beeswarm plot,
-  utter_faq-portal-b0/why_idp:
-  - text: 'With the help of IDP, a user can use the multiple datasets available, which have been already cleaned and vetted and have been presented in easy to understand manner. The users can make visualisations based on the chosen parameters as per the requirement of their writing. What’s even more exciting is that these visualisations are easily downloadable and can be inserted straight away in a story. '
+  
   utter_faq-visualisation-b0/source_of_data:
   - text: The IDP uses multiple sources for the data but mostly relies on publically available and have been shared by government institutions, who frankly are the only bodies in the country to have that kind of data collection capabilities. The repository for visualization is exhaustive with overlapping as well as independent well-established remote-sensing and satellite products.
   utter_faq-visualisation-b0/will_addtional_sources_be_added:
@@ -70,8 +70,7 @@ responses:
 ####################### prashant
   utter_faq-visualisation-b0/frequently-data-updated: #10
   - text: The data is updated on quarterly basis on IDP and daily for HFI indicators
-  utter_faq-visualisation-b0/part-available-data: #14
-  - text: The major sectors include Financial Inclusion and Agriculture there are four other allied sectors related to these two
+  
   utter_faq-visualisation-b0/alternate-sources-data: #19
   - text: Data on the India Data Portal is sourced from government websites and you may visit the source websites mentioned as alternate data sources
   utter_faq-visualisation-b0/share-upload-dataset: #21

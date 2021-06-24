@@ -1,0 +1,20 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- - faq-portal-b0:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_faq-portal-b0/about_idp: 
+  - text: IDP is Your one-stop destination for open-access data on agriculture, rural development and financial inclusion in India.The portal contains a data repository with processed and documented public datasets on related themes. For agriculture, these include crops, water, livestock, public investments, etc at levels such as districts, tehsils, and villages with a largely rural focus and socio-economic characteristics in both rural and urban areas at granular spatial scales like district, town and ward spanning the entire country.
+
+  utter_faq-portal-b0/why_idp:
+  - text: With the help of IDP, a user can use the multiple datasets available, which have been already cleaned and vetted and have been presented in easy to understand manner. The users can make visualisations based on the chosen parameters as per the requirement of their writing. What’s even more exciting is that these visualisations are easily downloadable and can be inserted straight away in a story. 
+
+  utter_faq-portal-b0/part-available-data: #14
+  - text: India Data portal covers multiple domains like Agriculture, Financial Inclusion, Rural Development, Economy, Socio- economic, Climate etc

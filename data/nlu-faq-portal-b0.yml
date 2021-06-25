@@ -16,6 +16,7 @@ nlu:
     - what is iDP
     - what is idp?
     - idp?
+    - why here?
     - what is indian data portal
     - what is idp
     - idp
@@ -34,6 +35,7 @@ nlu:
     - unique speciality about idp can you tell
     - how indian data portal is best for me ?
     - why only Indian DP?
+    - why should i use it?
     - whys should I use idp?
     - Can journalists use the portal?
     - How do I learn about India Data Portal?
@@ -76,7 +78,7 @@ nlu:
     - When recent data is upload?
     - recent data is available on inida data portal?
 
-- intent: faq-portal-b0/recent-data-available
+- intent: faq-portal-b0/employment-data-available #247
   examples: |
     - Is employment data available on IDP? 
     - Employment data available?
@@ -85,3 +87,42 @@ nlu:
     - employment data is present on the portal?
     - portal has employment data?
     - IDP has employment data ?
+
+- intent: faq-portal-b0/agriculture-data-available #249
+  examples: |
+    - What type of Agriculture  data is available on IDP?
+    - Agriculture data present on India data portal?
+    - Portal has Agriculture data?
+    - any agriculture data is available.
+
+- intent: faq-portal-b0/Is-data-reliable #323
+  examples: |
+    - Is the data reliable?
+    - how we find data is reliable?
+    - reliability of data.
+    - data is reliable?
+    - data from here is reliable
+    - how we figure out the reliability of the fdata?
+    - is data reliable for user?
+
+- intent: faq-portal-b0/How-portal-useful  #324
+  examples: |
+    - How is the portal useful? 
+    - portal is useful.
+    - is portal useful?
+    - is this useful
+    - any usefullness of it ?
+    - how portal is useful for us?
+    - how IDPortal works better for us?
+    - IDP portal is useful . how?
+
+- intent: faq-portal-b0/Why-need-data   #325
+  examples: |
+    - Why do we need data? 
+    - why data is required?
+    - what is need of data?
+    - why data is needed ?
+    - what is the necessity of data?
+    - how much data is needed?
+    - necessity of data.
+    - need of data.why?

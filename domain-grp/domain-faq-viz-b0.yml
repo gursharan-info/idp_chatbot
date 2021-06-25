@@ -24,10 +24,6 @@ intents:
 - out_of_scope:
     use_entities: true
 - ok
-
-- faq-portal-b0
-
-
 entities:
 - intent_button
 slots:

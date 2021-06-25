@@ -1,0 +1,93 @@
+version: "2.0"
+nlu:
+
+- intent: faq-train-b0/online-resource-for-training #350
+  examples: |
+  - Do you have any online resources for training?
+  - do you have online training resources?
+  - are there any online resources for training?
+  - Do you have any training resources available online?
+  - any online training resources available on idp?
+  - does idp provide any online training resource?
+  - any online training resource?
+- intent: faq-train-b0/tutorial-on-how-to-use-idp #351
+  examples: |
+  - Where can someone get help or tutorials on using the India Data Portal?
+  - Where can one get help on using India Data Portal?
+  - Where can one go for information on how to use the India Data Portal?
+  - any tutorial available on how to use the portal? 
+  - any suggestions on how india data portal can be used ?
+  - Where can one go for guidance or tutotrials on how to use India Data Portal?
+- intent: faq-train-b0/free-online-tutorials-idp  #352
+  examples: |
+  -Where can I get instructions on how to utilise the India Data Portal?
+  -What is the best place to learn how to use the India Data Portal?
+  -Where may one get instructions for using the Idp?
+  -are there any tutorials on idp?
+  -how to get start with idp?
+  -Are there any free online tutorials available on India Data Portal?
+- intent: faq-train-b0/workshops-by-idp #353
+  examples: |
+  -Do you provide any training sessions? If so, where can I get additional information?
+  -Are there any workshops that you offer? If this is the case, where can I learn more?
+  -If there are any workshops that you run? how can I know more?
+  -does idp supervise any workshops? if so ,then where can i get details?
+  -any workshops regulated by idp? how can we get details about that?
+  -Do you conduct any workshops? if yes, where can I find more details?
+  -any training sessions by idp?
+- intent: faq-train-b0/physical-workshop  #354
+  examples: |
+  -Do you provide physical training or workshops to your users?
+  -Do you organise physical training sessions or workshops?
+  -does idp run any physical training sessions or workshops?
+  -is India data Portal undertaking any physical training?
+  -physical workshop is conducted by idp?
+  -Do you conduct physical trainings or workshops?
+- intent: faq-train-b0/training-material-on-youtube #355
+  examples: |
+  -Is there any training material available on YouTube for India Data Portal?
+  -is there any youtube content available for idp training?
+  -Does idp training material available on youtube?
+  -Is there any training material for India Data Portal on YouTube?
+  -is there any youtube chanel for idp training?
+- intent: faq-train-b0/idp-training-incharge  #356
+  examples: |
+  -Who is in charge of IDP training?
+  -IDP trainings are conducted by whom?
+  -Who is responsible for IDP training?
+  -Who teaches IDP courses?
+  -idp training is undertaken by whom?
+- intent: faq-train-b0/training-participation-recognition #357
+  examples: |
+  -Will I be recognised for my participation in a training programme?
+  -Will I get recognised after completing a training programme?
+  -is there any endorsements after attending training sessions?
+  -does idp offers any certification for trainees who join training programs?
+  -Will I be honored after finishing a training programme?
+  -Will I get an acknowledgement after attending a training program?
+- intent: faq-train-b0/how-to-send-feedback #358
+  examples: |
+  -how can one send feeback to idp?
+  -What is the best way for me to provide feedback?
+  -How do I send my feedback?
+  -best way for submitting a feedback?
+  -what is the best way to give the feedback?
+  -How can I send my feedbacks?
+- intent: faq-train-b0/training-available-for-all #364
+  examples: |
+  -Is training available to everyone?
+  -Is training accessible to everybody?
+  -can anyone get idp training?
+  -Is training available to all?
+  -who can attend idp training?
+  -Is training offered for everyone?
+  -can anyone get the training?
+- intent: faq-train-b0/portals-objective  #365
+  examples: |
+  -what is the main aim of the portal?
+  -What are the Portal's primary goals?
+  -What are the Portal's key goals?
+  -What are the main goals of the Portal?
+  -prominant goals of the India Data Portal
+  -why should i came here?
+  -what is here for me?

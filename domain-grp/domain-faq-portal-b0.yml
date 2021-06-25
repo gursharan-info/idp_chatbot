@@ -5,7 +5,7 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- - faq-portal-b0:
+- faq-portal-b0:
     use_entities: true
 entities: []
 slots: {}
@@ -18,3 +18,24 @@ responses:
 
   utter_faq-portal-b0/part-available-data: #14
   - text: India Data portal covers multiple domains like Agriculture, Financial Inclusion, Rural Development, Economy, Socio- economic, Climate etc
+  
+  utter_faq-portal-b0/most-recent-data: #245
+  - text: For some datasets you'll find data available from last month on the portal. Data is updated on the portal after it is made available by the Indian Government 
+
+  utter_faq-portal-b0/recent-data-available: #246
+  - text: India Data portal updates its data from the Govt sources. As soon as the Govt updates its data we also updates our data within few days
+ 
+  utter_faq-portal-b0/employment-data-available: #247
+  - text: Employment data is available on the portal. We have NSSO employment and MGNREGA employment data
+  
+  utter_faq-portal-b0/agriculture-data-available: #249
+  - text: India Data Portal extensively covers Agriculture data starting from Agricensus, Agri Marketing, Area Production Yield, Fertilizers sales, Cost of Cultivation. To find more go to Food and Agriculture Tab
+
+  utter_faq-portal-b0/Is-data-reliable: #323
+  - text: Our data is completely reliable since we extract our data only from government sources.
+  
+  utter_faq-portal-b0/How-portal-useful:  #324
+  - text: IDP helps you in creating different visualization which you can add in your stories making your stories enriched with data and attractive
+
+  utter_faq-portal-b0/Why-need-data:   #325
+  - text: Journalists need data as a supporting evidence for their stories. IDP will help them in creating data rish stories with simple visualizations

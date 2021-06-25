@@ -218,3 +218,13 @@ or
 
 2. Permission error ( How to save model after training from docker image itself --if possible )
 
+
+# When RASA x doesn't gives response
+
+1. ``` cd /etc/rasa ```
+2. ``` sudo docker-compose down ```
+3. ``` sudo docker-compose up ```
+
+If you see this https://forum.rasa.com/t/the-answers-of-bot-dont-appear-on-rasa-x/41000/8
+
+Then you will have to give **More space to you VM**

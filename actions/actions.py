@@ -20,8 +20,11 @@ class ActionSlotSetter(Action):
 
         
         buttons = [
-            {"payload":'/ok{"intent_button":"faq-portal"}',"title":"Portal"},
-            {"payload":'/ok{"intent_button":"faq-visualisation"}',"title":"Visualisation"}
+           {"payload":'/ok{"intent_button":"faq-portal"}',"title":"Portal"},
+            {"payload":'/ok{"intent_button":"faq-visualisation"}',"title":"Visualisation"},
+            {"payload":'/ok{"intent_button":"faq-fel"}',"title":"Fellowship"},
+            {"payload":'/ok{"intent_button":"faq-train"}',"title":"Training"},
+             {"payload":'/ok{"intent_button":"faq-dataset"}',"title":"Dataset"}
         ]
 
         dispatcher.utter_message(text="I am there to help you",buttons=buttons)
@@ -41,7 +44,8 @@ class ActionVizFaq(Action):
             {"payload":'/ok{"intent_button":"faq-portal"}',"title":"Portal"},
             {"payload":'/ok{"intent_button":"faq-visualisation"}',"title":"Visualisation"},
             {"payload":'/ok{"intent_button":"faq-fel"}',"title":"Fellowship"},
-            {"payload":'/ok{"intent_button":"faq-train"}',"title":"Training"}
+            {"payload":'/ok{"intent_button":"faq-train"}',"title":"Training"},
+            {"payload":'/ok{"intent_button":"faq-dataset"}',"title":"Dataset"}
         ]
         
         # dictionary for mapped retrieval intents
@@ -49,6 +53,7 @@ class ActionVizFaq(Action):
                         "faq-visualisation":"Visualisation",
                         "faq-fel": "Fellowship",
                         "faq-train":"Training",
+                        "faq-dataset":"Dataset",
                         None: "No-option"}
 
         # to get a slot value (here --> slot is intent_button)

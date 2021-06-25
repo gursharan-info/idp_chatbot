@@ -5,12 +5,13 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- faq-fel-b0:
+    use_entities: true
 - faq-visualisation-b5:
     use_entities: true
-- faq-visualisation-b6:
+- faq-dataset-b0:
     use_entities: true
 - ok
-- faq-portal-b0
 - affirm:
     use_entities: true
 - faq-visualisation-b0:
@@ -29,9 +30,15 @@ intents:
     use_entities: true
 - out_of_scope:
     use_entities: true
+- faq-visualisation-b6:
+    use_entities: true
+- faq-portal-b0:
+    use_entities: true
 - faq-visualisation-b2:
     use_entities: true
 - faq-visualisation-b4:
+    use_entities: true
+- faq-train-b0:
     use_entities: true
 - faq-visualisation-b3:
     use_entities: true
@@ -44,6 +51,22 @@ slots:
     type: list
     influence_conversation: true
 responses:
+  utter_faq-fel-b0/info-about-fellowship:
+  - text: If you are registered in our portal we will update you in mail.Please visit
+      the website- https://www.newslaundry.com/2021/03/05/newslaundry-and-india-data-portal-announce-data-journalism-fellowship.
+      Also  write to us at idp@isb.edu and stay tuned to our social media handles
+  utter_faq-fel-b0/fellowship-eligibility:
+  - text: For the first phase, 16 journalists will be selected as fellows by a jury
+      comprising editors from Newslaundry and editors working in Bengali, Oriya, Marathi,
+      and Telugu media.Please write to us at idp@isb.edu for more info
+  utter_faq-fel-b0/fellowship-timeperiod:
+  - text: "The first phase of the fellowship consists of a four-week programme to\
+      \ familiarize the fellows with datasets of IDP. Based on how they perform, the\
+      \ fellows move to phases 2 and 3, which include workshops on long-form writing,\
+      \ masterclasses, and a one-week research trip to the Indian School of Business\u2019\
+      s campus in Mohali."
+  utter_faq-fel-b0/cost-of-idp-training:
+  - text: Yes, all the training provided by India Data Portal is free of cost
   utter_faq-visualisation-b5/why-not-add-two-datasets:
   - text: As of now you can add only two datasets at one
   utter_faq-visualisation-b5/help-understand-indicators:
@@ -107,6 +130,147 @@ responses:
   utter_faq-visualisation-b5/How-many-visualisations-create-single-selected-data:
   - text: You can create as many visualisation as you want with the data set that
       you have choosen
+  utter_faq-dataset-b0/financial-data-available:
+  - text: India Data Portal has financial data which includes credit by Bank, Agri
+      wages, Debt and investment, Deposits with bank and many more!! Just go to Financial
+      inclusion tab in our dataset to find more
+  utter_faq-dataset-b0/socioeconomic-data-available-portal:
+  - text: India Data Portal consists of socio-economic data which has datasets like  mission
+      antodaya, household AMneties. Check the socio-economic tab for more
+  utter_faq-dataset-b0/data-Ministry-Agriculture:
+  - text: We always source our data from government sources which includes Ministry
+      of Agriculture
+  utter_faq-dataset-b0/data-Ministry-Statistics:
+  - text: We always source our data from government sources which includes Ministry
+      of Statistics
+  utter_faq-dataset-b0/National-Survey-data-available:
+  - text: Yes we have the NSSO data
+  utter_faq-dataset-b0/data-Rural-Development:
+  - text: India Data Portal has rural development which includes MGNREGA and Misson
+      Antodaya data Just go to rural development tab in our dataset to find more
+  utter_faq-dataset-b0/Learn-more-portal:
+  - text: On the top right corner tab you will find training. After clicking on training
+      you will find two subtabs- workshop & events and online training. Click on online
+      training to find tutorial videos.
+  utter_faq-dataset-b0/data-available-CMIE:
+  - text: As of now, India Data Portal has data made available from government sources.
+      In future, private data sources would be incorporated on the portal
+  utter_faq-dataset-b0/foreign-trade-data:
+  - text: This data is available on the India Pulse section of the India Data Portal
+      at https://indiadataportal.com/IndiaPulse
+  utter_faq-dataset-b0/RBI-data:
+  - text: As of now, we have Credit by banks an deposit with banks datasets from the
+      RBI
+  utter_faq-dataset-b0/Petrol-Data:
+  - text: This data is available on the India Pulse section of the India Data Portal
+      at https://indiadataportal.com/IndiaPulse
+  utter_faq-dataset-b0/e-way-bills-data:
+  - text: This data is available on the India Pulse section of the India Data Portal
+      at https://indiadataportal.com/IndiaPulse
+  utter_faq-dataset-b0/electricity-data:
+  - text: This data is available on the India Pulse section of the India Data Portal
+      at https://indiadataportal.com/IndiaPulse
+  utter_faq-dataset-b0/data-related-energy:
+  - text: This data is available on the India Pulse section of the India Data Portal
+      at https://indiadataportal.com/IndiaPulse
+  utter_faq-dataset-b0/data-micro-ATM:
+  - text: This data is available on the India Pulse section of the India Data Portal
+      at https://indiadataportal.com/IndiaPulse
+  utter_faq-dataset-b0/unemployment-data:
+  - text: This data is available on the India Pulse section of the India Data Portal
+      at https://indiadataportal.com/IndiaPulse
+  utter_faq-dataset-b0/data-UIDAI:
+  - text: This data is available on the India Pulse section of the India Data Portal
+      at https://indiadataportal.com/IndiaPulse
+  utter_faq-dataset-b0/Aadhar-data:
+  - text: This data is available on the India Pulse section of the India Data Portal
+      at https://indiadataportal.com/IndiaPulse
+  utter_faq-dataset-b0/monthly-data-sets:
+  - text: The data sets where the sources put out monthly information
+  utter_faq-dataset-b0/daily-datasets:
+  - text: The data sets where the sources put out information on a daily basis
+  utter_faq-dataset-b0/historical-data:
+  - text: Various distoric datasets are available on the portal, please visit the
+      dataset section of the portal for details
+  utter_faq-dataset-b0/COVID-data:
+  - text: You can find Covid19 data set at https://indiadataportal.com/jsi
+  utter_faq-dataset-b0/Why-India-data-portal-create:
+  - text: "The \u201CIndia Data Portal\u201D was created to provide a one-stop open-access\
+      \ portal for journalists to access, interact with, and visualize information,\
+      \ data and knowledge related to agriculture and financial inclusion, while also\
+      \ aiding other beneficiaries \u2013 researchers, students, policy makers, administrators,\
+      \ NGOs, and entrepreneurs. To know more, visit this link- https://indiadataportal.com/about?language=English&location=India"
+  utter_ok:
+  - text: Ok go ahead :)
+  utter_greet:
+  - text: Hey! How are you? How can i help you
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye It was very nice meeting you
+  utter_iamabot:
+  - text: I am a bot that is here to help you for INDIAN DATA portal
+  - text: ' Hey I am a chatbot to help you here'
+  - text: I am bot made by IDP
+  utter_faq-visualisation-b0/count_of_datasets:
+  - text: There will be about 20 datasets available on the IDP portal by end July.
+  utter_faq-visualisation-b0/type_of_viz:
+  - text: The list of visualizations available is wide (about 30 kinds of visualisations).
+      They range from :-Lollipop, stacked bar plot, maps, grouped bar plots, grouped
+      scattered plots, treemap, donut, Sankey, infographic, frequency histogram, Grouped
+      Bubble chart, beeswarm plot,
+  utter_faq-visualisation-b0/source_of_data:
+  - text: The IDP uses multiple sources for the data but mostly relies on publically
+      available and have been shared by government institutions, who frankly are the
+      only bodies in the country to have that kind of data collection capabilities.
+      The repository for visualization is exhaustive with overlapping as well as independent
+      well-established remote-sensing and satellite products.
+  utter_faq-visualisation-b0/will_addtional_sources_be_added:
+  - text: 'The IDP endeavours to regularly add more training material/videos/etc as
+      we move forward. The feedback from users would also help us in adding more material
+      and features to the portal. '
+  utter_faq-visualisation-b0/different_langauges_availability:
+  - text: The IDP portal is presently available in 5 languages Bengali, English, Hindi,
+      Oriya, Telugu.
+  utter_faq-visualisation-b0/paid_service_or_not:
+  - text: "All the datasets and visualizations on the IDP are completely free and\
+      \ open to all the users. To make full use of the portal it is advisable to create\
+      \ your login ID. What\u2019s even more exciting is that we will be running competitions\
+      \ to select best visualizations created by our users (by all of you). And the\
+      \ winners will take home exciting prizes. "
+  utter_faq-visualisation-b0/frequently-data-updated:
+  - text: The data is updated on quarterly basis on IDP and daily for HFI indicators
+  utter_faq-visualisation-b0/alternate-sources-data:
+  - text: Data on the India Data Portal is sourced from government websites and you
+      may visit the source websites mentioned as alternate data sources
+  utter_faq-visualisation-b0/share-upload-dataset:
+  - text: It is not possible to upload a data set into the India Data Portal
+  utter_faq-visualisation-b0/multiple-data-set-same-parameters-which-useful:
+  - text: The datasets on IDP are sourced from governments sources  There are multiple
+      surveys  data collection activities by the government those have common parameters
+      for data collection which is usually the mandat of data collection objective
+      So as a result there can be similar indicators but with different data collection
+      methods As far as their usability is concerned  this type comparison has not
+      been considered yet but is part of our long term plan
+  utter_faq-visualisation-b0/help-technical-issues-portal:
+  - text: Just mail to us idp@isb.edu
+  utter_faq-visualisation-b0/trust-data-sourced-from-government-agencies:
+  - text: We have collected the data from reliable government sourcs You can also
+      see the links in the about dataset page in the source link section
+  utter_faq-visualisation-b0/materials-videos-different-visualization-posted-website:
+  - text: Yes we will be uploading new training videos in our portal
+  utter_faq-visualisation-b0/visualisations-made-downloaded-other-languages:
+  - text: Yes the visualisations can be made and downloaded in the languages available
+      in the Portal
+  utter_out_of_scope:
+  - text: Out of my knowledge can you pls rephrase
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
   utter_faq-visualisation-b6/maximum-number-datasets-compare:
   - text: You can compare a maximum of 2 datasets at a time
   utter_faq-visualisation-b6/create-new-indicators:
@@ -197,23 +361,6 @@ responses:
   utter_faq-visualisation-b6/search-visualisation-in-graphic-gallery:
   - text: On the top bar under News and Graphics, you can find the Graphic Gallery.
       Once you are in the Graphic Gallery there will be a search box
-  utter_ok:
-  - text: Ok go ahead :)
-  utter_greet:
-  - text: Hey! How are you? How can i help you
-  utter_cheer_up:
-  - image: https://i.imgur.com/nGF1K8f.jpg
-    text: 'Here is something to cheer you up:'
-  utter_did_that_help:
-  - text: Did that help you?
-  utter_happy:
-  - text: Great, carry on!
-  utter_goodbye:
-  - text: Bye It was very nice meeting you
-  utter_iamabot:
-  - text: I am a bot that is here to help you for INDIAN DATA portal
-  - text: ' Hey I am a chatbot to help you here'
-  - text: I am bot made by IDP
   utter_faq-portal-b0/about_idp:
   - text: IDP is Your one-stop destination for open-access data on agriculture, rural
       development and financial inclusion in India.The portal contains a data repository
@@ -222,70 +369,109 @@ responses:
       as districts, tehsils, and villages with a largely rural focus and socio-economic
       characteristics in both rural and urban areas at granular spatial scales like
       district, town and ward spanning the entire country.
-  utter_faq-visualisation-b0/count_of_datasets:
-  - text: There will be about 20 datasets available on the IDP portal by end July.
-  utter_faq-visualisation-b0/type_of_viz:
-  - text: The list of visualizations available is wide (about 30 kinds of visualisations).
-      They range from :-Lollipop, stacked bar plot, maps, grouped bar plots, grouped
-      scattered plots, treemap, donut, Sankey, infographic, frequency histogram, Grouped
-      Bubble chart, beeswarm plot,
   utter_faq-portal-b0/why_idp:
   - text: "With the help of IDP, a user can use the multiple datasets available, which\
       \ have been already cleaned and vetted and have been presented in easy to understand\
       \ manner. The users can make visualisations based on the chosen parameters as\
       \ per the requirement of their writing. What\u2019s even more exciting is that\
       \ these visualisations are easily downloadable and can be inserted straight\
-      \ away in a story. "
-  utter_faq-visualisation-b0/source_of_data:
-  - text: The IDP uses multiple sources for the data but mostly relies on publically
-      available and have been shared by government institutions, who frankly are the
-      only bodies in the country to have that kind of data collection capabilities.
-      The repository for visualization is exhaustive with overlapping as well as independent
-      well-established remote-sensing and satellite products.
-  utter_faq-visualisation-b0/will_addtional_sources_be_added:
-  - text: 'The IDP endeavours to regularly add more training material/videos/etc as
-      we move forward. The feedback from users would also help us in adding more material
-      and features to the portal. '
-  utter_faq-visualisation-b0/different_langauges_availability:
-  - text: The IDP portal is presently available in 5 languages Bengali, English, Hindi,
-      Oriya, Telugu.
-  utter_faq-visualisation-b0/paid_service_or_not:
-  - text: "All the datasets and visualizations on the IDP are completely free and\
-      \ open to all the users. To make full use of the portal it is advisable to create\
-      \ your login ID. What\u2019s even more exciting is that we will be running competitions\
-      \ to select best visualizations created by our users (by all of you). And the\
-      \ winners will take home exciting prizes. "
-  utter_faq-visualisation-b0/frequently-data-updated:
-  - text: The data is updated on quarterly basis on IDP and daily for HFI indicators
-  utter_faq-visualisation-b0/part-available-data:
-  - text: The major sectors include Financial Inclusion and Agriculture there are
-      four other allied sectors related to these two
-  utter_faq-visualisation-b0/alternate-sources-data:
-  - text: Data on the India Data Portal is sourced from government websites and you
-      may visit the source websites mentioned as alternate data sources
-  utter_faq-visualisation-b0/share-upload-dataset:
-  - text: It is not possible to upload a data set into the India Data Portal
-  utter_faq-visualisation-b0/multiple-data-set-same-parameters-which-useful:
-  - text: The datasets on IDP are sourced from governments sources  There are multiple
-      surveys  data collection activities by the government those have common parameters
-      for data collection which is usually the mandat of data collection objective
-      So as a result there can be similar indicators but with different data collection
-      methods As far as their usability is concerned  this type comparison has not
-      been considered yet but is part of our long term plan
-  utter_faq-visualisation-b0/help-technical-issues-portal:
-  - text: Just mail to us idp@isb.edu
-  utter_faq-visualisation-b0/trust-data-sourced-from-government-agencies:
-  - text: We have collected the data from reliable government sourcs You can also
-      see the links in the about dataset page in the source link section
-  utter_faq-visualisation-b0/materials-videos-different-visualization-posted-website:
-  - text: Yes we will be uploading new training videos in our portal
-  utter_faq-visualisation-b0/visualisations-made-downloaded-other-languages:
-  - text: Yes the visualisations can be made and downloaded in the languages available
-      in the Portal
-  utter_out_of_scope:
-  - text: Out of my knowledge can you pls rephrase
-  utter_please_rephrase:
-  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+      \ away in a story."
+  utter_faq-portal-b0/part-available-data:
+  - text: India Data portal covers multiple domains like Agriculture, Financial Inclusion,
+      Rural Development, Economy, Socio- economic, Climate etc
+  utter_faq-portal-b0/most-recent-data:
+  - text: For some datasets you'll find data available from last month on the portal.
+      Data is updated on the portal after it is made available by the Indian Government
+  utter_faq-portal-b0/recent-data-available:
+  - text: India Data portal updates its data from the Govt sources. As soon as the
+      Govt updates its data we also updates our data within few days
+  utter_faq-portal-b0/employment-data-available:
+  - text: Employment data is available on the portal. We have NSSO employment and
+      MGNREGA employment data
+  utter_faq-portal-b0/agriculture-data-available:
+  - text: India Data Portal extensively covers Agriculture data starting from Agricensus,
+      Agri Marketing, Area Production Yield, Fertilizers sales, Cost of Cultivation.
+      To find more go to Food and Agriculture Tab
+  utter_faq-portal-b0/Is-data-reliable:
+  - text: Our data is completely reliable since we extract our data only from government
+      sources.
+  utter_faq-portal-b0/How-portal-useful:
+  - text: IDP helps you in creating different visualization which you can add in your
+      stories making your stories enriched with data and attractive
+  utter_faq-portal-b0/Why-need-data:
+  - text: Journalists need data as a supporting evidence for their stories. IDP will
+      help them in creating data rish stories with simple visualizations
+  utter_faq-portal-b0/data-updation:
+  - text: India Data portal updates its data from the Govt sources. As soon as the
+      Govt updates its data we also updates our data within few days
+  utter_faq-portal-b0/data-download-provision:
+  - text: Yes you can download the data either in csv or xlsx format. There is an
+      option in the top right corner to download the dataset.
+  utter_faq-portal-b0/data-use-for-research:
+  - text: You can use this data for your research
+  utter_faq-portal-b0/portal-maintainence:
+  - text: This portal is maintained by the Indian School of Business
+  utter_faq-portal-b0/potal-maintainence-by-goi:
+  - text: This portal is maintained by the Indian School of Business
+  utter_faq-portal-b0/data-age-how-old:
+  - text: Various distoric datasets are available on the portal, please visit the
+      dataset section of the portal for details
+  utter_faq-portal-b0/data-update-mail-alerts:
+  - text: Until now, we do not have that feature. Tanks for the feedback, we'll include
+      this in the product roadmap.
+  utter_faq-portal-b0/feature-update-mail-alerts:
+  - text: Until now, we do not have that feature. Tanks for the feedback, we'll include
+      this in the product roadmap.
+  utter_faq-portal-b0/hindi-illustrations:
+  - text: Yes, India Data portal is available in 6 languages
+  utter_faq-portal-b0/other-lang-illustrations:
+  - text: Yes, India Data portal is available in 6 languages
+  utter_faq-portal-b0/different-languages:
+  - text: India Data Portal is available in English, Hindi, Telugu, Bengali, Marathi
+      and Oriya
+  utter_faq-portal-b0/portal-came-to-existance:
+  - text: The project started in 2019 and the first version of the portal was launched
+      in January 2020
+  utter_faq-portal-b0/user-count-on-portal:
+  - text: The portal has a vibrant group of users including journalists, researchers,
+      academia, students, corporates, etc.
+  utter_faq-portal-b0/portals-impact:
+  - text: The portal helps journalists with easy access to data, accompanied with
+      visualizations that they can immediately use for publication
+  utter_faq-portal-b0/news-and-graphics:
+  - text: News is a space where one can see the news article created using IDP and
+      the Graphic gallery lets one view the graphics shared publically by the user
+  utter_faq-portal-b0/uploading-news:
+  - text: Please send the content to us at idp@isb.edu
+  utter_faq-portal-b0/frequency-of-data-updation:
+  - text: India Data Portal updates data as soon as the source updates them
+  utter_faq-portal-b0/data-sourced-from-gov-sites:
+  - text: The data is sourced from reliable publically available sources
+  utter_faq-portal-b0/hyperlink-to-source-data:
+  - text: The source of the data can be found at the bottom of the image that is downloaded
+      which can be accessed through the informations section of the dataset
+  utter_faq-portal-b0/idp-training:
+  - text: India Data Portal offers Masterclasses and Workshops
+  utter_faq-portal-b0/fellowship-with-idp:
+  - text: Yes, India Data Portal offers fellowships collaborating with Newslaundry.
+      The first phase of the fellowship consists of a four-week programme to familiarize
+      the fellows with datasets on India Data Portal, attend exclusive masterclasses
+      and get research support from the Indian School of Business, and publish data-driven
+      stories. Please write to us at idp@isb.edu for more information.
+  utter_faq-portal-b0/whats-on-portal:
+  - text: India Data Portal has various datasets starting from agriculture, Financial
+      Inclusion, Rural Development, Socio economic etc. You can interact with the
+      data and visualize information by creating various graphs and charts
+  utter_faq-portal-b0/data-citation:
+  - text: We have collected the data from government websites. You can also see the
+      source links in the 'about dataset' page of a dataset. In any chart in the below
+      you can see the sources from where the data has been referenced.
+  utter_faq-portal-b0/is-data-reliable:
+  - text: We have collected the data from reliable government sources. You can also
+      see the source links in the 'about dataset' page of a dataset
+  utter_faq-portal-b0/data-sources:
+  - text: We have collected the data from government websites. You can also see the
+      source links in the 'about dataset' page of a dataset
   utter_faq-visualisation-b2/delete-visualisation-from-graphic-gallery:
   - text: As of Now we cannot delete a visualization from graphics gallary
   utter_faq-visualisation-b2/possible-share-live-visualisation:
@@ -422,6 +608,125 @@ responses:
   utter_faq-visualisation-b4/remove-all-selections-once:
   - text: You can remove all the selections by clicking on 'clear all' button on the
       top of any popup window
+  utter_faq-train-b0/learn-about-idp:
+  - text: On the top right corner tab you will find training. After clicking on training
+      you will find two categories- workshop & events and online training. Click on
+      online training to find tutorial videos.
+  utter_faq-train-b0/how-to-use-idp:
+  - text: On the top right corner tab you will find training. After clicking on training
+      you will find two categories- workshop & events and online training. Click on
+      online training to find tutorial videos.
+  utter_faq-train-b0/any-training-available:
+  - text: On the top right corner tab you will find training. After clicking on training
+      you will find two subtabs- workshop & events and online training. Click on online
+      training to find tutorial videos.
+  utter_faq-train-b0/help-to-see-graph:
+  - text: On the top right corner tab you will find training. After clicking on training
+      you will find two subtabs- workshop & events and online training. Click on online
+      training to find tutorial videos.
+  utter_faq-train-b0/need-help-understand-portal:
+  - text: On the top right corner tab you will find training. After clicking on training
+      you will find two subtabs- workshop & events and online training. Click on online
+      training to find tutorial videos.
+  utter_faq-train-b0/next-training-when:
+  - text: On the top right corner tab you will find training. After clicking on training
+      you will find two subtabs- workshop & events and online training. Click on workshop
+      & events to find next training
+  utter_faq-train-b0/next-masterclass-when:
+  - text: On the top right corner tab you will find training. After clicking on training
+      you will find two subtabs- workshop & events and online training. Click on workshop
+      & events to find masterclass
+  utter_faq-train-b0/join-masterclass-how:
+  - text: You can register in the workshop and events page which is in the training
+      tab. Also you can write to us at idp@isb.edu. We will send the zoom link for
+      the masterclass
+  utter_faq-train-b0/what-is-masterclass:
+  - text: Masterclass is a virtual tutorial class intended for journalists, students,
+      researchers, faculties,consultants to learn about Indiadataportal
+  utter_faq-train-b0/any-certification-available:
+  - text: Yes we do provide certificates from Indian School of business for attending
+      the masterclass
+  utter_faq-train-b0/what-training-material-we-use:
+  - text: On the top right corner tab you will find training. After clicking on training
+      you will find two subtabs- workshop & events and online training. Click on workshop
+      & events to find next training
+  utter_faq-train-b0/learn-data-visualisation:
+  - text: On the top right corner tab you will find training. After clicking on training
+      you will find two subtabs- workshop & events and online training. Click on online
+      training to find tutorial videos.
+  utter_faq-train-b0/idp-journalism:
+  - text: IDP helps you in creating different visualization which you can add in your
+      stories making your stories enriched with data and attractive
+  utter_faq-train-b0/idp-stories:
+  - text: IDP helps you in creating different visualization which you can add in your
+      stories making your stories enriched with data and attractive
+  utter_faq-train-b0/any-journalism-certificate:
+  - text: We are now collaborating with India spend for an online certification course
+      which will gain you a certificate
+  utter_faq-train-b0/researchers-learn-about-idp:
+  - text: Yes Researchers can learn and use IDP in their research. IDP will help them
+      in creating data insightful articles with different charts and graphs
+  utter_faq-train-b0/training-cover:
+  - text: The training will cover hands-on experience in IDP creating new different
+      visualizations based on an newspaper article and also assisting journalists
+      in writing their stories.
+  utter_faq-train-b0/training-content:
+  - text: Training details about the portal can be found through the training tab
+      in our website or through our social media handles
+  utter_faq-train-b0/training-content-video:
+  - text: Training videos consists of full lenght in depth explanations on how to
+      use India Data Portal
+  utter_faq-train-b0/training-duration:
+  - text: We are collaborating with newslaundry for the training and our training
+      duration is 15 days as of now.
+  utter_faq-train-b0/training-for-novice-users:
+  - text: We have the training modules where any novice user can also learn. It doesn't
+      require any prerequisite knowledge.
+  utter_faq-train-b0/training-for-jounalist-users:
+  - text: The training is primarily meant for the journalists. But students, researchers,
+      faculties also can join.
+  utter_faq-train-b0/how-training-help-me:
+  - text: IDP will help you in creating data insightful articles with different charts
+      and graphs. This you can use in your articles and blogs.
+  utter_faq-train-b0/training-data-from-cmie:
+  - text: As of now, India Data Portal has data made available from government sources.
+      In future, private data sources would be incorporated on the portal
+  utter_faq-train-b0/multiple-training-modules:
+  - text: There are multiple training modules which you can find in the training tab
+      on the top right corner of the home page. We frequently upload many training
+      modules here.
+  utter_faq-train-b0/online-resource-for-training:
+  - text: You can find a Training tab on our website and for more material on India
+      Data Portal visit our Youtube Channel https://www.youtube.com/channel/UCB6LwUiFwPSobU0TwXuF4Fg
+  utter_faq-train-b0/tutorial-on-how-to-use-idp:
+  - text: You can find a Training tab on our website and for more material on India
+      Data Portal visit our Youtube Channel https://www.youtube.com/channel/UCB6LwUiFwPSobU0TwXuF4Fg
+  utter_faq-train-b0/free-online-tutorials-idp:
+  - text: You can find a Training tab on our website and for more material on India
+      Data Portal visit our Youtube Channel https://www.youtube.com/channel/UCB6LwUiFwPSobU0TwXuF4Fg
+  utter_faq-train-b0/workshops-by-idp:
+  - text: India Data Portal conducts workshops and masterclasses. The details are
+      announced through the training tab in our website and through social media handles
+  utter_faq-train-b0/physical-workshop:
+  - text: India Data Portal conducts physical trainings/workshops
+  utter_faq-train-b0/training-material-on-youtube:
+  - text: India Data Portal's Youtube channel can be accessed at https://www.youtube.com/channel/UCB6LwUiFwPSobU0TwXuF4Fg
+  utter_faq-train-b0/idp-training-incharge:
+  - text: IDP offers training through researchers and experts in the field
+  utter_faq-train-b0/training-participation-recognition:
+  - text: IDP offers a certificate of participation for people who successfully compeletes
+      the training program
+  utter_faq-train-b0/how-to-send-feedback:
+  - text: You can fill the feedback form or mail us at- idp@isb.edu
+  utter_faq-train-b0/training-available-for-all:
+  - text: India Data Portal offers Masterclasses and Workshops free of cost and anyone
+      can attend
+  utter_faq-train-b0/portals-objective:
+  - text: "The \u201CIndia Data Portal\u201D is a one-stop open-access portal for\
+      \ journalists to access, interact with, and visualize information, data and\
+      \ knowledge related to agriculture and financial inclusion, while also aiding\
+      \ other beneficiaries \u2013 researchers, students, policy makers, administrators,\
+      \ NGOs, and entrepreneurs."
   utter_faq-visualisation-b3/why-add-dataset:
   - text: We can add datasets in order to compare between the two datasets
   utter_faq-visualisation-b3/options-to-make-chart-builder:
@@ -548,6 +853,5 @@ responses:
 actions:
 - action_slot_setter
 - action_viz_faq
-# - action_portal_faq
 forms: {}
 e2e_actions: []

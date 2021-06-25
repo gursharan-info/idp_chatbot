@@ -1,30 +1,4 @@
-# This files contains your custom actions which can be used to run
-# custom Python code.
-#
-# See this guide on how to implement these action:
-# https://rasa.com/docs/rasa/custom-actions
 
-
-# This is a simple example for a custom action which utters "Hello World!"
-
-# from typing import Any, Text, Dict, List
-#
-# from rasa_sdk import Action, Tracker
-# from rasa_sdk.executor import CollectingDispatcher
-#
-#
-# class ActionHelloWorld(Action):
-#
-#     def name(self) -> Text:
-#         return "action_hello_world"
-#
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-#
-#         dispatcher.utter_message(text="Hello World!")
-#
-#         return []
 
 
 
@@ -65,12 +39,16 @@ class ActionVizFaq(Action):
 
         buttons = [
             {"payload":'/ok{"intent_button":"faq-portal"}',"title":"Portal"},
-            {"payload":'/ok{"intent_button":"faq-visualisation"}',"title":"Visualisation"}
+            {"payload":'/ok{"intent_button":"faq-visualisation"}',"title":"Visualisation"},
+            {"payload":'/ok{"intent_button":"faq-fel"}',"title":"Fellowship"},
+            {"payload":'/ok{"intent_button":"faq-train"}',"title":"Training"}
         ]
         
         # dictionary for mapped retrieval intents
         mapped_intent= { "faq-portal" : "Portal",
                         "faq-visualisation":"Visualisation",
+                        "faq-fel": "Fellowship",
+                        "faq-train":"Training",
                         None: "No-option"}
 
         # to get a slot value (here --> slot is intent_button)

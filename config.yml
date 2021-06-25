@@ -28,9 +28,6 @@ pipeline:
     epochs: 100
     retrieval_intent: faq-portal-b0 # for faq-portal-b0 specific questions
 
-  - name: ResponseSelector
-    epochs: 100
-    retrieval_intent: faq-portal-b1 # for faq-portal-b1 specific questions
 
   - name: ResponseSelector
     epochs: 100

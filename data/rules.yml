@@ -15,10 +15,6 @@ rules:
   - intent: faq-portal-b0
   - action : action_viz_faq
 
-- rule: for portal
-  steps:
-  - intent: faq-portal-b1
-  - action : action_viz_faq
 
 - rule: for training
   steps:

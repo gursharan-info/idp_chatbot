@@ -227,4 +227,23 @@ or
 
 If you see this https://forum.rasa.com/t/the-answers-of-bot-dont-appear-on-rasa-x/41000/8
 
+
+## First Option
+
+1. ``` sudo docker system prune --all ```
+2. ```  sudo docker system prune -a --volumes ```
+3.  ``` sudo docker volume prune -f ```
+4. ``` sudo docker image prune -a ```
+5. ``` sudo docker containers  prune -a ``` 
+
+fo any help related to above commands 
+1. https://docs.docker.com/engine/reference/commandline/system_prune/
+2. https://docs.docker.com/config/pruning/
+
+
+#### Additional 
+    TO check which files are consuming how much space 
+    https://www.hostinger.in/tutorials/vps/how-to-check-and-manage-disk-space-via-terminal
+
 Then you will have to give **More space to you VM**
+

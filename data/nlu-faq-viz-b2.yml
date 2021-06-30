@@ -85,6 +85,7 @@ nlu:
     - is it possible to create a new indicator?
     - assist me to create a new indicator.
     - how to create a new indicator?
+    - how to create new indicator?
 - intent: faq-visualisation-b2/create-new-visualizations-using-new-indicator-two-different-datasets
   examples: |
     - can  i create new visualizations using new indicator from two different datasets?
@@ -157,6 +158,7 @@ nlu:
     - can we remove the created new indicators.
     - how to remove an indicator?
     - how can I remove an indicator?
+    - how to remove newly created indicator?
 - intent: faq-visualisation-b2/select-maximum-number-dimensions-for-visualization
   examples: |
     - Give the maximum number of dimensions  selected for visualisation.
@@ -201,6 +203,7 @@ nlu:
     - is it necessary to select location
     - Should I select the location always
     - i am new here i want to know is it like absolutely necessaryyy to select location
+    - do i need to select the location always?
 - intent: faq-visualisation-b2/donot-select-location-possible-visualization
   examples: |
     - visualisation is possible without location?

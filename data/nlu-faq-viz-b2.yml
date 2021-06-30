@@ -203,6 +203,7 @@ nlu:
     - is it necessary to select location
     - Should I select the location always
     - i am new here i want to know is it like absolutely necessaryyy to select location
+    - do i need to select the location always?
 - intent: faq-visualisation-b2/donot-select-location-possible-visualization
   examples: |
     - visualisation is possible without location?

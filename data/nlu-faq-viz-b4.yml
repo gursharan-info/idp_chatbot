@@ -142,6 +142,7 @@ nlu:
     - why i can't see the title even after offloading my graphs?
     - why i can' t spot the title even after  downlink my graphs?
     - After downloading my graphs .why i can't find the glimpse of the title?
+    - why i am not able to see title after downloading the graph?
 - intent: faq-visualisation-b4/what-is-svg
   examples: |
     - Define SVG
@@ -196,7 +197,6 @@ nlu:
     - What is the procedure to add 3 datasets?
     - Can 3 datasets be added?
     - sum of three datasets
-
 - intent: faq-visualisation-b4/selecte-district-no-result
   examples: |
     - I have selected district but nothing is coming up. Why?

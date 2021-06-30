@@ -97,8 +97,7 @@ responses:
   utter_faq-visualisation-b5/Can-zoom-chart:
   - text: Currently, we do not have an option to zoom into the chart
   utter_faq-visualisation-b5/what-dimension:
-  - text: A dimension is a descriptive attribute or characteristic of an object that
-      can be given different values.
+  - text: A dimension is a descriptive attribute or characteristic of an object that can be given different values.
   utter_faq-visualisation-b5/Should-select-location-always:
   - text: No it's not mandatory to select location always
   utter_faq-visualisation-b5/How-many-indicators-select-at-time:

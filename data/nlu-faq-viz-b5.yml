@@ -23,6 +23,7 @@ nlu:
     - indicators help
     - Help understanding indicators
     - What is an indicator?
+    
 - intent: faq-visualisation-b5/tutorial-making-graphs-visualisations
   examples: |
     - Is there any tutorial for making graphs/visualisation ?

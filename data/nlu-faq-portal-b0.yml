@@ -71,6 +71,17 @@ nlu:
     - if i wnat some datatsets how many will i get and from which field
     - if i wnat some datatsets how many will i get and from which domain
 
+- intent: faq-portal-b0/what-is-indicator #33
+  examples: |
+    - what is indicator
+    - what is the meaning of indicator
+    - what the indicator thing on IDP
+    - on indianportal i saw something called as indicatorr what is this
+    - i was using datasets tab i found this indicator ?
+    - indicator what ?
+    - indicator  is what ?
+    
+
 - intent: faq-portal-b0/part-available-data
   examples: |
     - What are the sectors of available data?

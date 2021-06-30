@@ -117,6 +117,7 @@ nlu:
     - How many datasets are available on the India Data Portal?
     - how many datasets this portal contains?
     - how many datasets this portal comprises of?
+    
 - intent: faq-visualisation-b0/type_of_viz
   examples: |
     - what type of visulaisations are suuported by India data portal

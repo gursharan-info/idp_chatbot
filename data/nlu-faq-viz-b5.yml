@@ -238,3 +238,54 @@ nlu:
     - what kind of visualizations are available?
     - Help me to find ways to build graphs
     - How many visualisations can I create for a single selected data
+
+- intent: faq-visualisation-b5/what-dimension #161
+  examples: |
+    - what is dimension
+    - what is dimension in IDP
+    - india data poortal i found something called dimensiojn what is it ?
+    - dim?
+    - dim.?
+    - dimesnion 
+    - dimmesnion what is it ?
+
+- intent: faq-visualisation-b5/whatis-indiapulse #157
+  examples: |
+    - what is IPulse
+    - what is indian pulse
+    - what the heck is india pulse on indp
+    - what the heck is india pulse on idp
+    - what the heck is india pulse on india data portal
+    - india pulse ?
+    - india pulse what the thing is this ?
+    - india pulse ahmm can you pls tell me 
+    - i fpumd this india pulse here
+    - ahmm india pulse ?
+
+- intent:  faq-visualisation-b5/tables-instead-vis #180
+  examples: |
+    - Can I create tables instead of visualization
+    - Can I create tables instead of visualization here
+    - on IDP can we cretes tables without vizz
+    - on indiandataportal can we create tables without Visualisations
+    - creating table without viz? is this feature availabel
+    - can i get this facility where i can cretae viz without making tables on here
+
+- intent: faq-visualisation-b5/why-no-jpeg #179
+  examples: |
+    - Why don’t I have the option to download the image in jpeg format
+    - jpeg format why i cna't i donwload ?
+    - can i download my work in jpeg
+    - grpahs i made can be downloaded in JPEG right?
+    - output can be downloaded in JPEG ?
+    - anyway to download work in jpeg ?    
+
+
+- intent: faq-visualisation-b5/create-indicator-with-assigned-units #184
+  examples: |
+    - Can I create my own indicator with assigned units 
+    - Can I create my personal indicator with assigned units
+    - i wanna create personal indicator withh assigned units?
+    - my research needs personal indicator withh assigned units can i make?
+    - my jornalism report needs personal indicator withh assigned units can i make?
+    

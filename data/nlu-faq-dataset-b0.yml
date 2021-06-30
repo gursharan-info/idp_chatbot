@@ -192,6 +192,8 @@ nlu:
     - is there any daily based datasets?
     - any daily info based dataset?
     - dataset based on data information is available?
+
+
 - intent: faq-dataset-b0/old-data-available #317
   examples: |
     - Do you have 10 years old data ?
@@ -200,7 +202,11 @@ nlu:
     - is there any availability of older datasets like 50 years or 30 years old dtasets
     - I have some project for that I need datasets frompast 10 years cani get it from here
     - for my current research i need a dataset that should contain time from 2000 to 2020
-
+    - Do you have 10 years old data ?
+    - Do you have any historical data ?
+    - do you any deataset that is way old
+    - can i get some dataset that is older than 2 or 3 decades
+    - i want to fetch some data from history
 - intent: faq-dataset-b0/historical-data  #318
   examples: |
     - Do you have any historical data ?

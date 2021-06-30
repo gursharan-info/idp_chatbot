@@ -66,6 +66,7 @@ nlu:
     - Is it possible to me sort the bars?
     - can i have permission to sort my bars?
     - Is India data portal allow to sort the bars?
+    - is this thing available here that i can sort the bars of my graph
 - intent: faq-visualisation-b6/maximum-indicators-one-visulisation
   examples: |
     - How many number of indicators i can show in one visualization?
@@ -184,6 +185,7 @@ nlu:
     - steps to change the font style
     - font style is need to be changed for visualization ,how?
     - Can I change the font style on the visualizations
+    - how am i supposed to change the font style
 - intent: faq-visualisation-b6/create-my-own-visualisation
   examples: |
     - How to create my own visualization?
@@ -202,6 +204,10 @@ nlu:
     - at a time ,how many max. number of visualizations are generated?
     - ways to generate maximum number of visualization at a time.
     - What is the maximum number of visualizations generated for any selected datasets at a time
+    - what is the maximum number of visualisations one can make?
+    - for a given dataset what are maximum number of visualisations we can make?
+    - for a perticular dataset how much visualisations i can make?
+    - what are max no of visualizations supported by IDP
 - intent: faq-visualisation-b6/select-dimension-or-indicator-by-default
   examples: |
     - can i select the dimensions or indicators by default?
@@ -211,6 +217,7 @@ nlu:
     - what if i  select the dimensions and indicators by default?
     - selection of dimensions and indicatiors can be done by default, isn't?
     - Should I by default select the dimension or indicator
+    - what should be selected by default dimensions or indicators?
 - intent: faq-visualisation-b6/possibility-rearranging-visualisation-parts-like-legends-as-my-choice
   examples: |
     - rearrange the visualization part
@@ -248,6 +255,7 @@ nlu:
     - help with reset
     - what is reset all do ?
     - what is gonna happen with reset all?
+    - what will happen if i click reset all?
 - intent: faq-visualisation-b6/export-selected-data
   examples: |
     - how to export selected data ?
@@ -258,6 +266,7 @@ nlu:
     - trouble exporting selected data
     - trouble with data export
     - issue with data exporting
+    - how can a selected data be exported?
 - intent: faq-visualisation-b6/change-visulaisation-to-local-language
   examples: |
     - change my visualisation into local language
@@ -270,6 +279,7 @@ nlu:
     - how to change language
     - change language
     - How can I change my visualization into my local language
+    - can the visualization be translated to local language?
 - intent: faq-visualisation-b6/write-title-in-local-language
   examples: |
     - local language title
@@ -278,6 +288,8 @@ nlu:
     - wrtie title in local language
     - change title language
     - writting title language in local language
+    - can visulaization title also be translated?
+    - how do i type title in local language?
 - intent: faq-visualisation-b6/search-previously-created-visulaisation
   examples: |
     - searching perviously created visualisations
@@ -288,6 +300,7 @@ nlu:
     - precodeure to find previously created visualisations
     - can i see my previously created visualisation
     - Can I search for my previously created visualizations
+    - where can i locate my previously created visualizations?
 - intent: faq-visualisation-b6/search-visualisation-in-graphic-gallery
   examples: |
     - help with searcjing for visualisation in graphic gallery
@@ -297,3 +310,4 @@ nlu:
     - where can i find visualisation
     - trouble with searching for any visualisation in the graphic gallery
     - How do I search for any visualization in the Graphics Gallery
+    - how we can search visulaization in graphic gallery?

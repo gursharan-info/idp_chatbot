@@ -10,6 +10,7 @@ nlu:
     - Is it possible to compare all dataset at a time?
     - How many datasets can I compare at a time (copy-112)
     - Can I compare 2 or more datasets in a single visualization
+    - how much datasets i can compare in one go?
 - intent: faq-visualisation-b4/sort-data-in-graph-how
   examples: |
     - How can I sort data in my graph?
@@ -21,6 +22,7 @@ nlu:
     - Arrange data in graphs?
     - sort data in graph
     - how can I sort my chart?
+    - i am confused is there any wayyy here so that I can sort my dataset ascending oredr
 - intent: faq-visualisation-b4/upload-my-data
   examples: |
     - I want to add my dataset for visualisation. How can I upload data?
@@ -69,6 +71,7 @@ nlu:
     - Graphics gallery?
     - Give me information about graphics gallery?
     - I wanna know about graphics gallery?
+    - what is this my gallery thing here
 - intent: faq-visualisation-b4/diff-bw-mygraphics-graphics-gallery
   examples: |
     - What is the difference between my graphics and graphic gallery?
@@ -103,6 +106,7 @@ nlu:
     - not able to see the data coming from
     - how we fetch the data location?
     - how can I find the source of this dataset?
+    - where is data coming from?
 - intent: faq-visualisation-b4/will-update-affect-my-saved-graphics
   examples: |
     - I saved my graph in my graphics. Will it change if you update the dataset?
@@ -111,6 +115,7 @@ nlu:
     - i had done the changes in dataset will it be updated after saving
     - after the successful saving of graphs in my graphics .Will it change if you update the dataset?
     - afterward  the saving of graphs in my graphics will it make change if you update the datasets?
+    - my saved graph will be change if dataset is modified?
 - intent: faq-visualisation-b4/how-add-shapes-icons-on-graph
   examples: |
     - How can I add shapes and icons to my graph?
@@ -122,6 +127,7 @@ nlu:
     - how i add figures and images in my graphs?
     - how i add configurations  and potraits in  my graphs?
     - how i add dimensions and images in my graphs?
+    - how can i insert shapes and icons ?
 - intent: faq-visualisation-b4/how-change-legend-of-graph
   examples: |
     - How can I change the legends of the graph?
@@ -134,6 +140,8 @@ nlu:
     - how the legends of graphs are changed?
     - can i change the legends of graphs but how?
     - can I change the legends of the graph?
+    - can i update the legends?
+    - can i modify the legends on the graph?
 - intent: faq-visualisation-b4/cannot-see-title-after-downloading-graph
   examples: |
     - Why can't I see the title after downloading my graph?
@@ -142,6 +150,7 @@ nlu:
     - why i can't see the title even after offloading my graphs?
     - why i can' t spot the title even after  downlink my graphs?
     - After downloading my graphs .why i can't find the glimpse of the title?
+    - why i am not able to see title after downloading the graph?
 - intent: faq-visualisation-b4/what-is-svg
   examples: |
     - Define SVG
@@ -164,6 +173,7 @@ nlu:
     - difference in SVG and PNG.
     - compare SVG and PNG.
     - Gulf between SVG and PNG.
+    - what is the distinction bw svgs and pngs
 - intent: faq-visualisation-b4/assist-me-in-graph
   examples: |
     - Can you assist me in making this graph?
@@ -176,6 +186,7 @@ nlu:
     - steps to make a graphs
     - how to make a graph?
     - can you assist me in making the graph?
+    - how can you assist me in making graph?
 - intent: faq-visualisation-b4/can-you-connect-me-with-team
   examples: |
     - Can you connect me to your team?
@@ -186,6 +197,7 @@ nlu:
     - add me to your team
     - is your team happy if i add?
     - How can i catchup with IDP team
+    - im trapped in a problem can i connect with your support team
 - intent: faq-visualisation-b4/can-add-three-datasets
   examples: |
     - Can I add three datasets?
@@ -196,7 +208,6 @@ nlu:
     - What is the procedure to add 3 datasets?
     - Can 3 datasets be added?
     - sum of three datasets
-
 - intent: faq-visualisation-b4/selecte-district-no-result
   examples: |
     - I have selected district but nothing is coming up. Why?

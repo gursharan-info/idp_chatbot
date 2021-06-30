@@ -38,6 +38,7 @@ nlu:
     - bye bye
     - see you later
     - Bye
+    - sorry
 - intent: affirm
   examples: |
     - yes
@@ -102,7 +103,6 @@ nlu:
     - Who developed you
     - Hlo how are you
     - who made you
-
 - intent: faq-visualisation-b0/count_of_datasets
   examples: |
     - what are the number of datasets supported on IDP?
@@ -115,6 +115,8 @@ nlu:
     - What datasets are available on IDP?
     - What datasets are available on the portal?
     - How many datasets are available on the India Data Portal?
+    - how many datasets this portal contains?
+    - how many datasets this portal comprises of?
 - intent: faq-visualisation-b0/type_of_viz
   examples: |
     - what type of visulaisations are suuported by India data portal
@@ -128,9 +130,7 @@ nlu:
     - what graphics are possible on IDP?
     - What graphics are available?
     - What graphics are possible?
-    - What visualizations are possible on IDP?
     - What visualizations are possible?
-
 - intent: faq-visualisation-b0/source_of_data
   examples: |
     - What is the source of the data?
@@ -149,6 +149,7 @@ nlu:
     - In future are there any chances that i will see different repos over here
     - in coming future will more data be presnt on here.
     - how can I get training to use idp?
+    - i am a jounalist but i found this platform little difficult
 - intent: faq-visualisation-b0/different_langauges_availability
   examples: |
     - Is it available in other Indian languages? If yes, which ones?
@@ -190,7 +191,6 @@ nlu:
     - when we can update data on india data portal
     - frequency of uploading data on IDP in a year
     - How frequently is the data updated?
-
 - intent: faq-visualisation-b0/alternate-sources-data
   examples: |
     - Are there any alternate sources for data?
@@ -242,6 +242,8 @@ nlu:
     - can i trust this source
     - is this data reliable?
     - how can we trust this data?
+    - i am new here can i know from where I am using this data
+    - How do we trust this data since the data is sourced from government agencies?  is there nay way?
 - intent: faq-visualisation-b0/materials-videos-different-visualization-posted-website
   examples: |
     - Will additional training materials/videos for different visualization scenarios be posted on the website?
@@ -300,3 +302,6 @@ nlu:
     - where is rasa x
     - how many datasets i can upload to IDP
     - how can i know more about the competitions?
+    - i want to ask new question
+    - ahmmm why should i order food from here
+    - ohh i see

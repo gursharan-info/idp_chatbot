@@ -69,6 +69,7 @@ nlu:
     - why is my graph not loading?
     - My graph is not loading.
     - why is my graph not loading
+    - why my graph is not loading.
 - intent: faq-visualisation-b5/How-change-title
   examples: |
     - How to change the title ?
@@ -88,6 +89,7 @@ nlu:
     - what is the meaning of those numbers in bracket ?
     - where can i use those numbers in the brackets ?
     - What are the numbers in the brackets?
+    - what is exact number of brackets ?
 - intent: faq-visualisation-b5/Do-have-select-filters
   examples: |
     - Do i really have to select filters ?
@@ -108,6 +110,8 @@ nlu:
     - What does jumpStartIndia represents ?
     - What do you mean by jumpStartIndia@Indian dat portal ?
     - What is JumpStartIndia@ISB? (link in answer)
+    - what is India pulse here
+    - what is pulse india in IDP ?
 - intent: faq-visualisation-b5/Can-zoom-chart
   examples: |
     - Is it possible to zoom into chart ?
@@ -118,6 +122,7 @@ nlu:
     - Shortcut for zooming into the chart
     - chart zooming
     - how zooming in chart
+    - can we zoom into visualization chart?
 - intent: faq-visualisation-b5/Should-select-location-always
   examples: |
     - what location should i select ?
@@ -148,6 +153,7 @@ nlu:
     - What is time on visualize data?
     - Describe time on chrt bhuilder?
     - How many years to choose on time on chart bulder?
+    - what is this meaning of time here
 - intent: faq-visualisation-b5/Why-click-options-popping-out-in-Build-Chart
   examples: |
     - How to diversifiy visualization on chart buildeR?
@@ -221,6 +227,7 @@ nlu:
     - May I choose two or more datasets for chart building?
     - help me build chart for two datasets
     - can i compare two datasets?
+    - what kind of datasets i can compare?
 - intent: faq-visualisation-b5/How-many-maximum-number-locations-select-which-creating-graph
   examples: |
     - Is there any minimum location which I should select to make a graph?

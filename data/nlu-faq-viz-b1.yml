@@ -1,8 +1,7 @@
 version: "2.0"
 nlu:
-
 - intent: ok
-  examples : |
+  examples: |
     - ok
     - okay
     - done
@@ -10,7 +9,6 @@ nlu:
     - Done
     - yes its' over
     - okay its done
-
 - intent: faq-visualisation-b1/compare-datasets-on-idp
   examples: |
     - how can we compare datasets on IDP?
@@ -25,7 +23,6 @@ nlu:
     - can you list the datasets that compare data on indian data portal
     - can you list the datasets that compare data on idp?
     - is there way to make distinction between diff. datasets ?
-
 - intent: faq-visualisation-b1/add-dataset-on-idp
   examples: |
     - How to add dataset
@@ -42,7 +39,6 @@ nlu:
     - how do i upload additional datasets to the indiandataportal
     - how can i upload datasets to indian data portal
     - Ahmm how can i upload datasets to indian dp
-
 - intent: faq-visualisation-b1/location-meaning-idp
   examples: |
     - What does location mean in IDP
@@ -52,7 +48,6 @@ nlu:
     - what does location in indaindataportal mean?
     - location what does it really mean on Indiaan data portal
     - does location indicator signify something important on INDIAN DATA PORTAL?
-
 - intent: faq-visualisation-b1/only-india-is-covered
   examples: |
     - Does is cover only India
@@ -74,7 +69,6 @@ nlu:
     - is it really important to select loaction for plot visualisation?
     - what norms are mandatory for crafting vizss on INDDIAN DATA PRTAL
     - what norms are mandatory for making of visualisations on INDIAN DATA PORTAL
-    
 - intent: faq-visualisation-b1/can-i-select-dis-without-state
   examples: |
     - Can I select a District without selecting a State
@@ -85,7 +79,6 @@ nlu:
     - is it feasible to select a district without having to select a state
     - is it viable to select a district without having to select a state
     - Is it mandatory to select Districts after states?
-    
 - intent: faq-visualisation-b1/can-change-color-of-viz
   examples: |
     - How do I change color in visualisation?
@@ -95,6 +88,7 @@ nlu:
     - How do I change color in viz drawn on indian data portal
     - how to change the color of my chart?
     - how can i change the colors of my graph?
+    - how can i change colors on the bar?
 - intent: faq-visualisation-b1/can-we-save-viz
   examples: |
     - Can we save a visualisation
@@ -124,6 +118,7 @@ nlu:
     - How do I share vis on Reddit
     - can i share my viz on social media
     - can I share this on my social media?
+    - linkdin is available for sharing graphs made here ?
 - intent: faq-visualisation-b1/do-i-have-to-share-number
   examples: |
     - Do I have to share my phone number to share on whatsapp

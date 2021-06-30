@@ -40,13 +40,10 @@ responses:
   utter_faq-visualisation-b5/What-JumpStartIndia-ISB: #157
   - text: Please visit this link to know more about JumpStartIndia@ISB 'https://www.isb.edu/en/research-thought-leadership/research-centres-institutes/bharti-institute-of-public-policy/JSI.html' 
 
-  utter_faq-visualisation-b5/whatis-indiapulse: #157
-  - text: Please visit this link to know more about JumpStartIndia@ISB 'https://www.isb.edu/en/research-thought-leadership/research-centres-institutes/bharti-institute-of-public-policy/JSI.html' 
-
   utter_faq-visualisation-b5/Can-zoom-chart: #158
   - text: Currently, we do not have an option to zoom into the chart 
 
-  utter_faq-visualisation-b5/what-dimension : #161
+  utter_faq-visualisation-b5/what-dimension: #161
   - text : A dimension is a descriptive attribute or characteristic of an object that can be given different values.
   
   utter_faq-visualisation-b5/Should-select-location-always: #162
@@ -92,13 +89,18 @@ responses:
   - text: You can create as many visualisation as you want with the data set that you have choosen
 
   utter_faq-visualisation-b5/why-no-jpeg: #179
-  - text: SVG and PNG formats are available.
+  - text: SVG and PNG formats are available
+  
   utter_faq-visualisation-b5/tables-instead-vis: #180
-  - text: Tabular view of the data would be available soon on the Portal, meanwhile you can view the data and download the same at your end. 
+  - text: Tabular view of the data would be available soon on the Portal, meanwhile you can view the data and download the same at your end
  
- utter_faq-visualisation-b5/create-indicator-with-assigned-units: #184
- - text: The user can assign any units of choice on the user created indicator
- 
+  utter_faq-visualisation-b5/create-indicator-with-assigned-units: #184
+  - text: The user can assign any units of choice on the user created indicator
+
+  utter_faq-visualisation-b5/whatis-indiapulse: #157
+  - text: Please visit this link to know more about JumpStartIndia@ISB https://www.isb.edu/en/research-thought-leadership/research-centres-institutes/bharti-institute-of-public-policy/JSI.html
+
+
 actions: []
 forms: {}
 e2e_actions: []

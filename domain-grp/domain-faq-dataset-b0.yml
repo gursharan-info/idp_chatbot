@@ -67,7 +67,7 @@ responses:
   utter_faq-dataset-b0/daily-datasets:  #314
   - text: The data sets where the sources put out information on a daily basis
 
-  utter_ faq-dataset-b0/old-data-available: #317
+  utter_faq-dataset-b0/old-data-available: #317
   - text: We can provide data from public sources across the years where it is available  
 
   utter_faq-dataset-b0/historical-data:  #318

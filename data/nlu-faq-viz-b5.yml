@@ -239,7 +239,7 @@ nlu:
     - Help me to find ways to build graphs
     - How many visualisations can I create for a single selected data
 
-- intent: faq-visualisation-b5/what-dimension #161
+- intent: faq-visualisation-b5/what-dimension
   examples: |
     - what is dimension
     - what is dimension in IDP
@@ -249,7 +249,7 @@ nlu:
     - dimesnion 
     - dimmesnion what is it ?
 
-- intent: faq-visualisation-b5/whatis-indiapulse #157
+- intent: faq-visualisation-b5/whatis-indiapulse
   examples: |
     - what is IPulse
     - what is indian pulse
@@ -262,7 +262,7 @@ nlu:
     - i fpumd this india pulse here
     - ahmm india pulse ?
 
-- intent:  faq-visualisation-b5/tables-instead-vis #180
+- intent:  faq-visualisation-b5/tables-instead-vis 
   examples: |
     - Can I create tables instead of visualization
     - Can I create tables instead of visualization here
@@ -271,9 +271,9 @@ nlu:
     - creating table without viz? is this feature availabel
     - can i get this facility where i can cretae viz without making tables on here
 
-- intent: faq-visualisation-b5/why-no-jpeg #179
+- intent: faq-visualisation-b5/why-no-jpeg 
   examples: |
-    - Why don’t I have the option to download the image in jpeg format
+    - Why dont I have the option to download the image in jpeg format
     - jpeg format why i cna't i donwload ?
     - can i download my work in jpeg
     - grpahs i made can be downloaded in JPEG right?
@@ -281,7 +281,7 @@ nlu:
     - anyway to download work in jpeg ?    
 
 
-- intent: faq-visualisation-b5/create-indicator-with-assigned-units #184
+- intent: faq-visualisation-b5/create-indicator-with-assigned-units 
   examples: |
     - Can I create my own indicator with assigned units 
     - Can I create my personal indicator with assigned units

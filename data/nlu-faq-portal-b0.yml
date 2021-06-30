@@ -267,6 +267,7 @@ nlu:
     - What do the terms news and graphics mean?
     - difference between news and graphics
     - news what is that?
+    - What are news and graphics?
 - intent: faq-portal-b0/uploading-news
   examples: |
     - how can we upload news here?

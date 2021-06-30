@@ -69,7 +69,8 @@ nlu:
     - more about IDP
     - How do I find out more about IDP?
     - what this portal is about?
-- intent: faq-dataset-b0/data-available-CMIE
+
+- intent: faq-dataset-b0/data-available-CMIE  #302
   examples: |
     - Any data available from CMIE ?
     - show the available data at CMIE?
@@ -192,7 +193,22 @@ nlu:
     - is there any daily based datasets?
     - any daily info based dataset?
     - dataset based on data information is available?
-- intent: faq-dataset-b0/historical-data
+
+
+- intent: faq-dataset-b0/old-data-available #317
+  examples: |
+    - Do you have 10 years old data ?
+    - do you any data older than 10 years or 20
+    - can i see data on IDP older than a deacde any dataset?
+    - is there any availability of older datasets like 50 years or 30 years old dtasets
+    - I have some project for that I need datasets frompast 10 years cani get it from here
+    - for my current research i need a dataset that should contain time from 2000 to 2020
+    - Do you have 10 years old data ?
+    - Do you have any historical data ?
+    - do you any deataset that is way old
+    - can i get some dataset that is older than 2 or 3 decades
+    - i want to fetch some data from history
+- intent: faq-dataset-b0/historical-data  #318
   examples: |
     - Do you have any historical data ?
     - please give historical data.
@@ -209,7 +225,21 @@ nlu:
     - is there any COVID related DAta?
     - give COVID data?
     - any COVID related data is available?
-- intent: faq-dataset-b0/Why-India-data-portal-create
+
+- intent: faq-dataset-b0/any-industry-data-question # 320
+  examples : |
+    - Any data from Ministry of Corporate Affairs ?
+    - Any stock market related data ?
+    - any data we are having for staock market
+    - I want some data for corporate affairs
+    - Which type of data available on daily basis ?
+    - type od data available on daily basis ?
+    - Which type of data available on monthly  basis ?
+    - any source of data from ministu of corprate affairs
+    - i have  a research  work for which stocks data can i get it from here
+    - i have  a jounalism project  work for which stocks data can i get it from here
+
+- intent: faq-dataset-b0/Why-India-data-portal-create   #322
   examples: |
     - Why was India data portal created?
     - why IDP is crerated?

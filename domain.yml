@@ -96,8 +96,11 @@ responses:
   - text: Please visit this link to know more about JumpStartIndia@ISB 'https://www.isb.edu/en/research-thought-leadership/research-centres-institutes/bharti-institute-of-public-policy/JSI.html'
   utter_faq-visualisation-b5/Can-zoom-chart:
   - text: Currently, we do not have an option to zoom into the chart
+  utter_faq-visualisation-b5/what-dimension:
+  - text: A dimension is a descriptive attribute or characteristic of an object that
+      can be given different values.
   utter_faq-visualisation-b5/Should-select-location-always:
-  - text: You can select as many Indicators as you like
+  - text: No it's not mandatory to select location always
   utter_faq-visualisation-b5/How-many-indicators-select-at-time:
   - text: You can compare a maximum of 2 data sets at a time
   utter_faq-visualisation-b5/How-select-two-datasets-visualizing-together:
@@ -130,6 +133,15 @@ responses:
   utter_faq-visualisation-b5/How-many-visualisations-create-single-selected-data:
   - text: You can create as many visualisation as you want with the data set that
       you have choosen
+  utter_faq-visualisation-b5/why-no-jpeg:
+  - text: SVG and PNG formats are available
+  utter_faq-visualisation-b5/tables-instead-vis:
+  - text: Tabular view of the data would be available soon on the Portal, meanwhile
+      you can view the data and download the same at your end
+  utter_faq-visualisation-b5/create-indicator-with-assigned-units:
+  - text: The user can assign any units of choice on the user created indicator
+  utter_faq-visualisation-b5/whatis-indiapulse:
+  - text: Please visit this link to know more about JumpStartIndia@ISB https://www.isb.edu/en/research-thought-leadership/research-centres-institutes/bharti-institute-of-public-policy/JSI.html
   utter_faq-dataset-b0/financial-data-available:
   - text: India Data Portal has financial data which includes credit by Bank, Agri
       wages, Debt and investment, Deposits with bank and many more!! Just go to Financial
@@ -148,10 +160,6 @@ responses:
   utter_faq-dataset-b0/data-Rural-Development:
   - text: India Data Portal has rural development which includes MGNREGA and Misson
       Antodaya data Just go to rural development tab in our dataset to find more
-  utter_faq-dataset-b0/Learn-more-portal:
-  - text: On the top right corner tab you will find training. After clicking on training
-      you will find two subtabs- workshop & events and online training. Click on online
-      training to find tutorial videos.
   utter_faq-dataset-b0/data-available-CMIE:
   - text: As of now, India Data Portal has data made available from government sources.
       In future, private data sources would be incorporated on the portal
@@ -189,11 +197,16 @@ responses:
   - text: The data sets where the sources put out monthly information
   utter_faq-dataset-b0/daily-datasets:
   - text: The data sets where the sources put out information on a daily basis
+  utter_faq-dataset-b0/old-data-available:
+  - text: We can provide data from public sources across the years where it is available
   utter_faq-dataset-b0/historical-data:
   - text: Various distoric datasets are available on the portal, please visit the
       dataset section of the portal for details
   utter_faq-dataset-b0/COVID-data:
   - text: You can find Covid19 data set at https://indiadataportal.com/jsi
+  utter_faq-dataset-b0/any-industry-data-question:
+  - text: This data is available on the India Pulse section of the India Data Portal
+      at https://indiadataportal.com/IndiaPulse
   utter_faq-dataset-b0/Why-India-data-portal-create:
   - text: "The \u201CIndia Data Portal\u201D was created to provide a one-stop open-access\
       \ portal for journalists to access, interact with, and visualize information,\
@@ -218,7 +231,9 @@ responses:
   - text: ' Hey I am a chatbot to help you here'
   - text: I am bot made by IDP
   utter_faq-visualisation-b0/count_of_datasets:
-  - text: There will be about 20 datasets available on the IDP portal by end July.
+  - text: There are more than 35+ dataset available at IDP, across various sectors
+      like agriculture, rural development, soci-economic, financial inclusion, economic
+      activity, etc.
   utter_faq-visualisation-b0/type_of_viz:
   - text: The list of visualizations available is wide (about 30 kinds of visualisations).
       They range from :-Lollipop, stacked bar plot, maps, grouped bar plots, grouped
@@ -310,6 +325,8 @@ responses:
   - text: Add data set option will let you add another data set for the purpose of
       comparision. The Compare data set option starts with having two data set boxes
       to directly go into comparing data sets
+  utter_faq-visualisation-b6/trend-analysis-what-viz-needed:
+  - text: Line chart will help you analyze the trend over time and perfom trend analysis
   utter_faq-visualisation-b6/minimum-indicators-and-dimension-to-create-snakey-graph:
   - text: To create a Sankey Graph you need 2 or more indicator with any number of
       dimensions and in the visualise pop up additional 2 or more dimension or location
@@ -328,27 +345,41 @@ responses:
   utter_faq-visualisation-b6/change-font-title:
   - text: It is not possible to change the font of your title
   utter_faq-visualisation-b6/change-font-style-on-visualisation:
-  - text: It is not possible to change the font size of your visualisation
+  - text: It is not currently possible to change the font size of your visualisation.
+      Thanks for the suggestion, we  will consider it in our product update
   utter_faq-visualisation-b6/create-my-own-visualisation:
   - text: Once you have identified the data set to work on, you add the necesarry
       filters and then click on the Build your Chart option. After selecting this
       option a pop-up will ask for additional information, you can fill this in if
       needed and click on Visualise at the bottom.
+  utter_faq-visualisation-b6/how-generate-viz:
+  - text: The visualizations are generated based on the meticulous analysis of the
+      data on India Data Portal
   utter_faq-visualisation-b6/maximum-visualisation-generated-for-dataset-at-a-time:
   - text: You can create upto 48 different types of visualisation using India Data
       Portal
   utter_faq-visualisation-b6/select-dimension-or-indicator-by-default:
-  - text: You should select a dimension and indicator for creating a visualisation
+  - text: You should select both dimension and indicator for creating a visualisation
   utter_faq-visualisation-b6/possibility-rearranging-visualisation-parts-like-legends-as-my-choice:
   - text: No, legends cannot be rearranged as per choice
   utter_faq-visualisation-b6/possibility-customize-bins-in-histogram:
   - text: No, it is not possible to customise bins in a Histogram
   utter_faq-visualisation-b6/maximum-visualizations-I-can-download:
   - text: You can download as many visualisations as you want at any point in time
+  utter_faq-visualisation-b6/viz-categorical-only:
+  - text: Categorical variables are often the dimensions and the values for these
+      dimensions can be visulaised on the portal
+  utter_faq-visualisation-b6/what-is-custom-indicator:
+  - text: The user has the option to create new indicators for the purpose of further
+      analysis and visualizations. The indicators created by the user can be viewed
+      under the "My Indicators" option under your account.
   utter_faq-visualisation-b6/what-happen-when-click-reset-all:
   - text: You will reset all the selection you have made.
   utter_faq-visualisation-b6/export-selected-data:
   - text: India Data Portal doesn't give you the option to export data from the site.
+  utter_faq-visualisation-b6/blanks-chloropleth-map:
+  - text: There might be no values for the regions which are blank or the regions
+      were formed after this data was collected
   utter_faq-visualisation-b6/change-visulaisation-to-local-language:
   - text: "To change the visualisation into your local language, click on the top\
       \ right option on your screen which shows  'A/\u0906'. Here you can find thw\
@@ -356,11 +387,16 @@ responses:
   utter_faq-visualisation-b6/write-title-in-local-language:
   - text: Yes, you can write the title in your preffered choice of language which
       is available
+  utter_faq-visualisation-b6/type-title-local-lang:
+  - text: You can use a local language keyboard to type the title in that language
   utter_faq-visualisation-b6/search-previously-created-visulaisation:
   - text: You can view your saved visualizations in My graphics or Graphic Gallery
   utter_faq-visualisation-b6/search-visualisation-in-graphic-gallery:
   - text: On the top bar under News and Graphics, you can find the Graphic Gallery.
       Once you are in the Graphic Gallery there will be a search box
+  utter_faq-visualisation-b6/can-viz-others-gallery-directly:
+  - text: Visualizations shared by other users in the Graphics Gallery can be re-used
+      by other users
   utter_faq-portal-b0/about_idp:
   - text: IDP is Your one-stop destination for open-access data on agriculture, rural
       development and financial inclusion in India.The portal contains a data repository
@@ -369,6 +405,8 @@ responses:
       as districts, tehsils, and villages with a largely rural focus and socio-economic
       characteristics in both rural and urban areas at granular spatial scales like
       district, town and ward spanning the entire country.
+  utter_faq-portal-b0/what-is-indicator:
+  - text: Indicator is a variable whose value is of interest to the user of the portal
   utter_faq-portal-b0/why_idp:
   - text: "With the help of IDP, a user can use the multiple datasets available, which\
       \ have been already cleaned and vetted and have been presented in easy to understand\
@@ -376,6 +414,10 @@ responses:
       \ per the requirement of their writing. What\u2019s even more exciting is that\
       \ these visualisations are easily downloadable and can be inserted straight\
       \ away in a story."
+  utter_faq-portal-b0/count-of-datasets:
+  - text: There are more than 35+ dataset available at IDP, across various sectors
+      like agriculture, rural development, soci-economic, financial inclusion, economic
+      activity, etc.
   utter_faq-portal-b0/part-available-data:
   - text: India Data portal covers multiple domains like Agriculture, Financial Inclusion,
       Rural Development, Economy, Socio- economic, Climate etc
@@ -608,10 +650,6 @@ responses:
   utter_faq-visualisation-b4/remove-all-selections-once:
   - text: You can remove all the selections by clicking on 'clear all' button on the
       top of any popup window
-  utter_faq-train-b0/learn-about-idp:
-  - text: On the top right corner tab you will find training. After clicking on training
-      you will find two categories- workshop & events and online training. Click on
-      online training to find tutorial videos.
   utter_faq-train-b0/how-to-use-idp:
   - text: On the top right corner tab you will find training. After clicking on training
       you will find two categories- workshop & events and online training. Click on

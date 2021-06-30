@@ -50,6 +50,9 @@ responses:
   utter_faq-visualisation-b6/add-dataset-compare-dataset-difference: #204
   - text: Add data set option will let you add another data set for the purpose of comparision. The Compare data set option starts with having two data set boxes to directly go into comparing data sets
 
+  utter_faq-visualisation-b6/trend-analysis-what-viz-needed: # 206
+  - text: Line chart will help you analyze the trend over time and perfom trend analysis
+
   utter_faq-visualisation-b6/minimum-indicators-and-dimension-to-create-snakey-graph: #207
   - text: To create a Sankey Graph you need 2 or more indicator with any number of dimensions and in the visualise pop up additional 2 or more dimension or location needs to be selected 
 
@@ -66,16 +69,20 @@ responses:
   - text: It is not possible to change the font of your title
 
   utter_faq-visualisation-b6/change-font-style-on-visualisation: #212
-  - text: It is not possible to change the font size of your visualisation 
+  - text: It is not currently possible to change the font size of your visualisation. Thanks for the suggestion, we  will consider it in our product update
 
   utter_faq-visualisation-b6/create-my-own-visualisation: #213
   - text: Once you have identified the data set to work on, you add the necesarry filters and then click on the Build your Chart option. After selecting this option a pop-up will ask for additional information, you can fill this in if needed and click on Visualise at the bottom. 
 
+
+  utter_faq-visualisation-b6/how-generate-viz: #214
+  - text: The visualizations are generated based on the meticulous analysis of the data on India Data Portal
+  
   utter_faq-visualisation-b6/maximum-visualisation-generated-for-dataset-at-a-time: #215
   - text: You can create upto 48 different types of visualisation using India Data Portal
 
   utter_faq-visualisation-b6/select-dimension-or-indicator-by-default: #216
-  - text: You should select a dimension and indicator for creating a visualisation
+  - text: You should select both dimension and indicator for creating a visualisation
 
   utter_faq-visualisation-b6/possibility-rearranging-visualisation-parts-like-legends-as-my-choice: #217
   - text: No, legends cannot be rearranged as per choice
@@ -86,11 +93,21 @@ responses:
   utter_faq-visualisation-b6/maximum-visualizations-I-can-download: #220
   - text: You can download as many visualisations as you want at any point in time
 
+  utter_faq-visualisation-b6/viz-categorical-only: # 221
+  - text: Categorical variables are often the dimensions and the values for these dimensions can be visulaised on the portal
+
+
+  utter_faq-visualisation-b6/what-is-custom-indicator: # 222
+  - text: The user has the option to create new indicators for the purpose of further analysis and visualizations. The indicators created by the user can be viewed under the "My Indicators" option under your account.
+ 
   utter_faq-visualisation-b6/what-happen-when-click-reset-all: #223
   - text: You will reset all the selection you have made.
 
   utter_faq-visualisation-b6/export-selected-data: #225
   - text: India Data Portal doesn't give you the option to export data from the site. 
+
+  utter_faq-visualisation-b6/blanks-chloropleth-map: # 227
+  - text: There might be no values for the regions which are blank or the regions were formed after this data was collected
 
   utter_faq-visualisation-b6/change-visulaisation-to-local-language: #231
   - text: To change the visualisation into your local language, click on the top right option on your screen which shows  'A/आ'. Here you can find thw various languages available. 
@@ -98,13 +115,17 @@ responses:
   utter_faq-visualisation-b6/write-title-in-local-language: #232
   - text: Yes, you can write the title in your preffered choice of language which is available 
 
+  utter_faq-visualisation-b6/type-title-local-lang: #233
+  - text: You can use a local language keyboard to type the title in that language
+
   utter_faq-visualisation-b6/search-previously-created-visulaisation: #235
   - text: You can view your saved visualizations in My graphics or Graphic Gallery 
 
   utter_faq-visualisation-b6/search-visualisation-in-graphic-gallery: #236
   - text: On the top bar under News and Graphics, you can find the Graphic Gallery. Once you are in the Graphic Gallery there will be a search box
 
-
+  utter_faq-visualisation-b6/can-viz-others-gallery-directly: #237
+  - text: Visualizations shared by other users in the Graphics Gallery can be re-used by other users
 actions: []
 forms: {}
 e2e_actions: []

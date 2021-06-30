@@ -72,7 +72,7 @@ pipeline:
   - name: ResponseSelector
     epochs: 100
     featurizers: ["convert-cvf-1", "cvf-word"]
-    retrieval_intent: faq-visualisation-b6 # from faq number 180 to 225
+    retrieval_intent: faq-visualisation-b6 # from faq number 180 to 238
 
   - name: FallbackClassifier
     threshold: 0.75

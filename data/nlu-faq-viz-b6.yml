@@ -203,6 +203,7 @@ nlu:
     - How many maximum number of visualization generated for any selected datasets at a time?
     - at a time ,how many max. number of visualizations are generated?
     - ways to generate maximum number of visualization at a time.
+    - for a perticular dataset how much visualisations i can make?
     - What is the maximum number of visualizations generated for any selected datasets at a time
     - what is the maximum number of visualisations one can make?
     - for a given dataset what are maximum number of visualisations we can make?
@@ -227,6 +228,18 @@ nlu:
     - do i prefer to change the lengend in visualization part?
     - visualization part requires a rearrangement of legends?
     - Can I rearrange the visulization parts like legend as per my choice
+
+- intent: faq-visualisation-b6/trend-analysis-what-viz-needed # 206
+  examples: |
+    - Which visualization do I need to consider to see trend analysis 
+    - which graphs i need to consider to see trend ananalysis
+    - i want to see trend annalysis which vizs to be considered?
+    - On aproject I am which viz i should consider to see trend analysis
+    - trend grphs i want to see which viz. i will consider
+    - i am on a research i want to paste trend visualisation how will i get it
+    - how will i get vis from trend anayltics?
+
+
 - intent: faq-visualisation-b6/possibility-customize-bins-in-histogram
   examples: |
     - customizing bin in a histogram.
@@ -246,6 +259,45 @@ nlu:
     - ways to download maximum number of visualization at  any point of time.
     - download maximum number of visualizations.
     - What is the maximum number of visualizations I can download for any point of time
+
+- intent: faq-visualisation-b6/how-generate-viz #214
+  examples: |
+    - How are the visualizations generated 
+    - How are the visualizations generated here
+    - on this site How are the visualizations generated 
+    - in this IDP what way vizz are generated
+    - on this webiste how are grpahics drawn here
+    - i want to know how are graphs generated
+
+- intent: faq-visualisation-b6/viz-categorical-only # 221
+  examples: |
+    - Can I visualize using categorical variables only
+    - i want to see output using only categorical varibales only possible?
+    - i want to see output using only categorical varibales only possible?
+    - wanna see some output cat. variables enough?
+    - cat vars enough for making output
+    - categoriccl variables enough for making my grpahs
+    - categoriccl variables enough for making my grpahs
+
+- intent: faq-visualisation-b6/what-is-custom-indicator # 222
+  examples: |
+    - What is "or a custom indicator" 
+    - what is custom indicator
+    - custom indicator ?
+    - wanna  know what is custom indicators
+    - i want ot introduce custom indicators in my grphs but waht is ?
+    - i want to make custom indicators in my graphs but what is ?
+    - personal indicators what is it ?
+
+- intent: faq-visualisation-b6/blanks-chloropleth-map # 227
+  examples: |
+    - Why are there blanks in a Choropleth map
+    - why some blanks in chloropleth map
+    - blank spaces in chloropleth map ?
+    - white space in chloropleth map why ?
+    - lot of empty spccae in chloro map
+    - chloro maps are giving some spaces which are to filled but what is it?
+
 - intent: faq-visualisation-b6/what-happen-when-click-reset-all
   examples: |
     - what will happen if i click reset all
@@ -279,7 +331,18 @@ nlu:
     - how to change language
     - change language
     - How can I change my visualization into my local language
-    - can the visualization be translated to local language?
+
+- intent: faq-visualisation-b6/type-title-local-lang #233
+  examples: |
+    - How do I type the title in a Local Language
+    - wanna type title in regional langs
+    - title in regional langs any availability of feature here
+    - i am in a research proj i want to have title in inidan langs can i ?
+    - my team need to have titles in regional langs may be indian regional lkangs can i do this?
+    - any way i can type the title in LOCAL LANGUAGESS
+    - Do IDP give me a option to type in Local Language 
+    - does indian data portalls give me option to type in local langs
+
 - intent: faq-visualisation-b6/write-title-in-local-language
   examples: |
     - local language title

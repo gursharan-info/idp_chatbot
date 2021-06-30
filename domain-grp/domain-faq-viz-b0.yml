@@ -51,7 +51,7 @@ responses:
   - text: I am bot made by IDP
   
   utter_faq-visualisation-b0/count_of_datasets:
-  - text: There will be about 20 datasets available on the IDP portal by end July.
+  - text: There are more than 35+ dataset available at IDP, across various sectors like agriculture, rural development, soci-economic, financial inclusion, economic activity, etc.
   utter_faq-visualisation-b0/type_of_viz:
   - text: The list of visualizations available is wide (about 30 kinds of visualisations). They range from :-Lollipop, stacked bar plot, maps, grouped bar plots, grouped scattered plots, treemap, donut, Sankey, infographic, frequency histogram, Grouped Bubble chart, beeswarm plot,
   

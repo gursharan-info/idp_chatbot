@@ -16,6 +16,25 @@ nlu:
     - what is iDP
     - what is idp?
     - idp?
+    - How do I Learn about the portal?
+    - How do I find out more about the portal?
+    - more about portal
+    - How can I get more about the platform?
+    - what is this portal?
+    - anything more about portal?
+    - anything more about this IDP portal
+    - more about IDP
+    - How do I find out more about IDP?
+    - How do I learn about IDP?
+    - How do I find out more about the portal?
+    - more about portal
+    - How can I get more about the platform?
+    - what is this portal?
+    - what is this this
+    - anything more about portal?
+    - anything more about this IDP portal
+    - more about IDP
+    - How do I find out more about IDP?
     - why here?
     - what is indian data portal
     - what is idp
@@ -43,6 +62,28 @@ nlu:
     - How do I learn about IDP?
     - What features are available in IDP?
     - why should i prefer idp?
+
+- intent: faq-portal-b0/count-of-datasets #4
+  examples: |
+    - how many datasets avaibale on IDp
+    - count of datsets on indina data portal available
+    - can i know what amount of data i will get from here
+    - how many datasets comprise here?
+    - i want some datsets how many can i get from here
+    - if i wnat some datatsets how many will i get and from which field
+    - if i wnat some datatsets how many will i get and from which domain
+
+- intent: faq-portal-b0/what-is-indicator #33
+  examples: |
+    - what is indicator
+    - what is the meaning of indicator
+    - what the indicator thing on IDP
+    - on indianportal i saw something called as indicatorr what is this
+    - i was using datasets tab i found this indicator ?
+    - indicator what ?
+    - indicator  is what ?
+    
+
 - intent: faq-portal-b0/part-available-data
   examples: |
     - What are the sectors of available data?
@@ -94,7 +135,10 @@ nlu:
     - Agriculture data present on India data portal?
     - Portal has Agriculture data?
     - any agriculture data is available.
-- intent: faq-portal-b0/Is-data-reliable
+
+
+
+- intent: faq-portal-b0/Is-data-reliable #323
   examples: |
     - Is the data reliable?
     - how we find data is reliable?

@@ -332,7 +332,7 @@ nlu:
     - any way i can type the title in LOCAL LANGUAGESS
     - Do IDP give me a option to type in Local Language 
     - does indian data portalls give me option to type in local langs
-    
+
 - intent: faq-visualisation-b6/write-title-in-local-language
   examples: |
     - local language title
@@ -360,3 +360,13 @@ nlu:
     - where can i find visualisation
     - trouble with searching for any visualisation in the graphic gallery
     - How do I search for any visualization in the Graphics Gallery
+
+- intent: faq-visualisation-b6/can-viz-others-gallery-directly #237
+  examples: |
+    - Can I use the visualizations created by others from the Gallery directly 
+    - can i see graphs made by others on IDP direclty
+    - does IDP provides a facility so that i can view wrok done by others directly
+    - does indian data portal provides a facility so that i can view work done by others directly
+    - i want to work by other users or jounalist of this platform can i do it in gallery?
+    - i want to work by other jounalist of this platform can i do it ?
+    

@@ -1,34 +1,35 @@
 version: "2.0"
 nlu:
-- intent: faq-fel-b0/info-about-fellowship  #360
+- intent: faq-fel-b0/info-about-fellowship
   examples: |
-    -how can we accumulate more about the fellowship program?
-    -What can I do to learn more about the fellowships?
-    -How can I discover more about the fellowships?
-    -how one can be aware of fellowship programs?
-    -how can an individual acknowledge more about fellowships?
-    -information about fellowships?
-    -where can i get information about fellowships
-- intent: faq-fel-b0/fellowship-eligibility #361
+    - how can we accumulate more about the fellowship program?
+    - What can I do to learn more about the fellowships?
+    - How can I discover more about the fellowships?
+    - how one can be aware of fellowship programs?
+    - how can an individual acknowledge more about fellowships?
+    - information about fellowships?
+    - where can i get information about fellowships
+- intent: faq-fel-b0/fellowship-eligibility
   examples: |
-    -how to check the eligibilty for fellowship?
-    -How do I find out if I am qualified for a fellowship?
-    -what are fellowship eligibility norms?
-    -How do I find out if I am a good fit for a fellowship?
-    -How can I find out whether I am qualified for a fellowship?
-    -How can I know if I am eligible for a fellowship?
-- intent: faq-fel-b0/fellowship-timeperiod  #362
+    - how to check the eligibilty for fellowship?
+    - How do I find out if I am qualified for a fellowship?
+    - what are fellowship eligibility norms?
+    - How do I find out if I am a good fit for a fellowship?
+    - How can I find out whether I am qualified for a fellowship?
+    - How can I know if I am eligible for a fellowship?
+- intent: faq-fel-b0/fellowship-timeperiod
   examples: |
-    -what is the time period for fellowship?
-    -Is the fellowship for a set period of time?
-    -How long will the fellowship program last?
-    -Is the fellowship for a specific amount of time?
-    -what is the duration of fellowship?
-    -How long is the fellowship?
-- intent: faq-fel-b0/cost-of-idp-training #363
+    - what is the time period for fellowship?
+    - Is the fellowship for a set period of time?
+    - How long will the fellowship program last?
+    - Is the fellowship for a specific amount of time?
+    - what is the duration of fellowship?
+    - How long is the fellowship?
+- intent: faq-fel-b0/cost-of-idp-training
   examples: |
-    -Does training provided by idp is free of cost?
-    -training given by idp is free?
-    -is indian data portal training offered for free?
-    -Is IDP training offered for free?
-    -Is IDP training provided free of charge?
+    - Does training provided by idp is free of cost?
+    - training given by idp is free?
+    - is indian data portal training offered for free?
+    - Is IDP training offered for free?
+    - Is IDP training provided free of charge?
+    - i wannna do some training but i have no money can I do

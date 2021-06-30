@@ -322,6 +322,7 @@ nlu:
     - have there been any fellowships associated with idp?
     - does idp offeres any fellowship?
     - any fellowship available?
+    - Does India Data Portal have any fellowships?
 - intent: faq-portal-b0/whats-on-portal
   examples: |
     - What information can I find on the Portal?

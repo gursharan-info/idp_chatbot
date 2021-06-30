@@ -1,17 +1,6 @@
 version: "2.0"
 nlu:
-- intent: faq-train-b0/learn-about-idp # 271
-  examples: |
-    - How do I learn about IDP?
-    - How do I find out more about the portal?
-    - more about portal
-    - How can I get more about the platform?
-    - what is this portal?
-    - what is this this
-    - anything more about portal?
-    - anything more about this IDP portal
-    - more about IDP
-    - How do I find out more about IDP?
+
 
 - intent: faq-train-b0/how-to-use-idp #272
   examples: |

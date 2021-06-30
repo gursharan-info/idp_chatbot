@@ -16,6 +16,9 @@ responses:
   utter_faq-portal-b0/why_idp:
   - text: With the help of IDP, a user can use the multiple datasets available, which have been already cleaned and vetted and have been presented in easy to understand manner. The users can make visualisations based on the chosen parameters as per the requirement of their writing. What’s even more exciting is that these visualisations are easily downloadable and can be inserted straight away in a story. 
 
+  utter_faq-portal-b0/count-of-datasets: #4
+  - text: There are more than 35+ dataset available at IDP, across various sectors like agriculture, rural development, soci-economic, financial inclusion, economic activity, etc.
+ 
   utter_faq-portal-b0/part-available-data: #14
   - text: India Data portal covers multiple domains like Agriculture, Financial Inclusion, Rural Development, Economy, Socio- economic, Climate etc
   

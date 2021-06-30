@@ -28,9 +28,6 @@ responses:
   utter_faq-dataset-b0/data-Rural-Development: #256
   - text: India Data Portal has rural development which includes MGNREGA and Misson Antodaya data Just go to rural development tab in our dataset to find more
 
-  utter_faq-dataset-b0/Learn-more-portal: #270
-  - text: On the top right corner tab you will find training. After clicking on training you will find two subtabs- workshop & events and online training. Click on online training to find tutorial videos.
-
   utter_faq-dataset-b0/data-available-CMIE:  #302
   - text: As of now, India Data Portal has data made available from government sources. In future, private data sources would be incorporated on the portal
 
@@ -70,11 +67,17 @@ responses:
   utter_faq-dataset-b0/daily-datasets:  #314
   - text: The data sets where the sources put out information on a daily basis
 
+  utter_ faq-dataset-b0/old-data-available: #317
+  - text: We can provide data from public sources across the years where it is available  
+
   utter_faq-dataset-b0/historical-data:  #318
   - text: Various distoric datasets are available on the portal, please visit the dataset section of the portal for details
 
   utter_faq-dataset-b0/COVID-data:  #319
   - text: You can find Covid19 data set at https://indiadataportal.com/jsi
+
+  utter_faq-dataset-b0/any-industry-data-question: #320
+  - text: This data is available on the India Pulse section of the India Data Portal at https://indiadataportal.com/IndiaPulse
 
   utter_faq-dataset-b0/Why-India-data-portal-create:  #322
   - text: The “India Data Portal” was created to provide a one-stop open-access portal for journalists to access, interact with, and visualize information, data and knowledge related to agriculture and financial inclusion, while also aiding other beneficiaries – researchers, students, policy makers, administrators, NGOs, and entrepreneurs. To know more, visit this link- https://indiadataportal.com/about?language=English&location=India

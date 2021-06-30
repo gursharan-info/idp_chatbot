@@ -148,10 +148,6 @@ responses:
   utter_faq-dataset-b0/data-Rural-Development:
   - text: India Data Portal has rural development which includes MGNREGA and Misson
       Antodaya data Just go to rural development tab in our dataset to find more
-  utter_faq-dataset-b0/Learn-more-portal:
-  - text: On the top right corner tab you will find training. After clicking on training
-      you will find two subtabs- workshop & events and online training. Click on online
-      training to find tutorial videos.
   utter_faq-dataset-b0/data-available-CMIE:
   - text: As of now, India Data Portal has data made available from government sources.
       In future, private data sources would be incorporated on the portal
@@ -189,11 +185,16 @@ responses:
   - text: The data sets where the sources put out monthly information
   utter_faq-dataset-b0/daily-datasets:
   - text: The data sets where the sources put out information on a daily basis
+  utter_ faq-dataset-b0/old-data-available:
+  - text: We can provide data from public sources across the years where it is available
   utter_faq-dataset-b0/historical-data:
   - text: Various distoric datasets are available on the portal, please visit the
       dataset section of the portal for details
   utter_faq-dataset-b0/COVID-data:
   - text: You can find Covid19 data set at https://indiadataportal.com/jsi
+  utter_faq-dataset-b0/any-industry-data-question:
+  - text: This data is available on the India Pulse section of the India Data Portal
+      at https://indiadataportal.com/IndiaPulse
   utter_faq-dataset-b0/Why-India-data-portal-create:
   - text: "The \u201CIndia Data Portal\u201D was created to provide a one-stop open-access\
       \ portal for journalists to access, interact with, and visualize information,\
@@ -376,6 +377,10 @@ responses:
       \ per the requirement of their writing. What\u2019s even more exciting is that\
       \ these visualisations are easily downloadable and can be inserted straight\
       \ away in a story."
+  utter_faq-portal-b0/count-of-datasets:
+  - text: There are more than 35+ dataset available at IDP, across various sectors
+      like agriculture, rural development, soci-economic, financial inclusion, economic
+      activity, etc.
   utter_faq-portal-b0/part-available-data:
   - text: India Data portal covers multiple domains like Agriculture, Financial Inclusion,
       Rural Development, Economy, Socio- economic, Climate etc
@@ -608,10 +613,6 @@ responses:
   utter_faq-visualisation-b4/remove-all-selections-once:
   - text: You can remove all the selections by clicking on 'clear all' button on the
       top of any popup window
-  utter_faq-train-b0/learn-about-idp:
-  - text: On the top right corner tab you will find training. After clicking on training
-      you will find two categories- workshop & events and online training. Click on
-      online training to find tutorial videos.
   utter_faq-train-b0/how-to-use-idp:
   - text: On the top right corner tab you will find training. After clicking on training
       you will find two categories- workshop & events and online training. Click on

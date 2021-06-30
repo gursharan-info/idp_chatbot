@@ -98,8 +98,7 @@ responses:
   - text: The user can assign any units of choice on the user created indicator
 
   utter_faq-visualisation-b5/whatis-indiapulse: #157
-  - text: Please visit this link to know more about JumpStartIndia@ISB https://www.isb.edu/en/research-thought-leadership/research-centres-institutes/bharti-institute-of-public-policy/JSI.html
-
+  - text: Please visit this link to know more about IndiaPulse@ISB: https://www.isb.edu/en/research-thought-leadership/research-centres-institutes/bharti-institute-of-public-policy/JSI.html 
 
 actions: []
 forms: {}

@@ -201,6 +201,7 @@ nlu:
     - How many maximum number of visualization generated for any selected datasets at a time?
     - at a time ,how many max. number of visualizations are generated?
     - ways to generate maximum number of visualization at a time.
+    - for a perticular dataset how much visualisations i can make?
     - What is the maximum number of visualizations generated for any selected datasets at a time
 - intent: faq-visualisation-b6/select-dimension-or-indicator-by-default
   examples: |

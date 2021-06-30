@@ -208,6 +208,17 @@ nlu:
     - share option fir facebook?
     - share option for bluetooth?
     - share option for linkedln?
+    - linkdin is available for sharing graphs made here ?
+    - facebook is available for sharing graphs made here ?
+    - twitter is available for sharing graphs made here ?
+    - can i share my work on social media
+    - can i share my work on reddit
+    - can i share on my work on social media websites
+    - facbook can i share my reesults on it?
+    - twitte can i share my reesults on it?
+    - bluettoth can i share my reesults on it?
+    - reddit can i share my reesults on it?
+    - whatsaap can i share my reesults on it?
     - share option on one drive?
     - can i copy the link of graph?
     - How can I share my graph?
@@ -248,6 +259,9 @@ nlu:
     - dim.?
     - dimesnion 
     - dimmesnion what is it ?
+    - what are dimensions
+    - dimension?
+    - what is dimension in visualisation
 
 - intent: faq-visualisation-b5/whatis-indiapulse
   examples: |
@@ -267,6 +281,7 @@ nlu:
     - Can I create tables instead of visualization
     - Can I create tables instead of visualization here
     - on IDP can we cretes tables without vizz
+    - im in a project can i create table without viz 
     - on indiandataportal can we create tables without Visualisations
     - creating table without viz? is this feature availabel
     - can i get this facility where i can cretae viz without making tables on here

@@ -10,6 +10,13 @@ intents:
 entities: []
 slots: {}
 responses:
+
+  utter_faq-visualisation-b4/not-understand-viz: # 110
+  - text: Please check the indicators and dimensions and relate to what story you need to find and then click on build your chart. If you dont understand one chart look for the other ones.
+
+  utter_faq-visualisation-b4/add-indicator-from-diff-dataset: #111
+  - text: Yes you can add the indicators from other datasets. Just click on  the datasets tab on top and go to create new indicator. Now a popup will show up which includes a dropdown of dataset where you can choose across datasets and their indicators to create a new indicator
+
   utter_faq-visualisation-b4/how-many-datasets-compare: #112
   - text: As of now You can compare atmost two datasets at a time
 
@@ -18,6 +25,12 @@ responses:
 
   utter_faq-visualisation-b4/upload-my-data: #114
   - text: You can write to us in the mail that you have found a source of data. Kindly share the link of the datasource and we will look into it.
+
+  utter_faq-visualisation-b4/how-many-options-select-chart-builder: #115
+  - text: You can select every option in the chart builder. But as per your requirements you may not have to select all the options.
+
+  utter_faq-visualisation-b4/cannot-see-district-state-in-legend: #117
+  - text: When the filters are not applied states and districts on the legend will not show up.
 
   utter_faq-visualisation-b4/why-data-available-for-some-years: #118
   - text: We extract data from the governemt datasources. If the goernment source does not have the data for a particular year or years then we cannot have that data.
@@ -67,6 +80,9 @@ responses:
   utter_faq-visualisation-b4/can-add-three-datasets: #133
   - text: As of now you only can add two datasets.
 
+  utter_faq-visualisation-b4/can-see-30-datasets: #134
+  - text: The respective graphs will appear with the choice of selections the users make.
+  
   utter_faq-visualisation-b4/selecte-district-no-result: #137
   - text: Please check if you have selected time dimension and one indicator atleast from the indicator list.
 

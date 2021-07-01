@@ -17,7 +17,7 @@ responses:
   utter_faq-visualisation-b1/location-meaning-idp:
   - text: Location in the dataset defines the geographical attributes like state, district, city available according to the level it was recorded at source.
   utter_faq-visualisation-b1/only-india-is-covered:
-  - text: Yes, India Data Portal contains data of Indian government sources only. The level of depth / granullarity varies in dataset according to the data collection at source. and more over IDP covers all districts in a particular state, which are recorded in the data collection at source
+  - text: India Data Portal contains data of Indian government sources only. The level of depth / granullarity varies in dataset according to the data collection at source. and more over IDP covers all districts in a particular state, which are recorded in the data collection at source
   utter_faq-visualisation-b1/mandatory-to-select-location:
   - text: In some aggregatable datasets, there is no need need to select a location. This way it can present pan india statistics for the dataset. However, for non aggregatable datasets, selecting a location is mandatory
   utter_faq-visualisation-b1/can-i-select-dis-without-state:

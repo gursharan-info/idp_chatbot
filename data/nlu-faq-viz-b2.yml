@@ -3,17 +3,29 @@ nlu:
 - intent: faq-visualisation-b2/delete-visualisation-from-graphic-gallery
   examples: |
     - How i delete visualisation from graphics gallery?
-    - do i  delete a visualisation ?
+    - how can i delete visulaisations from graphics gallery?
+    - how am i supposed to remove visuals from graphics gallery?
+    - do i delete a visualisation ?
+    - how am i able to delete graphs from graphics gallery?
+    - deleteing visualisations from graphics gallery?
+    - am i allowed to delete visualisations from graphics gallery?
+    - is it possible to delete the visualisations?
+    - Is it possible to remove the visuals from the system?
     - Can i remove visualisation and how?
+    - Is there a way to get rid of the visualisations?
     - How visualization from graphics gallery is deleted?
     - Can i delete visualisation from graphics gallery and how?
     - will you assist me to delete the visualisation?
     - is visualisation deleted?
     - do i erase the visualisation from the graphics gallery?
     - How do I delete a visualisation from graphics gallery
+
 - intent: faq-visualisation-b2/possible-share-live-visualisation
   examples: |
     - do i share interactive / live visualisation
+    - how am i supposed to share live visualisations.
+    - is it possible to share live visualisations.
+    - how am i supposed to share interactive visuals
     - is it possible to share an interactive/live visualisation
     - how live visualisation can be shared?
     - which link is used to share the live /interactive visualisation?

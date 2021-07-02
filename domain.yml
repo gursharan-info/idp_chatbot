@@ -97,7 +97,8 @@ responses:
   utter_faq-visualisation-b5/Can-zoom-chart:
   - text: Currently, we do not have an option to zoom into the chart
   utter_faq-visualisation-b5/what-dimension:
-  - text: A dimension is a descriptive attribute or characteristic of an object that can be given different values.
+  - text: A dimension is a descriptive attribute or characteristic of an object that
+      can be given different values.
   utter_faq-visualisation-b5/Should-select-location-always:
   - text: No it's not mandatory to select location always
   utter_faq-visualisation-b5/How-many-indicators-select-at-time:
@@ -105,6 +106,8 @@ responses:
   utter_faq-visualisation-b5/How-select-two-datasets-visualizing-together:
   - text: Once you are in the visualise page, there will an option towards the left
       side of your screen to add a data set under the data set tab
+  utter_faq-visualisation-b5/what-kind-datasets-i-compare:
+  - text: You can compare datasets that have similar temporal and spatial distribution.
   utter_faq-visualisation-b5/What-you-mean-time:
   - text: The time varible lets you filter out specific time periods
   utter_faq-visualisation-b5/Why-click-options-popping-out-in-Build-Chart:
@@ -116,9 +119,13 @@ responses:
   - text: You can select one color palette from the option provided. Each color palatte
       will have multiple colors
   utter_faq-visualisation-b5/how-change-units-entity:
-  - text: No, the units are fixed
+  - text: You cannot change units for data uploaded from government sources. But you
+      can always create new indicators and specify the units of your choice.
   utter_faq-visualisation-b5/How-change-different-colours-bar:
   - text: You can choose from the various color scheme options available
+  utter_faq-visualisation-b5/how-change-color-graph:
+  - text: On top left corner of the visualisation, there is a icon with gear and pencil
+      which enable you to change the color pallet of visualisations
   utter_faq-visualisation-b5/How-many-ways-download-graph:
   - text: You can download your visualisation in SVG and PNG format
   utter_faq-visualisation-b5/Can-share-graphs-on-social-media:
@@ -130,17 +137,19 @@ responses:
   - text: You can select upto the number of locations available in the data set for
       creating your visualisation
   utter_faq-visualisation-b5/How-many-visualisations-create-single-selected-data:
-  - text: You can create as many visualisation as you want with the data set that
-      you have choosen
+  - text: You can create as many visualisation - explore the options on the India
+      Data Portal
   utter_faq-visualisation-b5/why-no-jpeg:
   - text: SVG and PNG formats are available
   utter_faq-visualisation-b5/tables-instead-vis:
   - text: Tabular view of the data would be available soon on the Portal, meanwhile
       you can view the data and download the same at your end
+  utter_faq-visualisation-b5/max-datasets-compare:
+  - text: You can compare a maximum of 2 datasets at a time
   utter_faq-visualisation-b5/create-indicator-with-assigned-units:
   - text: The user can assign any units of choice on the user created indicator
   utter_faq-visualisation-b5/whatis-indiapulse:
-  - text: Please visit this link to know more about JumpStartIndia@ISB https://www.isb.edu/en/research-thought-leadership/research-centres-institutes/bharti-institute-of-public-policy/JSI.html
+  - text: Please visit this link to know more about IndiaPulse@ISB https://www.isb.edu/en/research-thought-leadership/research-centres-institutes/bharti-institute-of-public-policy/JSI.html
   utter_faq-dataset-b0/financial-data-available:
   - text: India Data Portal has financial data which includes credit by Bank, Agri
       wages, Debt and investment, Deposits with bank and many more!! Just go to Financial
@@ -285,8 +294,10 @@ responses:
   - text: Out of my knowledge can you pls rephrase
   utter_please_rephrase:
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
-  utter_faq-visualisation-b6/maximum-number-datasets-compare:
-  - text: You can compare a maximum of 2 datasets at a time
+  utter_faq-visualisation-b6/why-create-new-indicator:
+  - text: The user has the option to create new indicators for the purpose of further
+      analysis and visualizations. The indicators created by the user can be viewed
+      under the "My Indicators" option under your account.
   utter_faq-visualisation-b6/create-new-indicators:
   - text: On the Visualise page, go to the left hand side of the page where you will
       find the indicators option under the data set tab. Click on indicators and on
@@ -296,11 +307,11 @@ responses:
   - text: choropleth map is a type of thematic map in which a set of pre-defined areas
       is colored or patterned in proportion to a statistical variable that represents
       an aggregate summary of a geographic characteristic within each area.
+  utter_faq-visualisation-b6/how-many-for-cholorpleth-map:
+  - text: Only one indicator value can be visualized using the chropleth map of India
   utter_faq-visualisation-b6/new-indicator-using-seperate-datasets:
   - text: A new indicator can be created for the respective datasets that is selected
-  utter_faq-visualisation-b6/possibility-creating-three-dimensional-graph:
-  - text: Currently we do not have the option to create a 3 dimensional graph
-  utter_faq-visualisation-b6/creating-three-dimensional-graph:
+  utter_faq-visualisation-b6/create-3-dimensional-graph:
   - text: Currently we do not have the option to create a 3 dimensional graph
   utter_faq-visualisation-b6/when-use-choropleth-map:
   - text: A choropleth map is best used to represents an aggregate summary of a geographic
@@ -310,10 +321,17 @@ responses:
       sort them alphabetically or by indicator value
   utter_faq-visualisation-b6/maximum-indicators-one-visulisation:
   - text: You can select as many indicator available in the dataset
+  utter_faq-visualisation-b6/map-cannot-generated:
+  - text: If multiple indicators are selected, then it cannot be visualized on the
+      map. Please select only one indicator for the Map option.
   utter_faq-visualisation-b6/save-visualisations-among-my-graphics-my-gallery:
   - text: My graphics is you personal space for saving visualisation and graphics
       gallery lets you share your visualisation with everyon else. It is completly
       your choice where to save your visualisation.
+  utter_faq-visualisation-b6/upload-work-on-social-media:
+  - text: After creating the visulisation there will a share icon in the top right
+      corner of your visualisation space. Clicking on that share icon will give you
+      the various options to share your visualisation
   utter_faq-visualisation-b6/why-save-svg-format:
   - text: SVG (Scaleable Vector Graphics) files are ideal for saving, as the name
       suggests is infinitely scaleable; they will never lose their sharpness.
@@ -342,7 +360,8 @@ responses:
   - text: You can copy the shareable link by clicking on the share icon on the top
       right corner of your visualisation space.
   utter_faq-visualisation-b6/change-font-title:
-  - text: It is not possible to change the font of your title
+  - text: It is currently not possible to change the font of your title. Thanks for
+      the suggestion, we  will consider it in our product update
   utter_faq-visualisation-b6/change-font-style-on-visualisation:
   - text: It is not currently possible to change the font size of your visualisation.
       Thanks for the suggestion, we  will consider it in our product update
@@ -374,8 +393,14 @@ responses:
       under the "My Indicators" option under your account.
   utter_faq-visualisation-b6/what-happen-when-click-reset-all:
   - text: You will reset all the selection you have made.
+  utter_faq-visualisation-b6/get-table-after-download-image-format:
+  - text: User can download the data that is being visualized on the portal and use
+      it for analysis externally
   utter_faq-visualisation-b6/export-selected-data:
   - text: India Data Portal doesn't give you the option to export data from the site.
+  utter_faq-visualisation-b6/why-percentage-100:
+  - text: Please refer to the "Dataset Information" page for further details on the
+      dataset and the values
   utter_faq-visualisation-b6/blanks-chloropleth-map:
   - text: There might be no values for the regions which are blank or the regions
       were formed after this data was collected
@@ -387,6 +412,8 @@ responses:
   - text: Yes, you can write the title in your preffered choice of language which
       is available
   utter_faq-visualisation-b6/type-title-local-lang:
+  - text: You can use a local language keyboard to type the title in that language
+  utter_faq-visualisation-b6/type-local-lang:
   - text: You can use a local language keyboard to type the title in that language
   utter_faq-visualisation-b6/search-previously-created-visulaisation:
   - text: You can view your saved visualizations in My graphics or Graphic Gallery
@@ -528,7 +555,7 @@ responses:
   - text: No it is not necessary to select all the indicators. select one which you
       want to see in the visualisation
   utter_faq-visualisation-b2/add-indicators-from-other-datasets:
-  - text: Yes we can add the indicators from other datasets. Just click on  the datasets
+  - text: Yes we can add the indicators from other datasets. Just click on the datasets
       tab on top and go to create new indicator. Now a popup will show up which includes
       a dropdown of dataset where you can choose across datasets and their indicators
       to create a new indicator
@@ -578,6 +605,15 @@ responses:
   - text: Yes you have to select a district after selecting a state
   utter_faq-visualisation-b2/add-dataset:
   - text: We can add datasets in order to compare between the two datasets
+  utter_faq-visualisation-b4/not-understand-viz:
+  - text: Please check the indicators and dimensions and relate to what story you
+      need to find and then click on build your chart. If you dont understand one
+      chart look for the other ones.
+  utter_faq-visualisation-b4/add-indicator-from-diff-dataset:
+  - text: Yes you can add the indicators from other datasets. Just click on  the datasets
+      tab on top and go to create new indicator. Now a popup will show up which includes
+      a dropdown of dataset where you can choose across datasets and their indicators
+      to create a new indicator
   utter_faq-visualisation-b4/how-many-datasets-compare:
   - text: As of now You can compare atmost two datasets at a time
   utter_faq-visualisation-b4/sort-data-in-graph-how:
@@ -587,6 +623,12 @@ responses:
   utter_faq-visualisation-b4/upload-my-data:
   - text: You can write to us in the mail that you have found a source of data. Kindly
       share the link of the datasource and we will look into it.
+  utter_faq-visualisation-b4/how-many-options-select-chart-builder:
+  - text: You can select every option in the chart builder. But as per your requirements
+      you may not have to select all the options.
+  utter_faq-visualisation-b4/cannot-see-district-state-in-legend:
+  - text: When the filters are not applied states and districts on the legend will
+      not show up.
   utter_faq-visualisation-b4/why-data-available-for-some-years:
   - text: We extract data from the governemt datasources. If the goernment source
       does not have the data for a particular year or years then we cannot have that
@@ -636,6 +678,9 @@ responses:
   - text: Please write to us. we will definitely connect you to our team
   utter_faq-visualisation-b4/can-add-three-datasets:
   - text: As of now you only can add two datasets.
+  utter_faq-visualisation-b4/can-see-30-datasets:
+  - text: The respective graphs will appear with the choice of selections the users
+      make.
   utter_faq-visualisation-b4/selecte-district-no-result:
   - text: Please check if you have selected time dimension and one indicator atleast
       from the indicator list.
@@ -856,9 +901,9 @@ responses:
   - text: Location in the dataset defines the geographical attributes like state,
       district, city available according to the level it was recorded at source.
   utter_faq-visualisation-b1/only-india-is-covered:
-  - text: Yes, India Data Portal contains data of Indian government sources only.
-      The level of depth / granullarity varies in dataset according to the data collection
-      at source. and more over IDP covers all districts in a particular state, which
+  - text: India Data Portal contains data of Indian government sources only. The level
+      of depth / granullarity varies in dataset according to the data collection at
+      source. and more over IDP covers all districts in a particular state, which
       are recorded in the data collection at source
   utter_faq-visualisation-b1/mandatory-to-select-location:
   - text: In some aggregatable datasets, there is no need need to select a location.

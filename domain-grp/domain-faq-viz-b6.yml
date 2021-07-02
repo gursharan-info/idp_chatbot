@@ -49,6 +49,9 @@ responses:
   utter_faq-visualisation-b6/save-visualisations-among-my-graphics-my-gallery: #197
   - text: My graphics is you personal space for saving visualisation and graphics gallery lets you share your visualisation with everyon else. It is completly your choice where to save your visualisation. 
 
+  utter_faq-visualisation-b6/upload-work-on-social-media: #198
+  - text: After creating the visulisation there will a share icon in the top right corner of your visualisation space. Clicking on that share icon will give you the various options to share your visualisation
+
 
   utter_faq-visualisation-b6/why-save-svg-format: #199
   - text: SVG (Scaleable Vector Graphics) files are ideal for saving, as the name suggests is infinitely scaleable; they will never lose their sharpness.

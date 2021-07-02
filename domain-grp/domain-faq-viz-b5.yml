@@ -55,6 +55,9 @@ responses:
   utter_faq-visualisation-b5/How-select-two-datasets-visualizing-together: #163
   - text: Once you are in the visualise page, there will an option towards the left side of your screen to add a data set under the data set tab
 
+  utter_faq-visualisation-b5/what-kind-datasets-i-compare: #165
+  - text: You can compare datasets that have similar temporal and spatial distribution.
+
   utter_faq-visualisation-b5/What-you-mean-time: #166
   - text: The time varible lets you filter out specific time periods 
 
@@ -73,6 +76,10 @@ responses:
 
   utter_faq-visualisation-b5/How-change-different-colours-bar: #171
   - text: You can choose from the various color scheme options available 
+
+  utter_faq-visualisation-b5/how-change-color-graph: #172
+  - text: On top left corner of the visualisation, there is a icon with gear and pencil which enable you to change the color pallet of visualisations
+  
 
   utter_faq-visualisation-b5/How-many-ways-download-graph: #173
   - text: You can download your visualisation in SVG and PNG format

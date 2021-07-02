@@ -25,6 +25,8 @@ nlu:
     - do i share interactive / live visualisation
     - how am i supposed to share live visualisations.
     - is it possible to share live visualisations.
+    - Is it possible to distribute live visualisations?
+    - Is it feasible to share real-time visualisations with others?
     - how am i supposed to share interactive visuals
     - is it possible to share an interactive/live visualisation
     - how live visualisation can be shared?
@@ -35,9 +37,11 @@ nlu:
     - steps to share the live /interactive visualisation.
     - will you assist me in share an interactive /live visualisation.
     - Can I share an interactive / live visualisation
+
 - intent: faq-visualisation-b2/login-create-visualisation
   examples: |
     - is it important to login first to create the visualisation?
+    - do i need to login for creating visualisations?
     - assist me to create the visualisation.
     - what if i can't login before creating the visualisation?
     - steps to login for visualisations
@@ -45,7 +49,18 @@ nlu:
     - procedure to login to create any visualisation.
     - Do I have to be logged in to create a visualisation
     - do i have to be logged in to create a visualization?
-    - Do I have to be logged in to create a visualization?
+    - Do I have to login in order to create a visualization?
+    - to create visuals login is required?
+    - login is necessary for making visuals?
+    - do we have to login first to initiate plot making?
+    - is it necessary to login first to make graphs?
+    - can i make visuals without logging in?
+    - Is a login required to create visuals?
+    - Is a username and password required to create visuals?
+    - Is it necessary to log in to create visuals?
+    - Is a login required to create visualisations?
+    - Is a login required for constructing visuals?
+
 - intent: faq-visualisation-b2/shared-visualisation-link-not-seen
   examples: |
     - is login required to see any visualisation?
@@ -54,14 +69,34 @@ nlu:
     - i am not able to see my friend's shared link .how do i do ?
     - what if i can't login ,is it possible to see my friend's work?
     - My friend shared visualisation link, but I am not able to see it
+    - i am not able to see any visuals?
+    - I'm not seeing any visualisations?
+    - i can't seem to see any visuals?
+    - Why can't I see any visuals?
+    - I can't seem to find any images?
+    - I can't locate any graph plots?
+    - I simply can not find any visualisations?
+    - why i am not able to see any plots?
+    - i wonder why am i not able to see visuals on this shared link
+    - I'm curious as to why I can't view the graphics on this linked link.
+    - I'm wondering as to why I can't see the visualisations on this shared link.
+    - not able to see any visualisations via shared link
+
 - intent: faq-visualisation-b2/automatically-redirect-shared-visualisation-link-after-login
   examples: |
     - after we login will it automatically redirect to shared visualisation link?
-    - steps to use the visualisation link directly after login .
     - is it automatically redirect to shared visualisation link?
     - do i automatically redirect to shared visualisation link?
     - can i automatically redirect  to visualisation link shared by others?
     - how can i do the redirect to visualisation link after login?
+    - will i be automatically redirect towards visuals after logging in successfully?
+    - Will i be rightaway redirected to the shared visualisation link once we log in?
+    - Will we be instantly redirected to the shared visualisation URL once we log in?
+    - Will i be sent directly to the shared graph image URL after logging in?
+    - after login will i be redirected to graphs url?
+    - after filling credentials successfully will i be immediately redirected towards graph images url?
+    - once successfully logged in will i be automatically redirected towards visualization link?
+
 - intent: faq-visualisation-b2/select-all-indicators-together
   examples: |
     - all the indicators are selected together ?
@@ -71,6 +106,14 @@ nlu:
     - how i select the indicators together?
     - how all the indicators are selected  together?
     - Do we have to select all the indicators together?
+    - Is it required to pick all indicators at the same time?
+    - Is it needed pick all indicators at the very same time?
+    - Is it necessary to select all indicators at once?
+    - Is it required to choose all of the indicators at the same time?
+    - Is it required to choose all of the indicators at once?
+    - Is it necessary pick all indicators at a same moment?
+    - do i need to pick all the indicators in one go?
+
 - intent: faq-visualisation-b2/add-indicators-from-other-datasets
   examples: |
     - can i add indicators from other datasets?
@@ -86,6 +129,14 @@ nlu:
     - add the indicators from other datasets.
     - steps to add indicators from others datasets
     - indicators are added from other datasets?
+    - can i add indicators from other datasets, if yes then how?
+    - Is it possible to include indicators from other datasets? If that's the case, what's the best way to go about it?
+    - Can I include indicators from other datasets, if so, how?
+    - Can I incorporate indications from other datasets, and if so, how?
+    - Is it possible to include indications from other databases, if yes then how?
+    - Is it possible to incorporate indications from other datasets, and if so, how?
+    - can i insert indicators via different datasets?
+
 - intent: faq-visualisation-b2/create-new-indicator
   examples: |
     - new indicator.
@@ -97,7 +148,16 @@ nlu:
     - is it possible to create a new indicator?
     - assist me to create a new indicator.
     - how to create a new indicator?
-    - how to create new indicator?
+    - how am i supposed to be creating new indicator?
+    - guide me to create new indicator?
+    - whats the procedure to create new indicator?
+    - What is the best way to make a brand new indicator?
+    - How can i make a new indicator?
+    - How can a new indicator be created?
+    - how can i generate new indicator?
+    - how new indicators are added?
+    - how to generate new indicator?
+
 - intent: faq-visualisation-b2/create-new-visualizations-using-new-indicator-two-different-datasets
   examples: |
     - can  i create new visualizations using new indicator from two different datasets?
@@ -106,6 +166,14 @@ nlu:
     - create new visualizations using new indicator from two different datasets
     - create new visualizations using new indicator from two different datasets ,how?
     - do i create new visualizations using new indicator from two different datasets?
+    - Can we create new visualisations by combining new indicators from various datasets?
+    - using new indicatores from different datasets can we create visuals?
+    - can we create plots using new indicators from different datasets?
+    - is it possible to create plots with different datasets using new indicators?
+    - Can we generate new visualisations by combining indicators from different datasets?
+    - Can we build new visuals by combining new indicators from other datasets?
+    - new visualisations from different datasets using newly created indicators
+
 - intent: faq-visualisation-b2/new-indicators-added-visualization
   examples: |
     - add new indicators in visualization
@@ -113,16 +181,30 @@ nlu:
     - can i add new indicators in a visualization?
     - do i add new indicators in a visualization?
     - is it possible to add new indicators in a visualization?
-    - new indicators are added in  a visualization, how?
+    - new indicators are added in a visualization, how?
+    - how many indicators from a dataset i can add
+    - at max how many indicators from a dataset can be added?
+    - how many indicators from a dataset can I include
+    - how many indicators can I add from a dataset
+    - Is there a limit to how many indicators from a dataset I can add?
+    - I am scrambling to find out how many indicators I can add from a dataset.
+    - I'm trying to figure out how many indicators I can add from a dataset.
+
 - intent: faq-visualisation-b2/create-new-indicators
   examples: |
     - create new indicators
-    - why we are required to create new indicators?
+    - how are we supposed to create new indicators?
     - do i prefer to create new indicators?
-    - why do we create new indicators?is it required urgently?
-    - is it important to create new indicator?
-    - is it essential to create new indicators?
-    - why do we create new indicators ?is it essential to create?
+    - how am i supposed to create new indicator?
+    - guide me to create new indicator?
+    - how are new indicators being created?
+    - how these indicators are generated?
+    - How are new indications supposed to be created?
+    - How are we going to come up with new indicators?
+    - How are we supposed to come up with new indicators?
+    - How are we supposed to develop new indicators?  
+    - How are new indications to be produced?
+
 - intent: faq-visualisation-b2/define-unit-new-indicator
   examples: |
     - unit of a new indicator.
@@ -131,24 +213,57 @@ nlu:
     - assist me to define the unit of a new indicator
     - how i define the unit of a new indicator?
     - how can i define the unit of a new indicator?
+    - how can we setup unit for new indicator?
+    - How can we configure a unit for a new indicator?
+    - How do we configure a new indicator's unit?
+    - How do we set up a new indicator's unit?
+    - What is the best way to set up a new indicator's unit?
+    - What really is the right approach to set up a new indicator's unit?
+    - What is the preferred route to set up a new indicator's unit?
+    - how am i supposed to setup units for new indicator?
+    - how to setup new indicators unit?
+    - how new indicators unit are needed to be setup?
+    - what's the guidlines to setup new indicators unit?
+
 - intent: faq-visualisation-b2/necessity-select-dimensions-Visualisation-option
   examples: |
-    - is it necessary to select  dimensions visualisation options?
+    - is it necessary to select dimensions visualisation options?
     - why we select  dimensions on visualisation option?
     - is it essential to select dimensions on visualisation option?
     - why do we select dimensions on visualization option?
     - is it important to create select dimensions on visualisation option?
-    - do i prefer to select dimensions  on visualisation option?
-    - Is it necessary to select a location?
+    - do i prefer to select dimensions on visualisation option?
+    - is it necessary to select dimensions to view visuals?
+    - Is it vital to choose dimensions when looking at visuals?
+    - Is it important to choose dimensions when looking at visualisations?
+    - To display graphics, is it essential to choose dimensions?
+    - To display plots, is it mandatory to choose dimensions?
+    - To view visuals, is it necessary to choose dimensions?
+    - Is it essential to choose dimensions in order to view visuals?
+    - Is it a requirement to choose dimensions in order to see visuals?
+
 - intent: faq-visualisation-b2/any-dimension-not-selected
   examples: |
     - is it necessary to select the dimensions?
-    - do i prefer to select any dimensions?
-    - what happens if we can't select any dimensions?
+    - What happens if no dimension is chosen?
     - if we can't select any dimensions then what happens?
-    - is selection of any dimension required?
+    - is selection of any dimension required?(#wrong)
     - what had happened if we can't select any dimensions?
-    - dimension
+    - if dimension is not selected what will happen?
+    - consequences of not selecting a dimension while making visualisation?
+    - what will happen if no dimension is selected?
+    - What tends to happen if no dimension is picked?
+    - if no dimension is chosen what will happen?
+    - What happens if you don't choose a dimension?
+    - if someone is not choosing any dimension than what will happen?
+    - if no dimension is selected, what will happen?
+    - consequences of not selecting a dimension?
+    - What are the ramifications of not choosing a dimension?
+    - What are the consequences of neglecting to specify a dimension?
+    - What are the repercussions of not selecting a dimension?
+    - What are the effects of failing to choose a dimension?
+    - What are the implications of failing to pick a dimension?
+
 - intent: faq-visualisation-b2/save-new-indicators-how
   examples: |
     - how to save the new indicators ?
@@ -158,6 +273,15 @@ nlu:
     - can i save the new indicators?
     - save the new indicator.
     - are we able to save the new indicators?
+    - how to save newly created indicators?
+    - How can the new indications be saved?
+    - How do I preserve the new indicators?
+    - What is the best way to save the new indicators?
+    - What really is the ideal way to save the new indicators?
+    - What is the best way to preserve the newly created indicators?
+    - What is the key to saving the newly created indicators?
+    - What is the best method to save the newly created indicators?
+
 - intent: faq-visualisation-b2/remove-created-new-indicators
   examples: |
     - how to remove new indicators?
@@ -170,15 +294,30 @@ nlu:
     - can we remove the created new indicators.
     - how to remove an indicator?
     - how can I remove an indicator?
-    - how to remove newly created indicator?
+    - How do I get rid of the newly added indicators?
+    - How do I get rid of the new indications that I've made?
+    - How can I get rid of the freshly produced indicators?
+    - what should i do to remove new indicators?
+    - remove newly created indicators
+    - remove newly added indicators
+    - how to get rid of new indicators
+    - can i remove newly added indicators?
 - intent: faq-visualisation-b2/select-maximum-number-dimensions-for-visualization
   examples: |
-    - Give the maximum number of dimensions  selected for visualisation.
+    - Give the maximum number of dimensionsthat can be selected for visualisation.
     - For visualisation,what is the maximum number of dimensions selected?
     - I want to select the maximum number of dimensions ,do i?
-    - what is the maximum number of dimensions can be selected for visualisation?
+    - what is the maximum number of dimensions that can be selected for visualisation?
     - how many max. number of dimensions  are selected?
     - ways to select  maximum number of dimensions at a time.
+    - whats the maximum number of dimensions one can select for visuals?
+    - What is the maximum number of dimensions that may be chosen?
+    - from particular dataset whats the max no of dimensions that can be chosen?
+    - What is the maximum number of dimensions that a user may choose from?
+    - Is there a limit to how many dimensions one may choose?
+    - Is there a limitation on how many dimensions one could select?
+    - Is there a limit to how many dimensions one can choose?
+
 - intent: faq-visualisation-b2/How-search-dimension
   examples: |
     - search for a dimensions
@@ -188,13 +327,30 @@ nlu:
     - procedure for dimension's search.
     - will i search for dimensions?
     - How do we search for a dimension?
+    - How do we go about finding a dimension?
+    - What's the best way to look for a dimension?
+    - where should i look for a dimension
+    - How should we go around seeking for a dimension?
+    - How should we look around for a dimension?
+    - How do we find a dimension?
+    - How do we look for a dimension?
+    - how am i supposed to find a dimension?
+
 - intent: faq-visualisation-b2/edit-dimensions-selected-for-visualization
   examples: |
     - edit the dimensions selected for visualization
     - selected dimensions are edited for visualization,how?
     - can  we edit the dimensions selected for visualization?
-    - How can i  edit the dimensions selected for visualization?
-    - steps to  edit the dimensions selected for visualization.
+    - How can i edit the dimensions selected for visualization?
+    - steps to edit the dimensions selected for visualization.
+    - how am i supposed edit dimension selected for a visualisation?
+    - how am i supposed update dimension selected for visuals?
+    - How do I change a dimension that has been chosen for a visualisation?
+    - How can I change a dimension that has been selected for a visualisation?
+    - How can I modify the dimension for a diagram that I've chosen?
+    - How can I update dimension of a plot that I've chosen?
+    - How am i supposed to alter the dimension of a visualisation that I've selected?
+
 - intent: faq-visualisation-b2/How-visualize-trend
   examples: |
     - visualize a trend
@@ -202,8 +358,16 @@ nlu:
     - can we visualise a treend?
     - is it possible to visualise a trend?
     - visualising a trend ,how?
+    - How could the trend be viewed?
+    - How should the trend be depicted?
     - do i visualise the trend?
     - How to visualize a trend?
+    - What is the best way to visualise the trend?
+    - How may the trend be shown graphically?
+    - How can the trend be visualised?
+    - how can we see the trend on the portal?
+    - how can we see the ongoing trend via visualisation charts?
+
 - intent: faq-visualisation-b2/select-location
   examples: |
     - select a location
@@ -214,8 +378,11 @@ nlu:
     - is it necessary to select loaction
     - is it necessary to select location
     - Should I select the location always
-    - i am new here i want to know is it like absolutely necessaryyy to select location
-    - do i need to select the location always?
+    - Is it necessary to choose a location on the dataset?
+    - Is it required to select a place on the dataset?
+    - Is it required to include a location from the dataset to visualise?
+    - Is it important to choose a dataset location to see it on visuals?
+
 - intent: faq-visualisation-b2/donot-select-location-possible-visualization
   examples: |
     - visualisation is possible without location?
@@ -228,6 +395,13 @@ nlu:
     - steps to visualise without location
     - visualise without location
     - do I need to select location for visualization?
+    - If we do not select a location, can we visualize?
+    - Can we visualise if we don't choose a location?
+    - Can we visualise without choosing a location?
+    - without selecting a location can we visulaise?
+    - Can we envision if we don't choose a location?
+    - Can we visualise if we don't pick a location?
+
 - intent: faq-visualisation-b2/select-Districts-after-states-necessary
   examples: |
     - Is it important to select Districts after states?
@@ -238,6 +412,12 @@ nlu:
     - we need to  select states first?
     - states are selected first isn't?
     - districts are selected after states isn't?
+    - Do we have to select districts after selecting states?
+    - Is it required to choose Districts after states?
+    - Is it necessary to choose Districts after selecting States?
+    - Is it necessary to order the Districts after the States?
+    - am i only supposed to select the Districts after the States?
+
 - intent: faq-visualisation-b2/add-dataset
   examples: |
     - add datasets
@@ -248,3 +428,11 @@ nlu:
     - can you assist me to add datasets?
     - steps to add datasets.
     - how add data
+    - why am i supposed to add datasets.
+    - Why are datasets being added?
+    - What are the benefits of including datasets?
+    - What's the point of adding datasets?
+    - Why are datasets being added?
+    - Why include datasets?
+    - Why upload datasets?
+    - why should i upload dataset?

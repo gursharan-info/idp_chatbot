@@ -32,7 +32,7 @@ responses:
   - text: No it is not necessary to select all the indicators. select one which you want to see in the visualisation
 
   utter_faq-visualisation-b2/add-indicators-from-other-datasets: #61
-  - text: Yes we can add the indicators from other datasets. Just click on  the datasets tab on top and go to create new indicator. Now a popup will show up which includes a dropdown of dataset where you can choose across datasets and their indicators to create a new indicator
+  - text: Yes we can add the indicators from other datasets. Just click on the datasets tab on top and go to create new indicator. Now a popup will show up which includes a dropdown of dataset where you can choose across datasets and their indicators to create a new indicator
 
   utter_faq-visualisation-b2/create-new-indicator: #62
   - text: On the top right corner of the indicator popup you will see create new indicator button. Click it and then you will get another popup and there is a dropdown named dataset and after that there is a section to select the indicators. After selecting the indicators use the mathematical icons to define the relationship between the selected indicators. Then name the new indicator and name its unit and click on create indicator.

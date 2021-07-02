@@ -863,7 +863,7 @@ responses:
   - text: you have to select crop if you are selecting crops of same category like
       tea and coffee. Crop type is that when you have selected crops of different
       categories.
-  utter_faq-visualisation-b3/how-change-color-of-chat:
+  utter_faq-visualisation-b3/how-change-color-of-chart:
   - text: On the top left side of the visualisation there is a button after clicking
       which you will get the colour palette from which you can choose colours of your
       choice

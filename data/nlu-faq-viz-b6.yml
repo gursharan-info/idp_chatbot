@@ -1,22 +1,33 @@
 version: "2.0"
 nlu:
-- intent: faq-visualisation-b6/maximum-number-datasets-compare
-  examples: |
-    - How much of dataset compare at a time?
-    - What is biggest number of dataset compare at a time?
-    - How many dataset i can compare at a time?
-    - How many number of datasets that i can compare at a time?
-    - Number of datasets that can be comapre at a time
-    - At that time how many datasets compared at a time?
-    - What is the maximum number of datasets that I can compare at a time
-- intent: faq-visualisation-b6/create-new-indicators
+
+- intent: faq-visualisation-b6/create-new-indicators #180
   examples: |
     - Procedure of creating a new indicator?
     - How can i made a new indicator?
     - steps of creating a new indicator/
     - How a indicator produce?
     - Machinism of creating a new indicator
-- intent: faq-visualisation-b6/choropleth-map
+    - ahmm can you pls tell me how can i cretae new indicators
+    - aaa i wanna get some cool new indicators can i ?
+    - in a project can i create new indicators
+
+- intent: faq-visualisation-b6/why-create-new-indicator #181
+  examples: |
+    - What is the need for create a new indicator feature 
+    - why do we need to cretae new indicator
+    - What justifies the creation of a new indication feature?
+    - What justifies the development of a new indicatior feature?
+    - What supports the formation of a new indicatior feature?
+    - new indicator feture why we need to do this
+    - while working with grpahs why do we need to create new indicators
+    - while working with pie charts why do we need to create new indicators
+    - while working with diagrams why do we need to create new indicators
+    - while working with diagrams why do we need to create new indicators
+
+# 182 in nlu file 5
+
+- intent: faq-visualisation-b6/choropleth-map #183
   examples: |
     - what do you mean by choropleth map?
     - tell me about choropleth map
@@ -25,7 +36,26 @@ nlu:
     - information about Choloropleth map
     - I want to know about choropleth map?
     - What is a Choropleth map
-- intent: faq-visualisation-b6/new-indicator-using-seperate-datasets
+    - chloro map what is this?
+    - i wanna know something about cholorpleth maps can you pls tell
+    - i saw something called chloropleth maps what the heck is this
+    - can i know about chlorpleth maps
+
+
+- intent: faq-visualisation-b6/how-many-for-cholorpleth-map #184
+  examples: |
+    - How many indicators should I select to get a Choropleth map
+    - To create a Choropleth map, how many indicators should I choose?
+    - To build a Choropleth map, how many indicators should I use?
+    - To build a Choropleth map, how many indicators would I use?
+    - To build a Choropleth map, how many indicators should I go for?
+    - To generate a Choropleth map, how many indicators should I go for?
+    - To construct a Choropleth map, how many indicators should I go for?
+    - I construct a Choropleth map, how many indicators should I go for?
+    - I made a Choropleth map, how many indicators should I go for?
+    - we made Choropleth map indicators how many use ?
+
+- intent: faq-visualisation-b6/new-indicator-using-seperate-datasets #185
   examples: |
     - Can i have permission to create a new indicator using two separate datasets?
     - I want create a new indicator using two separate datasets?
@@ -33,23 +63,41 @@ nlu:
     - Is it possible to create a new indicator using two dataset
     - Am i able to create a new indicator using two seprate datasets
     - Can I create a new indicator using two separate datasets
-- intent: faq-visualisation-b6/possibility-creating-three-dimensional-graph
+    - Is it possible to build a new indication by combining two datasets?
+    - Is it possible to combine two datasets to make a new indicator?
+    - Is it possible to combine two datasets to build a fresh indicator?
+    - Would it be possible to combine two datasets to build a fresh indicator?
+    - Would it be possible to combine two datasets to build a new indicator ?
+
+
+- intent: faq-visualisation-b6/create-3-dimensional-graph #186
   examples: |
+    - Can I create a 3 dimensional graph
+    - Is it possible to make a three-dimensional graph?
+    - Is it possible to produce a three-dimensional graph?
+    - would  it be possible to produce a three-dimensional graph?
+    - Is that really possible to produce a three-dimensional graph?
+    - Can it be possible to produce a three-dimensional graph?
+    - my team is looking to create 3 dimensional diagrams can i 
+    - we are looking to create 3 dimensional diagrams can i
+    - we are looking to create 3 dimensional diagrams can we
+    - Can it be feasible to make a three-dimensional chart?
+    - Would it be feasible to make a three-dimensional charts?
+    - How do I create a 3 dimensional graph
     - I want to create 3 dimentional graph
     - india data portal allow to create 3 dimentional graph
     - Is it possible to create 3 dimentional graph on IDP?
     - Am i able to create 3 dimentional graph?
     - Can i have accesss to create a 3 dimetional graph?
     - Can i have a permission on india data portal to create a 3 dimetional graph?
-- intent: faq-visualisation-b6/creating-three-dimensional-graph
-  examples: |
     - Procedure of creating 3 dimentional graph?
     - Steps of creating 3 dimentional graph?
     - Mechinism of create 3 dimentional grph?
     - what i have to do create 3 dimentional graph?
     - How 3 dimentional graph created?
     - Give me idea about how do i create 3 dimentional graph
-- intent: faq-visualisation-b6/when-use-choropleth-map
+
+- intent: faq-visualisation-b6/when-use-choropleth-map #189
   examples: |
     - Now can i use a choropleth map?
     - What situation suitable for use a choropleth map?
@@ -57,8 +105,15 @@ nlu:
     - Can I use a choropleth map?
     - When i can acces to use choropleth map?
     - Can i able to use choropleth map?
-    - When should I use a Choropleth map
-- intent: faq-visualisation-b6/possibility-sorting-bars
+    - When is it appropriate to use a Choropleth map?
+    - When is it acceptable to use a Choropleth map?
+    - How is it acceptable using a Choropleth map?
+    - How is it appropriate using a Choropleth map?
+    - How is it appropriate to use a Choropleth map?
+    - When is it acceptable to just use a Choropleth map?
+    - Can I use a choroplth map?
+
+- intent: faq-visualisation-b6/possibility-sorting-bars #191
   examples: |
     - Can i am able to sort my bars?
     - I want to sort the bars
@@ -66,7 +121,20 @@ nlu:
     - Is it possible to me sort the bars?
     - can i have permission to sort my bars?
     - Is India data portal allow to sort the bars?
-- intent: faq-visualisation-b6/maximum-indicators-one-visulisation
+    - Can I arrange the Bars?
+    - Can I arrange the Bars in a particular order?
+    - Can I arrange the Bars in a specific order?
+    - Can I arrange the Bars in a specified sequence?
+    - Can I rearrange the Bars in a specified sequence?
+    - Could I rearrange the Bars in a specified sequence?
+    - May I rearrange the Bars in a specified sequence?
+    - May I organize the Bars in a specified sequence?
+    - Is it possible to sort the graph's bars?
+    - Is it possible to sort the map's bars?
+    - Is it possible to sort the chart's bars?
+    - the diagram i have made here can i sort it's bars
+
+- intent: faq-visualisation-b6/maximum-indicators-one-visulisation #192
   examples: |
     - How many number of indicators i can show in one visualization?
     - Max number of indicator i can fix in one visualization
@@ -74,7 +142,40 @@ nlu:
     - One visulization contain max number of indicators?
     - Number of indicator present in one visualization at a time?
     - How many new indicators can be added in a visualization?
-- intent: faq-visualisation-b6/save-visualisations-among-my-graphics-my-gallery
+    - What is the maximum number of additional indicators that may be added to a visualisation?
+    - What is the maximum number of additional indicators that may be added to a visual representation?
+    - What is the maximum number of extra indicators that may be added to a visual representation?
+    - So what was the maximum number of extra indicators that may be added to a visual representation?
+    - But what's the maximum number of extra indicators that may be added to a visual representation?
+    - What really is the greatest number of extra indicators that may be added to a visual representation?
+    - What really is the greatest number of extra indicators that may be added to a visual analysis?
+    - What really is the greatest number of extra indicators that may be added to a mapping?
+    - And what's the greatest number of extra indicators that may be added to a graphical representation?
+    - What then is the greatest number of extra indicators that may be added to a graphical representation?
+
+
+- intent: faq-visualisation-b6/map-cannot-generated #193 
+  examples: |
+    - Why do it say that Map cannot be generated 
+    - i am here and it is saying no map generated
+    - i can't see an maps here
+    - maps ?
+    - where are they?
+    - can you tell y cant i seee maps
+    - no maps can yopu pls tell ?
+    - Why is it stating that a Map cannot be generated?
+    - Why is it saying that a Map cannot be generated?
+    - Why would it be saying that a Map cannot be generated?
+    - Why would it be claiming that a Map cannot be generated?
+    - Why would it be claiming that a Maps cannot be generated?
+    - How can it be claiming that a Maps cannot be generated?
+    - Would it be claiming that a Maps cannot be generated?
+    - Would it be telling that a Maps cannot be generated?
+    - Is it telling that a Map cannot be generated?
+    - Is it reporting that a Map cannot be generated?
+    - Is it suggesting that a Map cannot be generated?
+
+- intent: faq-visualisation-b6/save-visualisations-among-my-graphics-my-gallery #197
   examples: |
     - Where my visualization store among graphics and gallery?
     - where i save my visualization other then graphic and my gallery?
@@ -82,7 +183,34 @@ nlu:
     - Is visualization save any other apart My graphics and my Gallery?
     - I don't want My graphics and gallery than where is my visualization saved?
     - Where do I save my visualizaitons among My Graphics and My Gallery
-- intent: faq-visualisation-b6/why-save-svg-format
+    - In My Graphics and My Gallery, where do I keep my visualisations?
+    - In My Artwork and My Gallery, where do I keep my visualisations?
+    - In My Artwork and My Galleries, where do I keep my visualisations?
+    - With My Artwork and My Galleries, where do I keep my visualisations?
+    - With My Artwork and My Portfolio, where do I keep my visualisations?
+    - Under My Artwork and My Portfolio, where do I keep my visualisations?
+    - Under My Artwork and My Portfolio, where do I keep my visual representations?
+    - Under My Artwork and My Portfolio, where do I keep my data visualization?
+    - Under My Graphics and My Galleries, where do I keep my renderings?
+
+- intent: faq-visualisation-b6/upload-work-on-social-media #198
+  examples: |
+    - How can take my visualizaiton to my social website 
+    - How can I upload my visualisation to my social media site?
+    - How then can I upload my visualisation to my social media site?
+    - How could I upload my visualisation to my social media site?
+    - How could I upload my picture to my social media site?
+    - How could I upload my picture to my social media website?
+    - How could I upload my picture to my social networking site?
+    - i have a personal website can i upload work done here?
+    - is that even feasible to upload data visualisation on persinal portfolio webiste
+    - we have a personal website  can we ipload our work over there
+    - social media upload possible ?
+    - hahah can i make my work visible to whole world?
+    - i wanna publicise my work globally via media how can i ?
+
+
+- intent: faq-visualisation-b6/why-save-svg-format #199
   examples: |
     - What is reason behind to save in SVG format?
     - How to save in SVG format ?
@@ -91,7 +219,21 @@ nlu:
     - Why it is required to save in SVG format?
     - Why it is important to save in SVG format?
     - saving in SVG format.
-- intent: faq-visualisation-b6/download-visual-suggested-format
+    - How can I save in SVG format?
+    - What is the purpose of saving in SVG format?
+    - What is the objective of saving in SVG format?
+    - And what's the objective of saving in SVG format?
+    - What then is the aim of saving in SVG format?
+    - What then is the aim of exporting in SVG format?
+    - What then is the goal of exporting in SVG format?
+    - So what was the goal of exporting in SVG format?
+    - Then what was the goal of downloading in SVG format?
+    - And what was the goal of downloading in SVG format?
+    - What really is the goal of downloading in SVG format?
+    - What really is the goal of transferring in SVG format?
+    - i wnna get images to my local setup but its getting downloaded in svg why ? 
+
+- intent: faq-visualisation-b6/download-visual-suggested-format #201
   examples: |
     - What is the prior format  for downloading any visualization?
     - What is the right format for downloading any visualization?
@@ -105,7 +247,8 @@ nlu:
     - what is the suggested format for downloading my visual?
     - Download the visualization?
     - What is the suggested format for downloading any visual
-- intent: faq-visualisation-b6/add-dataset-compare-dataset-difference
+
+- intent: faq-visualisation-b6/add-dataset-compare-dataset-difference #202
   examples: |
     - Differentiate between Add Dataset and Compare Dataset
     - How do you differentiate between Add Dataset and Compare Dataset?
@@ -116,7 +259,22 @@ nlu:
     - contradict between add dataset and compare dataset.
     - add dataset and compare dataset?
     - show the difference between add dataset and compare dataset.
-- intent: faq-visualisation-b6/minimum-indicators-and-dimension-to-create-snakey-graph
+
+- intent: faq-visualisation-b6/trend-analysis-what-viz-needed # 204
+  examples: |
+    - Which visualization do I need to consider to see trend analysis 
+    - What visualisation do I need to think about in order to observe trend analysis?
+    - Which visualisation do I need to think about in order to observe trend analysis?
+    - Which representation do I need to think about in order to observe trend analysis?
+    - That representation do I need to think about in order to observe trend analysis?
+    - which graphs i need to consider to see trend ananalysis
+    - i want to see trend annalysis which vizs to be considered?
+    - On aproject I am which viz i should consider to see trend analysis
+    - trend grphs i want to see which viz. i will consider
+    - i am on a research i want to paste trend visualisation how will i get it
+    - how will i get vis from trend anayltics?
+
+- intent: faq-visualisation-b6/minimum-indicators-and-dimension-to-create-snakey-graph #205
   examples: |
     - What number of minimum indicators and dimensions are required to create a Sankey Graph?
     - What is the minimum number of indicators and dimensions are needed to create a Sankey Graph?
@@ -125,7 +283,17 @@ nlu:
     - To create a Sankey Graph, which minimum number is required for indicators and dimensions?
     - create a sankey graph with minimum indicators and dimensions.
     - explain the usage of minimum indicators and dimensions to create a sankey graph
-- intent: faq-visualisation-b6/how-to-read-sankey-chart
+    - How many minimum indicators and dimensions to create a Sankey Graph
+    - How many minimum indicators and dimensions are required to make a Sankey Graph?
+    - How many least number indicators and dimensions are required to make a Sankey Graph?
+    - How many minimal indicators and dimensions are needed to make a Sankey Graph?
+    - How often basic indicators and dimensions are needed to make a Sankey Graph?
+    - How many least number indicators and dimensions are required to make a Sankey Graph?
+    - sanky grpah how many indicators i need?
+    - sanky grpah how many indicators i need
+    - sanky grpah how many dimensions i need
+
+- intent: faq-visualisation-b6/how-to-read-sankey-chart #206
   examples: |
     - How to read the Sankey Chart?
     - How can I read the Sankey Chart?
@@ -136,7 +304,17 @@ nlu:
     - read the sankey chart ,how?
     - how do i prefer the sankey chart reading?
     - How do I read the Sankey Chart
-- intent: faq-visualisation-b6/where-give-chart-title
+    - How do I interpret the Sankey Diagram?
+    - How then do I interpret the Sankey Diagram?
+    - How then do I understand the Sankey Diagram?
+    - How then do I understand the Sankey Graph?
+    - How would I understand the Sankey Graph?
+    - How would I comprehend the Sankey Graph?
+    - How would I comprehend the Sankey Diagram?
+    - sankey chart what does it mean?
+
+
+- intent: faq-visualisation-b6/where-give-chart-title #207
   examples: |
     - how to giuve the title of the chart ?
     - address the chart's title.
@@ -150,7 +328,17 @@ nlu:
     - ways to add the title of chart
     - can you guide me how to add the chart's title?
     - Where can I give the title of Chart
-- intent: faq-visualisation-b6/send-visualisation-on-email-id
+    - Where can I put the title of the chart?
+    - Where can I keep the name of the chart?
+    - Where can I put the name of the chart?
+    - Where else can I put the name of the chart?
+    - Where else can I put the title of the chart?
+    - Where else can I put the name of the visualisation
+    - Where else can I put the name of the viz
+    - Where else can I put the name of the data viz we did ?
+
+
+- intent: faq-visualisation-b6/send-visualisation-on-email-id #208
   examples: |
     - Is it possible to send visualization on my email I'd?
     - Is it allowed to send visualization on my email I'd?
@@ -161,7 +349,17 @@ nlu:
     - steps to send the visualizationon my mail id?
     - can you assist me how to send the visualization on my mail.
     - Can I send visualizaiton on my email id
-- intent: faq-visualisation-b6/change-font-title
+    - How do I send a visualisation to my email address?
+    - How do I send a picture to my email address?
+    - How do I send a picture to my email?
+    - How the fuck do I send a visualisation to my email?
+    - How else do I send a visualisation to my email?
+    - How else do I send a graphic to my email?
+    - How else do I send a representation to my email?
+    - How would I send a representation to my email?
+
+
+- intent: faq-visualisation-b6/change-font-title #209
   examples: |
     - is it possible to change the font of the title?
     - how the font of the title is changed?
@@ -173,8 +371,16 @@ nlu:
     - i want to change the font size of the title ,can i?
     - define the steps to change the font of the title.
     - ways to change the title's font ,how?
-    - How can I change the font of the titles
-- intent: faq-visualisation-b6/change-font-style-on-visualisation
+    - How can I alter the typeface of the titles?
+    - How can I alter the style of the titles?
+    - How then can I alter the style of the titles?
+    - How could I alter the style of the titles?
+    - How the fuck can I alter the style of the titles?
+    - How the fuck can I change the style of the titles?
+    - How might I alter the style of the titles?
+  
+
+- intent: faq-visualisation-b6/change-font-style-on-visualisation # 210
   examples: |
     - Is it possible to change the font style on the visualization?
     - How can I change the font style on the visualization?
@@ -184,7 +390,15 @@ nlu:
     - steps to change the font style
     - font style is need to be changed for visualization ,how?
     - Can I change the font style on the visualizations
-- intent: faq-visualisation-b6/create-my-own-visualisation
+    - Is it possible to alter the font style on the visualisations?
+    - Is it possible to change the font style on the visualisations?
+    - Would it be possible to change the font style on the visualisations?
+    - Would it be possible to change the font style on the visual representations?
+    - Should it be possible to change the font style on the visual representations?
+    - Should it be possible to change the typeface on the visual representations?
+    - Will it be possible to change the typeface on the visual representations?
+
+- intent: faq-visualisation-b6/create-my-own-visualisation #211
   examples: |
     - How to create my own visualization?
     - Is it possible to create my own visualization?
@@ -193,7 +407,30 @@ nlu:
     - I need to create my own visualization but how can I do so?
     - create my visualization but how?
     - Can I create my own visualization
-- intent: faq-visualisation-b6/maximum-visualisation-generated-for-dataset-at-a-time
+    - But how do I build my visualisation?
+    - But how do I construct my visualisation?
+    - But how could I construct my visualisation?
+    - But how could I construct my visual representation?
+    - But how could I develop my visual representation?
+    - But how would I develop my visual representation?
+    - But how would I develop my representation?
+
+- intent: faq-visualisation-b6/how-generate-viz #212
+  examples: |
+    - How are the visualizations generated 
+    - How are the visualizations generated here
+    - on this site How are the visualizations generated 
+    - in this IDP what way vizz are generated
+    - on this webiste how are grpahics drawn here
+    - i want to know how are graphs generated
+    - How are the visualisations produced?
+    - on idp How are the visualisations produced?
+    - indiandats portal how are graphs produced
+    - How are the visualisations generated?
+    - How are the visuals generated?
+  
+
+- intent: faq-visualisation-b6/maximum-visualisation-generated-for-dataset-at-a-time #213
   examples: |
     - Give the maximum number of visualizations generated for any selected datasets at a time.
     - For selected datasets at a time,what is the maximum number of visualization generated?
@@ -203,7 +440,14 @@ nlu:
     - ways to generate maximum number of visualization at a time.
     - for a perticular dataset how much visualisations i can make?
     - What is the maximum number of visualizations generated for any selected datasets at a time
-- intent: faq-visualisation-b6/select-dimension-or-indicator-by-default
+    - What is the maximum number of visualisations that may be created for any given dataset at any given time?
+    - What is the maximum no. of visualisations that may be created for any data set at any given time?
+    - And what's the highest number of visualisations that may be created for any data set at any given time?
+    - And what's the maximum number of visualisations that may be created for any data set at any particular time?
+    - And what's the highest number of visualisations that may be created for any data set at any particular time?
+    - And what's the highest no. of representations that may be created for any data set at any particular time?
+
+- intent: faq-visualisation-b6/select-dimension-or-indicator-by-default #214
   examples: |
     - can i select the dimensions or indicators by default?
     - by default , selection of dimensions or indicators is possible ?
@@ -212,7 +456,12 @@ nlu:
     - what if i  select the dimensions and indicators by default?
     - selection of dimensions and indicatiors can be done by default, isn't?
     - Should I by default select the dimension or indicator
-- intent: faq-visualisation-b6/possibility-rearranging-visualisation-parts-like-legends-as-my-choice
+    - Can I set the dimensions or indicators to be the defaults?
+    - Can I set the dimensions or indicators to become the defaults?
+    - Could I set the dimensions or indicators to become the defaults?
+    - Do I set the dimensions or indicators to become the defaults?
+
+- intent: faq-visualisation-b6/possibility-rearranging-visualisation-parts-like-legends-as-my-choice #215
   examples: |
     - rearrange the visualization part
     - how can i  rearrange the visulization parts like legend as per my choice
@@ -222,18 +471,8 @@ nlu:
     - visualization part requires a rearrangement of legends?
     - Can I rearrange the visulization parts like legend as per my choice
 
-- intent: faq-visualisation-b6/trend-analysis-what-viz-needed # 206
-  examples: |
-    - Which visualization do I need to consider to see trend analysis 
-    - which graphs i need to consider to see trend ananalysis
-    - i want to see trend annalysis which vizs to be considered?
-    - On aproject I am which viz i should consider to see trend analysis
-    - trend grphs i want to see which viz. i will consider
-    - i am on a research i want to paste trend visualisation how will i get it
-    - how will i get vis from trend anayltics?
 
-
-- intent: faq-visualisation-b6/possibility-customize-bins-in-histogram
+- intent: faq-visualisation-b6/possibility-customize-bins-in-histogram #216
   examples: |
     - customizing bin in a histogram.
     - do i prefer customization in histogram?
@@ -242,7 +481,12 @@ nlu:
     - in a histogram ,customization is required?
     - in a histogram , is a customization is done?
     - Can I customize bins in a Histogram
-- intent: faq-visualisation-b6/maximum-visualizations-I-can-download
+    - How can I change the bin in a histogram?
+    - How can I alter the bin in a histogram?
+    - How can I alter a bin in a histogram?
+    - How then can I alter a bin in a histogram?
+
+- intent: faq-visualisation-b6/maximum-visualizations-I-can-download #218
   examples: |
     - Give the maximum number of visualizations downloaded  for any selected datasets for any point.
     - For selected datasets ,what is the maximum number of visualization download?
@@ -252,17 +496,12 @@ nlu:
     - ways to download maximum number of visualization at  any point of time.
     - download maximum number of visualizations.
     - What is the maximum number of visualizations I can download for any point of time
+    - What is the most number of visualisations I may download at any given time?
+    - How much is the most number of visualisations I may download at any given time?
+    - How much is the most number of visualisations I may download at any particular time?
 
-- intent: faq-visualisation-b6/how-generate-viz #214
-  examples: |
-    - How are the visualizations generated 
-    - How are the visualizations generated here
-    - on this site How are the visualizations generated 
-    - in this IDP what way vizz are generated
-    - on this webiste how are grpahics drawn here
-    - i want to know how are graphs generated
 
-- intent: faq-visualisation-b6/viz-categorical-only # 221
+- intent: faq-visualisation-b6/viz-categorical-only # 219
   examples: |
     - Can I visualize using categorical variables only
     - i want to see output using only categorical varibales only possible?
@@ -272,7 +511,7 @@ nlu:
     - categoriccl variables enough for making my grpahs
     - categoriccl variables enough for making my grpahs
 
-- intent: faq-visualisation-b6/what-is-custom-indicator # 222
+- intent: faq-visualisation-b6/what-is-custom-indicator # 220
   examples: |
     - What is "or a custom indicator" 
     - what is custom indicator
@@ -282,16 +521,7 @@ nlu:
     - i want to make custom indicators in my graphs but what is ?
     - personal indicators what is it ?
 
-- intent: faq-visualisation-b6/blanks-chloropleth-map # 227
-  examples: |
-    - Why are there blanks in a Choropleth map
-    - why some blanks in chloropleth map
-    - blank spaces in chloropleth map ?
-    - white space in chloropleth map why ?
-    - lot of empty spccae in chloro map
-    - chloro maps are giving some spaces which are to filled but what is it?
-
-- intent: faq-visualisation-b6/what-happen-when-click-reset-all
+- intent: faq-visualisation-b6/what-happen-when-click-reset-all #221
   examples: |
     - what will happen if i click reset all
     - click reset means ?
@@ -300,17 +530,54 @@ nlu:
     - help with reset
     - what is reset all do ?
     - what is gonna happen with reset all?
-- intent: faq-visualisation-b6/export-selected-data
+
+- intent: faq-visualisation-b6/get-table-after-download-image-format #222
   examples: |
-    - how to export selected data ?
-    - help to export data
-    - how can to export data ?
-    - what is the procedure to export data
-    - export data help
-    - trouble exporting selected data
-    - trouble with data export
-    - issue with data exporting
-- intent: faq-visualisation-b6/change-visulaisation-to-local-language
+    - How can I get the tables visible on the visulization when downloaded in image format 
+    - How can I make the tables visible on the visualisation after they've been downloaded in picture format?
+    - How can I make the tables visible on the visualisation after they've been downloaded in image format?
+    - How can I make the tables visible on the visualizations after they've been downloaded in image format?
+    - How can I make the tables visible on the visualizations once they've been downloaded in image format?
+    - How then can I make the tables visible on the visualizations once they've been downloaded in image format?
+    - How would I make the tables visible on the visualizations once they've been downloaded in image format?
+
+
+- intent: faq-visualisation-b6/export-selected-data #223
+  examples: |
+    - How can I export my selected data
+    - How can I export the data I've chosen?
+    - How can I export the data I've selected?
+    - How then can I export the data I've selected?
+    - How the fuck can I export the data I've selected?
+    - can i download my selected data?
+
+- intent: faq-visualisation-b6/why-percentage-100 #224
+  examples: |
+    - Why is the percentage value greater than 100 in the dataset
+    - Why is the percentage value in the dataset larger than 100?
+    - Why is the percentage value in the information greater than 100?
+    - Why does the percentage value in the information greater than 100?
+    - Then why was the percentage value in the information greater than 100?
+    - Then why was the percentage value in the dataset greater than 100?
+
+
+- intent: faq-visualisation-b6/blanks-chloropleth-map # 225
+  examples: |
+    - Why are there blanks in a Choropleth map
+    - Why do certain areas of a Choropleth map have blanks?
+    - Why do many areas of a Choropleth map have blanks?
+    - Why would many areas of a Choropleth map have blanks?
+    - Why the fuck do many areas of a Choropleth map have blanks?
+    - Why the fuck do many areas of a Choropleth map contain blanks?
+    - Why the fuck do many areas of a Choropleth map include blanks?
+    - why some blanks in chloropleth map
+    - blank spaces in chloropleth map ?
+    - white space in chloropleth map why ?
+    - lot of empty spccae in chloro map
+    - chloro maps are giving some spaces which are to filled but what is it?
+
+
+- intent: faq-visualisation-b6/change-visulaisation-to-local-language # 229
   examples: |
     - change my visualisation into local language
     - help with visualisation in local language
@@ -322,8 +589,32 @@ nlu:
     - how to change language
     - change language
     - How can I change my visualization into my local language
+    - How can I translate my visualisation into my native language?
+    - How can I translate my work into my mother tongue?
+    - How can I translate my output into my primary tongue?
+    - How can I translate my vision into my home language?
+    - How else can I translate my vision into my home language?
+    - How the fuck can I translate my vision into my home language?
+    - How the fuck can I translate my picture  into my home language?
 
-- intent: faq-visualisation-b6/type-title-local-lang #233
+
+- intent: faq-visualisation-b6/write-title-in-local-language #230
+  examples: |
+    - local language title
+    - change title language to local language
+    - changing title to local lang
+    - wrtie title in local language
+    - change title language
+    - writting title language in local language
+    - composing the title language in the native language
+    - composing the title language in the native language?
+    - Is it possible to write the title language in the local language?
+    - Would it be able to create the title language in the local language?
+    - Would that be able to create the title language in the local language?
+    - Would that be possible to write the title language in the local language?
+
+
+- intent: faq-visualisation-b6/type-title-local-lang #231
   examples: |
     - How do I type the title in a Local Language
     - wanna type title in regional langs
@@ -333,16 +624,24 @@ nlu:
     - any way i can type the title in LOCAL LANGUAGESS
     - Do IDP give me a option to type in Local Language 
     - does indian data portalls give me option to type in local langs
+    - How can I write the title in a different language?
+    - How can I write the title in a multiple languages?
 
-- intent: faq-visualisation-b6/write-title-in-local-language
+
+- intent: faq-visualisation-b6/type-local-lang #232
   examples: |
-    - local language title
-    - change title language to local language
-    - changing title to local lang
-    - wrtie title in local language
-    - change title language
-    - writting title language in local language
-- intent: faq-visualisation-b6/search-previously-created-visulaisation
+    - Do IDP give me a option to type in Local Language 
+    - Is it possible to type in Local Language in IDP?
+    - Is it feasible to type in Local Language in IDP?
+    - Could it be feasible to type in Local Language in IDP?
+    - Is that really feasible to type in Local Language in IDP?
+    - Do the India data portals allow me to enter data in my native language?
+    - can i type in local lang here ?
+    - Do IDP give me a option to type in mother Language
+    - Do IDP give me a option to type in mother tongue
+    -- Do IDP give me a option to type in native Language
+
+- intent: faq-visualisation-b6/search-previously-created-visulaisation #233
   examples: |
     - searching perviously created visualisations
     - help with finding perviously created visualisations
@@ -351,8 +650,11 @@ nlu:
     - where can i find my previously cretaed visualisations?
     - precodeure to find previously created visualisations
     - can i see my previously created visualisation
-    - Can I search for my previously created visualizations
-- intent: faq-visualisation-b6/search-visualisation-in-graphic-gallery
+    - Can I search for my previously created graphs
+    - Can I search for my previously created drawings
+    - ahmm Can I search for my previously created graphs
+
+- intent: faq-visualisation-b6/search-visualisation-in-graphic-gallery #234
   examples: |
     - help with searcjing for visualisation in graphic gallery
     - visulatsation search help
@@ -361,8 +663,11 @@ nlu:
     - where can i find visualisation
     - trouble with searching for any visualisation in the graphic gallery
     - How do I search for any visualization in the Graphics Gallery
+    - How can I look for a certain visualisation in the Graphics Gallery?
+    - How can I look for a certain visuals in the Graphics Gallery?
+    - How could I look for a certain visual in the Graphics Gallery?
 
-- intent: faq-visualisation-b6/can-viz-others-gallery-directly #237
+- intent: faq-visualisation-b6/can-viz-others-gallery-directly #235
   examples: |
     - Can I use the visualizations created by others from the Gallery directly 
     - can i see graphs made by others on IDP direclty
@@ -370,4 +675,8 @@ nlu:
     - does indian data portal provides a facility so that i can view work done by others directly
     - i want to work by other users or jounalist of this platform can i do it in gallery?
     - i want to work by other jounalist of this platform can i do it ?
+    - Can I directly utilise the visualisations made by others in the Gallery?
+    - Can I directly utilise the visuals made by others in the Gallery?
+    - Could I directly utilise the visuals made by others in the Gallery?
+    
     

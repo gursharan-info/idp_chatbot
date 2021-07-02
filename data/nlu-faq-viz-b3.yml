@@ -17,6 +17,15 @@ nlu:
     - Please guide how to add dataset
     - Is there any support for adding dataset?
     - Please advise/advice if there is any way to add dataset.
+    - Why should we include a new dataset?
+    - Why should i inculcate a new dataset?
+    - why am i supposed to add the new dataset?
+    - what is the benefit of adding new dataset?
+    - what are the advantages of adding new dataset?
+    - Why should a new dataset be added?
+    - What are the benefits of adding a new dataset?
+    - Why do we need to add a new dataset?
+    
 - intent: faq-visualisation-b3/options-to-make-chart-builder
   examples: |
     - How many options should we select on chart builder?
@@ -30,6 +39,12 @@ nlu:
     - I applied all options still there is no chart built, please help.
     - How to build chart?
     - Chart not built, how to make a chart?
+    - on the chart builder, how many options should we choose?
+    - how many options should we pick, on the chart builder?
+    - On the chart builder, how many choices should we select?
+    - How many choices should we choose from the chart builder?
+    - How many options should we choose on the chart builder?
+
 - intent: faq-visualisation-b3/to-create-state-level-chart
   examples: |
     - How do we create state level chart?
@@ -40,6 +55,16 @@ nlu:
     - Options to choose for state level chart
     - State chart options
     - Documentation on state level chart
+    - How do we make a state-level map?
+    - How can we make a state-level chart?
+    - how am i supposed to make a state level chart?
+    - how state level chart is created?
+    - How do we make a state-level graph?
+    - how to generate state level chart?
+    - What is the best way to create a state-level graph?
+    - How can we create a graph at the state level?
+    - What's the best way to build a state-level graph?
+
 - intent: faq-visualisation-b3/to-create-district-level-chart
   examples: |
     - How do we create district level chart?
@@ -50,6 +75,16 @@ nlu:
     - Options to choose for distict level chart
     - district chart options
     - Documentation on distrct level chart
+    - How do we make a distrct-level map?
+    - How can we make a distrct-level chart?
+    - how am i supposed to make a distrct level chart?
+    - how distrct level chart is created?
+    - How do we make a distrct-level graph?
+    - how to generate distrct level chart?
+    - What is the best way to create a distrct level graph?
+    - How can we create a graph at the distrct level?
+    - What's the best way to build a distrct-level graph?
+
 - intent: faq-visualisation-b3/why-select-crops
   examples: |
     - Why crops should be selected
@@ -59,6 +94,13 @@ nlu:
     - can I clear all filters on crops?
     - I selected few crops but chart was not created, what do I do?
     - Help me selct crops for chart
+    - Why should crops be chosen?
+    - What are the reasons for choosing crops?
+    - Why is it important to choose crops?
+    - Why should crops be selected?
+    - Why is it essential select crops?
+    - Why should crops be chosen?
+
 - intent: faq-visualisation-b3/why-farm-size-category
   examples: |
     - Why farm size category should be selected
@@ -69,6 +111,11 @@ nlu:
     - Form size category
     - Form size cat.
     - What is Form size option?
+    - Why should the farm size category be chosen?
+    - Why should you choose a farm size category?
+    - Why should a farm size category be selected?
+    - So why would a farm size category be chosen?
+
 - intent: faq-visualisation-b3/why-crop-type-selected
   examples: |
     - Why crop type should be selected
@@ -81,6 +128,14 @@ nlu:
     - tupe crop selection
     - assist in choosing crop type
     - Error after selecting crop type
+    - Why should a certain crop type be chosen?
+    - Why should a particular crop type be chosen?
+    - why specific crop type is to be selected?
+    - why we ahve to pick specific crop type?
+    - Why is it important to choose a crop type?
+    - Why is it important to pick a crop type?
+    - Why should you choose a crop type?
+
 - intent: faq-visualisation-b3/why-social-grp-selected
   examples: |
     - Why social group should be selected
@@ -93,6 +148,14 @@ nlu:
     - social group selection
     - assist in choosing social group
     - Error after selecting social group
+    - Why should a social group be chosen?
+    - What are the advantages of choosing a social group?
+    - Why is it important to choose a social group?
+    - Why should a social group be picked?
+    - Why should a particular social group be chosen?
+    - Why is it necessary to choose a social group?
+    - why should a certain social group should be chosen?
+
 - intent: faq-visualisation-b3/what-happens-if-we-select-all-on-chart-builder
   examples: |
     - What happens if we select all the options on chart builder
@@ -106,6 +169,12 @@ nlu:
     - All options of chart buuilder
     - all options on chrt builder
     - eevery option on chart buukder
+    - What happens if we pick all of the chart builder options?
+    - What happens if we pick all of the choices on the chart builder?
+    - What happens if we use the chart builder and select all of the options?
+    - What happens if we set all of the chart builder options?
+    - if i will choose all of the chart builder options what will happen?
+
 - intent: faq-visualisation-b3/why-farm-size-class-selected
   examples: |
     - Why farm size class should be selected
@@ -117,6 +186,14 @@ nlu:
     - help required in fam size selection
     - how to select farm size?
     - form size selecttion
+    - Why should the farm size class be chosen?
+    - Why should a farm size class be picked?
+    - Why choose a farm size class?
+    - Why should a farm size class be selected?
+    - Why should you pick a farm size class?
+    - why am i supposed to pick farm size class?
+    - Why should the farm size class be opted?
+
 - intent: faq-visualisation-b3/how-access-full-data
   examples: |
     - How can I access the full data?
@@ -129,6 +206,12 @@ nlu:
     - Access issue with full data view
     - not able to access full dataset
     - data full view
+    - how cam i get hold of full data
+    - how am i supposed to get full data
+    - How can I get complete access to the data?
+    - What is the best way for me to get all of the information regarding data?
+    - How do I get access to all of the data?
+
 - intent: faq-visualisation-b3/how-to-create-indicators
   examples: |
     - How to create new indicators?
@@ -139,6 +222,15 @@ nlu:
     - Making new indicator
     - can I add new indicator?
     - How do I create a new indicator
+    - How do you come up with new indicators?
+    - how am i supposed to create new indicators?
+    - how new indicators are generated?
+    - how new indicators are produced?
+    - How would you look for new indicators?
+    - How do you make new indicators?
+    - How do you develop new indicators?
+    - How new indicators can be built up?
+
 - intent: faq-visualisation-b3/where-is-graph
   examples: |
     - I can't see anything. Where is the graph?
@@ -151,6 +243,15 @@ nlu:
     - Graph not generated
     - Graph has a problem
     - graph has issue
+    - Nothing is visible to me. What happened to the graph?
+    - i am not able to see anything, where is the graph?
+    - There is nothing visible to me. Where can I find the diagram?
+    - Nothing is visible to me. What happened to the graph?
+    - There's nothing visible to me. Something happened to the graph?
+    - I'm unable to see anything. Is the graph still missing?
+    - Nothing is visible to me. I can't find the graph.
+    - Nothing is visible to me. Where can I get the diagram?
+
 - intent: faq-visualisation-b3/what-to-select-first
   examples: |
     - What do I select first?
@@ -162,6 +263,13 @@ nlu:
     - what to select?
     - auto select possible?
     - New to IDP, how to navigate?
+    - what am i supposed to select first?
+    - What should I choose first?
+    - What should I go for first?
+    - What do I use first?
+    - I'm not sure what should i be selecting firstly
+    - first and formostly what should we be selecting?
+
 - intent: faq-visualisation-b3/how-can-select-graph
   examples: |
     - how to Visualize using different style of graph
@@ -169,6 +277,13 @@ nlu:
     - I want another type of graph. How can I select my graph type?
     - Where do I import different graph type?
     - how can i slect my grpah type i wnat another type of graph
+    - I'd like to see a different sort of graph. What options do I have for choosing my graph type?
+    - Another graph is what I'm looking for. What options do I have for choosing a graph type?
+    - How can I choose my graph type? I'd want to see a different kind of graph. 
+    - I would like to see a new type of graph. What alternatives do I have for picking a graph type?
+    - I want to see a different type of graph. How do I choose a graph type?
+    - I'd want to see a distinct kind of graph. How do I choose the type of graph I want?
+
 - intent: faq-visualisation-b3/diff-bw-crop-and-crop-type
   examples: |
     - What is the difference between crop and crop type?
@@ -177,17 +292,31 @@ nlu:
     - how is crop and crop type different?
     - why are there crop and crop types?
     - types of crop and crop, difference?
-- intent: faq-visualisation-b3/how-change-color-of-chat
+    - What exactly is the distinction between a crop and a crop type?
+    - what is the distinguishing factor between crop and crop type?
+    - diff bw crop and crop type?
+    - whats the difference among crop and crop typpe?
+    - What clearly is the distinguishing between a crop and a crop type?
+    - What's the difference between a crop and a sort of crop?
+    - What is the distinction between a crop and a crop type?
+
+- intent: faq-visualisation-b3/how-change-color-of-chart
   examples: |
-    - How can I change the colours of the chat?
-    - Skin colour change for the chat box
-    - How do I change background of chat?
-    - Can I change color of chat?
+    - How can I change the colours of the chart?
+    - Skin colour change for the chart
+    - How do I change background of chart?
+    - Can I change color of chart?
     - Help me pick color for chatbox
-    - asist me in choosing colour for chat
-    - what is the step to change background colour of chat?
+    - asist me in choosing colour for chart
+    - what is the step to change background colour of chart?
     - FAQ on colour change of chaat.
     - how to change the color of my chart?>
+    - How do I alter the chart's colours?
+    - How can I alter the colours of the chart?
+    - how am i supposed to alter the charts color
+    - What are the options for changing the chart's colours?
+    - How can I modify the chart's colours?
+
 - intent: faq-visualisation-b3/share-viz-of-personal-proj
   examples: |
     - Can I use this visualisation for my personal project?
@@ -196,6 +325,14 @@ nlu:
     - It is valid to use this visualisation for my personal project?
     - Can we use india data portal's visualisation for our personal project?
     - Does India data portal publicly allow the use of visualisation?
+    - can this visuals be utilized for personal projects?
+    - for personal projects can we inculcate these graphs?
+    - is it possible to use these diagrams in personal projects?
+    - Is it possible for me to use this visualisation for a personal project?
+    - Is it possible for me to utilise this visualisation for my own project?
+    - Is it okay if I use this visualisation for my own project?
+    - Can I use this visualisation for a personal project?
+
 - intent: faq-visualisation-b3/give-credit-to-idp
   examples: |
     - Do I have to cite/give credit to IDP?
@@ -203,6 +340,13 @@ nlu:
     - Do I have to cite/give credit to India data portal?
     - will i have to give credit to idp for my wok ?
     - do i have to give credit to idp?
+    - Is it necessary for me to credit or cite IDP?
+    - Is it necessary for me to cite or credit india data portal?
+    - Is it essential for me to credit IDP or cite it?
+    - Is it mandatory for me to credit/cite IDP?
+    - Is it necessary for me to credit or mention IDP?
+    - Is it needed to mention or credit idp?
+
 - intent: faq-visualisation-b3/can-i-share-my-viz
   examples: |
     - Can I share Visualisation on my blog/website?
@@ -214,6 +358,14 @@ nlu:
     - Does India data portal allow us to use visualisation on personal blog/website?
     - does iDp provides me with the sevice that i can share viz on my blog
     - does iDp provides me with the sevice that i can share viz on my webiste
+    - can i share my visuals?
+    - can i share my visualisations? if yes then how?
+    - Is it okay if I share my visualisations? If that's the case, what's the best way to go about it?
+    - Is it okay if I show my visualisations to others? If that's the case, what's the best way to go about doing it?
+    - Can I show you my visualisations? If so, how so?
+    - Can I share my visualisations? If so, how?
+    - Can I show you my visuals? If so, how do you go about doing it?
+    - Can I exhibit anyone my visualisations? If so, how so?
 
 - intent: faq-visualisation-b3/change-axis-of-graph #105
   examples: |
@@ -222,6 +374,13 @@ nlu:
     - Any way i can change axis of graph
     - I wanted to change axis of my visulaisation in IDP
     - can i alter axis of graphs on Indian data portal
+    - How do I alter the axis of my graph?
+    - How do I modify the axis of my graph?
+    - How do I modify my graph's axis?
+    - What are the options for changing the graph's axis?
+    - How do I tweak the graph's axis?
+    - How can I tweak the graph's axis?
+    - How can I edit the axis of the graph?
     
 - intent: faq-visualisation-b3/how-tochange-chart-not-liked-first-one
   examples: |
@@ -234,6 +393,13 @@ nlu:
     - The procedure of geting another chart?
     - How can we move to another chart?
     - How can i get two charts?
+    - My graph does not appeal to me. What is the best way for me to acquire a new chart?
+    - My graph irritates me. What is the procedure for obtaining a new chart?
+    - My graph isn't to my liking. What is the best way for me to obtain a new chart?
+    - how am i supposed to change the chart?
+    - I don't like my chart. how am i supposed to get new one?
+    - How do I obtain another chart as my graph does not appeal to me?
+
 - intent: faq-visualisation-b3/graphs-diff-after-download
   examples: |
     - Why does the graph look different after downloading?
@@ -242,6 +408,12 @@ nlu:
     - is there any reasons why my grpah is diff as compared to on platform
     - is there any reasons why my grpah is diff when i downloaded
     - why does the graph look different while downloading?
+    - Why does the graph appear to be different after it has been downloaded?
+    - What happened to the graph after it was downloaded?
+    - Why does the graph have a different appearance after it has been downloaded?
+    - after downloading the appearance of graph seems to me changed.
+    - appearance of graph is altered after downloading it. why so?
+
 - intent: faq-visualisation-b3/bar-graphs-too-wide
   examples: |
     - My bar graph is too wide. How can I make it fit in one screen?
@@ -251,6 +423,12 @@ nlu:
     - How can I fit my bar graph in one screen?
     - How can i adjust length/width of my bar graph?
     - How can I adjust bar graph in one screen?
+    - My bar graph is excessively wide. I'm not sure how I'm going to fit it all on one screen.
+    - The width of my bar graph is excessive. I'm not sure how I'm going to fit it all on a single screen.
+    - My bar graph is a little too long. I'm not sure how I'm going to get it all on one screen.
+    - My bar graph is very broad. I'm not sure how I'm going to fit it all on one screen.
+    - how size of bar grah can be modified
+
 - intent: faq-visualisation-b3/not-able-to-understand-viz
   examples: |
     - I am not able to understand my visualisation.
@@ -260,3 +438,12 @@ nlu:
     - I am not able to understand my visualisation. what can i do now?
     - Is there any way to understand my visulization?
     - Help me to understand my visulization?
+    - I'm having trouble comprehending what I'm seeing.
+    - i am not able to interpret my visuals?
+    - how to interpret my graph?
+    - how can we interpret the diagrams?
+    - My visualisation is eluding me.
+    - I don't understand what I'm seeing.
+    - I don't understand what I'm seeing in my visualisation.
+    - I am unable to comprehend my visualisation.
+    - My visual is eluding me.

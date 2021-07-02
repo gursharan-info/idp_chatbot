@@ -1,0 +1,11 @@
+intents:
+responses:
+    utter_<PUT YOU INTENT 1 NAME HERE>:
+    - text:
+    utter_<PUT YOU INTENT 2 NAME HERE>:
+    - text:
+    utter_<PUT YOU INTENT 3 NAME HERE>:
+    - text:
+actions: []
+forms: {}
+e2e_actions: []

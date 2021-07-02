@@ -1,6 +1,34 @@
 version: "2.0"
 nlu:
-- intent: faq-visualisation-b4/how-many-datasets-compare
+
+- intent: faq-visualisation-b4/not-understand-viz # 110
+  examples : |
+    - I am not able to understand my visualisation.
+    - i have made some grphs but what do they depict
+    - made some work here but laughingly not able to undertsnad it even 
+    - not able to grasp what you made in front of me
+    - relly annoyed with what i have made can you pls explain it
+    - no updates what the hell haas been made by you over here
+    - can you pls tell what I have drawn using this website
+    - can you pls tell what I have drawn using this platformm
+    - can you pls tell what I have drawn using this webbiste
+
+- intent: faq-visualisation-b4/add-indicator-from-diff-dataset #111
+  examples: |
+    - I want to add an indicator from another dataste to this graph. How? 
+    - wanna add additional indicators from another dataset to this graphs?
+    - can i make extra indicators from another data set to current grpah
+    - while working with graph can i add indicators from another data corpus
+    - I was working with a project where demand was to add indicator from another dataset to current graph
+    - is this even possible to add an indicator from  datasat i am not using to current graph
+    - is this feature present iwth IDP that i can add an indicator from another dataste to current graph
+    - can i know  that i can add an indicator from diff dataste to current graph
+    - can i know  that i can add an indicator from  dataset i used previously to current graph
+    - is it possible that i can add an indicator from  dataset i used previously to current bar grpah
+    - is it possible that i can add an indicator from  dataset i used previously to current bar graph
+    - is it possible that i can add an indicator from  dataset i used previously to current pie chart
+
+- intent: faq-visualisation-b4/how-many-datasets-compare #112
   examples: |
     - How many datasets can I compare at a time?
     - How much dataset i can compare at a time?
@@ -8,9 +36,11 @@ nlu:
     - At a time How many dataste we can compare?
     - can i comapre 2 and more dataset at a time?
     - Is it possible to compare all dataset at a time?
-    - How many datasets can I compare at a time (copy-112)
+    - How many datasets can I compare at a time
     - Can I compare 2 or more datasets in a single visualization
-- intent: faq-visualisation-b4/sort-data-in-graph-how
+    - can i comapre 2 and more data sets at a time?
+
+- intent: faq-visualisation-b4/sort-data-in-graph-how # 113
   examples: |
     - How can I sort data in my graph?
     - Procedure of sorting data in y graph?
@@ -21,7 +51,11 @@ nlu:
     - Arrange data in graphs?
     - sort data in graph
     - how can I sort my chart?
-- intent: faq-visualisation-b4/upload-my-data
+    - how cna i sort my vizes
+    - how can i sort the bar graphs i made
+    - can i sort the pie  charts i made
+
+- intent: faq-visualisation-b4/upload-my-data #114
   examples: |
     - I want to add my dataset for visualisation. How can I upload data?
     - is there any way to upload data i wnat to use my datasets for vizz
@@ -29,8 +63,34 @@ nlu:
     - can i upload my data so that i can use it for visuaalisation
     - how can I upload my data?
     - how many datasets i can upload
-    - how many datasets i can put in
-- intent: faq-visualisation-b4/why-data-available-for-some-years
+    - how many datasets i can put in for doing work here
+    - i wanna do some work how can i upload my personal data set from local pc
+    - i wanna use this webiste for some project how can i add my own datasets stored in another server
+
+- intent: faq-visualisation-b4/how-many-options-select-chart-builder #115
+  examples: |
+    - How many options can I select in the chart builder?
+    - exact number of options that i can select in chart builder feature
+    - How many options can I select in the chart builder?
+    - what i the no of features i can select in the chartt builder in IDP
+    - what i the no of features i can select in the chartt builder in idp
+    - what i the no of features i can select in the chartt builder in indiandataportal
+    - in chart bulder how many options i can select?
+
+- intent:  faq-visualisation-b4/cannot-see-district-state-in-legend #117
+  examples: |
+    - I cannot see all the states/districts in the legend. Why?
+    - cannot see all the states/districts in the legend. Why?
+    - I cannot see all the states in the legend. Why? 
+    - while using idp I cannot see all the states/districts in the legend. Why?
+    - while using indian data portal I cannot see all the states/districts in the legend. Why?
+    - i am here but I cannot see all the districts in the legend. Why?
+    - why  I cannot see all the districts in the legend. Why?
+    - I cannot see all the states/districts in the legend of the graphs i made here. Why?
+    - I cannot see all the states/districts in the legend of the work i made here. Why?
+    - I cannot see all the districts or states in the legend of the pie chart i made on IDP. Why?
+  
+- intent: faq-visualisation-b4/why-data-available-for-some-years #118
   examples: |
     - Why is data availble only for some years?
     - Is there any reason data deleted after some years?
@@ -41,7 +101,12 @@ nlu:
     - what happend after some year of data in india data portal?
     - data avalaible for some years
     - why is data available only for some years?
-- intent: faq-visualisation-b4/how-add-labels
+    - here why only some years of data is availabe
+    - on platform i am using why i only see data fro some years
+    - on indian data portal i only see few years of data why 
+    - i am on project can i know why you have only few years of data
+
+- intent: faq-visualisation-b4/how-add-labels #119
   examples: |
     - How can I add labels to my graph?
     - procedure of adding labels on graph?
@@ -51,7 +116,12 @@ nlu:
     - how can i make changes on lable on my graph?
     - Is there any way to add label to my graph?
     - Can i add labels to my graph,how?
-- intent: faq-visualisation-b4/what-my-graphics
+    - is this feature present here that i add labels to my work piece
+    - is this feature present here that i add labels to my work piece made here
+    - is this feature present here that i add labels to my work piece made on this platform
+    - while on indian data portaal can i add labels to my grpah
+
+- intent: faq-visualisation-b4/what-my-graphics #120
   examples: |
     - what does that mean by graphics?
     - Graphics?
@@ -60,7 +130,15 @@ nlu:
     - Meaning of graphics?
     - Defination of graphics?
     - what is graphics
-- intent: faq-visualisation-b4/what-graphics-gallery
+    - my grpahis what is this ?
+    - my grphisc what is this thing on IDP
+    - i am very curious about this my graphics fetaure on indian data portal
+    - i am very cyrious about this my graphics fetaure on IDP
+    - does it conatin all the graphs i have made till now
+    - does it conatin all the work i have made till now
+    - where is all the work stored on IDP  is that my graphics gallery
+
+- intent: faq-visualisation-b4/what-graphics-gallery #121
   examples: |
     - What is graphics gallery?
     - meaning of graphics gallery?
@@ -69,7 +147,14 @@ nlu:
     - Graphics gallery?
     - Give me information about graphics gallery?
     - I wanna know about graphics gallery?
-- intent: faq-visualisation-b4/diff-bw-mygraphics-graphics-gallery
+    - my grpahis gallery what is this ?
+    - my graphics gallery what is this thing on IDP
+    - i am very curious about this graphics gallery fetaure on indian data portal
+    - i am very cyrious about this graphics gallery fetaure on IDP
+    - gallery conating all grpahics is this graphics gallery?
+
+    
+- intent: faq-visualisation-b4/diff-bw-mygraphics-graphics-gallery #122
   examples: |
     - What is the difference between my graphics and graphic gallery?
     - How graphics different from graphics gallery?
@@ -79,7 +164,8 @@ nlu:
     - is graphics and graphics gallery same?
     - Tell me about both graphic and graphic gallery?
     - what is the difference between my graphics and graphic gallery?
-- intent: faq-visualisation-b4/why-personal-info-to-publish-graphs
+
+- intent: faq-visualisation-b4/why-personal-info-to-publish-graphs #123
   examples: |
     - Why should I give personal information to publish graphs in graphic gallery?
     - Why i give personol information to publish graphs in gallery?
@@ -91,7 +177,8 @@ nlu:
     - personal information to public graphs in graphic gallery is required but why?
     - Why personal information is required to publish graphs in graphic gallery?
     - To publish graph in graphic gallery why should I give personal information?
-- intent: faq-visualisation-b4/where-is-data-coming-from
+
+- intent: faq-visualisation-b4/where-is-data-coming-from #124
   examples: |
     - Where is the data coming from?
     - From where we get the data?
@@ -103,15 +190,24 @@ nlu:
     - not able to see the data coming from
     - how we fetch the data location?
     - how can I find the source of this dataset?
-- intent: faq-visualisation-b4/will-update-affect-my-saved-graphics
+    - all the data on IDP is from ?
+
+- intent: faq-visualisation-b4/will-update-affect-my-saved-graphics #125
   examples: |
     - I saved my graph in my graphics. Will it change if you update the dataset?
     - after saving the graphs in my graphics will i make the changes in the datasets?
     - i want to make the changes in my saved dataset will it gonna be updated?
     - i had done the changes in dataset will it be updated after saving
     - after the successful saving of graphs in my graphics .Will it change if you update the dataset?
+    - I saved my work in my graphics. Will it change if you update the dataset?
+    - I saved my graph in my graphics. Will it change if you update the data ?
+    - we saved our graphs in my graphics. Will it change if you update the dataset?
+    - we saved our graphs ouptput in my graphics. Will it change if you update the dataset?
     - afterward  the saving of graphs in my graphics will it make change if you update the datasets?
-- intent: faq-visualisation-b4/how-add-shapes-icons-on-graph
+    - ahh, we worked on idp and even we saved our work in my graphics gallery but i have a doubt Will it change if you update the dataset?
+    - My team worked on idp and even we saved our work in my graphics gallery but i have a doubt Will it change if you update the dataset?    
+
+- intent: faq-visualisation-b4/how-add-shapes-icons-on-graph #126
   examples: |
     - How can I add shapes and icons to my graph?
     - how shapes and icons are added to my graphs?
@@ -122,7 +218,8 @@ nlu:
     - how i add figures and images in my graphs?
     - how i add configurations  and potraits in  my graphs?
     - how i add dimensions and images in my graphs?
-- intent: faq-visualisation-b4/how-change-legend-of-graph
+
+- intent: faq-visualisation-b4/how-change-legend-of-graph #127
   examples: |
     - How can I change the legends of the graph?
     - how can i make the change in the legends of graph?
@@ -134,7 +231,8 @@ nlu:
     - how the legends of graphs are changed?
     - can i change the legends of graphs but how?
     - can I change the legends of the graph?
-- intent: faq-visualisation-b4/cannot-see-title-after-downloading-graph
+
+- intent: faq-visualisation-b4/cannot-see-title-after-downloading-graph #128
   examples: |
     - Why can't I see the title after downloading my graph?
     - why  my title  is not  visible after downloading my graphs?
@@ -142,7 +240,9 @@ nlu:
     - why i can't see the title even after offloading my graphs?
     - why i can' t spot the title even after  downlink my graphs?
     - After downloading my graphs .why i can't find the glimpse of the title?
-- intent: faq-visualisation-b4/what-is-svg
+    - why i am not able to see title after downloading the graph?
+
+- intent: faq-visualisation-b4/what-is-svg #129
   examples: |
     - Define SVG
     - what is SVG
@@ -154,7 +254,9 @@ nlu:
     - what are SVG's?
     - Brief description of SVG
     - What is SVG?
-- intent: faq-visualisation-b4/diff-bw-svg-png
+    - svg what is this ?
+
+- intent: faq-visualisation-b4/diff-bw-svg-png #130
   examples: |
     - What is the difference between SVG and PNG?
     - Explain the variation between SVG and PNG.
@@ -164,7 +266,11 @@ nlu:
     - difference in SVG and PNG.
     - compare SVG and PNG.
     - Gulf between SVG and PNG.
-- intent: faq-visualisation-b4/assist-me-in-graph
+    - svg  jpeg png what is diff
+    - png and svg what is diff bw both of them
+
+
+- intent: faq-visualisation-b4/assist-me-in-graph #131
   examples: |
     - Can you assist me in making this graph?
     - can you help me in making the graphs?
@@ -176,7 +282,8 @@ nlu:
     - steps to make a graphs
     - how to make a graph?
     - can you assist me in making the graph?
-- intent: faq-visualisation-b4/can-you-connect-me-with-team
+
+- intent: faq-visualisation-b4/can-you-connect-me-with-team #132
   examples: |
     - Can you connect me to your team?
     - can you join me to your team?
@@ -186,7 +293,8 @@ nlu:
     - add me to your team
     - is your team happy if i add?
     - How can i catchup with IDP team
-- intent: faq-visualisation-b4/can-add-three-datasets
+
+- intent: faq-visualisation-b4/can-add-three-datasets #133
   examples: |
     - Can I add three datasets?
     - I want to add 3 datasets, can I?
@@ -195,16 +303,31 @@ nlu:
     - Is it possible to add 3 datasets?
     - What is the procedure to add 3 datasets?
     - Can 3 datasets be added?
-    - sum of three datasets
+    - can i add more than 2 datasets here ?
+    - i have an ambiguity can this be possible if i add more than 3 datasets on IDP
+    - i have an ambiguity can this be possible if i add more than 3 datasets on Indian data portal?
 
-- intent: faq-visualisation-b4/selecte-district-no-result
+- intent: faq-visualisation-b4/can-see-30-datasets #134
+  examples: |
+    - Why can't I see all the 30+ graphs for all datasets?
+    - can't see all the 20+ graphs for datasets
+    - can't see all the 20+ graphs for datasets here
+    - can't see all the 40+ graphs for dataset on INDIAN DATA PORTAL
+    - just a question can i see all the 30 plus graphs for every dataset present on idp
+    - just a question can i see all the 30 plus graphs for every dataset present on indian data portal
+
+- intent: faq-visualisation-b4/selecte-district-no-result #137
   examples: |
     - I have selected district but nothing is coming up. Why?
     - selected distrcit no results
     - No results after selecting district
     - I have selected district but no output
     - AFter selecting district we have no reslyts
-- intent: faq-visualisation-b4/chart-wrong
+    - distrcict is slected but no output
+    - distrcict is slected but no output here
+    - really frustrating district is selected but no output here
+
+- intent: faq-visualisation-b4/chart-wrong #138
   examples: |
     - The chart is not correct.
     - The chart is wrong
@@ -214,7 +337,7 @@ nlu:
     - The chart is inaccurate.
     - my chart is full of errors.
     - The chart is incorrect.
-- intent: faq-visualisation-b4/download-all-treemaps
+- intent: faq-visualisation-b4/download-all-treemaps #139
   examples: |
     - How can I download all the treemaps?
     - How to download all the treemaps?
@@ -223,7 +346,9 @@ nlu:
     - How is it possible to download all the treemaps?
     - How can i downlink all the treemaps?
     - How offloading of all the treemaps can be done?
-- intent: faq-visualisation-b4/remove-all-selections-once
+    - can we download treemaps from here ?
+
+- intent: faq-visualisation-b4/remove-all-selections-once #140
   examples: |
     - How can I remove all my selections at once?
     - How my all selections are removed at once?

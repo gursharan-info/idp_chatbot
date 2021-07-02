@@ -1,6 +1,6 @@
 version: "2.0"
 nlu:
-- intent: faq-visualisation-b5/why-not-add-two-datasets
+- intent: faq-visualisation-b5/why-not-add-two-datasets #141
   examples: |
     - why am i not able to add more than two datasets ?
     - why can't i add more than two datasets ?
@@ -13,7 +13,8 @@ nlu:
     - Is it possible to add more than two datasets ?
     - help add more than 2 datasets
     - I am not able to add more than two datasets. Why?
-- intent: faq-visualisation-b5/help-understand-indicators
+
+- intent: faq-visualisation-b5/help-understand-indicators #143
   examples: |
     - Can you help me understand the indicators
     - Can you describe how the indicators works
@@ -23,8 +24,8 @@ nlu:
     - indicators help
     - Help understanding indicators
     - What is an indicator?
-    
-- intent: faq-visualisation-b5/tutorial-making-graphs-visualisations
+
+- intent: faq-visualisation-b5/tutorial-making-graphs-visualisations #145
   examples: |
     - Is there any tutorial for making graphs/visualisation ?
     - Is there any tutorial available on India data portal making graphs/visualisation ?
@@ -36,7 +37,8 @@ nlu:
     - graphs help
     - help with graphs/visualisation
     - is there any tutorial available?
-- intent: faq-visualisation-b5/only-see-states-find-district-village
+
+- intent: faq-visualisation-b5/only-see-states-find-district-village #146
   examples: |
     - How to find district/ village names ?
     - How can i find district/village names ?
@@ -49,7 +51,8 @@ nlu:
     - assist with district/village names
     - I can only see states. Where can I find district/village names?
     - I can't find district. Why?
-- intent: faq-visualisation-b5/Why-not-see-all-selected-language
+
+- intent: faq-visualisation-b5/Why-not-see-all-selected-language #151
   examples: |
     - why am i not able to see all the text in selected language ?
     - why i cannot see all the text in selected language ?
@@ -58,7 +61,8 @@ nlu:
     - Text in selected language is not showing
     - There is incomplete text in selected language
     - Why can't I see all the text in the selected language?
-- intent: faq-visualisation-b5/graph-not-see-loading
+
+- intent: faq-visualisation-b5/graph-not-see-loading #152
   examples: |
     - I am not able te see the graph
     - something is wrong with my graph
@@ -70,7 +74,10 @@ nlu:
     - why is my graph not loading?
     - My graph is not loading.
     - why is my graph not loading
-- intent: faq-visualisation-b5/How-change-title
+    - here why cant i see graphs
+    - Why is my graph not coming up? 
+
+- intent: faq-visualisation-b5/How-change-title #153
   examples: |
     - How to change the title ?
     - Is it possible to change the title ?
@@ -81,7 +88,8 @@ nlu:
     - how to title change
     - problem with title change
     - how can I change the title?
-- intent: faq-visualisation-b5/What-numbers-in-brackets
+
+- intent: faq-visualisation-b5/What-numbers-in-brackets #154
   examples: |
     - what does numbers in the bracket refers to ?
     - what does the numbers in bracket means ?
@@ -89,7 +97,8 @@ nlu:
     - what is the meaning of those numbers in bracket ?
     - where can i use those numbers in the brackets ?
     - What are the numbers in the brackets?
-- intent: faq-visualisation-b5/Do-have-select-filters
+    - What are the numbers in the brackets?
+- intent: faq-visualisation-b5/Do-have-select-filters #155
   examples: |
     - Do i really have to select filters ?
     - Is it necessary to select filters ?
@@ -99,6 +108,7 @@ nlu:
     - filters selection help
     - help filter selection
     - trouble filter select
+
 - intent: faq-visualisation-b5/What-JumpStartIndia-ISB
   examples: |
     - What is the meaning of jumpStartIndia@IDP ?
@@ -108,8 +118,9 @@ nlu:
     - what does jumpStartIndia refers to?
     - What does jumpStartIndia represents ?
     - What do you mean by jumpStartIndia@Indian dat portal ?
-    - What is JumpStartIndia@ISB? (link in answer)
-- intent: faq-visualisation-b5/Can-zoom-chart
+    - What is JumpStartIndia@ISB?  
+
+- intent: faq-visualisation-b5/Can-zoom-chart #157
   examples: |
     - Is it possible to zoom into chart ?
     - How can i zoom into chart ?
@@ -119,21 +130,21 @@ nlu:
     - Shortcut for zooming into the chart
     - chart zooming
     - how zooming in chart
-- intent: faq-visualisation-b5/Should-select-location-always
+- intent: faq-visualisation-b5/Should-select-location-always #161
   examples: |
     - what location should i select ?
     - It is important to select a locattion?
     - It is necessary to select location always?
     - Necessary to select location always?
     - Manadatory to select location?
-- intent: faq-visualisation-b5/How-many-indicators-select-at-time
+- intent: faq-visualisation-b5/How-many-indicators-select-at-time #162
   examples: |
     - Which indicator should i select?
     - Can i use two indicators together?
     - When i select al indicators?
     - May i choose more than one indicators?
     - How many indicators should i choose ?
-- intent: faq-visualisation-b5/How-select-two-datasets-visualizing-together
+- intent: faq-visualisation-b5/How-select-two-datasets-visualizing-together #163
   examples: |
     - How to select two different datasets for visualizing together?
     - Can i select more than one different datasets for visualizing together?
@@ -142,14 +153,31 @@ nlu:
     - May I choose two or more datasets for chart building?
     - help me build chart for two datasets
     - How can I select two different datasets for visualizing it together
-- intent: faq-visualisation-b5/What-you-mean-time
+
+- intent: faq-visualisation-b5/what-kind-datasets-i-compare #165
+  examples: |
+    - What kind of datasets can I compare
+    - whatkind of datasets i can compare  here
+    - what datssets we can comapre on IDP
+    - what datssets we can comapre on Indian data portal
+    - on idp which variety of datasets we can compare
+    - on indian data portal which variety of datasets we can compare
+    - datasets that i have on local server can i compare here
+    - datasets that i have on local pc can i compare here
+    - i have some data can i compare it on here
+
+
+- intent: faq-visualisation-b5/What-you-mean-time #166
   examples: |
     - Meaning of time?
     - Define time?
     - What is time on visualize data?
     - Describe time on chrt bhuilder?
-    - How many years to choose on time on chart bulder?
-- intent: faq-visualisation-b5/Why-click-options-popping-out-in-Build-Chart
+    - whta does time means here while visulaising
+    - whta does time means here while making grpahs
+    - whta does time means here while making graphs
+
+- intent: faq-visualisation-b5/Why-click-options-popping-out-in-Build-Chart #167
   examples: |
     - How to diversifiy visualization on chart buildeR?
     - What's the reason for giving options on chart builder?
@@ -157,14 +185,20 @@ nlu:
     - what is the need to use all options on visualize dataset?
     - why to click on options on visualize?
     - Why should I click on the options popping out in Build Your Chart
-- intent: faq-visualisation-b5/How-many-ways-create-graph
+
+- intent: faq-visualisation-b5/How-many-ways-create-graph #168
   examples: |
     - What are the ways to create a graph?
     - What types of ways to create graph?
     - Alternate ways to generate graph
     - tell me ways to build graphs
     - Help me to find ways to build graphs
-- intent: faq-visualisation-b5/How-multiple-colours-available-Select-at-time
+    - How many ways can I create a particular graph
+    - How many ways can I create a particular graph here
+    - on IDP in How many ways can I create a particular graph
+    - on Indian data portal How many ways can I create a particular graph
+
+- intent: faq-visualisation-b5/How-multiple-colours-available-Select-at-time #169
   examples: |
     - how many colours are avaiable on options for chart?
     - Different colour palets for chart
@@ -173,14 +207,15 @@ nlu:
     - Help me to find multiple colours on chart
     - Can I seelct more than one colour on chart?
     - Is there multi selection possible on colours?
-- intent: faq-visualisation-b5/how-change-units-entity
+
+- intent: faq-visualisation-b5/how-change-units-entity #170
   examples: |
     - how can I change enetity units?
     - help change entity units
     - help convert entity unts
     - advice/advise how to change entity units
     - FAQ for changing entity units
-- intent: faq-visualisation-b5/How-change-different-colours-bar
+- intent: faq-visualisation-b5/How-change-different-colours-bar #171
   examples: |
     - how to chnge color scheeme?
     - right click option on every bar is available for changing colours?
@@ -189,7 +224,20 @@ nlu:
     - how to change colour on bar graph
     - how can I change the colors?
     - How can I have different colours on each Bar
-- intent: faq-visualisation-b5/How-many-ways-download-graph
+  
+- intent: faq-visualisation-b5/how-change-color-graph #172
+  examples: |
+    - How can I change the color on a graph
+    - how the color on the graph could be changed
+    - ahmm i wanna chnage grpah colors possible ?
+    - oh i just wanted to know is iit even possible to change color of graph
+    - how the color on the graph could be changed while i am here
+    - on idp is it possible to change color on the graph
+    - on indian data portal is it possible to change color on the graph
+    - while on idp is it possible to change color on the graph
+
+
+- intent: faq-visualisation-b5/How-many-ways-download-graph #173
   examples: |
     - how to downlod graph?
     - how can i export graph?
@@ -201,18 +249,33 @@ nlu:
     - Download IDP data?
     - Can data from IDP be downloaded?
     - Can the visualization be saved?
-    - is tutorials available?
-- intent: faq-visualisation-b5/Can-share-graphs-on-social-media
+    - is tutorials available for downloading grpahs?
+    - is tutorials available for downloading graphs?
+
+
+- intent: faq-visualisation-b5/Can-share-graphs-on-social-media #174
   examples: |
     - share option fir whatsapp?
     - share option fir facebook?
     - share option for bluetooth?
     - share option for linkedln?
+    - linkdin is available for sharing graphs made here ?
+    - facebook is available for sharing graphs made here ?
+    - twitter is available for sharing graphs made here ?
+    - can i share my work on social media
+    - can i share my work on reddit
+    - can i share on my work on social media websites
+    - facbook can i share my reesults on it?
+    - twitte can i share my reesults on it?
+    - bluettoth can i share my reesults on it?
+    - reddit can i share my reesults on it?
+    - whatsaap can i share my reesults on it?
     - share option on one drive?
     - can i copy the link of graph?
     - How can I share my graph?
     - how can I share my graph?
-- intent: faq-visualisation-b5/compare-more-datasets-single-visualization
+
+- intent: faq-visualisation-b5/compare-more-datasets-single-visualization #175
   examples: |
     - Can i compare more than two datasets in a single visualization?
     - How to select two different datasets for visualizing together?
@@ -222,15 +285,23 @@ nlu:
     - May I choose two or more datasets for chart building?
     - help me build chart for two datasets
     - can i compare two datasets?
-- intent: faq-visualisation-b5/How-many-maximum-number-locations-select-which-creating-graph
+    - Can I compare 2 or more datasets in a single visualization
+
+- intent: faq-visualisation-b5/How-many-maximum-number-locations-select-which-creating-graph #176
   examples: |
     - Is there any minimum location which I should select to make a graph?
     - what location should i select ?
     - It is important to select more than one locattion?
     - It is necessary to select location always?
     - Necessary to select location always?
-    - Manadatory to select location?
-- intent: faq-visualisation-b5/How-many-visualisations-create-single-selected-data
+    - Manadatory to select location but how much should i?
+    - Manadatory to select location but how much should i on IDP
+    - here is it Manadatory to select location but how much should i?
+    - indian data portal Manadatory to select location but how much should i?
+    - How many maximum number of locations can I select at a time which creating a graph
+
+
+- intent: faq-visualisation-b5/How-many-visualisations-create-single-selected-data #177
   examples: |
     - What are the different types of graph?
     - is there a bar chart?
@@ -238,18 +309,36 @@ nlu:
     - what kind of visualizations are available?
     - Help me to find ways to build graphs
     - How many visualisations can I create for a single selected data
+    - How many visualisations can I create if i select single dataset
+    - but what if i select a single dataset what number of graphs cann i make
+    - but what if i select a single dataset what number of graphs can i make here
 
-- intent: faq-visualisation-b5/what-dimension
+- intent: faq-visualisation-b5/max-datasets-compare #180
+  examples: |
+    - You can compare a maximum of 2 datasets at a time
+    - while on IDP how many db can i compare
+    - hey can i know how many datasets i can comapre
+    - hey can i know how many datasets i can comapre on IDP
+    - hey can i know how many datasets i can comapre on indian data portal
+    - while on idp how many datasets i can comapre
+    
+
+
+- intent: faq-visualisation-b5/what-dimension #160
   examples: |
     - what is dimension
     - what is dimension in IDP
     - india data poortal i found something called dimensiojn what is it ?
     - dim?
     - dim.?
-    - dimesnion 
+    - dimesnion
     - dimmesnion what is it ?
+    - what are dimensions
+    - dimension?
+    - what is dimension in visualisation
+    - what is dimension?
 
-- intent: faq-visualisation-b5/whatis-indiapulse
+- intent: faq-visualisation-b5/whatis-indiapulse #156
   examples: |
     - what is IPulse
     - what is indian pulse
@@ -258,34 +347,33 @@ nlu:
     - what the heck is india pulse on india data portal
     - india pulse ?
     - india pulse what the thing is this ?
-    - india pulse ahmm can you pls tell me 
+    - india pulse ahmm can you pls tell me
     - i fpumd this india pulse here
     - ahmm india pulse ?
-
-- intent:  faq-visualisation-b5/tables-instead-vis 
+- intent: faq-visualisation-b5/tables-instead-vis #179
   examples: |
     - Can I create tables instead of visualization
     - Can I create tables instead of visualization here
     - on IDP can we cretes tables without vizz
+    - im in a project can i create table without viz
     - on indiandataportal can we create tables without Visualisations
     - creating table without viz? is this feature availabel
     - can i get this facility where i can cretae viz without making tables on here
 
-- intent: faq-visualisation-b5/why-no-jpeg 
+- intent: faq-visualisation-b5/why-no-jpeg #178
   examples: |
     - Why dont I have the option to download the image in jpeg format
+    - Why don’t I have the option to download the image in jpeg format
     - jpeg format why i cna't i donwload ?
     - can i download my work in jpeg
     - grpahs i made can be downloaded in JPEG right?
     - output can be downloaded in JPEG ?
-    - anyway to download work in jpeg ?    
+    - anyway to download work in jpeg ?
 
-
-- intent: faq-visualisation-b5/create-indicator-with-assigned-units 
+- intent: faq-visualisation-b5/create-indicator-with-assigned-units #183
   examples: |
-    - Can I create my own indicator with assigned units 
+    - Can I create my own indicator with assigned units
     - Can I create my personal indicator with assigned units
     - i wanna create personal indicator withh assigned units?
     - my research needs personal indicator withh assigned units can i make?
     - my jornalism report needs personal indicator withh assigned units can i make?
-    

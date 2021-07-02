@@ -302,7 +302,6 @@ nlu:
     - remove newly added indicators
     - how to get rid of new indicators
     - can i remove newly added indicators?
-
 - intent: faq-visualisation-b2/select-maximum-number-dimensions-for-visualization
   examples: |
     - Give the maximum number of dimensionsthat can be selected for visualisation.

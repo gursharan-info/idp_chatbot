@@ -1,5 +1,15 @@
 version: "2.0"
 nlu:
+- intent: faq-train-b0/next-version #28
+  examples: |
+    - When is the next improved version of the visualization tool releasing?
+    - When will the next enhanced version of the visualisation tool be available?
+    - Will the next enhanced version of the visualisation tool be available?
+    - Will the next enhanced version of the visualisation be available?
+    - Will the next enhanced version of the visualisation be accessible?
+    - Will the next enhanced version of the visualisation be usable?
+    - When's the next upgraded version of the visualisation be usable?
+    - When's the next upgraded version of the visualisation be readily accessible?
 - intent: faq-train-b0/how-to-use-idp
   examples: |
     - help me to use this portal?

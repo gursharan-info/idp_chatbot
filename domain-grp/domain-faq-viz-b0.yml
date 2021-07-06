@@ -59,28 +59,17 @@ responses:
   - text: The IDP uses multiple sources for the data but mostly relies on publically available and have been shared by government institutions, who frankly are the only bodies in the country to have that kind of data collection capabilities. The repository for visualization is exhaustive with overlapping as well as independent well-established remote-sensing and satellite products.
   utter_faq-visualisation-b0/will_addtional_sources_be_added:
   - text: 'The IDP endeavours to regularly add more training material/videos/etc as we move forward. The feedback from users would also help us in adding more material and features to the portal. '
-  utter_faq-visualisation-b0/different_langauges_availability:
-  - text: The IDP portal is presently available in 5 languages Bengali, English, Hindi, Oriya, Telugu.
-  utter_faq-visualisation-b0/paid_service_or_not:
-  - text: 'All the datasets and visualizations on the IDP are completely free and open to all the users. To make full use of the portal it is advisable to create your login ID. What’s even more exciting is that we will be running competitions to select best visualizations created by our users (by all of you). And the winners will take home exciting prizes. '
+  
+
 ####################### prashant
   utter_faq-visualisation-b0/frequently-data-updated: #10
   - text: The data is updated on quarterly basis on IDP and daily for HFI indicators
   
-  utter_faq-visualisation-b0/alternate-sources-data: #19
-  - text: Data on the India Data Portal is sourced from government websites and you may visit the source websites mentioned as alternate data sources
+
   utter_faq-visualisation-b0/share-upload-dataset: #21
   - text: It is not possible to upload a data set into the India Data Portal 
   utter_faq-visualisation-b0/multiple-data-set-same-parameters-which-useful: #23
   - text: The datasets on IDP are sourced from governments sources  There are multiple surveys  data collection activities by the government those have common parameters for data collection which is usually the mandat of data collection objective So as a result there can be similar indicators but with different data collection methods As far as their usability is concerned  this type comparison has not been considered yet but is part of our long term plan
-  utter_faq-visualisation-b0/help-technical-issues-portal: #24
-  - text: Just mail to us idp@isb.edu
-  utter_faq-visualisation-b0/trust-data-sourced-from-government-agencies: #26
-  - text: We have collected the data from reliable government sourcs You can also see the links in the about dataset page in the source link section
-  utter_faq-visualisation-b0/materials-videos-different-visualization-posted-website: #27
-  - text: Yes we will be uploading new training videos in our portal
-  utter_faq-visualisation-b0/visualisations-made-downloaded-other-languages: #30
-  - text: Yes the visualisations can be made and downloaded in the languages available in the Portal
 
   utter_out_of_scope:
   - text: "Out of my knowledge can you pls rephrase"

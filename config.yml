@@ -47,7 +47,7 @@ pipeline:
   - name: ResponseSelector
     epochs: 100
     featurizers: ["convert-cvf-1", "cvf-word"]
-    retrieval_intent: faq-visualisation-b1 # from faq number 34 to 54
+    retrieval_intent: faq-visualisation-b1 # from faq number 35 to 54
 
   - name: ResponseSelector
     epochs: 100

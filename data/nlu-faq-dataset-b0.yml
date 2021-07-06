@@ -1,5 +1,45 @@
 version: "2.0"
 nlu:
+
+- intent: faq-dataset-b0/alternate-sources-data #19
+  examples: |
+    - Are there any alternate sources for data?
+    - is there any other source of data?
+    - source of india data portal data
+    - where is the data come from
+    - who collect data of idp data
+    - who is data source of data
+    - is this portal available in hindy?
+    - where can I  find the source of this data set
+    - Are there any other sources for data?
+    - Are there any other data sources?
+    - Are there any alternative data sources?
+    - Is there a way to get info from anywhere else on the internet?
+    - Is there a way to get data from more than just this portal?
+    - Are there certain data sources?
+
+- intent: faq-dataset-b0/upload-datasets-platofrm # 21
+  examples: |
+    - How do I share/ upload a dataset from IDP
+    - How do I upload a dataset that I have? 
+    - How do I upload an existing dataset?
+    - How then do I upload an existing dataset?
+    - So how would I upload an existing dataset?
+    - So how would I upload an existing data?
+    - How would I upload an existing dataset?
+
+- intent: faq-dataset-b0/multiple-data-sets-same-parameter #23
+  examples: |
+    - Since this is an Open Source initiative, would there be multiple data sets for the same parameters? If yes, how can we know which dataset has been found more useful by users?
+    - Will there be several data sets for the same parameters because this is an Open Source initiative?
+    - If that was the case, how can we determine which dataset has been determined to be more valuable by users?
+    - Will there be several data sets for the same parameters because this is a Free Software initiative?
+    - Would there be several data sets for the same parameters because this is an Open - sourced initiative?
+    - If that was the case, how can we determine which dataset has been discovered to be more valuable by users?
+    - If that was the case, how can we determine which dataset has been discovered to be more useful by users?
+    - If that was the case, how can we determine which dataset has been discovered to be more useful by customers?
+    - If that was the case, how can we determine which dataset has been discovered to be more useful by consumers?
+
 - intent: faq-dataset-b0/financial-data-available #250
   examples: |
     - What financial data is available?

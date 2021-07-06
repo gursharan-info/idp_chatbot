@@ -11,26 +11,6 @@ nlu:
     - yes its' over
     - okay its done
 
-- intent: faq-visualisation-b1/compare-datasets-on-idp
-  examples: |
-    - how can we compare datasets on IDP?
-    - how datasets are compared here?
-    - is there any way to comapre datasets on IDP
-    - any path way to comapre datasets on IDP
-    - can i ask is there any way to diffrentiate bw diffrents data sets on platform?
-    - any way we can make a contrast on dissimilar datasets on IDP
-    - can we comapre datasets on IDP?
-    - how do we compare the datasets on idp?
-    - how do you compare datasets in idp?
-    - how can we compare datasets on indian data porttal
-    - can you list the datasets that compare data on indian data portal
-    - can you list the datasets that compare data on idp?
-    - is there way to make distinction between diff. datasets ?
-    - how to differentiate between two datasets.
-    - how to diff b/w two datasets
-    - how we can compare datasets?
-    - is it possible to compare datasets here?
-    - dataset comparision feasible?
 
 - intent: faq-visualisation-b1/add-dataset-on-idp
   examples: |

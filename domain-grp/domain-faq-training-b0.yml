@@ -11,6 +11,8 @@ entities: []
 slots: {}
 responses:
 
+  utter_faq-train-b0/next-version: #28
+  - text: We are continuously updating the latest visualisations on our portal.
   utter_faq-train-b0/how-to-use-idp: #272
   - text: On the top right corner tab you will find training. After clicking on training you will find two categories- workshop & events and online training. Click on online training to find tutorial videos.
   utter_faq-train-b0/any-training-available: #274

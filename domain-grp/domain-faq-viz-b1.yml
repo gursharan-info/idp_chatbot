@@ -10,8 +10,7 @@ intents:
 entities: []
 slots: {}
 responses:
-  utter_faq-visualisation-b1/compare-datasets-on-idp:
-  - text: Go to the visualize page, and on the left hand side, you will see the Add Dataset option. You can add upto 2 datasets one by one for comparison
+  
   utter_faq-visualisation-b1/add-dataset-on-idp:
   - text: In the left side bar on visualize page, you will see the Add Dataset option. You can add upto 2 datasets one by one for comparison
   utter_faq-visualisation-b1/location-meaning-idp:

@@ -10,6 +10,16 @@ intents:
 entities: []
 slots: {}
 responses:
+
+  utter_faq-dataset-b0/alternate-sources-data: #19
+  - text: Data on the India Data Portal is sourced from government websites and you may visit the source websites mentioned as alternate data sources
+  
+  utter_faq-dataset-b0/upload-datasets-platofrm: #21
+  - text: It is not possible to upload a data set into the India Data Portal 
+  
+  utter_faq-dataset-b0/multiple-data-sets-same-parameter: # 23
+  - text: The datasets on IDP are sourced from governments sources. There are multiple surveys, data collection activities by the government those have common parameters for data collection which is usually the mandat of data collection objective. So, as a result there can be similar indicators but with different data collection methods. As far as their usability is concerned, this type comparison has not been considered yet but is part of our long term plan.
+
   utter_faq-dataset-b0/financial-data-available: #250
   - text: India Data Portal has financial data which includes credit by Bank, Agri wages, Debt and investment, Deposits with bank and many more!! Just go to Financial inclusion tab in our dataset to find more
 

@@ -1,6 +1,228 @@
 version: "2.0"
 nlu:
-- intent: faq-portal-b0/about_idp
+
+- intent: faq-portal-b0/types-visualisation-portal # 5
+  examples: |
+    - What are the types of visualizations available on the India Data Portal?
+    - What kinds of visualisations are available on the India Data Portal?
+    - And which kinds of visualisations are available on the India Data Portal?
+    - And which kinds of visuals are available on the India Data Portal?
+    - And which types of visuals are available on the India Data Portal?
+    - And which types of graphs are available on the India Data Portal?
+    - And which types of visuals are available here?
+    - here what kind of visuals can i see ?
+
+- intent: faq-portal-b0/frequency-data-upload #10
+  examples: |
+    - How frequently is the data updated?
+    - How often is the data updated?
+    - When was the data updated?
+    - How often is the information updated?
+    - Since when was the information updated?
+    - And how is the information updated?
+
+- intent: faq-portal-b0/server-error #11
+  examples: |
+    - There is server 503 error that appears when we click the source link....probably backend issue
+    - When we visit the source link, we get a server 503 error...this is most likely due to a backend problem.
+    - When we visit the source link, we have a server 503 error...this is most likely due to a backend problem.
+    - When you visit the source link, we have a server 503 error...this is most likely due to a backend problem.
+    - When you visit the source link, we have a server 503 error...this is most probably due to a backend problem.
+    - Whenever you visit the source link, we have a server 503 error...this is most probably due to a backend problem.
+    - Whenever you visit the source link, we have a server 503 error...this is most probably due to a backend issue.
+    - After you visit the source link, we have a server 503 error...this is most probably due to a backend issue.
+    - Even before you visit the source link, we have a server 503 error...this is most probably due to a backend issue.
+
+- intent: faq-portal-b0/not-able-search-dataset-with-keywords #15
+  examples: |
+    - Without specific key phrases, it is impossible to search for data.
+    - Not able to search for data without exact key words
+    - Without specific key phrases, it is difficult to search for data.
+    - Without precise key words, it is difficult to search for data.
+    - Absent precise key words, it is difficult to search for data.
+    - Absent accurate key words, it is difficult to search for data.
+    - Absent accurate key words, it is difficult to search for information.
+    - Absent accurate stock terms, it is difficult to search for information.
+    - No accurate stock terms, it is difficult to search for information.
+- intent: faq-portal-b0/help-technical-issues-portal #24
+  examples: |
+    - How can I report any technical issues with the portal?
+    - How can i report a issue?
+    - help with tecnical isseue
+    - have a problem with portal, i need help
+    - how i can contact you?
+    - i need help i am facing isseu
+    - how can I report an issue?
+    - how can I get help?
+    - how can I report a bug?
+    - how can i report an issue?
+    - how can i suggest changes?
+    - how can I get in touch with idp i ahve some issue?
+    - Can I speak to someone
+    - can I get a phone number?
+    - how can I get in touch with idp?
+    - What is the best way for me to report any technical issues with the portal?
+    - What is the surest option for me to report any portal technical issues?
+    - how can i report any technical problems with the portal?
+    - What is the best way for me to report any technical issues with the portal?
+    - How do I report technical problems with the portal?
+    - How do I report any technical issues with the portal?
+    - What should I do if I encounter any technical problems with the portal?
+    - i came up with technical glitch what should i do?
+    - What can I do if I have any technical issues with the portal?
+    - How can I report technical problems with the portal?
+    - How can I report technical glitches with the portal?
+    - how can technical glitches be reported?
+    - to whom i should write about technical problems?
+    - with whom i should have word about glitches?
+    - who will be the right person to solve technical problems?
+    - with whom i should have word about technical problem?
+
+
+- intent: faq-portal-b0/not-able-compare-datasets #25
+  examples: |
+    - Not able to compare datasets. 
+    - It is not possible to compare datasets.
+    - It is not able to match datasets.
+    - It is not able to match data.
+    - That is not able to match data.
+    - It is just not able to match data.
+    - It is also not able to match data.
+    - It is also not able to compare data.
+    - It is also  difficult to compare data.
+
+- intent: faq-portal-b0/trust-data-sourced-from-government-agencies  #26
+  examples: |
+    - How do we trust this data since the data is sourced from government agencies?
+    - why we trust this data?
+    - where is refrence of this data
+    - can i trust this source
+    - is this data reliable?
+    - how can we trust this data?
+    - Why do we believe this data?
+    - Why would we embrace this data?
+    - Why do we believe this information?
+    - Why should we place our faith in this information?
+    - why do we have faith in this data?
+    - how am i supposed to believe that this data is correct?
+    - how can we say this data is accurate?
+    - Why do we have faith in this details?
+    - why should i believe this info is correct?
+    - why should i rely on the data?
+
+- intent: faq-portal-b0/materials-videos-different-visualization-posted-website  #27
+  examples: |
+    - Will additional training materials/videos for different visualization scenarios be posted on the website?
+    - meririal or videos of visualization posted on website?
+    - metarial/videos of visualization is regularly posted on portal?
+    - portal is contuniously uploaded visulization videos?
+    - visulixation senerio regularly uploaded?
+    - are training materials available?
+    - Will there be further training resources available on the website for various visualisation scenarios?
+    - Will there be further training resources posted on the site for diverse visualisation scenarios?
+    - any Additional material on training will be there?
+    - will there be more training resources posted on the site for different visualisation scenarios?
+    - will there be any new training videos in coming future?
+    - in coming future will there pe any new traing videos on portal?
+    - any plans for training videos on portal?
+    - can we expext new traing videos ?
+    - will there be any new material?
+
+- intent: faq-portal-b0/different_langauges_availability #29
+  examples: |
+    - Is it available in other Indian languages? If yes, which ones?
+    - possible to see IDP in other indian langs like bengali,telugu oriya etc
+    - can i see indian data portal in other indic languages
+    - Indian data portal can be accessed in other regional languages
+    - how can i access IDP in my regional languages
+    - Does this provide support for major indian language except English
+    - how many langs suport do you give
+    - What diff langs you support
+    - how many langauges on IDP ?
+    - how many langs aere on INDIAN DATA PORTAL PRESENT?
+    - presently you suppport which indina langs?
+    - is the portal available in hindi?
+    - Can I write the title in my Local Language
+    - what different lang are present on the portal?
+    - What languages are available on the portal?
+    - What diff lang can be found on the portal?
+    - diff lang supported by this website?
+    - What are the various languages available on the portal?
+    - What languages is the portal available in?
+    - What langs are featured on the portal?
+    - Is it available in other Indian languages? If yes, which ones? 
+
+- intent: faq-portal-b0/visualisations-made-downloaded-other-languages #30
+  examples: |
+    - Can the visualisations be made and downloaded in other languages?
+    - visulization support other languages?
+    - visulisation run in other languages?
+    - visulisation creted in other languade?
+    - can we download visualization in different language?
+    - present viz in different languages
+    - does this portal allows to make visuals in other languages?
+    - can we download visuals in other languages?
+    - Is it possible to create and download visualisations in other languages?
+    - Is it possible to build and export visuals in other languages?
+    - Is it possible to create and export graphs in other languages?
+    - Is it feasible to create and export diagrams in other languages?
+    - Is it possible to produce and download visualisations in other languages?
+    - Can the visualisations be created and downloaded in other languages?
+    - Are the visualisations available in other languages and can they be downloaded?
+    - Are the visuals accessible in several other languages and could they be downloaded?
+
+- intent: faq-portal-b0/paid_service_or_not #31
+  examples: |
+    - is it a paid service?
+    - Do I have to pay to use this platform
+    - how much i have to pay to use this website
+    - does IDP charge any money
+    - is it completely free
+    - are there any monthly or yearly subsciptions
+    - Monthly cost ?
+    - yearly fee ?
+    - is this platform have any fees ?
+    - any monthly subsciption fee?
+    - any type of money do you charge?
+    - is idp free?
+    - is idp paid?
+    - does idp have any paid features?
+    - Is IDP paid or free?
+    - Are datasets and visuals on idp paid?
+    - Is it true that datasets and images on idp are paid?
+    - Is it true that datasets and graphics on idp are paid?
+    - Is it true that idp datasets and visualisations are not free?
+    - Is it true that the datasets and visuals on idp are paid?
+    - Is this a for-profit service?
+    - Is this a service that you have to pay for?
+    - Is it a for-profit service?
+    - Is it a fee-based service?
+    - Is there a fee for this service?
+    - am i supposed to pay for this service?
+    - Is it a price service?
+
+- intent: faq-portal-b0/compare-datasets-on-idp #34
+  examples: |
+    - how can we compare datasets on IDP?
+    - how datasets are compared here?
+    - is there any way to comapre datasets on IDP
+    - any path way to comapre datasets on IDP
+    - can i ask is there any way to diffrentiate bw diffrents data sets on platform?
+    - any way we can make a contrast on dissimilar datasets on IDP
+    - can we comapre datasets on IDP?
+    - how do we compare the datasets on idp?
+    - how do you compare datasets in idp?
+    - how can we compare datasets on indian data porttal
+    - can you list the datasets that compare data on indian data portal
+    - can you list the datasets that compare data on idp?
+    - is there way to make distinction between diff. datasets ?
+    - how to differentiate between two datasets.
+    - how to diff b/w two datasets
+    - how we can compare datasets?
+    - is it possible to compare datasets here?
+    - dataset comparision feasible?
+
+- intent: faq-portal-b0/about_idp #1
   examples: |
     - can you tell me something about idp.
     - What is idp?

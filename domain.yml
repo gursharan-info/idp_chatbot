@@ -150,6 +150,18 @@ responses:
   - text: The user can assign any units of choice on the user created indicator
   utter_faq-visualisation-b5/whatis-indiapulse:
   - text: Please visit this link to know more about IndiaPulse@ISB https://www.isb.edu/en/research-thought-leadership/research-centres-institutes/bharti-institute-of-public-policy/JSI.html
+  utter_faq-dataset-b0/alternate-sources-data:
+  - text: Data on the India Data Portal is sourced from government websites and you
+      may visit the source websites mentioned as alternate data sources
+  utter_faq-dataset-b0/upload-datasets-platofrm:
+  - text: It is not possible to upload a data set into the India Data Portal
+  utter_faq-dataset-b0/multiple-data-sets-same-parameter:
+  - text: The datasets on IDP are sourced from governments sources. There are multiple
+      surveys, data collection activities by the government those have common parameters
+      for data collection which is usually the mandat of data collection objective.
+      So, as a result there can be similar indicators but with different data collection
+      methods. As far as their usability is concerned, this type comparison has not
+      been considered yet but is part of our long term plan.
   utter_faq-dataset-b0/financial-data-available:
   - text: India Data Portal has financial data which includes credit by Bank, Agri
       wages, Debt and investment, Deposits with bank and many more!! Just go to Financial
@@ -257,20 +269,8 @@ responses:
   - text: 'The IDP endeavours to regularly add more training material/videos/etc as
       we move forward. The feedback from users would also help us in adding more material
       and features to the portal. '
-  utter_faq-visualisation-b0/different_langauges_availability:
-  - text: The IDP portal is presently available in 5 languages Bengali, English, Hindi,
-      Oriya, Telugu.
-  utter_faq-visualisation-b0/paid_service_or_not:
-  - text: "All the datasets and visualizations on the IDP are completely free and\
-      \ open to all the users. To make full use of the portal it is advisable to create\
-      \ your login ID. What\u2019s even more exciting is that we will be running competitions\
-      \ to select best visualizations created by our users (by all of you). And the\
-      \ winners will take home exciting prizes. "
   utter_faq-visualisation-b0/frequently-data-updated:
   - text: The data is updated on quarterly basis on IDP and daily for HFI indicators
-  utter_faq-visualisation-b0/alternate-sources-data:
-  - text: Data on the India Data Portal is sourced from government websites and you
-      may visit the source websites mentioned as alternate data sources
   utter_faq-visualisation-b0/share-upload-dataset:
   - text: It is not possible to upload a data set into the India Data Portal
   utter_faq-visualisation-b0/multiple-data-set-same-parameters-which-useful:
@@ -280,16 +280,6 @@ responses:
       So as a result there can be similar indicators but with different data collection
       methods As far as their usability is concerned  this type comparison has not
       been considered yet but is part of our long term plan
-  utter_faq-visualisation-b0/help-technical-issues-portal:
-  - text: Just mail to us idp@isb.edu
-  utter_faq-visualisation-b0/trust-data-sourced-from-government-agencies:
-  - text: We have collected the data from reliable government sourcs You can also
-      see the links in the about dataset page in the source link section
-  utter_faq-visualisation-b0/materials-videos-different-visualization-posted-website:
-  - text: Yes we will be uploading new training videos in our portal
-  utter_faq-visualisation-b0/visualisations-made-downloaded-other-languages:
-  - text: Yes the visualisations can be made and downloaded in the languages available
-      in the Portal
   utter_out_of_scope:
   - text: Out of my knowledge can you pls rephrase
   utter_please_rephrase:
@@ -431,8 +421,39 @@ responses:
       as districts, tehsils, and villages with a largely rural focus and socio-economic
       characteristics in both rural and urban areas at granular spatial scales like
       district, town and ward spanning the entire country.
+  utter_faq-portal-b0/types-visualisation-portal:
+  - text: More than 30 types of visualizations are available on India Data portal,
+      which includes bar chart, pie chart, line chart, histogram, tree map, etc.
+  utter_faq-portal-b0/frequency-data-upload:
+  - text: India Data Portal has data from various government sources and once the
+      data is uploaded on the source, it is updated on the portal within a short time
+  utter_faq-portal-b0/server-error:
+  - text: Sorry for the inconvinience due to technical issue, which is resolved now.
+  utter_faq-portal-b0/not-able-search-dataset-with-keywords:
+  - text: You can search for the dataset name, indicator name or location separately
+  utter_faq-portal-b0/help-technical-issues-portal:
+  - text: Just mail to us idp@isb.edu
+  utter_faq-portal-b0/not-able-compare-datasets:
+  - text: You can compare two datasets provided there is data on the same locations
+      across both the datasets, e.g. either state or district level data
+  utter_faq-portal-b0/trust-data-sourced-from-government-agencies:
+  - text: We have collected the data from reliable government sourcs You can also
+      see the links in the about dataset page in the source link section
+  utter_faq-portal-b0/materials-videos-different-visualization-posted-website:
+  - text: Yes we will be uploading new training videos in our portal
+  utter_faq-portal-b0/different_langauges_availability:
+  - text: India Data Portal is available in six languages which includes English and
+      other Indian languages like Hindi, Bengali, Marathi, Oriya and Telegu
+  utter_faq-portal-b0/visualisations-made-downloaded-other-languages:
+  - text: Yes the visualisations can be made and downloaded in the languages available
+      in the Portal
+  utter_faq-portal-b0/paid_service_or_not:
+  - text: Till now it is not a paid service and is completely open source
   utter_faq-portal-b0/what-is-indicator:
   - text: Indicator is a variable whose value is of interest to the user of the portal
+  utter_faq-portal-b0/compare-datasets-on-idp:
+  - text: Go to the visualize page, and on the left hand side, you will see the Add
+      Dataset option. You can add upto 2 datasets one by one for comparison
   utter_faq-portal-b0/why_idp:
   - text: "With the help of IDP, a user can use the multiple datasets available, which\
       \ have been already cleaned and vetted and have been presented in easy to understand\
@@ -694,6 +715,8 @@ responses:
   utter_faq-visualisation-b4/remove-all-selections-once:
   - text: You can remove all the selections by clicking on 'clear all' button on the
       top of any popup window
+  utter_faq-train-b0/next-version:
+  - text: We are continuously updating the latest visualisations on our portal.
   utter_faq-train-b0/how-to-use-idp:
   - text: On the top right corner tab you will find training. After clicking on training
       you will find two categories- workshop & events and online training. Click on
@@ -891,9 +914,6 @@ responses:
   - text: Please check the indicators and dimensions and relate to what story you
       need to find and then click on build your chart. If you dont understand one
       chart look for the other ones.
-  utter_faq-visualisation-b1/compare-datasets-on-idp:
-  - text: Go to the visualize page, and on the left hand side, you will see the Add
-      Dataset option. You can add upto 2 datasets one by one for comparison
   utter_faq-visualisation-b1/add-dataset-on-idp:
   - text: In the left side bar on visualize page, you will see the Add Dataset option.
       You can add upto 2 datasets one by one for comparison

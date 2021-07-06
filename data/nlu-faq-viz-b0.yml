@@ -131,7 +131,7 @@ nlu:
     - What visualizations are possible on IDP?
     - What visualizations are possible?
 
-- intent: faq-visualisation-b0/source_of_data
+- intent: faq-visualisation-b0/source_of_data #already present
   examples: |
     - What is the source of the data?
     - What is the source of the data present on indian data portal
@@ -140,7 +140,7 @@ nlu:
     - Are all sources presnt here legit?
     - what are the sources ?
     - Is there any private data on the portal?
-- intent: faq-visualisation-b0/will_addtional_sources_be_added
+- intent: faq-visualisation-b0/will_addtional_sources_be_added  #already present
   examples: |
     - Will additional training materials/videos for different visualization scenarios be posted on the website?
     - in future can i expect to see more datasets on this platform
@@ -149,6 +149,7 @@ nlu:
     - In future are there any chances that i will see different repos over here
     - in coming future will more data be presnt on here.
     - how can I get training to use idp?
+
 - intent: faq-visualisation-b0/different_langauges_availability
   examples: |
     - Is it available in other Indian languages? If yes, which ones?
@@ -164,6 +165,14 @@ nlu:
     - presently you suppport which indina langs?
     - is the portal available in hindi?
     - Can I write the title in my Local Language
+    - what different lang are present on the portal?
+    - What languages are available on the portal?
+    - What diff lang can be found on the portal?
+    - diff lang supported by this website?
+    - What are the various languages available on the portal?
+    - What languages is the portal available in?
+    - What langs are featured on the portal?
+
 - intent: faq-visualisation-b0/paid_service_or_not
   examples: |
     - is it a paid service?
@@ -181,7 +190,20 @@ nlu:
     - is idp paid?
     - does idp have any paid features?
     - Is IDP paid or free?
-- intent: faq-visualisation-b0/frequently-data-updated
+    - Are datasets and visuals on idp paid?
+    - Is it true that datasets and images on idp are paid?
+    - Is it true that datasets and graphics on idp are paid?
+    - Is it true that idp datasets and visualisations are not free?
+    - Is it true that the datasets and visuals on idp are paid?
+    - Is this a for-profit service?
+    - Is this a service that you have to pay for?
+    - Is it a for-profit service?
+    - Is it a fee-based service?
+    - Is there a fee for this service?
+    - am i supposed to pay for this service?
+    - Is it a price service?
+
+- intent: faq-visualisation-b0/frequently-data-updated  #10
   examples: |
     - When data updated
     - how many time data updated in a year?
@@ -190,8 +212,11 @@ nlu:
     - when we can update data on india data portal
     - frequency of uploading data on IDP in a year
     - How frequently is the data updated?
+    - How often is the information updated?
+    - How often is the information refreshed?
+    - What is the frequency of data updates?
 
-- intent: faq-visualisation-b0/alternate-sources-data
+- intent: faq-visualisation-b0/alternate-sources-data #19
   examples: |
     - Are there any alternate sources for data?
     - is there any other source of data?
@@ -201,7 +226,14 @@ nlu:
     - who is data source of data
     - is this portal available in hindy?
     - where can I  find the source of this data set
-- intent: faq-visualisation-b0/share-upload-dataset
+    - Are there any other sources for data?
+    - Are there any other data sources?
+    - Are there any alternative data sources?
+    - Is there a way to get info from anywhere else on the internet?
+    - Is there a way to get data from more than just this portal?
+    - Are there certain data sources?
+
+- intent: faq-visualisation-b0/share-upload-dataset #21
   examples: |
     - How do I share/ upload a dataset from IDP
     - steps of share dataset
@@ -209,7 +241,19 @@ nlu:
     - how i can upload dataset
     - procedure of share/upload dataset
     - how can i share dataset file
-- intent: faq-visualisation-b0/multiple-data-set-same-parameters-which-useful
+    - What is the procedure for uploading a dataset to IDP?
+    - What is the procedure for submitting a dataset to IDP?
+    - What is the process for uploading a dataset to IDP?
+    - process for uploading a dataset here?
+    - can ewe upload a dataset here?
+    - does this portal support uploading a dataset from external source?
+    - uploading a dataset facility is available here?
+    - How can I submit a dataset to IDP?
+    - How do I submit a dataset to IDP?
+    - How do I upload a dataset to IDP?
+    - can we upload a dataset on this portal?
+
+- intent: faq-visualisation-b0/multiple-data-set-same-parameters-which-useful #23
   examples: |
     - how can we know which dataset has been found more useful by users?
     - would there be multiple data sets for the same parameters?
@@ -217,7 +261,16 @@ nlu:
     - in multiple data sets which dataset is more useful
     - how user know about more useful dataset in multiple datasets
     - List the datasets covered on the portal
-- intent: faq-visualisation-b0/help-technical-issues-portal
+    - Will there be several data sets for the same parameters because this is an Open Source initiative? If this is the case, how can we determine which dataset consumers have found to be most useful?
+    - Will there be different datasets for the same parameters since this is an Open Source initiative? If this is the case, how can we determine which dataset consumers have found to be most useful?
+    - Will there be multiple data sets for the same parameters since this is an Open Source initiative? If this is the scenario, how can we identify which dataset consumers have found to be most useful?
+    - Would there be multiple data sets for the same parameters because this is an Open Source initiative?
+    - As this an open source initiative, will there be multiple datasets for same parameters?
+    - how can we know which dataset is found more useful by the users?
+    - how am i supposed to know which is the most liked dataset by the user?
+
+
+- intent: faq-visualisation-b0/help-technical-issues-portal #24
   examples: |
     - How can I report any technical issues with the portal?
     - How can i report a issue?
@@ -234,7 +287,24 @@ nlu:
     - Can I speak to someone
     - can I get a phone number?
     - how can I get in touch with idp?
-- intent: faq-visualisation-b0/trust-data-sourced-from-government-agencies
+    - What is the best way for me to report any technical issues with the portal?
+    - What is the surest option for me to report any portal technical issues?
+    - how can i report any technical problems with the portal?
+    - What is the best way for me to report any technical issues with the portal?
+    - How do I report technical problems with the portal?
+    - How do I report any technical issues with the portal?
+    - What should I do if I encounter any technical problems with the portal?
+    - i came up with technical glitch what should i do?
+    - What can I do if I have any technical issues with the portal?
+    - How can I report technical problems with the portal?
+    - How can I report technical glitches with the portal?
+    - how can technical glitches be reported?
+    - to whom i should write about technical problems?
+    - with whom i should have word about glitches?
+    - who will be the right person to solve technical problems?
+    - with whom i should have word about technical problem?
+
+- intent: faq-visualisation-b0/trust-data-sourced-from-government-agencies  #26
   examples: |
     - How do we trust this data since the data is sourced from government agencies?
     - why we trust this data?
@@ -242,7 +312,18 @@ nlu:
     - can i trust this source
     - is this data reliable?
     - how can we trust this data?
-- intent: faq-visualisation-b0/materials-videos-different-visualization-posted-website
+    - Why do we believe this data?
+    - Why would we embrace this data?
+    - Why do we believe this information?
+    - Why should we place our faith in this information?
+    - why do we have faith in this data?
+    - how am i supposed to believe that this data is correct?
+    - how can we say this data is accurate?
+    - Why do we have faith in this details?
+    - why should i believe this info is correct?
+    - why should i rely on the data?
+
+- intent: faq-visualisation-b0/materials-videos-different-visualization-posted-website  #27
   examples: |
     - Will additional training materials/videos for different visualization scenarios be posted on the website?
     - meririal or videos of visualization posted on website?
@@ -250,7 +331,17 @@ nlu:
     - portal is contuniously uploaded visulization videos?
     - visulixation senerio regularly uploaded?
     - are training materials available?
-- intent: faq-visualisation-b0/visualisations-made-downloaded-other-languages
+    - Will there be further training resources available on the website for various visualisation scenarios?
+    - Will there be further training resources posted on the site for diverse visualisation scenarios?
+    - any Additional material on training will be there?
+    - will there be more training resources posted on the site for different visualisation scenarios?
+    - will there be any new training videos in coming future?
+    - in coming future will there pe any new traing videos on portal?
+    - any plans for training videos on portal?
+    - can we expext new traing videos ?
+    - will there be any new material?
+
+- intent: faq-visualisation-b0/visualisations-made-downloaded-other-languages #30
   examples: |
     - Can the visualisations be made and downloaded in other languages?
     - visulization support other languages?
@@ -258,6 +349,17 @@ nlu:
     - visulisation creted in other languade?
     - can we download visualization in different language?
     - present viz in different languages
+    - does this portal allows to make visuals in other languages?
+    - can we download visuals in other languages?
+    - Is it possible to create and download visualisations in other languages?
+    - Is it possible to build and export visuals in other languages?
+    - Is it possible to create and export graphs in other languages?
+    - Is it feasible to create and export diagrams in other languages?
+    - Is it possible to produce and download visualisations in other languages?
+    - Can the visualisations be created and downloaded in other languages?
+    - Are the visualisations available in other languages and can they be downloaded?
+    - Are the visuals accessible in several other languages and could they be downloaded?
+
 - intent: out_of_scope
   examples: |
     - can i see you in india

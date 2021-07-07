@@ -1,6 +1,59 @@
 import pandas as pd
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize, sent_tokenize
+from nltk.stem import PorterStemmer
+import nltk
+nltk.download('punkt')
+porter=PorterStemmer()
+nltk.download('stopwords')
 
 #FROM CLIENT INPUT TO PARTICULAR FORMAT
+
+#filtering stopwords
+def filter_stopword(list_of_ques):
+  stop_words = set(stopwords.words('english'))
+  filtered_sentence = []
+  for sent in list_of_ques:
+    word_tokens = word_tokenize(sent)
+    # print('word_tokens',word_tokens)
+    filtered_sent = [w for w in word_tokens if not w.lower() in stop_words]
+    # print('filtered_sent',filtered_sent)
+    filtered_sentence.append(" ".join(filtered_sent))
+  return filtered_sentence
+
+#removing punctuation
+def remove_punct(filtered_sentence):
+  punc_sentence = []
+  for f_text in filtered_sentence:
+    tokens = word_tokenize(f_text)
+    # remove all tokens that are not alphabetic
+    words = [word for word in tokens if word.isalpha()]
+    # print(words)
+    punc_sentence.append(" ".join(words))
+  return punc_sentence
+
+#stemming
+def steming(punc_sentence, retrieval_name):
+  stemmed_list = []
+  #making retrievalintents
+  name_of_retrieval = str(retrieval_name)
+  # name_of_retrieval = 'faq-visualisation-b1/'
+  def stemSentence(sentence):
+      token_words=word_tokenize(sentence)
+      token_words
+      stem_sentence=[]
+      for word in token_words:
+          stem_sentence.append(porter.stem(word))
+          # stem_sentence.append("")
+      return "-".join(stem_sentence)
+
+  for sent in punc_sentence:
+    x = stemSentence(sent)
+    y = name_of_retrieval+x
+    stemmed_list.append(y)
+  return stemmed_list
+
+# after having retrievals we will prepare intermediate outputs
 def pad_dict_list(dict_list, padel):
     lmax = 0
     for lname in dict_list.keys():
@@ -66,11 +119,27 @@ def create_rasa_files(path, create_files_path, nlu_file_name, domain_file_name, 
     return None
 
 if __name__ == '__main__':
-    path_to_csv = ''
+    #retrievals preparation
     df = pd.read_csv('')
-    preparing_intermediate_output_for_nlu_and_domain_filegeneration(path_to_csv)
+    list_of_ques = df['question']
+    filter_sent = filter_stopword(list_of_ques)
+    punc_removal = remove_punct(filter_sent)
+    steming_sent = steming(punc_removal, 'new_retrieval/')
+
+    dictionary = {}
+    dictionary['intent'] = steming_sent
+    dictionary['question'] = list(df['question'])
+    dictionary['variation'] = list(df['variations'])
+    dataframe = pd.DataFrame(dictionary)
     
-    path = '/home/bavalpreet/IDP/nlu_sample_format_for_conversion.csv'
+    #intermediate data format
+    # 
+    path_to_csv = '/home/bavalpreet/IDP/generated_data/intermediate_data/'
+    df = dataframe
+    preparing_intermediate_output_for_nlu_and_domain_filegeneration(df, path_to_csv)
+    
+    #generating files
+    path = path_to_csv
     create_files_path = '/home/bavalpreet/IDP/generated_data/semiautomation/'
     domain_file_name = '\domain'
     nlu_file_name = '\nlu'

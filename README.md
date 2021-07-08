@@ -234,7 +234,7 @@ If you see this https://forum.rasa.com/t/the-answers-of-bot-dont-appear-on-rasa-
 2. ```  sudo docker system prune -a --volumes ```
 3.  ``` sudo docker volume prune -f ```
 4. ``` sudo docker image prune -a ```
-5. ``` sudo docker containers  prune -a ``` 
+
 
 fo any help related to above commands 
 1. https://docs.docker.com/engine/reference/commandline/system_prune/

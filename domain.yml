@@ -178,8 +178,9 @@ responses:
   utter_faq-dataset-b0/National-Survey-data-available:
   - text: Yes we have the NSSO data
   utter_faq-dataset-b0/data-Rural-Development:
-  - text: India Data Portal has rural development which includes MGNREGA and Misson
-      Antodaya data Just go to rural development tab in our dataset to find more
+  - text: India Data Portal has rural development data which includes MGNREGA and
+      Misson Antodaya data Just go to rural development tab in our dataset to find
+      more
   utter_faq-dataset-b0/data-available-CMIE:
   - text: As of now, India Data Portal has data made available from government sources.
       In future, private data sources would be incorporated on the portal
@@ -506,14 +507,9 @@ responses:
   - text: Various distoric datasets are available on the portal, please visit the
       dataset section of the portal for details
   utter_faq-portal-b0/data-update-mail-alerts:
-  - text: Until now, we do not have that feature. Tanks for the feedback, we'll include
-      this in the product roadmap.
-  utter_faq-portal-b0/feature-update-mail-alerts:
-  - text: Until now, we do not have that feature. Tanks for the feedback, we'll include
+  - text: Until now, we do not have that feature. Thanks for the feedback, we'll include
       this in the product roadmap.
   utter_faq-portal-b0/hindi-illustrations:
-  - text: Yes, India Data portal is available in 6 languages
-  utter_faq-portal-b0/other-lang-illustrations:
   - text: Yes, India Data portal is available in 6 languages
   utter_faq-portal-b0/different-languages:
   - text: India Data Portal is available in English, Hindi, Telugu, Bengali, Marathi

@@ -13,28 +13,28 @@ responses:
 
   utter_faq-train-b0/next-version: #28
   - text: We are continuously updating the latest visualisations on our portal.
-  utter_faq-train-b0/how-to-use-idp: #272
+  utter_faq-train-b0/how-to-use-idp: #266
   - text: On the top right corner tab you will find training. After clicking on training you will find two categories- workshop & events and online training. Click on online training to find tutorial videos.
-  utter_faq-train-b0/any-training-available: #274
+  utter_faq-train-b0/any-training-available: #268
   - text: On the top right corner tab you will find training. After clicking on training you will find two subtabs- workshop & events and online training. Click on online training to find tutorial videos.
-  utter_faq-train-b0/help-to-see-graph: #277
+  utter_faq-train-b0/help-to-see-graph: #271
   - text: On the top right corner tab you will find training. After clicking on training you will find two subtabs- workshop & events and online training. Click on online training to find tutorial videos.
-  utter_faq-train-b0/need-help-understand-portal: #278
+  utter_faq-train-b0/need-help-understand-portal: #272
   - text: On the top right corner tab you will find training. After clicking on training you will find two subtabs- workshop & events and online training. Click on online training to find tutorial videos.
-  utter_faq-train-b0/next-training-when: #280
+  utter_faq-train-b0/next-training-when: #274
   - text: On the top right corner tab you will find training. After clicking on training you will find two subtabs- workshop & events and online training. Click on workshop & events to find next training
-  utter_faq-train-b0/next-masterclass-when: #281
+  utter_faq-train-b0/next-masterclass-when: #275
   - text: On the top right corner tab you will find training. After clicking on training you will find two subtabs- workshop & events and online training. Click on workshop & events to find masterclass
-  utter_faq-train-b0/join-masterclass-how: #282
+  utter_faq-train-b0/join-masterclass-how: #276
   - text: You can register in the workshop and events page which is in the training tab. Also you can write to us at idp@isb.edu. We will send the zoom link for the masterclass
-  utter_faq-train-b0/what-is-masterclass: #283
+  utter_faq-train-b0/what-is-masterclass: #277
   - text: Masterclass is a virtual tutorial class intended for journalists, students, researchers, faculties,consultants to learn about Indiadataportal
-  utter_faq-train-b0/any-certification-available: #284
+  utter_faq-train-b0/any-certification-available: #278
   - text: Yes we do provide certificates from Indian School of business for attending the masterclass
-  utter_faq-train-b0/what-training-material-we-use: #285 
+  utter_faq-train-b0/what-training-material-we-use: #279
   - text: On the top right corner tab you will find training. After clicking on training you will find two subtabs- workshop & events and online training. Click on workshop & events to find next training
 
-  utter_faq-train-b0/learn-data-visualisation: #286
+  utter_faq-train-b0/learn-data-visualisation: #280
   - text: On the top right corner tab you will find training. After clicking on training you will find two subtabs- workshop & events and online training. Click on online training to find tutorial videos.
 
   utter_faq-train-b0/idp-journalism: # 287

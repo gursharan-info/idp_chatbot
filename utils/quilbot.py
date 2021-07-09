@@ -3,7 +3,6 @@
 from selenium import webdriver
 import pandas as pd
 import xlsxwriter
-from tqdm import tqdm
 import time
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -30,12 +29,12 @@ option.add_experimental_option("prefs", {
 
 
 # read original unique questions 
-file_original = pd.read_csv('/home/bavalpreet/New-question.csv')
-sentences = list(file_original['question'].values)
+file_original = pd.read_csv('/home/sahib/New-question.csv')
+sentences = list(file_original['question'].values[5:])
 
 
 
-workbook = xlsxwriter.Workbook('/home/bavalpreet/new-nlu-file-2.xlsx')
+workbook = xlsxwriter.Workbook('/home/sahib/new-nlu-file-2.xlsx')
 
 # By default worksheet names in the spreadsheet will be 
 # Sheet1, Sheet2 etc., but we can also specify a name.
@@ -45,7 +44,7 @@ worksheet = workbook.add_worksheet("sheet1")
 worksheet.write('A1', 'Original-question')
 worksheet.write('B1', 'Paraphrased-question')
 
-path = '/home/bavalpreet/Downloads/chromedriver_linux64/chromedriver'
+path = '/home/sahib/selenium-tut/chromedriver'
 
 
 driver = webdriver.Chrome(path, options= option)
@@ -57,7 +56,7 @@ driver.get('https://quillbot.com/')
 scores = []
 
 
-for k,sent in tqdm(enumerate(sentences)):
+for k,sent in enumerate(sentences):
 
 	for_each_sent = []
 

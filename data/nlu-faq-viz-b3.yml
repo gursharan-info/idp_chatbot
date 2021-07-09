@@ -346,6 +346,13 @@ nlu:
     - Is it mandatory for me to credit/cite IDP?
     - Is it necessary for me to credit or mention IDP?
     - Is it needed to mention or credit idp?
+    - after i have used this will i need to give creedit to Indian data portal
+    - after we have done our work i will you ask or credits
+    - credits will i have to give ?
+    - i will give credits but once i ma done is it ok 
+    - is it ok to not to give credits to you guys
+    - will indian data portal ask me about credits once i am done 
+    - done with work indian data portal will ask me for credits in future?
 
 - intent: faq-visualisation-b3/can-i-share-my-viz
   examples: |

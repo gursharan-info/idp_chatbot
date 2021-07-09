@@ -115,7 +115,9 @@ responses:
   utter_faq-portal-b0/uploading-news: #343
   - text: Please send the content to us at idp@isb.edu
   utter_faq-portal-b0/frequency-of-data-updation: #345
-  - text: India Data Portal updates data as soon as the source updates them 
+  - text: India Data Portal updates data as soon as the source updates them
+  utter_faq-portal-b0/data-change-notifications: 
+  - text: As of now, we do not have custom notifications  
   utter_faq-portal-b0/data-sourced-from-gov-sites:  #346
   - text: The data is sourced from reliable publically available sources
   utter_faq-portal-b0/hyperlink-to-source-data: #348

@@ -86,7 +86,7 @@ responses:
   utter_faq-dataset-b0/COVID-data:  #313
   - text: You can find Covid19 data set at https://indiadataportal.com/jsi
 
-  utter_faq-dataset-b0/any-industry-data-question: #320
+  utter_faq-dataset-b0/any-industry-data-question: #314
   - text: This data is available on the India Pulse section of the India Data Portal at https://indiadataportal.com/IndiaPulse
 
   utter_faq-dataset-b0/Why-India-data-portal-create:  #316

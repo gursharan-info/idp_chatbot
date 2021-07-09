@@ -301,6 +301,10 @@ nlu:
     - What is the best way to learn data visualisation?
     - What is the best way for me to learn how to visualise data?
     - What is the key to learning data visualisation?
+    - What is the most important aspect of learning data visualisation?
+    - What is the most important factor to remember while learning to visualise data?
+    - What is the secret to mastering data visualisation?
+    - What is the key to mastering data visualisation?
 
 - intent: faq-train-b0/idp-journalism
   examples: |
@@ -355,6 +359,10 @@ nlu:
     - IDP is a fantastic tool for data stories.
     - When it comes to data tales, IDP comes in handy.
     - IDP is a fantastic tool for creating data stories.
+    - how to utilize idp for data stories
+    - how to use idp for data storytelling
+    - how to use idp to create data stories.
+    -  how to utilise idp to tell data tales.
 
 - intent: faq-train-b0/any-journalism-certificate
   examples: |
@@ -378,6 +386,10 @@ nlu:
     - Is there any kind of data journalism certification programme?
     - Is there any kind of certification for data journalism?
     - Is there a programme for data journalism certification?
+    - will you provide any data journalism certificate?
+    - do journalist supposed to get any specific journalism certification?
+    - this portal provides any certification program for journalist?
+    - this portal has any journalism certificate for masses?
 
 - intent: faq-train-b0/researchers-learn-about-idp
   examples: |
@@ -399,6 +411,16 @@ nlu:
     - Is there any way for researchers to have a better understanding of IDP?
     - Can IDP be learned by researchers?
     - Is it possible for researchers to learn IDP?
+    - how researchers supposed to get knowledge about idp?
+    - What is the best way for researchers to learn about idp?
+    - What is the smartest method for researchers to gain knowledge about idp?
+    - What is the ideal route for researchers to discover about idp?
+    - What is the best route for researchers to understand about idp?
+    - ideal way for researchers to understand about idp?
+    - What is the best way for scholars to learn about the idp?
+    - How are academics meant to learn about idp?
+    - How are researchers supposed to learn about idp?
+    - How are academics expected to learn about idp?
 
 - intent: faq-train-b0/training-cover
   examples: |
@@ -687,6 +709,14 @@ nlu:
     - any tutorial available on how to use the portal?
     - any suggestions on how india data portal can be used ?
     - Where can one go for guidance or tutotrials on how to use India Data Portal?
+    - need help how to use idp?
+    - need help how to operate this portal?
+    - help me to understand this portal?
+    - help me to learn how to use the portal?
+    - guide me to operate the portal?
+    - any assistance to operate the portal?
+    - can you help me to understand this portal?
+
 - intent: faq-train-b0/free-online-tutorials-idp
   examples: |
     - Where can I get instructions on how to utilise the India Data Portal?

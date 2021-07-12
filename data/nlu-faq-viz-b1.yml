@@ -34,6 +34,8 @@ nlu:
     - how can i upload personal data on the portal?
     - where i can upload personal data?
     - where am i supposed to upload custom data?
+    - how am i supposed to insert a dataset?
+    - how can i insert a dataset ?
 
 - intent: faq-visualisation-b1/location-meaning-idp
   examples: |
@@ -194,17 +196,18 @@ nlu:
     - where is SAVE button on Indiandataportal
     - can't save Visual output of datasets is this possible do that?
     - saving visualization
-    - Is it possible to save a rendering?
-    - Is it possible to save a representation?
-    - Is it possible to save a visualisation?
-    - Could it be conceivable to save a visualisation?
-    - Could it be conceivable to save a diagrams
-    - Could it be conceivable to save a grpahs
-    - Could it be conceivable to save a output
-    - Could it be able and save a visualisation?
-    - Would that be able and save a drawing?
-    - Might it be able to save every drawing?
-
+    - i want to save a visual what should i do?
+    - what should i supposed to be doing in order to save a visulaisation
+    - to save a visual what are the steps?
+    - what steps do i need to follow in order to save a visualisation?
+    - whats the procedure to save a visual?
+    - how visuals are supposed to be saved?
+    - i want to know how can i save a visual?
+    - guide me to save a visualisation
+    - help me in saving a visualisation
+    - guide me to save a visuals
+    - help me in saving diff visuals
+    
 - intent: faq-visualisation-b1/can-we-export-viz
   examples: |
     - Can we export image of a visualisation
@@ -219,17 +222,7 @@ nlu:
     - would it be possible some how download our output
     - can we dowload image to local computer from IDP
     - can I download the visualization in jpeg?
-    - Can we export a visualisation's image?
-    - How do I even save visualisation?
-    - How do I even save visual display?
-    - How do I even save viewing?
-    - How the fuck do I even save viewing?
-    - How else would I even save viewing?
-    - So how would I even save visual representation?
-    - can you tell how would I even save visual representation?
-    - ahmm can you tell how would I even save visual representation?
-    - is there any way I can even save visual representation? 
-    - indian data portal allows to save visuals from here
+    
 
 
 - intent: faq-visualisation-b1/can-share-viz-on-social-media

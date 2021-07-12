@@ -1,6 +1,6 @@
 version: "2.0"
 nlu:
-- intent: faq-visualisation-b5/why-not-add-two-datasets #141
+- intent: faq-visualisation-b5/why-not-add-two-datasets #140
   examples: |
     - why am i not able to add more than two datasets ?
     - why can't i add more than two datasets ?
@@ -13,8 +13,21 @@ nlu:
     - Is it possible to add more than two datasets ?
     - help add more than 2 datasets
     - I am not able to add more than two datasets. Why?
+    - Why am I unable to include more than two datasets in my project?
+    - Why am I unable to use more than two datasets in my project?
+    - Why is it that I can't have more than two datasets?
+    - Why am I unable to include more than two datasets in my plot?
+    - Why can't I have more than two datasets?
+    - Why am I only allowed to have two datasets?
+    - Why am I limited to only two datasets?
+    - Why is it that I can't have visual from more than two datasets?
+    - Why can't I add more than two datasets to my project?
+    - Why can't I create a visual with more than two datasets?
+    - Why am I not allowed to have more than two datasets?
+    - Why can't I add more than two datasets to make my visualisation?
 
-- intent: faq-visualisation-b5/help-understand-indicators #143
+
+- intent: faq-visualisation-b5/help-understand-indicators #142
   examples: |
     - Can you help me understand the indicators
     - Can you describe how the indicators works
@@ -24,8 +37,28 @@ nlu:
     - indicators help
     - Help understanding indicators
     - What is an indicator?
+    - Could you assist me with deciphering indicators?
+    - Would you be able to guide me through the process of deciphering indicators?
+    - Could you assist me in deciphering indicators?
+    - Would you be able to assist me in comprehending indicators?
+    - Could you assist me with interpreting indicators?
+    - Could you perhaps help me comprehend the indicators?
+    - Could you assist me with comprehending indicators?
+    - Are you able to aid me in deciphering indicators?
+    - Would you be able to guide me through the process of deciphering indicators?
+    - Could you help me comprehend the indicators?
+    - Could you please assist me with deciphering indicators?
+    - tell me how can i interpret what indicators mean?
+    - enlight on meaning of indicators?
+    - what do indicators supposed to do?
+    - what is the role of indicators?
+    - what is the purpose of indicators?
+    - indicators what are they supposed to be doing?
+    - whats the aim of indicators?
+    - sole purpose of indicators?
 
-- intent: faq-visualisation-b5/tutorial-making-graphs-visualisations #145
+
+- intent: faq-visualisation-b5/tutorial-making-graphs-visualisations #144
   examples: |
     - Is there any tutorial for making graphs/visualisation ?
     - Is there any tutorial available on India data portal making graphs/visualisation ?
@@ -37,8 +70,19 @@ nlu:
     - graphs help
     - help with graphs/visualisation
     - is there any tutorial available?
+    - Is there a class on how to make visuals?
+    - Is there a lesson on how to create visualisations?
+    - Is there a visualisations tutorial?
+    - Is there a lesson on how to make visualisations?
+    - Is there a course that teaches you how to make visualisations?
+    - Is there a tutorial on visualisations?
+    - Is there a visualisations tutorial available?
+    - Is there a tutorial for visualisations?
+    - Is there a class that teaches you how to make visualisations?
+    - Is there a tutorial on visualisations available?
 
-- intent: faq-visualisation-b5/only-see-states-find-district-village #146
+
+- intent: faq-visualisation-b5/only-see-states-find-district-village #145
   examples: |
     - How to find district/ village names ?
     - How can i find district/village names ?
@@ -52,7 +96,7 @@ nlu:
     - I can only see states. Where can I find district/village names?
     - I can't find district. Why?
 
-- intent: faq-visualisation-b5/Why-not-see-all-selected-language #151
+- intent: faq-visualisation-b5/Why-not-see-all-selected-language #150
   examples: |
     - why am i not able to see all the text in selected language ?
     - why i cannot see all the text in selected language ?
@@ -62,7 +106,7 @@ nlu:
     - There is incomplete text in selected language
     - Why can't I see all the text in the selected language?
 
-- intent: faq-visualisation-b5/graph-not-see-loading #152
+- intent: faq-visualisation-b5/graph-not-see-loading #151
   examples: |
     - I am not able te see the graph
     - something is wrong with my graph
@@ -77,7 +121,7 @@ nlu:
     - here why cant i see graphs
     - Why is my graph not coming up? 
 
-- intent: faq-visualisation-b5/How-change-title #153
+- intent: faq-visualisation-b5/How-change-title #152
   examples: |
     - How to change the title ?
     - Is it possible to change the title ?
@@ -89,7 +133,7 @@ nlu:
     - problem with title change
     - how can I change the title?
 
-- intent: faq-visualisation-b5/What-numbers-in-brackets #154
+- intent: faq-visualisation-b5/What-numbers-in-brackets #153
   examples: |
     - what does numbers in the bracket refers to ?
     - what does the numbers in bracket means ?
@@ -98,7 +142,7 @@ nlu:
     - where can i use those numbers in the brackets ?
     - What are the numbers in the brackets?
     - What are the numbers in the brackets?
-- intent: faq-visualisation-b5/Do-have-select-filters #155
+- intent: faq-visualisation-b5/Do-have-select-filters #154
   examples: |
     - Do i really have to select filters ?
     - Is it necessary to select filters ?
@@ -120,7 +164,7 @@ nlu:
     - What do you mean by jumpStartIndia@Indian dat portal ?
     - What is JumpStartIndia@ISB?  
 
-- intent: faq-visualisation-b5/Can-zoom-chart #157
+- intent: faq-visualisation-b5/Can-zoom-chart #156
   examples: |
     - Is it possible to zoom into chart ?
     - How can i zoom into chart ?
@@ -130,14 +174,14 @@ nlu:
     - Shortcut for zooming into the chart
     - chart zooming
     - how zooming in chart
-- intent: faq-visualisation-b5/Should-select-location-always #161
+- intent: faq-visualisation-b5/Should-select-location-always #160
   examples: |
     - what location should i select ?
     - It is important to select a locattion?
     - It is necessary to select location always?
     - Necessary to select location always?
     - Manadatory to select location?
-- intent: faq-visualisation-b5/How-many-indicators-select-at-time #162
+- intent: faq-visualisation-b5/How-many-indicators-select-at-time #161
   examples: |
     - Which indicator should i select?
     - Can i use two indicators together?

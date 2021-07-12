@@ -958,6 +958,21 @@ nlu:
     - How regularly is the data provided on the Indian Data Portal updated with the most recent figures?
     - So regularly is the data provided on the Indian Data Portal updated with the most recent figures?
 
+- intent: faq-portal-b0/data-change-notifications 
+  examples: |
+    - If the data/numbers for a graph that I have downloaded is changed overnight by the Centre/State/District, will I be notified by IDP? 
+    - if someday data from gov is changes will i get some alert
+    - if someday data from gov is changes will i get some notifications
+    - if someday data from gov is changes will i get some notified
+    - will i be informed if data from IDP is changed by local agencies
+    - if agencies change data will i get text notifications
+    - ahmmm wanted to know do you support alerts service if any info is changed by government agencies
+    - notification will be provided if data is changed by gov
+    - alerts will be sent if data is changed by authority
+    - if the government alters the data, you will be notified.
+    - if  the government modifies the data, will i be notified
+    - If the government changes the data, the public will be notified.
+    
 - intent: faq-portal-b0/data-sourced-from-gov-sites
   examples: |
     - Is the data only sourced from Government websites?

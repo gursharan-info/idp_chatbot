@@ -195,6 +195,8 @@ nlu:
     - can we acess the National sample survey data on portal?
     - is portal having National sample survey data?
     - tell me about national sample survey data
+    - NSS data any availabel
+    - any NSS data
 
 - intent: faq-dataset-b0/data-Rural-Development #252
   examples: |

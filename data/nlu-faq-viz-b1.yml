@@ -53,6 +53,14 @@ nlu:
     - what does term location imply?
     - On the portal, what does the location indicate?
     - what does location represents here?
+    - while here location what's that
+    - how can you tell me abou location feature
+    - can you tell me about loaction icon on IDP
+    - can you tell me about loaction icon on Indiandata portal
+    - inidan data portal has something location what's that
+    - guide me about location icon here
+    - tell me something about loaction icon here
+    
 
 - intent: faq-visualisation-b1/only-india-is-covered
   examples: |
@@ -74,6 +82,12 @@ nlu:
     - is data only limited to India?
     - is the information in datsets limited to Indian territory?
     - is is data only covering Indian region?
+    - what regions of india are covered ?
+    - idp covers only indian resources ?
+    - iindian data portal covers indian only ?
+    - ahmmm can you tell me are you covering india only
+    - IDP just covers inida only na?
+    - indiandataportal covers india only or foreign data also?
 
 - intent: faq-visualisation-b1/mandatory-to-select-location
   examples: |
@@ -93,6 +107,18 @@ nlu:
     - what norms are mandatory for making of visualisations on INDIAN DATA PORTAL
     - when it is compulsary to use location parameter?
     - in what cases location parameter is a requirement?
+    - Is it required to pick a location for visualising
+    - Is it important to use a location for visualising?
+    - Is it important to choose a place for visualising?
+    - Is it essential to choose a place for visualising?
+    - Would it be essential to choose a place for visualising?
+    - Would that be essential to choose a place for visualising?
+    - Should it be essential to choose a place for visualising?
+    - Is that really essential to choose a place for visualising?
+    - Will it be crucial to choose a place for visualising?
+    - Will it be crucial to choose a place for trying to visualize?
+    - Will it be crucial to choose a place for envisioning?
+
     
 - intent: faq-visualisation-b1/can-i-select-dis-without-state
   examples: |
@@ -108,6 +134,22 @@ nlu:
     - Is it feasible to choose a district without first deciding on a state?
     - Is it viable to choose a district before choosing a state?
     - Is it feasible to choose a district before deciding on a state?
+    - Is it possible to select a District without first selecting a State?
+    - Is it necessary to distinguish a District without first selecting a State?
+    - Would it be necessary to distinguish a District without first selecting a State?
+    - Would it be necessary to distinguish a District before even selecting a State?
+    - Would it be necessary to distinguish a District before even selecting a Province?
+    - Is that really necessary to distinguish a District before even selecting a Province?
+    - Is that really essential to identify a District before even selecting a Province?
+    - Is that really essential to identify a Region before even selecting a Province?
+    - Should it be essential to identify a Region before even selecting a Province?
+    - can you tell is it that essential to identify a Region before even selecting a Province?
+    - ahmm i want to know is it that essential to identify a Region before even selecting a state
+    - I want to know is it that essential to identify a Region before even selecting a Province?
+    - i have a query is it that essential to identify a Region before even selecting a Province?
+    - district selection necessary without selecting a state?
+    - district selection necessary without selecting a province
+
     
 - intent: faq-visualisation-b1/can-change-color-of-viz
   examples: |
@@ -124,6 +166,18 @@ nlu:
     - how can we change graph colors?
     - how am i supposed to change the color of visualisations?
     - how can i change the color of diagrams?
+    - How do I alter the colour of the visualisation?
+    - How do I modify the colors of the visualisation?
+    - How then do I modify the colors of the visualisation?
+    - How then do I modify the colors of the data visualization?
+    - How else do I modify the colors of the data visualization?
+    - How else do I update the colors of the data visualization?
+    - Is it possible to change the colour of the output for different diagrams?
+    - Is it possible to change the colour of the output for different graphs?
+    - Is it possible to change that colour of the output for different graphs?
+    - Is it try to modify that colour of the output for different graphs?
+    - Would it be possible to alter that colour of the output for different graphs?
+    - Would it be possible to alter a colour of the output for different graphs?
 
 - intent: faq-visualisation-b1/can-we-save-viz
   examples: |
@@ -153,7 +207,7 @@ nlu:
     - help me in saving a visualisation
     - guide me to save a visuals
     - help me in saving diff visuals
-
+    
 - intent: faq-visualisation-b1/can-we-export-viz
   examples: |
     - Can we export image of a visualisation
@@ -168,12 +222,8 @@ nlu:
     - would it be possible some how download our output
     - can we dowload image to local computer from IDP
     - can I download the visualization in jpeg?
-    - how am i supposed to export a visual?
-    - help me to export a visual?
-    - guide me to export a visual image?
-    - what are the steps to export a visualisation?
-    - steps to save diagram
-    - steps i need to follow to save a visual?
+    
+
 
 - intent: faq-visualisation-b1/can-share-viz-on-social-media
   examples: |
@@ -210,6 +260,17 @@ nlu:
     - to share graphs on whatsapp do i need to add my phone number?
     - do we have to put in our personal phone number to share our output on whatsapp
     - would IDP ask me my personal phone number to share my output on IDP
+    - Is it necessary for me to share my phone number on WhatsApp?
+    - Is it required for me to share my mobile number on WhatsApp?
+    - Would it be required for me to share my mobile number ?
+    - Would it be required for me to share my contact information?
+    - Would it be required for me to share my phone?
+    - Would that be required for me to share my phone
+    - What procedures do I need to take to share my work on Whatsapp?
+    - What activities do I need to take to share my work on Whatsapp?
+    - Exactly activities do I need to take to share my work on Whatsapp?
+    - Which action do I need to take to share my work on Whatsapp?
+    
 
 - intent: faq-visualisation-b1/which-social-media-platform-supported-for-sharing-vis
   examples: |
@@ -222,6 +283,16 @@ nlu:
     - does IDp supports sharing visualisation on fb
     - can can i share my visualisation on Reddit
     - can i share my visualisation on Internet
+    - Which platforms are supported for sharing the output generated here?
+    - Which technologies are supported for sharing the data provided here?
+    - What technologies are supported for sharing the data provided here?
+    - Does IDp permit visual sharing on Linkedin?
+    - Does IDp permit visual sharing on reddit
+    - Is it possible to share data visualisations on Linkedin using the India Data Portal?
+    - which social media channels does IDP support for output saving
+    - which social media sites does IDP support for output saving
+    - which social media sites does IDP accept for output saving
+    - Does facebook and twitter allow IDP for output saving
 
 - intent: faq-visualisation-b4/what-my-graphics #(no answer and this intent needed to to be changed already in b4 file)
   examples: |
@@ -230,6 +301,18 @@ nlu:
     - Is it possible to obtain graphics by downloading them?
     - Is it possible to download graphics?
     - Can the graphics be saved?
-    - What is my graphics?
     - graphics can be downloaded?
     - Is there a way to get graphics?
+    - Can I download graphics?
+    - download graphics ?
+    - Can I download visuals?
+    - Can I save visuals?
+    - does IDP allows saving visuals created here
+    - Is it conceivable to get graphics?
+    - Is it conceivable to somehow get graphics?
+    - Is it conceivable to just get graphic designs?
+    - Would it be conceivable to just get graphic designs?
+    - do you allow to dwonlaoda graphics locally
+    - do you allow to download visuals created here
+    - Would it be workable to just get drawings?
+    - Would it be workable to just get illustrations?

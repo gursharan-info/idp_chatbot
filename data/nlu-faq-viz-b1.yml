@@ -34,6 +34,8 @@ nlu:
     - how can i upload personal data on the portal?
     - where i can upload personal data?
     - where am i supposed to upload custom data?
+    - how am i supposed to insert a dataset?
+    - how can i insert a dataset ?
 
 - intent: faq-visualisation-b1/location-meaning-idp
   examples: |
@@ -140,6 +142,17 @@ nlu:
     - where is SAVE button on Indiandataportal
     - can't save Visual output of datasets is this possible do that?
     - saving visualization
+    - i want to save a visual what should i do?
+    - what should i supposed to be doing in order to save a visulaisation
+    - to save a visual what are the steps?
+    - what steps do i need to follow in order to save a visualisation?
+    - whats the procedure to save a visual?
+    - how visuals are supposed to be saved?
+    - i want to know how can i save a visual?
+    - guide me to save a visualisation
+    - help me in saving a visualisation
+    - guide me to save a visuals
+    - help me in saving diff visuals
 
 - intent: faq-visualisation-b1/can-we-export-viz
   examples: |
@@ -155,6 +168,12 @@ nlu:
     - would it be possible some how download our output
     - can we dowload image to local computer from IDP
     - can I download the visualization in jpeg?
+    - how am i supposed to export a visual?
+    - help me to export a visual?
+    - guide me to export a visual image?
+    - what are the steps to export a visualisation?
+    - steps to save diagram
+    - steps i need to follow to save a visual?
 
 - intent: faq-visualisation-b1/can-share-viz-on-social-media
   examples: |

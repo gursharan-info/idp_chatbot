@@ -29,22 +29,22 @@ option.add_experimental_option("prefs", {
 
 
 # read original unique questions 
-file_original = pd.read_csv('/home/sahib/New-question.csv')
-sentences = list(file_original['question'].values[5:])
+file_original = pd.read_csv('/home/bavalpreet/Documents/new-question-viz-b5.csv')
+sentences = list(file_original['questions'].values)
 
 
 
-workbook = xlsxwriter.Workbook('/home/sahib/new-nlu-file-2.xlsx')
+workbook = xlsxwriter.Workbook('/home/bavalpreet/Documents/new-nlu-file-viz-b5.xlsx')
 
 # By default worksheet names in the spreadsheet will be 
 # Sheet1, Sheet2 etc., but we can also specify a name.
-worksheet = workbook.add_worksheet("sheet1")
+worksheet = workbook.add_worksheet("Sheet1")
 
 
 worksheet.write('A1', 'Original-question')
 worksheet.write('B1', 'Paraphrased-question')
 
-path = '/home/sahib/selenium-tut/chromedriver'
+path = '/home/bavalpreet/Downloads/chromedriver_linux64/chromedriver'
 
 
 driver = webdriver.Chrome(path, options= option)

@@ -51,7 +51,7 @@ responses:
   utter_faq-portal-b0/compare-datasets-on-idp: #34
   - text: Go to the visualize page, and on the left hand side, you will see the Add Dataset option. You can add upto 2 datasets one by one for comparison
 
-  utter_faq-portal-b0/why_idp:
+  utter_faq-portal-b0/why_idp: #3
   - text: With the help of IDP, a user can use the multiple datasets available, which have been already cleaned and vetted and have been presented in easy to understand manner. The users can make visualisations based on the chosen parameters as per the requirement of their writing. What’s even more exciting is that these visualisations are easily downloadable and can be inserted straight away in a story. 
 
   utter_faq-portal-b0/count-of-datasets: #4

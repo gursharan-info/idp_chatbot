@@ -259,6 +259,7 @@ nlu:
     - contradict between add dataset and compare dataset.
     - add dataset and compare dataset?
     - show the difference between add dataset and compare dataset.
+    - how compare dataset is diff from add data on portal
 
 - intent: faq-visualisation-b6/trend-analysis-what-viz-needed # 204
   examples: |

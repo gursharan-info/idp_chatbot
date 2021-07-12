@@ -437,7 +437,11 @@ nlu:
 - intent: faq-visualisation-b2/new-indicators-added-visualization
   examples: |
     - add new indicators in visualization
+    - what the maximum count of indicators that can be inserted in a graph
+    - what the maximum count of indicators that can be inserted in a viz
+    - on this portal what the maximum count of indicators that can be inserted in a graph
     - what number of indicators are added in a viz.?
+    - in a visualisation at max how many indicators i can add
     - can i add new indicators in a visualization?
     - do i add new indicators in a visualization?
     - is it possible to add new indicators in a visualization?
@@ -453,7 +457,6 @@ nlu:
     - How many new indicators can you add to a visualisation?
     - How many more indicatoors can be added to a graph we generated here?
     - Is there a restriction to how many new indicators can be added to a visualisation?
-    - What is the most that a visulastion can have in terms of new indicators?
     - What is the maximum number of new indicators that can be added to a visualisation?
     - Is there a boundation on how many new indicators can be added to a visualisation?
     - In a output, how many new indica-tors can be added?
@@ -464,8 +467,6 @@ nlu:
     - What is the most that a visualisation can have in terms of new indicators?
     - How many new indicators can you add to a visualisation?
     - How many new indica-tors can you add to a visualisation?
-    - How many new indicators can you include in a visualisation?
-    - How many more indicators can be added to a visualisation?
     - Is there a boundation on how many new indicators can be added to a visuals?
     - How many new indicators can be added to a data-aided visuals?
     - Is there a bound to how many new indicators can be added to a visualisation?
@@ -1200,6 +1201,7 @@ nlu:
     - datasets are added?
     - is datasets added?
     - can we add datasets?
+    - why should i add more than 1 dataset
     - how we add datasets?
     - can you assist me to add datasets?
     - steps to add datasets.

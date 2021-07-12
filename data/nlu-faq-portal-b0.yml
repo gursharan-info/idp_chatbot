@@ -403,6 +403,10 @@ nlu:
 
 - intent: faq-portal-b0/why_idp
   examples: |
+    - how can idp help me
+    - how can indian data portal help
+    - how this portal can help me
+    - how will this portal assist me
     - Why should I use IDP?
     - What is the main reason that i should choose idp
     - What is USP of Indian data portal
@@ -493,13 +497,14 @@ nlu:
     - What are the data fields that are available?
     - What are the data fields that are obtainable?
     - What are all the data fields that are obtainable?
-    - What are all the data fields that are readily accessible?
-    - And what were the data fields that are readily accessible?
-    - But what were the data fields that are readily accessible?
+    - What are all the data fields that are present here
+    - And what were the data fields that are residing here
+    - But what were the data fields that are available on this portal
     - So what were the data fields that are readily accessible?
-    - How are the data fields that are readily accessible?
+    - How are the data fields that are easily available
     - How are the data bits that are readily accessible?
-    - How are the data regions that are readily accessible?
+    - How are the data regions that are present on webiste?
+    - from which sectors data is coming
   
 - intent: faq-portal-b0/most-recent-data
   examples: |
@@ -525,6 +530,8 @@ nlu:
     - Is there any fresh information on idp?
     - Is there any fresh info on idp?
     - Is there any additional info on idp?
+    - tell me about recent data on this portal
+    - tell me about recent data on this webiste
 
 - intent: faq-portal-b0/recent-data-available
   examples: |

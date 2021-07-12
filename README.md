@@ -241,6 +241,16 @@ fo any help related to above commands
 2. https://docs.docker.com/config/pruning/
 
 
+
+### If Rasa X **fails to train** or **can't upload model**
+
+---> CLear RAM
+    1. ``` sync; echo 3 | sudo tee /proc/sys/vm/drop_caches ```
+    2. ``` sync; echo 2 | sudo tee /proc/sys/vm/drop_caches ```
+
+Now ``` sudo docker-compose down ```
+
+and  then again   ``` sudo docker-compose up -d ```
 #### Additional 
     TO check which files are consuming how much space 
     https://www.hostinger.in/tutorials/vps/how-to-check-and-manage-disk-space-via-terminal

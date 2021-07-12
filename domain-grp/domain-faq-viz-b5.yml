@@ -106,7 +106,7 @@ responses:
   utter_faq-visualisation-b5/max-datasets-compare: #180
   - text: You can compare a maximum of 2 datasets at a time
 
-  utter_faq-visualisation-b5/create-indicator-with-assigned-units: #183
+  utter_faq-visualisation-b5/create-indicator-with-assigned-units: #181
   - text: The user can assign any units of choice on the user created indicator
 
   utter_faq-visualisation-b5/whatis-indiapulse: #156

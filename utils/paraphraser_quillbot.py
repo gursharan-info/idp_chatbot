@@ -43,9 +43,9 @@ def get_sent_from_json(response):
 
 
 if __name__ == "__main__":
-  file_and_batch = 'viz_b5'
-  data = pd.read_csv('/home/bavalpreet/Documents/new-question-viz-b5.csv')
-  sentences = list(data['questions'].values[:2])
+  file_and_batch = 'viz_b3'
+  data = pd.read_csv('/home/bavalpreet/Documents/new-question-viz-b3.csv')
+  sentences = list(data['questions'].values)
   question = []
   paraphrased_values = []
   # sent = 'narinder modi is assshole'

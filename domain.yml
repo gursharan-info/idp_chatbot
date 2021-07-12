@@ -530,6 +530,8 @@ responses:
   - text: Please send the content to us at idp@isb.edu
   utter_faq-portal-b0/frequency-of-data-updation:
   - text: India Data Portal updates data as soon as the source updates them
+  utter_faq-portal-b0/data-change-notifications:
+  - text: As of now, we do not have custom notifications
   utter_faq-portal-b0/data-sourced-from-gov-sites:
   - text: The data is sourced from reliable publically available sources
   utter_faq-portal-b0/hyperlink-to-source-data:
@@ -611,6 +613,9 @@ responses:
   utter_faq-visualisation-b2/edit-dimensions-selected-for-visualization:
   - text: You can edit by clicking on Clear all button which is on the top of the
       dimensions popup
+  utter_faq-visualisation-b2/selecting-time-necessary:
+  - text: If there is only one year in the dataset then no need to select time. But
+      if there are multiple years in a dataset and you have to select a time
   utter_faq-visualisation-b2/How-visualize-trend:
   - text: if you have selected two dimensions and want to see their postion over time.
       ft then a trend chart can be obtained

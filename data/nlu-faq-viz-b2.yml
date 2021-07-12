@@ -1048,8 +1048,6 @@ nlu:
     - ahmm but the best way to visualise a trend?
     - how should a trend be depicted?
 
-    -
-
 - intent: faq-visualisation-b2/select-location
   examples: |
     - select a location

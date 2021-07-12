@@ -245,7 +245,9 @@ fo any help related to above commands
 ### If Rasa X **fails to train** or **can't upload model**
 
 ---> CLear RAM
+
     1. ``` sync; echo 3 | sudo tee /proc/sys/vm/drop_caches ```
+
     2. ``` sync; echo 2 | sudo tee /proc/sys/vm/drop_caches ```
 
 Now ``` sudo docker-compose down ```

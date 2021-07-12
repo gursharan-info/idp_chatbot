@@ -45,7 +45,7 @@ def get_sent_from_json(response):
 if __name__ == "__main__":
   file_and_batch = 'viz_b5'
   data = pd.read_csv('/home/bavalpreet/Documents/new-question-viz-b5.csv')
-  sentences = list(data['questions'].values[:5])
+  sentences = list(data['questions'].values[:2])
   question = []
   paraphrased_values = []
   # sent = 'narinder modi is assshole'
@@ -61,10 +61,14 @@ if __name__ == "__main__":
     response_itr3 = [paraphrase(ele) for ele in text_itr3]
     result_itr3 = [get_sent_from_json(itr) for itr in response_itr3]
     flatten_result_itr3 = list(itertools.chain(*result_itr3))
-    paraphrased_values.append(list(set(result+flatten_result_itr2+flatten_result_itr3)))
+    list_of_flatten_all_iters = list(set(result+flatten_result_itr2+flatten_result_itr3))
+    # flatten_all_iters = list(itertools.chain(*list_of_flatten_all_iters))
+    for ele in list_of_flatten_all_iters:
+      paraphrased_values.append(ele)
     for itr in range(0,len(list(set(result+flatten_result_itr2+flatten_result_itr3)))):
       question.append(sent)
     print(len(question), len(list(set(result+flatten_result_itr2+flatten_result_itr3))))
+  print(len(question), len(paraphrased_values))
   dic = {}
   dic['sentence'] = question
   dic['variation'] = paraphrased_values

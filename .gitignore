@@ -1,3 +1,4 @@
 /models/
+/generated_data/
 *.csv
 *.xlsx

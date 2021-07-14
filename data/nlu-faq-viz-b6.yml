@@ -11,21 +11,97 @@ nlu:
     - ahmm can you pls tell me how can i cretae new indicators
     - aaa i wanna get some cool new indicators can i ?
     - in a project can i create new indicators
+    - can we make our own indicators
+    - can we make our own indi-cator
+    - I am on IDP ? What's the most efficient way to create a new indicator?
+    - while here What steps are involved in creating a new indicator?
+    - can you tell How does one go about creating a new indicator?
+    - i have a query How do I make a new indicator?
+    - How do you go bout generating a new indicator?
+    - wait i have question How do you make a new indicator?
+    - best method for creating a new indicator?
+    - How does a new indicator become created?
+    - How should a new indicator be created? while on indian data portal
+    - INDIA DATA PORTAL does it allow What is the process for making a new indicator?
+    - What is the procedure for creating a new indicator?
+    - What's the best way to make a new indicator?
+    - What is the most efficient method for developing a new indicator?
+    - What are the steps in making a new indicator?
+    - What are the steps for creating a new indicator?
+    - What is the process of creating a new indicator?
+    - What's the best way to make a new indicator?
+    - What are the processes to generating a new indicator?
+    - process of creating new indicator
+    - steps to follow in making of new inidactor
+    - How do you make a new indicator?
+    - What goes into the creation of a new indicator?
+    - What is the best way to establish a new inidactor?
+    - How do you create a new inidactor?
+    - What is the procedure for creating a new indicator?
+    - What's the best way to create a brand-new indicator?
+    - What is the process for developing a new indicator?
+    - What is the process for creating a new inidactor?
+    - What is the best way to make a new indicator?
+    - What is the quickest way to make a new indicator?
+    - What is the most effective method for creating a new indicator?
+    - What's the most efficient way to make a new indicator?
+    - What is the most efficient way to create a new indicator?
+    - What's the best way to create a new indicator?
+
+
 
 - intent: faq-visualisation-b6/why-create-new-indicator #181
   examples: |
     - What is the need for create a new indicator feature 
     - why do we need to cretae new indicator
-    - What justifies the creation of a new indication feature?
+    - What justifies the creation of a new indicator feature?
     - What justifies the development of a new indicatior feature?
     - What supports the formation of a new indicatior feature?
     - new indicator feture why we need to do this
     - while working with grpahs why do we need to create new indicators
     - while working with pie charts why do we need to create new indicators
     - while working with diagrams why do we need to create new indicators
-    - while working with diagrams why do we need to create new indicators
+    - What justifies the development of a new indicator feature?
+    - Why is it necessary to create a new indicator feature?
+    - What is the rationale for adding a new indicator feature?
+    - What justifies the creation of a new indicator feature?
+    - Why do we need to create a new indicator?
+    - What is the justification for the addition of a new indi-cator feature?
+    - What justifies the creation of a new indi-cator?
+    - What is the justification for adding a new inidactor feature?
+    - Why is it necessary to create a new indicator feature?
+    - Why is it required to create a new indicator?
+    - What justifies the creation of a new indicator feature?
+    - on idp What is the rationale for developing a new inidactor feature?
+    - while on INDIAN DATA PORTAL Why is it necessary to develop a new indicator?
+    - What is the justification for creating a new indicator?
+    - What is the need for a new indicator feature?
+    - What justifies the addition of a new indicator feature?
+    - Why must a new indicator be created?
+    - What is the justification for the creation of a new inidactor feature?
+    - Why do we need a new indicator?
+    - can you tell What is the rationale for adding a new indicator feature?
+    - on IDP ? What is the justification for adding a new indicator?
+    - What is the rationale for the addition of a new indicator feature?
+    - i have a query Why is it important to design a new feature for indicator?
+    - What is the justification for developing a new indicator feature?
+    - Why is it necessary to establish a new indicator?
+    - What is the justification for the addition of a new indicator feature?
+    - i have a query What is the justification for the establishment of a new indicator?
+    - What is the justification for adding a new indicator feature?
+    - Why did a new indicator have to be created?
+    - What is the rationale for adding a new indicator feature?
+    - What is the rationale behind adding a new indicator?
+    - What is the rationale behind the addition of a new indicator?
+    - What is the need for a new indicator?
+    - What justifies the addition of a new indicator?
+    - What is the rationale behind adding a new indicator feature?
+    - What is the need for a new indicator feature?
+    - Why is a new indic-ator feature required?
+    - What is the rationale for creating a new indicator feature?
+    - Why does a new indicator feature need to be created?
+    - Why is it necessary to develop a new indicator?
 
-# 182 in nlu file 5
 
 - intent: faq-visualisation-b6/choropleth-map #183
   examples: |
@@ -40,6 +116,42 @@ nlu:
     - i wanna know something about cholorpleth maps can you pls tell
     - i saw something called chloropleth maps what the heck is this
     - can i know about chlorpleth maps
+    - What does a choropleth map mean?
+    - I'm not sure what a choropleth map is.
+    - A choropleth map is a graph that shows how two points on a graph are related.
+    - What exactly is a choropleth map, and what does it mean?
+    - The relationship between two points on a graph is depicted in a choropleth map.
+    - What exactly is a choropleth map?
+    - So, what precisely is a chloro map?
+    - What is a chloro map and what does it mean?
+    - A chloro map is a graph that shows how two points on a graph relate to each other.
+    - A chloro map is a diagram that depicts the relationship between two points on a graph.
+    - What is a chloro map, exactly?
+    - What is the meaning of a chloro map?
+    - A chloro map is a visual representation of a choropleth.
+    - A chloro map depicts the relationship between two points on a graph.
+    - What does a chloro map imply?
+    - What is a chrolopethl map, exactly, and what does it imply?
+    - What exactly is a chrolopethl map?
+    - So, exactly what is a chrolopleth map?
+    - A chrolopleth map is a graph that depicts the relationships between two points on a graph.
+    - A chrolopleth map is a graph that depicts the relationship between two points on a graph.
+    - What does it mean to have a choropleth map?
+    - What is the meaning of a choropleth map?
+    - A choropleth map is something I'm unfamiliar with.
+    - What is the significance of a choropleth map?
+    - A choropleth map shows the relationship between two points on a graph.
+    - A choropleth map is a diagram that depicts the relationship between two points on a graph.
+    - What is a choropleth map, and what does it represent?
+    - What is a choropleth map, exactly?
+    - What is the definition of a choropleth map?
+    - So, what is a choropleth map, exactly?
+    - What exactly is a choropleth map, and what does it represent?
+    - A choropleth map is something I'm not familiar with.
+    - A choropleth map is unfamiliar territory for me.
+    - What is a choropleth map and what does it represent?
+    - A choropleth map is a graph that shows the relationship between two points.
+
 
 
 - intent: faq-visualisation-b6/how-many-for-cholorpleth-map #184
@@ -54,6 +166,25 @@ nlu:
     - I construct a Choropleth map, how many indicators should I go for?
     - I made a Choropleth map, how many indicators should I go for?
     - we made Choropleth map indicators how many use ?
+    - How many indicators should I pick to create a chrolopleth map?
+    - How many indicators should I use to create a chrolopleth map?
+    - What number of indicators should I use to build a chrolopleth map?
+    - How many indicators should I use to build a chrolo map?
+    - How many indicators should I pick to make a chrolo map?
+    - To make a chrolo map, how many indicators should I choose?
+    - To get a chrolo map, how many indicators should I choose?
+    - To create a chrolo map, how many indicators should I choose?
+    - In order to make a chrolopeth map, how many indicators should I choose?
+    - To make a chrolopeth map, how many indicators should I choose?
+    - To make a Choropleth map, how many indicators should I use?
+    - In order to make a Choropleth map, how many indicators should I use?
+    - To construct a Choropleth map, how many indicators should I use?
+    - How many indicators should I use when creating a Choropleth map?
+    - To construct a Choropleth map, how many indicators should I choose?
+    - For a Choropleth map, how many indicators should I choose?
+    - In order to create a Choropleth map, how many indicators should I choose?
+    - In order to create a Choropleth map, how many indicators should I use?
+
 
 - intent: faq-visualisation-b6/new-indicator-using-seperate-datasets #185
   examples: |
@@ -63,11 +194,25 @@ nlu:
     - Is it possible to create a new indicator using two dataset
     - Am i able to create a new indicator using two seprate datasets
     - Can I create a new indicator using two separate datasets
-    - Is it possible to build a new indication by combining two datasets?
+    - Is it possible to build a new indicator by combining two datasets?
     - Is it possible to combine two datasets to make a new indicator?
     - Is it possible to combine two datasets to build a fresh indicator?
     - Would it be possible to combine two datasets to build a fresh indicator?
     - Would it be possible to combine two datasets to build a new indicator ?
+    - possible to generate a new indicator by combining two datasets?
+    - feasible to combine two datasets to create a new indiactor?
+    - I have a ambiguity would it be possible to make a new indicator by combining two datasets?
+    - combining two datasets to develop a new indicator? possible
+    - quick query can we combine two datasets to create a new indicator?
+    - Is it possible here to generate a new indicator by combining two data?
+    - Is it possible on this webiste to generate a new indicator by combining two datasets?
+    - Is it feasible to create a new indicator by combining two datasets on indian data portal?
+    - Is it possible to combine two datasets to produce a new indicator?
+    - Is it possible to construct a new indicator by combining two datasets?
+    - Is it possible to combine two datasets to develop a new indicator?
+    - Is it possible to combine two datasets to create a new indicator?
+    - Is it feasible to develop a new indicator by combining two datasets?
+
 
 
 - intent: faq-visualisation-b6/create-3-dimensional-graph #186
@@ -96,6 +241,30 @@ nlu:
     - what i have to do create 3 dimentional graph?
     - How 3 dimentional graph created?
     - Give me idea about how do i create 3 dimentional graph
+    - on this portal Is a three-dimensional graph possible to construct?
+    - on this portal/website  Is there a way to make a three-dimensional graph?
+    - Can I construct a three-dimensional graph? here
+    - Is it possible to make a three-dimensional graph on this platform
+    - Is a three-dimensional viz possible to create ???
+    - Is it possible for me to build a three-dimensional vizualisation?
+    - Do you believe I'm capable of creating a three-dimensional graph?
+    - Is a three-dimensional graph possible to make?
+    - Do you think I could construct a three-dimensional graph?
+    - Is it possible for me to make a 3d graph?
+    - possible for me to make a graph in three dimensions?
+    - Is it possible for me to design a three-dimensional diagrams?
+    - three-dimensional graph possible here?
+    - Is it feasible to create a 3D graph?
+    - feasible to create a graph that has three dimensions?
+    - possible to make a graph that is three-dimensional?
+    - Is it feasible to produce a three-dim diag?
+    - would it possible to create a graph in three dimensions?
+    - Is it possible to construct a three-dimensional graph?
+    - Do you believe I could make a three-dim diagrmas with my skills?
+    - Is a three-dimensional visualisation possible for me to create?
+    - Is it possible to make a graph in three dimensions?
+    - Do you believe I'm capable of making a three-dimensional graph?
+
 
 - intent: faq-visualisation-b6/when-use-choropleth-map #189
   examples: |
@@ -105,13 +274,30 @@ nlu:
     - Can I use a choropleth map?
     - When i can acces to use choropleth map?
     - Can i able to use choropleth map?
-    - When is it appropriate to use a Choropleth map?
-    - When is it acceptable to use a Choropleth map?
-    - How is it acceptable using a Choropleth map?
+    - When is it appropriate to use a Choropleth visuals?
+    - When is it acceptable to use a Choropleth ?
+    - How is it acceptable using a Choropleth ?
     - How is it appropriate using a Choropleth map?
     - How is it appropriate to use a Choropleth map?
     - When is it acceptable to just use a Choropleth map?
     - Can I use a choroplth map?
+    - When do I need to look at a chloro map?
+    - When is it necessary to use a chloropetl map?
+    - When would a Choropleth map be useful?
+    - When is it app. to employ a Choropleth map?
+    - i have a doubt When should a Choropleth map be used?
+    - query ? When should I consult a Choropleth map?
+    - can you tell When is a Choropleth map good to use?
+    - When should you use a chloro-pleth vsiuals?
+    - but When should you use a Choropleth map?
+    - but when i will have to make choloropleth visuals
+    - ahmm When is it appropriate to consult a Choropleth map?
+    - tell me When is a Choropleth map appropriate?
+    - When is it appropriate to use a Choropleth graphs?
+    - can you tell When do I need to use a Choropleth visuals?
+    - When should I make use of a choloropleths data visuals?
+    - When does a Choropleth map come in handy?
+
 
 - intent: faq-visualisation-b6/possibility-sorting-bars #191
   examples: |
@@ -133,6 +319,34 @@ nlu:
     - Is it possible to sort the map's bars?
     - Is it possible to sort the chart's bars?
     - the diagram i have made here can i sort it's bars
+    - possible to set the bars in a specific order?
+    - Is it possible to arrange the bars in a particular sequence?
+    - possible for me to sort the bars?
+    - but Is it feasible to arrange the bars in a certain order?
+    - Is it feasible for me to arrange the bars in a certain order?
+    - Is there a way to organise the bars in a specific order?
+    - Is it possible to sort the bars in some way?
+    - Is it feasible for me to put the bars in a specific order?
+    - Is there any way to organise the bars in a specific order?
+    - Is sorting the bars feasible for me?
+    - would it be possible to arrange the bars in any particular order?
+    - Is it possible to set the bars in a particular order?
+    - Is there a way for me to arrange the bars of a chart in a specific order?
+    - Is it possible for me to arrange the bars in a particular sequence?
+    - Is there a way to sort the bar graphs bar?
+    - Is it possible to sort the bars?
+    - Is it realistic for me to sort the bars?
+    - but that is it possible for me to sort the bars in some way?
+    - Is there a way for me to sort the bars?
+    - Is it possible for me to arrange the bars in a particular order?
+    - Is arranging the bars something I can do?
+    - can it be  bpossible to put the bars in a specific order?
+    - Is it possible to put the bars in a particular order?
+    - Is there a way to organise the bars of data visuals for me?
+    - possible to rearrange the bars?
+    - Is it possible for me to arrange the bars of a visuals in a particular pattern?
+    - ahmm but can you tell is it possible for me to put the bars in a particular order?
+
 
 - intent: faq-visualisation-b6/maximum-indicators-one-visulisation #192
   examples: |
@@ -152,6 +366,30 @@ nlu:
     - What really is the greatest number of extra indicators that may be added to a mapping?
     - And what's the greatest number of extra indicators that may be added to a graphical representation?
     - What then is the greatest number of extra indicators that may be added to a graphical representation?
+    - Is there a limit to how many indications I can show in a single visualisation?
+    - Is there a limit on the number of indicators I may display in one visualisation?
+    - In a single chart, how many indicators can I show?
+    - How many indicators can I display in a single chart?
+    - How many indicators can I show in a single graph?
+    - In a single visualisation, how many indications can I show?
+    - What is the maximum number of indicators I may show in a single visualisatio?
+    - In a single graph, how many indicators can I show?
+    - on iDP Is there a limit to how many indicators I can include in a single viz?
+    - on this webiste Is there a limit on the number of indicators I may show in one visualisation?
+    - any limit to how many indicators I may show on a single chart?
+    - Is there a maximum number of indicators I may show in a single visualisation?
+    - How many indicators can I display in a single graph?
+    - limit to how many indicators I can display in one visualisation?
+    - Is there a limit on the number of indicators I may show in a single visual?
+    - but Is there a limit to how many indicators I can display in a single grpah?
+    - How many indications can I show in a single diagram?
+    - How many indicators can I display in a single visualisation?
+    - on inidan data portal In a single chart, how many indicators can I display?
+    - In a single graph, how many indicators can I display?
+    - but is there a limit to how many indications I can display in a single diag.?
+    - Is there a limit to how many indicators I can show on a single graph?
+    - maximum number of indicators I may display in a single diagrmas?
+
 
 
 - intent: faq-visualisation-b6/map-cannot-generated #193 
@@ -159,8 +397,6 @@ nlu:
     - Why do it say that Map cannot be generated 
     - i am here and it is saying no map generated
     - i can't see an maps here
-    - maps ?
-    - where are they?
     - can you tell y cant i seee maps
     - no maps can yopu pls tell ?
     - Why is it stating that a Map cannot be generated?
@@ -174,6 +410,33 @@ nlu:
     - Is it telling that a Map cannot be generated?
     - Is it reporting that a Map cannot be generated?
     - Is it suggesting that a Map cannot be generated?
+    - i see a claim that creating a Map is impossible?
+    - but  Why does it say that Map isn't possible?
+    - can you tell Why does it state that making a map is impossible?
+    - Why does it claim that Map isn't possible to create?
+    - Why is it that it says Map isn't possible?
+    - Why does it state that Map can't be made?
+    - ahmm Why does it say you can't make a map?
+    - on idp Why is it telling me I'm unable to create a map?
+    - why on this website it say I'm unable to create a map?
+    - on inidan portal Why does it say that making a map is impossible?
+    - Why does it say that a Map can't be made?
+    - What makes you think Map isn't possible?
+    - on this indian data portal Why does it state that Map is impossible to create?
+    - Why does it say that Map cannot be made?
+    - Why does it indicate Map can't be created?
+    - Why does it say that you can't make a map?
+    - can you tell Why does it say that Map isn't possible to create?
+    - Why is it informing me that I won't be able to create a map?
+    - while i am here Why is it stated that making a map is impossible?
+    - Why does it say it's impossible to make a Map?
+    - it is telling me that I can't make a map? why
+    - Why is it stating that Map cannot be created?
+    - on inidandata  portal Why does it state that creating a Map isn't possible?
+    - Why is it stating that Map is not possible?
+    - on inidan data  portal Why does it claim that Map isn't possible?
+    - Why does it claim that making a Map isn't possible?
+
 
 - intent: faq-visualisation-b6/save-visualisations-among-my-graphics-my-gallery #197
   examples: |

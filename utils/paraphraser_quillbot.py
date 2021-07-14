@@ -5,11 +5,15 @@ import time
 import pandas as pd
 from tqdm import tqdm
 
+
+# preparing string in specific format
 def text_formatter(text):
   text_ = text.split(' ')
   modified_text = '%20'.join(text_)
   return modified_text
 
+
+# hitting api for paraphraased questions
 def paraphrase(text):
   parameters = {'text':text,
                 'strength':'2',
@@ -35,6 +39,8 @@ def paraphrase(text):
   time.sleep(2.5)
   return response.json()
 
+
+# getting sentences from api json response
 def get_sent_from_json(response):
   list_of_data = response['data']
   # print(list_of_data[0].keys())
@@ -43,12 +49,12 @@ def get_sent_from_json(response):
 
 
 if __name__ == "__main__":
-  file_and_batch = 'viz_b5'
-  data = pd.read_csv('/home/bavalpreet/Documents/new-question-viz-b5.csv')
-  sentences = list(data['questions'].values[:2])
+  file_and_batch = 'viz_b3'
+  data = pd.read_csv('/home/bavalpreet/Documents/new-question-viz-b3.csv')
+  sentences = list(data['questions'].values)
   question = []
   paraphrased_values = []
-  # sent = 'narinder modi is assshole'
+  
   for sent in tqdm(sentences):
     text = text_formatter(sent)
     response = paraphrase(text)

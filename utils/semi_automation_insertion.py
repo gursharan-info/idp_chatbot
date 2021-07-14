@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.stem import PorterStemmer
@@ -68,7 +69,7 @@ def preparing_intermediate_output_for_nlu_and_domain_filegeneration(path_to_csv,
   intent_list = list(df['intent'].unique())
   dic = {}
   for intent in intent_list:
-    variation_list = list(df[df['intent'] == intent]['variations'])
+    variation_list = list(df[df['intent'] == intent]['variation'])
     question_list = list(set(list(df[df['intent'] == intent]['question'])))
     print(question_list)
     dic[intent] = variation_list+question_list
@@ -90,14 +91,16 @@ def create_rasa_files(path, create_files_path, nlu_file_name, domain_file_name, 
     NLU_FILE_CREATION = Nlu_file_flag
     if(NLU_FILE_CREATION):
         df = pd.read_csv(r"{}".format(path))
+        df = df.replace(np.nan, '', regex=True)
         file = open(create_files_path+'nlu'+nlu_file_name+'.yml',"w")
-        
+        df=df.drop('Unnamed: 0',axis=1)
         intents = list(df.columns)
         for item in intents:
             file.write("- intent: {intent_name}\n".format(intent_name=item))
             file.write("  examples: |"+'\n')
             for sent in df[item]:
-                file.write("    - {}\n".format(sent))
+                if sent != '':
+                  file.write("    - {}\n".format(sent))
         file.close()
 
 
@@ -124,7 +127,7 @@ if __name__ == '__main__':
     list_of_ques = df['question']
     filter_sent = filter_stopword(list_of_ques)
     punc_removal = remove_punct(filter_sent)
-    steming_sent = steming(punc_removal, 'new_retrieval/')
+    steming_sent = steming(punc_removal, 'faq-fel-b0/')
 
     dictionary = {}
     dictionary['intent'] = steming_sent
@@ -134,9 +137,9 @@ if __name__ == '__main__':
     
     #intermediate data format
     # 
-    path_to_csv = '/home/bavalpreet/IDP/generated_data/intermediate_data/'
+    path_to_csv = '/home/bavalpreet/IDP/generated_data/intermediate_data/intermediate.csv'
     df = dataframe
-    preparing_intermediate_output_for_nlu_and_domain_filegeneration(df, path_to_csv)
+    preparing_intermediate_output_for_nlu_and_domain_filegeneration(path_to_csv, df)
     
     #generating files
     path = path_to_csv

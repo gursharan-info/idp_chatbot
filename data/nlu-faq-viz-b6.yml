@@ -266,7 +266,7 @@ nlu:
     - Do you believe I'm capable of making a three-dimensional graph?
 
 
-- intent: faq-visualisation-b6/when-use-choropleth-map #189
+- intent: faq-visualisation-b6/when-use-choropleth-map #188
   examples: |
     - Now can i use a choropleth map?
     - What situation suitable for use a choropleth map?
@@ -297,6 +297,37 @@ nlu:
     - can you tell When do I need to use a Choropleth visuals?
     - When should I make use of a choloropleths data visuals?
     - When does a Choropleth map come in handy?
+
+- intent: faq-visualisation-b6/flip-axis #189
+  examples: |
+    - Which way of rotating the output's axis is the most efficient?
+    - What is the best way to rotate the output's axis?
+    - What is the most effective way to reverse the axis?
+    - What is the best way to flip the axis?
+    - What is the most efficient way to revert the axis?
+    - What is the most effective approach to rotate the axis?
+    - What is the most efficient method for rotating the axis?
+    - but can you tell How should the axis be fliped?
+    - can it be possible Which method for rotating the axis is the most efficient?
+    - What is the best method for rotating the axis?
+    - on INDIAN DATA PORTAL What is the best way to turn the axis around?
+    - can i rotate axis if yes What's the most efficient way to rotate the axis?
+    - What is the best method for reversing the axis?
+    - Which way of reversing the axis is the most efficient?
+    - What is the most effective method of reversing the axis?
+    - What is the most effective way to flip the axis?
+    - How should the axis be rotated? here
+    - Which way of reversing the axis is the most effective?
+    - In what direction should the axis be flipped?
+    - What's the best way to flip the axis of a graph?
+    - How should the axis be flipped the most effectively?
+    - What is the most efficient method of rotating the axis?
+    - Which approach is the most effective for reversing the axis-of-visualisation?
+    - Which approach for reversing the axis-of-visualisation is the most effective?
+    - What is the most efficient way to rotate the axis-of-graph?
+    - What is the most effective method for reversing the axis-of-graph?
+    - What is the most efficient way to switch the diagram's axis?
+    - What is the most effective method for rotating the diagram's axis?
 
 
 - intent: faq-visualisation-b6/possibility-sorting-bars #191
@@ -437,7 +468,7 @@ nlu:
     - on inidan data  portal Why does it claim that Map isn't possible?
     - Why does it claim that making a Map isn't possible?
 
-
+#######################
 - intent: faq-visualisation-b6/save-visualisations-among-my-graphics-my-gallery #197
   examples: |
     - Where my visualization store among graphics and gallery?
@@ -446,15 +477,31 @@ nlu:
     - Is visualization save any other apart My graphics and my Gallery?
     - I don't want My graphics and gallery than where is my visualization saved?
     - Where do I save my visualizaitons among My Graphics and My Gallery
-    - In My Graphics and My Gallery, where do I keep my visualisations?
-    - In My Artwork and My Gallery, where do I keep my visualisations?
-    - In My Artwork and My Galleries, where do I keep my visualisations?
-    - With My Artwork and My Galleries, where do I keep my visualisations?
-    - With My Artwork and My Portfolio, where do I keep my visualisations?
-    - Under My Artwork and My Portfolio, where do I keep my visualisations?
+    - In My Graphics and My Gallery, where do I keep my visuals?
+    - In My Artwork and My Gallery, where do I keep my visuals?
+    - In My Artwork and My Galleries, where do I keep my outputs gerenrated?
+    - With My Artwork and My Galleries, where do I keep my outputs gerenrated?
+    - With My Artwork and My Portfolio, where do I keep my gerenrated outputs?
+    - Under My Artwork and My Portfolio, where do I keep my diagrams?
     - Under My Artwork and My Portfolio, where do I keep my visual representations?
     - Under My Artwork and My Portfolio, where do I keep my data visualization?
     - Under My Graphics and My Galleries, where do I keep my renderings?
+    -  In My Graphics and My Gallery, where can I save my diagrams?
+    -  In My Graphics and My Gallery, where do I save my data visuals?
+    -  In My Graphics and Gallery, where do I save my data visuals?
+    -  Where do I keep my viz in My Graphics and My Gallery?
+    -  Where do I save my viz among My Graphics and My Gallery?
+    -  In My Graphics and My Gallery, where do I keep my vis.?
+    -  In My Graphics and My Gallery, where can I keep my vis.?
+    -  Where in My Graphics and My Gallery can I keep my images?
+    -  Where do I save my images in My Graphics and My Gallery?
+    -  Where do I keep my images among My Graphics and My Gallery?
+    -  Where can I save my visualisations among My Graphics and My Gallery?
+    -  In My Graphics and My Gallery, where do I store my visualisations?
+    -  Where can I save my visualisations in My Graphics and My Gallery?
+    -  Among My Graphics and My Gallery, where may I save my visualisations?
+    -  Among My Graphics and My Gallery, where do I save my visualisations?
+
 
 - intent: faq-visualisation-b6/upload-work-on-social-media #198
   examples: |
@@ -471,6 +518,38 @@ nlu:
     - social media upload possible ?
     - hahah can i make my work visible to whole world?
     - i wanna publicise my work globally via media how can i ?
+    - What is the best approach for me to share my visualisation on social media?
+    - What is the best way to share my visualisation on social media?
+    - What is the most effective method for sharing my visualisation on social media?
+    - What's the best approach for me to share my visualisation on social media?
+    - What is the best way for me to upload my visualisation to my social media site?
+    - What is the most effective method of sharing my visualisation on social media?
+    - What's the best way for me to post my visualisation on social media?
+    - What is the most efficient method of sharing my visualisation on social media?
+    - What's the most effective way for me to share my visualisation on social media?
+    - What is the best way to post my visualisation on social media?
+    - What is the most effective method for me to share my visualisation on social media?
+    - What's the best way for me to share my visualisation on social media?
+    - What is the most effective way for me to post my visualisation on social media?
+    - What's the most effective way to share my visualisation on social media?
+    - What is the most effective way for me to share my visualisation on social media?
+    - What is the most efficient approach for me to share my visualisation on social media?
+    - What is the best way for me to share my visualisation on social media?
+    - What is the most efficient method for sharing my visualisation on social media?
+    - How do I share my visualisation on social media?
+    - What is the best way to upload my visualisation to my social media site?
+    - What is the most effective strategy to post my visualisation on social media?
+    - What is the most efficient approach to share my visualisation on social media?
+    - What's the most effective approach for me to share my visualisation on social media?
+    - What is the best method for sharing my visualisation on social media?
+    - What is the most effective way to share my visualisation on social media?
+    - What is the most effective way for me to distribute my visualisation on social media?
+    - How do I upload my visualisation to my social media site?
+    - What is the best strategy for sharing my visualisation on social media?
+    - What's the best way to post my visualisation on social media?
+    - What is the best method for me to share my visualisation on social media?
+    - What is the most effective manner for me to post my visualisation on social media?
+
 
 
 - intent: faq-visualisation-b6/why-save-svg-format #199
@@ -495,6 +574,34 @@ nlu:
     - What really is the goal of downloading in SVG format?
     - What really is the goal of transferring in SVG format?
     - i wnna get images to my local setup but its getting downloaded in svg why ? 
+    - What are the benefits of keeping it in SVG format?
+    - What are the advantages of keeping it in SVG format?
+    - What are the advantages of saving it as SVG?
+    - What are the benefits of changing it to SVG?
+    - What are the benefits of saving it in SVG format?
+    - What is the benefit of saving it in SVG format?
+    - What are the advantages of saving the file as an SVG?
+    - What are the advantages of switching to SVG?
+    - What are the advantages of converting it to SVG?
+    - What are some of the benefits of saving it in SVG format?
+    - What are the advantages of using SVG as opposed to HTML?
+    - What are the advantages of changing it to SVG?
+    - What are the benefits of preserving it in SVG?
+    - What are the benefits of keeping it in SVG?
+    - What are the benefits of making it SVG?
+    - What are the benefits of saving it as an SVG file?
+    - What are the benefits of storing it in SVG?
+    - What are the advantages of saving it as an SVG file?
+    - What advantages does storing it as an SVG file provide?
+    - What is the advantage of preserving it in SVG?
+    - What are the advantages of preserving it in SVG?
+    - What are the benefits of converting it to an SVG file?
+    - What is the benefit of keeping it in SVG?
+    - What are the benefits of switching to SVG?
+    - What are the benefits of storing the file as an SVG?
+    - What are the advantages of saving it in SVG format?
+    - What are the benefits of converting it to SVG?
+
 
 - intent: faq-visualisation-b6/download-visual-suggested-format #201
   examples: |
@@ -510,6 +617,44 @@ nlu:
     - what is the suggested format for downloading my visual?
     - Download the visualization?
     - What is the suggested format for downloading any visual
+    - What is the best way to save any visual data?
+    - What is the best format to use for a visual download?
+    - What is the preferable format for any visual download?
+    - What is the best way to get visual data?
+    - What's the greatest way to get visual information?
+    - For any visual download, what is the preferred format?
+    - What is the best visual download format?
+    - When downloading graphic content, which format should you use?
+    - What is the most effective method for downloading visual content?
+    - What is the most efficient method for storing visual data?
+    - When downloading visual data, what is the best format to use?
+    - What is the best way to collect visual data?
+    - Which format is best for any visual download?
+    - What is the best method for downloading graphics?
+    - What is the preferred format for visual downloads?
+    - What is the most effective method for storing any visual data?
+    - When downloading any visual data, what is the best format to use?
+    - What format should you use to download graphic content?
+    - What's the greatest visual download format?
+    - What is the best way to download graphic content?
+    - For any visual download, what is the recommended format?
+    - What is the preferred format for any visual download?
+    - What is the best way to get graphic stuff downloaded?
+    - When downloading graphic content, what format should you use?
+    - What is the most efficient method for storing any visual data?
+    - What format should you use for a visual download?
+    - What is the most efficient method for downloading graphics?
+    - What is the recommended format for any visual download?
+    - What is the most efficient method for downloading graphic content?
+    - When it comes to downloading graphic content, what format should you use?
+    - What is the best format for obtaining visual data?
+    - What is the most efficient method of obtaining graphic files?
+    - What is the recommended format for downloading any visual information?
+    - When downloading any visual data, which format should you use?
+    - What is the recommended format for downloading visual content?
+    - What is the preferred file format for any visual download?
+    - What is the best format to use when downloading any visual data?
+
 
 - intent: faq-visualisation-b6/add-dataset-compare-dataset-difference #202
   examples: |
@@ -517,12 +662,46 @@ nlu:
     - How do you differentiate between Add Dataset and Compare Dataset?
     - How do you compare between Add Dataset and Compare Dataset
     - Write Add Dataset VS Compare Dataset.
-    - Make comparison between Add Dataset and Compare Dataset.
+    - Make comparison bw Add Dataset and Compare Dataset.
     - How can you define and compare Add Dataset and Compare Dataset?
-    - contradict between add dataset and compare dataset.
+    - contradict bw add dataset and compare dataset.
     - add dataset and compare dataset?
-    - show the difference between add dataset and compare dataset.
+    - show the difference bw add dataset and compare dataset.
     - how compare dataset is diff from add data on portal
+    - What's the difference bw an Add Dataset and a Compare Dataset, and how do I use them?
+    - What's the difference bw adding data and comparing data sets?
+    - What makes an Add Dataset different from a Compare Dataset?
+    - What's the difference bw a dataset being added and a dataset being compared?
+    - What's the distinction bw adding a dataset and comparing it?
+    - What's the distinction bw Add and Compare Datasets?
+    - What's the distinction beteen adding data and comparing data?
+    - What's the diff. beteen comparing and adding datasets?
+    - What is the distinction beween Add and Compare Datasets?
+    - What is the diff. beween adding and comparing datasets?
+    - What's the diff. beween adding datasets and comparing them?
+    - What is the separator between Add Datasets and Compare Datasets?
+    - What's the separator between adding a dataset and comparing a dataset?
+    - What's the separator point between adding data to a dataset and comparing it?
+    - What's the separator point between the commands Add and Compare Datasets?
+    - What is the dissimilarity between comparing a dataset and adding it?
+    - What's the dissimilarity between an Add Dataset and a Compare Dataset, and how do you use them?
+    - What is the contrast between the Add and Compare Datasets commands?
+    - What's the contrast between an Add Dataset and a Compare Dataset?
+    - What is the contrast between adding and comparing a dataset?
+    - What is the variation between comparing a dataset and adding one?
+    - What's the variation between comparing a dataset and adding one?
+    - What's the difference between comparing and adding a dataset?
+    - What's the difference between putting data in a spreadsheet and comparing data sets?
+    - What's the difference between Add Datasets and Compare Datasets?
+    - What's the difference between adding and comparing datasets?
+    - What's the difference between combining data sets and comparing them?
+    - What is the distinction between combining and comparing datasets?
+    - What's the difference between adding a dataset and comparing one?
+    - What is the distinction between adding a dataset and comparing one?
+    - What's the difference between adding to a dataset and comparing it?
+    - What are the distinctions between Add Dataset and Compare Dataset?
+    - What's the difference between comparing data sets and adding data?
+
 
 - intent: faq-visualisation-b6/trend-analysis-what-viz-needed # 204
   examples: |
@@ -537,7 +716,30 @@ nlu:
     - trend grphs i want to see which viz. i will consider
     - i am on a research i want to paste trend visualisation how will i get it
     - how will i get vis from trend anayltics?
+    - Which data visuals should I consider when it comes to trend analysis?
+    - What visuals should I consider while looking at trend analysis?
+    - Which data visuals should I use to view trend analysis?
+    - When I'm looking at trend analysis, what diagrams should I consider?
+    - Which diagrams should I use to look at trend analysis?
+    - When it comes to trend analysis, which diagrams should I use?
+    - To view trend analysis, which visualisation should I use?
+    - Which trend analysis visualisation should I use?
+    - Which vis. should I use for trend analysis?
+    - I'm not sure which trend analysis vis. to use.
+    - When looking at trend analysis, which graphs should I use?
+    - Which graphs do I need to think about while looking at trend analysis?
+    - When looking at trend analysis, which graphs should I consider?
+    - What visuals should I think about when I'm doing trend analysis?
+    - Which graphs should I think about while looking at trend analysis?
+    - Which viz should I use when looking at trend analysis?
+    - When considering trend analysis, which viz should I consider?
+    - Which viz should I consider when looking at trend analysis?
+    - What visuals should I think about while I'm doing a trend analysis?
+    - Which vizualisation should I think about when it comes to trend analysis?
+    - What vizualisation of trend analysis should I use?
+    - When looking at trend analysis, which vizualisation should I think about?
 
+## done
 - intent: faq-visualisation-b6/minimum-indicators-and-dimension-to-create-snakey-graph #205
   examples: |
     - What number of minimum indicators and dimensions are required to create a Sankey Graph?
@@ -548,14 +750,38 @@ nlu:
     - create a sankey graph with minimum indicators and dimensions.
     - explain the usage of minimum indicators and dimensions to create a sankey graph
     - How many minimum indicators and dimensions to create a Sankey Graph
-    - How many minimum indicators and dimensions are required to make a Sankey Graph?
-    - How many least number indicators and dimensions are required to make a Sankey Graph?
-    - How many minimal indicators and dimensions are needed to make a Sankey Graph?
-    - How often basic indicators and dimensions are needed to make a Sankey Graph?
-    - How many least number indicators and dimensions are required to make a Sankey Graph?
-    - sanky grpah how many indicators i need?
-    - sanky grpah how many indicators i need
-    - sanky grpah how many dimensions i need
+    - How many minimum indicators and dimensions are required to make a Sankey diagrams?
+    - How many least number indicators and dimensions are required to make a Sankey diagrams?
+    - How many minimal indicators and dimensions are needed to make a Sankey diagrams?
+    - How often basic indicators and dimensions are needed to make a Sankey diagrams?
+    - How many least number indicators and dimensions are required to make a Sankey diag?
+    - How many minimum indicators and dimensions are necessary to build a Sankey diag?
+    - How many indicators and dimensions are necessary to construct a Sankey diag?
+    - To generate a Sankey diag, how many indicators and dimensions are required?
+    - In order to generate a Sankey dig., how many minimum indicators and dimensions are required?
+    - How many indicators and dimensions are needed to build a Sankey dig.?
+    - How many indicators and dimensions does a Sankey dig. require?
+    - To generate a sankey visuals, how many minimum indicators and dimensions are required?
+    - How many indicators and dimensions are necessary to create a sankey visuals?
+    - In order to generate a sankey visuals, how many indicators and dimensions are required?
+    - In order to construct a sankey visuals, how many minimum indicators and dimensions are required?
+    - How many markers and dimensions are required for a Sankey grpha?
+    - In order to make a graph having sankey visual, how many indicators and dimensions are required?
+    - How many indicators and dimensions are required to make a graph having sankey visual?
+    - To make a graph having sankey diagrams, how many indicators and dimensions do you need?
+    - How many markers and dimensions does a graph having sankey diagrams need?
+    - To construct a graph having sankey diagrams, how many indicators and dimensions are required?
+    - A Sankey Graph requires how many indicators and dimensions?
+    - How many indicators and dimensions do you need to create a Sankey Graph?
+    - To create a Sankey Graph, how many indicators and dimensions are required?
+    - In order to construct a Sankey Graph, how many indicators and dimensions are required?
+    - To make a Sankey Graph, how many indicators and dimensions are required?
+    - How many indicators and dimensions are necessary to make a Sankey Graph?
+    - To make a Sankey Graph, how many minimum indicators and dimensions are required?
+    - To construct a Sankey Graph, how many minimum indicators and dimensions are required?
+    - How many minimum indicators and dimensions are necessary to create a Sankey Graph?
+    - To build a Sankey Graph, how many indicators and dimensions are required?
+
 
 - intent: faq-visualisation-b6/how-to-read-sankey-chart #206
   examples: |
@@ -576,6 +802,35 @@ nlu:
     - How would I comprehend the Sankey Graph?
     - How would I comprehend the Sankey Diagram?
     - sankey chart what does it mean?
+    - Which method of reading the Sankey Chart is the most accurate?
+    - What is the Sankey Chart, and how can I read it?
+    - What is the Sankey Chart, and how can I make sense of it?
+    - What is the Sankey Chart, and how can I interpret it?
+    - What's the best way to interpret a Sankey Chart?
+    - What is the best method for reading the Sankey Chart?
+    - What is the best way to interpret the Sankey Chart?
+    - What is the Sankey Chart, exactly, and how can I understand it?
+    - What is the Sankey Chart, and how can I decipher it?
+    - How should the Sankey Chart be interpreted?
+    - What is the most accurate approach to read the Sankey Chart?
+    - What is the correct interpretation of the Sankey Chart?
+    - What is the Sankey Chart and how can I interpret it?
+    - What is the Sankey Chart, and how can I understand it?
+    - What is the Sankey Chart, and how should I interpret it?
+    - What exactly is the Sankey Chart, and how can I interpret it?
+    - What is the Sankey Chart, and how can I read one?
+    - What is the most effective approach to read the graph having sankey diagrams?
+    - What exactly is the graph having sankey diagrams, and how can I comprehend it?
+    - What is the graph having sankey diagrams and how can I use it to my advantage?
+    - What is the best way to read the sankey graphs?
+    - What exactly is the sankey graphs, and how can I use it?
+    - What exactly is the sankey graphs, and how do I read it?
+    - What is the chart containing sakey charts and how can I understand it?
+    - What is the most precise method for reading the chart containing sakey charts?
+    - What is the chart containing sakey charts, and how can I use it to my advantage?
+    - What is the sankey chrt and how can I read it?
+    - What is the sankey chrt, and how do I use it?
+
 
 
 - intent: faq-visualisation-b6/where-give-chart-title #207

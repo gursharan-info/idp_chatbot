@@ -11,21 +11,97 @@ nlu:
     - ahmm can you pls tell me how can i cretae new indicators
     - aaa i wanna get some cool new indicators can i ?
     - in a project can i create new indicators
+    - can we make our own indicators
+    - can we make our own indi-cator
+    - I am on IDP ? What's the most efficient way to create a new indicator?
+    - while here What steps are involved in creating a new indicator?
+    - can you tell How does one go about creating a new indicator?
+    - i have a query How do I make a new indicator?
+    - How do you go bout generating a new indicator?
+    - wait i have question How do you make a new indicator?
+    - best method for creating a new indicator?
+    - How does a new indicator become created?
+    - How should a new indicator be created? while on indian data portal
+    - INDIA DATA PORTAL does it allow What is the process for making a new indicator?
+    - What is the procedure for creating a new indicator?
+    - What's the best way to make a new indicator?
+    - What is the most efficient method for developing a new indicator?
+    - What are the steps in making a new indicator?
+    - What are the steps for creating a new indicator?
+    - What is the process of creating a new indicator?
+    - What's the best way to make a new indicator?
+    - What are the processes to generating a new indicator?
+    - process of creating new indicator
+    - steps to follow in making of new inidactor
+    - How do you make a new indicator?
+    - What goes into the creation of a new indicator?
+    - What is the best way to establish a new inidactor?
+    - How do you create a new inidactor?
+    - What is the procedure for creating a new indicator?
+    - What's the best way to create a brand-new indicator?
+    - What is the process for developing a new indicator?
+    - What is the process for creating a new inidactor?
+    - What is the best way to make a new indicator?
+    - What is the quickest way to make a new indicator?
+    - What is the most effective method for creating a new indicator?
+    - What's the most efficient way to make a new indicator?
+    - What is the most efficient way to create a new indicator?
+    - What's the best way to create a new indicator?
+
+
 
 - intent: faq-visualisation-b6/why-create-new-indicator #181
   examples: |
     - What is the need for create a new indicator feature 
     - why do we need to cretae new indicator
-    - What justifies the creation of a new indication feature?
+    - What justifies the creation of a new indicator feature?
     - What justifies the development of a new indicatior feature?
     - What supports the formation of a new indicatior feature?
     - new indicator feture why we need to do this
     - while working with grpahs why do we need to create new indicators
     - while working with pie charts why do we need to create new indicators
     - while working with diagrams why do we need to create new indicators
-    - while working with diagrams why do we need to create new indicators
+    - What justifies the development of a new indicator feature?
+    - Why is it necessary to create a new indicator feature?
+    - What is the rationale for adding a new indicator feature?
+    - What justifies the creation of a new indicator feature?
+    - Why do we need to create a new indicator?
+    - What is the justification for the addition of a new indi-cator feature?
+    - What justifies the creation of a new indi-cator?
+    - What is the justification for adding a new inidactor feature?
+    - Why is it necessary to create a new indicator feature?
+    - Why is it required to create a new indicator?
+    - What justifies the creation of a new indicator feature?
+    - on idp What is the rationale for developing a new inidactor feature?
+    - while on INDIAN DATA PORTAL Why is it necessary to develop a new indicator?
+    - What is the justification for creating a new indicator?
+    - What is the need for a new indicator feature?
+    - What justifies the addition of a new indicator feature?
+    - Why must a new indicator be created?
+    - What is the justification for the creation of a new inidactor feature?
+    - Why do we need a new indicator?
+    - can you tell What is the rationale for adding a new indicator feature?
+    - on IDP ? What is the justification for adding a new indicator?
+    - What is the rationale for the addition of a new indicator feature?
+    - i have a query Why is it important to design a new feature for indicator?
+    - What is the justification for developing a new indicator feature?
+    - Why is it necessary to establish a new indicator?
+    - What is the justification for the addition of a new indicator feature?
+    - i have a query What is the justification for the establishment of a new indicator?
+    - What is the justification for adding a new indicator feature?
+    - Why did a new indicator have to be created?
+    - What is the rationale for adding a new indicator feature?
+    - What is the rationale behind adding a new indicator?
+    - What is the rationale behind the addition of a new indicator?
+    - What is the need for a new indicator?
+    - What justifies the addition of a new indicator?
+    - What is the rationale behind adding a new indicator feature?
+    - What is the need for a new indicator feature?
+    - Why is a new indic-ator feature required?
+    - What is the rationale for creating a new indicator feature?
+    - Why does a new indicator feature need to be created?
+    - Why is it necessary to develop a new indicator?
 
-# 182 in nlu file 5
 
 - intent: faq-visualisation-b6/choropleth-map #183
   examples: |
@@ -40,6 +116,42 @@ nlu:
     - i wanna know something about cholorpleth maps can you pls tell
     - i saw something called chloropleth maps what the heck is this
     - can i know about chlorpleth maps
+    - What does a choropleth map mean?
+    - I'm not sure what a choropleth map is.
+    - A choropleth map is a graph that shows how two points on a graph are related.
+    - What exactly is a choropleth map, and what does it mean?
+    - The relationship between two points on a graph is depicted in a choropleth map.
+    - What exactly is a choropleth map?
+    - So, what precisely is a chloro map?
+    - What is a chloro map and what does it mean?
+    - A chloro map is a graph that shows how two points on a graph relate to each other.
+    - A chloro map is a diagram that depicts the relationship between two points on a graph.
+    - What is a chloro map, exactly?
+    - What is the meaning of a chloro map?
+    - A chloro map is a visual representation of a choropleth.
+    - A chloro map depicts the relationship between two points on a graph.
+    - What does a chloro map imply?
+    - What is a chrolopethl map, exactly, and what does it imply?
+    - What exactly is a chrolopethl map?
+    - So, exactly what is a chrolopleth map?
+    - A chrolopleth map is a graph that depicts the relationships between two points on a graph.
+    - A chrolopleth map is a graph that depicts the relationship between two points on a graph.
+    - What does it mean to have a choropleth map?
+    - What is the meaning of a choropleth map?
+    - A choropleth map is something I'm unfamiliar with.
+    - What is the significance of a choropleth map?
+    - A choropleth map shows the relationship between two points on a graph.
+    - A choropleth map is a diagram that depicts the relationship between two points on a graph.
+    - What is a choropleth map, and what does it represent?
+    - What is a choropleth map, exactly?
+    - What is the definition of a choropleth map?
+    - So, what is a choropleth map, exactly?
+    - What exactly is a choropleth map, and what does it represent?
+    - A choropleth map is something I'm not familiar with.
+    - A choropleth map is unfamiliar territory for me.
+    - What is a choropleth map and what does it represent?
+    - A choropleth map is a graph that shows the relationship between two points.
+
 
 
 - intent: faq-visualisation-b6/how-many-for-cholorpleth-map #184
@@ -54,6 +166,25 @@ nlu:
     - I construct a Choropleth map, how many indicators should I go for?
     - I made a Choropleth map, how many indicators should I go for?
     - we made Choropleth map indicators how many use ?
+    - How many indicators should I pick to create a chrolopleth map?
+    - How many indicators should I use to create a chrolopleth map?
+    - What number of indicators should I use to build a chrolopleth map?
+    - How many indicators should I use to build a chrolo map?
+    - How many indicators should I pick to make a chrolo map?
+    - To make a chrolo map, how many indicators should I choose?
+    - To get a chrolo map, how many indicators should I choose?
+    - To create a chrolo map, how many indicators should I choose?
+    - In order to make a chrolopeth map, how many indicators should I choose?
+    - To make a chrolopeth map, how many indicators should I choose?
+    - To make a Choropleth map, how many indicators should I use?
+    - In order to make a Choropleth map, how many indicators should I use?
+    - To construct a Choropleth map, how many indicators should I use?
+    - How many indicators should I use when creating a Choropleth map?
+    - To construct a Choropleth map, how many indicators should I choose?
+    - For a Choropleth map, how many indicators should I choose?
+    - In order to create a Choropleth map, how many indicators should I choose?
+    - In order to create a Choropleth map, how many indicators should I use?
+
 
 - intent: faq-visualisation-b6/new-indicator-using-seperate-datasets #185
   examples: |
@@ -63,11 +194,25 @@ nlu:
     - Is it possible to create a new indicator using two dataset
     - Am i able to create a new indicator using two seprate datasets
     - Can I create a new indicator using two separate datasets
-    - Is it possible to build a new indication by combining two datasets?
+    - Is it possible to build a new indicator by combining two datasets?
     - Is it possible to combine two datasets to make a new indicator?
     - Is it possible to combine two datasets to build a fresh indicator?
     - Would it be possible to combine two datasets to build a fresh indicator?
     - Would it be possible to combine two datasets to build a new indicator ?
+    - possible to generate a new indicator by combining two datasets?
+    - feasible to combine two datasets to create a new indiactor?
+    - I have a ambiguity would it be possible to make a new indicator by combining two datasets?
+    - combining two datasets to develop a new indicator? possible
+    - quick query can we combine two datasets to create a new indicator?
+    - Is it possible here to generate a new indicator by combining two data?
+    - Is it possible on this webiste to generate a new indicator by combining two datasets?
+    - Is it feasible to create a new indicator by combining two datasets on indian data portal?
+    - Is it possible to combine two datasets to produce a new indicator?
+    - Is it possible to construct a new indicator by combining two datasets?
+    - Is it possible to combine two datasets to develop a new indicator?
+    - Is it possible to combine two datasets to create a new indicator?
+    - Is it feasible to develop a new indicator by combining two datasets?
+
 
 
 - intent: faq-visualisation-b6/create-3-dimensional-graph #186
@@ -96,8 +241,32 @@ nlu:
     - what i have to do create 3 dimentional graph?
     - How 3 dimentional graph created?
     - Give me idea about how do i create 3 dimentional graph
+    - on this portal Is a three-dimensional graph possible to construct?
+    - on this portal/website  Is there a way to make a three-dimensional graph?
+    - Can I construct a three-dimensional graph? here
+    - Is it possible to make a three-dimensional graph on this platform
+    - Is a three-dimensional viz possible to create ???
+    - Is it possible for me to build a three-dimensional vizualisation?
+    - Do you believe I'm capable of creating a three-dimensional graph?
+    - Is a three-dimensional graph possible to make?
+    - Do you think I could construct a three-dimensional graph?
+    - Is it possible for me to make a 3d graph?
+    - possible for me to make a graph in three dimensions?
+    - Is it possible for me to design a three-dimensional diagrams?
+    - three-dimensional graph possible here?
+    - Is it feasible to create a 3D graph?
+    - feasible to create a graph that has three dimensions?
+    - possible to make a graph that is three-dimensional?
+    - Is it feasible to produce a three-dim diag?
+    - would it possible to create a graph in three dimensions?
+    - Is it possible to construct a three-dimensional graph?
+    - Do you believe I could make a three-dim diagrmas with my skills?
+    - Is a three-dimensional visualisation possible for me to create?
+    - Is it possible to make a graph in three dimensions?
+    - Do you believe I'm capable of making a three-dimensional graph?
 
-- intent: faq-visualisation-b6/when-use-choropleth-map #189
+
+- intent: faq-visualisation-b6/when-use-choropleth-map #188
   examples: |
     - Now can i use a choropleth map?
     - What situation suitable for use a choropleth map?
@@ -105,15 +274,63 @@ nlu:
     - Can I use a choropleth map?
     - When i can acces to use choropleth map?
     - Can i able to use choropleth map?
-    - When is it appropriate to use a Choropleth map?
-    - When is it acceptable to use a Choropleth map?
-    - How is it acceptable using a Choropleth map?
+    - When is it appropriate to use a Choropleth visuals?
+    - When is it acceptable to use a Choropleth ?
+    - How is it acceptable using a Choropleth ?
     - How is it appropriate using a Choropleth map?
     - How is it appropriate to use a Choropleth map?
     - When is it acceptable to just use a Choropleth map?
     - Can I use a choroplth map?
+    - When do I need to look at a chloro map?
+    - When is it necessary to use a chloropetl map?
+    - When would a Choropleth map be useful?
+    - When is it app. to employ a Choropleth map?
+    - i have a doubt When should a Choropleth map be used?
+    - query ? When should I consult a Choropleth map?
+    - can you tell When is a Choropleth map good to use?
+    - When should you use a chloro-pleth vsiuals?
+    - but When should you use a Choropleth map?
+    - but when i will have to make choloropleth visuals
+    - ahmm When is it appropriate to consult a Choropleth map?
+    - tell me When is a Choropleth map appropriate?
+    - When is it appropriate to use a Choropleth graphs?
+    - can you tell When do I need to use a Choropleth visuals?
+    - When should I make use of a choloropleths data visuals?
+    - When does a Choropleth map come in handy?
 
-- intent: faq-visualisation-b6/possibility-sorting-bars #191
+- intent: faq-visualisation-b6/flip-axis #189
+  examples: |
+    - Which way of rotating the output's axis is the most efficient?
+    - What is the best way to rotate the output's axis?
+    - What is the most effective way to reverse the axis?
+    - What is the best way to flip the axis?
+    - What is the most efficient way to revert the axis?
+    - What is the most effective approach to rotate the axis?
+    - What is the most efficient method for rotating the axis?
+    - but can you tell How should the axis be fliped?
+    - can it be possible Which method for rotating the axis is the most efficient?
+    - What is the best method for rotating the axis?
+    - on INDIAN DATA PORTAL What is the best way to turn the axis around?
+    - can i rotate axis if yes What's the most efficient way to rotate the axis?
+    - What is the best method for reversing the axis?
+    - Which way of reversing the axis is the most efficient?
+    - What is the most effective method of reversing the axis?
+    - What is the most effective way to flip the axis?
+    - How should the axis be rotated? here
+    - Which way of reversing the axis is the most effective?
+    - In what direction should the axis be flipped?
+    - What's the best way to flip the axis of a graph?
+    - How should the axis be flipped the most effectively?
+    - What is the most efficient method of rotating the axis?
+    - Which approach is the most effective for reversing the axis-of-visualisation?
+    - Which approach for reversing the axis-of-visualisation is the most effective?
+    - What is the most efficient way to rotate the axis-of-graph?
+    - What is the most effective method for reversing the axis-of-graph?
+    - What is the most efficient way to switch the diagram's axis?
+    - What is the most effective method for rotating the diagram's axis?
+
+
+- intent: faq-visualisation-b6/possibility-sorting-bars #190
   examples: |
     - Can i am able to sort my bars?
     - I want to sort the bars
@@ -133,6 +350,34 @@ nlu:
     - Is it possible to sort the map's bars?
     - Is it possible to sort the chart's bars?
     - the diagram i have made here can i sort it's bars
+    - possible to set the bars in a specific order?
+    - Is it possible to arrange the bars in a particular sequence?
+    - possible for me to sort the bars?
+    - but Is it feasible to arrange the bars in a certain order?
+    - Is it feasible for me to arrange the bars in a certain order?
+    - Is there a way to organise the bars in a specific order?
+    - Is it possible to sort the bars in some way?
+    - Is it feasible for me to put the bars in a specific order?
+    - Is there any way to organise the bars in a specific order?
+    - Is sorting the bars feasible for me?
+    - would it be possible to arrange the bars in any particular order?
+    - Is it possible to set the bars in a particular order?
+    - Is there a way for me to arrange the bars of a chart in a specific order?
+    - Is it possible for me to arrange the bars in a particular sequence?
+    - Is there a way to sort the bar graphs bar?
+    - Is it possible to sort the bars?
+    - Is it realistic for me to sort the bars?
+    - but that is it possible for me to sort the bars in some way?
+    - Is there a way for me to sort the bars?
+    - Is it possible for me to arrange the bars in a particular order?
+    - Is arranging the bars something I can do?
+    - can it be  bpossible to put the bars in a specific order?
+    - Is it possible to put the bars in a particular order?
+    - Is there a way to organise the bars of data visuals for me?
+    - possible to rearrange the bars?
+    - Is it possible for me to arrange the bars of a visuals in a particular pattern?
+    - ahmm but can you tell is it possible for me to put the bars in a particular order?
+
 
 - intent: faq-visualisation-b6/maximum-indicators-one-visulisation #192
   examples: |
@@ -152,6 +397,30 @@ nlu:
     - What really is the greatest number of extra indicators that may be added to a mapping?
     - And what's the greatest number of extra indicators that may be added to a graphical representation?
     - What then is the greatest number of extra indicators that may be added to a graphical representation?
+    - Is there a limit to how many indications I can show in a single visualisation?
+    - Is there a limit on the number of indicators I may display in one visualisation?
+    - In a single chart, how many indicators can I show?
+    - How many indicators can I display in a single chart?
+    - How many indicators can I show in a single graph?
+    - In a single visualisation, how many indications can I show?
+    - What is the maximum number of indicators I may show in a single visualisatio?
+    - In a single graph, how many indicators can I show?
+    - on iDP Is there a limit to how many indicators I can include in a single viz?
+    - on this webiste Is there a limit on the number of indicators I may show in one visualisation?
+    - any limit to how many indicators I may show on a single chart?
+    - Is there a maximum number of indicators I may show in a single visualisation?
+    - How many indicators can I display in a single graph?
+    - limit to how many indicators I can display in one visualisation?
+    - Is there a limit on the number of indicators I may show in a single visual?
+    - but Is there a limit to how many indicators I can display in a single grpah?
+    - How many indications can I show in a single diagram?
+    - How many indicators can I display in a single visualisation?
+    - on inidan data portal In a single chart, how many indicators can I display?
+    - In a single graph, how many indicators can I display?
+    - but is there a limit to how many indications I can display in a single diag.?
+    - Is there a limit to how many indicators I can show on a single graph?
+    - maximum number of indicators I may display in a single diagrmas?
+
 
 
 - intent: faq-visualisation-b6/map-cannot-generated #193 
@@ -159,8 +428,6 @@ nlu:
     - Why do it say that Map cannot be generated 
     - i am here and it is saying no map generated
     - i can't see an maps here
-    - maps ?
-    - where are they?
     - can you tell y cant i seee maps
     - no maps can yopu pls tell ?
     - Why is it stating that a Map cannot be generated?
@@ -174,7 +441,34 @@ nlu:
     - Is it telling that a Map cannot be generated?
     - Is it reporting that a Map cannot be generated?
     - Is it suggesting that a Map cannot be generated?
+    - i see a claim that creating a Map is impossible?
+    - but  Why does it say that Map isn't possible?
+    - can you tell Why does it state that making a map is impossible?
+    - Why does it claim that Map isn't possible to create?
+    - Why is it that it says Map isn't possible?
+    - Why does it state that Map can't be made?
+    - ahmm Why does it say you can't make a map?
+    - on idp Why is it telling me I'm unable to create a map?
+    - why on this website it say I'm unable to create a map?
+    - on inidan portal Why does it say that making a map is impossible?
+    - Why does it say that a Map can't be made?
+    - What makes you think Map isn't possible?
+    - on this indian data portal Why does it state that Map is impossible to create?
+    - Why does it say that Map cannot be made?
+    - Why does it indicate Map can't be created?
+    - Why does it say that you can't make a map?
+    - can you tell Why does it say that Map isn't possible to create?
+    - Why is it informing me that I won't be able to create a map?
+    - while i am here Why is it stated that making a map is impossible?
+    - Why does it say it's impossible to make a Map?
+    - it is telling me that I can't make a map? why
+    - Why is it stating that Map cannot be created?
+    - on inidandata  portal Why does it state that creating a Map isn't possible?
+    - Why is it stating that Map is not possible?
+    - on inidan data  portal Why does it claim that Map isn't possible?
+    - Why does it claim that making a Map isn't possible?
 
+#######################
 - intent: faq-visualisation-b6/save-visualisations-among-my-graphics-my-gallery #197
   examples: |
     - Where my visualization store among graphics and gallery?
@@ -183,15 +477,31 @@ nlu:
     - Is visualization save any other apart My graphics and my Gallery?
     - I don't want My graphics and gallery than where is my visualization saved?
     - Where do I save my visualizaitons among My Graphics and My Gallery
-    - In My Graphics and My Gallery, where do I keep my visualisations?
-    - In My Artwork and My Gallery, where do I keep my visualisations?
-    - In My Artwork and My Galleries, where do I keep my visualisations?
-    - With My Artwork and My Galleries, where do I keep my visualisations?
-    - With My Artwork and My Portfolio, where do I keep my visualisations?
-    - Under My Artwork and My Portfolio, where do I keep my visualisations?
+    - In My Graphics and My Gallery, where do I keep my visuals?
+    - In My Artwork and My Gallery, where do I keep my visuals?
+    - In My Artwork and My Galleries, where do I keep my outputs gerenrated?
+    - With My Artwork and My Galleries, where do I keep my outputs gerenrated?
+    - With My Artwork and My Portfolio, where do I keep my gerenrated outputs?
+    - Under My Artwork and My Portfolio, where do I keep my diagrams?
     - Under My Artwork and My Portfolio, where do I keep my visual representations?
     - Under My Artwork and My Portfolio, where do I keep my data visualization?
     - Under My Graphics and My Galleries, where do I keep my renderings?
+    -  In My Graphics and My Gallery, where can I save my diagrams?
+    -  In My Graphics and My Gallery, where do I save my data visuals?
+    -  In My Graphics and Gallery, where do I save my data visuals?
+    -  Where do I keep my viz in My Graphics and My Gallery?
+    -  Where do I save my viz among My Graphics and My Gallery?
+    -  In My Graphics and My Gallery, where do I keep my vis.?
+    -  In My Graphics and My Gallery, where can I keep my vis.?
+    -  Where in My Graphics and My Gallery can I keep my images?
+    -  Where do I save my images in My Graphics and My Gallery?
+    -  Where do I keep my images among My Graphics and My Gallery?
+    -  Where can I save my visualisations among My Graphics and My Gallery?
+    -  In My Graphics and My Gallery, where do I store my visualisations?
+    -  Where can I save my visualisations in My Graphics and My Gallery?
+    -  Among My Graphics and My Gallery, where may I save my visualisations?
+    -  Among My Graphics and My Gallery, where do I save my visualisations?
+
 
 - intent: faq-visualisation-b6/upload-work-on-social-media #198
   examples: |
@@ -208,6 +518,38 @@ nlu:
     - social media upload possible ?
     - hahah can i make my work visible to whole world?
     - i wanna publicise my work globally via media how can i ?
+    - What is the best approach for me to share my visualisation on social media?
+    - What is the best way to share my visualisation on social media?
+    - What is the most effective method for sharing my visualisation on social media?
+    - What's the best approach for me to share my visualisation on social media?
+    - What is the best way for me to upload my visualisation to my social media site?
+    - What is the most effective method of sharing my visualisation on social media?
+    - What's the best way for me to post my visualisation on social media?
+    - What is the most efficient method of sharing my visualisation on social media?
+    - What's the most effective way for me to share my visualisation on social media?
+    - What is the best way to post my visualisation on social media?
+    - What is the most effective method for me to share my visualisation on social media?
+    - What's the best way for me to share my visualisation on social media?
+    - What is the most effective way for me to post my visualisation on social media?
+    - What's the most effective way to share my visualisation on social media?
+    - What is the most effective way for me to share my visualisation on social media?
+    - What is the most efficient approach for me to share my visualisation on social media?
+    - What is the best way for me to share my visualisation on social media?
+    - What is the most efficient method for sharing my visualisation on social media?
+    - How do I share my visualisation on social media?
+    - What is the best way to upload my visualisation to my social media site?
+    - What is the most effective strategy to post my visualisation on social media?
+    - What is the most efficient approach to share my visualisation on social media?
+    - What's the most effective approach for me to share my visualisation on social media?
+    - What is the best method for sharing my visualisation on social media?
+    - What is the most effective way to share my visualisation on social media?
+    - What is the most effective way for me to distribute my visualisation on social media?
+    - How do I upload my visualisation to my social media site?
+    - What is the best strategy for sharing my visualisation on social media?
+    - What's the best way to post my visualisation on social media?
+    - What is the best method for me to share my visualisation on social media?
+    - What is the most effective manner for me to post my visualisation on social media?
+
 
 
 - intent: faq-visualisation-b6/why-save-svg-format #199
@@ -232,6 +574,34 @@ nlu:
     - What really is the goal of downloading in SVG format?
     - What really is the goal of transferring in SVG format?
     - i wnna get images to my local setup but its getting downloaded in svg why ? 
+    - What are the benefits of keeping it in SVG format?
+    - What are the advantages of keeping it in SVG format?
+    - What are the advantages of saving it as SVG?
+    - What are the benefits of changing it to SVG?
+    - What are the benefits of saving it in SVG format?
+    - What is the benefit of saving it in SVG format?
+    - What are the advantages of saving the file as an SVG?
+    - What are the advantages of switching to SVG?
+    - What are the advantages of converting it to SVG?
+    - What are some of the benefits of saving it in SVG format?
+    - What are the advantages of using SVG as opposed to HTML?
+    - What are the advantages of changing it to SVG?
+    - What are the benefits of preserving it in SVG?
+    - What are the benefits of keeping it in SVG?
+    - What are the benefits of making it SVG?
+    - What are the benefits of saving it as an SVG file?
+    - What are the benefits of storing it in SVG?
+    - What are the advantages of saving it as an SVG file?
+    - What advantages does storing it as an SVG file provide?
+    - What is the advantage of preserving it in SVG?
+    - What are the advantages of preserving it in SVG?
+    - What are the benefits of converting it to an SVG file?
+    - What is the benefit of keeping it in SVG?
+    - What are the benefits of switching to SVG?
+    - What are the benefits of storing the file as an SVG?
+    - What are the advantages of saving it in SVG format?
+    - What are the benefits of converting it to SVG?
+
 
 - intent: faq-visualisation-b6/download-visual-suggested-format #201
   examples: |
@@ -247,6 +617,44 @@ nlu:
     - what is the suggested format for downloading my visual?
     - Download the visualization?
     - What is the suggested format for downloading any visual
+    - What is the best way to save any visual data?
+    - What is the best format to use for a visual download?
+    - What is the preferable format for any visual download?
+    - What is the best way to get visual data?
+    - What's the greatest way to get visual information?
+    - For any visual download, what is the preferred format?
+    - What is the best visual download format?
+    - When downloading graphic content, which format should you use?
+    - What is the most effective method for downloading visual content?
+    - What is the most efficient method for storing visual data?
+    - When downloading visual data, what is the best format to use?
+    - What is the best way to collect visual data?
+    - Which format is best for any visual download?
+    - What is the best method for downloading graphics?
+    - What is the preferred format for visual downloads?
+    - What is the most effective method for storing any visual data?
+    - When downloading any visual data, what is the best format to use?
+    - What format should you use to download graphic content?
+    - What's the greatest visual download format?
+    - What is the best way to download graphic content?
+    - For any visual download, what is the recommended format?
+    - What is the preferred format for any visual download?
+    - What is the best way to get graphic stuff downloaded?
+    - When downloading graphic content, what format should you use?
+    - What is the most efficient method for storing any visual data?
+    - What format should you use for a visual download?
+    - What is the most efficient method for downloading graphics?
+    - What is the recommended format for any visual download?
+    - What is the most efficient method for downloading graphic content?
+    - When it comes to downloading graphic content, what format should you use?
+    - What is the best format for obtaining visual data?
+    - What is the most efficient method of obtaining graphic files?
+    - What is the recommended format for downloading any visual information?
+    - When downloading any visual data, which format should you use?
+    - What is the recommended format for downloading visual content?
+    - What is the preferred file format for any visual download?
+    - What is the best format to use when downloading any visual data?
+
 
 - intent: faq-visualisation-b6/add-dataset-compare-dataset-difference #202
   examples: |
@@ -254,11 +662,46 @@ nlu:
     - How do you differentiate between Add Dataset and Compare Dataset?
     - How do you compare between Add Dataset and Compare Dataset
     - Write Add Dataset VS Compare Dataset.
-    - Make comparison between Add Dataset and Compare Dataset.
+    - Make comparison bw Add Dataset and Compare Dataset.
     - How can you define and compare Add Dataset and Compare Dataset?
-    - contradict between add dataset and compare dataset.
+    - contradict bw add dataset and compare dataset.
     - add dataset and compare dataset?
-    - show the difference between add dataset and compare dataset.
+    - show the difference bw add dataset and compare dataset.
+    - how compare dataset is diff from add data on portal
+    - What's the difference bw an Add Dataset and a Compare Dataset, and how do I use them?
+    - What's the difference bw adding data and comparing data sets?
+    - What makes an Add Dataset different from a Compare Dataset?
+    - What's the difference bw a dataset being added and a dataset being compared?
+    - What's the distinction bw adding a dataset and comparing it?
+    - What's the distinction bw Add and Compare Datasets?
+    - What's the distinction beteen adding data and comparing data?
+    - What's the diff. beteen comparing and adding datasets?
+    - What is the distinction beween Add and Compare Datasets?
+    - What is the diff. beween adding and comparing datasets?
+    - What's the diff. beween adding datasets and comparing them?
+    - What is the separator between Add Datasets and Compare Datasets?
+    - What's the separator between adding a dataset and comparing a dataset?
+    - What's the separator point between adding data to a dataset and comparing it?
+    - What's the separator point between the commands Add and Compare Datasets?
+    - What is the dissimilarity between comparing a dataset and adding it?
+    - What's the dissimilarity between an Add Dataset and a Compare Dataset, and how do you use them?
+    - What is the contrast between the Add and Compare Datasets commands?
+    - What's the contrast between an Add Dataset and a Compare Dataset?
+    - What is the contrast between adding and comparing a dataset?
+    - What is the variation between comparing a dataset and adding one?
+    - What's the variation between comparing a dataset and adding one?
+    - What's the difference between comparing and adding a dataset?
+    - What's the difference between putting data in a spreadsheet and comparing data sets?
+    - What's the difference between Add Datasets and Compare Datasets?
+    - What's the difference between adding and comparing datasets?
+    - What's the difference between combining data sets and comparing them?
+    - What is the distinction between combining and comparing datasets?
+    - What's the difference between adding a dataset and comparing one?
+    - What is the distinction between adding a dataset and comparing one?
+    - What's the difference between adding to a dataset and comparing it?
+    - What are the distinctions between Add Dataset and Compare Dataset?
+    - What's the difference between comparing data sets and adding data?
+
 
 - intent: faq-visualisation-b6/trend-analysis-what-viz-needed # 204
   examples: |
@@ -273,7 +716,30 @@ nlu:
     - trend grphs i want to see which viz. i will consider
     - i am on a research i want to paste trend visualisation how will i get it
     - how will i get vis from trend anayltics?
+    - Which data visuals should I consider when it comes to trend analysis?
+    - What visuals should I consider while looking at trend analysis?
+    - Which data visuals should I use to view trend analysis?
+    - When I'm looking at trend analysis, what diagrams should I consider?
+    - Which diagrams should I use to look at trend analysis?
+    - When it comes to trend analysis, which diagrams should I use?
+    - To view trend analysis, which visualisation should I use?
+    - Which trend analysis visualisation should I use?
+    - Which vis. should I use for trend analysis?
+    - I'm not sure which trend analysis vis. to use.
+    - When looking at trend analysis, which graphs should I use?
+    - Which graphs do I need to think about while looking at trend analysis?
+    - When looking at trend analysis, which graphs should I consider?
+    - What visuals should I think about when I'm doing trend analysis?
+    - Which graphs should I think about while looking at trend analysis?
+    - Which viz should I use when looking at trend analysis?
+    - When considering trend analysis, which viz should I consider?
+    - Which viz should I consider when looking at trend analysis?
+    - What visuals should I think about while I'm doing a trend analysis?
+    - Which vizualisation should I think about when it comes to trend analysis?
+    - What vizualisation of trend analysis should I use?
+    - When looking at trend analysis, which vizualisation should I think about?
 
+## done
 - intent: faq-visualisation-b6/minimum-indicators-and-dimension-to-create-snakey-graph #205
   examples: |
     - What number of minimum indicators and dimensions are required to create a Sankey Graph?
@@ -284,14 +750,38 @@ nlu:
     - create a sankey graph with minimum indicators and dimensions.
     - explain the usage of minimum indicators and dimensions to create a sankey graph
     - How many minimum indicators and dimensions to create a Sankey Graph
-    - How many minimum indicators and dimensions are required to make a Sankey Graph?
-    - How many least number indicators and dimensions are required to make a Sankey Graph?
-    - How many minimal indicators and dimensions are needed to make a Sankey Graph?
-    - How often basic indicators and dimensions are needed to make a Sankey Graph?
-    - How many least number indicators and dimensions are required to make a Sankey Graph?
-    - sanky grpah how many indicators i need?
-    - sanky grpah how many indicators i need
-    - sanky grpah how many dimensions i need
+    - How many minimum indicators and dimensions are required to make a Sankey diagrams?
+    - How many least number indicators and dimensions are required to make a Sankey diagrams?
+    - How many minimal indicators and dimensions are needed to make a Sankey diagrams?
+    - How often basic indicators and dimensions are needed to make a Sankey diagrams?
+    - How many least number indicators and dimensions are required to make a Sankey diag?
+    - How many minimum indicators and dimensions are necessary to build a Sankey diag?
+    - How many indicators and dimensions are necessary to construct a Sankey diag?
+    - To generate a Sankey diag, how many indicators and dimensions are required?
+    - In order to generate a Sankey dig., how many minimum indicators and dimensions are required?
+    - How many indicators and dimensions are needed to build a Sankey dig.?
+    - How many indicators and dimensions does a Sankey dig. require?
+    - To generate a sankey visuals, how many minimum indicators and dimensions are required?
+    - How many indicators and dimensions are necessary to create a sankey visuals?
+    - In order to generate a sankey visuals, how many indicators and dimensions are required?
+    - In order to construct a sankey visuals, how many minimum indicators and dimensions are required?
+    - How many markers and dimensions are required for a Sankey grpha?
+    - In order to make a graph having sankey visual, how many indicators and dimensions are required?
+    - How many indicators and dimensions are required to make a graph having sankey visual?
+    - To make a graph having sankey diagrams, how many indicators and dimensions do you need?
+    - How many markers and dimensions does a graph having sankey diagrams need?
+    - To construct a graph having sankey diagrams, how many indicators and dimensions are required?
+    - A Sankey Graph requires how many indicators and dimensions?
+    - How many indicators and dimensions do you need to create a Sankey Graph?
+    - To create a Sankey Graph, how many indicators and dimensions are required?
+    - In order to construct a Sankey Graph, how many indicators and dimensions are required?
+    - To make a Sankey Graph, how many indicators and dimensions are required?
+    - How many indicators and dimensions are necessary to make a Sankey Graph?
+    - To make a Sankey Graph, how many minimum indicators and dimensions are required?
+    - To construct a Sankey Graph, how many minimum indicators and dimensions are required?
+    - How many minimum indicators and dimensions are necessary to create a Sankey Graph?
+    - To build a Sankey Graph, how many indicators and dimensions are required?
+
 
 - intent: faq-visualisation-b6/how-to-read-sankey-chart #206
   examples: |
@@ -312,7 +802,36 @@ nlu:
     - How would I comprehend the Sankey Graph?
     - How would I comprehend the Sankey Diagram?
     - sankey chart what does it mean?
+    - Which method of reading the Sankey Chart is the most accurate?
+    - What is the Sankey Chart, and how can I read it?
+    - What is the Sankey Chart, and how can I make sense of it?
+    - What is the Sankey Chart, and how can I interpret it?
+    - What's the best way to interpret a Sankey Chart?
+    - What is the best method for reading the Sankey Chart?
+    - What is the best way to interpret the Sankey Chart?
+    - What is the Sankey Chart, exactly, and how can I understand it?
+    - What is the Sankey Chart, and how can I decipher it?
+    - How should the Sankey Chart be interpreted?
+    - What is the most accurate approach to read the Sankey Chart?
+    - What is the correct interpretation of the Sankey Chart?
+    - What is the Sankey Chart and how can I interpret it?
+    - What is the Sankey Chart, and how can I understand it?
+    - What is the Sankey Chart, and how should I interpret it?
+    - What exactly is the Sankey Chart, and how can I interpret it?
+    - What is the Sankey Chart, and how can I read one?
+    - What is the most effective approach to read the graph having sankey diagrams?
+    - What exactly is the graph having sankey diagrams, and how can I comprehend it?
+    - What is the graph having sankey diagrams and how can I use it to my advantage?
+    - What is the best way to read the sankey graphs?
+    - What exactly is the sankey graphs, and how can I use it?
+    - What exactly is the sankey graphs, and how do I read it?
+    - What is the chart containing sakey charts and how can I understand it?
+    - What is the most precise method for reading the chart containing sakey charts?
+    - What is the chart containing sakey charts, and how can I use it to my advantage?
+    - What is the sankey chrt and how can I read it?
+    - What is the sankey chrt, and how do I use it?
 
+##############1
 
 - intent: faq-visualisation-b6/where-give-chart-title #207
   examples: |

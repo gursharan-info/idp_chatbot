@@ -403,6 +403,10 @@ nlu:
 
 - intent: faq-portal-b0/why_idp
   examples: |
+    - how can idp help me
+    - how can indian data portal help
+    - how this portal can help me
+    - how will this portal assist me
     - Why should I use IDP?
     - What is the main reason that i should choose idp
     - What is USP of Indian data portal
@@ -493,13 +497,45 @@ nlu:
     - What are the data fields that are available?
     - What are the data fields that are obtainable?
     - What are all the data fields that are obtainable?
-    - What are all the data fields that are readily accessible?
-    - And what were the data fields that are readily accessible?
-    - But what were the data fields that are readily accessible?
+    - What are all the data fields that are present here
+    - And what were the data fields that are residing here
+    - But what were the data fields that are available on this portal
     - So what were the data fields that are readily accessible?
-    - How are the data fields that are readily accessible?
+    - How are the data fields that are easily available
     - How are the data bits that are readily accessible?
-    - How are the data regions that are readily accessible?
+    - How are the data regions that are present on webiste?
+    - from which sectors data is coming
+
+- intent: faq-portal-b0/Why-not-see-all-selected-language #150
+  examples: |
+    - why am i not able to see all the text in selected language ?
+    - why i cannot see all the text in selected language ?
+    - I am not able to see all the text in selected language
+    - It is not showing all the text in the selected language
+    - Text in selected language is not showing
+    - There is incomplete text in selected language
+    - Why cannot I see all the text in the selected language?
+    - Why can't I see all of the text in the language I've chosen?
+    - Why i am not able to see all of the text in my preferred language?
+    - Why can't I see the entire text in the language I've chosen?
+    - Why can't I see the entire text in the language I've selected?
+    - Why can't I see the full text in the language I selected?
+    - Why am I unable to see the entire text in the selected language?
+    - tell me why can't I see all of the text in the language of my choice?
+    - Why can't I see all of the text in the language I want?
+    - Why can't I see the entire text in the language of my choice?
+    - Why can't I see all of the text in the language I prefer?
+    - Why is it that I can't see all of the text in the language I've chosen?
+    - Why can't I see all of the text in the language that I've chosen?
+    - Why am i not able to see all of the text in my chosen language?
+    - Why can't I see the entire text in the language I chose?
+    - explain Why can't I see the entire text in the selected language?
+    - Why can't I see the entire text in my chosen language?
+    - hey why can't I see all of the text in the selected language?
+    - Why am I unable to view the entire text in the language I've chosen?
+    - Why can't I see the entire text in my preferred language?
+    - Why am I unable to see all of the text in the language I have selected?
+
   
 - intent: faq-portal-b0/most-recent-data
   examples: |
@@ -525,6 +561,8 @@ nlu:
     - Is there any fresh information on idp?
     - Is there any fresh info on idp?
     - Is there any additional info on idp?
+    - tell me about recent data on this portal
+    - tell me about recent data on this webiste
 
 - intent: faq-portal-b0/recent-data-available
   examples: |
@@ -958,6 +996,21 @@ nlu:
     - How regularly is the data provided on the Indian Data Portal updated with the most recent figures?
     - So regularly is the data provided on the Indian Data Portal updated with the most recent figures?
 
+- intent: faq-portal-b0/data-change-notifications 
+  examples: |
+    - If the data/numbers for a graph that I have downloaded is changed overnight by the Centre/State/District, will I be notified by IDP? 
+    - if someday data from gov is changes will i get some alert
+    - if someday data from gov is changes will i get some notifications
+    - if someday data from gov is changes will i get some notified
+    - will i be informed if data from IDP is changed by local agencies
+    - if agencies change data will i get text notifications
+    - ahmmm wanted to know do you support alerts service if any info is changed by government agencies
+    - notification will be provided if data is changed by gov
+    - alerts will be sent if data is changed by authority
+    - if the government alters the data, you will be notified.
+    - if  the government modifies the data, will i be notified
+    - If the government changes the data, the public will be notified.
+    
 - intent: faq-portal-b0/data-sourced-from-gov-sites
   examples: |
     - Is the data only sourced from Government websites?

@@ -69,12 +69,13 @@ class ActionVizFaq(Action):
 
         print(tracker.latest_message['text']) # to get user typed message 
 
-        # actual retrieval intent found
         intent_found = json.dumps(tracker.latest_message['response_selector'][_intent]['ranking'][0]['intent_response_key'], indent=4)
         print("retrieval we found ",intent_found)
 
+        # confidence of retrieval intent we found
+        retrieval_intent_confidence = tracker.latest_message['response_selector'][_intent]['response']['confidence']*100
         
-        # print(mapped_intent[tracker.slots['intent_button']],_intent[:-3])
+        print(f"retrieval_intent_confidence we found was {retrieval_intent_confidence}")
 
         if _intent[:-3] == slot_value_clicked[0] :
             """ if intent found is same as faq-visualisation or faq-portal or any other category
@@ -91,44 +92,21 @@ class ActionVizFaq(Action):
            
         elif slot_value_clicked == 'No-option':
              dispatcher.utter_message(text = "Please select any option first",buttons=buttons )
-            #  dispatcher.utter_message(text = f"Do you want to ask question from {mapped_intent[slot_value_clicked[0]]} otherwise select options from"
-            #  ,buttons=buttons)
         else:
-            dispatcher.utter_message(text = f"Do you want to ask question from {mapped_intent[ _intent[:-3]]} , If yes please select an options from below"
-            ,buttons=buttons)
 
-        return []
-
-# class ActionPortalFaq(Action):
-
-#     def name(self) -> Text:
-#         return "action_portal_faq"
-
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-#         # to get a slot value (here --> slot is intent_button)
-#         print("slots value is ",tracker.slots['intent_button']) 
-#         slot_value_clicked = tracker.slots['intent_button']
-
-#         # to get intent of user message
-#         _intent=tracker.latest_message['intent'].get('name')
-#         print("Intent of user message ",_intent)
-
-#         print(tracker.latest_message['text']) # to get user typed message 
-
-#         # actual retrieval intent found
-#         intent_found = json.dumps(tracker.latest_message['response_selector'][_intent]['ranking'][0]['intent_response_key'], indent=4)
-#         print("retrieval we found ",intent_found)
-
-#         if _intent == 'portal':
-
-#         #used eval to remove quotes around the string
-#             intent_found = f'utter_{eval(intent_found)}'
+            # if retrieval_intent_confidence > 90:
+            intent_found = f'utter_{eval(intent_found)}'
             
-#             dispatcher.utter_message(response = intent_found) # use response for defining intent name
-#         else:
-#              dispatcher.utter_message(text = f"Please select your questions from {slot_value_clicked}")
+            dispatcher.utter_message(response = intent_found)
 
-#         return []
+            dispatcher.utter_message(text = f"Seems like you want to ask question from {mapped_intent[ _intent[:-3]]} ok now you can ask question from {mapped_intent[ _intent[:-3]]}")
+            
+            tracker.slots['intent_button'] = _intent
+            
+            print(f"Now slot value is {tracker.slots['intent_button']}")
+            
+            # else: # if confidence is less than 90 percent
+            #     dispatcher.utter_message(text = f"Do you want to ask question from {mapped_intent[ _intent[:-3]]} , If yes please select an options from below"
+            #     ,buttons=buttons)
+
+        return [SlotSet(key = "intent_button", value= _intent)] # setting slot values

@@ -69,27 +69,6 @@ class ActionVizFaq(Action):
 
         print(tracker.latest_message['text']) # to get user typed message 
 
-#         all_retrieval_intents = [
-#     "faq-visualisation-b3",
-#     "faq-visualisation-b1",
-#     "faq-dataset-b0",
-#     "faq-visualisation-b0",
-#     "faq-visualisation-b5",
-#     "faq-fel-b0",
-#     "faq-visualisation-b4",
-#     "faq-visualisation-b6",
-#     "faq-visualisation-b2",
-#     "faq-portal-b0",
-#     "faq-train-b0"
-#   ]
-#         print("\n")
-#         for i in all_retrieval_intents:
-#             print(f"For {i} highest confidence we got was : {json.dumps(tracker.latest_message['response_selector'][i]['response']['confidence'],indent=2)}")
-#             if tracker.latest_message['response_selector'][i]['response']['confidence'] >  tracker.latest_message['response_selector'][_intent]['response']['confidence']:
-#                 print(i,"scored better")
-#         print("\n")
-        
-        # actual retrieval intent found
         intent_found = json.dumps(tracker.latest_message['response_selector'][_intent]['ranking'][0]['intent_response_key'], indent=4)
         print("retrieval we found ",intent_found)
 
@@ -123,7 +102,7 @@ class ActionVizFaq(Action):
                 dispatcher.utter_message(text = f"Seems like you want to ask question from {mapped_intent[ _intent[:-3]]} ok now you can ask question from training")
                 
                 tracker.slots['intent_button'] = _intent
-                # r = SlotSet(key = "intent_button", value= _intent)
+                
                 print(f"Now slot value is {tracker.slots['intent_button']}")
             
             else: # if confidence is less than 90 percent

@@ -78,9 +78,6 @@ responses:
   utter_faq-visualisation-b5/only-see-states-find-district-village:
   - text: On the left side of the location popup window you can see the districts
       tab.
-  utter_faq-visualisation-b5/Why-not-see-all-selected-language:
-  - text: We are working on converting all the text into the selected language and
-      in some cases there are technical difficuilties for the translation.
   utter_faq-visualisation-b5/graph-not-see-loading:
   - text: Please make sure that you have not missed any pop-ups and your device is
       connected to the internet
@@ -307,6 +304,9 @@ responses:
   utter_faq-visualisation-b6/when-use-choropleth-map:
   - text: A choropleth map is best used to represents an aggregate summary of a geographic
       characteristic within each area, such as population density or per-capita income.
+  utter_faq-visualisation-b6/flip-axis:
+  - text: Once a chart is created, you can go to the settings and change the values
+      on each axis
   utter_faq-visualisation-b6/possibility-sorting-bars:
   - text: Yes, you can sort the bars in ascending or descending order and you can
       sort them alphabetically or by indicator value
@@ -469,6 +469,9 @@ responses:
   utter_faq-portal-b0/part-available-data:
   - text: India Data portal covers multiple domains like Agriculture, Financial Inclusion,
       Rural Development, Economy, Socio- economic, Climate etc
+  utter_faq-portal-b0/Why-not-see-all-selected-language:
+  - text: We are working on converting all the text into the selected language and
+      in some cases there are technical difficuilties for the translation.
   utter_faq-portal-b0/most-recent-data:
   - text: For some datasets you'll find data available from last month on the portal.
       Data is updated on the portal after it is made available by the Indian Government

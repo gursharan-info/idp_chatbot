@@ -750,7 +750,6 @@ nlu:
     - is there any COVID related DAta?
     - give COVID data?
     - any COVID related data is available?
-    - Is there any information about aadhar?
     - is there any dataset on covid?
     - Do you have any data about covid?
     - Is there any data pertaining to covid?
@@ -787,6 +786,10 @@ nlu:
   examples : |
     - Any data from Ministry of Corporate Affairs ?
     - Any stock market related data ?
+    - any data related to stocks
+    - can you give me some data regarding stocks
+    - i wnat some data regarding stocks
+    - but can you provide me some fig. about stocks
     - any data we are having for staock market
     - I want some data for corporate affairs
     - Which type of data available on daily basis ?

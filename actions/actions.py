@@ -94,19 +94,19 @@ class ActionVizFaq(Action):
              dispatcher.utter_message(text = "Please select any option first",buttons=buttons )
         else:
 
-            if retrieval_intent_confidence > 90:
-                intent_found = f'utter_{eval(intent_found)}'
-                
-                dispatcher.utter_message(response = intent_found)
-
-                dispatcher.utter_message(text = f"Seems like you want to ask question from {mapped_intent[ _intent[:-3]]} ok now you can ask question from training")
-                
-                tracker.slots['intent_button'] = _intent
-                
-                print(f"Now slot value is {tracker.slots['intent_button']}")
+            # if retrieval_intent_confidence > 90:
+            intent_found = f'utter_{eval(intent_found)}'
             
-            else: # if confidence is less than 90 percent
-                dispatcher.utter_message(text = f"Do you want to ask question from {mapped_intent[ _intent[:-3]]} , If yes please select an options from below"
-                ,buttons=buttons)
+            dispatcher.utter_message(response = intent_found)
+
+            dispatcher.utter_message(text = f"Seems like you want to ask question from {mapped_intent[ _intent[:-3]]} ok now you can ask question from {mapped_intent[ _intent[:-3]]}")
+            
+            tracker.slots['intent_button'] = _intent
+            
+            print(f"Now slot value is {tracker.slots['intent_button']}")
+            
+            # else: # if confidence is less than 90 percent
+            #     dispatcher.utter_message(text = f"Do you want to ask question from {mapped_intent[ _intent[:-3]]} , If yes please select an options from below"
+            #     ,buttons=buttons)
 
         return [SlotSet(key = "intent_button", value= _intent)] # setting slot values

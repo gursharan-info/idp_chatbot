@@ -36,6 +36,11 @@ nlu:
     - where am i supposed to upload custom data?
     - how am i supposed to insert a dataset?
     - how can i insert a dataset ?
+    - is there anyway we can add dataset to this webiste
+    - is there anyway we can add dataset to this portal
+    - is there anyway we can add dataset to this website
+    - anyway we can add dataset to webiste 
+    - anyway we can add dataset to website
 
 - intent: faq-visualisation-b1/location-meaning-idp
   examples: |

@@ -60,6 +60,9 @@ responses:
   utter_faq-portal-b0/part-available-data: #14
   - text: India Data portal covers multiple domains like Agriculture, Financial Inclusion, Rural Development, Economy, Socio- economic, Climate etc
   
+  utter_faq-portal-b0/Why-not-see-all-selected-language: #150
+  - text: We are working on converting all the text into the selected language and in some cases there are technical difficuilties for the translation.
+  
   utter_faq-portal-b0/most-recent-data: #245
   - text: For some datasets you'll find data available from last month on the portal. Data is updated on the portal after it is made available by the Indian Government 
 

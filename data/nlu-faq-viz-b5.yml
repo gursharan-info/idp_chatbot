@@ -200,36 +200,6 @@ nlu:
     - What's the best way to look up the names of districts and villages?
 
 
-- intent: faq-visualisation-b5/Why-not-see-all-selected-language #150
-  examples: |
-    - why am i not able to see all the text in selected language ?
-    - why i cannot see all the text in selected language ?
-    - I am not able to see all the text in selected language
-    - It is not showing all the text in the selected language
-    - Text in selected language is not showing
-    - There is incomplete text in selected language
-    - Why cannot I see all the text in the selected language?
-    - Why can't I see all of the text in the language I've chosen?
-    - Why i am not able to see all of the text in my preferred language?
-    - Why can't I see the entire text in the language I've chosen?
-    - Why can't I see the entire text in the language I've selected?
-    - Why can't I see the full text in the language I selected?
-    - Why am I unable to see the entire text in the selected language?
-    - tell me why can't I see all of the text in the language of my choice?
-    - Why can't I see all of the text in the language I want?
-    - Why can't I see the entire text in the language of my choice?
-    - Why can't I see all of the text in the language I prefer?
-    - Why is it that I can't see all of the text in the language I've chosen?
-    - Why can't I see all of the text in the language that I've chosen?
-    - Why am i not able to see all of the text in my chosen language?
-    - Why can't I see the entire text in the language I chose?
-    - explain Why can't I see the entire text in the selected language?
-    - Why can't I see the entire text in my chosen language?
-    - hey why can't I see all of the text in the selected language?
-    - Why am I unable to view the entire text in the language I've chosen?
-    - Why can't I see the entire text in my preferred language?
-    - Why am I unable to see all of the text in the language I have selected?
-
 
 - intent: faq-visualisation-b5/graph-not-see-loading #151
   examples: |

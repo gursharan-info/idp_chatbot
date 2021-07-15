@@ -1197,9 +1197,8 @@ nlu:
 
 - intent: faq-visualisation-b2/add-dataset
   examples: |
-    - add datasets
+    - add datasets why?
     - datasets are added?
-    - is datasets added?
     - can we add datasets?
     - why should i add more than 1 dataset
     - how we add datasets?

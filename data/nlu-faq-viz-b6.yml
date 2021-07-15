@@ -330,7 +330,7 @@ nlu:
     - What is the most effective method for rotating the diagram's axis?
 
 
-- intent: faq-visualisation-b6/possibility-sorting-bars #191
+- intent: faq-visualisation-b6/possibility-sorting-bars #190
   examples: |
     - Can i am able to sort my bars?
     - I want to sort the bars
@@ -831,7 +831,7 @@ nlu:
     - What is the sankey chrt and how can I read it?
     - What is the sankey chrt, and how do I use it?
 
-
+##############1
 
 - intent: faq-visualisation-b6/where-give-chart-title #207
   examples: |

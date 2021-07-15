@@ -1,4 +1,5 @@
 /models/
 /generated_data/
+/server_credentials.py
 *.csv
 *.xlsx

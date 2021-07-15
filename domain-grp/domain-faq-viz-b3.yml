@@ -10,43 +10,43 @@ intents:
 entities: []
 slots: {}
 responses:
-  utter_faq-visualisation-b3/why-add-dataset: #80
+  utter_faq-visualisation-b3/why-add-dataset: #79
   - text: We can add datasets in order to compare between the two datasets
   
-  utter_faq-visualisation-b3/options-to-make-chart-builder: #81
+  utter_faq-visualisation-b3/options-to-make-chart-builder: #80
   - text: We can select as many options on chart builder as per our need
   
-  utter_faq-visualisation-b3/to-create-state-level-chart: #82
+  utter_faq-visualisation-b3/to-create-state-level-chart: #81
   - text: On clicking build your chart button you can see an option 'How detailed should the analysis be? Select state level or/and district level' and below which there is a checkbox named 'state'
   
-  utter_faq-visualisation-b3/to-create-district-level-chart:  #83
+  utter_faq-visualisation-b3/to-create-district-level-chart:  #82
   - text: On clicking build your chart button you can see an option 'How detailed should the analysis be? Select state level or/and district level' and below which there is a checkbox named 'district'
   
-  utter_faq-visualisation-b3/why-select-crops:  #84
+  utter_faq-visualisation-b3/why-select-crops:  #83
   - text: If you select the crops in the same category in order to view them in the graphs/chart you have to select crops in the build your chart
   
-  utter_faq-visualisation-b3/why-farm-size-category:  #85
+  utter_faq-visualisation-b3/why-farm-size-category:  #84
   - text: If you want to see what are the farm sizes large or small then you can select farmsize category
   
-  utter_faq-visualisation-b3/why-crop-type-selected:  #86
+  utter_faq-visualisation-b3/why-crop-type-selected:  #85
   - text: If you select two or multiple crops of different categories then to see their visualization you have to select crop type
   
-  utter_faq-visualisation-b3/why-social-grp-selected: #87
+  utter_faq-visualisation-b3/why-social-grp-selected: #86
   - text: If you want to know the social group of the farmers whether its institutional or others then select social group
   
-  utter_faq-visualisation-b3/what-happens-if-we-select-all-on-chart-builder:  #88
+  utter_faq-visualisation-b3/what-happens-if-we-select-all-on-chart-builder:  #87
   - text: Most frequently a tree map will appear, it is advisable to select the the option one by one. 
   
-  utter_faq-visualisation-b3/why-farm-size-class-selected:  #89
+utter_faq-visualisation-b3/why-farm-size-class-selected:  #88
   - text: If the user wants to see the disaggregated data accross the farm size category they should select this option.
   
-  utter_faq-visualisation-b3/how-access-full-data:  #90
+  utter_faq-visualisation-b3/how-access-full-data:  #89
   - text: You can access the full data everytime in our portal
 
-  utter_faq-visualisation-b3/how-to-create-indicators:  #91
+  utter_faq-visualisation-b3/how-to-create-indicators:  #90
   - text: On the top right corner of the indicator popup you will see create new indicator button. Click it and then you will get another popup and there is a dropdown named dataset and after that there is a section to select the indicators. After selecting the indicators use the mathematical icons to define the relationship between the selected indicators. Then name the new indicator and name its unit and click on create indicator.
 
-  utter_faq-visualisation-b3/where-is-graph:  #92
+  utter_faq-visualisation-b3/where-is-graph:  #91
   - text: First select a dataset and then select the indicators and dimensions with location and time. Then select 'Build your chart' for the visualization.
 
   utter_faq-visualisation-b3/what-to-select-first:  #93

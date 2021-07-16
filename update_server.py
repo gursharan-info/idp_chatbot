@@ -4,10 +4,9 @@ from pexpect import pxssh
 import sys
 import time
 import re
-# from rich import print, pretty, inspect
 # pretty.install()
 sys.path.append('/home/bavalpreet/IDP/')
-from server_credentials import IP, SUDOPASSWORD, USERNAME, PASSWORD, SUDOPASSWORD
+from server_credentials import IP, SUDOPASSWORD, USERNAME, PASSWORD
 
 # print(IP, USERNAME, PASSWORD)
 ip = IP
@@ -25,8 +24,6 @@ else:
     s.sendline ('sudo docker ps')
     s.sendline (pw)
     s.prompt()         # match the prompt
-    # output_of_docker_ps = s.before
-    # print(output_of_docker_ps.decode("utf8"))     # print everything before the prompt.
     output_of_docker_ps = s.before.decode("utf8")
     print(output_of_docker_ps)
 
@@ -162,27 +159,9 @@ else:
     output_of_cd = s.before.decode("utf8")
     print(output_of_cd)
 
-
-#         # output_of_cd = s.before.decode("utf8")
-#         # print(output_of_cd)
-#     # child = pexpect.spawn('sudo docker build -t sahib-bot-idp')
-#     # child.expect('Password:')
-#     # child.sendline(spw)
-
-#     # sudoPassword = spw
-#     # print('/n')
-#     # print('-------------------------sudo docker build -t sahib-bot-idp-------------------------------')
-#     # command = 'sudo docker build -t sahib-bot-idp'
-#     # # p = os.system('echo %s|sudo -S %s' % (sudoPassword, command))
-#     # print(os.popen('echo %s|sudo -S %s' % (sudoPassword, command)).read())
-#     # output = os.popen("sudo docker build -t sahib-bot-idp | grep sahib-bot-idp:latest | awk '{ print $1 }'").read()
-#     # print(output)
-#     # print(os.popen("sudo docker build -t sahib-bot-idp").read())
-#     # print(os.popen("sudo docker build -t sahib-bot-idp | grep sahib-bot-idp:latest | awk '{ print $1 }'").read())
-#     # # os.system('ssh chatbotadmin@20.198.96.248')
-#     # print(p)
     s.logout()
-
+    # s.close()
+    print('------------------------SCP FOLDERS AND FILES')
     #SCP FOLDERS AND FILES
     os.system('scp -r actions/ chatbotadmin@20.198.96.248:/home/chatbotadmin/idp-chat/idp_chatbot')
     os.system('scp -r data/ chatbotadmin@20.198.96.248:/home/chatbotadmin/idp-chat/idp_chatbot')
@@ -190,16 +169,25 @@ else:
     os.system('scp -r actions/ chatbotadmin@20.198.96.248:/home/chatbotadmin/idp-chat/idp_chatbot')
     os.system('scp config.yml/ chatbotadmin@20.198.96.248:/home/chatbotadmin/idp-chat/idp_chatbot')
     os.system('scp domain.yml/ chatbotadmin@20.198.96.248:/home/chatbotadmin/idp-chat/idp_chatbot')
-    #os.system('scp 20210706-151341.tar.gz chatbotadmin@20.198.96.248:/home/chatbotadmin/idp-chat/idp_chatbot/models/')
+    # ####os.system('scp 20210706-151341.tar.gz chatbotadmin@20.198.96.248:/home/chatbotadmin/idp-chat/idp_chatbot/models/')
 
-# # if not s.login (ip, username, pw):
-# #     print("SSH session failed on login.")
-# #     print(str(s))
-# # else:
-# #     print("SSH session login successful")
-# #     s.sendline ('sudo docker build -t sahib-bot-idp')
-# #     s.sendline (pw)
-# #     s.logout()
+
+# s1 = pxssh.pxssh()
+# if not s1.login (ip, username, pw):
+#     print("SSH session failed on login.")
+#     print(str(s1))
+# else:
+#     print("SSH session login successful")
+#     print('-------------------BUILDING DOCKER IMAGE------------------')
+#     s1.sendline('sudo docker ps')
+#     # s1.sendline ('sudo docker build -t sahib-bot-idp')
+#     # s1.sendline (pw)
+#     output_of_docker_build = s.before.decode("utf8")
+#     print(output_of_docker_build)
+#     # print('-------------------RUNNING DOCKER IMAGE------------------')
+#     # s1.sendline ('docker run -d -p 5005:5005 sahib-bot-idp:latest')
+#     # s.sendline (pw)
+#     s1.logout()
 
 
 

@@ -563,6 +563,9 @@ nlu:
     - Is there any additional info on idp?
     - tell me about recent data on this portal
     - tell me about recent data on this webiste
+    - can you tell me most closest data you have
+    - most recent you have with you
+    - like any data that is most recently updated here
 
 - intent: faq-portal-b0/recent-data-available
   examples: |

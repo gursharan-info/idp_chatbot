@@ -57,7 +57,7 @@ class ActionVizFaq(Action):
                         None: "No-option"}
 
         # to get a slot value (here --> slot is intent_button)
-        print("slots value is ",tracker.slots['intent_button']) 
+        print("\n","slots value is ",tracker.slots['intent_button']) 
         if tracker.slots['intent_button'] ==None:
             slot_value_clicked = mapped_intent[tracker.slots['intent_button']]
         else:
@@ -101,12 +101,12 @@ class ActionVizFaq(Action):
 
             dispatcher.utter_message(text = f"Seems like you want to ask question from {mapped_intent[ _intent[:-3]]} ok now you can ask question from {mapped_intent[ _intent[:-3]]}")
             
-            tracker.slots['intent_button'] = _intent
+            tracker.slots['intent_button'] = _intent[:-3]
             
-            print(f"Now slot value is {tracker.slots['intent_button']}")
+            print(f"Now slot value is {tracker.slots['intent_button']}","\n")
             
             # else: # if confidence is less than 90 percent
             #     dispatcher.utter_message(text = f"Do you want to ask question from {mapped_intent[ _intent[:-3]]} , If yes please select an options from below"
             #     ,buttons=buttons)
 
-        return [SlotSet(key = "intent_button", value= _intent)] # setting slot values
+        return [SlotSet(key = "intent_button", value= _intent[:-3])] # setting slot values

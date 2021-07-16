@@ -688,6 +688,17 @@ nlu:
     - Why do we require data?
     - Why do we take information?
     - Why is data required?
+    - i have a query why do we need data here
+    - is there any need of data here if yes why
+    - why this website need data
+    - why this portal needs data
+    - why this portal needs info
+    - why this portal needs information
+    - why this website need info.
+    - information why do we need it
+    - info? why do we need it
+    - can you tell why eactly do you need data
+
 
 - intent: faq-portal-b0/data-updation
   examples: |

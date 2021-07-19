@@ -162,6 +162,7 @@ else:
     s.logout()
     # s.close()
     print('------------------------SCP FOLDERS AND FILES')
+    
     #SCP FOLDERS AND FILES
     os.system('scp -r actions/ chatbotadmin@20.198.96.248:/home/chatbotadmin/idp-chat/idp_chatbot')
     os.system('scp -r data/ chatbotadmin@20.198.96.248:/home/chatbotadmin/idp-chat/idp_chatbot')

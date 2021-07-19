@@ -5,7 +5,7 @@ import sys
 import time
 import re
 # pretty.install()
-sys.path.append('/home/bavalpreet/IDP/')
+# sys.path.append('/home/sahib/idp_chatbot')
 from server_credentials import IP, SUDOPASSWORD, USERNAME, PASSWORD
 
 # print(IP, USERNAME, PASSWORD)

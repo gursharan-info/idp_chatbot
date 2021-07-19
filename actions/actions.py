@@ -65,12 +65,12 @@ class ActionVizFaq(Action):
 
         # to get intent of user message
         _intent=tracker.latest_message['intent'].get('name')
-        print("Intent of user message ",_intent)
+        print("Intent of user message predicted by Rasa ",_intent)
 
         print(tracker.latest_message['text']) # to get user typed message 
 
         intent_found = json.dumps(tracker.latest_message['response_selector'][_intent]['ranking'][0]['intent_response_key'], indent=4)
-        print("retrieval we found ",intent_found)
+        print("retrieval we found (i.e intent response key ) ",intent_found)
 
         # confidence of retrieval intent we found
         retrieval_intent_confidence = tracker.latest_message['response_selector'][_intent]['response']['confidence']*100
@@ -99,9 +99,10 @@ class ActionVizFaq(Action):
             
             dispatcher.utter_message(response = intent_found)
 
-            dispatcher.utter_message(text = f"Seems like you want to ask question from {mapped_intent[ _intent[:-3]]} ok now you can ask question from {mapped_intent[ _intent[:-3]]}")
+            dispatcher.utter_message(text = f"Seems like you want to ask question from {mapped_intent[ _intent[:-3]]} If yes you are good to go with that  but if you want to ask question from any other category please select a button",buttons=buttons)
             
             tracker.slots['intent_button'] = _intent[:-3]
+
             
             print(f"Now slot value is {tracker.slots['intent_button']}","\n")
             
@@ -109,4 +110,7 @@ class ActionVizFaq(Action):
             #     dispatcher.utter_message(text = f"Do you want to ask question from {mapped_intent[ _intent[:-3]]} , If yes please select an options from below"
             #     ,buttons=buttons)
 
-        return [SlotSet(key = "intent_button", value= _intent[:-3])] # setting slot values
+        return [SlotSet(key = "intent_button", value= [str(_intent[:-3])] ) ] # setting slot values
+      
+
+

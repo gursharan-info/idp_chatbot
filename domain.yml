@@ -78,9 +78,6 @@ responses:
   utter_faq-visualisation-b5/only-see-states-find-district-village:
   - text: On the left side of the location popup window you can see the districts
       tab.
-  utter_faq-visualisation-b5/Why-not-see-all-selected-language:
-  - text: We are working on converting all the text into the selected language and
-      in some cases there are technical difficuilties for the translation.
   utter_faq-visualisation-b5/graph-not-see-loading:
   - text: Please make sure that you have not missed any pop-ups and your device is
       connected to the internet
@@ -307,6 +304,9 @@ responses:
   utter_faq-visualisation-b6/when-use-choropleth-map:
   - text: A choropleth map is best used to represents an aggregate summary of a geographic
       characteristic within each area, such as population density or per-capita income.
+  utter_faq-visualisation-b6/flip-axis:
+  - text: Once a chart is created, you can go to the settings and change the values
+      on each axis
   utter_faq-visualisation-b6/possibility-sorting-bars:
   - text: Yes, you can sort the bars in ascending or descending order and you can
       sort them alphabetically or by indicator value
@@ -469,6 +469,9 @@ responses:
   utter_faq-portal-b0/part-available-data:
   - text: India Data portal covers multiple domains like Agriculture, Financial Inclusion,
       Rural Development, Economy, Socio- economic, Climate etc
+  utter_faq-portal-b0/Why-not-see-all-selected-language:
+  - text: We are working on converting all the text into the selected language and
+      in some cases there are technical difficuilties for the translation.
   utter_faq-portal-b0/most-recent-data:
   - text: For some datasets you'll find data available from last month on the portal.
       Data is updated on the portal after it is made available by the Indian Government
@@ -530,6 +533,8 @@ responses:
   - text: Please send the content to us at idp@isb.edu
   utter_faq-portal-b0/frequency-of-data-updation:
   - text: India Data Portal updates data as soon as the source updates them
+  utter_faq-portal-b0/data-change-notifications:
+  - text: As of now, we do not have custom notifications
   utter_faq-portal-b0/data-sourced-from-gov-sites:
   - text: The data is sourced from reliable publically available sources
   utter_faq-portal-b0/hyperlink-to-source-data:
@@ -611,6 +616,9 @@ responses:
   utter_faq-visualisation-b2/edit-dimensions-selected-for-visualization:
   - text: You can edit by clicking on Clear all button which is on the top of the
       dimensions popup
+  utter_faq-visualisation-b2/selecting-time-necessary:
+  - text: If there is only one year in the dataset then no need to select time. But
+      if there are multiple years in a dataset and you have to select a time
   utter_faq-visualisation-b2/How-visualize-trend:
   - text: if you have selected two dimensions and want to see their postion over time.
       ft then a trend chart can be obtained

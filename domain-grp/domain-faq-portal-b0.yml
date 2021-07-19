@@ -51,7 +51,7 @@ responses:
   utter_faq-portal-b0/compare-datasets-on-idp: #34
   - text: Go to the visualize page, and on the left hand side, you will see the Add Dataset option. You can add upto 2 datasets one by one for comparison
 
-  utter_faq-portal-b0/why_idp:
+  utter_faq-portal-b0/why_idp: #3
   - text: With the help of IDP, a user can use the multiple datasets available, which have been already cleaned and vetted and have been presented in easy to understand manner. The users can make visualisations based on the chosen parameters as per the requirement of their writing. What’s even more exciting is that these visualisations are easily downloadable and can be inserted straight away in a story. 
 
   utter_faq-portal-b0/count-of-datasets: #4
@@ -59,6 +59,9 @@ responses:
  
   utter_faq-portal-b0/part-available-data: #14
   - text: India Data portal covers multiple domains like Agriculture, Financial Inclusion, Rural Development, Economy, Socio- economic, Climate etc
+  
+  utter_faq-portal-b0/Why-not-see-all-selected-language: #150
+  - text: We are working on converting all the text into the selected language and in some cases there are technical difficuilties for the translation.
   
   utter_faq-portal-b0/most-recent-data: #245
   - text: For some datasets you'll find data available from last month on the portal. Data is updated on the portal after it is made available by the Indian Government 
@@ -115,7 +118,9 @@ responses:
   utter_faq-portal-b0/uploading-news: #343
   - text: Please send the content to us at idp@isb.edu
   utter_faq-portal-b0/frequency-of-data-updation: #345
-  - text: India Data Portal updates data as soon as the source updates them 
+  - text: India Data Portal updates data as soon as the source updates them
+  utter_faq-portal-b0/data-change-notifications: 
+  - text: As of now, we do not have custom notifications  
   utter_faq-portal-b0/data-sourced-from-gov-sites:  #346
   - text: The data is sourced from reliable publically available sources
   utter_faq-portal-b0/hyperlink-to-source-data: #348

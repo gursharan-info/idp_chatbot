@@ -115,6 +115,29 @@ nlu:
     - What datasets are available on IDP?
     - What datasets are available on the portal?
     - How many datasets are available on the India Data Portal?
+    - i just wanted to know how many db can i upload here
+    - if there is a facaility that i can upload my personal datasets on here
+    - on IDP how many datasets i can upload ?
+    - can you tell me how can i upload datasets on indian data portal
+    - how i am supposed to upload datasets while i am here
+    - how many datasets are accessible on the India Data Portal
+    - how many datasets are provided on the India Data Portal
+    - how many datasets are mentioned on the Indian Data Portal
+    - What datasets can I discover on IDP?
+    - What datasets may be found on the Indian Data Portal?
+    - What information may be found on the Indian Data Portal?
+    - And which information may be found on the Indian Data Portal?
+    - And which information may be found on the Indian Portal Website?
+    - And which information may be found on the Indian Online Website?
+    - how many datasets are on this webiste
+    - this webiste contains how many datasets
+    - And which information may be found on the National Portal Website?
+    - how many datasets may even be found on the India Data Portal
+    - how many datasets might well be found on the India Data Portal
+    - how many records might well be found on the India Data Portal
+    - how many records might well be retrieved on the India Data Portal
+    - how many records might well be obtained on the India Data Portal
+
 - intent: faq-visualisation-b0/type_of_viz
   examples: |
     - what type of visulaisations are suuported by India data portal
@@ -130,6 +153,15 @@ nlu:
     - What graphics are possible?
     - What visualizations are possible on IDP?
     - What visualizations are possible?
+    - What kinds of visuals does India Data Portal support?
+    - What kinds of infographics does India Data Portal encourage?
+    - What kinds of visualisation does India Data Portal encourage?
+    - What kinds of graphics does India Data Portal encourage?
+    - What sorts of graphics does India Data Portal encourage?
+    - How many sorts of graphics does India Data Portal encourage?
+    - What sorts of analytics does India Data Portal encourage?
+    - india data portal supports what sort of visuals
+
 
 - intent: faq-visualisation-b0/source_of_data #already present
   examples: |
@@ -140,6 +172,19 @@ nlu:
     - Are all sources presnt here legit?
     - what are the sources ?
     - Is there any private data on the portal?
+    - What is the source of the information?
+    - Where does the data on IDP come from?
+    - Where would the data on IDP come from?
+    - Where would the data on IDP derive from?
+    - What is the source of the information on the Indian Data Portal?
+    - What is the source of the data on the Indian Data Portal?
+    - And what was the source of the data on the Indian Data Portal?
+    - What really is the source of the data on the Indian Data Portal?
+    - And what's the source of the data on the Indian Data Portal?
+    - And what's the source of the data on the Indian Portal Website?
+    - Then what was the source of the data on the Indian Portal Website?
+    - But what's the source of the data on the Indian Portal Website?
+
 - intent: faq-visualisation-b0/will_addtional_sources_be_added  #already present
   examples: |
     - Will additional training materials/videos for different visualization scenarios be posted on the website?
@@ -149,6 +194,25 @@ nlu:
     - In future are there any chances that i will see different repos over here
     - in coming future will more data be presnt on here.
     - how can I get training to use idp?
+    - Can I expect to see more datasets on this platform in the coming years?
+    - Can I expect to see more datasets on this platform in the years ahead?
+    - Can I anticipate to see more data on this site in the years ahead?
+    - Can I expecting to see more data on this site in the years ahead?
+    - Could I expecting to see more data on this site in the years ahead?
+    - Could I expecting to see more data on this site in the longer term?
+    - Could I assume to see more data on this site in the longer term?
+    - Could I assume to see even more data on this site in the longer term?
+    - Would I anticipate to see even more data on this site in the longer term?
+    - can I predict to see even more data on this site in the longer term?
+    - Are there any chances that I'll see various repos in the future?
+    - Are there any chances that I'll see different repos in the future?
+    - If there are any chances that I'll see different repos in the future?
+    - Are there other chances that I'll see different repos in the future?
+    - Have there been any chances that I'll see different repos in the future?
+    - Have there been any chances that I'll see different repos in the long run?
+    - Have there been any chances that I'll see different repos in the long run?
+    - Have there been any chances that I'll see different directories in the long run?
+  
 
 
 
@@ -164,6 +228,19 @@ nlu:
     - How often is the information updated?
     - How often is the information refreshed?
     - What is the frequency of data updates?
+    - How many times does data get updated in a year?
+    - How many times does information get changed in a year?
+    - How several times does information get changed in a year?
+    - How many times does information get changed annually?
+    - How many times does information get changed each year?
+    - How many instances does information get changed each year?
+    - In a year, how frequently do you upload data to IDP?
+    - In a year, how frequently do you upload data to the Indian data portal?
+    - In a year, how often would you upload data to the Indian data portal?
+    - In a year, when would you upload data to the Indian data portal?
+    - In a year, how the fuck do you upload data to the Indian data portal?
+    - In a year, since when do you upload data to the Indian data portal?
+
 
 
 
@@ -201,6 +278,15 @@ nlu:
     - Would there be multiple data sets for the same parameters because this is an Open Source initiative?
     - As this an open source initiative, will there be multiple datasets for same parameters?
     - how can we know which dataset is found more useful by the users?
+    - How can we tell which dataset is more useful to users?
+    - How can we determine which dataset is more useful to users?
+    - How can we determine which dataset is more user - friendly?
+    - How can we determine which dataset is more helpful?
+    - How else can we determine which dataset is more helpful?
+    - How else can we determine which information is more helpful?
+    - How else can we determine which source is more helpful?
+    - How else can we discern which source is more helpful?
+    - How else can we discern which information is more helpful?
     - how am i supposed to know which is the most liked dataset by the user?
 
 
@@ -233,6 +319,7 @@ nlu:
     - Are you mad??
     - Physiotherapy
     - ??
+    - interpret my credntials
     - Can you tell me something about physiotherapy?
     - Pls u want to see maps
     - Blabla

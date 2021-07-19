@@ -70,6 +70,10 @@ responses:
   utter_faq-visualisation-b2/edit-dimensions-selected-for-visualization: #73
   - text: You can edit by clicking on Clear all button which is on the top of the dimensions popup 
 
+  utter_faq-visualisation-b2/selecting-time-necessary: #73
+  - text: If there is only one year in the dataset then no need to select time. But if there are multiple years in a dataset and you have to select a time
+  
+
   utter_faq-visualisation-b2/How-visualize-trend: #75
   - text: if you have selected two dimensions and want to see their postion over time. ft then a trend chart can be obtained
 

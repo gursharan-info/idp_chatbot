@@ -33,10 +33,13 @@ responses:
   utter_faq-visualisation-b6/create-3-dimensional-graph: #186
   - text: Currently we do not have the option to create a 3 dimensional graph
 
-  utter_faq-visualisation-b6/when-use-choropleth-map: #189
+  utter_faq-visualisation-b6/when-use-choropleth-map: #188
   - text: A choropleth map is best used to represents an aggregate summary of a geographic characteristic within each area, such as population density or per-capita income.
 
-  utter_faq-visualisation-b6/possibility-sorting-bars: #191
+  utter_faq-visualisation-b6/flip-axis: #189
+  - text: Once a chart is created, you can go to the settings and change the values on each axis
+
+  utter_faq-visualisation-b6/possibility-sorting-bars: #190
   - text: Yes, you can sort the bars in ascending or descending order and you can sort them alphabetically or by indicator value 
 
   utter_faq-visualisation-b6/maximum-indicators-one-visulisation: #192

@@ -243,16 +243,21 @@ fo any help related to above commands
 
 
 ### If Rasa X **fails to train** or **can't upload model**
-
----> CLear RAM
+CLear RAM
 
     1. ``` sync; echo 3 | sudo tee /proc/sys/vm/drop_caches ```
 
-    2. ``` sync; echo 2 | sudo tee /proc/sys/vm/drop_caches ```
+    2. sync; echo 2 | sudo tee /proc/sys/vm/drop_caches 
 
 Now ``` sudo docker-compose down ```
 
 and  then again   ``` sudo docker-compose up -d ```
+
+# Whenver doing rasa training make sure  
+
+1. You have added all **response selectors**
+2. Made changes for those repsonse selectors in rules and config file
+3. WHen we press **rasa train** make sure all **retrieval intents** are present 
 #### Additional 
     TO check which files are consuming how much space 
     https://www.hostinger.in/tutorials/vps/how-to-check-and-manage-disk-space-via-terminal

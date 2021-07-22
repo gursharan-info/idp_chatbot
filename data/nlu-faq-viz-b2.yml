@@ -962,7 +962,7 @@ nlu:
     - What are our alternatives for changing the visualisation dimensions we've selected?
     - How do we change the dimensions of the visualisation we've chosen?
 
-- intent: faq-visualisation-b2/selecting-time-necessary
+- intent: faq-visualisation-b2/selecting-time-necessary #73
   examples: |
     - on idp Is picking a time frame crucial?
     - necessary to pick a time?
@@ -998,7 +998,7 @@ nlu:
     - Is it necessary to pick a specific time?
 
 
-- intent: faq-visualisation-b2/How-visualize-trend
+- intent: faq-visualisation-b2/How-visualize-trend    #74
   examples: |
     - visualize a trend
     - how do i visualise a trend?
@@ -1049,7 +1049,7 @@ nlu:
     - ahmm but the best way to visualise a trend?
     - how should a trend be depicted?
 
-- intent: faq-visualisation-b2/select-location
+- intent: faq-visualisation-b2/select-location  #75
   examples: |
     - select a location
     - how to select a location?
@@ -1084,9 +1084,10 @@ nlu:
     - deciding on a place critical?
     - critical to pick a location?
     - picking a location necessary?
+    - specifying a location is necessory?
 
 
-- intent: faq-visualisation-b2/donot-select-location-possible-visualization
+- intent: faq-visualisation-b2/donot-select-location-possible-visualization #76
   examples: |
     - visualisation is possible without location?
     - without location is it possible to visualise?
@@ -1141,7 +1142,7 @@ nlu:
     - What happens if we don't decide on a location?
 
 
-- intent: faq-visualisation-b2/select-Districts-after-states-necessary
+- intent: faq-visualisation-b2/select-Districts-after-states-necessary    #77
   examples: |
     - Is it important to select Districts after states?
     - select Districts after states
@@ -1193,9 +1194,9 @@ nlu:
     - Is it important to choose city after you've decided on States?
     - Is it necessary to choose city after determining States?
     - Is it important to choose city after deciding on States?
+    - choosing district after the state is necessary?
 
-
-- intent: faq-visualisation-b2/add-dataset
+- intent: faq-visualisation-b2/add-dataset    #79
   examples: |
     - add datasets why?
     - datasets are added?
@@ -1251,4 +1252,5 @@ nlu:
     - What exactly is the point of including a dataset?
     - What are the benefits of a dataset?
     - What are the benefits of using a dataset?
+    - what can be done after adding a dataset?
 

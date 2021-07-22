@@ -13,7 +13,7 @@ responses:
   utter_faq-visualisation-b3/why-add-dataset: #79
   - text: We can add datasets in order to compare between the two datasets
   
-  utter_faq-visualisation-b3/options-to-make-chart-builder: #80
+  utter_faq-visualisation-b3/options-to-make-chart-builder: #80, 78
   - text: We can select as many options on chart builder as per our need
   
   utter_faq-visualisation-b3/to-create-state-level-chart: #81
@@ -49,10 +49,10 @@ utter_faq-visualisation-b3/why-farm-size-class-selected:  #88
   utter_faq-visualisation-b3/where-is-graph:  #91
   - text: First select a dataset and then select the indicators and dimensions with location and time. Then select 'Build your chart' for the visualization.
 
-  utter_faq-visualisation-b3/what-to-select-first:  #93
+  utter_faq-visualisation-b3/what-to-select-first:  #92
   - text: If you want to visualize any dataset then go to visualize by clicking on the top tab dataset and then visualize. then add the dataset by clicking on the plus sign and then select the desired dataset from the list.
 
-  utter_faq-visualisation-b3/how-can-select-graph:  #94
+  utter_faq-visualisation-b3/how-can-select-graph:  #93
   - text: As of now you cannot select a graph of your own choice. But for visualization if you press the build your chart button then there are multiple chart which would come. Just view the chart which you are more comfortable with.
 
   utter_faq-visualisation-b3/diff-bw-crop-and-crop-type:  #96

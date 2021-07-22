@@ -5,25 +5,18 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- affirm:
-    use_entities: true
 - faq-visualisation-b0:
     use_entities: true
 - greet:
     use_entities: true
 - goodbye:
     use_entities: true
-- deny:
-    use_entities: true
-- mood_great:
-    use_entities: true
-- mood_unhappy:
-    use_entities: true
 - idp_bot_intro:
     use_entities: true
 - out_of_scope:
     use_entities: true
-- ok
+- ok:
+    use_entities: true
 entities:
 - intent_button
 slots:
@@ -32,20 +25,14 @@ slots:
     influence_conversation: true
 
 responses:
-  utter_ok:
+
+  utter_ok_done:
   - text: Ok go ahead :)
   utter_greet:
   - text: Hey! How are you? How can i help you
-  utter_cheer_up:
-  - image: https://i.imgur.com/nGF1K8f.jpg
-    text: 'Here is something to cheer you up:'
-  utter_did_that_help:
-  - text: Did that help you?
-  utter_happy:
-  - text: Great, carry on!
   utter_goodbye:
   - text: Bye It was very nice meeting you
-  utter_iamabot:
+  utter_idp_bot_intro:
   - text: I am a bot that is here to help you for INDIAN DATA portal
   - text: ' Hey I am a chatbot to help you here'
   - text: I am bot made by IDP
@@ -81,6 +68,6 @@ responses:
 actions: 
 - action_slot_setter
 - action_viz_faq
-# - action_portal_faq
+
 forms: {}
 e2e_actions: []

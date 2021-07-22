@@ -1,5 +1,8 @@
 
 
+version: "2.0"
+nlu:
+
 - intent: faq-train-b1/often-workshop-arrang #379
   examples: |
     - When are the workshops held?

@@ -13,10 +13,10 @@ entities: []
 slots: {}
 
 responses:
-    utter_faq-train-b1/often-workshop-arrang: #379
-    - text: Workshops are arranged frequently. You can see all of the updates in our social media handles and our website.
-    utter_faq-train-b1/onlin-train-curriculum: #417
-    - text: In IDP we have various online training curriculam like workshops, fellowships etc. Kindly write to us at idp@isb.edu to know more.
+  utter_faq-train-b1/often-workshop-arrang: #379
+  - text: Workshops are arranged frequently. You can see all of the updates in our social media handles and our website.
+  utter_faq-train-b1/onlin-train-curriculum: #417
+  - text: In IDP we have various online training curriculam like workshops, fellowships etc. Kindly write to us at idp@isb.edu to know more.
     
 actions: []
 forms: {}

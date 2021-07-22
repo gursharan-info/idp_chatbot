@@ -90,10 +90,10 @@ rules:
     # - action: utter_faq-visualisation-b6
     - action : action_viz_faq
 
-- rule: for idp bot
-  steps:
-  - intent: idp_bot_intro
-  - action: utter_iamabot
+# - rule: for idp bot
+#   steps:
+#   - intent: idp_bot_intro
+#   - action: utter_iamabot
 
 - rule: oUt of scope
   steps:

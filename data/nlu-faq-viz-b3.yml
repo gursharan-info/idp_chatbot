@@ -53,8 +53,9 @@ nlu:
     - Why is additional dataset required?
     - benefits of additional dataset
     - advantages of additional dataset?
+    - why should i add new dataset?
   
-- intent: faq-visualisation-b3/options-to-make-chart-builder  #80
+- intent: faq-visualisation-b3/options-to-make-chart-builder  #80, 78
   examples: |
     - How many options should we select on chart builder?
     - What are the options on chart builder?
@@ -96,6 +97,9 @@ nlu:
     - How many options from the chart builder should we choose?
     - In the chart builder, how many options should we pick?
     - is there any limit to select options from chart builder?
+    - do we need to select some specific options from chart builder in order to make chart?
+    - are there any restrictions on number of options to be selected?
+    - How many options should we select to visualise? 
 
 - intent: faq-visualisation-b3/to-create-state-level-chart  #81
   examples: |
@@ -150,6 +154,10 @@ nlu:
     - tell me how state level visual can be made?
     - can you help me with making chart at state level?
     - guide me to make state level plot.
+    - steps to create state level chart
+    - let meknow how to create state level chart?
+    - process of creating state level chart?
+
 
 - intent: faq-visualisation-b3/to-create-district-level-chart #82
   examples: |
@@ -200,6 +208,9 @@ nlu:
     - tell me how district level visual can be made?
     - can you help me with making chart at district level?
     - guide me to make district level plot.
+    - steps to create district level chart
+    - let meknow how to create district level chart?
+    - process of creating district level chart?
 
 - intent: faq-visualisation-b3/why-select-crops #83
   examples: |
@@ -240,7 +251,7 @@ nlu:
     - What is the significance of crop selection?
     - Why is crop selection necessary?
     - What are the reasons for choosing crops?
-
+    - why am i supposed to select crops?
 
 
 - intent: faq-visualisation-b3/why-farm-size-category #84
@@ -299,7 +310,7 @@ nlu:
     - What factors influenced your choice of farm size?
     - What makes a farm size category so important?
     - What are the advantages of categorizing farms by size?
-
+    - how can i see the farm sizes?
 
 - intent: faq-visualisation-b3/why-crop-type-selected #85
   examples: |
@@ -345,6 +356,7 @@ nlu:
     - Why is it important to choose a crop type?
     - What are the benefits and drawbacks of various types of crops?
     - What are the advantages of choosing a particular crop type?
+    - in what scenario selection of crop type is necessary?
 
 
 - intent: faq-visualisation-b3/why-social-grp-selected  #86
@@ -390,6 +402,7 @@ nlu:
     - Why is it important to join a social group?
     - What are the advantages of being a member of a social group?
     - Why is it important to pick a social group?
+    - in what scenario selection of social group is necessary?
 
 
 - intent: faq-visualisation-b3/what-happens-if-we-select-all-on-chart-builder #87
@@ -433,6 +446,8 @@ nlu:
     - What happens if we use the chart builder to select all of the options?
     - What if we use the chart builder to choose all of the options?
     - What if we select all of the options with the chart builder?
+    - what will happen if i will select all the options chart builder having
+    - what will it lead towards if everything from chart builder is selected.
 
 - intent: faq-visualisation-b3/why-farm-size-class-selected   #88
   examples: |
@@ -479,7 +494,9 @@ nlu:
     - Why is it important to choose a farm size class?
     - What factors went into the selection of the farm size class?
     - What is the significance of choosing a farm size class?
-    - What are the benefits of taking a class on farm size?
+    - in what scenario selecting a farm size class will help me?
+    - can you tell me how selecting a farm size class will help me out?
+    - picking a farm size class will be beneficial in which case?
 
 
 - intent: faq-visualisation-b3/how-access-full-data   #89
@@ -531,6 +548,8 @@ nlu:
     - What is the most efficient way for me to obtain all of the necessary data?
     - What is the best way for me to get full access to the data?
     - What is the most efficient way for me to get all of the data I need?
+    - will it be possible to get full data?
+    - is full data accessible through portal?
 
 
 - intent: faq-visualisation-b3/how-to-create-indicators   #90
@@ -579,6 +598,8 @@ nlu:
     - What is the best way to create new indicators?
     - What is the most efficient way of creating new indicators?
     - How can i go about creating new indicators?
+    - procedure for creating new indicators?
+    - steps for creating new indicators?
 
 
 - intent: faq-visualisation-b3/where-is-graph   #91
@@ -633,6 +654,7 @@ nlu:
     - I'm looking for the graph but can't seem to find it.
     - I'm having trouble finding the graph; could you tell me where it is?
     - Where can I look for the graph if I can't see it?
+    - help me in locating graph?
 
 
 - intent: faq-visualisation-b3/what-to-select-first   #92
@@ -688,6 +710,7 @@ nlu:
     - Which course of action should I take first?
     - Which option should I take first?
     - I'm not sure what I'll do first.
+    - tell me what i have to select first on the portal?
 
 
 - intent: faq-visualisation-b3/how-can-select-graph   #93
@@ -749,12 +772,12 @@ nlu:
     - What clearly is the distinguishing between a crop and a crop type?
     - What's the difference b/w a crop and a sort of crop?
     - What is the distinction between a crop and a crop type?
-    - What is the difference between a crop and a crop type, and how do you distinguish between the two?
+    - What is the diff between a crop and a crop type, and how do you distinguish between the two?
     - What makes a crop different from a crop type?
     - What exactly is the distinction between a crop and a crop type?
     - What is the difference between a crop and a crop type?
     - How do you distinguish between a crop and a crop type?
-    - What's the difference between a crop and a crop type, and how do you tell the two apart?
+    - What's the diff between a crop and a crop type, and how do you tell the two apart?
     - What exactly is the difference between a crop and a crop type?
     - What's the difference between a crop and a crop type?
     - How do you tell the difference between a crop and a crop type?
@@ -766,7 +789,7 @@ nlu:
     - What's the distinction b/w a crop and a crop type, exactly?
     - What's the difference between a crop and a crop type, exactly?
     - Is there a distinction between a crop and a crop type?
-    - What's the difference between a crop and a type of crop?
+    - What's the diff bw a crop and a type of crop?
     - What exactly is the distinction between crop and crop type?
     - tell me how crop is different from crop type?
     - differentiate b/w crop and crop type
@@ -811,9 +834,10 @@ nlu:
     - What options are there for changing the chart's color scheme?
     - How can I change the chart's colors?
     - What are the options for changing the chart's colors?
+    - help me in changing color of the chart
 
 
-- intent: faq-visualisation-b3/share-viz-of-personal-proj
+- intent: faq-visualisation-b3/share-viz-of-personal-proj   #102
   examples: |
     - Can I use this visualisation for my personal project?
     - It is possible to use this visualisation for my personal project?
@@ -857,9 +881,10 @@ nlu:
     - Is it possible for me to use this visualization for a personal project?
     - Is this a good visualization for a personal project?
     - Is this an appropriate visualization for a personal project?
+    - can i use this visulaisation for some other task?
 
 
-- intent: faq-visualisation-b3/give-credit-to-idp
+- intent: faq-visualisation-b3/give-credit-to-idp   #103
   examples: |
     - Do I have to cite/give credit to IDP?
     - Is it necessary to cite/give credit to India data portal?
@@ -897,8 +922,9 @@ nlu:
     - Is it necessary for me to give this website credit or cite it?
     - Is it required that I credit/cite this portal?
     - Is crediting or citing IDP required?
+    - tell me will i have to give credits while sharing the visuals?
 
-- intent: faq-visualisation-b3/can-i-share-my-viz
+- intent: faq-visualisation-b3/can-i-share-my-viz   #104
   examples: |
     - Can I share Visualisation on my blog/website?
     - Can we share Visualisation on our blog/website?
@@ -934,6 +960,7 @@ nlu:
     - Is it permissible for me to incorporate Visualization into my blog or website?
     - tell me is it acceptable for me to post Visualization on my blog or website?
     - Is it OK if I put Visualization on my blog or website?
+    - am i allowed to share my visualisation?
 
 
 - intent: faq-visualisation-b3/change-axis-of-graph #105
@@ -973,9 +1000,10 @@ nlu:
     - help me with changing graphs axis
     - guide me to change graphs axis
     - steps for changing graphs axis?
+    - procedure for changing the graphs axis.
     - tell me how am i supposed to change graphs axis?
 
-- intent: faq-visualisation-b3/how-tochange-chart-not-liked-first-one
+- intent: faq-visualisation-b3/how-tochange-chart-not-liked-first-one   #107
   examples: |
     - I don't like my chart. How can I get another chart?
     - How can I replace my chart with new one?
@@ -1014,9 +1042,10 @@ nlu:
     - How can I get a new one if I don't like the one I have?
     - If I don't like my current chart, how can I get a different one?
     - If I don't like my current chart, how do I get a new one?
+    - i want to get new chart, i don't like the current one. How  am i supposed to do that?
+    - i want the new chart as the current one is not according to my taste.
 
-
-- intent: faq-visualisation-b3/graphs-diff-after-download
+- intent: faq-visualisation-b3/graphs-diff-after-download   #108
   examples: |
     - Why does the graph look different after downloading?
     - my grph is diff after i have downloaded
@@ -1025,7 +1054,7 @@ nlu:
     - is there any reasons why my grpah is diff when i downloaded
     - why does the graph look different while downloading?
     - Why does the graph appear to be different after it has been downloaded?
-    - What happened to the graph after it was downloaded?
+    - What happened to the graph after it was taken offline?
     - Why does the graph have a different appearance after it has been downloaded?
     - after downloading the appearance of graph seems to me changed.
     - appearance of graph is altered after downloading it. why so?
@@ -1039,13 +1068,13 @@ nlu:
     - What happened to the graph after it was downloaded?
     - After the graph was downloaded, what happened to it?
     - Why does the graph change appearance after it has been downloaded?
-    - Why has the graph changed since it was downloaded?
+    - Why has the graph changed since it was taken offline?
     - What happened to the graph once it was downloaded?
     - What happened to the graph after you downloaded it?
     - What happened with the graph once it was downloaded?
     - Why does the graph now appear to be different after being downloaded?
     - Why does the graph look different now that it's been downloaded?
-    - Why does the graph change after it's been downloaded?
+    - Why does the graph change after it's been taken offline?
     - Why does the graph appear to have changed after it has been downloaded?
     - Why does the graph now appear to be different after it has been downloaded?
     - Why does the graph look different once it's been downloaded?
@@ -1054,7 +1083,7 @@ nlu:
     - So, what happened to the graph after it was downloaded?
 
 
-- intent: faq-visualisation-b3/bar-graphs-too-wide
+- intent: faq-visualisation-b3/bar-graphs-too-wide    #109
   examples: |
     - My bar graph is too wide. How can I make it fit in one screen?
     - How can I manage my bar graph?
@@ -1102,6 +1131,10 @@ nlu:
     - How can I fit my bar graph on a single screen?
     - If my bar graph is too large, how can I fit it on one screen?
     - How can I make my bar graph fit on one screen if it's too big?
+    - my bar graph is too wide how can i resize it?
+    - can i resize my bar plot?
+    - is there any provision to resize my plot?
+    - do you provide functionality to resize the charts?
 
 - intent: faq-visualisation-b3/not-able-to-understand-viz
   examples: |
@@ -1152,3 +1185,6 @@ nlu:
     - What I'm seeing confuses me.
     - My visualization isn't working for me.
     - I'm having a hard time making sense of what I'm seeing.
+    - help me in understanding this visual
+    - having trouble in interpreting the plots
+    - facing difficulty in understanding this visualisation

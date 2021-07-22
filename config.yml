@@ -7,10 +7,8 @@ pipeline:
   - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
-    alias: "convert-cvf-1"
 
   - name: CountVectorsFeaturizer
-    alias: cvf-word
     analyzer: char_wb
     min_ngram: 1
     max_ngram: 4
@@ -26,8 +24,16 @@ pipeline:
 
   - name: ResponseSelector
     epochs: 100
+    retrieval_intent: faq-train-b1 
+
+  - name: ResponseSelector
+    epochs: 100
     retrieval_intent: faq-portal-b0 # for faq-portal-b0 specific questions
 
+
+  - name: ResponseSelector
+    epochs: 100
+    retrieval_intent: faq-portal-b1
 
   - name: ResponseSelector
     epochs: 100
@@ -36,43 +42,40 @@ pipeline:
   - name: ResponseSelector
     epochs: 100
     retrieval_intent: faq-dataset-b0 # for faq-dataset-b0 specific questions
+  
+  - name: ResponseSelector
+    epochs: 100
+    retrieval_intent: faq-dataset-b1
 
   - name: ResponseSelector
     epochs: 100
-    featurizers : ["convert-cvf-1", "cvf-word"] # we want response selector to use features from 
-                                  # count vector featurizer and not from regex featurizer and 
-                                  # lexical syntatic featurizer
     retrieval_intent: faq-visualisation-b0
 
   - name: ResponseSelector
     epochs: 100
-    featurizers: ["convert-cvf-1", "cvf-word"]
     retrieval_intent: faq-visualisation-b1 # from faq number 35 to 54
 
   - name: ResponseSelector
     epochs: 100
-    featurizers: ["convert-cvf-1", "cvf-word"]
     retrieval_intent: faq-visualisation-b2 # from faq number 55 to 80
 
   - name: ResponseSelector
     epochs: 100
-    featurizers: ["convert-cvf-1", "cvf-word"]
     retrieval_intent: faq-visualisation-b3 # from faq number 80 to 110
 
   - name: ResponseSelector
     epochs: 100
-    featurizers: ["convert-cvf-1", "cvf-word"]
     retrieval_intent: faq-visualisation-b4 # from faq number 110 to 140
 
   - name: ResponseSelector
     epochs: 100
-    featurizers: ["convert-cvf-1", "cvf-word"]
     retrieval_intent: faq-visualisation-b5 # from faq number 140 to 180
 
   - name: ResponseSelector
     epochs: 100
-    featurizers: ["convert-cvf-1", "cvf-word"]
     retrieval_intent: faq-visualisation-b6 # from faq number 180 to 238
+
+
 
   - name: FallbackClassifier
     threshold: 0.75

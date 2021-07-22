@@ -1566,14 +1566,14 @@ nlu:
 
 - intent: faq-visualisation-b6/change-visulaisation-to-local-language # 229
   examples: |
-    - change my visualisation into local language
-    - help with visualisation in local language
-    - help with language change
-    - how to change visualisation into local language
-    - wirting in loacal language
-    - change text to local language
-    - help with local language change
-    - how to change language
+    - change my visualisation into local lang
+    - help with visualisation in local lang
+    - help with lang change
+    - how to change visualisation into local lang
+    - wirting in loacal lang
+    - change text to local lang
+    - help with local lang change
+    - how to change lang
     - change language
     - How can I change my visualization into my local language
     - How can I translate my visualisation into my native language?
@@ -1592,9 +1592,9 @@ nlu:
     - How do I translate my visualisation into my native tongue?
     - What is the most effective way for me to express my ideas in my native language?
     - What is the greatest way for me to communicate my vision in my native language?
-    - What is the most efficient approach for me to translate my visualisation into my native language?
-    - What is the most best way for me to communicate my vision in my native language?
-    - What is the best approach for me to express my thoughts in my native language?
+    - What is the most efficient approach for me to translate my visualisation into my native dialect?
+    - What is the most best way for me to communicate my vision in my native dialect?
+    - What is the best approach for me to express my thoughts in my native dialect?
     - What's the most best approach for me to communicate my vision in my native tongue?
     - What's the most best approach for me to translate my visualisation into my native tongue?
     - What is the most effective technique for me to convey my vision into my local tongue?
@@ -1608,14 +1608,14 @@ nlu:
     - local language title
     - change title language to local language
     - changing title of graphs to local lang
-    - wrtie title of graphs in local language
-    - change title of graphs language
+    - wrtie title of graphs in local lang
+    - change title of graphs lang
     - can title of graphs also be translated ?
-    - writting title of graphs in local language
-    - composing the title  language in the native language
-    - composing the title of graphs language in the native language?
-    - Is it possible to write the title of graphs in the local language?
-    - Would it be able to create the title of graphs  in the local language?
+    - writting title of graphs in local langs
+    - composing the title  langs in the native langs
+    - composing the title of graphs langs in the native langs?
+    - Is it possible to write the title of graphs in the local langs?
+    - Would it be able to create the title of graphs  in the local langs?
     - Would that be able to create the title language in the local language?
     - Would that be possible to write the title language in the local language?
     - Is it possible for me to use English for the title?

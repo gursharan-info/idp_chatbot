@@ -37,7 +37,7 @@ responses:
   utter_faq-visualisation-b3/what-happens-if-we-select-all-on-chart-builder:  #87
   - text: Most frequently a tree map will appear, it is advisable to select the the option one by one. 
   
-utter_faq-visualisation-b3/why-farm-size-class-selected:  #88
+  utter_faq-visualisation-b3/why-farm-size-class-selected:  #88
   - text: If the user wants to see the disaggregated data accross the farm size category they should select this option.
   
   utter_faq-visualisation-b3/how-access-full-data:  #89

@@ -15,10 +15,20 @@ rules:
   - intent: faq-portal-b0
   - action : action_viz_faq
 
+- rule: for portal
+  steps:
+  - intent: faq-portal-b1
+  - action : action_viz_faq
+
 
 - rule: for training
   steps:
   - intent: faq-train-b0
+  - action : action_viz_faq
+
+- rule: for training
+  steps:
+  - intent: faq-train-b1
   - action : action_viz_faq
 
 - rule: for fellowship
@@ -29,6 +39,11 @@ rules:
 - rule: for dataset
   steps:
   - intent: faq-dataset-b0
+  - action : action_viz_faq
+
+- rule: for dataset
+  steps:
+  - intent: faq-dataset-b1
   - action : action_viz_faq
 
 - rule: for faq visualisation

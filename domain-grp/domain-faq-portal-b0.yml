@@ -10,9 +10,11 @@ intents:
 entities: []
 slots: {}
 responses:
-  utter_faq-portal-b0/about_idp: 
+  utter_faq-portal-b0/about_idp: #2
   - text: IDP is Your one-stop destination for open-access data on agriculture, rural development and financial inclusion in India.The portal contains a data repository with processed and documented public datasets on related themes. For agriculture, these include crops, water, livestock, public investments, etc at levels such as districts, tehsils, and villages with a largely rural focus and socio-economic characteristics in both rural and urban areas at granular spatial scales like district, town and ward spanning the entire country.
   
+  utter_faq-portal-b0/why_idp: #3
+  - text: IDP is Your one-stop destination for open-access data on agriculture, rural development and financial inclusion in India.The portal contains a data repository with processed and documented public datasets on related themes. For agriculture, these include crops, water, livestock, public investments, etc at levels such as districts, tehsils, and villages with a largely rural focus and socio-economic characteristics in both rural and urban areas at granular spatial scales like district, town and ward spanning the entire country.
   utter_faq-portal-b0/types-visualisation-portal: #5
   - text: More than 30 types of visualizations are available on India Data portal, which includes bar chart, pie chart, line chart, histogram, tree map, etc. 
   utter_faq-portal-b0/frequency-data-upload: #10

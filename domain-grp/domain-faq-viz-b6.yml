@@ -142,13 +142,13 @@ responses:
   utter_faq-visualisation-b6/type-local-lang: #232
   - text: You can use a local language keyboard to type the title in that language
 
-  utter_faq-visualisation-b6/search-previously-created-visulaisation: #233
+  utter_faq-visualisation-b6/search-previously-created-visulaisation: #232
   - text: You can view your saved visualizations in My graphics or Graphic Gallery 
 
-  utter_faq-visualisation-b6/search-visualisation-in-graphic-gallery: #234
+  utter_faq-visualisation-b6/search-visualisation-in-graphic-gallery: #233
   - text: On the top bar under News and Graphics, you can find the Graphic Gallery. Once you are in the Graphic Gallery there will be a search box
 
-  utter_faq-visualisation-b6/can-viz-others-gallery-directly: #235
+  utter_faq-visualisation-b6/can-viz-others-gallery-directly: #234
   - text: Visualizations shared by other users in the Graphics Gallery can be re-used by other users
 actions: []
 forms: {}

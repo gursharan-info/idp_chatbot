@@ -397,12 +397,12 @@ nlu:
     - What really is the greatest number of extra indicators that may be added to a mapping?
     - And what's the greatest number of extra indicators that may be added to a graphical representation?
     - What then is the greatest number of extra indicators that may be added to a graphical representation?
-    - Is there a limit to how many indications I can show in a single visualisation?
+    - Is there a limit to how many indicatorss I can show in a single visualisation?
     - Is there a limit on the number of indicators I may display in one visualisation?
     - In a single chart, how many indicators can I show?
     - How many indicators can I display in a single chart?
     - How many indicators can I show in a single graph?
-    - In a single visualisation, how many indications can I show?
+    - In a single visualisation, how many indicatorss can I show?
     - What is the maximum number of indicators I may show in a single visualisatio?
     - In a single graph, how many indicators can I show?
     - on iDP Is there a limit to how many indicators I can include in a single viz?
@@ -413,11 +413,11 @@ nlu:
     - limit to how many indicators I can display in one visualisation?
     - Is there a limit on the number of indicators I may show in a single visual?
     - but Is there a limit to how many indicators I can display in a single grpah?
-    - How many indications can I show in a single diagram?
+    - How many indicatorss can I show in a single diagram?
     - How many indicators can I display in a single visualisation?
     - on inidan data portal In a single chart, how many indicators can I display?
     - In a single graph, how many indicators can I display?
-    - but is there a limit to how many indications I can display in a single diag.?
+    - but is there a limit to how many indicatorss I can display in a single diag.?
     - Is there a limit to how many indicators I can show on a single graph?
     - maximum number of indicators I may display in a single diagrmas?
 
@@ -1147,9 +1147,9 @@ nlu:
     - Should the dim. or indicator be chosen by default?
     - Is it necessary for me to set the default dim. or indicator?
     - Is it necessary to utilise a default dim. or indicator?
-    - Is it preferable to have the dim. or indication selected by default?
-    - Should a default dim. or indication be used?
-    - Should the dim or indication be chosen automatically?
+    - Is it preferable to have the dim. or indicators selected by default?
+    - Should a default dim. or indicators be used?
+    - Should the dim or indicators be chosen automatically?
     - Should I use the default dim or indicator?
     - Is it preferable to use the default dim or indicator?
     - Is it better if the dimension criteria or indiicator is selected by default?
@@ -1165,14 +1165,14 @@ nlu:
     - Should a default dim criteria or indicator option be selected?
     - Should I use the indicator option or dim criteria that comes with the package?
     - Should I select the dimension or indicator option by default?
-    - Should I use the indication or the default dimension?
+    - Should I use the indiactors or the default dimension?
     - Should I set the default dimension or indicator option?
     - Should the dimension or indicator be selected by default?
-    - Is it necessary to use a default measurement or indication?
+    - Is it necessary to use a default measurement or indiactors?
     - Should I use the standard dimension or indicator?
-    - Should a default dimension or indication be chosen?
+    - Should a default dimension or indiactors be chosen?
     - Is it necessary to choose a default dimension or metric?
-    - Is it necessary to choose a default measurement or indication?
+    - Is it necessary to choose a default measurement or indiactors?
     - Is it necessary to select a default size or indicator?
     - Should I make a default indicator or dimension?
 
@@ -1298,7 +1298,6 @@ nlu:
     - upper range to how many representations I can download at any given time?
     - Is there a cap on how many visualisations I may download at once?
 
-#############################################
 
 - intent: faq-visualisation-b6/viz-categorical-only # 219
   examples: |
@@ -1309,17 +1308,70 @@ nlu:
     - cat vars enough for making output
     - categoriccl variables enough for making my grpahs
     - categoriccl variables enough for making my grpahs
+    - Is it possible to create a visualisation with only variables containing only categories?
+    - feasible to create a visual representation using only category vars?
+    - feasible to make a graph with only categorical variables?
+    - Is it feasible to create a visualisation using simply category vars?
+    - Is it feasible to visualise only the variables in a category?
+    - Is it feasible to make a visualisation that just includes categorical variables?
+    - Can we  visualise using only categorical variables?
+    - Is merely visualising categorical variables possible?
+    - Can we  create a graph that only contains categorical variables?
+    - Can we  make a visual representation based solely on categorical variables?
+    - Is it feasible to create a visualisation with simply categorical variables?
+    - Can we  make a visualisation out of just category vars?
+    - Is a graph with only categorical variables possible?
+    - Can we  make a visualisation using just vars containing only categories?
+    - But do we have this opportunity to make a visual representation that solely uses vars containing only categories?
+    - But do we have this opportunity to visualise solely vars containing only categories?
+    - But do we have this opportunity to visualise a category's variables only?
+    - But can we build a visual representation solely based on variables containing only categories?
+    - But can we visualise just the categories' variables?
+    - I wanna  see only variables containing only categories?
+    - Possiible to  see only the variables in a single category?
+    - Possiible to  visualise simply the categories' variables?
+    - Is it feasible to visualise categorical variables only?
+    - Is it feasible to visualise only the variables in the categories?
+    - Just want to ask is it possible see only the categories' variables?
+    - Just want to ask is it possible create a visualisation using only categorical variables?
+    - Just want to ask if is it possible only see categorical variables?
+    - Just want to ask if is it possible make a visualisation with just variables containing only categories?
+    - Is it possible to see only the variables that make up a category?
+    - Is it possible to create a graph using only category data?
+
 
 
 - intent: faq-visualisation-b6/what-is-custom-indicator # 220
   examples: |
-    - What is "or a custom indicator" 
+    - What is  a custom indicator" 
     - what is custom indicator
     - custom indicator ?
     - wanna  know what is custom indicators
     - i want ot introduce custom indicators in my grphs but waht is ?
     - i want to make custom indicators in my graphs but what is ?
     - personal indicators what is it ?
+    - What does it mean when someone says  a custom indicator"?
+    - What does a custom indicator mean?
+    - What exactly does " a custom indiactor" imply?
+    - What does " a custom indiactor" mean in this context?
+    - "A custom indiactor," what exactly does that mean?
+    - What does it mean when you say "a custom indiactors"?
+    - What does  a custom indicattor" imply?
+    - What does it imply in this situation to say  a custom indiactor"?
+    - When someone says  a custom indiactor," what exactly does he or she mean?
+    - What does it mean when it says  a custom indicattor"?
+    - What does it mean when someone says " a custom indicattor"?
+    - What does it mean when it says " a custom indiactor"?
+    - In this context, what does " a custom indicator" mean?
+    - What exactly does "a custom indicators" imply?
+    - When it states " a custom indicator," what exactly does that imply?
+    - When someone says " a custom indicator," what exactly does it mean?
+    - What does  a custom indicators" mean?
+    - In this situation, what does  a custom indicator" imply?
+    - What does  a custom indicators" mean exactly?
+    - What does  a custom indicator" really mean?
+    - What exactly does  a custom indicators" mean?
+
 
 - intent: faq-visualisation-b6/what-happen-when-click-reset-all #221
   examples: |
@@ -1330,16 +1382,82 @@ nlu:
     - help with reset
     - what is reset all do ?
     - what is gonna happen with reset all?
+    - What happens if i click reset button?
+    - What happens if i click reset?
+    - What happens If accidentally i if I press the "Reset All" button?
+    - What happens If accidentally i if I click "Reset All"?
+    - What happens If accidentally we if I push the Reset button on all of my devices?
+    - If I press the Reset All button, what will happen?
+    - When I choose "Reset All," what happens? on this platform
+    - What happens If accidentally I restart everything?
+    - if I press the Reset All button? what will happen
+    - if I press Reset All? what will happen
+    - What happens if I start over?
+    - What will happen if I press the Reset All button website
+    - What happens if I do a complete restart on this website
+    - So, what happens when I hit the Reset All button on INDIAN DATA PORTAL
+    - What happened if I start from scratch?
+    - What  if I press the Reset button on everything? while i am here
+    - What if I do a complete system reset on IDP
+    - What happens if I reset everything?
+    - What if I start over from the beginning?
+    - What will happen if I click the Reset All button?
+    - What happens if I click the "Reset All" button?
+    - What happens when I click "Reset All"?
+    - What happens when I press the "Reset All" button?
+    - What will happen if I press the Reset button on all of my devices at the same time?
+    - When I click the "Reset All" button, what happens?
+    - What happens when I press the Reset All button?
+    - What happens if I start from the beginning?
+    - When I press the Reset All button, what happens?
+    - If I press the Reset All button, what happens?
+    - What if I select "Reset All"?
+    - When I press the "Reset All" button, what happens?
+    - When I pick "Reset All," what happens?
+
 
 - intent: faq-visualisation-b6/get-table-after-download-image-format #222
   examples: |
     - How can I get the tables visible on the visulization when downloaded in image format 
-    - How can I make the tables visible on the visualisation after they've been downloaded in picture format?
-    - How can I make the tables visible on the visualisation after they've been downloaded in image format?
+    - How can I make the tables visible on the diag. after they've been downloaded in picture format?
+    - How can I make the tables visible on the diag. after they've been downloaded in image format?
     - How can I make the tables visible on the visualizations after they've been downloaded in image format?
     - How can I make the tables visible on the visualizations once they've been downloaded in image format?
     - How then can I make the tables visible on the visualizations once they've been downloaded in image format?
     - How would I make the tables visible on the visualizations once they've been downloaded in image format?
+    - How can I make the tables visible on the diag. once it has been converted to a picture format?
+    - After the visualisation has been converted to a picture format, how can I make the tables visible on the visualisation?
+    - How can I make the tables visible on the visualisation after I have it in picture format?
+    - How can I make the tables visible after I've saved the visualisation as an image?
+    - When I get the visualisation as an image file, how do I make the tables visible?
+    - After the visualisation has been converted to a picture format, how can I make the tables visible?
+    - When I get the visuals in image file, how can I make the tables visible?
+    - Once the visuals has been transformed to a photo format, how do I make the tables visible?
+    - When I obtain a visuals in image format, how can I make the tables visible?
+    - How can I make the tables visible on the visuals while it is still in image format?
+    - When I get the visuals in picture format, how can I make the tables visible on the visuals?
+    - When I get the visuals in image format, how do I make the tables visible?
+    - How can I make the tables visible once the visuals has been saved as an image file?
+    - When the visuals is in image format, how can I make the tables visible?
+    - When the images is in picture format, how can I make the tables visible?
+    - When I obtain the graphs in picture format, how do I make the tables visible?
+    - After I've saved the graphs as an image file, how can I make the tables visible?
+    - When I obtain the graphs in image format, how do I make the tables visible?
+    - How do I make the tables visible when I get the graphs in image format?
+    - How do I make the tables visible on a graphs that is in picture format?
+    - how is it possible to make the tables visible when I get the images in image format?
+    - How can I make the tables visible when I obtain the images in an image file?
+    - how is it possible to paste the tables visible on the images once it's been converted to a picture format?
+    - How can I make the tables visible on the images while it's in picture format?
+    - How can I make the tables visible on the images after it has been converted to a picture?
+    - How can I make the tables visible while the diagrams is in image format?
+    - How can I make the tables visible when I get the diagrams as an image file?
+    - When I get the diagrams as an image file, how can I make the tables visible?
+    - How can I make the tables visible in an image-based diagrams?
+    - When I obtain the diagrams as an image file, how do I make the tables visible?
+    - When I obtain the diagrams in image format, how can I make the tables visible?
+    - How can I make the tables visible after I have the diag in an image file?
+    - When I acquire the diag as an image file, how can I make the tables visible?
 
 
 - intent: faq-visualisation-b6/export-selected-data #223
@@ -1350,15 +1468,58 @@ nlu:
     - How then can I export the data I've selected?
     - How the fuck can I export the data I've selected?
     - can i download my selected data?
+    - How can I export the data that I've selected?
+    - What's the best way to get the data I want to export?
+    - What is the best method for exporting the data I've chosen?
+    - but what is the best way for me to download the data that I've chosen?
+    - but what is the best way to get the data I want to download?
+    - and what is the most efficient method of downloading the data I've chosen?
+    - and what is the most efficient approach to download the data I've selected?
+    - i want to know  the best approach for me to download the data I've chosen?
+    - How do I download the data I've chosen?
+    - How can I get the data I want to download?
+    - How can I locally download the data I've selected?
+    - i want to know what is the quickest way for me to locally download the data I've chosen?
+    - i want to know what is the best way for me to get the data I need to locally download?
+    - i want to know what is the most  effective way to obtain the information I require?
+    - i want to know what is the best way for me to locally download the data I've chosen?
+    - i have a query what is the most  effective approach for me to  download locaaly the data I've selected?
+    - i have a query what's the best way for me to  download locaaly the data I've chosen?
+    - What is the most  effective method for exporting the data I've chosen?
+    - What's the best way to get the info I want?
+    - What is the best way to  download locaaly the data I've chosen?
+    - What is the most  effective method for me to  download locaaly the data I've selected?
+    - What is the most effective method for  downloading the data I've selected?
+    - What is the most efficient method for exporting the data I've selected?
+    - Which way is the most efficient for me to export the data I've chosen?
+    - What is the best way to export the data I've selected?
+    - What is the most efficient means of obtaining the information I require?
+    - What is the most efficient method of obtaining the information I require?
+    - What is the most efficient approach to export the data I've chosen?
+    - What's the most efficient way for me to export the data I've selected?
+    - What's the best way to export the data I've chosen?
+    - How can I export the data I've chosen?
+    - How can I get the data I've chosen to be exported?
+
 
 - intent: faq-visualisation-b6/why-percentage-100 #224
   examples: |
     - Why is the percentage value greater than 100 in the dataset
-    - Why is the percentage value in the dataset larger than 100?
-    - Why is the percentage value in the information greater than 100?
-    - Why does the percentage value in the information greater than 100?
-    - Then why was the percentage value in the information greater than 100?
-    - Then why was the percentage value in the dataset greater than 100?
+    - on IDP Why is the percentage value in the dataset larger than 100?
+    - on IDP Why is the percentage value in the information greater than 100?
+    - on indian data portal Why does the percentage value in the information greater than 100?
+    - on indian data portal  why is the percentage value in the information greater than 100?
+    - on indian data portal why is the percentage value in the dataset greater than 100?
+    - Why is it that the dataset's percentage value exceeds 100?
+    - Why is the dataset's % value higher than 100?
+    - Why is the % value of the dataset higher than 100?
+    - Why is the % value in the dataset bigger than 100?
+    - Why is the % value of the dataset greater than 100?
+    - Why does the percent value of the dataset surpass 100?
+    - Why does the dataset's percent value exceed 100 percent?
+    - Why does the dataset's percent value exceed 100?
+    - Why is the dataset's percent value bigger than 100?
+
 
 
 - intent: faq-visualisation-b6/blanks-chloropleth-map # 225
@@ -1369,12 +1530,38 @@ nlu:
     - Why would many areas of a Choropleth map have blanks?
     - Why the fuck do many areas of a Choropleth map have blanks?
     - Why the fuck do many areas of a Choropleth map contain blanks?
-    - Why the fuck do many areas of a Choropleth map include blanks?
     - why some blanks in chloropleth map
     - blank spaces in chloropleth map ?
     - white space in chloropleth map why ?
     - lot of empty spccae in chloro map
     - chloro maps are giving some spaces which are to filled but what is it?
+    - On IDP Why are there blanks in a cholorpeth map?
+    - In a Choropleth map, why are there blanks?
+    - On a cholorpeth map, why are there blanks?
+    - On IDP Why are there blanks on a Choropleth map?
+    - On a choloro-pleth map, why are there blank regions?
+    - Why do certain choloro-pleth maps include blanks?
+    - On Indian data portal Why do cholor-pleth maps include blanks?
+    - On a cholor-pleth map, why are some areas blank?
+    - Why are there blanks in a Choropleth map?
+    - while on Indian data portal What causes some areas of a Choropleth map to appear empty?
+    - Why are some areas of a Choropleth map blank?
+    - Why are some areas of a Choropleth map seemingly empty?
+    - Why are blanks present in a Choropleth map?
+    - On a Choropleth map, why are there blank regions?
+    - On a Choropleth map, why are there blank areas?
+    - Why do certain Choropleth maps have blanks?
+    - Why are blanks present in a cholor-pleth map?
+    - Why are there blank regions on a Choropleth map?
+    - Why do some sections of a Choropleth map appear to be empty?
+    - On a Choropleth map, why are there blanks?
+    - Why does a Choropleth map appear to be blank in some places?
+    - What causes some areas of a Choropleth map to appear to be empty?
+    - What causes some areas of a Choropleth map to seem blank?
+    - Why are there blanks on a choropleth map?
+    - Why do some areas of a Choropleth map appear to be blank?
+    - In a choropleth map, why are there blanks?
+
 
 
 - intent: faq-visualisation-b6/change-visulaisation-to-local-language # 229
@@ -1396,23 +1583,66 @@ nlu:
     - How else can I translate my vision into my home language?
     - How the fuck can I translate my vision into my home language?
     - How the fuck can I translate my picture  into my home language?
+    - What is the best way for me to convert my visualisation into my local language?
+    - What is the most effective approach for me to express myself in my own language?
+    - What is the most effective way for me to convey my vision into my local language?
+    - What is the best way for me to translate my visualisation into my native tongue?
+    - What is the best way for me to communicate my vision in my native tongue?
+    - What is the most efficient approach for me to communicate my vision in my native tongue?
+    - How do I translate my visualisation into my native tongue?
+    - What is the most effective way for me to express my ideas in my native language?
+    - What is the greatest way for me to communicate my vision in my native language?
+    - What is the most efficient approach for me to translate my visualisation into my native language?
+    - What is the most best way for me to communicate my vision in my native language?
+    - What is the best approach for me to express my thoughts in my native language?
+    - What's the most best approach for me to communicate my vision in my native tongue?
+    - What's the most best approach for me to translate my visualisation into my native tongue?
+    - What is the most effective technique for me to convey my vision into my local tongue?
+    - What is the most effective way for me to communicate my vision in my native tongue?
+    - What is the most efficient approach for me to translate my visualisation into my native tongue?
+
 
 
 - intent: faq-visualisation-b6/write-title-in-local-language #230
   examples: |
     - local language title
     - change title language to local language
-    - changing title to local lang
-    - wrtie title in local language
-    - change title language
-    - can title also be translated ?
-    - writting title language in local language
-    - composing the title language in the native language
-    - composing the title language in the native language?
-    - Is it possible to write the title language in the local language?
-    - Would it be able to create the title language in the local language?
+    - changing title of graphs to local lang
+    - wrtie title of graphs in local language
+    - change title of graphs language
+    - can title of graphs also be translated ?
+    - writting title of graphs in local language
+    - composing the title  language in the native language
+    - composing the title of graphs language in the native language?
+    - Is it possible to write the title of graphs in the local language?
+    - Would it be able to create the title of graphs  in the local language?
     - Would that be able to create the title language in the local language?
     - Would that be possible to write the title language in the local language?
+    - Is it possible for me to use English for the title?
+    - Is it appropriate to write the title of data visualisation in my native language?
+    - Is it okay if I write title the article in my native language?
+    - possible for me to make the title in my native language?
+    - Is it possible for me to write the title in my own language?
+    - Is it possible for me to write the title in the language that I speak?
+    - will it be acceptable for me to title the article in my native tongue?
+    - Is it okay if the title is written in my native tongue?
+    - Is it feasible for me to use my native language in the title?
+    - will it be acceptable for me to write the title in my first language?
+    - Is it acceptable to title the article in my native tongue?
+    - Is it okay if I write the title of my diagrams  in my native language?
+    - will it be  possible for me to write an English title?
+    - Is it possible for the title to be written in my native language?
+    - Is it acceptable for the title to be written in my native language?
+    - Is it possible for me to write the title in my native language?
+    - permissible for me to title the article in my native language?
+    - Is it possible for me to write the title in my native tongue?
+    - acceptable to include my native tongue in the title?
+    - Would  it be possible for me to write the title in English?
+    - would it be acceptable for me to write the title in my native tongue?
+    - Is it possible for me to use my native tongue for the title of diag?
+    - can it be possible for me to write in English for the title?
+    - Is it okay if I use my native language for the title of my diagrams?
+
 
 
 - intent: faq-visualisation-b6/type-title-local-lang #231
@@ -1427,6 +1657,35 @@ nlu:
     - does indian data portalls give me option to type in local langs
     - How can I write the title in a different language?
     - How can I write the title in a multiple languages?
+    - How do you accurately write the title in a foreign language?
+    - What is the best method for typing the title in a local language?
+    - In a local language, what is the proper way to type the title?
+    - What is the right approach to type the title in a local language?
+    - What is the correct way to type the title in a local language?
+    - How do you write the title correctly in a foreign language?
+    - What is the most effective way to type a foreign language title?
+    - How should the title be typed in a local language?
+    - What is the most efficient approach to type the title in a foreign language?
+    - What is the best way to type the title in a local language?
+    - What is the best way to type the title in a native language?
+    - In a local language, how do I type the title?
+    - I'm not sure how to type the title in a local language.
+    - In a local language, what is the ideal approach to type the title?
+    - What is the correct method to write the title in a local language?
+    - How do I type the title in a local language?
+    - What is the most efficient way to type a foreign language title?
+    - What is the best way to write the title in a local language?
+    - In a local language, how should the title be typed?
+    - What is the most efficient method for typing a foreign language title?
+    - In a local language, how should I write the title?
+    - In a local tongue, how should the title be written?
+    - How should the title be written in a foreign language?
+    - How do I write the title in a local language?
+    - In a local tongue, how do you write the title?
+    - In a local language, how do I write the title?
+    - How should the title be written in a local language?
+    - In a foreign language, how do you write the title correctly?
+    - How do you spell the title appropriately in a foreign language?
 
 
 - intent: faq-visualisation-b6/type-local-lang #232
@@ -1440,22 +1699,75 @@ nlu:
     - can i type in local lang here ?
     - Do IDP give me a option to type in mother Language
     - Do IDP give me a option to type in mother tongue
-    -- Do IDP give me a option to type in native Language
+    - Do IDP give me a option to type in native Language
+    - IDP allows me to type in my native language.
+    - Is typing in a different language possible using indian data portal?
+    - Is it feasible to use indian data portal to type in a different language?
+    - Is it possible to type in a local language with indian data portal?
+    - Is it possible to type in a local language using indian data portal?
+    - You can type in a native language with indian data portal.
+    - Is it possible to type in a foreign language with indian data portal?
+    - Is it possible to type in my native language using indian data portal?
+    - Is it possible for me to type in my native language using indiadata portal?
+    - You can type in a local language with indiadata portal.
+    - Is it possible to use indiadata portal to type in a local language?
+    - Is it feasible to type in a native language with indiadata portal?
+    - Is it possible to use indian portal to type in a native language?
+    - Is it feasible to use indian portal to type in my native language?
+    - You can type in a local language using indian portal.
+    - Is typing in my native language possible using indian portal?
+    - I can type in my native language because to IDP.
+    - Is IDP capable of allowing me to type in my native language?
+    - I can type in my native language with IDP.
+    - Is typing in a native language possible with IDP?
+    - IDP allows you to type in a local language.
+    - Is it possible to type in a language other than English with IDP?
+    - Is it possible to type in my native language with IDP?
+    - I can type in my native language using IDP.
+    - Is it possible to type in a native language using IDP?
+    - Is it possible to type in local language using IDP?
+    - Is it possible to type in a different language using IDP?
 
-- intent: faq-visualisation-b6/search-previously-created-visulaisation #233
+
+
+- intent: faq-visualisation-b6/search-previously-created-visulaisation #232
   examples: |
     - searching perviously created visualisations
     - help with finding perviously created visualisations
     - can't find perviously created visualisations
-    - how to find previously created visualisations
-    - where can i find my previously cretaed visualisations?
-    - precodeure to find previously created visualisations
+    - how to find previously created diagrams
+    - where can i find my previously cretaed diagrams?
+    - precodeure to find previously created diagrams
     - can i see my previously created visualisation
     - Can I search for my previously created graphs
     - Can I search for my previously created drawings
     - ahmm Can I search for my previously created graphs
+    - Is it possible to search for diagrams that I've already made?
+    - possible to look for images I've already created?
+    - Is it even feasible to search for images that I've already created?
+    - Plausible to look for pre-made images?
+    - Is it feasible to search for images that have already been created?
+    - possible to search for previously produced visuals?
+    - feasible to look up visuals that I've already made?
+    - Is it possible to search for visuals I've already made?
+    - Plausible to look for previously produced visuals?
+    - Is it possible to search for pre-made viz.?
+    - posible to search for previously made viz.?
+    - Is it feasible to look for viz. that I've already created?
+    - possible to look for viz. I've already made?
+    - Is it possible to search for previous vis?
+    - Is it posible to look up previous vis?
+    - But Is it posible to look for previously made vis?
+    - Is there a way to look for prior vis?
+    - But Is it possible to search for visualisations I've already created?
+    - Is there a way to look up past visualisations?
+    - Is it feasible to look for visualisations that have already been created?
+    - But Is it even feasible to find visualisations that have already been created?
+    - Is it possible to find visualisations that I've already made?
+    - Is it feasible to look for visualisations that I've already made?
 
-- intent: faq-visualisation-b6/search-visualisation-in-graphic-gallery #234
+
+- intent: faq-visualisation-b6/search-visualisation-in-graphic-gallery #233
   examples: |
     - help with searcjing for visualisation in graphic gallery
     - visulatsation search help
@@ -1467,8 +1779,29 @@ nlu:
     - How can I look for a certain visualisation in the Graphics Gallery?
     - How can I look for a certain visuals in the Graphics Gallery?
     - How could I look for a certain visual in the Graphics Gallery?
+    - What's the most efficient way to search the Graphics Gallery for any visuals?
+    - How do I search the Graphics Gallery for any visualss?
+    - What's the best way to search the Graphics Gallery for a visuals?
+    - What is the best approach to find any visuals in the Graphics Gallery?
+    - How can I find any visuals in the Graphics Gallery?
+    - What is the most efficient way to search the Graphics Gallery for any graphics?
+    - What's the easiest approach to find any graphics in the Graphics Gallery?
+    - How do I search the Graphics Gallery for any graphics?
+    - What is the best way to search the Graphics Gallery for any graphics?
+    - How can I search the Graphics Gallery for a specific graphics?
+    - In the Graphics Gallery, how do I discover any graphics?
+    - What's the best way to search the Graphics Gallery for a certain graphics?
+    - What is the best way to search the Graphics Gallery for a graphics?
+    - How do I look for a specific images in the Graphics Gallery?
+    - What's the best way to look for a images in the Graphics Gallery?
+    - How should I search the Graphics Gallery for a images?
+    - What's the best way to search the Graphics Gallery for any images?
+    - How do I find any diagrams in the Graphics Gallery?
+    - In the Graphics Gallery, where can I locate any diagramss?
+    - How do I search the Graphics Gallery for a specific diagrams?
 
-- intent: faq-visualisation-b6/can-viz-others-gallery-directly #235
+
+- intent: faq-visualisation-b6/can-viz-others-gallery-directly #234
   examples: |
     - Can I use the visualizations created by others from the Gallery directly 
     - can i see graphs made by others on IDP direclty
@@ -1476,10 +1809,39 @@ nlu:
     - does indian data portal provides a facility so that i can view work done by others directly
     - i want to work by other users or jounalist of this platform can i do it in gallery?
     - i want to work by other jounalist of this platform can i do it ?
-    - Can I directly utilise the visualisations made by others in the Gallery?
+    - Can I directly utilise the vis made by others in the Gallery?
     - Can I directly utilise the visuals made by others in the Gallery?
     - Could I directly utilise the visuals made by others in the Gallery?
     - can i utilize visualizations created by others from gallery?
+    - even possible for me to use vis generated by others directly from the Gallery?
+    - Is it feasible for me to use other people's vis directly from the Gallery?
+    - even possible for me to directly use vis generated by others from the Gallery?
+    - possible to directly use other people's vis from the Gallery?
+    - possible for me to make direct use of viz generated by others in the Gallery?
+    - Is it feasible for me to directly use the viz of other people from the Gallery?
+    - Is it permissible for me to directly use other people's viz from the Gallery?
+    - possible for me to use viz generated by others from the Gallery directly?
+    - Is it feasible for me to use graphs created by others in the Gallery directly?
+    - any possibility for me to use other people's graphs from the Gallery directly?
+    - possibility for me to use graphs generated by others in the Gallery?
+    - any possibility for me to directly use graphs made by others in the Gallery?
+    - Is it feasible for me to use the Gallery's images directly?
+    - any possibility for me to use the images directly from the Gallery?
+    - any possibility for me to use other people's visuals in the Gallery?
+    - Can I use other people's visuals from the Gallery directly?
+    - any possibility for me to use the visuals generated by others directly from the Gallery?
+    - Is it okay if I directly use other people's visuals from the Gallery?
+    - any possibility for me to directly use other people's diagrams from the Gallery?
+    - Is it possible for me to use other people's diagrams from the Gallery?
+    - Is it feasible for me to use other people's diagrams from the Gallery without having to go via the Gallery?
+    - Is it feasible for me to directly use the diagrams of others from the Gallery?
+    - Is it feasible for me to use the Gallery's diagrams that others have created?
+    - Is it possible for me to use directly from other people's Gallery diagrams?
+    - Can I directly utilise other people's visualisations from the Gallery?
+    - Is it possible for me to directly use the Gallery's visualisations?
+    - Can I take other people's visualisations from the Gallery and use them directly?
+    - Is it feasible for me to use directly from the Gallery visualisations created by others?
+
     
 
     

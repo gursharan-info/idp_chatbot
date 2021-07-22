@@ -401,7 +401,7 @@ nlu:
     - What really is the India Data Portal?
     - What actually is the India Data Portal?
 
-- intent: faq-portal-b0/why_idp
+- intent: faq-portal-b0/why_idp #2
   examples: |
     - how can idp help me
     - how can indian data portal help
@@ -427,6 +427,14 @@ nlu:
     - What are the benefits of just using IDP?
     - What are the advantages of just using IDP?
     - What are the perks of just using IDP?
+    - why should i use this platform
+    - why should i use IDP
+    - What is India Data Portal used for?
+    - what is IDP used for 
+    - what is the use of this webiste
+    - what is the use of this platform
+    - IDP why should i use it
+    - indian data portal why should i use 
     - Why should I utilise a data portal in India?
     - Why should I visit this website?
     - Why should I check the website?

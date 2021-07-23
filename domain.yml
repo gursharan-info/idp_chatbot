@@ -11,8 +11,6 @@ intents:
     use_entities: true
 - faq-dataset-b0:
     use_entities: true
-- faq-dataset-b1:
-    use_entities: true
 - faq-visualisation-b0:
     use_entities: true
 - greet:
@@ -40,8 +38,6 @@ intents:
 - faq-visualisation-b3:
     use_entities: true
 - faq-visualisation-b1:
-    use_entities: true
-- faq-train-b1:
     use_entities: true
 entities:
 - intent_button
@@ -230,25 +226,6 @@ responses:
       \ data and knowledge related to agriculture and financial inclusion, while also\
       \ aiding other beneficiaries \u2013 researchers, students, policy makers, administrators,\
       \ NGOs, and entrepreneurs. To know more, visit this link- https://indiadataportal.com/about?language=English&location=India"
-  utter_faq-dataset-b1/search-dataset-use-demograph:
-  - text: Our dynamic search bar allows you to search with almost any key words
-  utter_faq-dataset-b1/select-multipl-dataset-one-indic-one-go:
-  - text: As of now IDP doesn't have this feature
-  utter_faq-dataset-b1/chang-decim-point-across-diff-column-singl-dataset:
-  - text: As of now IDP doesn't have this feature
-  utter_faq-dataset-b1/download-data-set-excel-format:
-  - text: Yes you can download the data in excel format. On the top right corner of
-      the visualization you will find save icon where there is an option to save the
-      data.
-  utter_faq-dataset-b1/differ-format-support-dataset-download:
-  - text: As of now only .xlsx format is available for the data download
-  utter_faq-dataset-b1/download-data-set-csv-format:
-  - text: As of now you can't save the data in csv format
-  utter_faq-dataset-b1/combin-datset-diff-sector:
-  - text: Yes you can combine and compare datasets from different sectors.
-  utter_faq-dataset-b1/datacard-signifi:
-  - text: Datacard consists of one dataset with visualization. In one page we can
-      have 4 datacards with 4 different visualizations
   utter_ok_done:
   - text: Ok go ahead :)
   utter_greet:
@@ -1067,12 +1044,6 @@ responses:
   utter_faq-visualisation-b1/which-social-media-platform-supported-for-sharing-vis:
   - text: IDP can share on Facebook, Linkedin, Twitter &  Instagram. Apart from that
       you can also copy the visualisation link and share it anywhere on the internet.
-  utter_faq-train-b1/often-workshop-arrang:
-  - text: Workshops are arranged frequently. You can see all of the updates in our
-      social media handles and our website.
-  utter_faq-train-b1/onlin-train-curriculum:
-  - text: In IDP we have various online training curriculam like workshops, fellowships
-      etc. Kindly write to us at idp@isb.edu to know more.
 actions:
 - action_slot_setter
 - action_viz_faq

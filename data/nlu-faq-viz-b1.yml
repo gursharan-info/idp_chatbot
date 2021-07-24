@@ -1,17 +1,6 @@
 version: "2.0"
 nlu:
 
-- intent: ok
-  examples : |
-    - ok
-    - okay
-    - done
-    - its over form my side
-    - Done
-    - yes its' over
-    - okay its done
-
-
 - intent: faq-visualisation-b1/add-dataset-on-idp
   examples: |
     - How to add dataset

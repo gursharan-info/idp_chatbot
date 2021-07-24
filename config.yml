@@ -22,18 +22,9 @@ pipeline:
     epochs: 100
     retrieval_intent: faq-train-b0 # for faq-train-b0 specific questions
 
-  # - name: ResponseSelector
-  #   epochs: 100
-  #   retrieval_intent: faq-train-b1 
-
   - name: ResponseSelector
     epochs: 100
     retrieval_intent: faq-portal-b0 # for faq-portal-b0 specific questions
-
-
-  - name: ResponseSelector
-    epochs: 100
-    retrieval_intent: faq-portal-b1
 
   - name: ResponseSelector
     epochs: 100
@@ -43,9 +34,6 @@ pipeline:
     epochs: 100
     retrieval_intent: faq-dataset-b0 # for faq-dataset-b0 specific questions
   
-  # - name: ResponseSelector
-  #   epochs: 100
-  #   retrieval_intent: faq-dataset-b1
 
   - name: ResponseSelector
     epochs: 100

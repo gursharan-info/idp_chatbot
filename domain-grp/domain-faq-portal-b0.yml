@@ -45,17 +45,13 @@ responses:
   - text: Yes the visualisations can be made and downloaded in the languages available in the Portal
 
   utter_faq-portal-b0/paid_service_or_not: #31
-  - text: 'Till now it is not a paid service and is completely open source'
+  - text: Till now it is not a paid service and is completely open source
 
   utter_faq-portal-b0/what-is-indicator: # 33
   - text: Indicator is a variable whose value is of interest to the user of the portal
 
   utter_faq-portal-b0/compare-datasets-on-idp: #34
   - text: Go to the visualize page, and on the left hand side, you will see the Add Dataset option. You can add upto 2 datasets one by one for comparison
-
-  utter_faq-portal-b0/why_idp: #3
-  - text: With the help of IDP, a user can use the multiple datasets available, which have been already cleaned and vetted and have been presented in easy to understand manner. The users can make visualisations based on the chosen parameters as per the requirement of their writing. What’s even more exciting is that these visualisations are easily downloadable and can be inserted straight away in a story. 
-
   utter_faq-portal-b0/count-of-datasets: #4
   - text: There are more than 35+ dataset available at IDP, across various sectors like agriculture, rural development, soci-economic, financial inclusion, economic activity, etc.
  
@@ -66,7 +62,7 @@ responses:
   - text: We are working on converting all the text into the selected language and in some cases there are technical difficuilties for the translation.
   
   utter_faq-portal-b0/most-recent-data: #245
-  - text: For some datasets you'll find data available from last month on the portal. Data is updated on the portal after it is made available by the Indian Government 
+  - text: For some datasets youll find data available from last month on the portal. Data is updated on the portal after it is made available by the Indian Government 
 
   utter_faq-portal-b0/recent-data-available: #246
   - text: India Data portal updates its data from the Govt sources. As soon as the Govt updates its data we also updates our data within few days
@@ -100,7 +96,7 @@ responses:
   utter_faq-portal-b0/data-age-how-old: #331
   - text: Various distoric datasets are available on the portal, please visit the dataset section of the portal for details
   utter_faq-portal-b0/data-update-mail-alerts:  #332
-  - text: Until now, we do not have that feature. Thanks for the feedback, we'll include this in the product roadmap.
+  - text: Until now, we do not have that feature. Thanks for the feedback, well include this in the product roadmap.
   # utter_faq-portal-b0/feature-update-mail-alerts: #333
   # - text: Until now, we do not have that feature. Tanks for the feedback, we'll include this in the product roadmap.
   utter_faq-portal-b0/hindi-illustrations:  #335

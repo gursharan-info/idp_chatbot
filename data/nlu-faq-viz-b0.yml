@@ -38,7 +38,7 @@ nlu:
     - bye bye
     - see you later
     - Bye
-- intent: ok_done
+- intent: ok
   examples: |
     - yes
     - y
@@ -50,6 +50,13 @@ nlu:
     - hey thanks
     - Ok
     - OK sure
+    - ok
+    - okay
+    - done
+    - its over form my side
+    - Done
+    - yes its' over
+    - okay its done
 
 - intent: idp_bot_intro
   examples: |

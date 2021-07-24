@@ -1732,7 +1732,7 @@ nlu:
 
 - intent: faq-visualisation-b6/search-previously-created-visulaisation #232
   examples: |
-    - searching perviously created visualisations
+    - searching perviously created visualisationss
     - help with finding perviously created visualisations
     - can't find perviously created visualisations
     - how to find previously created diagrams

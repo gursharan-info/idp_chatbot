@@ -26,7 +26,7 @@ slots:
 
 responses:
 
-  utter_ok_done:
+  utter_ok:
   - text: Ok go ahead :)
   utter_greet:
   - text: Hey! How are you? How can i help you

@@ -37,6 +37,8 @@ intents:
     use_entities: true
 - faq-visualisation-b1:
     use_entities: true
+- faq-train-b1:
+    use_entities: true
 entities:
 - intent_button
 slots:
@@ -943,6 +945,12 @@ responses:
   utter_faq-visualisation-b1/which-social-media-platform-supported-for-sharing-vis:
   - text: IDP can share on Facebook, Linkedin, Twitter &  Instagram. Apart from that
       you can also copy the visualisation link and share it anywhere on the internet.
+  utter_faq-train-b1/often-workshop-arrang:
+  - text: Workshops are arranged frequently. You can see all of the updates in our
+      social media handles and our website.
+  utter_faq-train-b1/onlin-train-curriculum:
+  - text: In IDP we have various online training curriculam like workshops, fellowships
+      etc. Kindly write to us at idp@isb.edu to know more.
 actions:
 - action_slot_setter
 - action_viz_faq

@@ -22,10 +22,12 @@ rules:
   - intent: faq-train-b0
   - action : action_viz_faq
 
-# - rule: for training
-#   steps:
-#   - intent: faq-train-b1
-#   - action : action_viz_faq
+- rule: for training b1
+  steps:
+  - intent: faq-train-b1
+  - action : action_viz_faq
+
+
 
 - rule: for fellowship
   steps:

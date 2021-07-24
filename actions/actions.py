@@ -17,17 +17,21 @@ class ActionSlotSetter(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-        
         buttons = [
-           {"payload":'/ok{"intent_button":"faq-portal"}',"title":"Portal"},
-            {"payload":'/ok{"intent_button":"faq-visualisation"}',"title":"Visualisation"},
-            {"payload":'/ok{"intent_button":"faq-fel"}',"title":"Fellowship"},
-            {"payload":'/ok{"intent_button":"faq-train"}',"title":"Training"},
-             {"payload":'/ok{"intent_button":"faq-dataset"}',"title":"Dataset"}
+           {"payload":'/idp_bot_intro{"intent_button":"faq-portal"}',"title":"Portal"},
+            {"payload":'/idp_bot_intro{"intent_button":"faq-visualisation"}',"title":"Visualisation"},
+            {"payload":'/idp_bot_intro{"intent_button":"faq-fel"}',"title":"Fellowship"},
+            {"payload":'/idp_bot_intro{"intent_button":"faq-train"}',"title":"Training"},
+             {"payload":'/idp_bot_intro{"intent_button":"faq-dataset"}',"title":"Dataset"}
         ]
 
-        dispatcher.utter_message(text="I am there to help you",buttons=buttons)
+        if tracker.slots['intent_button'] == None:
+            print("\n","slots value is ",tracker.slots['intent_button']) 
+            dispatcher.utter_message(text="I am there to help you",buttons=buttons)
+        else:
+            print("\n","Now slots value is ",tracker.slots['intent_button'])  
+        
+            dispatcher.utter_message(text="Yes you are good to go")
 
         return []
 
@@ -41,11 +45,11 @@ class ActionVizFaq(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         buttons = [
-            {"payload":'/ok{"intent_button":"faq-portal"}',"title":"Portal"},
-            {"payload":'/ok{"intent_button":"faq-visualisation"}',"title":"Visualisation"},
-            {"payload":'/ok{"intent_button":"faq-fel"}',"title":"Fellowship"},
-            {"payload":'/ok{"intent_button":"faq-train"}',"title":"Training"},
-            {"payload":'/ok{"intent_button":"faq-dataset"}',"title":"Dataset"}
+            {"payload":'/idp_bot_intro{"intent_button":"faq-portal"}',"title":"Portal"},
+            {"payload":'/idp_bot_intro{"intent_button":"faq-visualisation"}',"title":"Visualisation"},
+            {"payload":'/idp_bot_intro{"intent_button":"faq-fel"}',"title":"Fellowship"},
+            {"payload":'/idp_bot_intro{"intent_button":"faq-train"}',"title":"Training"},
+            {"payload":'/idp_bot_intro{"intent_button":"faq-dataset"}',"title":"Dataset"}
         ]
         
         # dictionary for mapped retrieval intents

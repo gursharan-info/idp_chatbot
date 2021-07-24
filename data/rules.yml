@@ -6,7 +6,7 @@ rules:
 - rule : greet
   steps:
   - intent: greet
-  - action: utter_greet
+  # - action: utter_greet
   - action: action_slot_setter
 
 
@@ -15,10 +15,6 @@ rules:
   - intent: faq-portal-b0
   - action : action_viz_faq
 
-- rule: for portal
-  steps:
-  - intent: faq-portal-b1
-  - action : action_viz_faq
 
 
 - rule: for training
@@ -49,13 +45,11 @@ rules:
 - rule: for faq visualisation
   steps:
   - intent: faq-visualisation-b0
-  # - action: utter_faq
   - action : action_viz_faq
 
 - rule: for faq visualisation batch1 # 34 to 54
   steps:
     - intent: faq-visualisation-b1
-    # - action: utter_faq-visualisation-b1
     - action : action_viz_faq
 
     
@@ -63,37 +57,28 @@ rules:
 - rule: for faq visualisation batch2 # 55 to 80
   steps:
     - intent: faq-visualisation-b2
-    # - action: utter_faq-visualisation-b2
     - action : action_viz_faq
 
 - rule: for faq visualisation batch3 # 80 to 110
   steps:
     - intent: faq-visualisation-b3
-    # - action: utter_faq-visualisation-b3
     - action  : action_viz_faq
 
 - rule: for faq visualisation batch4 # 110 to 140
   steps:
     - intent: faq-visualisation-b4
-    # - action: utter_faq-visualisation-b4
     - action : action_viz_faq
 
 - rule: for faq visualisation batch5 # 140 to 180
   steps:
     - intent: faq-visualisation-b5
-    # - action: utter_faq-visualisation-b5
     - action : action_viz_faq
 
 - rule: for faq visualisation batch6 # 180 to 225
   steps:
     - intent: faq-visualisation-b6
-    # - action: utter_faq-visualisation-b6
     - action : action_viz_faq
 
-# - rule: for idp bot
-#   steps:
-#   - intent: idp_bot_intro
-#   - action: utter_iamabot
 
 - rule: oUt of scope
   steps:

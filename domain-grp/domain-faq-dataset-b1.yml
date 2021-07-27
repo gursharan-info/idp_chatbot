@@ -28,6 +28,4 @@ responses:
     - text: Yes you can combine and compare datasets from different sectors.
     utter_faq-dataset-b1/datacard-signifi: #418
     - text: Datacard consists of one dataset with visualization. In one page we can have 4 datacards with 4 different visualizations
-actions: []
-forms: {}
-e2e_actions: []
+

@@ -253,6 +253,9 @@ Now ``` sudo docker-compose down ```
 
 and  then again   ``` sudo docker-compose up -d ```
 
+
+####  CUDA_ERROR_COMPAT_NOT_SUPPORTED_ON_DEVICE :
+Reason : This error has to do with the type of CPU you are running on and can be ignored because the training continues and produces a model.
 # Whenver doing rasa training make sure  
 
 1. You have added all **response selectors**

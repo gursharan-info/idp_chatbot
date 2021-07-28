@@ -1,0 +1,236 @@
+version: "2.0"
+nlu:
+  
+- intent: faq-dataset-b1/search-dataset-use-demograph # 383
+  examples: |
+    - Even feasible to search datasets using demographics?
+    - ahmm can this be possible to locate datasets based on demographic information?
+    - can i  conduct a demographics-based search on datasets?
+    - but i wanna ask can i  do a demographics-based dataset search?
+    - Is it probable to search datasets for geographical information?
+    - can i search datasets based on demographics?
+    - how can i find datasets demographically
+    - is it even probable to find datasets on this platform demographically
+    - can i conduct info sets demographically 
+    - how to find datasets using demographics?
+    - Can we use demographics to search datasets?
+    - but is it even probable to search datasets using demographics?
+    - On IDP Is it probable to search datasets based on demography criteria?
+    - on indian data portal can we have  a demography search of datasets viable?
+    - but i wannna do a  demographys to search datasets?
+    - how can i locate datasets using demography information?
+    - Is it viable to locate datasets by using demographs information?
+    - I wnna conduct a demo grpahics search on a data sets?
+    - Is it viable to conduct a demography search of datasets present here?
+    - Is it practicable to conduct demographies searches on datasets present on this platform ?
+    - how the fuck can i  conduct a demographiess-based search on a dataset on this website?
+    - how the hell is this practicable conduct a demographies search across multiple datasets?
+    - Is it practicable to conduct a demographiess-based search of datasets?
+    - Is it practicable to search datasets for demographies?
+    - can we search datasets using demograaphics
+
+
+- intent: faq-dataset-b1/select-multipl-dataset-one-indic-one-go #402
+  examples: |
+    - Is it possible to choose from a variety of datasets for a only one indicator?
+    - possible to choose multiple datasets at once for a only one indicator?
+    - possible to select multiple datasets for a only one indicator at the same time?
+    - can this be viable to choose multiple data-sets for a only one indicator in one go?
+    - can this be viable to select multiple data-sets for a one indicator in one go?
+    - can this be within reach to select multiple data-sets for a one indicator all at once?
+    - even is this  within reach on this platform to select multiple data-sets for a 1 indicator?
+    - like is this within reach on this platform to select multiple datum for a 1 indicator at once?
+    - like is this practicable on this webiste to select multiple datum for one indicator at the same time?
+    - but is this practicable on this website to choose multiple datum for a only single indicator at the same time?
+    - like is this practicable on this data analysis to select multiple data repos at once for a single indicator?
+    - like is this practicable on this webiste to choose multiple data repos for a single indicator at once?
+    - Is there a way to choose multiple data repos for a single indicator?
+    - like is this probable on this website to choose from several datasets for a single indicator?
+    - like is this probable on this website to select multiple datasets at the same time for a single indicator?
+    - does this website allows us  to select multiple datasets in one go for a single indicator?
+    - does this website allows us  to choose multiple datasets for one indicator at the same time?
+    - Is there a way to select multiple datasets for a single indicator at the same time?
+    - Is it probable to choose multiple datasets for a single indicator all at once?
+    - Is it possible to choose from multiple datasets for a single indicator at the same time?
+    - Is it possible to pick multiple datasets for a single indicator at once?
+    - can we select multiple datasets for one indicator in one go
+
+
+- intent: faq-dataset-b1/chang-decim-point-across-diff-column-singl-dataset #410
+  examples: |
+    - practicable to change decimal points in a single dataset across columns?
+    - practicable to change the decimal points in a single dataset across columns?
+    - viable to change decimal points in a single dataset for multiple columns?
+    - viable to change decimal points across columns in a single dataset?
+    - viable to change decimal points in different columns in a single dataset?
+    - even is this possible to change decimal points across multiple columns in a single dataset?
+    - even is this possible to change decimal points in a single dataset's columns?
+    - how the hell is this possible to change the decimal points in a single dataset's multiple columns?
+    - how the hellfuck is this possible to change decimal points in multiple columns within a single dataset?
+    - how the hellfuck is this possible to change the decimal points in a single dataset across multiple columns?
+    - does this platform allows you to change the decimal points in a dataset's multiple columns?
+    - does this platform allows you to change the decimal point in a single dataset's columns?
+    - does this website allows you to change decimal points in different columns of a single dataset?
+    - does this website allows you to change decimal points in multiple columns of the same dataset?
+    - does this website permits you to change the decimal points in multiple columns of the same dataset?
+    - does this website permits you to change the decimal points in different columns within the same dataset?
+    - Am i allowed to change decimal points in a single dataset across different columns?
+    - Am i allowed to change the decimal points in a single dataset's columns?
+    - is it actually possible to change decimal points in multiple columns of a dataset?
+    - is it actually possible to change decimal points in multiple columns in the same dataset?
+    - is it actually accomplishable to change the decimal points in different columns of a dataset?
+    - is it actually accomplishable to switch decimal points between columns in a single dataset?
+    - is it actually doable to change decimal points in a single dataset across multiple columns?
+    - is it actually doable to change the decimal points in different columns of a single dataset?
+    - Is it possible to change the decimal points in multiple columns of a single dataset?
+    - can we change decimal points across diff columns in a single dataset
+
+- intent: faq-dataset-b1/download-data-set-excel-format #412
+  examples: |
+    - possible to obtain Excel data sets?
+    - can  get Excel-formatted data sets?
+    - Is there a way to get data sets in Excel format?
+    - Is it viable to download Excel data files?
+    - Is there a way to obtain Excel data sets?
+    - viable to downlaod Microsoft Excel data sets?
+    - feasible to obtain data sets in Excel format?
+    - Is there a way to downlaod Excel data sets?
+    - Is there a way to downlaod data sets in Microsoft Excel format?
+    - Is it viable to save local image of  data in Excel format?
+    - Is it practical to obtain data sets in Excel format?
+    - Is there a way to save local image of  data sets in Excel?
+    - Is it practical to save local image of  Excel data sets?
+    - Is obtaining data sets in Excel practical?
+    - on indian data portal is it feacible to use  Excel-format data sets?
+    - do you allow to use  data sets in Excel format?
+    - do you allow to obtain data files in Excel format?
+    - do you allow to obtain data in Excel format?
+    - does IDP to acquire Excel data sets?
+    - Are Excel data sets available?
+    - does IDP to download data sets in Excel format?
+    - on indian data portal is it feacible to obtain data sets in Microsoft Excel format?
+    - Is it possible to obtain data sets in Excel?
+    - can i download data sets in excel format 
+
+- intent: faq-dataset-b1/differ-format-support-dataset-download #413
+  examples: |
+    - What are the various dataset types that can be downloaded?
+    - What data-downloading formats are supported?
+    - What data-downloading formats are available on this platform
+    - What are the different dataset download formats on this website
+    - What are the different formats for downloading datasets on this websites
+    - What file formats can I use to download datasets?
+    - For dataset downloads, what file formats are supported on this platform
+    - What are the different types of datasets that you can download on IDP
+    - What are the supported dataset download formats on IDP
+    - What are the different dataset download formats available on indian data portal
+    - What are the different types of dataset download formats on indian data portal
+    - What file types can I use to download datasets?
+    - What are the file formats for downloading datasets?
+    - What kinds of datasets are available for download?
+    - For dataset downloads, what formats are supported on indian data portal
+    - What are the dataset download formats that are supported?
+    - What formats are available for downloading datasets?
+    - What are the different types of datasets that can be downloaded?
+    - What are the various types of datasets available for download on indian data portal
+    - What are the available dataset download formats?
+    - What file types are available for data download?
+    - What are the various dataset download formats that can be used?
+    - What formats are supported for dataset downloads?
+    - What formats are supported for downloading datasets?
+    - What file formats are available for downloading datasets?
+    - What formats are available for dataset downloads?
+    - What file formats are supported for dataset downloads?
+    - What dataset download formats are supported?
+    - What are the different dataset download formats that are supported?
+    - what different formats are supported for dataset downloads?
+
+- intent: faq-dataset-b1/download-data-set-csv-format #414
+  examples: |
+    - possible to get data sets in CSV format?
+    - Are CSV data sets available?
+    - Are the data sets available in CSV format?
+    - possible to obtain CSV files?
+    - viable to get CSV files of the data sets?
+    - Are CSV files for the data sets available?
+    - Are there any CSV data sets available?
+    - viable to get CSV files of data?
+    - viable to download data sets in CSV format?
+    - practical to obtain CSV files of the data sets?
+    - Can I get CSV files of the data sets?
+    - practical to get CSV data sets?
+    - practicable to get CSV files of data sets?
+    - practicable to obtain data sets in CSV format?
+    - Are CSV files of the data sets available?
+    - but how is this possible to obtain CSV files for the data sets?
+    - Is there a way to get CSV data sets?
+    - but how is this possible to obtain data in CSV format?
+    - possible to obtain data set CSV files?
+    - but how is this feasible to obtain data in the form of CSV files?
+    - feasible to obtain CSV data sets?
+    - but how is this achievable to get the data sets in CSV format?
+    - but how is this achievable to get CSV files?
+    - Is there a CSV version of the data sets?
+    - Is it possible to get the data sets as CSV files?
+    - Is it possible to obtain the data sets' CSV files?
+    - Is it possible to get data in CSV format?
+    - Is there a CSV format for the data sets?
+    - can i download data sets in CSV format
+
+- intent: faq-dataset-b1/combin-datset-diff-sector #416
+  examples: |
+    - can we to combine data sets from different sectors?
+    - Is it possible to mix and match data sets from various sectors?
+    - Is combining data sets from different sectors possible?
+    - feasible to combine data sets from a number of different sectors?
+    - feasible to combine data sets from a variety of domains?
+    - vaible to mix data sets from various domains?
+    - how is this vaible to combine data sets from different sectors?
+    - viable to bring together data sets from various domains?
+    - viable to bring together data sets from different industries?
+    - practical to blend data sets from various industries?
+    - but how is this practical to combine data from different industries?
+    - possible to combine data sets from various sectors?
+    - Is it possible to combine data from various industries?
+    - Is it possible to combine data sets from various industries?
+    - Is it feasible to combine data sets from various industries?
+    - any possibility to mix and match data sets from different industries?
+    - Is it feasible to combine data sets from different industries?
+    - can i combine datsets from diff sectors
+
+- intent: faq-dataset-b1/datacard-signifi # 418
+  examples: |
+    - What is a datacard and what does it mean?
+    - What is the definition of datacard?
+    - What is a datacard exactly?
+    - What exactly is a datacard, and what does it mean?
+    - What does datacard mean?
+    - What does the term datacard mean?
+    - What is a datacard, exactly, and what does it imply?
+    - What is a "datacard," exactly?
+    - What does data card mean exactly?
+    - What does it mean to have a data card?
+    - What is a datacard exactly, and what does it imply?
+    - What is the meaning of the term data card?
+    - What exactly does data-card imply?
+    - What exactly does the term data-card mean?
+    - What exactly does the term "datacard" imply?
+    - What exactly is a datacard, and what does it imply?
+    - What does it mean when you say "datacard"?
+    - What exactly is a datacard?
+    - What does having a "datacard" imply?
+    - What exactly is a "datacard"?
+    - What does the term "datacard" imply?
+    - What does the term datacard mean?
+    - What is a "datacard," and how does one get one?
+    - What is a datacard, exactly, and what does it mean?
+    - What is the meaning of the term datacard?
+    - When you say "datacard," what do you mean?
+    - what does datacard signifies?
+    - datacard what is this ?
+    - what is this datacard on this platform
+    - on IDP what is datacard
+    - on indian data portal what the hell is this datacard
+    - indian data portal has datacard but what is this 
+    - idp shows Datacard but how cna it help me
+    - how is datacard helps me

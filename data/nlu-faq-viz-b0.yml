@@ -38,6 +38,21 @@ nlu:
     - bye bye
     - see you later
     - Bye
+- intent: feedback-form
+  examples: |
+    - can you provide me with the feedback form?
+    - how can i get the feedback form
+    - is there any feedback form?
+    - do idp have any feedback form?
+    - please  tell me if there is any feedback form
+    - how can i give feedback 
+    - i wanna give some feddback
+    - feedback any way?
+    - any way to give feedback
+    - it was really nice working here i wanna suggest some improvements
+    - any way i can give suggestions
+    - i can provide some improvements
+    - any way i can give improvemnets feedback
 - intent: ok
   examples: |
     - yes

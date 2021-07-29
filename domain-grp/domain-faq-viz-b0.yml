@@ -17,6 +17,9 @@ intents:
     use_entities: true
 - ok:
     use_entities: true
+- feedback-form:
+    use_entities: true
+
 entities:
 - intent_button
 slots:
@@ -25,7 +28,8 @@ slots:
     influence_conversation: true
 
 responses:
-
+  utter_feedback-form:
+  - text: here is the link [feedback](https://forms.gle/Fk1TxTzAteigKFG87)
   utter_ok:
   - text: Ok go ahead :)
   utter_greet:

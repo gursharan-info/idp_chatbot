@@ -20,8 +20,6 @@ intents:
 - feedback-form:
     use_entities: true
 
-entities:
-- intent_button
 slots:
   intent_button:
     type: list

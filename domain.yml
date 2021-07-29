@@ -45,8 +45,7 @@ intents:
     use_entities: true
 - faq-train-b1:
     use_entities: true
-entities:
-- intent_button
+entities: []
 slots:
   intent_button:
     type: list

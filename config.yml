@@ -13,65 +13,65 @@ pipeline:
     min_ngram: 1
     max_ngram: 4
   - name: DIETClassifier
-    epochs: 150
+    epochs: 160
     batch_strategy: sequence # if you have a lot of training data for some intents and very little training data for others. 
 
   - name: EntitySynonymMapper
 
   - name: ResponseSelector
-    epochs: 150
+    epochs: 160
     retrieval_intent: faq-train-b0 # for faq-train-b0 specific questions
 
   - name: ResponseSelector
-    epochs: 150
+    epochs: 160
     retrieval_intent: faq-train-b1 # for faq-train-b1 specific questions
 
   - name: ResponseSelector
-    epochs: 150
+    epochs: 160
     retrieval_intent: faq-portal-b0 # for faq-portal-b0 specific questions
 
   - name: ResponseSelector
-    epochs: 150
+    epochs: 160
     retrieval_intent: faq-portal-b1 # for faq-portal-b0 specific questions
 
   - name: ResponseSelector
-    epochs: 150
+    epochs: 160
     retrieval_intent: faq-fel-b0 # for faq-fel-b0 specific questions
 
   - name: ResponseSelector
-    epochs: 150
+    epochs: 160
     retrieval_intent: faq-dataset-b0 # for faq-dataset-b0 specific questions
   
   - name: ResponseSelector
-    epochs: 150
+    epochs: 160
     retrieval_intent: faq-dataset-b1 # for faq-dataset-b0 specific questions
   
   - name: ResponseSelector
-    epochs: 150
+    epochs: 160
     retrieval_intent: faq-visualisation-b0
 
   - name: ResponseSelector
-    epochs: 150
+    epochs: 160
     retrieval_intent: faq-visualisation-b1 # from faq number 35 to 54
 
   - name: ResponseSelector
-    epochs: 150
+    epochs: 160
     retrieval_intent: faq-visualisation-b2 # from faq number 55 to 80
 
   - name: ResponseSelector
-    epochs: 150
+    epochs: 160
     retrieval_intent: faq-visualisation-b3 # from faq number 80 to 110
 
   - name: ResponseSelector
-    epochs: 150
+    epochs: 160
     retrieval_intent: faq-visualisation-b4 # from faq number 110 to 140
 
   - name: ResponseSelector
-    epochs: 150
+    epochs: 160
     retrieval_intent: faq-visualisation-b5 # from faq number 140 to 180
 
   - name: ResponseSelector
-    epochs: 150
+    epochs: 160
     retrieval_intent: faq-visualisation-b6 # from faq number 180 to 10038
 
 
@@ -90,7 +90,7 @@ policies:
   - name: MemoizationPolicy
   - name: TEDPolicy
     max_history: 3
-    epochs: 150
+    epochs: 160
     # constrain_similarities: true
 
   - name: RulePolicy

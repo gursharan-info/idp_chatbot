@@ -11,3 +11,10 @@ stories:
   # - action: utter_greet
   - action: action_slot_setter
 
+- story: happy_path
+  steps:
+  - intent: greet
+  - action: action_slot_setter
+  - intent: feedback-form
+  - action: utter_feedback-form
+

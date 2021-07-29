@@ -9,7 +9,11 @@ rules:
   # - action: utter_greet
   - action: action_slot_setter
 
-
+- rule: for feedback
+  steps:
+  - intent: feedback-form
+  - action: utter_feedback-form
+  
 - rule: for portal
   steps:
   - intent: faq-portal-b0

@@ -679,6 +679,20 @@ nlu:
     - help convert entity unts
     - advice/advise how to change entity units
     - FAQ for changing entity units
+    - can i changeunits ?
+    - units can i change them 
+    - pls tell me how can i change units on this webiste
+    - units associated with entities can i cchnage them
+    - entities related to units can we change them  if yes how ?
+    - can entity units bee chnaged
+    - how am i supposed to chnage entity units
+    - Is it possible to alter the units of any entity?
+    - Is it possible to modify the units of any entity?
+    - is it possible to manipulate the units of any entity?
+    - Can I change the units of any entity?
+    - is it possible for me to change the unit of any entity?
+  
+
 - intent: faq-visualisation-b5/How-change-different-colours-bar #171
   examples: |
     - how to chnge color scheeme?

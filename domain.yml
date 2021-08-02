@@ -219,7 +219,7 @@ responses:
   utter_faq-dataset-b0/old-data-available:
   - text: We can provide data from public sources across the years where it is available
   utter_faq-dataset-b0/historical-data:
-  - text: Various distoric datasets are available on the portal, please visit the
+  - text: Various historic datasets are available on the portal, please visit the
       dataset section of the portal for details
   utter_faq-dataset-b0/COVID-data:
   - text: You can find Covid19 data set at https://indiadataportal.com/jsi
@@ -523,7 +523,7 @@ responses:
   utter_faq-portal-b0/potal-maintainence-by-goi:
   - text: This portal is maintained by the Indian School of Business
   utter_faq-portal-b0/data-age-how-old:
-  - text: Various distoric datasets are available on the portal, please visit the
+  - text: Various historic datasets are available on the portal, please visit the
       dataset section of the portal for details
   utter_faq-portal-b0/data-update-mail-alerts:
   - text: Until now, we do not have that feature. Thanks for the feedback, well include

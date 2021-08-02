@@ -81,7 +81,7 @@ responses:
   - text: We can provide data from public sources across the years where it is available  
 
   utter_faq-dataset-b0/historical-data:  #312
-  - text: Various distoric datasets are available on the portal, please visit the dataset section of the portal for details
+  - text: Various historic datasets are available on the portal, please visit the dataset section of the portal for details
 
   utter_faq-dataset-b0/COVID-data:  #313
   - text: You can find Covid19 data set at https://indiadataportal.com/jsi

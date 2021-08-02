@@ -94,7 +94,7 @@ responses:
   utter_faq-portal-b0/potal-maintainence-by-goi:  #330
   - text: This portal is maintained by the Indian School of Business
   utter_faq-portal-b0/data-age-how-old: #331
-  - text: Various distoric datasets are available on the portal, please visit the dataset section of the portal for details
+  - text: Various historic datasets are available on the portal, please visit the dataset section of the portal for details
   utter_faq-portal-b0/data-update-mail-alerts:  #332
   - text: Until now, we do not have that feature. Thanks for the feedback, well include this in the product roadmap.
   # utter_faq-portal-b0/feature-update-mail-alerts: #333

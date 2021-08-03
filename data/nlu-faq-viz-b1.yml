@@ -13,6 +13,7 @@ nlu:
     - how do you upload additional datasets on the indian data portal
     - is there a way to add further datasets on idp
     - how datasets are added?
+    - could you help me out i am not able to add datasets
     - dataset uploading present on Indian data portal?
     - how do i upload additional datasets to the indiandataportal
     - how can i upload datasets to indian data portal
@@ -26,10 +27,11 @@ nlu:
     - how am i supposed to insert a dataset?
     - how can i insert a dataset ?
     - is there anyway we can add dataset to this webiste
-    - is there anyway we can add dataset to this portal
+    - what way can i add data to the portal
     - is there anyway we can add dataset to this website
     - anyway we can add dataset to webiste 
     - anyway we can add dataset to website
+    - in what way can i add a dataset
 
 - intent: faq-visualisation-b1/location-meaning-idp
   examples: |

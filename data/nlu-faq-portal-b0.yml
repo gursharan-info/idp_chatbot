@@ -15,13 +15,27 @@ nlu:
     - What sorts of graphics might I expect to see here?
     - What sorts of images might I expect to see here?
     - What sorts of images might I anticipate to see on this platform
-    - Which sorts of images might I anticipate to see here?
-    - Which types of images might I expect to see here?
-    - Which types of images might I expected to be seen here?
-    - Which types of images might I expected to see in this?
+    - which type visuals are supported by IDP
+    - which type visuals are supported by Indian data portal
+    - which type visuals are supported by idp
+    - which type infographics are supported by IDP
+    - What types of visualisations are available through the website
+    - What kinds of visuals are there on the webiste
+    - how many variety of visualisations on the site
+    - various types of visualisations on the site
     - And what sorts of visuals may be seen on the India Data Portal?
     - And what sorts of infographics may be seen on the India Data Portal?
     - And what sorts of infographics may be seen here?
+    - how many type of visuals can i use here on this website
+    - how many type of infographics are supported here
+    - what are the unique number of viz. i can see here
+    - What are the types of visualizations available on the IDP
+    - diff  types of visualizations available on the idp
+    - what different kind of visualisations can i use here on portal?
+    - what different kind of visualisations are present on the portal?
+    - tell me what diff sort of visuals are offered by this portal?
+    - diff plots supported by this portal?
+
 
 
 - intent: faq-portal-b0/frequency-data-upload #10
@@ -49,25 +63,27 @@ nlu:
 - intent: faq-portal-b0/server-error #11
   examples: |
     - There is server 503 error that appears when we click the source link....probably backend issue
-    - When we visit the source link, we get a server 503 error...this is most likely due to a backend problem.
-    - When we visit the source link, we have a server 503 error...this is most likely due to a backend problem.
-    - When you visit the source link, we have a server 503 error...this is most likely due to a backend problem.
-    - When you visit the source link, we have a server 503 error...this is most probably due to a backend problem.
-    - Whenever you visit the source link, we have a server 503 error...this is most probably due to a backend problem.
-    - Whenever you visit the source link, we have a server 503 error...this is most probably due to a backend issue.
-    - After you visit the source link, we have a server 503 error...this is most probably due to a backend issue.
-    - Even before you visit the source link, we have a server 503 error...this is most probably due to a backend issue.
-    - When we tap on the source link, we receive a server 503 error...this is most likely due to a backend issue.
-    - We have a server 503 problem even before you reach the source link...this is most likely due to a backend issue.
-    - We have a server 503 problem even before you reach the source link...this is most probably due to a backend issue.
-    - We have a server 503 problem even before you reach the source link...this is most probably due to a server issue.
-    - We have just a server 503 problem even before you reach the source link...this is most probably due to a server issue.
-    - We have just a server 503 issue even before you reach the source link...this is most probably due to a server issue.
-    - We have just a server 503 errors even before you reach the source link...this is most probably due to a server issue.
-    - We have just a server 503 errors even before you reach the link to the source is most probably due to a server issue.
-    - We have just a server 503 errors even before you reach the proper link is most probably due to a server issue.
     - We have just a server 503 problem even before you reach the proper link is most probably due to a server issue.
     - We have one server 503 problem even before you reach the proper link is most probably due to a server issue.
+    - why am i getting error code 503 when i click on the source link
+    - on clicking the source link there is a 503 error, do have any idea how to resolve it
+    - when i click on source lik a 503 error pops up why is this coming
+    - on clciking link to the source i get 503 error always pls resolve this
+    - wanna resolve this 503 error that comes when i hit source link
+    - wanna resolve this 503 error that comes when i hit link to the source
+    - When I click on the source link, I get an error code 503, why?
+    - by clicking on the source link, I get an error code of 503 can you help me to solve this
+    - I receive the error code 503, when I click on the source link,
+    - can you tell me why i got 503 error code after hitting on source link?
+    - whats the resaon behind getting error code 503, while clicking on source link?
+    - reason for receiving error number 503 while hitting on the source link?
+    - i got this pop saying 503 but why is this happening when i click on source link
+    - i clicked on url to the source but i got this 503 error why?
+    - Why am I seeing an error code 503 whenever I click on the source link?
+    - When i click on the source link, i get the error code 503. What is the cause of this?
+    - it gave 503 error when i click on the source link, why ?
+    - it gave 503 error when i click on the source link, what's the cause of this error ?
+
 
 - intent: faq-portal-b0/not-able-search-dataset-with-keywords #15
   examples: |
@@ -157,32 +173,36 @@ nlu:
 - intent: faq-portal-b0/trust-data-sourced-from-government-agencies  #26
   examples: |
     - How do we trust this data since the data is sourced from government agencies?
-    - How can we trust this data when it comes from government agencies?
-    - How can we trust this data when that comes from government agencies?
+    - How can we trust this data when it comes from government departments?
+    - How can we trust this data when that comes from government department?
     - How can we trust this data when that comes from federal agencies?
     - How can we trust this data when that comes from government departments?
-    - How can we believe this data when that comes from state agencies?
+    - How can we believe this data when that comes from state departments?
     - How the fuck can we believe this data when that comes from state agencies?
     - How the fuck can we believe this data when that comes from govt agencies?
     - How then can we believe this data when that comes from govt agencies?
     - How might we believe this data when that comes from govt agencies?
     - How might we believe this data when that comes from government bodies?
-    - How might we believe this data but when comes from government bodies?
     - why we trust this data?
     - where is refrence of this data
-    - can i trust this source
+    - can i trust this source of data
     - is this data reliable?
     - how can we trust this data?
     - Why do we believe this data?
     - Why would we embrace this data?
     - Why do we believe this information?
-    - Why should we place our faith in this information?
-    - why do we have faith in this data?
     - how am i supposed to believe that this data is correct?
     - how can we say this data is accurate?
-    - Why do we have faith in this details?
     - why should i believe this info is correct?
     - why should i rely on the data?
+    - how can i trust the data available here
+    - data present on this portal how can i rely on this?
+    - How can I trust the data information provided here?
+    - info present on this webiste  is that reliable ?
+    - How can I rely on the data given here?
+    - How can I be certain that the info provided here is accurate?
+    - how am i supposed to be sure that data given here is acurate?
+
 
 - intent: faq-portal-b0/materials-videos-different-visualization-posted-website  #27
   examples: |
@@ -208,12 +228,11 @@ nlu:
     - any plans for training videos on portal?
     - can we expext new traing videos ?
     - will there be any new material?
-    - Will there be further training resources for various visualisation situations accessible on the website?
     - Will there be further training resources for various visualisation instances accessible on the website?
     - Would there be further training resources for various visualisation scenario accessible on the website?
     - Maybe there will be further training resources for various visualisation scenario accessible on the website?
     - Maybe there will be further training resources for various representation scenario published on the website?
-    
+    - will we get any videos for training for different visualisations
 
 - intent: faq-portal-b0/different_langauges_availability #29
   examples: |
@@ -350,6 +369,7 @@ nlu:
     - Is it possible to distinguish between different datasets?
     - Is it important to distinguish between different datasets?
     - Is it possible to determine between different datasets?
+    - is there any feature to compare 2 different datasets
     - 
 
 - intent: faq-portal-b0/about_idp #1
@@ -460,6 +480,19 @@ nlu:
     - Would u tell me how many data I'll get from this site?
     - Will u tell me how many data I'll get from this site?
     - Will u tell exactly how many data I'll get from this site?
+    - show me the number of datasets availabe here
+    - what is the count of total number of datasets
+    - what is the count of total number of datasets on this webiste
+    - what is the count of total number of datasets on this portal
+    - what is the count of total no of datasets on this webiste
+    - what is total no of datasets residing on the portal
+    - what is total number of datasets residing on the portal
+    - How many datasets are there altogether?
+    - how many datasets are there on the portal entirely
+    - What is the total amount of datasets?
+    - What is the total amount of datasets on this portal
+    - What is the total amount of datasets on this cite
+    - on portal what is the overall sum of datasets?
 
 - intent: faq-portal-b0/what-is-indicator
   examples: |
@@ -649,16 +682,17 @@ nlu:
     - Is the information trustworthy?
     - Is the data trustworthy?
     - Is the data dependable?
+    - Can your data be trusted ?
     - How can we determine whether or not data is reliable?
     - The information provided here is trustworthy.
     - The evidence released here is trustworthy.
     - The information presented here is credible.
-    - The information presented here is genuine.
-    - The data supplied here is genuine.
+    - The information presented here is genuine ?
+    - The data supplied here is genuine?
     - The details available here is accurate.
-    - All details available here is genuine.
-    - All details available here is accurate.
-    - All details available here is reliable.
+    - All details available here is genuine ?
+    - How genuine is your data ?
+    - tell me How genuine is your data ?
     - All evidence given here is reliable.
     - This evidence given here is reliable.?
     - This evidence given here is authentic.
@@ -666,25 +700,27 @@ nlu:
 - intent: faq-portal-b0/How-portal-useful
   examples: |
     - How is the portal useful?
-    - portal is useful.
     - is portal useful?
-    - is this useful
-    - any usefullness of it ?
+    - any usefullness of portal ?
     - how portal is useful for us?
     - how IDPortal works better for us?
-    - IDP portal is useful . how?
     - What is the portal's purpose?
     - What is the portal's objective?
     - How can we make IDPortal function better for us?
     - What is the portal's function?
-    - Is there any use for it?
     - What is the portal's value to us?
-    - What then is the portal's value to us?
-    - What then is the website's value to us?
-    - What then is the portal's significance to us?
+    - What is the portal's value to us?
+    - What is the website's value to us?
+    - What is the portal's significance to us?
     - So what was the portal's significance to us?
     - Then what was the portal's significance to us?
     - But what's the portal's significance to us?
+    - What is the function of this website ?
+    - What then is the portal's significance to us?
+    - how is this website useful for me 
+    - how is this site useful for me
+    - what are advantages of using this portal
+    - what are advantages of this site to me
 
 - intent: faq-portal-b0/Why-need-data
   examples: |
@@ -745,14 +781,22 @@ nlu:
     - would data be available for download purposes?
     - is it possible to download the data?
     - Can i download the data?
-    - Is it able to copy data?
-    - Is it able to copy information?
-    - Is it easy to download information?
-    - Is it easy to download info?
-    - Is it easy to download statistics?
     - Is there a method to download data?
     - Is it possible to save data?
     - Is it possible to save data locally
+    - Can the data be downloaded
+    - how to download the data ?
+    - how data can be downloaded
+    - how data can be downloaded locally 
+    - how am i supposed to download thee data
+    - how am i supposed to save the data 
+    - how can i save data locally
+    - in what diff formats i can save the data
+    - in what several formats data can be saved
+    - tell me how can i download data in different formats
+    - guide me how to save the data 
+    - guide me how to save the data  locally
+    - help me out in downlaoding data
     
 - intent: faq-portal-b0/data-use-for-research
   examples: |
@@ -985,7 +1029,15 @@ nlu:
     - What are news and graphics, exactly?
     - What exactly do the terms "news" and "graphics" mean?
     - What are the definitions of the terms news and graphics?
-    - What exactly is news?
+    - What exactly is news and grpahics
+    - What are news and graphics columns in your portal ?
+    - can you tell me more about news and graphics on this website
+    - on this webiste i saw news column and the graphic column what are they ?
+    - news and graphics what are these 2 columns here on this site
+    - In your portal, what are the news and graphics columns?
+    - What are your portal's news and graphics columns?
+    - What exactly are your portal's news and graphics columns?
+    - In your site, what do you mean by news and graphics columns
     
 - intent: faq-portal-b0/uploading-news
   examples: |

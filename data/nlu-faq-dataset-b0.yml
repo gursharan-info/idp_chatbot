@@ -27,7 +27,7 @@ nlu:
 
 - intent: faq-dataset-b0/upload-datasets-platofrm # 21
   examples: |
-    - How do I share/ upload a dataset from IDP
+    - How do I upload a dataset on IDP
     - How do I upload a dataset that I have? 
     - How do I upload an existing dataset?
     - How then do I upload an existing dataset?
@@ -45,6 +45,18 @@ nlu:
     - is there any provision to add custom data here?
     - can i utilize my own data here?
     - Is there a way to upload a dataset to the portal?
+    - how do i add dataset on this website
+    - how do i add dataset on this site
+    - how do i add dataset on this data website
+    - how do i add data on this website
+    - how do i add data on this portal
+    - does this site has an option to upload data
+    - is sharing data possible here
+    - What is the procedure for uploading a dataset to IDP?
+    - can i upload a dataset of my own here
+    - does this site has an option to upload data
+
+
 
 
 - intent: faq-dataset-b0/multiple-data-sets-same-parameter #23
@@ -562,6 +574,7 @@ nlu:
     - Is there data regarding the unemployment available?
     - Is data from the unemployment available?
     - Is figures from the unemployment available?
+    - what will be your reply if i ask you about unemployment data ?
     - data from unemployment is there?
     - Do you have any information from the unemployment?
     - does portal have info concern with unemployment
@@ -688,7 +701,7 @@ nlu:
     - What are daily datasets ?
     - can we have daily datasets.
     - how we get daily informatiuon.
-    - daily datasets/.
+    - daily datasets
     - datasets on daily basis.
     - is there any daily based datasets?
     - any daily info based dataset?
@@ -740,6 +753,16 @@ nlu:
     - Is there any historical information available?
     - Would there be any historical data available?
     - Is there any historical information collected?
+    - any data realted to history
+    - data related to history
+    - any stats or figures from past
+    - any data present on this portal which is from history
+    - Do you have any data from the past?
+    - is there any historical data available on this portal
+    - any data from past present on this website
+    - tell me do you have history related data
+    - any data related to history domain
+
 
 - intent: faq-dataset-b0/COVID-data  #313
   examples: |
@@ -859,3 +882,4 @@ nlu:
     - Why was the India Data Portal constructed?
     - Why was the India Data Portal developed?
     - Why was the India Data Portal founded?
+    - what was the purpose behind creating this portal ?

@@ -1048,6 +1048,7 @@ nlu:
     - What's the most effective technique to depict a pattern?
     - ahmm but the best way to visualise a trend?
     - how should a trend be depicted?
+    - i wanna see some trends can i see them?
 
 - intent: faq-visualisation-b2/select-location  #75
   examples: |

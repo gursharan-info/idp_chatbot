@@ -27,7 +27,7 @@ responses:
   - text: You can search for the dataset name, indicator name or location separately
 
   utter_faq-portal-b0/help-technical-issues-portal: #24
-  - text: Just mail to us idp@isb.edu
+  - text: You can fill up the [feedback form](https://docs.google.com/forms/d/e/1FAIpQLSe4ZbIwB0BmX1_wEXUlL0Ywl_dt7US-Ipa_YLU2mDtjkqfPjg/viewform) or write to us - idp@isb.edu
 
   utter_faq-portal-b0/not-able-compare-datasets: #25
   - text: You can compare two datasets provided there is data on the same locations across both the datasets, e.g. either state or district level data

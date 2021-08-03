@@ -28,24 +28,25 @@ nlu:
 
 - intent: faq-train-b0/how-to-use-idp #266
   examples: |
-    - help me to use this portal?
+    - help me to use this webiste?
     - How do I make usage of the Portal?
-    - guide me how to use this portal?
-    - guide me how to use this ?
-    - how can i use this portal
+    - guide me how to use this webiste?
+    - guide me how to use this site?
+    - how can i use this webiste
     - How do I utilise the Portal?
-    - How to learn using the portal?
-    - How do learn to use the portal ?
-    - teach me how to use this portal?
-    - how am i supposed to use the portal?
-    - how to operate the portal?
+    - How to learn using the webiste?
+    - How do learn to use the site ?
+    - teach me how to use this site?
+    - how am i supposed to use the site?
+    - how to operate the site?
     - guide me to use the portal?
     - help me to understand the portal?
     - can you please guide me to operate portal?
     - What is the best way to use the Portal?
-    - What is the Portal's purpose and how do I use it?
     - What are the steps to using the Portal?
     - steps to use the portal?
+    - what are the ways to use portal ?
+
 
 - intent: faq-train-b0/any-training-available #268
   examples: |
@@ -661,6 +662,13 @@ nlu:
     - how can i find IDP training is helpful?
     - can i get benefit of IDP  training?
     - How would training assist me in gaining a better knowledge of the portal?
+    - how does training i have done here will help me
+    - and how will i be benfitted from training i have done here
+    - if i complete my training from IDP what will be my benefit
+    - how is this training even going to help me
+    - training done on Indian data portal how will this help me grow
+    - training done on Indian data portal how will this help me grow in my job
+
 - intent: faq-train-b0/training-data-from-cmie
   examples: |
     - Are you having employment data from CMIE ?
@@ -672,6 +680,7 @@ nlu:
     - you can help in getting data from cmie for employbility domain
     - how can i get employment data from the cmie?
     - are you receiving employment data from the cmie?
+
 - intent: faq-train-b0/online-resource-for-training
   examples: |
     - Do you have any online resources for training?
@@ -716,6 +725,10 @@ nlu:
     - guide me to operate the portal?
     - any assistance to operate the portal?
     - can you help me to understand this portal?
+    - where can i find some stuff for using this portal
+    - i need some guidance where can i find some stuff regarding it
+    - any url or link i can get beacuse i wanna see some tutorials reagrding IDP
+    - this portal is little trciky to use can i get some tuts resource regarding it 
 
 - intent: faq-train-b0/free-online-tutorials-idp
   examples: |
@@ -826,6 +839,12 @@ nlu:
     - any youtube based training content?
     - any training content on youtube?
     - training content in form of youtube videos?
+    - can you provide some video training material ?
+    - can you provide some video content to use this website
+    - do you any you tube channel where i can get somme support
+    - i wanna see some videos reagrding how can i utilise this website where can i ?
+    - is there any resource i can refer to consume video content regarding usage of this portal
+
 
 - intent: faq-train-b0/idp-training-incharge
   examples: |
@@ -849,6 +868,7 @@ nlu:
     - idp training is undertaken by whom?
     - who is supposed to be the incharge of the portal?
     - Who is in charge of the India Data Portal Training Program?
+    - your portal training session are conducted by whom ?
 
 - intent: faq-train-b0/training-participation-recognition
   examples: |

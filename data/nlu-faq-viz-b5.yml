@@ -481,32 +481,28 @@ nlu:
     - datasets that i have on local pc can i compare here
     - i have some data can i compare it on here
     - Is it possible for me to make a comparison between different datasets?
-    -Which datasets am I allowed to compare?
-    -Which datasets can I compare and contrast?
-    -Is it possible to compare multiple datasets?
-    -Is it possible for me to compare datasets of various types?
-    -What types of datasets am I able to compare?
-    -What datasets am I able to contrast?
-    -Which datasets can I compare?
-    -Can I compare which datasets?
-    -What datasets am I able to compare?
-    -Is it possible for me to compare different kinds of datasets?
-    -Is it feasible for me to compare various dataset types?
-    -What datasets can I compare?
-    -Which datasets I can compare
-    -Is it permissible for me to compare which datasets?
-    -Is it feasible for me to compare various datasets?
-    -Is it possible for me to compare different types of datasets?
-    -What kinds of datasets can I compare?
-    -Which datasets may I compare?
-    -Is it possible for me to compare various dataset types?
-    -I'm able to figure out which datasets to compare.
-    -Is it possible for me to make a comparison between two datasets?
-    -Can I compare different types of datasets?
-    -Is it possible for me to compare different datasets?
-    -Which datasets am I able to compare?
-    -Which datasets am I able to contrast?
-    -I'm able to compare which datasets.
+    - Which datasets am I allowed to compare?
+    - what diff varities of datasets can i compare here
+    - what diff styles of datasets can i compare here
+    - Which datasets can I compare and contrast?
+    - Is it possible for me to compare datasets of various types?
+    - What types of datasets am I able to compare?
+    - What datasets am I able to contrast?
+    - Which datasets can I compare?
+    - What datasets am I able to compare?
+    - Is it possible for me to compare different kinds of datasets?
+    - Is it feasible for me to compare various dataset types?
+    - What datasets can I compare?
+    - Which datasets I can compare
+    - Is it permissible for me to compare which datasets?
+    - tell me what different types of datasets am i able to compare
+    - tell me which different types of datasets can i contrast here
+    - What kinds of datasets can I compare?
+    - Which datasets may I compare?
+    - Is it possible for me to compare different datasets?
+    - Which datasets am I able to compare?
+    - Which datasets am I able to contrast?
+    
 
 
 - intent: faq-visualisation-b5/What-you-mean-time #166
@@ -691,6 +687,7 @@ nlu:
     - is it possible to manipulate the units of any entity?
     - Can I change the units of any entity?
     - is it possible for me to change the unit of any entity?
+    - is it possible to change units of any entity?
   
 
 - intent: faq-visualisation-b5/How-change-different-colours-bar #171
@@ -763,41 +760,50 @@ nlu:
 
 - intent: faq-visualisation-b5/How-many-ways-download-graph #173
   examples: |
-    - how to downlod graph?
-    - how can i export graph?
-    - how to save my graph?
-    - Is there a way to download a grapy?
-    - Is there more than one way to download a graph?
-    - can I download my chart?
-    - Download the graphics?
-    - Download IDP data?
-    - Can data from IDP be downloaded?
-    - Can the visualization be saved?
-    - is tutorials available for downloading grpahs?
-    - is tutorials available for downloading graphs?
-    - How many different ways can I get the graph?
-    - Is there a restriction on how many times I can save the graph?
-    - Is there a cap on how many times I can save the graph?
-    - Is there a limit to how many different approaches I can use to obtain the graph?
-    - Is there a limit to how many times I can get the graph in different ways?
-    - Is there a limit to the number of ways I can obtain the graph?
-    - Is there a limit to the number of different methods I can use to obtain the graph?
-    - Is there a limit to how many times the graph can be saved?
-    - Is it possible to download the graph as many times as you want?
-    - Is there any limit to how many different ways I can get the graph?
-    - Is it possible to download the graph indefinitely?
-    - Is there a limit to how many times the graph can be downloaded?
-    - Is there a limit to how many ways I can obtain the graph?
-    - Is there any way to get the graph in as many different ways as possible?
-    - Is there a limit to the number of times I can save the graph?
-    - Is it possible to download the graph an unlimited number of times?
-    - Is it possible to obtain the graph in as many different formats as possible?
-    - Is there a way to get the graph in a variety of formats?
-    - Is there a limit to how many different ways I can get the graph?
-    - Is it possible to obtain the graph in as many different ways as possible?
-    - Is there a limit to how many times you can download the graph?
-    - Is there a limit to the number of times the graph can be downloaded?
-    - Is there a limit to how many times I can download the graph?
+    - how many ways i can downlaod a graph
+    - suggest me ways in which graph can be downloaded
+    - tell me some ways via which i can download the graph
+    - tell me some way via which graph can be downloaded
+    - tell me some way via which graph can be saved
+    - in what formats i can save the visuals locally
+    - i have made my visualisations now how can i save them
+    - i wanna save the work i have done here
+    - any way i can view my work locally ? means can i take them locally
+    - in how many ways a graph can be downloaded?
+    - How many different ways can a graph be downloaded?
+    - in what diffrent formats i can save my visuals
+    - in what diffrent formats i can save my data viz. that i have created
+    - i have created some vizualisations how can i save them
+    - save the visuals locally ? can i ? iif yes in what format
+    - How many alternative techniques are there for obtaining a graph?
+    - How many different formats are there for downloading a graph?
+    - what formats are supported for saving our visuals
+    - what are the suggested formats for downloading our visuals
+    - in what different formats a graph can be saved?
+    - in what different formats a graph can be downloaded?
+    - How many different methodologies are there for retrieving a graph?  
+  #   - Is there a restriction on how many times I can save the graph?
+  #   - Is there a cap on how many times I can save the graph?
+  #   - how many different approaches I can use to obtain the graph?
+  # # - how many times I can get the graph in different ways?
+  #   - Is there a limit to the number of ways I can obtain the graph?
+  #   - Is there a limit to the number of different methods I can use to obtain the graph?
+  #   - Is there a limit to how many times the graph can be saved?
+  #   - Is it possible to download the graph as many times as you want?
+  #   - Is there any limit to how many different ways I can get the graph?
+  #   - Is it possible to download the graph indefinitely?
+  #   - Is there a limit to how many times the graph can be downloaded?
+  #   - can i know  if there is any limit to how many ways I can obtain the graph?
+  #   - Is there any way to get the graph in as many different ways as possible?
+  #   - Is there a limit to the number of times I can save the graph?
+  #   - Is it possible to download the graph an unlimited number of times?
+  #   - Is it possible to obtain the graph in as many different formats as possible?
+  #   - Is there a way to get the graph in a variety of formats?
+  #   - Is there a limit to how many different ways I can get the graph?
+  #   - Is it possible to obtain the graph in as many different ways as possible?
+  #   - Is there a limit to how many times you can download the graph?
+  #   - Any upper limit to the number of times the graph can be downloaded?
+  #   - Is there a limit to how many times I can download the graph?
 
 
 - intent: faq-visualisation-b5/Can-share-graphs-on-social-media #174

@@ -268,30 +268,32 @@ nlu:
 
 - intent: faq-visualisation-b6/when-use-choropleth-map #188
   examples: |
-    - Now can i use a choropleth map?
+    - Now when can i use a choropleth map?
     - What situation suitable for use a choropleth map?
     - In which circumtances i use choropleth map?
-    - Can I use a choropleth map?
-    - When i can acces to use choropleth map?
-    - Can i able to use choropleth map?
+    - when I will use a choropleth map?
     - When is it appropriate to use a Choropleth visuals?
     - When is it acceptable to use a Choropleth ?
     - How is it acceptable using a Choropleth ?
     - How is it appropriate using a Choropleth map?
     - How is it appropriate to use a Choropleth map?
     - When is it acceptable to just use a Choropleth map?
-    - Can I use a choroplth map?
+    - what is the right time for using choropleth map ?
     - When do I need to look at a chloro map?
     - When is it necessary to use a chloropetl map?
     - When would a Choropleth map be useful?
     - When is it app. to employ a Choropleth map?
     - i have a doubt When should a Choropleth map be used?
-    - query ? When should I consult a Choropleth map?
+    - When should I opt for  a Choropleth map?
+    - when am i supposed to use chloropleth map
+    - in what scenarios should i go with chloropleth map
     - can you tell When is a Choropleth map good to use?
     - When should you use a chloro-pleth vsiuals?
-    - but When should you use a Choropleth map?
+    - but When should we use a Choropleth map?
+    - according to you when should i use chloropleth map
+    - according to your suggestion when should i use chloropleth map
     - but when i will have to make choloropleth visuals
-    - ahmm When is it appropriate to consult a Choropleth map?
+    - ahmm When is it appropriate to make use of a Choropleth map?
     - tell me When is a Choropleth map appropriate?
     - When is it appropriate to use a Choropleth graphs?
     - can you tell When do I need to use a Choropleth visuals?
@@ -1289,12 +1291,12 @@ nlu:
     - What is the max number of outputs I can download at any given time?
     - How many outputs may I download at any given time?
     - How many outputs am I permitted to download at any given time?
-    - any upper range to how many outputs I can download at once?
+    - upper range to how many outputs I can download at once?
     - any upper range to the amount of outputs I can download at any given time?
     - any upper range to the number of representations I may download at a time?
-    - any upper range to the number of representations I can download at the same time?
+    - Max range to the number of representations I can download at the same time?
     - any upper range to how many representations I may download in a single session?
-    - upper range to how many representations I may download at a time?
+    - Maximum range to how many representations I may download at a time?
     - upper range to how many representations I can download at any given time?
     - Is there a cap on how many visualisations I may download at once?
 

@@ -258,7 +258,10 @@ responses:
   - text: Datacard consists of one dataset with visualization. In one page we can
       have 4 datacards with 4 different visualizations
   utter_feedback-form:
-  - text: here is the link [feedback](https://forms.gle/Fk1TxTzAteigKFG87)
+  - text: You can fill the form
+    buttons:
+    - title: Feedback form
+      payload: https://forms.gle/Fk1TxTzAteigKFG87
   utter_ok:
   - text: Ok go ahead :)
   utter_greet:
@@ -844,8 +847,6 @@ responses:
   utter_faq-train-b0/training-participation-recognition:
   - text: IDP offers a certificate of participation for people who successfully compeletes
       the training program
-  utter_faq-train-b0/how-to-send-feedback:
-  - text: You can fill the feedback form or mail us at- idp@isb.edu
   utter_faq-train-b0/training-available-for-all:
   - text: India Data Portal offers Masterclasses and Workshops free of cost and anyone
       can attend

@@ -96,8 +96,8 @@ responses:
   - text: IDP offers training through researchers and experts in the field
   utter_faq-train-b0/training-participation-recognition: #357
   - text: IDP offers a certificate of participation for people who successfully compeletes the training program
-  utter_faq-train-b0/how-to-send-feedback: #358
-  - text: You can fill the feedback form or mail us at- idp@isb.edu
+  # utter_faq-train-b0/how-to-send-feedback: #358
+  # - text: You can fill the feedback form or mail us at- idp@isb.edu
   utter_faq-train-b0/training-available-for-all: #364
   - text: India Data Portal offers Masterclasses and Workshops free of cost and anyone can attend 
   utter_faq-train-b0/portals-objective: #365

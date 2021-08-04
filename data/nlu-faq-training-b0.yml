@@ -896,39 +896,39 @@ nlu:
     - Would I receive a certificate if I engage in a training programme?
     - certification for training program?
 
-- intent: faq-train-b0/how-to-send-feedback
-  examples: |
-    - how can one send feeback to idp?
-    - What is the best way for me to provide feedback?
-    - How do I send my feedback?
-    - best way for submitting a feedback?
-    - what is the best way to give the feedback?
-    - How can I send my feedbacks?
-    - What is the most efficient method for me to send my comments?
-    - What is the most effective method for me to give feedback?
-    - What is the most efficient method for me to submit feedback?
-    - What is the most effective approach for me to submit feedback?
-    - What's the best way for me to provide my feedback?
-    - Where should I send feedback?
-    - where am i supposed to submit a feedback?
-    - What is the most efficient way for me to provide my feedback?
-    - What is the most efficient method for me to provide my feedback?
-    - What is the best way for me to provide my feedback?
-    - tell me where a feedback has to be sent?
-    - What is the most effective method for me to submit feedback?
-    - well where do we suppose to give feedback?
-    - where is feedback link?
-    - What is the most effective approach for me to give feedback?
-    - What is the best way for me to send my comments?
-    - how am i supposed to send feedback ?
-    - What is the best way to submit feedback to idp?
-    - guide me I'm not sure how I'm supposed to send feedback.
-    - help me out I'm not sure how I'm supposed to send feedback.
-    - What's the best way for me to provide feedback?
-    - So what is the ideal way for me to provide feedback?
-    - How should I provide feedback?
-    - So how could I give feedback?
-    - So how would I submit feedback?
+# - intent: faq-train-b0/how-to-send-feedback
+#   examples: |
+#     - how can one send feeback to idp?
+#     - What is the best way for me to provide feedback?
+#     - How do I send my feedback?
+#     - best way for submitting a feedback?
+#     - what is the best way to give the feedback?
+#     - How can I send my feedbacks?
+#     - What is the most efficient method for me to send my comments?
+#     - What is the most effective method for me to give feedback?
+#     - What is the most efficient method for me to submit feedback?
+#     - What is the most effective approach for me to submit feedback?
+#     - What's the best way for me to provide my feedback?
+#     - Where should I send feedback?
+#     - where am i supposed to submit a feedback?
+#     - What is the most efficient way for me to provide my feedback?
+#     - What is the most efficient method for me to provide my feedback?
+#     - What is the best way for me to provide my feedback?
+#     - tell me where a feedback has to be sent?
+#     - What is the most effective method for me to submit feedback?
+#     - well where do we suppose to give feedback?
+#     - where is feedback link?
+#     - What is the most effective approach for me to give feedback?
+#     - What is the best way for me to send my comments?
+#     - how am i supposed to send feedback ?
+#     - What is the best way to submit feedback to idp?
+#     - guide me I'm not sure how I'm supposed to send feedback.
+#     - help me out I'm not sure how I'm supposed to send feedback.
+#     - What's the best way for me to provide feedback?
+#     - So what is the ideal way for me to provide feedback?
+#     - How should I provide feedback?
+#     - So how could I give feedback?
+#     - So how would I submit feedback?
 
 - intent: faq-train-b0/training-available-for-all
   examples: |

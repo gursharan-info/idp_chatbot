@@ -45,6 +45,23 @@ nlu:
     - What resources can I use to learn more about the fellowships?
     - How can I know more about the fellowships?
 
+- intent: faq-fel-b0/fellowship-with-idp
+  examples: |
+    - Is there a fellowship programme at India Data Portal?
+    - do you have ay fellowships available?
+    - Are there any fellowships available through India Data Portal?
+    - have there been any fellowships associated with idp?
+    - does idp offeres any fellowship?
+    - any fellowship available?
+    - Does India Data Portal have any fellowships?
+    - Is the India Data Portal offering a fellowship programme?
+    - Is there an internship programme at India Data Portal?
+    - Is there a fellowship available?
+    - Is there an internship available?
+    - Is there a communion available?
+    - does it provides any support program?
+    
+
 - intent: faq-fel-b0/fellowship-eligibility
   examples: |
     - how to check the eligibilty for fellowship?

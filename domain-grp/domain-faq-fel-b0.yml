@@ -18,3 +18,5 @@ responses:
   - text: The first phase of the fellowship consists of a four-week programme to familiarize the fellows with datasets of IDP. Based on how they perform, the fellows move to phases 2 and 3, which include workshops on long-form writing, masterclasses, and a one-week research trip to the Indian School of Business’s campus in Mohali.
   utter_faq-fel-b0/cost-of-idp-training: #363
   - text: Yes, all the training provided by India Data Portal is free of cost
+  utter_faq-fel-b0/fellowship-with-idp: #359
+  - text: Yes, India Data Portal offers fellowships collaborating with Newslaundry. The first phase of the fellowship consists of a four-week programme to familiarize the fellows with datasets on India Data Portal, attend exclusive masterclasses and get research support from the Indian School of Business, and publish data-driven stories. Please write to us at idp@isb.edu for more information.

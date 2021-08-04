@@ -68,6 +68,12 @@ responses:
       s campus in Mohali."
   utter_faq-fel-b0/cost-of-idp-training:
   - text: Yes, all the training provided by India Data Portal is free of cost
+  utter_faq-fel-b0/fellowship-with-idp:
+  - text: Yes, India Data Portal offers fellowships collaborating with Newslaundry.
+      The first phase of the fellowship consists of a four-week programme to familiarize
+      the fellows with datasets on India Data Portal, attend exclusive masterclasses
+      and get research support from the Indian School of Business, and publish data-driven
+      stories. Please write to us at idp@isb.edu for more information.
   utter_faq-visualisation-b5/why-not-add-two-datasets:
   - text: As of now you can add only two datasets at one
   utter_faq-visualisation-b5/help-understand-indicators:
@@ -465,7 +471,8 @@ responses:
   - text: We have collected the data from reliable government sourcs You can also
       see the links in the about dataset page in the source link section
   utter_faq-portal-b0/materials-videos-different-visualization-posted-website:
-  - text: Yes we will be uploading new training videos in our portal
+  - text: Yes we will be uploading more  training videos in our portal and there is
+      already some training material present on our you tube channel here https://www.youtube.com/channel/UCB6LwUiFwPSobU0TwXuF4Fg
   utter_faq-portal-b0/different_langauges_availability:
   - text: India Data Portal is available in six languages which includes English and
       other Indian languages like Hindi, Bengali, Marathi, Oriya and Telegu
@@ -490,7 +497,7 @@ responses:
   - text: We are working on converting all the text into the selected language and
       in some cases there are technical difficuilties for the translation.
   utter_faq-portal-b0/most-recent-data:
-  - text: For some datasets youll find data available from last month on the portal.
+  - text: For some datasets you'll find data available from last month on the portal.
       Data is updated on the portal after it is made available by the Indian Government
   utter_faq-portal-b0/recent-data-available:
   - text: India Data portal updates its data from the Govt sources. As soon as the
@@ -529,6 +536,9 @@ responses:
   utter_faq-portal-b0/data-update-mail-alerts:
   - text: Until now, we do not have that feature. Thanks for the feedback, well include
       this in the product roadmap.
+  utter_faq-portal-b0/feature-update-mail-alerts:
+  - text: Until now, we do not have that feature. Tanks for the feedback, we'll include
+      this in the product roadmap.
   utter_faq-portal-b0/hindi-illustrations:
   - text: Yes, India Data portal is available in 6 languages
   utter_faq-portal-b0/different-languages:
@@ -557,14 +567,6 @@ responses:
   utter_faq-portal-b0/hyperlink-to-source-data:
   - text: The source of the data can be found at the bottom of the image that is downloaded
       which can be accessed through the informations section of the dataset
-  utter_faq-portal-b0/idp-training:
-  - text: India Data Portal offers Masterclasses and Workshops
-  utter_faq-portal-b0/fellowship-with-idp:
-  - text: Yes, India Data Portal offers fellowships collaborating with Newslaundry.
-      The first phase of the fellowship consists of a four-week programme to familiarize
-      the fellows with datasets on India Data Portal, attend exclusive masterclasses
-      and get research support from the Indian School of Business, and publish data-driven
-      stories. Please write to us at idp@isb.edu for more information.
   utter_faq-portal-b0/whats-on-portal:
   - text: India Data Portal has various datasets starting from agriculture, Financial
       Inclusion, Rural Development, Socio economic etc. You can interact with the

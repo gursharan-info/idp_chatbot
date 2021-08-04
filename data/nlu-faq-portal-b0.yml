@@ -24,7 +24,7 @@ nlu:
     - how many variety of visualisations on the site
     - various types of visualisations on the site
     - And what sorts of visuals may be seen on the India Data Portal?
-    - And what sorts of infographics may be seen on the India Data Portal?
+    - what sorts of infographics may be seen on the India Data Portal?
     - And what sorts of infographics may be seen here?
     - how many type of visuals can i use here on this website
     - how many type of infographics are supported here
@@ -92,27 +92,31 @@ nlu:
     - Without specific key phrases, it is difficult to search for data.
     - Without precise key words, it is difficult to search for data.
     - Absent precise key words, it is difficult to search for data.
-    - Absent accurate key words, it is difficult to search for data.
-    - Absent accurate key words, it is difficult to search for information.
+    - Absence of  accurate key words it is making difficult for me  to search for data.
+    - Absence of  accurate key words, it is difficult to search for information.
     - Absent accurate stock terms, it is difficult to search for information.
     - No accurate stock terms, it is difficult to search for information.
     - It is tough to find data without certain key words.
-    - It is tough to find data without specific key words.
+    - tough to find data without specific key words.
     - It is tough to find data without such key words.
-    - It is tough to find data without those key words.
+    - it will be vey tough to find data without those key words.
     - It is rare to find data without those key words.
     - It is pretty hard to find data without those key words.
     - It is pretty difficult to find data without those key words.
     - It is near impossible to find data without its key words.
-    - It really is near impossible to find data without its key words.
+    - It's near impossible to find data without its key words.
+    - i can't find info without key words 
     - It really is near impossible to find information without its key words.
     - It really is near impossible to find material without its key words.
-    - It really is near impossible to find material without its key words.
+    - It is like impossible to find material without its key words.
     - It really is near impossible to find material without its key phrases.
-    - It really is near impossible to find material without its trigger words.
+    - It is getting impossible to find material without its trigger words.
     - It really is near impossible to find material without its specific keywords.
     - This is near impossible to find material without its specific keywords.
     - This is pretty hard to find data without its specific keywords.
+    - i am finding it difficult to find data without keywords related to it
+    - it is getting difficult to find data without keywords related to that domain
+    - i am not having keywords related to a particular domain and due to this i can't find info
 
 - intent: faq-portal-b0/help-technical-issues-portal #24
   examples: |
@@ -155,20 +159,24 @@ nlu:
     - It is not valid to compare datasets.
     - It is not fair to quantify datasets.
     - It is not possible to compare datasets .
-    - It is not able to match datasets while Im here.
-    - It is not able to match data set on this website.
-    - That is not able to match data set here.
-    - It is just not able to match datasetss.
-    - It is also not able to match data set.
-    - It is also not able to compare data set on IDP.
-    - It is also  difficult to compare data set.
-    - It is also incapable of matching data sets.
-    - It is indeed unable of matching datasets.
-    - It is also unable to find a match in the data set.
-    - It seems to be unable to find a match in the data set.
-    - This seems to be unable to find a match in the data set.
-    - This is still unable to find a match in the data set.
+    - It is not able to compare datasets while Im here.
+    - It is not able to compare data set on this website.
+    - That is not able to contrast data set here.
+    - this portal is not able to contrast datasets
+    - we are not able to contrast data set already present on IDP
+    - we are not able to compare data set on IDP.
+    - on this portal i am finding it difficult to compare datasets
+    - It is getting  diff in diffrentiating data sets on this portal
+    - It is indeed unable of diffrentiating datasets.
+    - It is also unable to find a diffrentiate in the data set.
+    - It seems to be unable to find a diffrentiate in the data set.
+    - This seems to be unable to find a diffrentiate in the data set.
+    - This is still unable to find a diffrentiate in the data set.
     - This is still unable to find a connection in the data set.
+    - i wanna compare datasets present on IDP how can i compare them
+    - on indian data portal how can i compare datasets
+    - on this portal i couldn't compare datasets that were presnt here
+
 
 - intent: faq-portal-b0/trust-data-sourced-from-government-agencies  #26
   examples: |
@@ -206,31 +214,25 @@ nlu:
 
 - intent: faq-portal-b0/materials-videos-different-visualization-posted-website  #27
   examples: |
-    - Will additional training materials/videos for different visualization scenarios be posted on the website?
+    - Will additional training materials for different visualization scenarios be posted on the website?
     - meririal or videos of visualization posted on website?
     - metarial/videos of visualization is regularly posted on portal?
     - portal is contuniously uploaded visulization videos?
     - visulixation senerio regularly uploaded?
-    - are training materials available?
-    - Are there any training resources available?
-    - Are there any training resources?
-    - on idp Are there any training resources?
-    - on this webiste Are there any training resources?
-    - can is see Are there any training resources?
-    - Why are there no training resources?
-    - Have there been any training resources?
+    - are training materials available? or will they be available in future
+    - will i get some trianing resources in future
+    - Are there any training resources that i can access in future
+    - on idp Are there any training resources that we can access in future
     - Will there be further training resources available on the website for various visualisation scenarios?
     - Will there be further training resources posted on the site for diverse visualisation scenarios?
     - any Additional material on training will be there?
     - will there be more training resources posted on the site for different visualisation scenarios?
     - will there be any new training videos in coming future?
     - in coming future will there pe any new traing videos on portal?
-    - any plans for training videos on portal?
-    - can we expext new traing videos ?
+    - any future plans for training videos on portal?
+    - can we expext new traing videos  in comin future
     - will there be any new material?
-    - Will there be further training resources for various visualisation instances accessible on the website?
     - Would there be further training resources for various visualisation scenario accessible on the website?
-    - Maybe there will be further training resources for various visualisation scenario accessible on the website?
     - Maybe there will be further training resources for various representation scenario published on the website?
     - will we get any videos for training for different visualisations
 
@@ -265,16 +267,11 @@ nlu:
 - intent: faq-portal-b0/visualisations-made-downloaded-other-languages #30
   examples: |
     - Can the visualisations be made and downloaded in other languages?
-    - visulization support other languages?
-    - visulisation run in other languages?
-    - visulisation creted in other languade?
-    - can we download visualization in different language?
-    - present viz in different languages
-    - does this portal allows to make visuals in other languages?
-    - can we download visuals in other languages?
+    - can we download visualization in different language that we have made here
+    - does this portal allows to make visuals in other languages and then use it on local computer
+    - can we make and download visuals in other languages
     - Is it possible to create and download visualisations in other languages?
     - Is it possible to build and export visuals in other languages?
-    - Is it possible to create and export graphs in other languages?
     - Is it feasible to create and export diagrams in other languages?
     - Is it possible to produce and download visualisations in other languages?
     - Can the visualisations be created and downloaded in other languages?
@@ -385,6 +382,7 @@ nlu:
     - Can I know something about idp
     - what is IDP
     - Idp
+    - india data portal
     - what is iDP
     - what is idp?
     - idp?
@@ -411,7 +409,6 @@ nlu:
     - why here?
     - what is indian data portal
     - what is idp
-    - idp
     - can you talk to me about IDP
     - I want to learn about IDP
     - What is India Data Portal used for?
@@ -473,13 +470,11 @@ nlu:
     - If I want additional datatsets, how much more will I get and from which field will I obtain them?
     - If I want additional datatsets, how much more will I get and from which field will I get them?
     - how many datasets are there on IDp?
-    - Can you tell me how much data I'll acquire from this site?
-    - Can you tell me how much data I'll get from this site?
-    - Would you tell me how much data I'll get from this site?
-    - Would u tell me how much data I'll get from this site?
-    - Would u tell me how many data I'll get from this site?
-    - Will u tell me how many data I'll get from this site?
-    - Will u tell exactly how many data I'll get from this site?
+    - Can you tell me how much datasets I'll acquire from this site?
+    - Can you tell me how much datasets I'll get from this site?
+    - Would you tell me how much datasets I'll get from this site?
+    - Would u tell me how much data-sets I'll get from this site?
+    - Will u tell exactly how many data-sets I'll get from this site?
     - show me the number of datasets availabe here
     - what is the count of total number of datasets
     - what is the count of total number of datasets on this webiste
@@ -509,6 +504,7 @@ nlu:
     - on indianportal i saw something called as indicatorr what is this
     - i was using datasets tab i found this indicator ?
     - indicator what ?
+    - while on this site i found this indicator feature what is that
     - indicator  is what ?
     - I found this indicator when exploring the datasets tab.
     - I found this indicator when exploring the dataset page.
@@ -535,14 +531,11 @@ nlu:
     - Is there data on agriculture?
     - Is there Financial Inclusion data on the portal?
     - What are the data sectors that are available?
-    - What are the data fields that are available?
-    - What are the data fields that are obtainable?
-    - What are all the data fields that are obtainable?
-    - What are all the data fields that are present here
-    - And what were the data fields that are residing here
-    - But what were the data fields that are available on this portal
-    - So what were the data fields that are readily accessible?
-    - How are the data fields that are easily available
+    - data that is present from diff sectors?
+    - what sector's data is present on this webiste
+    - which sector's data is present on this site
+    - what different sectors are covered by IDP
+    - what different sectors are covered by Indian data portal
     - How are the data bits that are readily accessible?
     - How are the data regions that are present on webiste?
     - from which sectors data is coming
@@ -554,7 +547,6 @@ nlu:
     - I am not able to see all the text in selected language
     - It is not showing all the text in the selected language
     - Text in selected language is not showing
-    - There is incomplete text in selected language
     - Why cannot I see all the text in the selected language?
     - Why can't I see all of the text in the language I've chosen?
     - Why i am not able to see all of the text in my preferred language?
@@ -596,6 +588,8 @@ nlu:
     - Would there be any new info on idp?
     - Is there any new information on the website?
     - data that was recently posted
+    - what are the most recent fig presnt on this  website
+    - what are the most recent fig presnt on this  site
     - data that was posted recently
     - data that has been posted recently
     - Which of the following is the most current evidence on the India Data Portal?
@@ -605,29 +599,27 @@ nlu:
     - tell me about recent data on this portal
     - tell me about recent data on this webiste
     - can you tell me most closest data you have
-    - most recent you have with you
-    - like any data that is most recently updated here
+    - most recent data you have with you
 
 - intent: faq-portal-b0/recent-data-available
   examples: |
-    - Is recent data avilable on the portal?
-    - Is recent data is uploaded on idp?
-    - is recent data up on the portal?
-    - recent data is available on idp?
     - When recent data is upload?
-    - recent data is available on inida data portal?
-    - Is the most recent data available on the India Data Portal?
-    - Is there any recent data provided on the India Data Portal?
-    - Would there be any recent data provided on the India Data Portal?
-    - Would there be any recent data posted on the India Data Portal?
-    - There seems to be no recent data posted on the India Data Portal?
+    - when is recent data is available on inida data portal?
+    - When Is the most recent data available on the India Data Portal?
     - When is the most recent information uploaded?
     - When is the most recent information updated?
-    - When is the most existing knowledge updated?
     - When is the most latest data updated?
+    - after how muuch time data is updated on this portal
     - So when is the most latest data updated?
     - So when is the most latest figs updated?
-    - - So when is the most latest figures updated?
+    - So when is the most latest figures updated?
+    - can i ask when is data updated on IDP
+    - can you tell me after what span data is updated on india data portal
+    - on Indian data portal how frequently is data updated
+    - how often we can expect to see changes in data presnt on this portal
+    - how often we can expect to see changes in data presnt on this website
+    - how frequently we can expect to see changes in data-sets presnt on this portal
+    - how frequently we can expect to see changes in data-sets presnt on INDIAN DATA PORTAL
 
 - intent: faq-portal-b0/employment-data-available
   examples: |
@@ -648,6 +640,12 @@ nlu:
     - Would there be any employment statistics on the portal?
     - IDP has employment data ?
     - Is there another employment statistics on the portal?
+    - any stats reagrding employment
+    - any data we can get about how many people arre employed
+    - i wanna get some stats about unemployment
+    - how many people got employed in recent times any data reagrding that 
+    - does this portal contains any data about employment and employbility
+
 
 - intent: faq-portal-b0/agriculture-data-available
   examples: |
@@ -655,20 +653,23 @@ nlu:
     - Agriculture data present on India data portal?
     - Portal has Agriculture data?
     - any agriculture data is available.
-    - What kinds of agricultural data can I find on IDP?
-    - What types of agricultural data can I find on IDP?
+    - What kinds of agri data can I find on IDP?
+    - What types of agri data can I find on IDP?
     - All types of agricultural data can I find on IDP?
     - All types of agricultural data can I obtain on IDP?
     - What kinds of agricultural data may be found on the Indian data portal?
-    - What sorts of agricultural data may be found on the Indian data portal?
-    - What sorts of agricultural data may be discovered on the Indian data portal?
-    - Is there any agricultural data available here?
-    - Is there any farming data available here?
-    - Is there any farm data available here?
-    - Is there really any farm data available here?
-    - Is there really any farm information available here?
-    - Is there really any agronomic information available here?
+    - What sorts of agri data may be found on the Indian data portal?
+    - What sorts of agri. data may be discovered on the Indian data portal?
+    - Is there any agri. data available here?
+    - any farming data available here?
+    - any farm data available here?
+    - Is there  any farm data available here?
+    - Is there  any farm information available here?
+    - any agronomic information available here?
     - Is there another agronomic information available here?
+    - do you have stats for diffrent states of india reagrding agriculture domain
+    - any info regarding agriculture in different states and union territories of India
+    
 
 - intent: faq-portal-b0/Is-data-reliable
   examples: |
@@ -745,6 +746,12 @@ nlu:
     - information why do we need it
     - info? why do we need it
     - can you tell why eactly do you need data
+    - what is the need of data
+    - why do journalist need data
+    - what is need of data in journalism
+    - what is the need of data vizualisation
+    - what is the need of data analytics
+    - what is the need of data viz for journalists 
 
 
 - intent: faq-portal-b0/data-updation
@@ -814,6 +821,14 @@ nlu:
     - Would that be possible to produce it for findings
     - Would that be possible to produce it for study?
     - Would that be possible to produce it for data analysis?
+    - can my team use datasets presnt on this website for my personal research
+    - can my team use datasets presnt on this website for my reserch
+    - i wanna use the datasets present here for personal research can i?
+    - is there any provision of using this data for my personal use
+    - i will give credits but can i use this data research work of mine
+    - am i allowed to use data for my research piece i will also give credits to IDP in that
+    - can i use this data for my findings
+    - can i use this data for my research survey
   
 - intent: faq-portal-b0/portal-maintainence
   examples: |
@@ -830,12 +845,17 @@ nlu:
     - Who has been in control of the portal's maintaining?
     - Who has been in command of the portal's maintaining?
     - Who is in charge of keeping a portal up to date?
-    - Who is in charge of maintaining a website?
+    - Who's  incharge of maintaining a website?
     - Who is in charge of overseeing a website?
     - Who is in responsible to maintain a website?
     - indian data portal who's mantaining it ?
     - ahmmm i wnated to know who's behind mantaining it
     - Who is in charge of protecting a website?
+    - is there any authority that is taking charge to maintain this portal
+    - IDP is maintained by ?
+    - indian data portal is maintained by ?
+    - this webiste is under supervsion of ?
+
 
 - intent: faq-portal-b0/potal-maintainence-by-goi
   examples: |
@@ -853,6 +873,10 @@ nlu:
     - Is all this page maintained by the Goi?
     - Is all this webpage maintained by the Goi?
     - Is all this webpage maintained by the Government of india?
+    - does Gov of India maintains this site
+    - does any maintainenace is  done by goverment of india
+    - is Govt of india undertaking this portal
+    - is indian govt taking care of this portal ?
 
 - intent: faq-portal-b0/data-age-how-old
   examples: |
@@ -893,15 +917,30 @@ nlu:
     - Can I get notifications when data is processed?
     - Can I get text alerts when updates are made?
     - Do I get text alerts when updates are made?
+    - will i get alerted when data is updated on the site
+    - once guys from idp update data on the site will i get any notification
+    - once guys from indian data portal update data on the site will i get any notification
+    - if idp updates data on the site will i get any email notification
 
-# - intent: faq-portal-b0/feature-update-mail-alerts
-#   examples: |
-#     - can i get a mail when latest data is uploaded on the portal?
-#     - would it be possible to receive email notifications when new data is uploaded?
-#     - Can I get email notifications when new data is uploaded?
-#     - can i get an alert email when newest data is updated?
-#     - is email notify feature available for new data updates?
-#     - Can I get email alerts when data latest data has been uploaded?
+- intent: faq-portal-b0/feature-update-mail-alerts
+  examples: |
+    - can i get a mail when latest data is uploaded on the portal?
+    - would it be possible to receive email notifications when new data is uploaded?
+    - Can I get email notifications when new data is uploaded?
+    - can i get an alert email when newest data is updated?
+    - is email notify feature available for new data updates?
+    - Can I get email alerts when data latest data has been uploaded?
+    - do you provide email alerts if latest data has been uploaded
+    - if latest data has been uploaded will i get notified
+    - will i get sms alerts if latest data has been updated here
+    - do you give any notifications if new data has been uploaded
+    - will i get email alerts if there is any chnage in datasets present already here
+    - do you provide alert functionality when new data is updated here
+    - do you provide alert functionality when  data-sets are updated here
+    - will i get notified when there new datasets have been uploaded on Indiian data portal
+    - will i get notified when there new datasets have been uploaded on IDP
+    - will IDP provide me email alerts if data sets have been updeted
+    - will indian data portal provide me email alerts if dataset have been updeted 
 
 - intent: faq-portal-b0/hindi-illustrations
   examples: |
@@ -931,13 +970,6 @@ nlu:
     - Is it feasible to get visuals in other language groups?
     - Is it feasible to get artwork in other language groups?
 
-# - intent: faq-portal-b0/other-lang-illustrations
-#   examples: |
-#     - is there a provision for illustrations in other languages?
-#     - Can you provide me with illustrations in other languages?
-#     - is it possible to have illustrations in other languages?
-#     - would it be feasible to get illustrations in other languages?
-#     - how much different languages are supported by illustrations?
 - intent: faq-portal-b0/different-languages
   examples: |
     - what different languages we have?
@@ -955,6 +987,11 @@ nlu:
     - How many separate languages would we have?
     - How many distinct languages might there be?
     - How many distinct languages will there be?
+    - which langs are supported on this portal
+    - on this website what languages are supported
+    - diff languages supported on this webiste by IDP
+    - IDP supports how many indic langugaes here
+    
 
 - intent: faq-portal-b0/portal-came-to-existance
   examples: |
@@ -974,22 +1011,29 @@ nlu:
     - When was this website built?
     - What is an IDP?and when was it made
     - IDP? When was it created?
+    - in which year this project supported?
+    - when was the project got into existence
+    - in which year was this project started?
+    - when was Indian data portal created ?
     
 - intent: faq-portal-b0/user-count-on-portal
   examples: |
-    - how many users this portal had so far?
-    - how many people use this portal?
     - what variety of users are on this portal?
     - what variety of users access this website?
     - What kind of people use this website?
-    - How many users does this portal have
-    - How many people have used this portal so far?
-    - How many users has this portal had thus far?
-    - How many people have accessed this portal thus far?
-    - How many people have used this portal to date?
-    - How many people have used this website to date?
-    - Number of times people have visited this site thus far?
-    - How many times have people viewed this site so far?
+    - users from what diff sectors has this portal had thus far?
+    - people from which domains have accessed this portal thus far?
+    - people from what sectors have used this portal to date?
+    - what kind of users are presnt on this portal
+    - people from what sectors have used this portal
+    - people from which diff genres have used this portal
+    - this webbsite is accessed by what diff types of users
+    - diff users that have accessed this website so far
+    - what diff genres of people have accessed this portal so far
+    - what diff genres of people have accessed this website so far
+    - what is the user base of this website
+    - userbase of this website
+    - this portal is aimed for what kind of users
 
 - intent: faq-portal-b0/portals-impact
   examples: |
@@ -1052,6 +1096,14 @@ nlu:
     - What is the underlying technique for uploading news?
     - What is the underlying method for uploading news?
     - What is the underlying method for publishing news?
+    - can you tell me how can i upload news here
+    - tell me how can i upload news here on this portal
+    - on this portal how can i upload news but how ?
+    - on this website can i upload news if yes how can i ?
+    - what is the process of uploading news on this portal
+    - what is the process of uploading news on IDP
+    - what is the process of uploading news on Indiandataportal
+    - how can one upload news on portal
 
 - intent: faq-portal-b0/frequency-of-data-updation
   examples: |
@@ -1093,13 +1145,16 @@ nlu:
     - are the data sourced from the government websites?
     - does government sites sourcing this data?
     - this data is coming from government websites?
-    - from where data is coming
     - Is the information obtained from official government websites?
     - Is the data derived from official government websites?
     - Is the results extracted from official government websites?
     - Is the data generated from official government websites?
     - Is the information derived from official government websites?
     - Is the info derived from official government websites?
+    - Is the info derived from official gov webistes
+    - all the information presnt here is from offical websites?
+    - all the data presnt here is from offical websites?
+    - all the information presnt here is from offical sources?
 
 - intent: faq-portal-b0/hyperlink-to-source-data
   examples: |
@@ -1119,40 +1174,40 @@ nlu:
     - Will there be a link on the graph that will direct me to the originating source of the data?
     - Will there be a connection on the graph that will direct me to the originating source of the data?
 
-- intent: faq-portal-b0/idp-training
-  examples: |
-    - is there any training program available by idp?
-    - does idp provides any guided paths to operate the potal?
-    - Is training available through India Data Portal?
-    - are there any training programs provided by idp?
-    - does idp come up with any training?
-    - does india data portal deliver any training?
-    - idp provides any training?
-    - any tarining is provided by idp?
-    - this potal provides any training?
-    - Is there a training programme offered by idp?
-    - Is there a training course offered by idp?
-    - Is there really a training course offered by idp?
-    - Would there be a training course offered by idp?
-    - idp Would there be a training course offered by you
-    - Should there be a training course offered by idp?
-    - Should there be a programme offered by idp?
+# - intent: faq-portal-b0/idp-training
+#   examples: |
+#     - is there any training program available by idp?
+#     - does idp provides any guided paths to operate the potal?
+#     - Is training available through India Data Portal?
+#     - are there any training programs provided by idp?
+#     - does idp come up with any training?
+#     - does india data portal deliver any training?
+#     - idp provides any training?
+#     - any tarining is provided by idp?
+#     - this potal provides any training?
+#     - Is there a training programme offered by idp?
+#     - Is there a training course offered by idp?
+#     - Is there really a training course offered by idp?
+#     - Would there be a training course offered by idp?
+#     - idp Would there be a training course offered by you
+#     - Should there be a training course offered by idp?
+#     - Should there be a programme offered by idp?
 
-- intent: faq-portal-b0/fellowship-with-idp
-  examples: |
-    - Is there a fellowship programme at India Data Portal?
-    - do you have ay fellowships available?
-    - Are there any fellowships available through India Data Portal?
-    - have there been any fellowships associated with idp?
-    - does idp offeres any fellowship?
-    - any fellowship available?
-    - Does India Data Portal have any fellowships?
-    - Is the India Data Portal offering a fellowship programme?
-    - Is there an internship programme at India Data Portal?
-    - Is there a fellowship available?
-    - Is there an internship available?
-    - Is there a communion available?
-    - does it provides any support program?
+# - intent: faq-portal-b0/fellowship-with-idp
+#   examples: |
+#     - Is there a fellowship programme at India Data Portal?
+#     - do you have ay fellowships available?
+#     - Are there any fellowships available through India Data Portal?
+#     - have there been any fellowships associated with idp?
+#     - does idp offeres any fellowship?
+#     - any fellowship available?
+#     - Does India Data Portal have any fellowships?
+#     - Is the India Data Portal offering a fellowship programme?
+#     - Is there an internship programme at India Data Portal?
+#     - Is there a fellowship available?
+#     - Is there an internship available?
+#     - Is there a communion available?
+#     - does it provides any support program?
 
 - intent: faq-portal-b0/whats-on-portal
   examples: |
@@ -1205,6 +1260,9 @@ nlu:
     - Would be the information supplied accurate?
     - Would be the details supplied accurate?
     - Would be the evidence gives accurate?
+    - all the info present here can i use it in my work like is that genuine enough
+    - all the info given by this webiste is accurate?
+    - all the stats given by IDP are they genuine enough ?
 
 - intent: faq-portal-b0/data-sources
   examples: |
@@ -1219,4 +1277,9 @@ nlu:
     - What are the sources of the data?
     - What are the information's sources?
     - Where did the information come from?
+    - from where all the data present on IDP is collected
+    - what are the sources that have been taken into consideration while making this webiste
+    - all the datasets present here are from ?
+    - Idp used data from what sources ?
+    - india data portal used data from what all the sources
 

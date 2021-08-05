@@ -334,12 +334,12 @@ nlu:
 
 - intent: faq-visualisation-b6/possibility-sorting-bars #190
   examples: |
-    - Can i am able to sort my bars?
-    - I want to sort the bars
-    - Am i allowed to sort bars?
-    - Is it possible to me sort the bars?
-    - can i have permission to sort my bars?
-    - Is India data portal allow to sort the bars?
+    - Can i am able to sort my bar?
+    - I want to sort the bar
+    - Am i allowed to sort bar?
+    - Is it possible to me sort the bar?
+    - can i have permission to sort my bar?
+    - Is India data portal allow to sort the bar of a graph?
     - Can I arrange the Bars?
     - Can I arrange the Bars in a particular order?
     - Can I arrange the Bars in a specific order?
@@ -352,13 +352,13 @@ nlu:
     - Is it possible to sort the map's bars?
     - Is it possible to sort the chart's bars?
     - the diagram i have made here can i sort it's bars
-    - possible to set the bars in a specific order?
-    - Is it possible to arrange the bars in a particular sequence?
-    - possible for me to sort the bars?
-    - but Is it feasible to arrange the bars in a certain order?
-    - Is it feasible for me to arrange the bars in a certain order?
-    - Is there a way to organise the bars in a specific order?
-    - Is it possible to sort the bars in some way?
+    - possible to set the bars of histogram in a specific order?
+    - Is it possible to arrange the bars of histogram in a particular sequence?
+    - possible for me to sort the bars of histogram?
+    - but Is it feasible to arrange the bars of bar graph in a certain order?
+    - Is it feasible for me to arrange the bars of bar graph in a certain order?
+    - Is there a way to organise the bars of bar graph in a specific order?
+    - Is it possible to sort the bars of bar graph in some way?
     - Is it feasible for me to put the bars in a specific order?
     - Is there any way to organise the bars in a specific order?
     - Is sorting the bars feasible for me?
@@ -376,7 +376,7 @@ nlu:
     - can it be  bpossible to put the bars in a specific order?
     - Is it possible to put the bars in a particular order?
     - Is there a way to organise the bars of data visuals for me?
-    - possible to rearrange the bars?
+    - possible to rearrange the bar?
     - Is it possible for me to arrange the bars of a visuals in a particular pattern?
     - ahmm but can you tell is it possible for me to put the bars in a particular order?
 

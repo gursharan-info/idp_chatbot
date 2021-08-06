@@ -3,3 +3,4 @@
 /server_credentials.py
 *.csv
 *.xlsx
+build-domain.py

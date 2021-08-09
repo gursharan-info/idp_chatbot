@@ -388,6 +388,42 @@ nlu:
     - can you tell What is the procedure for creating a new indicator?
     - What are the steps for creating a new indicator?
     - on indian data portal What's the best way to make a new indica-tor?
+    - process of Indicator creation
+    - How do I make new indicator?
+    - make me familiar with process of Making new indicator
+    - can I add new indicator?
+    - How do I create a new indicator
+    - How do you come up with new indicators?
+    - how am i supposed to create new indicators?
+    - how new indicators are generated?
+    - how new indicators are produced?
+    - How do you make new indicators?
+    - How do you develop new indicators?
+    - How new indicators can be built up?
+    - What's the best way to create new indicators?
+    - What is the best way to make new indicators?
+    - What is the most effective method for developing new indicators?
+    - What is the most efficient way to create new indicators?
+    - What is the most effective method for creating new indicators?
+    - How should i come up with new indicators?
+    - What methods i need to use in order to create new indicator?
+    - steps for developing new indicators?
+    - What method i should use to create new indicators?
+    - tell how to come up with new indicators?
+    - What is the best method for creating new indicators?
+    - how to developing new indicators?
+    - What is the most efficient way to develop new indicators?
+    - What is the most effective way to generate new indicators?
+    - What strategies i need to use to create new indicators?
+    - What methods do you employ when developing new indicator?
+    - How can i come up with new indicator?
+    - What is the most effective way to create new indicators?
+    - What is the best way to create new indicators?
+    - What is the most efficient way of creating new indicators?
+    - How can i go about creating new indicators?
+    - procedure for creating new indicators?
+    - steps for creating new indicators?
+    - how can i cretae a new indicator
 
 
 
@@ -408,37 +444,37 @@ nlu:
     - new visualisations from different datasets using newly created indicators
     - Is it possible to create new visualisations by merging two datasets and adding a new indicator?
     - Is it feasible to combine two datasets with new indicators to create new drwaings?
-    - Is it possible to make new graphs by mixing two datasets and a new metric?
+    - Is it possible to make new graphs by mixing 2 datasets and a new metric?
     - how the fuck it is possible to create new data visualisations by integrating two datasets and introducing new indicators?
     - how is this  possible to create new data visuals by merging two datasets and adding new indicators?
     - how the hell is this  feasible to make new diagrams by combining two datasets and adding a new indicator?
     - Is it possible to make new diag. by combining two datasets and adding new indicators?
     - can we  to generate new drawings by combining two datasets with new indicators?
-    - can we  make new viz by combining two datasets with new indicators?
+    - can we  make new viz by combining 2 datasets with new indicators?
     - Is it possible to generate new vizz by combining two datasets and a new indicator?
     - pls tell can we  combine two datasets and add new indicators to make new visuals?
-    - ahmm i wnated to ask can we to create new visuals by merging two datasets and adding a new metric?
+    - i wnat to ask can we to create new visuals by merging two datasets and adding a new indicator?
     - Is it possible to combine two datasets and add a new indicator to make new visualisations?
-    - on indian data portal  Is it feasible to combine two datasets and a new metric to create new visualisations?
+    - on indian data portal  Is it feasible to combine two datasets and a new indictor to create new visualisations?
     - while on IDP Is it feasible to combine two datasets and add new indicators to produce new data-visualisations?
-    - Is it possible to construct new visuals by combining two datasets with new indicators?
+    - Is it possible to construct new visuals by combining 2 datasets with new indicators?
     - my team wants to know do can we construct new visualisations by combining two datasets and using new indicators?
     - while on Indian data portal Is it ever possible to generate new visualisations by combining two datasets and adding new indicators?
     - tell me combine two datasets and add a new indicator to produce new data-aided visuals?
     - Is it possible to combine two datasets and introduce new indicators to build new visualisations?
-    - Is it feasible to create new visualisations by combining two datasets and introducing a new metric?
-    - ahmmm i have a query is it possible combine two datasets and a new metric to create new visualisations?
+    - Is it feasible to create new visualisations by combining two datasets and introducing a new indicatr?
+    - i have a query is it possible combine 2 datasets and a new indcator to create new visualisations?
     - while on Indian data portal  Is it evenfeasible to combine two datasets and add new indicators to generate new viz?
     - while on this webiste Is it possible to combine two datasets and create new data-aided visuals by adding new indicators?
     - on this webpage Is it possible to combine two datasets and add a new indicator to produce new data-aided visuals?
-
+    - can we use indicator from 2 datsets and create visualisations
 
 
 - intent: faq-visualisation-b2/new-indicators-added-visualization
   examples: |
     - add new indicators in visualization
-    - what the maximum count of indicators that can be inserted in a graph
-    - what the maximum count of indicators that can be inserted in a viz
+    - what is the maximum count of indicators that can be inserted in a graph
+    - what the max count of indicators that can be inserted in a viz
     - on this portal what the maximum count of indicators that can be inserted in a graph
     - what number of indicators are added in a viz.?
     - in a visualisation at max how many indicators i can add
@@ -463,7 +499,7 @@ nlu:
     - How many new indicator can be added to a drawing?
     - what amount of new indicators can i add ?
     - what exactly is the count of indicators i can add to a visuals
-    - ahmm what amount of indiactors we can add here
+    - how many indciators can be aded in a visual
     - What is the most that a visualisation can have in terms of new indicators?
     - How many new indicators can you add to a visualisation?
     - How many new indica-tors can you add to a visualisation?
@@ -493,31 +529,29 @@ nlu:
 
 
 
-- intent: faq-visualisation-b2/create-new-indicators
+- intent: faq-visualisation-b2/why-create-new-indicators
   examples: |
-    - create new indicators
-    - how are we supposed to create new indicators?
+    - why are we supposed to create new indicators?
     - do i prefer to create new indicators?
-    - how am i supposed to create new indicator?
-    - guide me to create new indicator?
-    - how are new indicators being created?
-    - how these indicators are generated?
-    - How are new indica-tors supposed to be created?
-    - How are we going to come up with new indicators?
-    - How are we supposed to come up with new indicators?
-    - How are we supposed to develop new indicators?  
-    - How are new indica-tors to be produced?
+    - why am i supposed to create new indicator?
+    - why are new indicators being created?
+    - why these indicators are generated?
+    - why are new indicators supposed to be created?
+    - why are we going to come up with new indicators?
+    - why are we supposed to come up with new indicators?
+    - why are we supposed to develop new indicators?  
+    - why are new indicators to be produced?
     - Why are we working on a new indicator? Is it obligatory?
     - Why are we developing a new indicator? Is it definitely required?
     - Why is it necessary to create a new indicator? Is it something that everyone should have?
     - What motivates us to create a new indicator? Is this a must-have item?
-    - What exactly is the point of creating a new indicaator? Is this a must-have accessory?
-    - Why are we creating a new indicaator? Is it a must-have item?
-    - Why are we coming up with a new indic.? Is it necessary?
-    - Why are we working on a new indic. in the first place? Does it have to be there?
-    - What is the point of coming up with a new indi? Is it a must-have accessory?
-    - Why are we developing a new indi? Is it required?
-    - the sole purpose of developing a new indicators? Is it a must-have item?
+    - What exactly is the point of creating a new indicatr? Is this a requirement?
+    - Why are we creating a new indicaator? Is it a must have item?
+    - Why are we coming up with a new indictor? Is it necessary?
+    - Why are we working on a new indcator in the first place? Does it have to be there?
+    - What is the point of coming up with a new indicator?
+    - Why are we developing a new indcator? Is it required?
+    - the sole purpose of developing a new indicators? 
     - Why are we making a new indicator? Is it absolutely necessary?
     - What makes us want to develop a new indicators in the first place? Is this anything that you absolutely must have?
     - can you pls tell Why are we coming up with a new indica-tor? Is it absolutely necessary?
@@ -527,7 +561,7 @@ nlu:
     - Why are we coming up with a new indicator? Is this a must-have accessory?
     - the sole purpose of developing a new indicator in the first place? Is it required?
     - Why does a new indicator need to be created? Is it a must for everyone?
-    - chey can you tell me Why are we developing a new indicator in the first place? Does it have to be done?
+    - hey can you tell me Why are we developing a new indicator in the first place? Does it have to be done?
     - while on IDP Why are we developing a new indicator? Is it a requirement?
     - while on Indian data portal What's the aim of inventing a new indicator in the first place? Is it an essential piece of clothing?
     - but i want to know Why are we creating a new indicator? Is it absolutely necessary?
@@ -540,12 +574,13 @@ nlu:
     - i have a doubt Why are we working on a new metric in the first place? Is this a must-have?
     - What is the point of developing a new statistic in the first place? Is it required to be present?
     - Why are we developing a new metric? Is it really necessary?
-    - ahmmm What drives us to come up with a new metric? Is this an item that you absolutely must have?
+    - What drives us to come up with a new metric? Is this an item that you absolutely must have?
     - while on IDP What is the objective of inventing a new metric in the first place? Is this a must-have piece of jewellery?
     - What is the objective of inventing a new metric in the first place? Is it a must-have piece of jewellery?
     - on this website main purpose of developing a new metric? Is this a must-have piece of clothing?
     - on this portla Why are we coming up with a new metric in the first place? Is it something that everyone should have?
     - on this portal Why are we working on a new metric? Is it a must-have?
+    - is creating new indicatros requried?
 
 
 - intent: faq-visualisation-b2/define-unit-new-indicator

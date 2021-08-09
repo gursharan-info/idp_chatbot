@@ -96,7 +96,7 @@ nlu:
     - when it is mandatory to select location ?
     - to plot diff. visualisation is it compulsory to select location on iDP
     - selecting location is a pre requisite for making diffrent visualisation?
-    - is it really important to select loaction for plot visualisation?
+    - is it really important to select loaction tomake a plot?
     - is it always required to slect the location for making diagrams
     - is it necessary to select location to make graphs?
     - what norms are mandatory for crafting vizss on INDDIAN DATA PRTAL
@@ -105,14 +105,14 @@ nlu:
     - in what cases location parameter is a requirement?
     - Is it required to pick a location for visualising
     - Is it important to use a location for visualising?
-    - Is it important to choose a place for visualising?
+    - Is it necessary to choose a loc for visualising?
     - Is it essential to choose a place for visualising?
     - Would it be essential to choose a place for visualising?
-    - Would that be essential to choose a place for visualising?
+    - do we need to chose location to start viz
     - Should it be essential to choose a place for visualising?
     - Is that really essential to choose a place for visualising?
     - Will it be crucial to choose a place for visualising?
-    - Will it be crucial to choose a place for trying to visualize?
+    - to start with the visualiztion do we first have to select location
     - Will it be crucial to choose a place for envisioning?
 
     
@@ -131,11 +131,11 @@ nlu:
     - Is it viable to choose a district before choosing a state?
     - Is it feasible to choose a district before deciding on a state?
     - Is it possible to select a District without first selecting a State?
-    - Is it necessary to distinguish a District without first selecting a State?
+    - is state a required feild for district to be choosed
     - Would it be necessary to distinguish a District without first selecting a State?
     - Would it be necessary to distinguish a District before even selecting a State?
     - Would it be necessary to distinguish a District before even selecting a Province?
-    - Is that really necessary to distinguish a District before even selecting a Province?
+    - is it necesary to selct state before picking district
     - Is that really essential to identify a District before even selecting a Province?
     - Is that really essential to identify a Region before even selecting a Province?
     - Should it be essential to identify a Region before even selecting a Province?
@@ -143,8 +143,8 @@ nlu:
     - ahmm i want to know is it that essential to identify a Region before even selecting a state
     - I want to know is it that essential to identify a Region before even selecting a Province?
     - i have a query is it that essential to identify a Region before even selecting a Province?
-    - district selection necessary without selecting a state?
-    - district selection necessary without selecting a province
+    - state selection necessary before selecting a district?
+    - selecting a province is necessary before selecting a district
 
     
 - intent: faq-visualisation-b1/can-change-color-of-viz
@@ -158,22 +158,48 @@ nlu:
     - how to change the color of my chart?
     - how can i change the colors of my graph?
     - change color of visuals
-    - changing color of visualization?
+    - changing color of viz?
     - how can we change graph colors?
     - how am i supposed to change the color of visualisations?
     - how can i change the color of diagrams?
     - How do I alter the colour of the visualisation?
-    - How do I modify the colors of the visualisation?
+    - How do I modify the colors of the vis?
     - How then do I modify the colors of the visualisation?
-    - How then do I modify the colors of the data visualization?
+    - How then do I modify the colors of the data viz?
     - How else do I modify the colors of the data visualization?
-    - How else do I update the colors of the data visualization?
+    - How else do I update the colors of the data vis?
     - Is it possible to change the colour of the output for different diagrams?
     - Is it possible to change the colour of the output for different graphs?
     - Is it possible to change that colour of the output for different graphs?
     - Is it try to modify that colour of the output for different graphs?
     - Would it be possible to alter that colour of the output for different graphs?
-    - Would it be possible to alter a colour of the output for different graphs?
+    - Would it be possible to alter a colur of the output for different graphs?
+    - How can I change the color on a graph
+    - how the color on the graph could be changed
+    - ahmm i wanna chnage grpah colors possible ?
+    - oh i just wanted to know is iit even possible to change color of graph
+    - how the color on the graph could be changed while i am here
+    - on idp is it possible to change color on the graph
+    - on indian data portal is it possible to change color on the graph
+    - while on idp is it possible to change color on the graph
+    - How can I alter the color of a graph?
+    - How do you change the color of a graph the most effectively?
+    - What is the most effective method for changing the color of a graph?
+    - How do I change the color of a graph?
+    - How can I effectively change the color of a graph?
+    - What are the options for changing the color of a graph?
+    - How do you effectively change the color of a graph?
+    - How do you change the color of a graph?
+    - What is the best way to change a graph's color?
+    - On a graph, how do I change the color?
+    - What's the best way to change a garph's color?
+    - How can I change the color of a graph the most effectively?
+    - How can I most effectively change the color of a graph?
+    - What is the most efficient method for changing a graph's color?
+    - how do you most effectively change the color of a graph?
+    - What is the best way to change the color of a graph?
+    - What's the most efficient way to change the color of a graph?
+    - What is the most efficient way to change a graph's color?
 
 - intent: faq-visualisation-b1/can-we-save-viz
   examples: |
@@ -195,7 +221,7 @@ nlu:
     - once my work is done how can i save visualisation offline
     - how can i save my plot offline
     - can't save Visual output of datasets is this possible do that?
-    - saving visualization
+    - is there any provision to save vizual
     - i want to save a visual what should i do?
     - what should i supposed to be doing in order to save a visulaisation
     - to save a visual what are the steps?
@@ -207,17 +233,15 @@ nlu:
     - help me in saving a visualisation
     - guide me to save a visuals
     - help me in saving diff visuals
-    - Is it possible to save a rendering?
+    - can we save the visuals created on this website
     - Is it possible to save a representation?
     - Is it possible to save a visualisation?
     - Could it be conceivable to save a visualisation?
     - Could it be conceivable to save a diagrams
     - Could it be conceivable to save a grpahs
-    - Could it be conceivable to save a output
-    - Could it be able and save a visualisation?
-    - Would that be able and save a drawing?
-    - Might it be able to save every drawing?
-
+    - is it possible to save a vizual output
+    - Could i be able to save a visualisation?
+    - Would it be able possible to save a drawing?
 
     
 - intent: faq-visualisation-b1/can-we-export-viz
@@ -233,6 +257,7 @@ nlu:
     - exporting the visualisations
     - would it be possible some how download our output
     - can we dowload image to local computer from IDP
+    - is it possilbe to export vizuals as images
     - can I download the visualization in jpeg?
     - how am i supposed to export a visual?
     - help me to export a visual?
@@ -243,11 +268,11 @@ nlu:
     - How do I even save visualisation?
     - How do I even save visual display?
     - How do I even save viewing?
-    - How the fuck do I even save viewing?
+    - what steps are there to export vizual as an imege
     - How else would I even save viewing?
     - So how would I even save visual representation?
     - can you tell how would I even save visual representation?
-    - ahmm can you tell how would I even save visual representation?
+    - is exproting visual as an image possible
     - is there any way I can even save visual representation? 
     - indian data portal allows to save visuals from here
     
@@ -266,6 +291,9 @@ nlu:
     - How do I share visualization on social media
     - does IDP allows me to share visualisation on social media
     - How do I share vis on Reddit
+    - what steps are there to share visuals on Linkdin
+    - by folloiwng what steps can i share viz on twitter
+    - i want to share my visuals on Twiter how can i do so
     - how can i share visuals on reddit?
     - how can i share visuals on instagram?
     - how can i share visuals on linkedin?
@@ -303,6 +331,7 @@ nlu:
 - intent: faq-visualisation-b1/which-social-media-platform-supported-for-sharing-vis
   examples: |
     - On which social media I can share the visualisations
+    - what social media platforms are supported?
     - which platforms are supported for sharing output on platform
     - which social media platforms IDP supports for saving output
     - diffrent platforms on which i can share my viz outputs
@@ -320,27 +349,25 @@ nlu:
     - which social media channels does IDP support for output saving
     - which social media sites does IDP support for output saving
     - which social media sites does IDP accept for output saving
-    - Does facebook and twitter allow IDP for output saving
+    - which social media handles are suported by this portal for sharing of vizuals
 
-- intent: faq-visualisation-b4/what-my-graphics #(no answer and this intent needed to to be changed already in b4 file)
+- intent: faq-visualisation-b1/select-value-from-all-dimension-nece # 42
   examples: |
-    - Can graphics be downloaded?
-    - Is it feasible to get graphics?
-    - Is it possible to obtain graphics by downloading them?
-    - Is it possible to download graphics?
-    - Can the graphics be saved?
-    - graphics can be downloaded?
-    - Is there a way to get graphics?
-    - Can I download graphics?
-    - download graphics ?
-    - Can I download visuals?
-    - Can I save visuals?
-    - does IDP allows saving visuals created here
-    - Is it conceivable to get graphics?
-    - Is it conceivable to somehow get graphics?
-    - Is it conceivable to just get graphic designs?
-    - Would it be conceivable to just get graphic designs?
-    - do you allow to dwonlaoda graphics locally
-    - do you allow to download visuals created here
-    - Would it be workable to just get drawings?
-    - Would it be workable to just get illustrations?
+    - Do I have to select a value from all dimensions available 
+    - will i have to select value of dimension from evry possible dimension here
+    - is it neccessary for me to pick a value from set of dimensions
+    - i can see a full list of dimensions do i need to pick a value from all
+    - there is this dimension list available do i have to pickup value from every possible dimesnions
+    - we have to select every possible dimensions from list of all dimensions?
+    - mandatory to slect a vlaue of dimsion from all kind of dims available
+    - to make any visuals is it mandatory to select a value from list of all dims ?
+    - i wanna know do  we have to select a value from all dim availabel on portal ?
+    - i have a query do  we have to select a value from all dim availabel on portal ? 
+    - i see this list of  dimesniosn do we have to select every possible value from it
+    - slect every possible dim from set off all dims ?
+    - do i have to pickup necessarily a dimesnion from all seets of dimensions
+    - all dimensions available do i need to click a value from every possible value
+    - Do I have to select a value from all dimension available  on this website
+    - Do I have to select a value from all dimension available  on this portal
+    - on IDP Do I have to select a value from all dim available  
+    - on indian data portal  Do I have to select a value from all dimesion availble

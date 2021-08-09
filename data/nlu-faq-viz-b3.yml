@@ -73,7 +73,7 @@ nlu:
     - On the chart builder, how many choices should we select?
     - How many choices should we choose from the chart builder?
     - How many options should we choose on the chart builder?
-    - How many options should we choose in the chart builder?
+    - How many options i should opt in the chart builder?
     - how many options can i choose in chart builder?
     - in chart builder how many options one can select?
     - is there any limit to choose options in chart builder
@@ -91,8 +91,8 @@ nlu:
     - How many options from the chart creator should we choose?
     - How many options should we pick from the chart builder?
     - From the chart builder, how many options should we choose?
-    - How many options should we select from the build your chart dialogue box?
-    - How many options should we select from the chart builder?
+    - How many options should i select from the build your chart dialogue box?
+    - How many options should i opt from the chart builder?
     - How many options should we select in the chart builder?
     - How many options from the chart builder should we choose?
     - In the chart builder, how many options should we pick?
@@ -100,6 +100,7 @@ nlu:
     - do we need to select some specific options from chart builder in order to make chart?
     - are there any restrictions on number of options to be selected?
     - How many options should we select to visualise? 
+    - selecting options on builder?
 
 - intent: faq-visualisation-b3/to-create-state-level-chart  #81
   examples: |
@@ -552,54 +553,53 @@ nlu:
     - is full data accessible through portal?
 
 
-- intent: faq-visualisation-b3/how-to-create-indicators   #90
-  examples: |
-    - How to create new indicators?
-    - Create new indicators
-    - Help create new indicator
-    - Indictor creation
-    - How do I make new indicator?
-    - Making new indicator
-    - can I add new indicator?
-    - How do I create a new indicator
-    - How do you come up with new indicators?
-    - how am i supposed to create new indicators?
-    - how new indicators are generated?
-    - how new indicators are produced?
-    - How would you look for new indicators?
-    - How do you make new indicators?
-    - How do you develop new indicators?
-    - How new indicators can be built up?
-    - What's the best way to create new indicators?
-    - What is the best way to make new indicators?
-    - What is the most effective method for developing new indicators?
-    - What is the most efficient way to create new indicators?
-    - how can i come up with new indicator?
-    - how can i generate new indicator?
-    - What is the most effective method for creating new indicators?
-    - How should i come up with new indicators?
-    - What methods i need to use in order to create new indicator?
-    - steps for developing new indicators?
-    - What steps i need to employ when coming up with new indicator?
-    - What method i should use to create new indicators?
-    - tell how to come up with new indicators?
-    - What is the best method for creating new indicators?
-    - how to developing new indicators?
-    - What strategies i should employ when developing new indicators?
-    - What is the most efficient way to develop new indicators?
-    - What is the most effective way to generate new indicators?
-    - What is the most efficient way to generate new indicators?
-    - What strategies i need to use to create new indicators?
-    - What methods do you employ when developing new indicator?
-    - How can i come up with new indicator?
-    - What is the most effective way to create new indicators?
-    - How do you come up with new indicator? What method do i use?
-    - How do you come up with new indicator? What steps should i follow?
-    - What is the best way to create new indicators?
-    - What is the most efficient way of creating new indicators?
-    - How can i go about creating new indicators?
-    - procedure for creating new indicators?
-    - steps for creating new indicators?
+# - intent: faq-visualisation-b3/how-to-create-indicators   #90
+#   examples: |
+#     - How to create new indicators?
+#     - Create new indicators
+#     - Help create new indicator
+#     - Indictor creation
+#     - How do I make new indicator?
+#     - Making new indicator
+#     - can I add new indicator?
+#     - How do I create a new indicator
+#     - How do you come up with new indicators?
+#     - how am i supposed to create new indicators?
+#     - how new indicators are generated?
+#     - how new indicators are produced?
+#     - How would you look for new indicators?
+#     - How do you make new indicators?
+#     - How do you develop new indicators?
+#     - How new indicators can be built up?
+#     - What's the best way to create new indicators?
+#     - What is the best way to make new indicators?
+#     - What is the most effective method for developing new indicators?
+#     - What is the most efficient way to create new indicators?
+#     - how can i come up with new indicator?
+#     - how can i generate new indicator?
+#     - What is the most effective method for creating new indicators?
+#     - How should i come up with new indicators?
+#     - What methods i need to use in order to create new indicator?
+#     - steps for developing new indicators?
+#     - What steps i need to employ when coming up with new indicator?
+#     - What method i should use to create new indicators?
+#     - tell how to come up with new indicators?
+#     - What is the best method for creating new indicators?
+#     - how to developing new indicators?
+#     - What strategies i should employ when developing new indicators?
+#     - What is the most efficient way to develop new indicators?
+#     - What is the most effective way to generate new indicators?
+#     - What strategies i need to use to create new indicators?
+#     - What methods do you employ when developing new indicator?
+#     - How can i come up with new indicator?
+#     - What is the most effective way to create new indicators?
+#     - How do you come up with new indicator? What method do i use?
+#     - How do you come up with new indicator? What steps should i follow?
+#     - What is the best way to create new indicators?
+#     - What is the most efficient way of creating new indicators?
+#     - How can i go about creating new indicators?
+#     - procedure for creating new indicators?
+#     - steps for creating new indicators?
 
 
 - intent: faq-visualisation-b3/where-is-graph   #91
@@ -1081,7 +1081,8 @@ nlu:
     - Why does the graph now have a different appearance after being downloaded?
     - When the graph was downloaded, what happened to it?
     - So, what happened to the graph after it was downloaded?
-
+    - on the website, the visual shown was different than what I saved
+    - after saving it appears differently, not same as it was on site.
 
 - intent: faq-visualisation-b3/bar-graphs-too-wide    #109
   examples: |

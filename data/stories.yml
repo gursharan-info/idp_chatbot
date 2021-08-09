@@ -1,14 +1,9 @@
 version: "2.0"
 stories:
-# - story: happy path
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
 
 - story: happy path
   steps:
   - intent: greet
-  # - action: utter_greet
   - action: action_slot_setter
 
 - story: happy_path-portal
@@ -17,6 +12,33 @@ stories:
   - action: action_slot_setter
   - slot_was_set:
     - intent_button : "faq-portal"
+
+- story: happy_path-portal-feedback1
+  steps:
+  - intent: greet
+  - action: action_slot_setter
+  - slot_was_set:
+    - intent_button : "faq-portal"
+  - intent: feedback-form
+  - action: utter_feedback-form
+
+- story: happy_path-train-feedback1
+  steps:
+  - intent: greet
+  - action: action_slot_setter
+  - slot_was_set:
+    - intent_button : "faq-train"
+  - intent: feedback-form
+  - action: utter_feedback-form
+
+- story: happy_path-portdataset-feedback1
+  steps:
+  - intent: greet
+  - action: action_slot_setter
+  - slot_was_set:
+    - intent_button : "faq-dataset"
+  - intent: feedback-form
+  - action: utter_feedback-form
 
 - story: happy_path-viz
   steps:
@@ -42,7 +64,7 @@ stories:
   - slot_was_set:
     - intent_button : "faq-fel"
 
-- story: happy_path-viz-feedback
+- story: happy_path-viz-feedback-fel
   steps:
   - intent: greet
   - action: action_slot_setter
@@ -67,4 +89,10 @@ stories:
   - slot_was_set:
     - intent_button : "faq-dataset"
 
+- story: feedback + faq 
+  steps:
+  - intent: feedback-form
+  - action: utter_feedback-form
+  - intent: greet
+  - action: action_slot_setter
 

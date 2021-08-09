@@ -124,6 +124,7 @@ nlu:
     - want assistance in comprehending the portal
     - how can i interpret portals functionality
     - how to operate portal?
+    - can you assist me to learn this portel ?
 
 - intent: faq-train-b0/next-training-when   #274
   examples: |
@@ -306,6 +307,7 @@ nlu:
     - What is the most important factor to remember while learning to visualise data?
     - What is the secret to mastering data visualisation?
     - What is the key to mastering data visualisation?
+    - is there any way to study data visualizations ?
 
 - intent: faq-train-b0/idp-journalism
   examples: |
@@ -986,5 +988,23 @@ nlu:
     - objective of the portal?
     - goal of the portal?
 
-
+- intent: faq-train-b0/any-training-program
+  examples: |
+    - is there any training program available by idp?
+    - does idp provides any guided paths to operate the potal?
+    - Is training available through India Data Portal?
+    - are there any training programs provided by idp?
+    - does idp come up with any training?
+    - does india data portal deliver any training?
+    - idp provides any training?
+    - any tarining is provided by idp?
+    - this potal provides any training?
+    - Is there a training programme offered by idp?
+    - Is there a training course offered by idp?
+    - Is there really a training course offered by idp?
+    - Would there be a training course offered by idp?
+    - idp Would there be a training course offered by you
+    - Should there be a training course offered by idp?
+    - Should there be a programme offered by idp?
+    - is this portal offers any training?
 

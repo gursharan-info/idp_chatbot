@@ -793,7 +793,7 @@ nlu:
 - intent: faq-portal-b1/donload-imag-datacard #423
   examples: |
     - What is the best way to download an image from a datacard?
-    - How do we get an image from a datacard?
+    - How do we get an img from a datacard?
     - What is the most efficient method for extracting an image from a datacard?
     - What's the fastest way to get an image off a datacard?
     - What is the fastest way to download images from a datacard?
@@ -815,20 +815,21 @@ nlu:
     - What is the best method for obtaining an image from a datacard?
     - What's the best way to get an image from a datacard?
     - What is the most efficient way to retrieve an image from a datacard?
-    - What is the most efficient way to get images from a datacard?
+    - What is the most efficient way to get img from a datacard?
     - What is the most efficient method for downloading images from a datacard?
     - What is the most effective method for downloading images from a datacard?
     - I'm trying to get an image from a datacard, but I'm not sure how to do it.
-    - What is the fastest way to get an image from a datacard?
+    - What is the fastest way to get an img from a datacard?
     - What is the most efficient method for downloading an image from a datacard?
     - What is the best way to get an image from a datacard?
     - What is the most efficient way to extract images from a datacard?
-    - How can I get an image from a datacard?
+    - How can I get an img from a datacard?
     - What is the most efficient method for obtaining a picture from a datacard?
-    - how can we donload image from datacard
+    - how can we donload img from datacard
     - What is the most effective method for taking images offline from a datacard?
     - method for obtaining images locally froma datacard
     - guide me with the steps to download pitures from datacard
+    - can we download img from datacaard?
 
 - intent: faq-portal-b1/made-datacard-use-multipl-dataset # 424
   examples: |

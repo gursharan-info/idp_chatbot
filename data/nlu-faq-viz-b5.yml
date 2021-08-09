@@ -122,7 +122,6 @@ nlu:
     - Help me with making graphs/visualisation
     - Can you help me with graphs/visualisation
     - I need help with graohs/visualisation
-    - graphs help
     - help with graphs/visualisation
     - is there any tutorial available?
     - Is there a class on how to make visuals?
@@ -135,26 +134,26 @@ nlu:
     - Is there a tutorial for visualisations?
     - Is there a class that teaches you how to make visualisations?
     - Is there a tutorial on visualisations available?
-    - Is there a tutorial on making visualisations?
+    - Is there a tutorial on making visuals?
     - Is there a tutorial on making plots?
     - Is there a tutorial on how to make visuals?
     - any visualisations tutorial available?
-    - Is there a tutorial for making visualisations?
+    - Is there a tutorial for making vis?
     - Is it possible to find a tutorial on how to make visualisations?
     - Is it possible to find a tutorial on how to create visuals?
     - Is a tutorial on how to make visualisations available?
     - does this portal have any guide on how to make visuals?
-    - Is there a guide to creating visualisations?
+    - Is there a guide to creating viz?
     - Is there a plotting tutorial?
     - tutorial on visualisations available?
-    - Is there a tutorial on making graphs?
+    - Is there a tutorial on building graphs?
     - Is there a tutorial on making diagrams?
     - Is there any tutorial on visuals?
     - Is a visualisations tutorial available?
     - Is there a tutorial on how to create visualisations?
     - Is there a video tutorial on how to create visualisations?
     - Is a tutorial on how to create visualisations available?
-
+    - how can i learn more about building graphs
 
 
 - intent: faq-visualisation-b5/only-see-states-find-district-village #145
@@ -164,9 +163,7 @@ nlu:
     - I am not able to find district/village names.
     - why am i not able to find district/village names ?
     - why can't i find district/village names ?
-    - states help
     - help with village names
-    - district names help
     - assist with district/village names
     - I can only see states. Where can I find district/village names?
     - I can't find district. Why?
@@ -198,8 +195,8 @@ nlu:
     - What is the quickest way to locate the names of villages and districts?
     - How can I quickly find the names of districts and villages?
     - What's the best way to look up the names of districts and villages?
-
-
+    - my village name is not appearing. why is that
+    - can i drill down more into the regions shown down to the village level
 
 - intent: faq-visualisation-b5/graph-not-see-loading #151
   examples: |
@@ -241,7 +238,6 @@ nlu:
     - tell me why my graph appears to be loading incorrectly.
     - please explain why my graph does not appear to be loading.
     - It appears that my graph is not loading correctly.
- 
 
 - intent: faq-visualisation-b5/How-change-title #152
   examples: |
@@ -251,6 +247,7 @@ nlu:
     - What is the procedure to change the title ?
     - Help me changing the title
     - title change
+    - heading change
     - how to title change
     - problem with title change
     - how can I change the title?
@@ -260,20 +257,18 @@ nlu:
     - What's the most effective way to alter the title?
     - What's the best way for me to change the title?
     - What is the most effective way for me to modify the title?
-    - I'm not sure how I'd go about doing so.
     - I am not sure how to make the title change.
-    - I'm not sure how I'd do it.
     - I don't know how to alter the title.
     - How can I change the title in the most effective way?
     - What is the most efficient way to alter the title?
-    - What's the best way to change the title?
+    - What's the best way to change the heading?
     - What is the most effective method for me to change the title?
     - What is the most efficient method of changing the title?
     - How can I change the title in the most efficient way?
     - What's the most efficient way to change the title?
     - I'm not sure how to make the title different.
     - What is the most efficient method for changing the title?
-    - How should I go about changing the title?
+    - How should I go about changing the heading?
     - What is the best way for me to change the title?
     - What is the most effective method for changing the title?
     - I'm not sure how I'd go about changing the title.
@@ -286,6 +281,8 @@ nlu:
     - What is the best way to change the title?
     - If I wanted to change the title, I'm not sure how I'd go about it.
     - What should I do if I want to change the title?
+    - Can I change the heading of my visual?
+    - I want to call my visual with a different name. How can I do that?
 
 - intent: faq-visualisation-b5/What-numbers-in-brackets #153
   examples: |
@@ -299,7 +296,7 @@ nlu:
     - What do the bracketed numbers indicate?
     - What do the numbers in the brackets represent?
     - What do the numbers in brackets mean?
-    - What do the numbers in the brackets indicate?
+    - What do the values in the brackets indicate?
     - What does the number in brackets mean?
     - What exactly do the numbers in brackets indicate?
     - What do the numbers in brackets mean exactly?
@@ -315,6 +312,11 @@ nlu:
     - What do the bracketed numbers mean?
     - What do the numbers between the brackets mean?
     - What exactly do the numbers in the brackets mean?
+    - meaning of numbers inside parantheses
+    - significance of numbers inside paranthieses
+    - use of value inside brackets?
+    - No information is mentioned about the numbers that appear inside braces on the visual. What do they signify?
+
 
 - intent: faq-visualisation-b5/Do-have-select-filters #154
   examples: |
@@ -727,35 +729,35 @@ nlu:
     - How do I change the color of each bar?
     - I'm not sure how I can make each bar a different color.
 
-- intent: faq-visualisation-b5/how-change-color-graph #172
-  examples: |
-    - How can I change the color on a graph
-    - how the color on the graph could be changed
-    - ahmm i wanna chnage grpah colors possible ?
-    - oh i just wanted to know is iit even possible to change color of graph
-    - how the color on the graph could be changed while i am here
-    - on idp is it possible to change color on the graph
-    - on indian data portal is it possible to change color on the graph
-    - while on idp is it possible to change color on the graph
-    - How can I alter the color of a graph?
-    - How do you change the color of a graph the most effectively?
-    - What is the most effective method for changing the color of a graph?
-    - How do I change the color of a graph?
-    - How can I effectively change the color of a graph?
-    - What are the options for changing the color of a graph?
-    - How do you effectively change the color of a graph?
-    - How do you change the color of a graph?
-    - What is the best way to change a graph's color?
-    - On a graph, how do I change the color?
-    - What's the best way to change a graph's color?
-    - How can I change the color of a graph the most effectively?
-    - How can I most effectively change the color of a graph?
-    - What is the most efficient method for changing a graph's color?
-    - how do you most effectively change the color of a graph?
-    - What is the best way to change the color of a graph?
-    - What's the most efficient way to change the color of a graph?
-    - What is the most efficient way to change a graph's color?
-    - What's the best way to change the color of a graph?
+# - intent: faq-visualisation-b5/how-change-color-graph #172
+#   examples: |
+#     - How can I change the color on a graph
+#     - how the color on the graph could be changed
+#     - ahmm i wanna chnage grpah colors possible ?
+#     - oh i just wanted to know is iit even possible to change color of graph
+#     - how the color on the graph could be changed while i am here
+#     - on idp is it possible to change color on the graph
+#     - on indian data portal is it possible to change color on the graph
+#     - while on idp is it possible to change color on the graph
+#     - How can I alter the color of a graph?
+#     - How do you change the color of a graph the most effectively?
+#     - What is the most effective method for changing the color of a graph?
+#     - How do I change the color of a graph?
+#     - How can I effectively change the color of a graph?
+#     - What are the options for changing the color of a graph?
+#     - How do you effectively change the color of a graph?
+#     - How do you change the color of a graph?
+#     - What is the best way to change a graph's color?
+#     - On a graph, how do I change the color?
+#     - What's the best way to change a graph's color?
+#     - How can I change the color of a graph the most effectively?
+#     - How can I most effectively change the color of a graph?
+#     - What is the most efficient method for changing a graph's color?
+#     - how do you most effectively change the color of a graph?
+#     - What is the best way to change the color of a graph?
+#     - What's the most efficient way to change the color of a graph?
+#     - What is the most efficient way to change a graph's color?
+#     - What's the best way to change the color of a graph?
 
 
 - intent: faq-visualisation-b5/How-many-ways-download-graph #173
@@ -806,50 +808,35 @@ nlu:
   #   - Is there a limit to how many times I can download the graph?
 
 
-- intent: faq-visualisation-b5/Can-share-graphs-on-social-media #174
+- intent: faq-visualisation-b5/how-Can-share-graphs-on-social-media #174
   examples: |
-    - share option fir whatsapp?
-    - share option fir facebook?
-    - share option for bluetooth?
-    - share option for linkedln?
-    - linkdin is available for sharing graphs made here ?
-    - facebook is available for sharing graphs made here ?
-    - twitter is available for sharing graphs made here ?
-    - can i share my work on social media
-    - can i share my work on reddit
-    - can i share on my work on social media websites
-    - facbook can i share my reesults on it?
-    - twitte can i share my reesults on it?
-    - bluettoth can i share my reesults on it?
-    - reddit can i share my reesults on it?
-    - whatsaap can i share my reesults on it?
+    - how to shares on whatsapp?
+    - how to shares on facebook?
+    - how to shares on bluetooth?
+    - how to shares on linkedln?
+    - how can i share my work on social media
+    - how can i share my work on reddit
+    - how can i share on my work on social media websites
+    - how can i share my reesults on facbook?
+    - how can i share my reesults on twitte?
+    - how can i share my results using blutooth?
+    - how can i share my results on reddit?
+    - how can i share my results on whatsaap?
     - share option on one drive?
     - can i copy the link of graph?
     - How can I share my graph?
-    - how can I share my graph?
-    - Is it okay if I use social media to share the graphs?
-    - Is it all right if I post the graphs on Facebook?
-    - Is it okay if I share the graphs on Facebook and Twitter?
-    - Is it all right if I share the graphs on social media?
-    - Is it okay if I post the graphs on Facebook?
-    - Is it permissible for me to share the graphs on social media?
-    - Is it all right if I post the graphs on social media?
-    - Is it okay for me to post the graphs on social media?
-    - Is it okay if I share the graphs on social media sites like Facebook and Twitter?
-    - Is it OK if I post the graphs on Facebook?
-    - Is it acceptable for me to post the graphs on Facebook?
-    - Is it acceptable for me to share the graphs on social media?
-    - Is it okay if I share the graphs on Facebook?
-    - Is it okay if I post the graphs on Facebook and Twitter?
-    - Is it alright if I share the graphs on social media?
-    - Is it permissible for me to post the graphs on Facebook and Twitter?
-    - Is it permissible for me to post the graphs on Facebook?
-    - Is it okay if I post the graphs on social media?
-    - Is it okay if I share the graphs on social media?
-    - Is it permissible for me to post the graphs on social media?
-    - Is it okay if I share the graphs on social media sites such as Facebook and Twitter?
-    - Is it okay if I post the graphs to social media?
-
+    - is there any way to sahre the graphs on social platform ?
+    - how I use social media to share the graphs?
+    - how I post the graphs on Facebook?
+    - how I share the graphs on Facebook and Twitter?
+    - how am I supposed to share the graphs on social media?
+    - how I post the graphs on Facebook?
+    - how to share the graphs on social media?
+    - how can I share the graphs on social media sites like Facebook and Twitter?
+    - how can I post the graphs on Facebook?
+    - how to share the graphs on my social media
+    - in what way i can share the graphs on my social media
+    - is there any way to sahre the graphs on social platform ?
 
 - intent: faq-visualisation-b5/compare-more-datasets-single-visualization #175
   examples: |

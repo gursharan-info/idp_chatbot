@@ -74,15 +74,15 @@ responses:
   utter_faq-visualisation-b5/How-change-different-colours-bar: #171
   - text: You can choose from the various color scheme options available 
 
-  utter_faq-visualisation-b5/how-change-color-graph: #172
-  - text: On top left corner of the visualisation, there is a icon with gear and pencil which enable you to change the color pallet of visualisations
+  # utter_faq-visualisation-b5/how-change-color-graph: #172
+  # - text: On top left corner of the visualisation, there is a icon with gear and pencil which enable you to change the color pallet of visualisations
   
 
   utter_faq-visualisation-b5/How-many-ways-download-graph: #173
   - text: You can download your visualisation in SVG and PNG format
 
-  utter_faq-visualisation-b5/Can-share-graphs-on-social-media: #174
-  - text: Yes, you can share your visualisation in social media using the share icon on the top right corner of your visualisation 
+  utter_faq-visualisation-b5/how-Can-share-graphs-on-social-media: #174
+  - text: you can share your visualisation in social media using the share icon on the top right corner of your visualisation 
 
   utter_faq-visualisation-b5/compare-more-datasets-single-visualization: #175
   - text: You can compare upto 2 data sets in a single visualisation

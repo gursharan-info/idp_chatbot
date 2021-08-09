@@ -527,6 +527,8 @@ nlu:
     - why i can' t spot the title even after  downlink my graphs?
     - After downloading my graphs .why i can't find the glimpse of the title?
     - why i am not able to see title after downloading the graph?
+    - where do i see the name of the graph once saved?
+    - When I download, I don't see heading for my graph. Why is that?
 
 - intent: faq-visualisation-b4/what-is-svg #129
   examples: |
@@ -710,6 +712,7 @@ nlu:
     - The graph is erroneous.
     - i feel like the plot is erroneous
     - There is an error in the graph.
+    - I'm getting wrong information on my graph. Why is that?
 
 
 
@@ -747,21 +750,21 @@ nlu:
     - can we some how download all treemas locally
     - i wanted to know how can i download all maps making trees
     - is there any way i can download all ot the tree maps
+    - how to save my treemaps
 
 
 - intent: faq-visualisation-b4/remove-all-selections-once #139
   examples: |
     - How can I remove all my selections at once?
     - How my all selections are removed at once?
-    - All my selections are removed at once but how?
     - Can i remove all my selections at once and how?
     - How my all selections are erased at once?
     - Can i delete all my selections at once and how?
     - will you assist me to remove my all selections?
-    - is  my all selections are removed at once?
+    - all selections are removed at once?
     - how can I remove my selections?
     - how am i supposed to remove all the selections in one go?
-    - can can all selections be remove at once?
+    - can all selections be remove at once?
     - How can I get rid of all of my choices at once?
     - How can I get ahold of all of my selections at once?
     - how to get ahold of all the selections ?
@@ -780,5 +783,8 @@ nlu:
     - How can I get rid of all of my selected options at once?
     - how can I erase all of my selected options at once?
     - how all of the selected options can be removed?
+    - how can i clear the selections all of them
+    - clearing selections
+    - how am i supposed to clear all selections?
 
 

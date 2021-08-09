@@ -132,5 +132,5 @@ responses:
   - text: We have collected the data from government websites. You can also see the source links in the 'about dataset' page of a dataset. In any chart in the below you can see the sources from where the data has been referenced.
   utter_faq-portal-b0/is-data-reliable:  #369
   - text: We have collected the data from reliable government sources. You can also see the source links in the 'about dataset' page of a dataset
-  utter_faq-portal-b0/data-sources:  #370
-  - text: We have collected the data from government websites. You can also see the source links in the 'about dataset' page of a dataset
+  # utter_faq-portal-b0/data-sources:  #364
+  # - text: We have collected the data from government websites. You can also see the source links in the 'about dataset' page of a dataset

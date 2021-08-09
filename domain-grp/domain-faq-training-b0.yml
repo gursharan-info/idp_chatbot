@@ -32,7 +32,7 @@ responses:
   utter_faq-train-b0/any-certification-available: #278
   - text: Yes we do provide certificates from Indian School of business for attending the masterclass
   utter_faq-train-b0/what-training-material-we-use: #279
-  - text: On the top right corner tab you will find training. After clicking on training you will find two subtabs- workshop & events and online training. Click on workshop & events to find next training
+  - text: On the top right corner tab you will find training. After clicking on training you will find two subtabs- workshop & events and online training. Click on online training to find tutorial videos.
 
   utter_faq-train-b0/learn-data-visualisation: #280
   - text: On the top right corner tab you will find training. After clicking on training you will find two subtabs- workshop & events and online training. Click on online training to find tutorial videos.
@@ -80,25 +80,27 @@ responses:
   utter_faq-train-b0/multiple-training-modules: # 299
   - text: There are multiple training modules which you can find in the training tab on the top right corner of the home page. We frequently upload many training modules here.
 
-  utter_faq-train-b0/online-resource-for-training: #350
+  utter_faq-train-b0/online-resource-for-training: #344
   - text: You can find a Training tab on our website and for more material on India Data Portal visit our Youtube Channel https://www.youtube.com/channel/UCB6LwUiFwPSobU0TwXuF4Fg
-  utter_faq-train-b0/tutorial-on-how-to-use-idp: #351
+  utter_faq-train-b0/tutorial-on-how-to-use-idp: #345
   - text: You can find a Training tab on our website and for more material on India Data Portal visit our Youtube Channel https://www.youtube.com/channel/UCB6LwUiFwPSobU0TwXuF4Fg
-  utter_faq-train-b0/free-online-tutorials-idp: #352
+  utter_faq-train-b0/free-online-tutorials-idp: #346
   - text: You can find a Training tab on our website and for more material on India Data Portal visit our Youtube Channel https://www.youtube.com/channel/UCB6LwUiFwPSobU0TwXuF4Fg
-  utter_faq-train-b0/workshops-by-idp : #353
+  utter_faq-train-b0/workshops-by-idp : #347
   - text: India Data Portal conducts workshops and masterclasses. The details are announced through the training tab in our website and through social media handles
-  utter_faq-train-b0/physical-workshop: #354
+  utter_faq-train-b0/physical-workshop: #348
   - text: India Data Portal conducts physical trainings/workshops
-  utter_faq-train-b0/training-material-on-youtube: #355
+  utter_faq-train-b0/training-material-on-youtube: #349
   - text: India Data Portal's Youtube channel can be accessed at https://www.youtube.com/channel/UCB6LwUiFwPSobU0TwXuF4Fg
-  utter_faq-train-b0/idp-training-incharge: #356
+  utter_faq-train-b0/idp-training-incharge: #350
   - text: IDP offers training through researchers and experts in the field
-  utter_faq-train-b0/training-participation-recognition: #357
+  utter_faq-train-b0/training-participation-recognition: #351
   - text: IDP offers a certificate of participation for people who successfully compeletes the training program
   # utter_faq-train-b0/how-to-send-feedback: #358
   # - text: You can fill the feedback form or mail us at- idp@isb.edu
-  utter_faq-train-b0/training-available-for-all: #364
+  utter_faq-train-b0/training-available-for-all: #358
   - text: India Data Portal offers Masterclasses and Workshops free of cost and anyone can attend 
-  utter_faq-train-b0/portals-objective: #365
+  utter_faq-train-b0/portals-objective: #359
   - text: The “India Data Portal” is a one-stop open-access portal for journalists to access, interact with, and visualize information, data and knowledge related to agriculture and financial inclusion, while also aiding other beneficiaries – researchers, students, policy makers, administrators, NGOs, and entrepreneurs.
+  utter_faq-train-b0/any-training-program: #343
+  - text: India Data Portal offers Masterclasses and Workshops

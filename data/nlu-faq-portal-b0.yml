@@ -70,7 +70,7 @@ nlu:
     - when i click on source lik a 503 error pops up why is this coming
     - on clciking link to the source i get 503 error always pls resolve this
     - wanna resolve this 503 error that comes when i hit source link
-    - wanna resolve this 503 error that comes when i hit link to the source
+    - not able to work the website getting 503
     - When I click on the source link, I get an error code 503, why?
     - by clicking on the source link, I get an error code of 503 can you help me to solve this
     - I receive the error code 503, when I click on the source link,
@@ -539,6 +539,8 @@ nlu:
     - How are the data bits that are readily accessible?
     - How are the data regions that are present on webiste?
     - from which sectors data is coming
+    - Which type of domains exist in portal
+    - Which type of domains are found in IDP?
 
 - intent: faq-portal-b0/Why-not-see-all-selected-language #150
   examples: |
@@ -568,6 +570,8 @@ nlu:
     - Why am I unable to view the entire text in the language I've chosen?
     - Why can't I see the entire text in my preferred language?
     - Why am I unable to see all of the text in the language I have selected?
+    - the graph doesn't have all the info in hindi, why is that?
+    - visual is multi lingual. how to avoid that?
 
   
 - intent: faq-portal-b0/most-recent-data
@@ -1015,6 +1019,7 @@ nlu:
     - when was the project got into existence
     - in which year was this project started?
     - when was Indian data portal created ?
+    - in which year this portal was deployed on web?
     
 - intent: faq-portal-b0/user-count-on-portal
   examples: |
@@ -1264,22 +1269,22 @@ nlu:
     - all the info given by this webiste is accurate?
     - all the stats given by IDP are they genuine enough ?
 
-- intent: faq-portal-b0/data-sources
-  examples: |
-    - What are the data's sources?
-    - What data sources are being used?
-    - What data sources have been used?
-    - Where did the data come from?
-    - What are the data's origins?
-    - from where data is used here
-    - data present here is collected from ?
-    - data sources on portal?
-    - What are the sources of the data?
-    - What are the information's sources?
-    - Where did the information come from?
-    - from where all the data present on IDP is collected
-    - what are the sources that have been taken into consideration while making this webiste
-    - all the datasets present here are from ?
-    - Idp used data from what sources ?
-    - india data portal used data from what all the sources
+# - intent: faq-portal-b0/data-sources
+#   examples: |
+#     - What are the data's sources?
+#     - What data sources are being used?
+#     - What data sources have been used?
+#     - Where did the data come from?
+#     - What are the data's origins?
+#     - from where data is used here
+#     - data present here is collected from ?
+#     - data sources on portal?
+#     - What are the sources of the data?
+#     - What are the information's sources?
+#     - Where did the information come from?
+#     - from where all the data present on IDP is collected
+#     - what are the sources that have been taken into consideration while making this webiste
+#     - all the datasets present here are from ?
+#     - Idp used data from what sources ?
+#     - india data portal used data from what all the sources
 

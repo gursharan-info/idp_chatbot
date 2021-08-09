@@ -20,7 +20,7 @@ responses:
   utter_faq-visualisation-b1/mandatory-to-select-location:
   - text: In some aggregatable datasets, there is no need need to select a location. This way it can present pan india statistics for the dataset. However, for non aggregatable datasets, selecting a location is mandatory
   utter_faq-visualisation-b1/can-i-select-dis-without-state:
-  - text: No, selection of an upper level entity like state is mandatory to select the districts it contains
+  - text: selection of an upper level entity like state is mandatory to select the districts it contains
   utter_faq-visualisation-b1/can-change-color-of-viz:
   - text: On top left corner of the visualisation, there is a icon with gear and pencil which enable you to change the color pallet of visualisations
   utter_faq-visualisation-b1/can-we-save-viz:
@@ -33,6 +33,8 @@ responses:
   - text: ' No, IDP directly opens the web whatsapp on your browser which works with QR code scanned with your phone'
   utter_faq-visualisation-b1/which-social-media-platform-supported-for-sharing-vis:
   - text: IDP can share on Facebook, Linkedin, Twitter &  Instagram. Apart from that you can also copy the visualisation link and share it anywhere on the internet.
+  utter_faq-visualisation-b1/select-value-from-all-dimension-nece: # 42
+  - text: In some aggregatable datasets, there is no need to select a value from the dimensions. However, for non aggregatable datasets, selecting a value from the dimension you want to visualize is mandatory
 actions: []
 forms: {}
 e2e_actions: []

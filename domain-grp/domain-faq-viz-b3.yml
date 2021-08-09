@@ -43,8 +43,8 @@ responses:
   utter_faq-visualisation-b3/how-access-full-data:  #89
   - text: You can access the full data everytime in our portal
 
-  utter_faq-visualisation-b3/how-to-create-indicators:  #90
-  - text: On the top right corner of the indicator popup you will see create new indicator button. Click it and then you will get another popup and there is a dropdown named dataset and after that there is a section to select the indicators. After selecting the indicators use the mathematical icons to define the relationship between the selected indicators. Then name the new indicator and name its unit and click on create indicator.
+  # utter_faq-visualisation-b3/how-to-create-indicators:  #90
+  # - text: On the top right corner of the indicator popup you will see create new indicator button. Click it and then you will get another popup and there is a dropdown named dataset and after that there is a section to select the indicators. After selecting the indicators use the mathematical icons to define the relationship between the selected indicators. Then name the new indicator and name its unit and click on create indicator.
 
   utter_faq-visualisation-b3/where-is-graph:  #91
   - text: First select a dataset and then select the indicators and dimensions with location and time. Then select 'Build your chart' for the visualization.

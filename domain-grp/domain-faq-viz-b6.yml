@@ -16,8 +16,8 @@ responses:
   utter_faq-visualisation-b6/why-create-new-indicator: #181
   - text: The user has the option to create new indicators for the purpose of further analysis and visualizations. The indicators created by the user can be viewed under the "My Indicators" option under your account.
   
-  utter_faq-visualisation-b6/create-new-indicators: #180
-  - text: On the Visualise page, go to the left hand side of the page where you will find the indicators option under the data set tab. Click on indicators and on the right hand side of the pop-up, there will be an option to create your own indicator.
+  # utter_faq-visualisation-b6/create-new-indicators: #180
+  # - text: On the Visualise page, go to the left hand side of the page where you will find the indicators option under the data set tab. Click on indicators and on the right hand side of the pop-up, there will be an option to create your own indicator.
 
 # 182 in nlu file 5
 

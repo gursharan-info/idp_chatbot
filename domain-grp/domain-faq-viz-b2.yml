@@ -43,7 +43,7 @@ responses:
   utter_faq-visualisation-b2/new-indicators-added-visualization: #64
   - text: You can add all the indicators that are there in a dataset
 
-  utter_faq-visualisation-b2/create-new-indicators: #65
+  utter_faq-visualisation-b2/why-create-new-indicators: #65
   - text: No its not necessary.If you want to see a visualization from a new indicator that could be derived from the exisiting indicators then you can create a new indicator and view visualization from it.
 
   utter_faq-visualisation-b2/define-unit-new-indicator: #66

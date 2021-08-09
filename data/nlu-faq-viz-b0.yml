@@ -50,6 +50,8 @@ nlu:
     - i wanna give some feddback
     - feedback any way?
     - any way to give feedback
+    - i wnat to give feedback where should i go
+    - i want to give feedback how am i supposed to do that?
     - it was really nice working here i wanna suggest some improvements
     - any way i can give suggestions
     - i can provide some improvements
@@ -60,20 +62,22 @@ nlu:
     - best way for submitting a feedback?
     - what is the best way to give the feedback?
     - How can I send my feedbacks?
+    - how can i give my suggestions
     - What is the most efficient method for me to send my comments?
-    - What is the most effective method for me to give feedback?
+    - What is the most effective method for me to give some suggestions?
     - What is the most efficient method for me to submit feedback?
     - What is the most effective approach for me to submit feedback?
     - What's the best way for me to provide my feedback?
     - Where should I send feedback?
     - where am i supposed to submit a feedback?
-    - What is the most efficient way for me to provide my feedback?
+    - What is the most efficient way for me to provide my suggestion?
     - What is the most efficient method for me to provide my feedback?
     - What is the best way for me to provide my feedback?
     - tell me where a feedback has to be sent?
     - What is the most effective method for me to submit feedback?
     - well where do we suppose to give feedback?
     - where is feedback link?
+    - how am i supposed share my suggestions?
     - What is the most effective approach for me to give feedback?
     - What is the best way for me to send my comments?
     - how am i supposed to send feedback ?
@@ -177,7 +181,7 @@ nlu:
     - india data portal supports what sort of visuals
 
 
-- intent: faq-visualisation-b0/source_of_data #already present
+- intent: faq-visualisation-b0/source_of_data #123 
   examples: |
     - What is the source of the data?
     - What is the source of the data present on indian data portal
@@ -198,6 +202,22 @@ nlu:
     - And what's the source of the data on the Indian Portal Website?
     - Then what was the source of the data on the Indian Portal Website?
     - But what's the source of the data on the Indian Portal Website?
+    - What are the data's sources?
+    - What data sources are being used?
+    - What data sources have been used?
+    - Where did the data come from?
+    - What are the data's origins?
+    - from where data is used here
+    - data present here is collected from ?
+    - data sources on portal?
+    - What are the sources of the data?
+    - What are the information's sources?
+    - Where did the information come from?
+    - from where all the data present on IDP is collected
+    - what are the sources that have been taken into consideration while making this webiste
+    - all the datasets present here are from ?
+    - Idp used data from what sources ?
+    - india data portal used data from what all the sources
 
 - intent: faq-visualisation-b0/will_addtional_sources_be_added  #already present
   examples: |

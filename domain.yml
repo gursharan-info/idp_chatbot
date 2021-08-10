@@ -257,11 +257,6 @@ responses:
   utter_faq-dataset-b1/datacard-signifi:
   - text: Datacard consists of one dataset with visualization. In one page we can
       have 4 datacards with 4 different visualizations
-  utter_feedback-form:
-  - text: You can fill the form
-    buttons:
-    - title: Feedback form
-      payload: https://forms.gle/Fk1TxTzAteigKFG87
   utter_ok:
   - text: Ok go ahead :)
   utter_greet:
@@ -1084,5 +1079,6 @@ responses:
 actions:
 - action_slot_setter
 - action_viz_faq
+- action_feedback
 forms: {}
 e2e_actions: []

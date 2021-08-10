@@ -129,8 +129,8 @@ nlu:
   examples: |
     - When is the next training?
     - next training on portal?
-    - when is next task?
     - next class?
+    - when can i go to next meet?
     - at what time is next trainning
     - When will the next training be held?
     - when idp is organising next training?
@@ -143,17 +143,17 @@ nlu:
     - when will be next training workshop?
     - when next training is supposed to be held?
     - When is the next training session going to take place?
-    - When is the next training session going to be happening?
+    - When is the next training meet going to be happening?
     - When is the next training session actually taking place?
-    - When is the next training session going to occur?
+    - When is the next training meet going to occur?
     - When will the next training take place?
     - When will the next training start happening?
     - When is the next training going to take place?
     - When is the next training scheduled?
     - When is the next training planned?
     - When is the next training timetabled?
-    - plans for next training session?
-    - schedule for next training session?
+    - plans for next training meet?
+    - schedule for next training meet?
     - timetable for next training session?
 
 - intent: faq-train-b0/next-masterclass-when    #275

@@ -28,11 +28,11 @@ slots:
     influence_conversation: true
 
 responses:
-  utter_feedback-form:
-  - text: You can fill the form
-    buttons: 
-    - title: "Feedback form"
-      payload:  https://forms.gle/Fk1TxTzAteigKFG87
+  # utter_feedback-form:
+  # - text: You can fill the form
+  #   buttons: 
+  #   - title: "Feedback form"
+  #     payload:  https://forms.gle/Fk1TxTzAteigKFG87
   # here is the link [feedback](https://forms.gle/Fk1TxTzAteigKFG87)
   utter_ok:
   - text: Ok go ahead :)
@@ -76,6 +76,7 @@ responses:
 actions: 
 - action_slot_setter
 - action_viz_faq
+- action_feedback
 
 forms: {}
 e2e_actions: []

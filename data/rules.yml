@@ -6,17 +6,13 @@ rules:
 - rule : greet
   steps:
   - intent: greet
+  # - action: utter_greet
   - action: action_slot_setter
 
 - rule: for feedback
   steps:
   - intent: feedback-form
-  - action: utter_feedback-form
-
-- rule: rule for ok
-  steps:
-  - intent: ok
-  - action: utter_ok
+  - action: action_feedback
   
 - rule: for portal
   steps:
@@ -103,3 +99,9 @@ rules:
   steps:
   - intent: nlu_fallback
   - action: utter_please_rephrase
+
+
+- rule: rule for ok
+  steps:
+  - intent: ok
+  - action: utter_ok

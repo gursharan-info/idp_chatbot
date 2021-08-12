@@ -32,10 +32,6 @@ class ActionSlotSetter(Action):
             print("\n","slots value is ",tracker.slots['intent_button']) 
             dispatcher.utter_message(text="I am there to help you",buttons=buttons)
 
-        # elif 'done' in tracker.slots['intent_button']:
-        #     print(tracker.slots['intent_button'])
-        #     webbrowser.open("https://forms.gle/Fk1TxTzAteigKFG87", new=1)
-        #     dispatcher.utter_message(text="Thanks for your feedback")
 
         else:
             print("\n","Now slots value is ",tracker.slots['intent_button'])  
@@ -53,13 +49,6 @@ class ActionFeedback(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        # buttons = [
-        #    {"payload":'/ok{"intent_button":"done"}',"title":"Feedback"}
-        # {"payload":'https://forms.gle/Fk1TxTzAteigKFG87',"title":"Feedback"}
-        # {"url":'https://forms.gle/Fk1TxTzAteigKFG87',"title":"Feedback-sahib","type": "web_url"}
-        # ]
-        
-        # dispatcher.utter_message(text='please click on feedback button',buttons=buttons)
         dispatcher.utter_message(text="Please give your feedback")
         dispatcher.utter_message(text="[feedback](https://forms.gle/Fk1TxTzAteigKFG87)")
         
@@ -92,11 +81,6 @@ class ActionVizFaq(Action):
 
         # to get a slot value (here --> slot is intent_button)
         print("\n","slots value is ",tracker.slots['intent_button']) 
-
-        # if user message is the form link then don't run further code and odn't return anything
-        
-        # if str(tracker.latest_message['text']) == str('https://forms.gle/Fk1TxTzAteigKFG87'):
-        #     dispatcher.utter_message(text='You can fill and submit the Google form ')
          
         if tracker.slots['intent_button'] ==None:
             slot_value_clicked = mapped_intent[tracker.slots['intent_button']]
@@ -149,9 +133,7 @@ class ActionVizFaq(Action):
             
             print(f"Now slot value is {tracker.slots['intent_button']}","\n")
             
-            # else: # if confidence is less than 90 percent
-            #     dispatcher.utter_message(text = f"Do you want to ask question from {mapped_intent[ _intent[:-3]]} , If yes please select an options from below"
-            #     ,buttons=buttons)
+
 
         return [SlotSet(key = "intent_button", value= [str(_intent[:-3])] ) ] # setting slot values
     

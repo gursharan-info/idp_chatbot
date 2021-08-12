@@ -54,7 +54,7 @@ stories:
   - slot_was_set:
     - intent_button : "faq-visualisation"
   - intent: feedback-form
-  - action: utter_feedback-form
+  - action: action_feedback
   
 
 - story: happy_path-fel
@@ -71,7 +71,7 @@ stories:
   - slot_was_set:
     - intent_button : "faq-fel"
   - intent: feedback-form
-  - action: utter_feedback-form
+  - action: action_feedback
 
 
 - story: happy_path-train
@@ -81,6 +81,15 @@ stories:
   - slot_was_set:
     - intent_button : "faq-train"
 
+
+- story: happy_path-train
+  steps:
+  - intent: greet
+  - action: action_slot_setter
+  - slot_was_set:
+    - intent_button : "faq-train"
+  - intent: feedback-form
+  - action: action_feedback
 
 - story: happy_path-train
   steps:

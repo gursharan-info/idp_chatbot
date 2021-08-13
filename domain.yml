@@ -37,6 +37,12 @@ intents:
     use_entities: true
 - faq-train-b0:
     use_entities: true
+- about_data_dataset_name:
+    use_entities: true
+- about_data_granularity_level:
+    use_entities: true
+- about_data_source_data:
+    use_entities: true
 - faq-portal-b1:
     use_entities: true
 - faq-visualisation-b3:
@@ -47,9 +53,15 @@ intents:
     use_entities: true
 entities:
 - intent_button
+- dataset_name
+- granularity
+- source_name
 slots:
   intent_button:
     type: list
+    influence_conversation: true
+  dataset_name:
+    type: text
     influence_conversation: true
 responses:
   utter_faq-fel-b0/info-about-fellowship:
@@ -127,14 +139,11 @@ responses:
       can always create new indicators and specify the units of your choice.
   utter_faq-visualisation-b5/How-change-different-colours-bar:
   - text: You can choose from the various color scheme options available
-  utter_faq-visualisation-b5/how-change-color-graph:
-  - text: On top left corner of the visualisation, there is a icon with gear and pencil
-      which enable you to change the color pallet of visualisations
   utter_faq-visualisation-b5/How-many-ways-download-graph:
   - text: You can download your visualisation in SVG and PNG format
-  utter_faq-visualisation-b5/Can-share-graphs-on-social-media:
-  - text: Yes, you can share your visualisation in social media using the share icon
-      on the top right corner of your visualisation
+  utter_faq-visualisation-b5/how-Can-share-graphs-on-social-media:
+  - text: you can share your visualisation in social media using the share icon on
+      the top right corner of your visualisation
   utter_faq-visualisation-b5/compare-more-datasets-single-visualization:
   - text: You can compare upto 2 data sets in a single visualisation
   utter_faq-visualisation-b5/How-many-maximum-number-locations-select-which-creating-graph:
@@ -305,11 +314,6 @@ responses:
   - text: The user has the option to create new indicators for the purpose of further
       analysis and visualizations. The indicators created by the user can be viewed
       under the "My Indicators" option under your account.
-  utter_faq-visualisation-b6/create-new-indicators:
-  - text: On the Visualise page, go to the left hand side of the page where you will
-      find the indicators option under the data set tab. Click on indicators and on
-      the right hand side of the pop-up, there will be an option to create your own
-      indicator.
   utter_faq-visualisation-b6/choropleth-map:
   - text: choropleth map is a type of thematic map in which a set of pre-defined areas
       is colored or patterned in proportion to a statistical variable that represents
@@ -576,9 +580,6 @@ responses:
   utter_faq-portal-b0/is-data-reliable:
   - text: We have collected the data from reliable government sources. You can also
       see the source links in the 'about dataset' page of a dataset
-  utter_faq-portal-b0/data-sources:
-  - text: We have collected the data from government websites. You can also see the
-      source links in the 'about dataset' page of a dataset
   utter_faq-visualisation-b2/delete-visualisation-from-graphic-gallery:
   - text: As of Now we cannot delete a visualization from graphics gallary
   utter_faq-visualisation-b2/possible-share-live-visualisation:
@@ -609,7 +610,7 @@ responses:
   - text: Yes we can create new visualization using new indicator from different datasets.
   utter_faq-visualisation-b2/new-indicators-added-visualization:
   - text: You can add all the indicators that are there in a dataset
-  utter_faq-visualisation-b2/create-new-indicators:
+  utter_faq-visualisation-b2/why-create-new-indicators:
   - text: No its not necessary.If you want to see a visualization from a new indicator
       that could be derived from the exisiting indicators then you can create a new
       indicator and view visualization from it.
@@ -774,8 +775,8 @@ responses:
       the masterclass
   utter_faq-train-b0/what-training-material-we-use:
   - text: On the top right corner tab you will find training. After clicking on training
-      you will find two subtabs- workshop & events and online training. Click on workshop
-      & events to find next training
+      you will find two subtabs- workshop & events and online training. Click on online
+      training to find tutorial videos.
   utter_faq-train-b0/learn-data-visualisation:
   - text: On the top right corner tab you will find training. After clicking on training
       you will find two subtabs- workshop & events and online training. Click on online
@@ -851,6 +852,8 @@ responses:
       \ knowledge related to agriculture and financial inclusion, while also aiding\
       \ other beneficiaries \u2013 researchers, students, policy makers, administrators,\
       \ NGOs, and entrepreneurs."
+  utter_faq-train-b0/any-training-program:
+  - text: India Data Portal offers Masterclasses and Workshops
   utter_faq-portal-b1/find-dataset:
   - text: You can search the datasets by typing its name in the search bar. Another
       way of getting the datasets is to directly go to the dataset tab on the above.
@@ -983,13 +986,6 @@ responses:
       they should select this option.
   utter_faq-visualisation-b3/how-access-full-data:
   - text: You can access the full data everytime in our portal
-  utter_faq-visualisation-b3/how-to-create-indicators:
-  - text: On the top right corner of the indicator popup you will see create new indicator
-      button. Click it and then you will get another popup and there is a dropdown
-      named dataset and after that there is a section to select the indicators. After
-      selecting the indicators use the mathematical icons to define the relationship
-      between the selected indicators. Then name the new indicator and name its unit
-      and click on create indicator.
   utter_faq-visualisation-b3/where-is-graph:
   - text: First select a dataset and then select the indicators and dimensions with
       location and time. Then select 'Build your chart' for the visualization.
@@ -1048,8 +1044,8 @@ responses:
       This way it can present pan india statistics for the dataset. However, for non
       aggregatable datasets, selecting a location is mandatory
   utter_faq-visualisation-b1/can-i-select-dis-without-state:
-  - text: No, selection of an upper level entity like state is mandatory to select
-      the districts it contains
+  - text: selection of an upper level entity like state is mandatory to select the
+      districts it contains
   utter_faq-visualisation-b1/can-change-color-of-viz:
   - text: On top left corner of the visualisation, there is a icon with gear and pencil
       which enable you to change the color pallet of visualisations
@@ -1070,6 +1066,10 @@ responses:
   utter_faq-visualisation-b1/which-social-media-platform-supported-for-sharing-vis:
   - text: IDP can share on Facebook, Linkedin, Twitter &  Instagram. Apart from that
       you can also copy the visualisation link and share it anywhere on the internet.
+  utter_faq-visualisation-b1/select-value-from-all-dimension-nece:
+  - text: In some aggregatable datasets, there is no need to select a value from the
+      dimensions. However, for non aggregatable datasets, selecting a value from the
+      dimension you want to visualize is mandatory
   utter_faq-train-b1/often-workshop-arrang:
   - text: Workshops are arranged frequently. You can see all of the updates in our
       social media handles and our website.
@@ -1080,5 +1080,8 @@ actions:
 - action_slot_setter
 - action_viz_faq
 - action_feedback
+- action_about_data_dataset_name
+- action_about_data_granularity_level
+- action_about_data_source_data
 forms: {}
 e2e_actions: []

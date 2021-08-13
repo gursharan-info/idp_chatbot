@@ -20,7 +20,7 @@ stories:
   - slot_was_set:
     - intent_button : "faq-portal"
   - intent: feedback-form
-  - action: utter_feedback-form
+  - action: action_feedback
 
 - story: happy_path-train-feedback1
   steps:
@@ -29,7 +29,7 @@ stories:
   - slot_was_set:
     - intent_button : "faq-train"
   - intent: feedback-form
-  - action: utter_feedback-form
+  - action: action_feedback
 
 - story: happy_path-portdataset-feedback1
   steps:
@@ -38,7 +38,7 @@ stories:
   - slot_was_set:
     - intent_button : "faq-dataset"
   - intent: feedback-form
-  - action: utter_feedback-form
+  - action: action_feedback
 
 - story: happy_path-viz
   steps:
@@ -98,10 +98,58 @@ stories:
   - slot_was_set:
     - intent_button : "faq-dataset"
 
-- story: feedback + faq 
+- story: feedback + faq-unhappy-path
   steps:
   - intent: feedback-form
-  - action: utter_feedback-form
+  - action: action_feedback
   - intent: greet
   - action: action_slot_setter
 
+#########dataset specific #############
+
+# story 1
+
+- story: happy_path-datset-specifc
+  steps:
+  - intent: greet
+  - action: action_slot_setter
+  - slot_was_set:
+    - intent_button : "faq-train"
+  # when user is asking question from bathc zero of training
+  - intent: faq-train-b0
+  - action : action_viz_faq
+  - intent: about_data_dataset_name
+    entities:
+      - dataset_name: "fertiliser_sales"
+  - action: action_about_data_dataset_name
+  - slot_was_set:
+    - dataset_name: "fertiliser_sales"
+  - intent: about_data_granularity_level
+  - action: action_about_data_granularity_level
+  - intent: about_data_source_data
+  - action: action_about_data_source_data
+  - intent: feedback-form
+  - action: action_feedback
+
+  # story 2
+
+- story: happy_path-datset-specifc
+  steps:
+  - intent: greet
+  - action: action_slot_setter
+  - slot_was_set:
+    - intent_button : "faq-portal"
+  - intent: faq-portal-b1
+  - action : action_viz_faq
+  - intent: about_data_dataset_name
+    entities:
+      - dataset_name: "agcensus_crop"
+  - action: action_about_data_dataset_name
+  - slot_was_set:
+    - dataset_name: "agcensus_crop"
+  - intent: about_data_granularity_level
+  - action: action_about_data_granularity_level
+  - intent: about_data_source_data
+  - action: action_about_data_source_data
+  - intent: feedback-form
+  - action: action_feedback

@@ -105,3 +105,21 @@ rules:
   steps:
   - intent: ok
   - action: utter_ok
+
+
+####################### Dataset specific rules ###########################
+
+- rule: Rule for Dataset Name
+  steps: 
+  - intent: about_data_dataset_name
+  - action: action_about_data_dataset_name
+
+- rule: Rule for Granularity dataset
+  steps:
+  - intent: about_data_granularity_level
+  - action: action_about_data_granularity_level
+
+- rule: Rule for Sales of fertiliser data
+  steps:
+  - intent: about_data_source_data
+  - action: action_about_data_source_data

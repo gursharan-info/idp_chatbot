@@ -1,0 +1,38 @@
+version: "2.0"
+
+intents:
+
+- about_data_dataset_name :
+    use_entities: true
+
+- about_data_granularity_level:
+    use_entities: true
+
+- about_data_source_data:
+    use_entities: true
+
+
+entities:
+- dataset_name
+- granularity
+- source_name
+
+
+slots:
+  dataset_name:
+    type: text
+    influence_conversation: true
+
+
+actions:
+- action_about_data_dataset_name
+- action_about_data_granularity_level
+- action_about_data_source_data
+
+forms: {}
+e2e_actions: []
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+

@@ -1,0 +1,48 @@
+version: "2.0"
+nlu:
+
+- intent: about_data_dataset_name
+  examples: |
+    - I want to know about [agcensus_crop]{"entity": "dataset_name"} 
+    - do you have any [agcensus_crop]{"entity": "dataset_name"}
+    - [agcensus_crop]{"entity": "dataset_name"} doo you know something about it
+    - i have some query regarding [agcensus_crop]{"entity": "dataset_name"} data
+    - some queries reagarding [agcensus_crop]{"entity": "dataset_name"}
+    - i have some queries regarding [agricultural census]{"entity": "dataset_name"}
+    - any thing related to [rainfall]{"entity": "dataset_name"} data you have
+    - i wanna know about [granularity]{"entity":"granularity"} of [rainfall]{"entity": "dataset_name"} data
+    - can you tell me about [granularity]{"entity":"granularity"} for [agricultural census]{"entity": "dataset_name"}
+    - some queries regrading [rainfall]{"entity": "dataset_name"}
+    - [granularity]{"entity":"granularity"} of [rainfall data]{"entity": "dataset_name"}
+    - i have some query regarding [sales of fertiliser]{"entity": "dataset_name"} data
+    - wanna know [source]{"entity":"source_name"} of data regarding [sales of fertlisers]{"entity": "dataset_name"}
+    - can you help me with [fertiliser sales]{"entity": "dataset_name"} data
+    - soem queries regarding [fertilizer sales data]{"entity": "dataset_name"}
+
+    
+
+- intent: about_data_granularity_level
+  examples: |
+    - what is it's [granularity]{"entity":"granularity"} level
+    - how much [graularity]{"entity":"granularity"} does it has
+    - [granuraliity]{"entity":"granularity"} of it ?
+    - can you tell [granularity]{"entity":"granularity"} of this dataset
+    - i wanted to know how [granular]{"entity":"granularity"} the data is ?
+    - on what [level data]{"entity":"granularity"} is divided here?
+    - how much [granular]{"entity":"granularity"} the data is which i am using ?
+
+- intent: about_data_source_data
+  examples: |
+    - whats the [source]{"entity":"source_name"} of data
+    - from [where]{"entity":"source_name"} is the data derived
+    - what's the [origin]{"entity":"source_name"} of data
+    - from [where]{"entity":"source_name"} data was derived.
+    - what's the [root]{"entity":"source_name"} of data
+    
+
+- lookup: dataset_name
+  examples: |
+    - agcensus_crop
+    - rainfall
+    - fertiliser_sales
+    - rbi_deposit

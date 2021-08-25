@@ -1,7 +1,6 @@
 version: "2.0"
 
 intents:
-
 - about_data_dataset_name :
     use_entities: true
 
@@ -11,11 +10,24 @@ intents:
 - about_data_source_data:
     use_entities: true
 
+- about_data_methodology:
+    use_entities: true
+
+- about_data_frequency:
+    use_entities: true
+
+- about_data_data_last_updated:
+    use_entities: true
+
 
 entities:
 - dataset_name
 - granularity
 - source_name
+- methodology
+- frequency
+- last_updated_date
+
 
 
 slots:
@@ -28,6 +40,9 @@ actions:
 - action_about_data_dataset_name
 - action_about_data_granularity_level
 - action_about_data_source_data
+- action_about_data_methodology
+- action_about_data_frequency
+- action_about_data_data_last_updated
 
 forms: {}
 e2e_actions: []

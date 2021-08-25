@@ -35,7 +35,7 @@ responses:
   #     payload:  https://forms.gle/Fk1TxTzAteigKFG87
   # here is the link [feedback](https://forms.gle/Fk1TxTzAteigKFG87)
   utter_ok:
-  - text: Ok go ahead :)
+  - text: "Thank You!! \ \n Please type your questions in the chat"
   utter_greet:
   - text: Hey! How are you? How can i help you
   utter_goodbye:

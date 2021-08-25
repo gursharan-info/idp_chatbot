@@ -18,6 +18,25 @@ nlu:
     - wanna know [source]{"entity":"source_name"} of data regarding [sales of fertlisers]{"entity": "dataset_name"}
     - can you help me with [fertiliser sales]{"entity": "dataset_name"} data
     - soem queries regarding [fertilizer sales data]{"entity": "dataset_name"}
+    - wanna know about [rbi_deposit]{"entity": "dataset_name"} data
+    - anything related to [deposits of rbi]{"entity": "dataset_name"}
+    - some queries around [rbi-deposit]{"entity": "dataset_name"} data
+    - wanna know [source]{"entity":"source_name"} of data regarding [deposits by rbi]{"entity":"dataset_name"}
+    - I have some doubts the data regarding [investments of rbi]{"entity": "dataset_name"}
+    - I want to know [mnrega employment]{"entity": "dataset_name"} data
+    - I would to know more about [credit by bank]{"entity": "dataset_name"} data
+    - can you tell me about [soil]{"entity": "dataset_name"} data
+    - can you tell me about [soil]{"entity": "dataset_name"} data
+    - [soil]{"entity": "dataset_name"} data? I have queries around it
+    - I have query regarding [fertliser sales]{"entity": "dataset_name"} data
+    - any recent figs for [soili wages]{"entity": "dataset_name"}
+    - i have some queries about [soil]{"entity": "dataset_name"}
+    - how often the data for [soil]{"entity": "dataset_name"} is updated
+    - what are the domains of [soil]{"entity": "dataset_name"} wages dataset
+    - what are the domains of [soil]{"entity": "dataset_name"} dataset
+    - where i can get the data for [soil]{"entity": "dataset_name"}
+    - i'm looking about dataset on [soil]{"entity": "dataset_name"}
+    - i want to know in detail the source name for [soil]{"entity": "dataset_name"}
 
     
 
@@ -38,7 +57,40 @@ nlu:
     - what's the [origin]{"entity":"source_name"} of data
     - from [where]{"entity":"source_name"} data was derived.
     - what's the [root]{"entity":"source_name"} of data
-    
+    - from [where]{"entity":"source_name"} the data was extracted
+    - can you tell me what the [source]{"entity":"source_name"} of data
+
+- intent: about_data_methodology
+  examples: |
+    - what [methodology]{"entity":"methodology"} was adopted to make this data
+    - what's [methodology]{"entity":"methodology"} for this dataset
+    - what's the [modus operandi]{"entity":"methodology"} used to obtain this dataset
+    - what [procedure]{"entity":"methodology"} was adopted to make this datset
+    - can i ask what's [methodology]{"entity":"methodology"} behind making this dataset
+    - for making this dataset what [procedure]{"entity":"methodology"} was used
+    - what [technique]{"entity":"methodology"} was used for making this dataset
+    - while making this dataset what was the [modus operandi]{"entity":"methodology"}
+    - [methodology]{"entity":"methodology"} of it
+  
+- intent: about_data_frequency
+  examples: |
+    - how [often]{"entity":"frequency"} data is updated 
+    - what's the [frequency]{"entity":"frequency"} of data updation
+    - how [timely]{"entity":"frequency"} do you update data
+    - this dataset is updated how [often]{"entity":"frequency"}
+    - on this portal how [quickly]{"entity":"frequency"} you update the data
+    - [frequency]{"entity":"frequency"} of it ?
+    - [frequency]{"entity":"frequency"}?
+
+- intent: about_data_data_last_updated
+  examples: |
+    - when was the [last time]{"entity":"last_updated_date"} data was updated.
+    - this [rainfall]{"entity": "dataset_name"} data when was it [last date]{"entity":"last_updated_date"} updated
+    - how [recently]{"entity":"last_updated_date"} was this data updated
+    - [recent date]{"entity":"last_updated_date"} when this was updated
+    - can you help me with this when was it [last updated]{"entity":"last_updated_date"}
+    - i have some queries how [recent]{"entity":"last_updated_date"} are these figures
+    - i have to give this date when was the data that i am using it was [updated lastly]{"entity":"last_updated_date"}
 
 - lookup: dataset_name
   examples: |
@@ -46,3 +98,13 @@ nlu:
     - rainfall
     - fertiliser_sales
     - rbi_deposit
+    - pmfby
+
+- synonym: methodology
+  examples: |
+    - modus operandi
+    - procedure
+    - course
+    - style
+    - technique
+    - manner

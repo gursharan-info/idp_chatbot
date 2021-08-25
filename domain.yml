@@ -43,6 +43,12 @@ intents:
     use_entities: true
 - about_data_source_data:
     use_entities: true
+- about_data_methodology:
+    use_entities: true
+- about_data_frequency:
+    use_entities: true
+- about_data_data_last_updated:
+    use_entities: true
 - faq-portal-b1:
     use_entities: true
 - faq-visualisation-b3:
@@ -56,6 +62,9 @@ entities:
 - dataset_name
 - granularity
 - source_name
+- methodology
+- frequency
+- last_updated_date
 slots:
   intent_button:
     type: list
@@ -267,7 +276,7 @@ responses:
   - text: Datacard consists of one dataset with visualization. In one page we can
       have 4 datacards with 4 different visualizations
   utter_ok:
-  - text: Ok go ahead :)
+  - text: "Thank You!!  \n Please type your questions in the chat"
   utter_greet:
   - text: Hey! How are you? How can i help you
   utter_goodbye:
@@ -1083,5 +1092,8 @@ actions:
 - action_about_data_dataset_name
 - action_about_data_granularity_level
 - action_about_data_source_data
+- action_about_data_methodology
+- action_about_data_frequency
+- action_about_data_data_last_updated
 forms: {}
 e2e_actions: []

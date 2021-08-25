@@ -6,7 +6,6 @@ rules:
 - rule : greet
   steps:
   - intent: greet
-  # - action: utter_greet
   - action: action_slot_setter
 
 - rule: for feedback
@@ -119,7 +118,22 @@ rules:
   - intent: about_data_granularity_level
   - action: action_about_data_granularity_level
 
-- rule: Rule for Sales of fertiliser data
+- rule: Rule for Sales of  dataset
   steps:
   - intent: about_data_source_data
   - action: action_about_data_source_data
+
+- rule: Rule for Methodology
+  steps: 
+  - intent: about_data_methodology
+  - action: action_about_data_methodology
+
+- rule: Rule for Frequency
+  steps:
+  - intent: about_data_frequency
+  - action: action_about_data_frequency
+
+- rule: Rule for Last Date updated
+  steps:
+  - intent: about_data_data_last_updated
+  - action: action_about_data_data_last_updated

@@ -153,3 +153,77 @@ stories:
   - action: action_about_data_source_data
   - intent: feedback-form
   - action: action_feedback
+
+# aug 16 stories
+- story: happy_path-faq+dataset-specific+feedback
+  steps:
+  - intent: greet
+  - action: action_slot_setter
+  - slot_was_set:
+    - intent_button : "faq-visualisation"
+  - intent: faq-visualisation-b1
+  - action : action_viz_faq
+  - intent: faq-visualisation-b2
+  - action: action_viz_faq
+  - intent: about_data_dataset_name
+    entities:
+      - dataset_name: "fertiliser sales"
+  - action: action_about_data_dataset_name
+  - slot_was_set:
+    - dataset_name: "fertiliser_sales"
+  - intent: about_data_source_data
+  - action: action_about_data_source_data  
+  - intent: faq-fel-b0
+  - action : action_viz_faq
+  - intent: feedback-form
+  - action: action_feedback
+
+- story: happy_path-faq1+dataset-specific1+feedback1
+  steps:
+  - intent: greet
+  - action: action_slot_setter
+  - slot_was_set:
+    - intent_button : "faq-visualisation"
+  - intent: faq-fel-b0
+  - action : action_viz_faq
+  - intent: faq-train-b0
+  - action: action_viz_faq
+  - intent: about_data_dataset_name
+    entities:
+      - dataset_name: "soil"
+  - action: action_about_data_dataset_name
+  - slot_was_set:
+    - dataset_name: "soil"
+  - intent: about_data_methodology
+    entities:
+      - methodology: "methodology"
+  - action: action_about_data_methodology
+  - intent: faq-visualisation-b1
+  - action : action_viz_faq
+  - intent: feedback-form
+  - action: action_feedback
+
+
+
+- story: happy_path-faq1+dataset-specific1+feedback1
+  steps:
+  - intent: greet
+  - action: action_slot_setter
+  - slot_was_set:
+    - intent_button : "faq-visualisation"
+  - intent: faq-train-b0
+  - action: action_viz_faq
+  - intent: about_data_dataset_name
+    entities:
+      - dataset_name: "rbi-deposit"
+  - action: action_about_data_dataset_name
+  - slot_was_set:
+    - dataset_name: "rbi_deposit"
+  - intent: about_data_data_last_updated
+    entities:
+      - methodology: "last time"
+  - action: action_about_data_data_last_updated
+  - intent: faq-visualisation-b1
+  - action : action_viz_faq
+  - intent: feedback-form
+  - action: action_feedback

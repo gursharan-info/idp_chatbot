@@ -81,27 +81,8 @@ class ActionFeedback(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        message = {
-            "type": "template",
-            "payload": {
-                "template_type": "generic",
-                "elements": [
-                    {
-                        "title": "Feedback",
-                        # "subtitle": "feedback form",
-                        "image_url": "data:image/png;base64,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",
-                        "buttons": [ 
-                            {
-                            "title": "Click here",
-                            "url": "https://docs.google.com/forms/d/e/1FAIpQLSe4ZbIwB0BmX1_wEXUlL0Ywl_dt7US-Ipa_YLU2mDtjkqfPjg/viewform",
-                            "type": "web_url"
-                            }
-                        ]
-                    }
-                ]
-                }
-        }
-        dispatcher.utter_message(attachment=message)
+        
+        dispatcher.utter_message(attachment="You can provide your feedback to us in this [Feedback Form](https://forms.gle/Fk1TxTzAteigKFG87)")
         return []
 
     

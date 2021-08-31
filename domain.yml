@@ -39,15 +39,21 @@ intents:
     use_entities: true
 - about_data_dataset_name:
     use_entities: true
-- about_data_granularity_level:
+- about_data_granularity:
     use_entities: true
-- about_data_source_data:
+- about_data_source_name:
     use_entities: true
 - about_data_methodology:
     use_entities: true
 - about_data_frequency:
     use_entities: true
-- about_data_data_last_updated:
+- about_data_last_updated_date:
+    use_entities: true
+- about_data_source_link:
+    use_entities: true
+- about_data_data_extraction_page:
+    use_entities: true
+- about_data_about_data:
     use_entities: true
 - faq-portal-b1:
     use_entities: true
@@ -65,6 +71,9 @@ entities:
 - methodology
 - frequency
 - last_updated_date
+- source_link
+- data_extraction_page
+- about_data
 slots:
   intent_button:
     type: list
@@ -1090,10 +1099,13 @@ actions:
 - action_viz_faq
 - action_feedback
 - action_about_data_dataset_name
-- action_about_data_granularity_level
-- action_about_data_source_data
+- action_about_data_granularity
+- action_about_data_source_name
 - action_about_data_methodology
 - action_about_data_frequency
-- action_about_data_data_last_updated
+- action_about_data_last_updated_date
+- action_about_data_source_link
+- action_about_data_data_extraction_page
+- action_about_data_about_data
 forms: {}
 e2e_actions: []

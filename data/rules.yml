@@ -115,13 +115,13 @@ rules:
 
 - rule: Rule for Granularity dataset
   steps:
-  - intent: about_data_granularity_level
-  - action: action_about_data_granularity_level
+  - intent: about_data_granularity
+  - action: action_about_data_granularity
 
 - rule: Rule for Sales of  dataset
   steps:
-  - intent: about_data_source_data
-  - action: action_about_data_source_data
+  - intent: about_data_source_name
+  - action: action_about_data_source_name
 
 - rule: Rule for Methodology
   steps: 
@@ -135,5 +135,20 @@ rules:
 
 - rule: Rule for Last Date updated
   steps:
-  - intent: about_data_data_last_updated
-  - action: action_about_data_data_last_updated
+  - intent: about_data_last_updated_date
+  - action: action_about_data_last_updated_date
+
+- rule: Rule for Source Link
+  steps:
+    - intent: about_data_source_link
+    - action: action_about_data_source_link
+
+- rule: Rule for Data Extraction Page
+  steps:
+    - intent: about_data_data_extraction_page
+    - action: action_about_data_data_extraction_page
+
+- rule: Rule for About data
+  steps:
+    - intent: about_data_about_data
+    - action: action_about_data_about_data

@@ -1,6 +1,54 @@
 version: "2.0"
 nlu:
 
+- lookup: dataset_name
+  examples: |
+    - Agriculture Wages
+    - Consumer Price Index and Inflation (CPI)
+    - Credit by Bank
+    - Debt and Investment (NSSO)
+    - Deposits with Bank
+    - Employment (NSSO)
+    - Household Consumption on Education (NSSO)
+    - MGNREGA - Agriculture Investments
+    - MGNREGA - Employment
+    - Unincorporated Non-Agriculture Enterprises Excluding Construction (NSSO)
+    - Financial Inclusion Survey (NABARD)
+    - Input survey (Non - Crop)
+    - NRLM - Self Help Groups (SHGs)
+    - Situation Assessment of Agricultural household (NSSO)
+    - Agricultural Census 2010-11 (Crop)
+    - Agricultural Census 2010-11 (Non-Crop)
+    - Agricultural Census 2015-16 (Crop)
+    - Agricultural Census 2015-16 (Non-Crop)
+    - Agricultural Marketing (Agmarknet)
+    - Area Production Statistics (NHB)
+    - Area Production Yield (APY)
+    - Cost of Cultivation (CoC)
+    - Fertiliser Sales
+    - Food and Fertiliser Subsidy
+    - Input Survey (Crop Composite)
+    - Input Survey (Crop)
+    - National Food Security Mission (NFSM) Spending
+    - Procurement of Foodgrains
+    - Public Distribution System (PDS)
+    - Soil Health Card - Funding status
+    - Soil Health Card - Nutrient Status
+    - Stock of Foodgrains
+    - Depth to Water Level
+    - Groundwater - Stages of Extraction
+    - Rainfall
+    - Soil
+    - Temperature
+    - Crop Insurance - Pradhan Mantri Fasal Bima Yojana (PMFBY)
+    - Minimum Support Price (MSP)
+    - PM Kisan
+    - Pradhan Mantri Krishi Sinchai Yojana (PMKSY)
+    - Mission Antodaya
+    - Socio-economic Caste Census (SECC)
+    - Census Household Amenities
+    - Census PCA Demography
+
 - intent: about_data_dataset_name
   examples: |
     - I want to know about [agcensus_crop]{"entity": "dataset_name"} 
@@ -36,11 +84,165 @@ nlu:
     - what are the domains of [soil]{"entity": "dataset_name"} dataset
     - where i can get the data for [soil]{"entity": "dataset_name"}
     - i'm looking about dataset on [soil]{"entity": "dataset_name"}
-    - i want to know in detail the source name for [soil]{"entity": "dataset_name"}
+    - i want to know in detail the source name for [soil]{"entity": "dataset_name"} 
+    - I have some queries about [Agriculture Wages]{"entity": "dataset_name"} dataset
+    - could you please tell me somthing about the [agriculture wages]{"entity": "dataset_name"} dateset.
+    - what is the [source name]{"entity": "source_name"} for [agri wages]{"entity": "dataset_name"} dataset.
+    - please tell me the [name of the source]{"entity": "source_name"} for [agricultur wages]{"entity": "dataset_name"} dataset
+    - I am curious to know what [methodologies]{"entity": "methodology"} were used for [agriculture wages]{"entity": "dataset_name"}
+    - how [often]{"entity": "frequency"} the data for [agriculture wages]{"entity": "dataset_name"} is updated
+    - I want to know about [granularity]{"entity": "granularity"} level of [agriculture wages]{"entity": "dataset_name"} data
+    - pls tell me the [granular level]{"entity": "granularity"} of [agri wages]{"entity": "dataset_name"} dataset.
+    - I would like to see some information about [agricultural pay]{"entity": "dataset_name"} data 
+    - I am looking for the [link to the source]{"entity": "source_link"} of [agri wages]{"entity": "dataset_name"} dataset
+    - when was the [agri wages]{"entity": "dataset_name"} dataset [last updated]{"entity": "last_updated_date"}
+    - could you pls tell me the [detailed source name]{"entity": "source_name_det"} for [agri wages]{"entity": "dataset_name"} data and if possible also provide me with a link to the [extraction page]{"entity": "data_extraction_page"}.
+    - I am curious about the [Retrieval date]{"entity": "date_of_retrievals"} of [agriculture wages]{"entity": "dataset_name"} dataset and if it is possible please show the date on which this dataset was [last updated]{"entity": "last_updated_date"}.
+    - I want to know the [date of retrieval]{"entity": "date_of_retrievals"} for [Agriculture wages]{"entity": "dataset_name"} dataset.
+    - It would be really helpful if you could provide me with some URL to the [data extraction page]{"entity": "data_extraction_page"} of [agriculture pay]{"entity": "dataset_name"} dataset
+    - May you please present me with the [Granularity Level]{"entity": "granularity"} of [agricultur wages]{"entity": "dataset_name"} dataset?
+    - could u tell me from what [source]{"entity": "source_name"} you are receiving your [Agricultre wages]{"entity": "dataset_name"} data?
+    - I want to know when was [agriculture wages]{"entity": "dataset_name"} data was [last updated]{"entity": "last_updated_date"} along with the [frequency]{"entity": "frequency"} on which it is getting updated.
+    - please tell me what [methods]{"entity": "methodology"} were used in creating the [agriculture wages]{"entity": "dataset_name"} data and also provide me with some [link to the source]{"entity": "source_link"} of this data
+    - There are some queries regarding the [Credit by Bank]{"entity": "dataset_name"} dataset that i want to ask
+    - could you kindly tell me something about [Bank Credit]{"entity": "dataset_name"} dataset?
+    - What is the [source name]{"entity": "source_name"} for the [Credet by Bank]{"entity": "dataset_name"} dataset?
+    - Could you kindly give me the [name of the source]{"entity": "source_name"} for the [Credit by Bank]{"entity": "dataset_name"} dataset?
+    - I'm wondering about the [techniques utilised]{"entity": "methodology"} for creating  [Bank Credit]{"entity": "dataset_name"} data.
+    - how [frequently]{"entity": "frequency"} the data for [Credit by Bank]{"entity": "dataset_name"} is updated
+    - I want to know about the [granulaity level]{"entity": "granularity"} of [Credit by Bank]{"entity": "dataset_name"} data
+    - please tell me the [granular level]{"entity": "granularity"} of [Credit by Bank]{"entity": "dataset_name"} as well as how [frequently]{"entity": "frequency"} it is updated
+    - I'd like to see some information about [Credit by Bank]{"entity": "dataset_name"} data, could you please provide it?
+    - I'm looking for a [source URL]{"entity": "source_link"} to the [Credit by Bank]{"entity": "dataset_name"} dataset.
+    - When was the time the [Credit bie Bank]{"entity": "dataset_name"} dataset was [last updated]{"entity": "last_updated_date"}?
+    - Could you please provide me the [detailed source name]{"entity": "source_name_det"} for the [Credit by Bank]{"entity": "dataset_name"} data and, if feasible, offer a [link to the source]{"entity": "source_link"} from where you obtained this data?
+    - I am wondering about the [Credit by Bank]{"entity": "dataset_name"} dataset [retrieval date]{"entity": "date_of_retrievals"}, and if feasible, please indicate the date on which this dataset was [last updated]{"entity": "last_updated_date"}.
+    - It would be really useful if you could give me with a link to the [Credit by Bank]{"entity": "dataset_name"} dataset data [extraction page]{"entity": "data_extraction_page"}.
+    - Could you possibly send me the [Credit by Bank]{"entity": "dataset_name"} [Granularity Level]{"entity": "granularity"} dataset?
+    - Could you please tell me the [source name]{"entity": "source_name"} from where you get your [Credit by Bank]{"entity": "dataset_name"} data?
+    - I would want to know when the [Credit by Bank]{"entity": "dataset_name"} data was [last updated]{"entity": "last_updated_date"}, as well as how [frequently]{"entity": "frequency"} it is updated.
+    - Please explain me what [procedures]{"entity": "methodology"} were utilised to create the [Credit by Bank]{"entity": "dataset_name"} data, as well as give a [link to the source]{"entity": "source_link"} of this data.
+    - I want to know the [date of retrieval]{"entity": "date_of_retrievals"} for [Credit by Bank]{"entity": "dataset_name"} dataset.
+    - Please provide me with the [granularity level]{"entity": "granularity"} for [Consumer Price Index and Inflation]{"entity": "dataset_name"} data.
+    - how [frequently]{"entity": "frequency"} is the [CPI]{"entity": "dataset_name"} dataset updated?
+    - when was the [Consumre Price Index and Inflation]{"entity": "dataset_name"} [last updated]{"entity": "last_updated_date"}
+    - Is it possible to receive a [sourec link]{"entity": "source_link"} for the [consumer price index]{"entity": "dataset_name"} datset?
+    - I would like to vist the [data extraction page]{"entity": "data_extraction_page"} for the [CPI]{"entity": "dataset_name"} data please provide me with the URL.
+    - could you please explain me a little bit about the [NSSO dataset regarding Debt and Investment]{"entity": "dataset_name"}?
+    - What is the [Debt and Investnent]{"entity": "dataset_name"} dataset's [source name]{"entity": "source_name"}?
+    - Could you please tell me the [source name]{"entity": "source_name"} of the [Debet and Investment dataset]{"entity": "dataset_name"}?
+    - I am curious about the [methods]{"entity": "methodology"} used to generate [Debt and Investment]{"entity": "dataset_name"} data.
+    - I want to know when was [Debt and Investnent data by NSSO]{"entity": "dataset_name"} was [last updated]{"entity": "last_updated_date"} along with the [frequency]{"entity": "frequency"} on which it is getting updated.
+    - How [frequently]{"entity": "frequency"} is [Deposist with Bank]{"entity": "dataset_name"} data updated?
+    - What is the [granularity]{"entity": "granularity"} level of [Deposits with Bank]{"entity": "dataset_name"} data?
+    - tell me the [granular level]{"entity": "granularity"} of [Bank's Deposits]{"entity": "dataset_name"} data
+    - Could you please tell me the [granularity]{"entity": "granularity"} level of [Deposits with Bank]{"entity": "dataset_name"} data as well as how [frequently]{"entity": "frequency"} it is updated?
+    - I would like to view some info about [Deposits wit Bank]{"entity": "dataset_name"} data, pls share it with me
+    - When was the [last updation]{"entity": "last_updated_date"} done in the [NSSO dataset of Employment]{"entity": "dataset_name"}?
+    - Could you kindly supply me with the [detailed source names]{"entity": "source_name_det"} for the [Employment by NSSO]{"entity": "dataset_name"} data, as well as a [link to the source]{"entity": "source_link"} from where you received this data?
+    - I am curious about the [NSSO's Employmenet]{"entity": "dataset_name"} dataset [retrieval date]{"entity": "date_of_retrievals"}, and if possible, please provide when this dataset was [last updated]{"entity": "dataset_name"}.
+    - If you could send me a some link to the [Employmnet NSSO]{"entity": "dataset_name"} dataset [data extracition page]{"entity": "data_extraction_page"}, that would be really helpful.
+    - Could you perhaps tell the [Household Consumption on Edu]{"entity": "dataset_name"} dataset's [Granulairty Level]{"entity": "granularity"} to me?
+    - Could you kindly tell me the [source name]{"entity": "source_name"} where you got your [Houshold Consumption on Education]{"entity": "dataset_name"} data from?
+    - I would want to know when the [Household Consumption on Edu by NSSO]{"entity": "dataset_name"} data was [last updated]{"entity": "last_updated_date"} and how [often]{"entity": "frequency"} it is updated.
+    - Please describe the [methods]{"entity": "methodology"} used to generate the [Household Consomption on Education]{"entity": "dataset_name"} data and provide a [link to the source]{"entity": "source_link"} of this data.
+    - I would want to know when the [Household Consumption on Eduaction]{"entity": "dataset_name"} dataset was [retrieved]{"entity": "date_of_retrievals"}.
+    - can you tell me the [Granularity Level]{"entity": "granularity"} [Agriculture Investments]{"entity": "dataset_name"} dataset.
+    - on average at what [frequency]{"entity": "frequency"} does the [Agriculture Investments]{"entity": "dataset_name"} data gets updated?
+    - when was [Agriculture Investments by MGNREGA]{"entity": "dataset_name"} dataset [last updated]{"entity": "last_updated_date"}?
+    - from which [source]{"entity": "source_name"} are you getting the [Agri Investments]{"entity": "dataset_name"} data?
+    - could you provide me with the [detailed source names]{"entity": "source_name_det"} for [Agri Investment by MGNREGA]{"entity": "dataset_name"} data?
+    - please tell me something about [MGNREGA dataset of Agriculture Investmnets]{"entity": "dataset_name"} that you have on this portal also tell how [frequently]{"entity": "frequency"} it is being updated?
+    - Can you tell me the level of [granularity]{"entity": "granularity"} of [Employmetn data by MGNREGA]{"entity": "dataset_name"}?
+    - How [frequent]{"entity": "frequency"} the data for [MGNREGA - Employment]{"entity": "dataset_name"} typically updated?
+    - When was the dataset [last renewed]{"entity": "date_of_retrievals"} for [Employment data by MNGREGA]{"entity": "dataset_name"}?
+    - When was the data for [Stock of Foodgrains]{"entity": "dataset_name"} last [retreived]{"entity": "date_of_retrievals"}?
+    - Any [strategy]{"entity": "methodology"} particularly followed for [Stock of Foodgrains]{"entity": "dataset_name"}?
+    - Give more dtaset [information]{"entity": "about_data"} to [Stock of Foodgrains]{"entity": "dataset_name"}?
+    - Would I have the opt to understand the [granularity]{"entity": "granularity"} level for [Stock of Foodgrains]{"entity": "dataset_name"}?
+    - When was the last time the info for [Stock of Foodgrains]{"entity": "dataset_name"} was [recovered]{"entity": "date_of_retrievals"}?
+    - When did the [PMKSY]{"entity": "dataset_name"} dataset become [available]{"entity": "last_updated_date"}?
+    - Could you kindly give me with a [direct link to the source]{"entity": "source_link"} of the [PMKSY]{"entity":"dataset_name"} ?
+    - When was the [most recent change]{"entity": "last_updated_date"} to the [PMKSY]{"entity": "dataset_name"} database?
+    - Could you kindly sho me the [PMKSY's]{"entity": "dataset_name"} [granulrity level]{"entity": "granularity_level"}?
+    - What [approaches]{"entity": "methodology"} were used to create this dataset for the [PMKSY]{"entity": "dataset_name"} ?
+    - Please provide me the [Kisan PM]{"entity": "dataset_name"} [source URL]{"entity": "source_link"}.
+    - Can you please give me in [detail the name]{"entity": "source_name_det"} of [PM Kisan]{"entity": "dataset_name"}?
+    - When was the [last update]{"entity": "last_updated_date"} of the [PM Kisan]{"entity": "dataset_name"} dataset?
+    - Can you tell me what the [grnularity level]{"entity": "granularity_level"} of [PM Kisan]{"entity": "dataset_name"} is?
+    - Could you please provide me with the [names of the source]{"entity": "source_name"} for the [PMK]{"entity" : "dataset_name"} figures?
+    - I'd want to see the [PMFBY]{"entity": "dataset_name"} [data extraction website]{"entity": "data_extraction_page"}. I'd appreciate it if you could provide me a link to it.
+    - Please send me the URL to the [PMFBY]{"entity": "dataset_name"} for Crop insurance [Source]{"entity": "source_link"}.
+    - Could you maybe tell me [moe about]{"entity": "about_data"} the [PMFBY]{"entity": "dataset_name"} dataset on this portal?
+    - When was the last time [Crop Insurance PMFBY]{"entity": "dataset_name"} was [renewed]{"entity": "date_of_retrievals"}?
+    - Could you perhaps tell me the [granularity]{"entity": "granularity_level"} of [PMFBY]{"entity": "dataset_name"}?
+    - Could you perhaps [elaborate]{"entity": "about_data"} on the [Temperature]{"entity":"dataset_name"} data posted on this portal?
+    - Could you provide me with specific [source names]{"entity" : "source_name"} fr the [Temperature]{"entity": "dataset_name"} dataset?
+    - When was the last time [Temperature]{"entity":"dataset_name"} was [renewed]{"entity": "date_of_retrievals"}?
+    - How often is the [Temperature]{"entity": "dataset_name"} continuously [updated]{"entity": "last_updated_date"}?
+    - Please send me the [Temperature]{"entity" : "dataset_name"} dataset's [source link]{"entity": "source_link"}.
+    - When was the [Soils]{"entity": "dataset_name"} dataset [retrieved]{"entity": "date_of_retrievals"}?
+    - Please give a link to the [soil]{"entity": "dataset_name"} dataset's [source]{"entity": "source_link"}.
+    - How [frequntly]{"entity": "frequency"} is the [soil]{"entity": "dataset_name"} data generally updated?
+    - Could you please send me the [Granularity]{"entity": "granularity_level"} [Soil]{"entity" : "dataset_name"} dataset?
+    - Which [methods]{"entity" : "methodology"} have been applied in the creation of the [soil]{"entity" : "dataset_name"} dataset?
+    - Which [Methods]{"entity":"methodology"} were used for creating the [Depth to Groundwater]{"entity": "dataset_name"} dataset?
+    - Could you perhaps provide me with the [Granularty]{"entity" : "granularity"} [Depth to Water Level]{"entity" : "dataset_name"} dataset?
+    - How [frequently]{"entity": "frequency"} is the [Depth to Water Level]{"entity" : "dataset_name"} data updated on typically?
+    - When was the [Depth to Water Level]{"entity" : "dataset_name"} dataset last [updated]{"entity" : "last_updated_date"]?
+    - What was the [deptto-water-level]{"entity" : "dataset_name"} dataset's [retrieval date]{"entity": "date_of_retrievals"}?
+    - what are the name of [sources]{"entity": "source_name"} of [groundwater - extraction stages]{"entity" : "dataset_name"} dataset?
+    - Could you tell me [groundwater extraction stags]{"entity": "dataset_name"} [granularity levels]{"entity": "granularity_level"}?
+    - How regularly are the [groundwater extraction phases]{"entity": "dataset_name"} [constantly updated]{"entity": "frequency"}?
+    - When was the last [renewal]{"entity": "date_of_retrievals"} of [groundwater Extraction stages]{"entity" : "dataset_name"}?
+    - from where do you receive the [extraction data]{"entity": "data_extraction_page"} from your [groundwater]{"entity": "dataset_name"}?
+    - Can you offer me precise [source names]{"entity": "source_name"} for [groundwater - Data extraction stages]{"entity" : "dataset_name"}?
+    - Could you tell me more [about]{"entity" : "about_data"} the [groundwater]{"entity" : "source_name"} data set on this portal?
+    - Kindly share with me the [Extraction Source link]{"entity" : "data_extraction_page"} to the [groundwater stages]{"entity" : "dataset_name"} dataset.
+    - I would want to see the [Extraction page]{"entity" : "data_extraction_page"} of the [Stages of Groundwater]{"entity": "dataset_name"} dataset. If you can provide me a link to it, I'd appreciate it.
+    - What [methodologes]{"entity" : "methodology"} are used to generate [groundwater - Extraction cycles]{"entity": "dataset_name"} dataset?
+    - What was the [retrieval timeframe]{"entity" : "date_of_retrievals"} of the [groundwater - cycles of extraction]{"entity" : "dataset_name"}?
+    - Please tell me a little [about]{"entity": "about_data"} the [SHC - Nutrient]{"entity": "dataset_name"} Status dataset on this webpage?
+    - Could you please send me a lnk to the [SHC - Nutrition Level]{"entity" : "dataset_name"} [source]{"entity" : "source_link"}?
+    - I'd also like to see the SHC - Nutrient Status dataset's data extraction page. It would indeed be great if you can somehow provide me an URL to it.
+    - What [methodologies]{"entity" : "methodology"} were utilized in the development of ths database for the [Soil Health Index - Nutrient Levels]{"entity" : "dataset_name"}?
+    - When was the [SHC - Nutrient State]{"entity" : "dataset_name"} dataset [retrieved]{"entity" : "date_of_retrievals"}?
+    - for the [Good Soil Index - Nutrient Composition]{"entity" : "dataset_name"} Data Source humbly disclose the [granularity level]{"entity" : "granularity"} to me?
+    - Is [data updated often]{"entity" : "frequency"} on the [Soil Health Certificate - Nutrient content]{"entity" : "dataset_name"}?
+    - When did the [Nutrient Status]{"entity" : "dataset_name"} database on SHC last [updated]{"entity": "last_updated_date"}?
+    - How can you obtain [information]{"entity" : "about_data"} on the [Nutrient Status of your SHC]{"entity": "dataset_name"} dataset?
+    - Can you atempt to give me the detailed [SHC - Nutrent Status]{"entity":"dataset_name"} Dataset [source names]{}"entity" : "source_name"?
+    - Please tell me [some of the data posted]{"entity": "about_data"} on this webpage on the [SHC - Nutrient Status]{"entity" : "dataset_name"}?
+    - Coud you kindly provide me a [link to the source]{"entity" : "source_link"} of the [SHC - Nutrition Level]{"entity" : "dataset_name"}?
+    - I'd also want to view the [data extraction page]{"entity" : "data_extraction_page"} for the [SHC - Nutrient Status]{"entity" : "dataset_name"} dataset. It would be fantastic if you could supply me with a link to it.
+    - What [technques]{"entity" : "methodology"} were used in the creation of the [Soil Health Index Nutrient Levels]{"entity": "dataset_name"} database?
+    - Could you show me the [Soil Quality Card]{"entity": "dataset_name"} [granularity level]{"entity" : "granularity"}?
+    - When was the [finance status]{"entity" : "dataset_name"} database for the SHC last [renewed]{"entity" : "date_of_retrievals"}?
+    - Could you maybe provide me with the names of the precise [sorces]{"entity" : "source_name"} for the figures on [SHC - Funding Status]{"entity" : "dataset_name"}?
+    - Could you tell me [more about]{"entity" : "about_data"} this portal's [SHC - Funding Status]{"entity" : "dataset_name"} dataset?
+    - Please give me a proper link to the [Soil Quality Card's funding]{"entity" : "dataset_name"} [source]{"entity" : "source_link"}.
+    - I'd also want to see the [data extraction page]{"entity" : "data_extraction_page"} for the [SHC - Funding Status]{"entity" : "dataset_name"} dataset. If you could provide me a link to it, that would be pretty great.
+    - What [methodologes]{"entity" : "methodology"} were used to create this dataset for the [SHC - Funding Status]{"entity" : "dataset_name"}?
+    - When was the [Retrieval Date]{"entity": "date_of_retrievals"} for the [SHC - Funding Status]{"entity" : "dataset_name"} dataset?
+    - Is the [funding status SHC]{"entity" : "dataset_name"} data [frequently]{"entity" : "frequency"} updated?
+    - When was last [renewed]{"entity": "date_of_retrievals"} the [SHC Financial Status]{"entity": "dataset_name"} registry?
+    - Perhaps you can give me the exact [sources]{"entity": "source_name"} for the [SHC – Fund Status]{"entity":"dataset_name"} figues?
+    - i wanna know about [area production yield]{"entity":"dataset_name"} data
+    - Is there any dataset regarding [food and fertilizer subsidy]{"entity":"dataset_name"} data
+    - can you tell me about the [methodology]{"entity": "methodology"} that was used for [agriculture wages]{"entity": "dataset_name"} 
+    - what is the level of [granularity]{"entity": "granularity"} for [Procurement of Foodgrains]{"entity": "dataset_name"} data
+    - I am looking for the [link to the source]{"entity": "source_link"} of [agri wages]{"entity": "dataset_name"} dataset
+    - can i get [link to source page]{"entity": "source_link"} for [coc]{"entity": "dataset_name"} dataset
+    - can you provide me the [source page link] {"entity": "source_link"} for [Cost of Cultivation CoC]{"entity": "dataset_name"}
+    - for [cost of cultivation]{"entity": "dataset_name"} dataset i want the [link of source page]{"entity": "source_link"} .
+    - when was the [agri wages]{"entity": "dataset_name"} dataset [last updated]{"entity": "last_updated_date"}
+    - what's the [latest date]{"entity": "last_updated_date"} by which [crop input survey]{"entity": "dataset_name"} dataset was updated
+    - what is the [date of retrieval]{"entity": "date_of_retrievals"} for [Mission Antodaya]{"entity": "dataset_name"} dataset.
+    - can you provide me url to the [data extraction page]{"entity": "data_extraction_page"} of [Temperature]{"entity": "dataset_name"} dataset
+    - could you pls let me know from which [source]{"entity": "source_name"} you are receiving your [Stock of Foodgrains]{"entity": "dataset_name"} data?
+    - I want to know about the [frequency]{"entity": "frequency"} at which [Fertiliser Sales]{"entity": "dataset_name"} is updated and also the [last updated date]{"entity": "last_updated_date"}
 
-    
-
-- intent: about_data_granularity_level
+- intent: about_data_granularity
   examples: |
     - what is it's [granularity]{"entity":"granularity"} level
     - how much [graularity]{"entity":"granularity"} does it has
@@ -50,7 +252,7 @@ nlu:
     - on what [level data]{"entity":"granularity"} is divided here?
     - how much [granular]{"entity":"granularity"} the data is which i am using ?
 
-- intent: about_data_source_data
+- intent: about_data_source_name
   examples: |
     - whats the [source]{"entity":"source_name"} of data
     - from [where]{"entity":"source_name"} is the data derived
@@ -82,7 +284,7 @@ nlu:
     - [frequency]{"entity":"frequency"} of it ?
     - [frequency]{"entity":"frequency"}?
 
-- intent: about_data_data_last_updated
+- intent: about_data_last_updated_date
   examples: |
     - when was the [last time]{"entity":"last_updated_date"} data was updated.
     - this [rainfall]{"entity": "dataset_name"} data when was it [last date]{"entity":"last_updated_date"} updated
@@ -92,19 +294,42 @@ nlu:
     - i have some queries how [recent]{"entity":"last_updated_date"} are these figures
     - i have to give this date when was the data that i am using it was [updated lastly]{"entity":"last_updated_date"}
 
-- lookup: dataset_name
+- intent: about_data_source_link
   examples: |
-    - agcensus_crop
-    - rainfall
-    - fertiliser_sales
-    - rbi_deposit
-    - pmfby
+    - can you provide me with [link to source]{"entity":"source_link"}
+    - what's the [source link]{"entity":"source_link"}
+    - can you give me the [url]{"entity":"source_link"} from where it was extracted
+    - from where all the data is coming can you give me that [link]{"entity":"source_link"}
+    - the [url]{"entity":"source_link"} for the source
+    - i have to give credit can you send me the [source url]{"entity":"source_link"}
+    - [source url]{"entity":"source_link"} of the dataset ?
+    - [link to source]{"entity":"source_link"} for [soil]{"entity":"dataset_name"}?
+    - can you provide me [origin url]{"entity":"source_link"}
+    - can i get [source url]{"entity":"source_link"} for [rbi deposit]{"entity":"dataset_name"}
+    - i have query can we get [link to the source]{"entity":"source_link"}
+    - can i get [url to the source]{"entity":"source_link"} for [agriculture census]{"entity":"dataset_name"} data
+  
 
-- synonym: methodology
+- intent: about_data_data_extraction_page
   examples: |
-    - modus operandi
-    - procedure
-    - course
-    - style
-    - technique
-    - manner
+    - can you provide me link to [data extraction page]{"entity":"data_extraction_page"}
+    - from where can i get url to [data extraction page]{"entity":"data_extraction_page"}
+    - any link to page from [data was extracted]{"entity":"data_extraction_page"}
+    - i need url of [data extraction page]{"entity":"data_extraction_page"}
+    - can i get url for [data extraction page]{"entity":"data_extraction_page"} of [soil]{"entity":"dataset_name"} data
+    - link to page from where [data was fetched]{"entity":"data_extraction_page"} for [agriculture census]{"entity":"dataset_name"} dataset
+    - link to page from where [data was taken]{"entity":"data_extraction_page"} in case of [rainfall]{"entity":"dataset_name"} data
+    - from where all the [data was taken]{"entity":"data_extraction_page"} for this dataset
+
+
+- intent: about_data_about_data
+  examples: |
+    - i want to know [about this dataset]{"entity":"about_data"}
+    - wanna get [about data]{"entity":"about_data"} info of [soil]{"entity":"dataset_name"} data
+    - some info regarding [about data]{"entity":"about_data"} for this dataset
+    - can you give me information on [about data]{"entity":"about_data"} for [agriculture]{"entity":"dataset_name"} data
+    - [about data]{"entity":"about_data"} can i get ?
+    - can you help me with [rainfall]{"entity":"dataset_name"} data its [about data]{"entity":"about_data"} section
+    - pls elaborate [about]{"entity":"about_data"} data section of [rbi deposits]{"entity":"dataset_name"} data
+    - i want to know [about]{"entity":"about_data"} [agricultual census]{"entity":"dataset_name"} data
+    - i wanna give credits can i know [about]{"entity":"about_data"} [soil]{"entity":"dataset_name"} data

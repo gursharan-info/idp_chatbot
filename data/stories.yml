@@ -124,10 +124,10 @@ stories:
   - action: action_about_data_dataset_name
   - slot_was_set:
     - dataset_name: "fertiliser_sales"
-  - intent: about_data_granularity_level
-  - action: action_about_data_granularity_level
-  - intent: about_data_source_data
-  - action: action_about_data_source_data
+  - intent: about_data_granularity
+  - action: action_about_data_granularity
+  - intent: about_data_source_name
+  - action: action_about_data_source_name
   - intent: feedback-form
   - action: action_feedback
 
@@ -147,10 +147,10 @@ stories:
   - action: action_about_data_dataset_name
   - slot_was_set:
     - dataset_name: "agcensus_crop"
-  - intent: about_data_granularity_level
-  - action: action_about_data_granularity_level
-  - intent: about_data_source_data
-  - action: action_about_data_source_data
+  - intent: about_data_granularity
+  - action: action_about_data_granularity
+  - intent: about_data_source_name
+  - action: action_about_data_source_name
   - intent: feedback-form
   - action: action_feedback
 
@@ -171,8 +171,8 @@ stories:
   - action: action_about_data_dataset_name
   - slot_was_set:
     - dataset_name: "fertiliser_sales"
-  - intent: about_data_source_data
-  - action: action_about_data_source_data  
+  - intent: about_data_source_name
+  - action: action_about_data_source_name  
   - intent: faq-fel-b0
   - action : action_viz_faq
   - intent: feedback-form
@@ -219,10 +219,10 @@ stories:
   - action: action_about_data_dataset_name
   - slot_was_set:
     - dataset_name: "rbi_deposit"
-  - intent: about_data_data_last_updated
+  - intent: about_data_last_updated_date
     entities:
       - methodology: "last time"
-  - action: action_about_data_data_last_updated
+  - action: action_about_data_last_updated_date
   - intent: faq-visualisation-b1
   - action : action_viz_faq
   - intent: feedback-form

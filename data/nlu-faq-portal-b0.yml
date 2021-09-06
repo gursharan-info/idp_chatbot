@@ -376,14 +376,10 @@ nlu:
     - hey quickie about indian data portal
     - wanted to have quick info about india data portal
     - will you be able to tell me something about IDP
-    - what about idp
+    - what this portal is meant for?
     - could you pls get me brief info about IDP
-    - anything you can tell me iDP
+    - anything you can tell me about iDP
     - Can I know something about idp
-    - what is IDP
-    - Idp
-    - india data portal
-    - what is iDP
     - what is idp?
     - idp?
     - How do I Learn about the portal?
@@ -405,7 +401,7 @@ nlu:
     - more about IDP
     - How do I find out more about IDP?
     - How do I learn about IDP?
-    - what is this this
+    - what is this
     - why here?
     - what is indian data portal
     - what is idp
@@ -430,7 +426,6 @@ nlu:
     - unique speciality about idp can you tell
     - how indian data portal is best for me ?
     - why only Indian DP?
-    - why should i use it?
     - whys should I use idp?
     - Can journalists use the portal?
     - How do I learn about India Data Portal?
@@ -445,7 +440,7 @@ nlu:
     - What are the advantages of just using IDP?
     - What are the perks of just using IDP?
     - why should i use this platform
-    - why should i use IDP
+    - why should i prefer idp over others?
     - What is India Data Portal used for?
     - what is IDP used for 
     - what is the use of this webiste
@@ -541,6 +536,8 @@ nlu:
     - from which sectors data is coming
     - Which type of domains exist in portal
     - Which type of domains are found in IDP?
+    - What industries does the Portal cover?
+    - What industries are covered in IDP?
 
 - intent: faq-portal-b0/Why-not-see-all-selected-language #150
   examples: |

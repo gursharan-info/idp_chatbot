@@ -2,7 +2,8 @@
 FROM rasa/rasa:2.6.0
 ENTRYPOINT []
 USER root
-ADD ./models /app/models/
+
+# ADD ./models /app/models/
 ADD . /app/
 
 ADD ./certs/chatbot.indiadataportal.com  /app/certs/

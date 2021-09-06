@@ -692,9 +692,9 @@ nlu:
     - what is monthly dataset?
     - What are monthly datasets ? what they supposed to do?
     - tell me about the monthly datasets?
-    - what are datasets on monthly basis?
     - please provide knowledge about monthly datasets?
     - any info regarding monthly datasets?
+    - which dataset is available every month?
 
 - intent: faq-dataset-b0/daily-datasets  #308
   examples: |
@@ -702,7 +702,6 @@ nlu:
     - can we have daily datasets.
     - how we get daily informatiuon.
     - daily datasets
-    - datasets on daily basis.
     - is there any daily based datasets?
     - any daily info based dataset?
     - dataset based on data information is available?
@@ -714,6 +713,7 @@ nlu:
     - tell me about the daily datasets?
     - please provide knowledge about daily datasets?
     - any info regarding daily datasets?
+    - which dataset is available daily
 
 - intent: faq-dataset-b0/old-data-available #311
   examples: |
@@ -723,7 +723,7 @@ nlu:
     - is there any availability of older datasets like 50 years or 30 years old dtasets
     - I have some project for that I need datasets frompast 10 years cani get it from here
     - for my current research i need a dataset that should contain time from 2000 to 2020
-    - Do you have 10 years old data ?
+    - Is 10 year old data available?
     - Do you have any historical data ?
     - do you any deataset that is way old
     - can i get some dataset that is older than 2 or 3 decades
@@ -767,28 +767,26 @@ nlu:
 - intent: faq-dataset-b0/COVID-data  #313
   examples: |
     - Any COVID data ?
-    - do you have any COVID data?
-    - can we have COVID data?
-    - any data is available related to COVID?
-    - is there any COVID related DAta?
-    - give COVID data?
-    - any COVID related data is available?
+    - do you have any COVID-19 dataset?
+    - is there any data available related to COVID-19?
+    - is there any corona related DAta?
+    - any COVID-19 related dataset is available?
     - is there any dataset on covid?
     - Do you have any data about covid?
     - Is there any data pertaining to covid?
-    - Is there any statistics regarding covid?
-    - is covid data available on portal?
+    - Is there any statistics regarding covid-19?
+    - is corona data available on portal?
     - Is there data regarding the covid available?
     - Is data from the covid available?
     - Is figures from the covid available?
-    - data from covid is there?
-    - Do you have any information from the covid?
-    - does portal have info concern with covid
+    - data from covid-19 stats is there?
+    - Do you have any information from the sars virus?
+    - does portal have info concerned with covid-19
     - does portal have data related to covid
     - Do you even have the certain information from the covid department?
     - data from covid is present?
     - Is there any information from the covid that we might use?
-    - Do we have any dataset from the covid?
+    - Do we have any dataset from the corona?
     - data from covid is present?
     - data from covid is residing here?
     - is data from covid present here?
@@ -797,13 +795,15 @@ nlu:
     - covid data present?
     - covid data is residing here?
     - can we acess the covid data on portal?
-    - is portal having covid data? 
+    - is portal having covid-19 data? 
     - are we having any unemplyment data?
     - can i get covid data from this portal?
-    - covid data?
+    - corona data?
     - data from covid site is present?
     - tell me about covid data
     - aarogyasetu data available?
+    - Do you have covid-19 dataset
+    - Is any corona data available?
 
 - intent: faq-dataset-b0/any-industry-data-question # 314
   examples : |
@@ -816,11 +816,11 @@ nlu:
     - any data we are having for staock market
     - I want some data for corporate affairs
     - Which type of data available on daily basis ?
-    - type od data available on daily basis ?
+    - type of data available on daily basis ?
     - Which type of data available on monthly  basis ?
     - any source of data from ministu of corprate affairs
-    - i have a research work for which stocks data can i get it from here
-    - i have a jounalism project work for which stocks data can i get it from here
+    - i have a research work for which i need stocks data can i get it from here
+    - i have a jounalism project work for which stocks data is required can i get it from here
     - Is there any information about ministry of corporate affair?
     - is there any dataset on ministry of corporate affair?
     - Do you have any data about ministry of corporate affair?
@@ -855,6 +855,10 @@ nlu:
     - data from corporate domain
     - any corporate data on the portal?
     - ministry of corporate data is present here?
+    - Do you have dataset of stock exchange?
+    - Do you have any information from the stock exchange ?
+    - dataset related to exchange of stock?
+    - any stock related dataset is avaialble?
 
 - intent: faq-dataset-b0/Why-India-data-portal-create   #316
   examples: |

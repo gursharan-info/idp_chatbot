@@ -757,7 +757,7 @@ nlu:
     - How do I choose a different type of graph?
     - How do I change the type of graph I'm using?
 
-- intent: faq-visualisation-b3/diff-bw-crop-and-crop-type   #95
+- intent: faq-visualisation-b3/diff-bw-crop-and-crop-type   #94
   examples: |
     - What is the difference between crop and crop type?
     - What is a crop and crop type?
@@ -796,8 +796,43 @@ nlu:
     - how is crop type different from crop?
     - differentiate bw crop type and crop.
 
+- intent: faq-visualisation-b3/need-apply-filters #95
+  examples: |
+    - Do I need to apply filters?
+    - Is it necessary for me to use filters?
+    - Is it essential for me to apply filters?
+    - Is it vital for me to set filters?
+    - Do I have to use filters?
+    - Do I need to use filters?
+    - Do I must use filters?
+    - Should I use filters?
 
-- intent: faq-visualisation-b3/how-change-color-of-chart
+- intent: faq-visualisation-b3/can-compare-datasets #96
+  examples: |
+    - Can I compare datasets?
+    - is comparision avaialble for the datasets?
+    - comparison for dataset is avaialble?
+    - can we compare datasets on the portal?
+    - Is it possible to compare datasets?
+    - Could it be possible to compare datasets?
+    - Can I make a comparison between datasets?
+    - Is it possible for me to compare and analyze datasets?
+
+- intent: faq-visualisation-b3/What-are-filters #97
+  examples: |
+    - What are filters?
+    - define filters?
+    - please tell me about the filters?
+    - what do you mean by filters?
+    - explaination for the filters?
+    - what does filters mean by?
+    - what is the use of filters?
+    - what is the significance of filters?
+    - what should i understand by filters?
+    - what filters meant to be?
+    - What exactly are filters?
+
+- intent: faq-visualisation-b3/how-change-color-of-chart #98
   examples: |
     - How can I change the colours of the chart?
     - Skin colour change for the chart
@@ -884,7 +919,7 @@ nlu:
     - can i use this visulaisation for some other task?
 
 
-- intent: faq-visualisation-b3/give-credit-to-idp   #103
+- intent: faq-visualisation-b3/give-credit-to-idp   #101
   examples: |
     - Do I have to cite/give credit to IDP?
     - Is it necessary to cite/give credit to India data portal?
@@ -924,7 +959,7 @@ nlu:
     - Is crediting or citing IDP required?
     - tell me will i have to give credits while sharing the visuals?
 
-- intent: faq-visualisation-b3/can-i-share-my-viz   #104
+- intent: faq-visualisation-b3/can-i-share-my-viz   #102
   examples: |
     - Can I share Visualisation on my blog/website?
     - Can we share Visualisation on our blog/website?
@@ -963,7 +998,7 @@ nlu:
     - am i allowed to share my visualisation?
 
 
-- intent: faq-visualisation-b3/change-axis-of-graph #105
+- intent: faq-visualisation-b3/change-axis-of-graph #103
   examples: |
     - How can I change the axis of my graph?
     - is there any to change axis of graph
@@ -1003,6 +1038,15 @@ nlu:
     - procedure for changing the graphs axis.
     - tell me how am i supposed to change graphs axis?
 
+- intent: faq-visualisation-b3/rotate-graph #104
+  examples: |
+    - How can I rotate my chart?
+    - how am i supposed to rotate my chart
+    - how graph can be rotated?
+    - help me with graph rotation
+    - guide me to rotate my graph
+    - What is the best way for me to rotate my chart?
+    
 - intent: faq-visualisation-b3/how-tochange-chart-not-liked-first-one   #107
   examples: |
     - I don't like my chart. How can I get another chart?

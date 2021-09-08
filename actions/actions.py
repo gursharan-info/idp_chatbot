@@ -1,6 +1,3 @@
-
-
-
 from typing import Any, Text, Dict, List
 import urllib.request, json
 import os
@@ -375,6 +372,7 @@ class ActionGranularityLevel(Action):
             if  tracker.slots['dataset_name'] and  tracker.slots['dataset_name']!=None:
                 # name of datset from slot we had
                 dataset_name_ = tracker.slots['dataset_name']
+                dataset_name_ = dataset_name_.lower() 
 
                 # calling global dictionary
                 global master_dic_dataset_name
@@ -382,6 +380,8 @@ class ActionGranularityLevel(Action):
                 # if dataset name that is extracted from user message is present in our data we got from json file
                 # spellcheck the name of dataset
                 dataset_name_ = correction(dataset_name_)
+                corrected_dataset_name_ = dataset_name_
+
                 if dataset_name_ in master_dic_dataset_name.keys():
         
                     dataset_name_ = master_dic_dataset_name[dataset_name_]
@@ -390,7 +390,8 @@ class ActionGranularityLevel(Action):
                     extracted_ls_entity.append(ls_entity[i]['entity'])
                 # extracted_ls_entity = list(filter(lambda x:x!='dataset_name', extracted_ls_entity))
                 print(f"Entites we extracted in gran {extracted_ls_entity}")
-
+                if 'dataset_name' in extracted_ls_entity:
+                    extracted_ls_entity.remove('dataset_name')
 
                 dict_of_mapped_data_with_id = {}
                 with urllib.request.urlopen("https://indiadataportal.com/meta_data_info") as url:
@@ -427,7 +428,7 @@ class ActionGranularityLevel(Action):
 
                                     # if entity is present in p then print the value of that entity
                                     print(f"{entity_iter} ----> {p[entity_iter]}")
-                                    dispatcher.utter_message(text = f"{entity_iter} is {p[entity_iter]}")
+                                    dispatcher.utter_message(text = f" for {corrected_dataset_name_} {entity_iter} is {p[entity_iter]}")
                                 
                                 else:
                                     dispatcher.utter_message(text = 'Sorry but can you pls tell again  what feature you are looking for')
@@ -463,13 +464,15 @@ class ActionSourcedata(Action):
             if  tracker.slots['dataset_name'] and  tracker.slots['dataset_name']!=None:
                 # name of datset from slot we had
                 dataset_name_ = tracker.slots['dataset_name']
-
+                dataset_name_ = dataset_name_.lower() 
                 # calling global dictionary
                 global master_dic_dataset_name
 
                 # if dataset name that is extracted from user message is present in our data we got from json file
                 # spellcheck the name of dataset
                 dataset_name_ = correction(dataset_name_)
+                corrected_dataset_name_ = dataset_name_
+
                 if dataset_name_ in master_dic_dataset_name.keys():
         
                     dataset_name_ = master_dic_dataset_name[dataset_name_]
@@ -479,7 +482,9 @@ class ActionSourcedata(Action):
                     extracted_ls_entity.append(ls_entity[i]['entity'])
                 # extracted_ls_entity = list(filter(lambda x:x!='dataset_name', extracted_ls_entity))
                 print(f"Entites we extracted in source {extracted_ls_entity}")
-
+                if 'dataset_name' in extracted_ls_entity:
+                    extracted_ls_entity.remove('dataset_name')
+                    print('after removing the entity dataset name- ', extracted_ls_entity)
 
                 dict_of_mapped_data_with_id = {}
                 with urllib.request.urlopen("https://indiadataportal.com/meta_data_info") as url:
@@ -517,7 +522,7 @@ class ActionSourcedata(Action):
 
                                     # if entity is present in p then print the value of that entity
                                     print(f"{entity_iter} ----> {p[entity_iter]}")
-                                    dispatcher.utter_message(text = f"{entity_iter} is {p[entity_iter]}")
+                                    dispatcher.utter_message(text = f" for {corrected_dataset_name_} {entity_iter} is {p[entity_iter]}")
                                 
                                 else:
                                     dispatcher.utter_message(text = 'Sorry but can you pls tell again  what feature you are looking for')
@@ -552,11 +557,15 @@ class ActionMethodology(Action):
             if  tracker.slots['dataset_name'] and  tracker.slots['dataset_name']!=None:
                 # name of datset from slot we had
                 dataset_name_ = tracker.slots['dataset_name']
-  
+                dataset_name_ = dataset_name_.lower() 
+                
+
                 global master_dic_dataset_name
 
                 # spellcheck the name of dataset
                 dataset_name_ = correction(dataset_name_)
+                corrected_dataset_name_ = dataset_name_
+
                 if dataset_name_ in master_dic_dataset_name.keys():
         
                     dataset_name_ = master_dic_dataset_name[dataset_name_]
@@ -566,7 +575,8 @@ class ActionMethodology(Action):
                     extracted_ls_entity.append(ls_entity[i]['entity'])
                 # extracted_ls_entity = list(filter(lambda x:x!='dataset_name', extracted_ls_entity))
                 print(f"Entites we extracted in Methodology {extracted_ls_entity}")
-
+                if 'dataset_name' in extracted_ls_entity:
+                    extracted_ls_entity.remove('dataset_name')
 
                 dict_of_mapped_data_with_id = {}
                 with urllib.request.urlopen("https://indiadataportal.com/meta_data_info") as url:
@@ -602,7 +612,7 @@ class ActionMethodology(Action):
                                 if entity_iter in p.keys():
                                     # if entity is present in p then print the value of that entity
                                     # print(f"{entity_iter} ----> {p[entity_iter]}")
-                                    dispatcher.utter_message(text = f"{entity_iter} is {p[entity_iter]}")
+                                    dispatcher.utter_message(text = f" for {corrected_dataset_name_} {entity_iter} is {p[entity_iter]}")
                                 
                                 else:
                                     dispatcher.utter_message(text = 'Sorry but can you pls tell again  what feature you are looking for')
@@ -635,12 +645,13 @@ class ActionFrequency(Action):
             if  tracker.slots['dataset_name'] and  tracker.slots['dataset_name']!=None:
                 # name of datset from slot we had
                 dataset_name_ = tracker.slots['dataset_name']
-
+                dataset_name_ = dataset_name_.lower() 
                  # calling global dictionary
                 global master_dic_dataset_name
                 
                 # spellcheck the name of dataset
                 dataset_name_ = correction(dataset_name_)
+                corrected_dataset_name_ = dataset_name_
 
                 # if dataset name that is extracted from user message is present in our data we got from json file
                 if dataset_name_ in master_dic_dataset_name.keys():
@@ -652,7 +663,8 @@ class ActionFrequency(Action):
                     extracted_ls_entity.append(ls_entity[i]['entity'])
                 # extracted_ls_entity = list(filter(lambda x:x!='dataset_name', extracted_ls_entity))
                 print(f"Entites we extracted in frequency {extracted_ls_entity}")
-
+                if 'dataset_name' in extracted_ls_entity:
+                    extracted_ls_entity.remove('dataset_name')
 
                 dict_of_mapped_data_with_id = {}
                 with urllib.request.urlopen("https://indiadataportal.com/meta_data_info") as url:
@@ -689,7 +701,7 @@ class ActionFrequency(Action):
 
                                     # if entity is present in p then print the value of that entity
                                     # print(f"{entity_iter} ----> {p[entity_iter]}")
-                                    dispatcher.utter_message(text = f"{entity_iter} is {p[entity_iter]}")
+                                    dispatcher.utter_message(text = f" for {corrected_dataset_name_} {entity_iter} is {p[entity_iter]}")
                                 
                                 else:
                                     dispatcher.utter_message(text = 'Sorry but can you pls tell again  what feature you are looking for')
@@ -722,6 +734,7 @@ class ActionLastDateUpdated(Action):
             if  tracker.slots['dataset_name'] and  tracker.slots['dataset_name']!=None:
                 # name of datset from slot we had
                 dataset_name_ = tracker.slots['dataset_name']
+                dataset_name_ = dataset_name_.lower() 
 
                 # calling global dictionary
                 global master_dic_dataset_name
@@ -729,6 +742,8 @@ class ActionLastDateUpdated(Action):
 
                 # spellcheck the name of dataset
                 dataset_name_ = correction(dataset_name_)
+                corrected_dataset_name_ = dataset_name_
+                
 
                 # if dataset name that is extracted from user message is present in our data we got from json file
                 if dataset_name_ in master_dic_dataset_name.keys():
@@ -741,7 +756,8 @@ class ActionLastDateUpdated(Action):
                     extracted_ls_entity.append(ls_entity[i]['entity'])
                 # extracted_ls_entity = list(filter(lambda x:x!='dataset_name', extracted_ls_entity))
                 print(f"Entites we extracted in frequency {extracted_ls_entity}")
-
+                if 'dataset_name' in extracted_ls_entity:
+                    extracted_ls_entity.remove('dataset_name')
 
                 dict_of_mapped_data_with_id = {}
                 with urllib.request.urlopen("https://indiadataportal.com/meta_data_info") as url:
@@ -777,7 +793,7 @@ class ActionLastDateUpdated(Action):
 
                                     # if entity is present in p then print the value of that entity
                                     # print(f"{entity_iter} ----> {p[entity_iter]}")
-                                    dispatcher.utter_message(text = f"{entity_iter} is {p[entity_iter]}")
+                                    dispatcher.utter_message(text = f" for {corrected_dataset_name_} {entity_iter} is {p[entity_iter]}")
                                 
                                 else:
                                     dispatcher.utter_message(text = 'Sorry but can you pls tell again  what feature you are looking for')
@@ -810,12 +826,13 @@ class ActionSourceLink(Action):
             if  tracker.slots['dataset_name'] and  tracker.slots['dataset_name']!=None:
                 # name of datset from slot we had
                 dataset_name_ = tracker.slots['dataset_name']
-
+                dataset_name_ = dataset_name_.lower() 
                 # calling global dictionary
                 global master_dic_dataset_name
 
                 # spellcheck the name of dataset
                 dataset_name_ = correction(dataset_name_)
+                corrected_dataset_name_ = dataset_name_
 
                 # if dataset name that is extracted from user message is present in our data we got from json file
                 if dataset_name_ in master_dic_dataset_name.keys():
@@ -828,6 +845,10 @@ class ActionSourceLink(Action):
                     extracted_ls_entity.append(ls_entity[i]['entity'])
                 # extracted_ls_entity = list(filter(lambda x:x!='dataset_name', extracted_ls_entity))
                 print(f"Entites we extracted in source link {extracted_ls_entity}")
+                print('before removing datatset name from list - ', extracted_ls_entity)
+                if 'dataset_name' in extracted_ls_entity:
+                    extracted_ls_entity.remove('dataset_name')
+                    print('after removing datatset name from list - ', extracted_ls_entity)
 
 
                 dict_of_mapped_data_with_id = {}
@@ -864,8 +885,7 @@ class ActionSourceLink(Action):
 
                                     # if entity is present in p then print the value of that entity
                                     # print(f"{entity_iter} ----> {p[entity_iter]}")
-                                    dispatcher.utter_message(text = f"{entity_iter} is {p[entity_iter]}")
-                                
+                                    dispatcher.utter_message(text = f" for {corrected_dataset_name_} {entity_iter} is {p[entity_iter]}")
                                 else:
                                     dispatcher.utter_message(text = 'Sorry but can you pls tell again  what feature you are looking for')
                                     dispatcher.utter_message(text = """Ex :Like if you want to know Source Link for a Dataset 
@@ -897,12 +917,13 @@ class ActionDataExtractionPage(Action):
             if  tracker.slots['dataset_name'] and  tracker.slots['dataset_name']!=None:
                 # name of datset from slot we had
                 dataset_name_ = tracker.slots['dataset_name']
-
+                dataset_name_ = dataset_name_.lower() 
                 # calling global dictionary
                 global master_dic_dataset_name
 
                 # spellcheck the name of dataset
                 dataset_name_ = correction(dataset_name_)
+                corrected_dataset_name_ = dataset_name_
 
                 # if dataset name that is extracted from user message is present in our data we got from json file
                 if dataset_name_ in master_dic_dataset_name.keys():
@@ -915,7 +936,8 @@ class ActionDataExtractionPage(Action):
                     extracted_ls_entity.append(ls_entity[i]['entity'])
                 # extracted_ls_entity = list(filter(lambda x:x!='dataset_name', extracted_ls_entity))
                 print(f"Entites we extracted in Extraction page {extracted_ls_entity}")
-
+                if 'dataset_name' in extracted_ls_entity:
+                    extracted_ls_entity.remove('dataset_name')
 
                 dict_of_mapped_data_with_id = {}
                 with urllib.request.urlopen("https://indiadataportal.com/meta_data_info") as url:
@@ -951,7 +973,7 @@ class ActionDataExtractionPage(Action):
 
                                     # if entity is present in p then print the value of that entity
                                     # print(f"{entity_iter} ----> {p[entity_iter]}")
-                                    dispatcher.utter_message(text = f"{entity_iter} is {p[entity_iter]}")
+                                    dispatcher.utter_message(text = f" for {corrected_dataset_name_} {entity_iter} is {p[entity_iter]}")
                                 
                                 else:
                                     dispatcher.utter_message(text = 'Sorry but can you pls tell again  what feature you are looking for')
@@ -964,5 +986,3 @@ class ActionDataExtractionPage(Action):
                                                                         say it like :- What was the source for the dataset""")
             else:
                 dispatcher.utter_message(text = "Can you tell which dataset it is")
-
-

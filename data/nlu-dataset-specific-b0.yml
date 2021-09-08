@@ -798,79 +798,165 @@ nlu:
 
 - intent: about_data_source_link
   examples: |
-    - can you provide me with [link to source]{"entity":"source_link"}
-    - what's the [source link]{"entity":"source_link"}
-    - i have to give credit can you send me the [source url]{"entity":"source_link"}
-    - [source url]{"entity":"source_link"} of the dataset ?
-    - [link to source]{"entity":"source_link"} for [soil]{"entity":"dataset_name"}?
-    - can you provide me [origin url]{"entity":"source_link"}
-    - can i get [source url]{"entity":"source_link"} for [rbi deposit]{"entity":"dataset_name"}
-    - i have query can we get [link to the source]{"entity":"source_link"}
-    - can i get [url to the source]{"entity":"source_link"} for [agriculture census]{"entity":"dataset_name"} data
-    - Kindly give me a [source link] for [rural wages] dataset
-    - I need a source link for [consumer price index and inflation cpi] dataset
-    - Facilitate the [source url] for [cpi] data
-    - What is the [source link] for [bank credit] data
-    - Provide me a [source url] to the [credits by bank] dataset
-    - give me [origin url] to [debt and investment nsso] dataset
-    - please share the [url] of [debt and investment data by nsso] dataset
-    - i have a query can i get [source link] to [deposits with bank] data
-    - can you share the [source link] to [deposits by bank ] dataset.
-    - is there any [origin url] for [employment nsso] data
-    - i want to visit the [origin url] for [employment under national sample survey] dataset, please provide it
-    - where can i get [source link] for [household consumption on education nsso] data
-    - i am not sure for [source link] to [household consumption on eduaction] dataset.
-    - How can i get [source ulr] to [mgnrega agriculture investments] dataset
-    - Tell me way to get [source link] for data related to [agriculture investments by mgnrega]
-    - For [mgnrega employment] data, how can i get [source link]
-    - can i get [source link] for [employment under the mgnrega] data
-    - How do i get [source url] for data related to [unincorporated non agriculture enterprises excluding construction nsso]
-    - describe the procedure to get [source link] for [unincorporated non agri enterprises excluding construction ] dataset
-    - what is the method to get [source link] for [financial inclusion survey nabard] dataset
-    - How do I obtain [source link] for the [financial inclusion survey] dataset?
-    - please provide me the [source link] to [input survey non crop] dataset
-    - Could you kindly provide me the [source link] for the [input survey for non crop] dataset?
-    - What is the best way to get [source link] for [nrlm self help groups shgs] data
-    - how do i find [source url] for [nrlm shgs] data
-    - Facilitate the [source link] for [situation assessment of agricultural household nsso] data
-    - from where i can get [link to source] for [situation assessment of agricultural household ] dataset
-    - give me [source url] to [agricultural census 2010 11 crop] dataset
-    - I need the [source link] for [agricultural census 2010 11 non crop] dataset
-    - can i get [source link] for [agricultural census 2015 16 crop] data here?
-    - Could you please provide me the [source link] for the [agricultural census 2015 16 non crop] dataset?
-    - let me have the [source url] for the [agricultural marketing agmarknet] dataset.
-    - send me the [source url] for [agri marketing] dataset.
-    - i dont know how to retrieve the [source link] for [area production statistics nhb] dataset
-    - I want the [origin url] for [area production yeild apy] dataset
-    - Where can i get [source link] for [cost of cultivation coc] data
-    - please give me a [source link] for [fertiliser sales] dataset
-    - I want a [source link] to [food and fertiliser subsidy] dataset
-    - Facilitate the [origin url] for [input survey crop composite] data
-    - What is the [source link] for [crop Input Survey] data
-    - Provide me a [source url] to the [national food security mission nfsm spending] dataset
-    - give me [origin url] to [procurement of foodgrains] dataset
-    - please share the [url] of [public distribution system pds] dataset
-    - Tell me the method to retrieve [source url] for [soil health card funding status] data.
-    - Where is [source url] to [soil health card nutrient status] data
-    - Provide the [source url] for [stock of foodgrains] data
-    - How do i get [source link] for data related to [depth to water level]
-    - What is procedure to get [groundwater stages of extraction] for [] data
-    - give me whatever the [source link] for [rainfall] dataset is?
-    - So can i get [source link] here for the [soil] dataset
-    - Can I obtain the [source link] for the [temperature] dataset here?
-    - So, where can I obtain the [crop insurance pradhan mantri fasal bima yojana pmfby] dataset [source link]?
-    - is there any [source url] for [minimum support price msp] data
+    - i want [source link]{"entity":"source_link"} for [agri wages] {"entity":"dataset_name"}
+    - Kindly give me a [source link]{"entity":"source_link"} for [rural wages]{"entity":"dataset_name"} dataset
+    - I need a [source link]{"entity":"source_link"} for [consumer price index and inflation cpi]{"entity":"dataset_name"} dataset
+    - Facilitate the [source url]{"entity":"source_link"} for [cpi]{"entity":"dataset_name"} data
+    - What is the [source link]{"entity":"source_link"} for [bank credit]{"entity":"dataset_name"} data
+    - Provide me a [source url]{"entity":"source_link"} to the [credits by bank]{"entity":"dataset_name"} dataset
+    - give me [origin url]{"entity":"source_link"} to [debt and investment nsso]{"entity":"dataset_name"} dataset
+    - please share the [url]{"entity":"source_link"} of [debt and investment data by nsso]{"entity":"dataset_name"} dataset
+    - i have a query can i get [source link]{"entity":"source_link"} to [deposits with bank]{"entity":"dataset_name"} data
+    - can you share the [source link]{"entity":"source_link"} to [deposits by bank]{"entity":"dataset_name"} dataset.
+    - is there any [origin url]{"entity":"source_link"} for [employment nsso]{"entity":"dataset_name"} data
+    - i want to visit the [origin url]{"entity":"source_link"} for [employment under national sample survey]{"entity":"dataset_name"} dataset, please provide it
+    - where can i get [source link]{"entity":"source_link"} for [household consumption on education nsso]{"entity":"dataset_name"} data
+    - i am not sure for [source link]{"entity":"source_link"} to [household consumption on eduaction]{"entity":"dataset_name"} dataset.
+    - How can i get [source ulr]{"entity":"source_link"} to [mgnrega agriculture investments]{"entity":"dataset_name"} dataset
+    - Tell me way to get [source link]{"entity":"source_link"} for data related to [agriculture investments by mgnrega]{"entity":"dataset_name"}
+    - For [mgnrega employment]{"entity":"dataset_name"} data, how can i get [source link]{"entity":"source_link"}
+    - can i get [source link]{"entity":"source_link"} for [employment under the mgnrega]{"entity":"dataset_name"} data
+    - How do i get [source url]{"entity":"source_link"} for data related to [unincorporated non agriculture enterprises excluding construction nsso]{"entity":"dataset_name"}
+    - describe the procedure to get [source link]{"entity":"source_link"} for [unincorporated non agri enterprises excluding construction]{"entity":"dataset_name"} dataset
+    - what is the method to get [source link]{"entity":"source_link"} for [financial inclusion survey nabard]{"entity":"dataset_name"} dataset
+    - How do I obtain [source link]{"entity":"source_link"} for the [financial inclusion survey]{"entity":"dataset_name"} dataset?
+    - please provide me the [source link]{"entity":"source_link"} to [input survey non crop]{"entity":"dataset_name"} dataset
+    - Could you kindly provide me the [source link]{"entity":"source_link"} for the [input survey for non crop]{"entity":"dataset_name"} dataset?
+    - What is the best way to get [source link]{"entity":"source_link"} for [nrlm self help groups shgs]{"entity":"dataset_name"} data
+    - how do i find [source url]{"entity":"source_link"} for [nrlm shgs]{"entity":"dataset_name"} data
+    - Facilitate the [source link]{"entity":"source_link"} for [situation assessment of agricultural household nsso]{"entity":"dataset_name"} data
+    - from where i can get [link to source]{"entity":"source_link"} for [situation assessment of agricultural household]{"entity":"dataset_name"} dataset
+    - give me [source url]{"entity":"source_link"} to [agricultural census 2010 11 crop]{"entity":"dataset_name"} dataset
+    - I need the [source link]{"entity":"source_link"} for [agricultural census 2010 11 non crop]{"entity":"dataset_name"} dataset
+    - can i get [source link]{"entity":"source_link"} for [agricultural census 2015 16 crop]{"entity":"dataset_name"} data here?
+    - Could you please provide me the [source link]{"entity":"source_link"} for the [agricultural census 2015 16 non crop]{"entity":"dataset_name"} dataset?
+    - let me have the [source url]{"entity":"source_link"} for the [agricultural marketing agmarknet]{"entity":"dataset_name"} dataset.
+    - send me the [source url]{"entity":"source_link"} for [agri marketing]{"entity":"dataset_name"} dataset.
+    - i dont know how to retrieve the [source link]{"entity":"source_link"} for [area production statistics nhb]{"entity":"dataset_name"} dataset
+    - I want the [origin url]{"entity":"source_link"} for [area production yeild apy]{"entity":"dataset_name"} dataset
+    - Where can i get [source link]{"entity":"source_link"} for [cost of cultivation coc]{"entity":"dataset_name"} data
+    - please give me a [source link]{"entity":"source_link"} for [fertiliser sales]{"entity":"dataset_name"} dataset
+    - I want a [source link]{"entity":"source_link"} to [food and fertiliser subsidy]{"entity":"dataset_name"} dataset
+    - Facilitate the [origin url]{"entity":"source_link"} for [input survey crop composite]{"entity":"dataset_name"} data
+    - What is the [source link]{"entity":"source_link"} for [crop Input Survey]{"entity":"dataset_name"} data
+    - Provide me a [source url]{"entity":"source_link"} to the [national food security mission nfsm spending]{"entity":"dataset_name"} dataset
+    - give me [origin url]{"entity":"source_link"} to [procurement of foodgrains]{"entity":"dataset_name"} dataset
+    - please share the [source url]{"entity":"source_link"} of [public distribution system pds] {"entity":"dataset_name"} dataset
+    - Tell me the method to retrieve [source url]{"entity":"source_link"} for [soil health card funding status]{"entity":"dataset_name"} data.
+    - Where is [source url]{"entity":"source_link"} to [soil health card nutrient status]{"entity":"dataset_name"} data
+    - Provide the [source url]{"entity":"source_link"} for [stock of foodgrains]{"entity":"dataset_name"} data
+    - How do i get [source link]{"entity":"source_link"} for data related to [depth to water level]{"entity":"dataset_name"}
+    - What is procedure to get [groundwater stages of extraction]{"entity":"dataset_name"} dataset [source link]{"entity":"source_link"}
+    - give me whatever the [source link]{"entity":"source_link"} for [rainfall]{"entity":"dataset_name"} dataset is?
+    - So can i get [source link]{"entity":"source_link"} here for the [soil]{"entity":"dataset_name"} dataset
+    - Can I obtain the [source link]{"entity":"source_link"} for the [temperature]{"entity":"dataset_name"} dataset here?
+    - So, where can I obtain the [crop insurance pradhan mantri fasal bima yojana pmfby]{"entity":"dataset_name"} dataset [source link]{"entity":"source_link"} ?
+    - is there any [source url]{"entity":"source_link"} for [minimum support price msp]{"entity":"dataset_name"} data
+    - please show me the [source link]{"entity":"source_link"} for [pm kisan]{"entity":"dataset_name"} dataset
+    - tell me the [source link]{"entity":"source_link"} of [minimum support price msp]{"entity":"dataset_name"} dataset
+    - provide me the [source link]{"entity":"source_link"} of [rural wages]{"entity":"dataset_name"} dataset
+    - can you please provide me the [source link]{"entity":"source_link"} of [temperature]{"entity": "dataset_name"} dataset
+    - tell me the [source link]{"entity":"source_link"} of [crop insurance]{"entity": "dataset_name"} data
 
 - intent: about_data_data_extraction_page
   examples: |
-    - can you provide me link to [data extraction page]{"entity":"data_extraction_page"}
-    - from where can i get url to [data extraction page]{"entity":"data_extraction_page"}
-    - any link to page from [data was extracted]{"entity":"data_extraction_page"}
-    - i need url of [data extraction page]{"entity":"data_extraction_page"}
-    - can i get url for [data extraction page]{"entity":"data_extraction_page"} of [soil]{"entity":"dataset_name"} data
-    - link to page from where [data was fetched]{"entity":"data_extraction_page"} for [agriculture census]{"entity":"dataset_name"} dataset
-    - link to page from where [data was taken]{"entity":"data_extraction_page"} in case of [rainfall]{"entity":"dataset_name"} data
-    - from where all the [data was taken]{"entity":"data_extraction_page"} for this dataset
+    - what's the data [extraction page]{"entity" : "data_extraction_page"} link of [rural wages]{"entity":"dataset_name"} data
+    - I would like to know the link of [extraction page]{"entity":"data_extraction_page"} of [agri wages]{"entity":"dataset_name"} data
+    - For [agricultur wages]{"entity": "dataset_name"}, please let me know the link of [extraction page]{"entity": "data_extraction_page"}
+    - Tell me the link of data [extraction page]{"entity": "data_extraction_page"} of [agriculture wages]{"entity" : "dataset_name"}
+    - I want to know the link of [extraction page]{"entity": "data_extraction_page"} for [consumer price index and inflation cpi]{"entity": "dataset_name"}
+    - What is the link of [extraction page]{"entity": "data_extraction_page"} for [consumer price index]{"entity": "dataset_name"}
+    - Please tell me the url of data [extraction page]{"entity": "data_extraction_page"} for [cpi]{"entity" : "dataset_name"}
+    - Curious to know the link of [extraction page]{"entity": "data_extraction_page"} for [consumer price index and inflation]{"entity": "dataset_name"}
+    - Could you please tell me the [extraction page]{"entity": "data_extraction_page"} for [credit bie bank]{"entity": "dataset_name"}
+    - What is the url of [extraction page]{"entity": "data_extraction_page"} for [credts by bank]{"entity": "dataset_name"}
+    - For [bank credit]{"entity": "dataset_name"} tell me the link of [extraction page]{"entity": "data_extraction_page"} that were used.
+    - want to know the link of data [extraction page]{"entity": "data_extraction_page"} for [credet by bank]{"entity": "dataset_name"}
+    - Tell me the url of data [extraction page]{"entity": "data_extraction_page"} for [debt and investment data by nsso]{"entity": "dataset_name"} data
+    - what is the url of [extraction page]{"entity": "data_extraction_page"} for [nsso debt and investment]{"entity": "dataset_name"}
+    - for [debt and investment nsso]{"entity": "dataset_name"} I'd like to know the link of [extraction page]{"entity": "data_extraction_page"}
+    - What is the url of [extraction page]{"entity": "data_extraction_page"} for [nsso data for debt and investmnet]{"entity": "dataset_name"} dataset?
+    - Would like to know the link of [extraction page]{"entity": "data_extraction_page"} for [deposist with bank]{"entity": "dataset_name"}
+    - what is the url of [extraction page]{"entity": "data_extraction_page"} of [deposits by bank]{"entity": "dataset_name"} made?
+    - Tell me the [extraction page]{"entity": "data_extraction_page"} link for [deposits by bank]{"entity": "dataset_name"}
+    - please tell me the [extraction page]{"entity": "data_extraction_page"} link for [deposist with bank]{"entity": "dataset_name"}
+    - Can you tell me url of [extraction page]{"entity": "data_extraction_page"} for [employment under national sample survey]{"entity": "dataset_name"}
+    - may you tell me the [extraction page]{"entity": "data_extraction_page"} link of [nsso dataset of employment]{"entity": "dataset_name"}
+    - can you tell me the link of [extraction page]{"entity": "data_extraction_page"} for [employment by nssso]{"entity": "dataset_name"}
+    - please tell me the url of [extraction page]{"entity": "data_extraction_page"} of [employment nsso]{"entity":"dataset_name"}
+    - What is the [extraction page]{"entity": "data_extraction_page"} link for [household consumption on eduaction]{"entity": "dataset_name"}
+    - I am interested in knowing the [extraction page]{"entity": "data_extraction_page"} link for [household consumption on education nsso]{"entity":"dataset_name"}
+    - tell me the [extraction page]{"entity": "data_extraction_page"} link for [household consumption on education by nsso]{"entity": "dataset_name"} dataset?
+    - what is the [extraction page]{"entity": "data_extraction_page"} for [household consumption on education by nsso]{"entity": "dataset_name"}?
+    - what is the url of [extraction page]{"entity": "data_extraction_page"} for [mgnrega agriculture investments]{"entity": "dataset_name"}?
+    - tell me the link of [extraction page]{"entity": "data_extraction_page"} for [mgnrega dataset of agriculture investments]{"entity": "dataset_name"}
+    - What [extraction page]{"entity": "data_extraction_page"} link is used for [agriculture investments by mgnrega]{"entity": "dataset_name"} dataset?
+    - can you please tell me the url of [extraction page]{"entity": "data_extraction_page"} for [agriculture investments by mgnrega]{"entity": "dataset_name"} dataset?
+    - what [extraction page]{"entity": "data_extraction_page"} link were used for [mgnrega employment]{"entity": "dataset_name"} dataset?
+    - what data [extraction page]{"entity": "data_extraction_page"} url were used for [employment data by mgnrega]{"entity": "dataset_name"} dataset?
+    - can you provide me the data [extraction page]{"entity": "data_extraction_page"} link for [employment under the mgnrega]{"entity": "dataset_name"} dataset?
+    - what is the [extraction page]{"entity": "data_extraction_page"} link of [employment under the mgnrega]{"entity": "dataset_name"} dataset?
+    - what are the various link of [extraction page]{"entity": "data_extraction_page"} of [unincorporated non agriculture enterprises excluding construction nsso]{"entity": "dataset_name"}?
+    - tell me the various url of [extraction page]{"entity": "data_extraction_page"} for [unincorporated non agriculture enterprises excluding construction by nsso]{"entity": "dataset_name"} dataset?
+    - tell me the [extraction page]{"entity": "data_extraction_page"} link of [unincorporated non agriculture enterprises excluding construction]{"entity": "dataset_name"}?
+    - please tell me the various data [extraction page]{"entity": "data_extraction_page"} link of [unincorporated non agri enterprises excluding construction]{"entity": "dataset_name"} dataset?
+    - What is the [extraction page]{"entity": "data_extraction_page"} of [financial inclusion survey nabard]{"entity": "dataset_name"} dataset?
+    - what is the link of [extraction page]{"entity": "data_extraction_page"} for [financial inclusion survey]{"entity": "dataset_name"} data?
+    - what is the url of [extraction page]{"entity": "data_extraction_page"} of [nabard financial inclusion survey]{"entity": "dataset_name"}?
+    - In [nabard financial inclusion survey]{"entity": "dataset_name"} dataset what is the link of data [extraction page]{"entity": "data_extraction_page"} were used to collect it?
+    - what is the [extraction page]{"entity": "data_extraction_page"} link for [nabard financial inclusion findings]{"entity": "dataset_name"}?
+    - could you please tell me the data [extraction page]{"entity": "data_extraction_page"} of [input survey non crop]{"entity": "dataset_name"} dataset.
+    - What is the link of [extraction page]{"entity": "data_extraction_page"} of [input survey for non crop]{"entity": "dataset_name"} dataset?
+    - On [input survey non crop]{"entity": "dataset_name"} data what is the url of [extraction page]{"entity": "data_extraction_page"} have been adopted?
+    - What is the data [extraction page]{"entity": "data_extraction_page"} link of [input survey for non crop]{"entity": "dataset_name"}?
+    - could you please tell me the link of data [extraction page]{"entity": "data_extraction_page"} for [nrlm self help groups shgs]{"entity": "dataset_name"}?
+    - What is the url of [extraction page]{"entity": "data_extraction_page"} for [nrlm shgs]{"entity": "dataset_name"}?
+    - tell me the data [extraction page]{"entity": "data_extraction_page"} link of [self help groups]{"entity": "dataset_name"} dataset?
+    - On [situation assessment of agricultural household nsso]{"entity": "dataset_name"} data what is the url of [extraction page]{"entity": "data_extraction_page"} have been adopted?
+    - Any [extraction page]{"entity": "data_extraction_page"} link for [situation assessment of agricultural household by nsso]{"entity": "dataset_name"}?
+    - Any data [extraction page]{"entity": "data_extraction_page"} url for [situation assessment of agricultural household]{"entity": "dataset_name"}?
+    - Any [extraction page]{"entity": "data_extraction_page"} link for [situation assessment of agri household]{"entity": "dataset_name"}?
+    - i am curious about the [extraction page]{"entity": "data_extraction_page"} link of [agricultural census 2010-11 crop]{"entity": "dataset_name"} dataset.
+    - i am curious about the link of [extraction page]{"entity": "data_extraction_page"} of [agricultural census 2010-11 non crop]{"entity": "dataset_name"} dataset.
+    - What [extraction page]{"entity": "data_extraction_page"} link used for [agri census 2010-11 non crop]{"entity": "dataset_name"} dataset?
+    - Please show me the link of [extraction page]{"entity": "data_extraction_page"} for [agri census 2010-11 non-crop]{"entity": "dataset_name"} dataset.
+    - if possible,please provide me the [extraction page]{"entity": "data_extraction_page"} url of [agricultural census 2015-16 crop]{"entity": "dataset_name"} dataset?
+    - What is the link of [extraction page]{"entity": "data_extraction_page"} for [agri census 2015-16 crop]{"entity": "dataset_name"} dataset?
+    - What is the url of [extraction page]{"entity": "data_extraction_page"} for [agricultural census 2015-16 non crop]{"entity": "dataset_name"} dataset?
+    - Can you inform me about the link of [extraction page]{"entity": "data_extraction_page"} for [agri census 2015-16 non crop]{"entity": "dataset_name"} data
+    - What's the url of [extraction page]{"entity": "data_extraction_page"} for [agri census 2015-16 non-crop]{"entity": "dataset_name"} dataset?
+    - What's the link of [extraction page]{"entity": "data_extraction_page"} for [agricultural marketing agmarknet]{"entity": "dataset_name"} dataset?
+    - tell me the [extraction page]{"entity": "data_extraction_page"} link of [agricultural marketing]{"entity": "dataset_name"} dataset?
+    - What [extraction page]{"entity": "data_extraction_page"} url for [agri marketing]{"entity": "dataset_name"} dataset collection?
+    - What are the various [extraction page]{"entity": "data_extraction_page"} link for [area production statistics nhb]{"entity": "dataset_name"} datasets?
+    - What were the different [extraction page]{"entity": "data_extraction_page"} link of [area production statistics]{"entity": "dataset_name"} dataset?
+    - Could you perhaps tell me the data [extraction page]{"entity": "data_extraction_page"} of [area prod stats]{"entity": "dataset_name"}?
+    - Could you kindly tell me the data [extraction page]{"entity": "data_extraction_page"} of [area production yeild]{"entity": "dataset_name"} dataset?
+    - What [extraction page]{"entity": "data_extraction_page"} link are in the [area production yeild apy]{"entity": "dataset_name"} dataset?
+    - where i can get the [extraction page]{"entity": "data_extraction_page"} for [apy]{"entity": "dataset_name"} data?
+    - is there any specific link of [extraction page]{"entity": "data_extraction_page"} for [area production yield apy]{"entity": "dataset_name"} dataset?
+    - Is there a specific url of [extraction page]{"entity": "data_extraction_page"} for [cost of cultivation]{"entity": "dataset_name"}?
+    - Is there a specific [extraction page]{"entity": "data_extraction_page"} for [cost of cultivation coc]{"entity": "dataset_name"}?
+    - I am interested in knowing the link of [extraction page]{"entity": "data_extraction_page"} for [cultivation expenses]{"entity": "dataset_name"} dataset.
+    - Which [extraction page]{"entity": "data_extraction_page"} link were used for [fertiliser sales]{"entity": "dataset_name"} dataset?
+    - Please show me the link of [extraction page]{"entity": "data_extraction_page"} used for [sales of fertiliser]{"entity": "dataset_name"} datasets.
+    - Kindly give me a link of [extraction page]{"entity": "data_extraction_page"} for [sales of fertilisers]{"entity": "dataset_name"} dataset
+    - I need a link of [extraction page]{"entity": "data_extraction_page"} of [fertilizer sales]{"entity": "dataset_name"} dataset
+    - Facilitate the url of [extraction page]{"entity": "data_extraction_page"} for [food and fertiliser subsidy]{"entity": "dataset_name"} data
+    - What is the link of [extraction page]{"entity": "data_extraction_page"} for [subsidy for food and fertilisers]{"entity": "dataset_name"} data
+    - Provide me a url of [extraction page]{"entity": "data_extraction_page"} of the [food and fertilizer]{"entity": "dataset_name"} dataset
+    - give me link of [extraction page]{"entity": "data_extraction_page"} of [Food and Compost Subsidies]{"entity": "dataset_name"} dataset
+    - please share the url of data [extraction page]{"entity": "data_extraction_page"} of [input survey crop composite]{"entity": "dataset_name"} dataset
+    - i have a query can i get link of [extraction page]{"entity": "data_extraction_page"}
+    - can you share the link of [extraction page]{"entity": "data_extraction_page"}
+    - is there any url of [extraction page]{"entity": "data_extraction_page"}
+    - i want to visit the url of data [extraction page]{"entity": "data_extraction_page"}
+    - where can i get link of data [extraction page]{"entity": "data_extraction_page"}
+    - is there any way to get the url of [extraction page]{"entity": "data_extraction_page"} 
+    - Tell me way to get link of [extraction page]{"entity": "data_extraction_page"} 
+    - how can i get link of [extraction page]{"entity": "data_extraction_page"}
+    - can i get link of [extraction page]{"entity": "data_extraction_page"}
+    - How do i get url of data [extraction page]{"entity": "data_extraction_page"}
 
 
 # - intent: about_data_about_data

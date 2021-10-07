@@ -1,55 +1,5 @@
 version: "2.0"
 nlu:
-
-# - intent: faq-visualisation-b6/create-new-indicators #180
-#   examples: |
-#     - Procedure of creating a new indicator?
-#     - How can i made a new indicator?
-#     - steps of creating a new indicator/
-#     - How a indicator produce?
-#     - Machinism of creating a new indicator
-#     - ahmm can you pls tell me how can i cretae new indicators
-#     - aaa i wanna get some cool new indicators can i ?
-#     - in a project can i create new indicators
-#     - can we make our own indicators
-#     - can we make our own indi-cator
-#     - I am on IDP ? What's the most efficient way to create a new indicator?
-#     - while here What steps are involved in creating a new indicator?
-#     - can you tell How does one go about creating a new indicator?
-#     - i have a query How do I make a new indicator?
-#     - How do you go bout generating a new indicator?
-#     - wait i have question How do you make a new indicator?
-#     - best method for creating a new indi-cator?
-#     - How does a new indicator become created?
-#     - How should a new indicator be created? while on indian data portal
-#     - INDIA DATA PORTAL does it allow What is the process for making a new indicator?
-#     - What is the procedure for creating a new indicator?
-#     - What's the best way to make a new indicator?
-#     - What is the most efficient method for developing a new indicator?
-#     - What are the steps in making a new indicator?
-#     - What are the steps for creating a new indicator?
-#     - What is the process of creating a new indicator?
-#     - What's the best way to make a new indicator?
-#     - What are the processes to generating a new indicator?
-#     - process of creating new indicator
-#     - steps to follow in making of new inidactor
-#     - How do you make a new indicator?
-#     - What goes into the creation of a new indi-cator?
-#     - What is the best way to establish a new inidactor?
-#     - How do you create a new inidactor?
-#     - What is the procedure for creating a new indi-cator?
-#     - What's the best way to create a brand-new indicator?
-#     - What is the process for developing a new indi.?
-#     - What is the process for creating a new indi.?
-#     - What is the best way to make a new indi-cator?
-#     - What is the quickest way to make a new indi.?
-#     - What is the most effective method for creating a new indicator?
-#     - What's the most efficient way to make a new indiacator?
-#     - What is the most efficient way to create a new catorindi?
-#     - What's the best way to create a new indi?
-
-
-
 - intent: faq-visualisation-b6/why-create-new-indicator #181
   examples: |
     - What is the need for create a new indicator feature 
@@ -211,6 +161,7 @@ nlu:
     - Is it possible to construct a new indicator by combining two datasets?
     - Is it possible to combine two datasets to develop a new indicator?
     - Is it possible to combine two datasets to create a new indicator?
+    - can i create new indicator with 2 different datasets
     - Is it feasible to develop a new indicator by combining two datasets?
 
 
@@ -230,6 +181,12 @@ nlu:
     - Would it be feasible to make a three-dimensional charts?
     - How do I create a 3 dimensional graph
     - I want to create 3 dimentional graph
+    - how can i create 3 dimensional graph
+    - how can i create 3d graphs on this portal
+    - how can we create 3 dimensional visuals on INDIA data portal
+    - how can we create 3 dimensional visuals on indian data portal
+    - 3 dimensional graph how can we create it
+    - i wanna create 3 dimensional visulas can i ?
     - india data portal allow to create 3 dimentional graph
     - Is it possible to create 3 dimentional graph on IDP?
     - Am i able to create 3 dimentional graph?
@@ -936,6 +893,8 @@ nlu:
     - steps to change the font of the title.
     - switch the font of the title.
     - font size of the title is changed?
+    - procedure for changing fonts of title
+    - what is the process of changing titles
     - i want to change the font size of the title ,can i?
     - define the steps to change the font of the title.
     - ways to change the title's font ,how?
@@ -1001,6 +960,10 @@ nlu:
     - Is it possible to change the vis font style?
     - Is there a way to change the font style of the viz?
     - possible to alter the font style used in the vis?
+    - how am i supposed to be changing the font size?
+    - how can i change the font size?
+    - i want to change the font size how to do that?
+    - tell me how to change the font size
     - here Is it possible to change the font style of the visuals?
     - here on this portal Is it possible to alter the font style of the visuals?
     - here on this website Is it possible to alter the visuals font style?
@@ -1040,6 +1003,7 @@ nlu:
     - can i  conjure up my own mental picture?
     - Is it possible for me to generate a mental image on my own?
     - Is it feasible for me to create my own mental image?
+    - am i allowed to make my own visualizations.
 
 
 - intent: faq-visualisation-b6/how-generate-viz #212
@@ -1699,6 +1663,9 @@ nlu:
     - Is that really feasible to type in Local Language in IDP?
     - Do the India data portals allow me to enter data in my native language?
     - can i type in local lang here ?
+    - can we enter info using local langs on INdia data portal
+    - in local language how can i type?
+    - how am i supposed to type in local language
     - Do IDP give me a option to type in mother Language
     - Do IDP give me a option to type in mother tongue
     - Do IDP give me a option to type in native Language
@@ -1844,6 +1811,147 @@ nlu:
     - Can I take other people's visualisations from the Gallery and use them directly?
     - Is it feasible for me to use directly from the Gallery visualisations created by others?
 
-    
+- intent: faq-visualisation-b6/delay-bw-switching-languages #385
+  examples: |
+    - Why are we experiencing a delay switching between languages?
+    - Why are we facing a delay while shifting b/w languages?
+    - Why are we encountering a delay while selecting languages?
+    - Why is there a delay when switching between languages?
+    - There is a delay while switching between languages  
+    - i am facing delay while switching between languages on idp
+    - on the portal when i am switching between languages i am facing some delay
+    - why there is delay when i try to change languages here
+    - is facing delay normal when changing language on this portal
+    - i am encountering delay when i change language on idp why is this happening
+    - is getting delay while changing language on idp part of the process
+    - on idp when i try to change language i am facing delay
+    - why there is a hold up when i change languages on idp
+    - is facing hold up normal when we change languages on idp
+    - why am i facing a hold up after i change language on this portal  
 
+- intent: faq-visualisation-b6/sort-ascending-descending-order #438
+  examples: |
+    - how am i supposed to sort the bars of graph in ascending and descending order?
+    - how to sort the bars of graph in ascending order?
+    - how bar-graph can be sorted in descending order?
+    - guide me to sort the bar-graph in ascending and descending order
+    - help me with sorting the bar graphs in perticular order
+    - What is the best way to arrange the bar graphs in ascending order?
+    - How can the bars be sorted ascending?
+    - Please assist me with arranging the bars in ascending and descending order.
+    - Kindly help me with arranging the bars in ascending and descending order.
+    - Kindly help me with arranging the bars in ascending order.
+    - can you help me with ordering the bars in ascending order.
+    - Could you kindly help me in organizing the bars in ascending order?
+    - Kindly guide me with arranging the bars in ascending and descending sequence.
+    - can you help me with placing the bars in descending sequence.
+    - on this website once i made the bar graphs can i sort it
     
+- intent: faq-visualisation-b6/can-visual-using-categorical-indicator-only #440
+  examples: |
+    - can i only use categorical indicators for visualisations?
+    - will idp allows me to only use the categorical indicators for making visuals?
+    - for making visualisations can i specifically use categorical indicators?
+    - is it possible to visulaise categorical indicators?
+    - only categorical indicators be visualized?
+    - can i visualize using categorical indicators only?
+    - For visualisations, can I only utilise categorical indicators?
+    - Is it possible to create visualisations using simply categorical indicators?
+    - while on this portal Can I only use categorical markers in my visualisations?
+    - on indian data portal Can I only use categorical indicators in my visualisations?
+    - Can I only use categorical indicators in my visual representations?
+    - Is it possible to visualise simply categorical indicators?
+    - on this website will i get opportunity  to visualise simply categorical indicators?
+    - is it possible to visualize only by using categorical indicators
+    - on this portal, is there any way to use categorical indicators in my visualisation 
+    - can i use categorical indicators to make visualisation
+
+- intent: faq-visualisation-b6/can-i-customize-visulaisation #441
+  examples: |
+    - can we customize the visuals
+    - is it possible to customise the plots
+    - will it be feasible to customize the visualizations?
+    - customisation of graphs is permitted?
+    - can we customize visuals on the portal?
+    - can plots be customized?
+    - can visuals be customised?
+    - how can visualisation be customized?
+    - tell me how can graphics be customized?
+    - how can charts be customized on this portal
+    - let me know how can i make custom charts on idp
+    - is it possible to create custom plots on idp
+    - can charts be customized on this portal
+    - i want to create custom plots on idp is it possible
+
+
+- intent: faq-visualisation-b6/download-the-graphics #447
+  examples: |
+    - can we download the graphics?
+    - how can i download the chart?
+    - how am i supposed to download a chart
+    - can i download the charts?
+    - tell me how a chart can be downloaded
+    - how can i take the visual offline
+    - how can i download a visualisation?
+    - is it possible to download graphics
+    - can graphs be downloaded from idp
+    - will i be able to downlaod graphics
+    - can i download the charts i have created
+    - the visuals i have created on idp are they downloadable
+    - i want to know is it possible to download the visualizations
+    - how am i supposed to download the graphs?
+    - how to download a graph?
+    - how to download a chart?
+    - how to download a visual?
+    - how to download a visulaisation?
+    - how to download a diagram?
+    - how to save a graph?
+    - how a visual can be saved?
+    - how are we supposed to take the visualisation offline
+
+- intent: faq-visualisation-b6/what-select-from-chart-builder-dialogue-box #448
+  examples: |
+    - what i have to select from chart builder dialogue box?
+    - from chart builder dialogue box what is to be selected?
+    - guide me what i have to select from chart builder dialogue box
+    - what am i supposed to select from chart builder dialogue box?
+    - help me what i have to select from chart builder dialogue box
+    - in chart builder dialogue box what can i select
+    - tell me what can i select from chart builder dialogue box
+    - what can i select in chart builder dialogue box
+    - i would appreciate if you let me know what ami i supposed to select in the chart builder dialogue box
+    - is there anuthing to select in chart builder dialogue box
+    - help me to select from chart builder dialogue box
+    - assist me to selecting from chart builder dialogue box
+
+- intent: faq-visualisation-b6/select-from-both-options-chart-builder #449
+  examples: |
+    - There are two columns in chart builder do i have to select from both ?
+    - is it necessary to select from both the columns of chart builder?
+    - Do I have to choose between the two columns in the chart builder?
+    - it is mandatory to select from both the columns of chart builder?
+    - its mandatory to choose among both the columns of chart buillder?
+    - am i required to choose from both the columns of chart builder
+    - can i choose from only one column in chart builder out of two
+    - are we constraied to choose from both columns in the chart builder
+    - i am using chart builder on idp is it necessary to choose from both the columns
+    - if i choose only on column from the chart builder will it result in some error
+    - is it mendatory to select both option of column from chart builder
+
+- intent: faq-visualisation-b6/sharing-data-possible #451
+  examples: |
+    - is sharing data possible here
+    - Is it possible to share data here?
+    - Is it feasible to share data here?
+    - can we share data on the platform?
+    - does this platform allow to share the data?
+    - is it possible to share data on this portal
+    - is sharing data is feasible for me on this portal
+    - could you help me to share dat on portal
+    - does this portal gives us permission to share data
+    - on idp can we share data 
+    - is this portal allow us to share data 
+    - how can i share data on this portal
+    - can we share data here
+    - could you tell me the way to share data on this portal
+    - it would be appreciate if you share me the data

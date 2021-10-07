@@ -75,7 +75,7 @@ responses:
   - text: Sankey diagrams show the flow of resources. The key to reading and interpreting Sankey Diagrams is remembering that the width is proportional to the quantity represented.
 
   utter_faq-visualisation-b6/where-give-chart-title: #207
-  - text: Right next to the chart name displaye on the centre top of your visualisation space, there is a small pencil icon. Click on this icon to change the title of your chart. 
+  - text: Right next to the chart name display on the centre top of your visualisation space, there is a small pencil icon. Click on this icon to change the title of your chart. 
 
   utter_faq-visualisation-b6/send-visualisation-on-email-id: #208
   - text: You can copy the shareable link by clicking on the share icon on the top right corner of your visualisation space. 
@@ -150,6 +150,23 @@ responses:
 
   utter_faq-visualisation-b6/can-viz-others-gallery-directly: #234
   - text: Visualizations shared by other users in the Graphics Gallery can be re-used by other users
+  utter_faq-visualisation-b6/delay-bw-switching-languages: #385
+  - text: This could be a technical glitch.Kindly refresh your page and try again
+  utter_faq-visualisation-b6/sort-ascending-descending-order: #438
+  - text: In the top right corner you will see a button named sort. Click on sort and there will be options like ascending or descending. Choose your desired choice.
+  utter_faq-visualisation-b6/can-visual-using-categorical-indicator-only: #440
+  - text: As of now we dont have any categorical indicators.
+  utter_faq-visualisation-b6/can-i-customize-visulaisation: #441
+  - text: You can customise visualizations by changing the axis of the chart, sorting the variables of the chart as per your choice and also changing the colour of the chart.
+  utter_faq-visualisation-b6/download-the-graphics: #447
+  - text: On top right corner of the visualisation, there is a file icon where you can enable to save visualisation as png and svg.
+  utter_faq-visualisation-b6/what-select-from-chart-builder-dialogue-box: #448
+  - text: In chart builder box you have to select the details of the analysis that you want to see.
+  utter_faq-visualisation-b6/select-from-both-options-chart-builder: #449
+  - text: In chart builder box you have to select the details of the analysis that you want to see. You can select any of the columns or you can select both.
+  utter_faq-visualisation-b6/sharing-data-possible: #451
+  - text: You can download the data from the file icon in the top right corner of your screen
+
 actions: []
 forms: {}
 e2e_actions: []

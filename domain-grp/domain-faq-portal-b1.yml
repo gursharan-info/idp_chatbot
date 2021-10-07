@@ -83,4 +83,37 @@ responses:
   - text: As of now IDP doesn't have this feature
   utter_faq-portal-b1/add-custom-indic-datacard: #431
   - text: On the top right corner of the indicator popup you will see create new indicator button. Click it and then you will get another popup and there is a dropdown named dataset and after that there is a section to select the indicators. After selecting the indicators use the mathematical icons to define the relationship between the selected indicators. Then name the new indicator and name its unit and click on create indicator.
-
+  utter_faq-portal-b1/Why-India-data-portal-create:  #313
+  - text: The “India Data Portal” was created to provide a one-stop open-access portal for journalists to access, interact with, and visualize information, data and knowledge related to agriculture and financial inclusion, while also aiding other beneficiaries – researchers, students, policy makers, administrators, NGOs, and entrepreneurs. To know more, visit this link- https://indiadataportal.com/about?language=English&location=India
+  utter_faq-portal-b1/portals-objective: #359
+  - text: The “India Data Portal” is a one-stop open-access portal for journalists to access, interact with, and visualize information, data and knowledge related to agriculture and financial inclusion, while also aiding other beneficiaries – researchers, students, policy makers, administrators, NGOs, and entrepreneurs.
+  utter_faq-portal-b1/comparison-among-states-and-among-districts-available:
+  - text: In the chart builder box there are options like states and districts. Kindly select your desired option to view the comparison
+  utter_faq-portal-b1/any-functionality-present-on-portal-via-which-we-see-metadata: #380
+  - text: Click on the i button besides the dataset name. It will open the about dataset page where you can find the metadata in 6 avaliable languages
+  utter_faq-portal-b1/time-in-which-expect-idp-provide-data-regional-lang: #381
+  - text: IDP is currently available in 6 different languages.If you want any other languages kindly write to us at idp@isb.edu
+  utter_faq-portal-b1/time-in-which-expect-idp-provide-data-regional-lang: #382
+  - text: IDP is currently available in 6 different languages.If you want any other languages kindly write to us at idp@isb.edu
+  utter_faq-portal-b1/how-many-units-supported-in-indicator-selection-tab: #391
+  - text: You can select any units of your choice for the new indicators
+  utter_faq-portal-b1/list-of-units-supported-by-indicators: #392
+  - text: You can select any units by providing the relationship between the existing indicators in the calculator.
+  utter_faq-portal-b1/list-of-indicator-names-related-to-diff-datasets: #393
+  - text: You can select any units by providing the relationship between the existing indicators in the calculator.
+  utter_faq-portal-b1/same-indicator-with-diff-detail: #401
+  - text: Yes you can create the two indicators with same name but with different details
+  utter_faq-portal-b1/illustrations-in-oriya: #427
+  - text: In the top right corner of your screen you will find the option to change your language. Just select your desired language and you will get the illustrations written in that language
+  utter_faq-portal-b1/illustrations-in-telugu: #428
+  - text: In the top right corner of your screen you will find the option to change your language. Just select your desired language and you will get the illustrations written in that language
+  utter_faq-portal-b1/where-can-i-found-illustrations: #429
+  - text: You can create the graphs in the visualization page. After saving it in My graphics you can find your charts in the my graphics page.
+  utter_faq-portal-b1/translate-column-names-to-other-language: #431
+  - text: Yes we can translate the column names of the datasets to your desired language.
+  utter_faq-portal-b1/after-uploading-will-data-be-there-or-vanish-afterleaving: #444
+  - text: As of now there is no option to upload any user's dataset in the portal
+  utter_faq-portal-b1/data-available-indian-territory: #445
+  - text: India Data Portal caters to India region only.
+  # utter_faq-portal-b1/how-often-data-updated: #452
+  # - text: The data is updated on quarterly basis on IDP and daily for HFI indicators.

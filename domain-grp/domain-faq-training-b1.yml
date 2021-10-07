@@ -17,5 +17,7 @@ responses:
   - text: Workshops are arranged frequently. You can see all of the updates in our social media handles and our website.
   utter_faq-train-b1/onlin-train-curriculum: #417
   - text: In IDP we have various online training curriculam like workshops, fellowships etc. Kindly write to us at idp@isb.edu to know more.
-  
-
+  utter_faq-train-b1/cost-of-idp-training: #357
+  - text: Yes, all the training provided by India Data Portal is free of cost
+  utter_faq-train-b1/schedule-for-phy-training:  #439
+  - text: Under the training tab you will the schedule of our workshops and training programs.

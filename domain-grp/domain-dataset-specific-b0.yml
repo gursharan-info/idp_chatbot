@@ -26,6 +26,15 @@ intents:
 - about_data_data_extraction_page:
     use_entities: true
 
+- about_data_date_of_retrievals:
+    use_entities: true
+
+- about_data_source_name_det:
+    use_entities: true
+
+- about_data_domain_name:
+    use_entities: true
+
 # - about_data_about_data:
 #     use_entities: true
 
@@ -41,6 +50,7 @@ entities:
 - data_extraction_page
 - date_of_retrievals
 - source_name_det
+- domain_name
 # - about_data
 
 
@@ -60,6 +70,9 @@ actions:
 - action_about_data_last_updated_date
 - action_about_data_source_link
 - action_about_data_data_extraction_page
+- action_about_data_date_of_retrievals
+- action_about_data_source_name_det
+- action_about_data_domain_name
 # - action_about_data_about_data
 
 forms: {}

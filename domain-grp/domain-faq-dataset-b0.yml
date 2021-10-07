@@ -89,7 +89,5 @@ responses:
   utter_faq-dataset-b0/any-industry-data-question: #314
   - text: This data is available on the India Pulse section of the India Data Portal at https://indiadataportal.com/IndiaPulse
 
-  utter_faq-dataset-b0/Why-India-data-portal-create:  #316
-  - text: The “India Data Portal” was created to provide a one-stop open-access portal for journalists to access, interact with, and visualize information, data and knowledge related to agriculture and financial inclusion, while also aiding other beneficiaries – researchers, students, policy makers, administrators, NGOs, and entrepreneurs. To know more, visit this link- https://indiadataportal.com/about?language=English&location=India
-
+  
 

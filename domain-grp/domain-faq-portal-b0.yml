@@ -11,10 +11,11 @@ entities: []
 slots: {}
 responses:
   utter_faq-portal-b0/about_idp: #2
-  - text: IDP is Your one-stop destination for open-access data on agriculture, rural development and financial inclusion in India.The portal contains a data repository with processed and documented public datasets on related themes. For agriculture, these include crops, water, livestock, public investments, etc at levels such as districts, tehsils, and villages with a largely rural focus and socio-economic characteristics in both rural and urban areas at granular spatial scales like district, town and ward spanning the entire country.
+  - text: The India Data Portal is a one-stop open-access portal for journalists to access, interact with, and visualize information, data and knowledge related to agriculture and financial inclusion, while also aiding other beneficiaries – researchers, students, policy makers, administrators, NGOs, and entrepreneurs. To know more, [visit this link](https://indiadataportal.com/about?language=English&location=India)
   
   utter_faq-portal-b0/why_idp: #3
-  - text: IDP is Your one-stop destination for open-access data on agriculture, rural development and financial inclusion in India.The portal contains a data repository with processed and documented public datasets on related themes. For agriculture, these include crops, water, livestock, public investments, etc at levels such as districts, tehsils, and villages with a largely rural focus and socio-economic characteristics in both rural and urban areas at granular spatial scales like district, town and ward spanning the entire country.
+  - text: The India Data Portal is a one-stop open-access portal for journalists to access, interact with, and visualize information, data and knowledge related to agriculture and financial inclusion, while also aiding other beneficiaries – researchers, students, policy makers, administrators, NGOs, and entrepreneurs. To know more, [visit this link](https://indiadataportal.com/about?language=English&location=India)
+  
   utter_faq-portal-b0/types-visualisation-portal: #5
   - text: More than 30 types of visualizations are available on India Data portal, which includes bar chart, pie chart, line chart, histogram, tree map, etc. 
   utter_faq-portal-b0/frequency-data-upload: #10
@@ -50,8 +51,6 @@ responses:
   utter_faq-portal-b0/what-is-indicator: # 33
   - text: Indicator is a variable whose value is of interest to the user of the portal
 
-  utter_faq-portal-b0/compare-datasets-on-idp: #34
-  - text: Go to the visualize page, and on the left hand side, you will see the Add Dataset option. You can add upto 2 datasets one by one for comparison
   utter_faq-portal-b0/count-of-datasets: #4
   - text: There are more than 35+ dataset available at IDP, across various sectors like agriculture, rural development, soci-economic, financial inclusion, economic activity, etc.
  
@@ -96,7 +95,7 @@ responses:
   utter_faq-portal-b0/data-age-how-old: #331
   - text: Various historic datasets are available on the portal, please visit the dataset section of the portal for details
   utter_faq-portal-b0/data-update-mail-alerts:  #332
-  - text: Until now, we do not have that feature. Thanks for the feedback, well include this in the product roadmap.
+  - text: Until now, we do not have that feature. Thanks for the feedback, we'll include this in the product roadmap.
   utter_faq-portal-b0/feature-update-mail-alerts: #333
   - text: Until now, we do not have that feature. Thanks for the feedback, we'll include this in the product roadmap.
   utter_faq-portal-b0/hindi-illustrations:  #335

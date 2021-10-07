@@ -318,37 +318,6 @@ nlu:
     - No information is mentioned about the numbers that appear inside braces on the visual. What do they signify?
 
 
-- intent: faq-visualisation-b5/Do-have-select-filters #154
-  examples: |
-    - Do i really have to select filters ?
-    - Is it necessary to select filters ?
-    - Is it compulsory to select filters ?
-    - Is it mandatory to select filters ?
-    - Do i have to select filter for visulisation
-    - filters selection help
-    - help filter selection
-    - trouble filter select
-    - Is it mandatory that I choose filters?
-    - Is it required that I select filters?
-    - Is it necessary for me to choose filters?
-    - Is it obligatory for me to select filters?
-    - Is it necessary for me to pick my filters?
-    - Do I have to choose filters?
-    - Is it required for me to choose filters?
-    - Is it necessary for me to select filters?
-    - Is it required that I use filters?
-    - Is there a need for me to choose filters?
-    - Is it required that I choose filters?
-    - Is it mandatory for me to use filters?
-    - Is using filters a requirement?
-    - Is it obligatory for me to choose filters?
-    - Is it required of me to select filters?
-    - Is it necessary for me to pick filters?
-    - Is it necessary for me to use filters?
-    - Is it necessary that I select filters?
-    - Is it mandatory for me to select filters?
-
-
 - intent: faq-visualisation-b5/What-JumpStartIndia-ISB
   examples: |
     - What is the meaning of jumpStartIndia@IDP ?
@@ -368,7 +337,10 @@ nlu:
     - Is there any way to zoom on the chart ?
     - What is the procedure to zoom into the chart ?
     - Shortcut for zooming into the chart
-    - chart zooming
+    - chart zooming 
+    - i have no idea how to zoom into chart
+    - no clues how can i zoom in into this chart ?
+    - zooming into chart how can i ?
     - how zooming in chart
     - Is there a way to make the graph bigger?
     - Is the graph zoomable?
@@ -453,6 +425,7 @@ nlu:
     - How can I visualize two different datasets?
     - How can I combine two datasets into a single visualization?
     - How do I visualize two different datasets?
+    - i want to visualise 2 diff datasets together, but how to select 2 different datasets
     - How can I combine two different datasets for visualization?
     - How do I combine two different datasets for visualization?
     - What's the best way to combine two different datasets into a single visualization?
@@ -1080,9 +1053,9 @@ nlu:
     - i wanna create personal indicator withh assigned units?
     - my research needs personal indicator withh assigned units can i make?
     - my jornalism report needs personal indicator withh assigned units can i make?
-    - Is it possible for me to create a custom indicator with my own units?
-    - Is it possible for me to create my own indicator with assigned units?
-    - Is it possible for me to make a unit indicator of my own design?
+    - Is it feasible for me to create a custom indicator with my own units?
+    - can create my own indicator with assigned units?
+    - is there any possibility for me to make a unit indicator of my own design?
     - Is it possible for me to create my own indicator, complete with units?
     - Is it possible for me to create my own unit-based indicator?
     - Is it possible for me to make my own indicator with units assigned?
@@ -1090,14 +1063,14 @@ nlu:
     - Is it possible for me to create my own indicator with units assigned?
     - Is it possible for me to create an indicator that is unit-based?
     - Is it possible for me to create my own indicator with units?
-    - Is it possible for me to create a unit-based indicator?
+    - possible for me to create a unit-based indicator?
     - Is it possible for me to create an indicator that is based on units?
-    - Is it possible for me to create my own indicator that includes units?
-    - Is it possible for me to make an indicator that is based on units?
+    - can customised indicators be created with prefered units?
+    - could it be possible to do indicators customization using preffered units?
     - Is it possible for me to make my own unit-based indicator?
     - Is it possible for me to create a indicator that is based on units?
     - Is it possible for me to make my own indicator that is based on units?
-    - Is it possible for me to create a unit-based indicator on my own?
+    - indicators customisation can be done with preffered units is that possible ?
     - Is it possible for me to make an indicator that is based on a unit?
     - Is it possible for me to make my own indicator with units?
     - Is it possible for me to create a custom indicator with units?

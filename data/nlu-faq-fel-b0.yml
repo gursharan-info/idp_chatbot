@@ -123,7 +123,7 @@ nlu:
     - Is the fellowship for a set number of months?
     - How long is the fellowship?
 
-- intent: faq-fel-b0/cost-of-idp-training
+- intent: faq-fel-b0/cost-of-idp-training #354
   examples: |
     - Does training provided by idp is free of cost?
     - training given by idp is free?

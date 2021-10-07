@@ -19,7 +19,7 @@ responses:
   - text: On the top right corner tab you will find training. After clicking on training you will find two subtabs- workshop & events and online training. Click on online training to find tutorial videos.
   utter_faq-train-b0/help-to-see-graph: #271
   - text: On the top right corner tab you will find training. After clicking on training you will find two subtabs- workshop & events and online training. Click on online training to find tutorial videos.
-  utter_faq-train-b0/need-help-understand-portal: #272
+  utter_faq-train-b0/need-help-understand-portal: #269
   - text: On the top right corner tab you will find training. After clicking on training you will find two subtabs- workshop & events and online training. Click on online training to find tutorial videos.
   utter_faq-train-b0/next-training-when: #274
   - text: On the top right corner tab you will find training. After clicking on training you will find two subtabs- workshop & events and online training. Click on workshop & events to find next training

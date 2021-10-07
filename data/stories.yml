@@ -107,6 +107,7 @@ stories:
 
 #########dataset specific #############
 
+
 # story 1
 
 - story: happy_path-datset-specifc
@@ -120,13 +121,17 @@ stories:
   - action : action_viz_faq
   - intent: about_data_dataset_name
     entities:
-      - dataset_name: "fertiliser_sales"
+      - dataset_name: "fertiliser sales"
   - action: action_about_data_dataset_name
   - slot_was_set:
     - dataset_name: "fertiliser_sales"
   - intent: about_data_granularity
+    entities:
+      - granularity: "granular"
   - action: action_about_data_granularity
   - intent: about_data_source_name
+    entities:
+      - source_name : "source name"
   - action: action_about_data_source_name
   - intent: feedback-form
   - action: action_feedback
@@ -143,14 +148,14 @@ stories:
   - action : action_viz_faq
   - intent: about_data_dataset_name
     entities:
-      - dataset_name: "agcensus_crop"
+      - dataset_name: "agricultural census 2010-11 crop"
   - action: action_about_data_dataset_name
   - slot_was_set:
     - dataset_name: "agcensus_crop"
   - intent: about_data_granularity
+    entities:
+      - granularity: "granularity level"
   - action: action_about_data_granularity
-  - intent: about_data_source_name
-  - action: action_about_data_source_name
   - intent: feedback-form
   - action: action_feedback
 
@@ -167,17 +172,21 @@ stories:
   - action: action_viz_faq
   - intent: about_data_dataset_name
     entities:
-      - dataset_name: "fertiliser sales"
+      - dataset_name: "sales of fertiliser"
   - action: action_about_data_dataset_name
   - slot_was_set:
     - dataset_name: "fertiliser_sales"
   - intent: about_data_source_name
+    entities:
+      - source_name : "source name"
   - action: action_about_data_source_name  
   - intent: faq-fel-b0
   - action : action_viz_faq
+  - slot_was_set:
+    -  intent_button : "faq-fel"
   - intent: feedback-form
   - action: action_feedback
-
+  
 - story: happy_path-faq1+dataset-specific1+feedback1
   steps:
   - intent: greet
@@ -186,8 +195,12 @@ stories:
     - intent_button : "faq-visualisation"
   - intent: faq-fel-b0
   - action : action_viz_faq
+  - slot_was_set:
+    - intent_button : "faq-fel"
   - intent: faq-train-b0
   - action: action_viz_faq
+  - slot_was_set:
+    - intent_button : "faq-train"
   - intent: about_data_dataset_name
     entities:
       - dataset_name: "soil"
@@ -200,6 +213,8 @@ stories:
   - action: action_about_data_methodology
   - intent: faq-visualisation-b1
   - action : action_viz_faq
+  - slot_was_set:
+    - intent_button : "faq-visualisation"
   - intent: feedback-form
   - action: action_feedback
 
@@ -225,5 +240,394 @@ stories:
   - action: action_about_data_last_updated_date
   - intent: faq-visualisation-b1
   - action : action_viz_faq
+  - slot_was_set:
+    - intent_button : "faq-visualisation"
+  - intent: feedback-form
+  - action: action_feedback
+
+# sep 10
+- story: dataset-specific
+  steps:
+  - intent: about_data_dataset_name
+    entities:
+      - dataset_name: "debt and investment data by nsso"
+  - action: action_about_data_dataset_name
+  - slot_was_set:
+    - dataset_name: "debt_invest"
+  - intent: about_data_source_name
+    entities: 
+      - source_name: "source name"
+  - action: action_about_data_source_name
+  - intent: about_data_methodology
+    entities:
+      - methodology : "methodology"
+  - action: action_about_data_methodology
+
+
+# sep 10 
+- story: happy_path-faq+dataset-specific+feedback
+  steps:
+  - intent: greet
+  - action: action_slot_setter
+  - slot_was_set:
+    - intent_button : "faq-train"
+  - intent: faq-train-b0
+  - action: action_viz_faq
+  - intent: about_data_dataset_name
+    entities:
+      - dataset_name: "nrega"
+  - action: action_about_data_dataset_name
+  - slot_was_set:
+    - dataset_name: "nrega"
+  - intent: about_data_frequency
+    entities:
+      - frequency: "frequency"
+  - action: action_about_data_frequency
+  - intent: about_data_methodology
+    entities:
+      - methodology : "methodology"
+  - action: action_about_data_methodology
+
+  # sep 10
+- story: happy_path-faq1+dataset-specific
+  steps:
+  - intent: greet
+  - action: action_slot_setter
+  - slot_was_set:
+    - intent_button : "faq-fel"
+  - intent: faq-fel-b0
+  - action : action_viz_faq
+  - intent: faq-train-b0
+  - action: action_viz_faq
+  - slot_was_set:
+    - intent_button : "faq-train"
+  - intent: about_data_dataset_name
+    entities:
+      - dataset_name: "subsidy"
+  - action: action_about_data_dataset_name
+  - slot_was_set:
+    - dataset_name: "subsidy"
+  - intent: about_data_methodology
+    entities:
+      - methodology : "methodology"
+  - action: action_about_data_methodology
+  - intent: about_data_last_updated_date
+    entities:
+      - last_updated_date: "last updated"
+  - action: action_about_data_last_updated_date
+
+
+  # sep 10
+- story: happy_path-faq1+dataset-specific+feedback1
+  steps:
+  - intent: greet
+  - action: action_slot_setter
+  - slot_was_set:
+    - intent_button : "faq-dataset"
+  - intent: faq-dataset-b0
+  - action : action_viz_faq
+  - intent: faq-train-b0
+  - action: action_viz_faq
+  - slot_was_set:
+    - intent_button : "faq-train"
+  - intent: about_data_dataset_name
+    entities:
+      - dataset_name: "soil health card - nutrient status"
+  - action: action_about_data_dataset_name
+  - slot_was_set:
+    - dataset_name: "shc_nutrient"
+  - intent: about_data_source_link
+    entities:
+      - source_link : "source link"
+  - action: action_about_data_source_link
+  - intent: about_data_last_updated_date
+    entities:
+      - last_updated_date: "last updated"
+  - action: action_about_data_last_updated_date
+  - intent: feedback-form
+  - action: action_feedback
+  
+
+  
+#sept17
+- story: dataset-specific+dataset-specific+feedback1
+  steps:
+  - intent: about_data_dataset_name
+    entities:
+      - dataset_name: "input survey crop composite"
+  - action: action_about_data_dataset_name
+  - slot_was_set:
+    - dataset_name: "input_composite"
+  - intent: about_data_source_name_det
+    entities:
+      - source_name_det : "detailed source name"
+  - action: action_about_data_source_name_det
+  - intent: about_data_last_updated_date
+    entities:
+      - last_updated_date: "last updated"
+  - action: action_about_data_last_updated_date
+  - intent: feedback-form
+  - action: action_feedback
+
+
+
+  # sep 17
+- story: happy_path1-faq1+dataset-specific
+  steps:
+  - intent: greet
+  - action: action_slot_setter
+  - slot_was_set:
+    - intent_button : "faq-visualisation"
+  - intent: faq-visualisation-b2
+  - action : action_viz_faq
+  - intent: faq-train-b0
+  - action: action_viz_faq
+  - slot_was_set:
+    - intent_button : "faq-train"
+  - intent: about_data_dataset_name
+    entities:
+      - dataset_name: "nfsm"
+  - action: action_about_data_dataset_name
+  - slot_was_set:
+    - dataset_name: "nfsm"
+  - intent: about_data_data_extraction_page
+    entities:
+      - data_extraction_page : "extraction page"
+  - action: action_about_data_data_extraction_page
+  - intent: about_data_date_of_retrievals
+    entities:
+      - date_of_retrievals: "retrieval date"
+  - action: action_about_data_date_of_retrievals
+
+  # sep 20
+- story: happy_path1-faq1+dataset-specific2
+  steps:
+  - intent: greet
+  - action: action_slot_setter
+  - slot_was_set:
+    - intent_button : "faq-visualisation"
+  - intent: faq-visualisation-b3
+  - action : action_viz_faq
+  - intent: faq-train-b0
+  - action: action_viz_faq
+  - slot_was_set:
+    - intent_button : "faq-train"
+  - intent: about_data_dataset_name
+    entities:
+      - dataset_name: "area production statistics"
+  - action: action_about_data_dataset_name
+  - slot_was_set:
+    - dataset_name: "nhb"
+  - intent: about_data_date_of_retrievals
+    entities:
+      - date_of_retrievals : "date of retrieval"
+  - action: action_about_data_date_of_retrievals
+  - intent: about_data_last_updated_date
+    entities:
+      - last_updated_date: "last updation"
+  - action: action_about_data_last_updated_date
+
+  # sep 20
+- story: happy_path1-faq1+dataset-specific3
+  steps:
+  - intent: greet
+  - action: action_slot_setter
+  - slot_was_set:
+    - intent_button : "faq-visualisation"
+  - intent: faq-visualisation-b4
+  - action : action_viz_faq
+
+  - intent: about_data_dataset_name
+    entities:
+      - dataset_name: "nrlm self help groups"
+  - action: action_about_data_dataset_name
+  - slot_was_set:
+    - dataset_name: "nrlm"
+  - intent: about_data_date_of_retrievals
+    entities:
+      - date_of_retrievals : "date of retrieval"
+  - action: action_about_data_date_of_retrievals
+  - intent: faq-train-b0
+  - action: action_viz_faq
+  - slot_was_set:
+    - intent_button : "faq-train"
+  - intent: about_data_last_updated_date
+    entities:
+      - last_updated_date: "last updation"
+  - action: action_about_data_last_updated_date
+
+
+    # sep 20
+- story: happy_path1-faq1+dataset-specific4+feedback
+  steps:
+  - intent: greet
+  - action: action_slot_setter
+  - slot_was_set:
+    - intent_button : "faq-visualisation"
+  - intent: faq-visualisation-b5
+  - action : action_viz_faq
+
+  - intent: about_data_dataset_name
+    entities:
+      - dataset_name: "public distribution system"
+  - action: action_about_data_dataset_name
+  - slot_was_set:
+    - dataset_name: "pds"
+  - intent: about_data_source_name
+    entities:
+      - source_name : "source name"
+  - action: action_about_data_source_name
+  - intent: faq-train-b0
+  - action: action_viz_faq
+  - slot_was_set:
+    - intent_button : "faq-train"
+  - intent: about_data_last_updated_date
+    entities:
+      - last_updated_date: "last updation"
+  - action: action_about_data_last_updated_date
+  - intent: feedback-form
+  - action: action_feedback
+
+
+  # sep 20
+- story: happy_path1-faq1+dataset-specific+dataset-specific+dataset-specific+feedback2
+  steps:
+  - intent: greet
+  - action: action_slot_setter
+  - slot_was_set:
+    - intent_button : "faq-dataset"
+  - intent: faq-dataset-b1
+  - action: action_viz_faq
+
+  - intent: about_data_dataset_name
+    entities:
+      - dataset_name: "socio economic caste census"
+  - action: action_about_data_dataset_name
+  - slot_was_set:
+    - dataset_name: "secc"
+  - intent: about_data_source_name
+    entities:
+      - source_name : "source name"
+  - action: action_about_data_source_name
+  - intent: faq-train-b0
+  - action: action_viz_faq
+  - slot_was_set:
+    - intent_button : "faq-train"
+  - intent: about_data_methodology
+    entities:
+      - methodology: "methods"
+  - action: action_about_data_methodology
+  - intent: about_data_frequency
+    entities:
+      - frequency: "frequently"
+  - action: action_about_data_frequency
+  - intent: about_data_source_link
+    entities:
+      - source_link: "link to source"
+  - action: action_about_data_source_link
+  - intent: feedback-form
+  - action: action_feedback
+
+
+
+  #sept20
+- story: dataset-specificwith_2_entities+dataset-specific+feedback1
+  steps:
+  - intent: about_data_date_of_retrievals
+    entities:
+      - dataset_name: "input survey crop composite"
+      - date_of_retrievals: "retrieved"
+  - action: action_about_data_date_of_retrievals
+  - slot_was_set:
+    - dataset_name: "input_composite"
+  - intent: about_data_source_name_det
+    entities:
+      - source_name_det : "detailed source name"
+  - action: action_about_data_source_name_det
+  - intent: about_data_last_updated_date
+    entities:
+      - last_updated_date: "last updated"
+  - action: action_about_data_last_updated_date
+  - intent: feedback-form
+  - action: action_feedback
+
+    #sept20
+- story: dataset-specificwith_2_entities+dataset-specific
+  steps:
+  - intent: about_data_data_extraction_page
+    entities:
+      - dataset_name: "stock of foodgrains"
+      - data_extraction_page: "extraction page"
+  - action: action_about_data_data_extraction_page
+  - slot_was_set:
+    - dataset_name: "stock"
+  - intent: about_data_last_updated_date
+    entities:
+      - last_updated_date: "last updated"
+  - action: action_about_data_last_updated_date
+  - intent: about_data_source_name_det
+    entities:
+      - source_name_det : "detailed source name"
+  - action: action_about_data_source_name_det
+
+
+  #sept20
+- story: dataset-specificwith_2_entities+dataset-specific2
+  steps:
+  - intent: about_data_source_link
+    entities:
+      - dataset_name: "crop insurance pradhan mantri fasal bima yojana "
+      - source_link: "source url"
+  - action: action_about_data_source_link
+  - slot_was_set:
+    - dataset_name: "pmfby"
+  - intent: about_data_last_updated_date
+    entities:
+      - last_updated_date: "last updated"
+  - action: action_about_data_last_updated_date
+  - intent: about_data_source_name
+    entities:
+      - source_name : "source name"
+  - action: action_about_data_source_name
+
+
+    #oct1
+- story: dataset-specificwith_2_entities+dataset-specific3
+  steps:
+  - intent: about_data_source_link
+    entities:
+      - dataset_name: "crop insurance pradhan mantri fasal bima yojana "
+      - source_link: "source url"
+  - action: action_about_data_source_link
+  - slot_was_set:
+    - dataset_name: "pmfby"
+  - intent: about_data_domain_name
+    entities:
+      - domain_name: "domain name"
+  - action: action_about_data_domain_name
+  - intent: about_data_source_name
+    entities:
+      - source_name : "source name"
+  - action: action_about_data_source_name
+
+
+  #oct1
+- story: dataset-specificwith_2_entities+dataset-specific+feedback5
+  steps:
+  - intent: about_data_domain_name
+    entities:
+      - dataset_name: "input survey crop composite"
+      - domain_name: "domain"
+  - action: action_about_data_domain_name
+  - slot_was_set:
+    - dataset_name: "input_composite"
+  - intent: about_data_source_name_det
+    entities:
+      - source_name_det : "detailed source name"
+  - action: action_about_data_source_name_det
+  - intent: about_data_last_updated_date
+    entities:
+      - last_updated_date: "last updated"
+  - action: action_about_data_last_updated_date
   - intent: feedback-form
   - action: action_feedback

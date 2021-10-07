@@ -9,7 +9,6 @@ nlu:
     - Does Indian data portal supports adding personal custom data on IDP
     - any way to upload additional datasets on IDP
     - can we make our own datasets available on IDP
-    - How to add a dataset
     - how do you upload additional datasets on the indian data portal
     - is there a way to add further datasets on idp
     - how datasets are added?
@@ -23,6 +22,10 @@ nlu:
     - how can i add personal data here?
     - how can i upload personal data on the portal?
     - where i can upload personal data?
+    - need some help regarding adding datasets on this portal
+    - i need your help for adding dataset 
+    - i need your help for adding dataset on this website
+    - on this website how can i upload datasets
     - where am i supposed to upload custom data?
     - how am i supposed to insert a dataset?
     - how can i insert a dataset ?
@@ -32,6 +35,9 @@ nlu:
     - anyway we can add dataset to webiste 
     - anyway we can add dataset to website
     - in what way can i add a dataset
+    - how can we add dataset?
+    - how am i supposed to add dataset?
+    - how a dataset can be added?
 
 - intent: faq-visualisation-b1/location-meaning-idp
   examples: |
@@ -56,6 +62,9 @@ nlu:
     - inidan data portal has something location what's that
     - guide me about location icon here
     - tell me something about loaction icon here
+    - what is the purpose of location in portal
+    - what is the motive of having location on portal?
+    - what am i supposed to do with location feature?
     
 
 - intent: faq-visualisation-b1/only-india-is-covered
@@ -84,6 +93,7 @@ nlu:
     - ahmmm can you tell me are you covering india only
     - IDP just covers inida only na?
     - indiandataportal covers india only or foreign data also?
+    - What does IDP cover in terms of geography?
 
 - intent: faq-visualisation-b1/mandatory-to-select-location
   examples: |
@@ -145,6 +155,7 @@ nlu:
     - i have a query is it that essential to identify a Region before even selecting a Province?
     - state selection necessary before selecting a district?
     - selecting a province is necessary before selecting a district
+    - can i directly go with district by skipping state
 
     
 - intent: faq-visualisation-b1/can-change-color-of-viz
@@ -326,7 +337,11 @@ nlu:
     - What activities do I need to take to share my work on Whatsapp?
     - Exactly activities do I need to take to share my work on Whatsapp?
     - Which action do I need to take to share my work on Whatsapp?
-    
+    - Is it necessary for me to reveal my phone number on WhatsApp?
+    - Do I have to disclose my phone number to share on whatsapp
+    - am i required to disclose my phn no in order to share something via whatsapp    
+    - Do I have to tell my cell phone number to share on whatsapp?
+    - do ihave to share my personal contact details in order to share on whatsapp?
 
 - intent: faq-visualisation-b1/which-social-media-platform-supported-for-sharing-vis
   examples: |

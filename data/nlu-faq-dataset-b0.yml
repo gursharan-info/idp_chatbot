@@ -104,6 +104,10 @@ nlu:
     - any type of financial data residing here?
     - any sort of financial data residing on portal?
     - tell me about financial data 
+    - is there any financial inclusion data
+    - any financial inclusion data on IDP
+    - on this portal any finacial inclusion data
+    - on india data portal do you have any financial inclusion data
 
 - intent: faq-dataset-b0/socioeconomic-data-available-portal #248
   examples: |
@@ -519,17 +523,22 @@ nlu:
 
 - intent: faq-dataset-b0/data-micro-ATM  #303
   examples: |
-    - Any data related to micro ATM's?
-    - is there any data for micro ATMS
-    - there are available data for micro ATMS
-    - tell me about data related to micro ATMs.
+    - Any data related to ATM's?
+    - any data related to automated teller machine?
+    - is there any data related to Automated teller machine
+    - on this portal do we get any Automated teller machine
+    - automated teller machine any data ?
+    - do we have any automated teller machine on this Indian data portal
+    - is there any data for  ATMS
+    - there are available data for ATMS
+    - tell me about data related to ATMs.
     - show me the data related tto micro ATMs.
     - is micro ATMs data is available.
     - any data is available related to micro ATMs?
     - micro ATMS data.
-    - Is there any information about micro atm?
+    - Is there any information about atm?
     - is there any dataset on micro atm?
-    - Do you have any data about micro atm?
+    - Do you have any data about atm?
     - Is there any data pertaining to micro atm?
     - Is there any statistics regarding micro atm?
     - is micro atm data available on portal?
@@ -652,7 +661,7 @@ nlu:
     - is aadhar data available on portal?
     - Is there data regarding the aadhar available?
     - Is data from the aadhar available?
-    - Is figures from the aadhar available?
+    - Is figures from the adhar available?
     - data from aadhar is there?
     - Do you have any information from the aadhar?
     - does portal have info concern with aadhar
@@ -661,17 +670,18 @@ nlu:
     - data from aadhar is present?
     - Is there any information from the aadhar cards that we might use?
     - Do we have any dataset from the aadhar?
-    - data from aadhar is present?
+    - data from adhar is present?
     - data from aadhar is residing here?
     - is data from aadhar present here?
     - Do we have aadhar data?
-    - is idp having data from aadhar domain?
+    - Does idp have any adhar card related dataset?
+    - Does india data portal have any adhar card related dataset?
+    - is idp having data from adhar domain?
     - aadhar data present?
     - aadhar data is residing here?
     - can we acess the aadhar data on portal?
     - is portal having aadhar data? 
-    - are we having any unemplyment data?
-    - can i get aadhar data from this portal?
+    - can i get adhar data from this portal?
     - aadhar data?
     - aadhar card data?
     - data from aadhar card is present?
@@ -860,30 +870,3 @@ nlu:
     - dataset related to exchange of stock?
     - any stock related dataset is avaialble?
 
-- intent: faq-dataset-b0/Why-India-data-portal-create   #316
-  examples: |
-    - Why was India data portal created? 
-    - why IDP is crerated?
-    - why IDP is created?
-    - reason fpor creating IDP.
-    - what are reasons to create INDIAN DATA PORTAL?
-    - idp is created .WHY?
-    - what was the aim of india data portal?
-    - why india data portal cam into existance?
-    - ehy idp was made
-    - what was the goal of idp which leads to its creation?
-    - what factors are responsible for creation of india data portal
-    - What was the motivation for the creation of the India data portal?
-    - what was the motivation behind the creation of india data portal?
-    - what was the driving force behind the creation of this portal?
-    - What was the rationale behind the establishment of the India data portal?
-    - What was the objective for the construction of the India data portal?
-    - What was the motive behind the building of the India data portal?
-    - Why was the India Data Portal established?
-    - Why was the India Data Portal developed?
-    - Why was the India Data Portal created?
-    - why india data portal is formed?
-    - Why was the India Data Portal constructed?
-    - Why was the India Data Portal developed?
-    - Why was the India Data Portal founded?
-    - what was the purpose behind creating this portal ?

@@ -148,6 +148,55 @@ rules:
     - intent: about_data_data_extraction_page
     - action: action_about_data_data_extraction_page
 
+- rule: Rule for detailed source name
+  steps:
+    - intent: about_data_source_name_det
+    - action: action_about_data_source_name_det
+
+- rule: Rule for Date of retrievals
+  steps:
+    - intent: about_data_date_of_retrievals
+    - action: action_about_data_date_of_retrievals
+      
+- rule: Rule for Domain name
+  steps:
+    - intent: about_data_domain_name
+    - action: action_about_data_domain_name
+
+
+
+## Multilingual
+
+- rule: Rule for lang detection for hindi1
+  steps:
+    - intent: nlu-faq-portal-b1-hi
+    - action: action_language_detector
+
+- rule: Rule for lang detection for hindi2
+  steps:
+    - intent: nlu-faq-portal-b2-hi
+    - action: action_language_detector
+
+- rule: Rule for lang detection for punjabi
+  steps:
+    - intent: nlu-faq-training-b1-pa
+    - action: action_language_detector
+
+- rule: Rule for lang detection for hindi retrieval
+  steps:
+    - intent: nlu-faq-portal-b3-hi
+    - action: action_language_detector_retrieval
+
+- rule: Rule for Lang detection and answers for visualisation batch 1
+  steps:
+    - intent: nlu-faq-vis-b1-hi
+    - action: action_language_detector_retrieval
+
+- rule: Rule for Lang detection and answers for training batch 1
+  steps:
+    - intent: nlu-faq-training-b1-hi
+    - action: action_language_detector_retrieval
+
 # - rule: Rule for About data
 #   steps:
 #     - intent: about_data_about_data

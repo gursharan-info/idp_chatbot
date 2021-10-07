@@ -205,6 +205,7 @@ nlu:
     - from chart builder how many options can be selected?
     - In the chart builder, how many options do I have?
     - how many options from chart builder i can pick?
+    - i want to select every option in chart builder, can i do that
     - from given choices how many i can pick under chart builder?
     - under chart builder choices how many can be picked up?
     - In the chart builder, how many choices can I pick?
@@ -220,6 +221,7 @@ nlu:
     - from given option How many are available for selection in the chart builder?
     - tell me how many options i can select from chart builder?
     - how many options i can select from chart builder?
+    - what number of options are selectable in chart builder?
 
 - intent:  faq-visualisation-b4/cannot-see-district-state-in-legend #116
   examples: |
@@ -529,6 +531,9 @@ nlu:
     - why i am not able to see title after downloading the graph?
     - where do i see the name of the graph once saved?
     - When I download, I don't see heading for my graph. Why is that?
+    - when i downloaded the graph, then i am unable to see the title here
+    - i can't see title after i downloaded the graphs
+    - after we have downloaded the graphs how can i see the title because i can't see that
 
 - intent: faq-visualisation-b4/what-is-svg #129
   examples: |

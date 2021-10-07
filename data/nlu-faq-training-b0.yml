@@ -705,6 +705,9 @@ nlu:
     - how am i supposed to find the training sources?
     - any trainng source available online?
     - any training resource available on portal?
+    - whom to seek for guideance to understand how to work on india data portal
+    - is there any tutorial available for free to learn about how idp works
+    - is there any tutorial available for free to learn about how india data portal works
     - does this portal have any training resource with them?
     - do you have any training resource?
     - Do you have any online training materials on hand?
@@ -731,6 +734,8 @@ nlu:
     - i need some guidance where can i find some stuff regarding it
     - any url or link i can get beacuse i wanna see some tutorials reagrding IDP
     - this portal is little trciky to use can i get some tuts resource regarding it 
+    - whom to seek for guideance to understand how to work on india data portal
+    - is there any tutorial available for free to learn about how idp works
 
 - intent: faq-train-b0/free-online-tutorials-idp
   examples: |
@@ -802,6 +807,8 @@ nlu:
     - physical workshop is conducted by idp?
     - Do you conduct physical trainings or workshops?
     - Are you going to hold a physical workshop?
+    - do idp conduct training in physical mode
+    - do idp team conduct training in physical mode
     - are you conducting any physical workshop?
     - Is there anything you offer in the way of workshops? If this is the case, where can I find out more information?
     - Do you organise physical training sessions or workshops?
@@ -958,6 +965,10 @@ nlu:
     - who supposed to get trained?
     - Who is eligible to attend training?
     - Who is eligible to participate in training?
+    - are the trainings open for all to join
+    - can anyone join this training
+    - do you offer training to every person
+
 
 - intent: faq-train-b0/portals-objective
   examples: |
@@ -988,6 +999,7 @@ nlu:
     - objective of the portal?
     - goal of the portal?
 
+    
 - intent: faq-train-b0/any-training-program
   examples: |
     - is there any training program available by idp?
@@ -1007,4 +1019,5 @@ nlu:
     - Should there be a training course offered by idp?
     - Should there be a programme offered by idp?
     - is this portal offers any training?
+
 

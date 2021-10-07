@@ -113,17 +113,20 @@ nlu:
     - Is registration required before using any datasets?
     - like is it necessary to create an account before you can access any datasets?
     - Is it required to register before accessing any datasets?
-    - Is it necessary to register before using any datasets?
+    - will i have to signup before i start using the data on idp
+    - to use any dataset on idp do i nedd to login first
+    - will i have to signup before i start using the dataset on idp
+    - Is it necessary to sign up before using any datasets?
     - registration required before gaining access to any datasets?
     - Is it necessary to register before being able to access any datasets?
-    - But do we need  to register in order to access any datasets?
+    - But do we need  to sign up in order to access any datasets?
     - Is registration required in order to access the datasets?
     - necessary to register in order to view any datasets on this platform
-    - Is it necessary to register in order to access the datasets on this platform
-    - Is registration required to access the datasets on this platform
+    - Is it necessary to sign up in order to access the datasets on this platform
+    - Is registration sign up to access the datasets on this platform
     - Is there a requirement to register before accessing any datasets on this platform
     - Is it necessary to register before you can access any datasets on this platform
-    - Is registration required before accessing any datasets on this webiste
+    - Is registration sign up before accessing any datasets on this webiste
     - is it necesary to signup before using any datasets on this webiste
 
 - intent: faq-portal-b1/make-viz-without-log #373
@@ -287,7 +290,8 @@ nlu:
     - When we change the portal's language, does it only affect the dashboard, or does it also translate the portal's content?
     - Is it only the dashboard that is affected when we change the portal's language, or does it affect all of the information on the portal?
     - when we change the language on the portal does it only affects the dashboard or the information present on portal is also translated
-
+    - on changing the language which parts of the website gets changed
+    
 - intent: faq-portal-b1/dataset-filter-featur-availabel-dataset #390
   examples: |
     - any way to filter datasets across all of them?
@@ -510,6 +514,9 @@ nlu:
     - Where can I find the indicator after it has been successfully created?
     - Where can I find the indicator after it's been created successfully?
     - after indicator is created succesfully , where can i see that?
+    - when a indicator is created from where can i view it
+    - when an indicator is being made, from where can i sccess it.
+    - from where can i see the created indicator.
 
 - intent: faq-portal-b1/modifi-detail-indic #407
   examples: |
@@ -1037,33 +1044,34 @@ nlu:
     - tell me is it feasible to compare datacards and datasets from diff sites?
     - using IDP can i compare datasets and datacards from multiple sites?
     - Is there a way to compare datasets/datacards from different sites using IDP?
-    - IDP allows you to compare datasets/datacards from different sites.
+    - IDP allows you to compare datasets from different sites.
     - Is it possible to compare datasets/datacards from different sites with idp?
     - Is it possible to use idp to compare datasets/datacards from different sites?
     - Is it possible to use IDP to compare datasets/datacards from various sites?
     - Is idp capable of comparing datasets/datacards from different sites?
     - Is it possible to compare datasets/datacards from various websites using IDP?
-    - Is there a way to compare datasets/datacards from different sites with idp?
+    - Is there a way to compare datacards from different sites with idp?
     - would it be possible to compare datasets/datacards from different websites using idp?
     - Is it possible to compare datasets/datacards from various sites using IDP?
     - You can compare datasets/datacards from different sites with IDP.
     - Is it possible to compare datasets/datacards from various sites with idp?
-    - Is it permissible to use idp to compare datasets/datacards from various sites?
+    - Is it permissible to use idp to compare datasets from various sites?
     - Is there a way to use idp to compare datasets/datacards from different websites?
     - You can compare datasets/datacards from different sites using IDP.
-    - Is it possible to compare datasets/datacards from different websites with idp?
+    - Is it possible to compare datacards from different websites with idp?
     - Is there a way to compare datasets/datacards from different sites using idp?
     - please tell me is it possible to compare datasets/datacards from different sites with IDP?
     - Is it possible to use IDP to compare datasets/datacards from different sites?
-    - Is it feasible to compare datasets/datacards from various sites using idp?
+    - Is it feasible to compare datasets from various sites using idp?
     - Is it possible to compare datasets from various sites using idp?
     - Is it possible to compare datacards from various sites using idp?
     - will it be possible to compare datasets/datacards from various websites using idp?
     - Is it possible to compare datasets/datacards from different websites using IDP?
-    - Is it possible to compare datasets/datacards from different sites using idp?
+    - Is it possible to compare datacards from different sites using idp?
     - You can compare datasets/datacards from various sites using IDP.
     - Is it possible to compare datasets/datacards from different sites using IDP?
     - is idp providing a functionality to cross compare datasets/datacards from different sites
+    - is there any functionality available to comapare cross site datacards
 
 - intent: faq-portal-b1/add-custom-indic-datacard #431
   examples: |
@@ -1100,4 +1108,343 @@ nlu:
     - how am i supposed to add custom indicators?
     - tell me how custom indicators can be added?
     - please help me in adding custom indicators?
+
+- intent: faq-portal-b1/Why-India-data-portal-create   #313
+  examples: |
+    - Why was India data portal created? 
+    - why IDP is crerated?
+    - why IDP is created?
+    - reason fpor creating IDP.
+    - what are reasons to create INDIAN DATA PORTAL?
+    - idp is created .WHY?
+    - what was the aim of india data portal?
+    - why india data portal cam into existance?
+    - ehy idp was made
+    - what was the goal of idp which leads to its creation?
+    - what factors are responsible for creation of india data portal
+    - What was the motivation for the creation of the India data portal?
+    - what was the motivation behind the creation of india data portal?
+    - what was the driving force behind the creation of this portal?
+    - What was the rationale behind the establishment of the India data portal?
+    - What was the objective for the construction of the India data portal?
+    - What was the motive behind the building of the India data portal?
+    - Why was the India Data Portal established?
+    - any reason behing creating idp?
+    - any reason behing creating india data portal?
+    - Why was the India Data Portal developed?
+    - Why was the India Data Portal created?
+    - why india data portal is formed?
+    - Why was the Indian Data Portal constructed?
+    - any reason behing creating idp?
+    - any reason behing creating indian data portal
+    - Why was the Indian Data Portal developed?
+    - Why was the Indian Data Portal founded?
+    - what was the purpose behind creating this portal ?
+
+- intent: faq-portal-b1/portals-objective
+  examples: |
+    - what is the main aim of the portal?
+    - What are the Portal's primary goals?
+    - What are the Portal's key goals?
+    - What are the main goals of the Portal?
+    - prominant goals of the India Data Portal
+    - why should i came here?
+    - what is here for me?
+    - What is the Portal's main goal?
+    - What are the Portal's primary objectives?
+    - What are the Portal's primary goals?
+    - What is the Portal's primary goal?
+    - What is the Portal's primary objective?
+    - What are the main goals of the Portal?
+    - What is the main goal of the Portal?
+    - What are the Portal's key objectives?
+    - What exactly is the Portal's main objective?
+    - What are the main objectives of the Portal?
+    - What are the key objectives of the Portal?
+    - whats your main goal?
+    - main goal of this portal?
+    - What is the Portal's main objective?
+    - What is the main objective of the Portal?
+    - What is the main purpose of the Portal?
+    - purpose of the portal?
+    - objective of the portal?
+    - goal of the portal?
+
+- intent: faq-portal-b1/comparison-among-states-and-among-districts-available # 375
+  examples: |
+    - When producing visualisations, are there any comparisons available between states and districts?
+    - When making visualisations, are there any comparisons available between states and districts?
+    - When generating visualisations, are there any comparisons accessible among states and among districts?
+    - When generating visualisations, are there any comparisons possible between districts & states?
+    - While creating a visualisation, are there any comparisons available between states and districts?
+    - When formiing a visual, are there any comparisons allowed amongst states and districts?
+    - are there comparisons available among states and among districts while making visualisation
+    - share me the comparison between states and district while producing visualisations
+    - Are there any comparisons accessible between states and districts when creating visualisations?
+    - Is it possible to make comparisons between states and districts when creating visualisations?
+    - Are there any comparisons accessible between states and districts when building a visualisation?
+    - tell me any comparison between states and districts while building a visualisation
+    - on this portal are there any comparison between states and districts while making visualisations
+    - if there are any comparison between states and district while making visualisation then tell me?
+    - while generating visualisation, are there any comparison possible between states and district?
+
+- intent: faq-portal-b1/any-functionality-present-on-portal-via-which-we-see-metadata #380
+  examples: |
+    - Is there any functionality on the portal that allows us to see translated meta data, such as column names, in the selected language?
+    - Do we have any functionality on the portal which shall allow us to see translated meta data, like column names, in the selected language?
+    - Would there be any functionality on the portal that enables us to see translated meta data, such as column names, in the specified language?
+    - Is there any option on the portal that allows us to see translated metadata, such as column names, in the specified language?
+    - Is there any capability on the site that allows us to see translated meta data, such as column names, in the language of our choice?
+    - is there any functionality present on portal with which we can see translated meta data like column name should be visble in selected language
+    - tell me any functionality of this portal that allows us to see translated meta data, such as column names, in the selected language?
+    - is there any way on this idp that allows us to see translated metadata, such as column names, in the specified language?
+    - how am i supposed to see translated metadata, such as column names, in the specified language?
+    - is there any way to to see translated metadata, such as column names, in the specified language?
+    - is it possible that this portal allows us to see translated metadata, such as column names, in the specified language?
+    - how can i see the translated metadata, such as column names, in the specified language?
+    - any cappabilities of this portal to see translated metadata, such as column names, in the specified language?
+    - tell me the way to see translated metadata, such as column names, in the specified language?
+    - is it possible for this portal to allow us to see translated metadata, such as column names, in the specified language?
+    - any functionality of this portal which allow us to see translated metadata, such as column names, in the specified language?
+
+- intent: faq-portal-b1/time-in-which-expect-idp-provide-data-regional-lang # 381
+  examples: |
+    - How soon can we expect IDP to supply us with data in regional languages?
+    - How quickly can we expect IDP to give us the data in regional languages?
+    - How early can we anticipate IDP to give us the data in regional languages?
+    - roughly in how much time we can get data in regional languages?
+    - How soon hopefully can we expect IDP to offer us with DATA in regional languages?
+    - in how much time we can expect IDP provide us DATA in regional languages
+    - in what time can we expect idp to offer data in indian languages
+    - could you give some estimate of when can i hope idp to provide data in regional langauges
+    - when can i expect indian data portal to offer data in indian languages
+    - on this portal when can i expect data to be present in regional langauges
+    - i wish to know when will the data on this portal be present in indian languages
+    - please tell me when will india data portal start offering data in regional languages
+    - do have any idea when will idp start providing data in regional languages
+    - when will i be able to see data in regional languages on idp
+
+- intent: faq-portal-b1/time-in-which-expect-idp-provide-data-regional-lang # 382
+  examples: |
+    - How many more Indian languages do you think IDP will support in the future?
+    - How many additional Indian languages do you think IDP will support in the future?
+    - How many more Regional languages does IDP will support in the coming years?
+    - count of languages that idp will be supporting in coming future?
+    - count of additional Indic languages does IDP intend to support in the future?
+    - In coming future how many more indic languages IDP is planning to provide support in?
+    - could you tell how many Regional languages will be supported in near future
+    - do you have any idea how many more Regional languages will be supported by idp in coming days?
+    - i want to know what indian languages is idp planing to support in near future
+    - please tell me how many more indian languages will be supported by idp in future
+    - how many more languages is idp going to support in future
+    - tell me the count of regional languages that will be supported in future
+    - i wish to know the count of indian languages that idp will be supporting in future
+    - let me know what number of indian languages will be supported in future
+
+- intent: faq-portal-b1/how-many-units-supported-in-indicator-selection-tab #391
+  examples: |
+    - In the indicator selection tab, how many units are supported?
+    - under the indicator selection tab, how many units are supported?
+    - how many units may be selected in the indication selection tab
+    - how many units could be chosen under the indication selection tab
+    - how many units can be selected in the indicator selection tab
+    - how many UNits are supported in indicator selection tab
+    - What is the maximum number of units that may be selected on the indicator selection tab?
+    - On the indicator selection tab, what is the maximum number of units that may be selected?
+    - How many units are supported in the indication selection tab?
+    - on this website there is indicator selection tab how many units are supported on that
+    - do you know how many units are supported under the indicator selection tab
+    - i want to know the number of units supported under the indicator selection tab
+    - tell me the count of units that can be selected under the indicator selection tab
+    - on idp under the indicator selection tab how many units are supported in one go
+    - the count of units that are supported under the indicator selection tab on this portal
+
+- intent: faq-portal-b1/list-of-units-supported-by-indicators #392
+  examples: |
+    - how can i get the list of units supported by any indicator?
+    - how can i get the list of units supported by any indicator?
+    - how am i supposed to get the list of units for indicator?
+    - please let me me know from where can i get the list of units supported by indicator?
+    - guide me to get the units list supported by indicators
+    - for indicators how can we get the list of supported units?
+    - can you give me list of units supported by any indicator
+    - Can you provide me with a list of units that any indicator supports?
+    - Could you give me a list of the units that each indicator supports?
+    - Could you please assist me in obtaining a list of units supported my any indicator?
+    - share me the list of units supported by any indicator
+    - from where can i obtain the list of units supported by indicators
+    - tell me how can i get the list of units that supported by indicators
+    - help me to find the list of units for indicators
+    - facilitate me the list of units that are supported by any indicators
     
+- intent: faq-portal-b1/list-of-indicator-names-related-to-diff-datasets #393
+  examples: |
+    - how can i get the list of indicator names related to different datasets?
+    - how can i get the list of indicator names related to different datasets?
+    - how am i supposed to get the list of indicator names related to diff datasets?
+    - list of indicator names related to different datasets.
+    - can you provide me list of indicator names related to different datasets.
+    - can i get list of indicator names related to different datasets.
+    - please give me the list of indicator names related to different datasets. 
+    - Please provide me with a list of indicator names associated with various datasets.
+    - Please send me a list of indicator names that are connected with different datasets on this portal
+    - on this portal what are the diff indicators that are related to various datasets
+    - how can i Obtain a list of indicator names that are connected with different datasets.
+    - how can i obtain a list of indicator names that are associated with different datasets
+    - please tell me how can i get the indicator name list realted to different datasets
+    - let me have a indicator name list associated with different datasets
+    - could you provide me a list of indicators that are linked with different datasets
+    - could you let have a indicator names list connected to different datasets
+    
+- intent: faq-portal-b1/same-indicator-with-diff-detail #401
+  examples: |
+    - can i have same indicator with different details
+    - same indicator with different details can be there?
+    - can you provide identical indicator with different details
+    - identical indicators with diff details are allowed?
+    - can i create similar indicators with different details
+    - is it possible to make same indicator with different details?
+    - is this even feasible that i will have same indicator with different details
+    - Is it possible to provide a similar indicator with different details?
+    - Is it possible for me to generate comparable indicators with different details?
+    - Is it feasible for me to create identical indicators with different details?
+    - Is it feasible for me to create identical indicators with distinct details?
+    - on this portal Would it be feasible for me to create similar indicators with different details?
+    - while on IDP Would it be feasible for me to create similar indicators with different details?
+    - on india data portal Is it possible for me to make comparable indicators but with different information?
+    - is there any way to have same indicators but with with different details
+    - how is it possible on this portal to make comparable indicators with different information
+
+- intent: faq-portal-b1/illustrations-in-oriya #427
+  examples: |
+    - can i have illustrations in oriya?
+    - Is it possible to get illustrations in Oriya?
+    - will it be feasible to get illustrations in Oriya?
+    - Is it possible to get oria illustrations?
+    - Is it possible to have illustrations in Oriya?
+    - Is it possible to have visuals in Oriya?
+    - will it be feasible to get visualisations in oriya?
+    - Will getting visualisations in Oriya be possible?
+    - Would obtaining visuals in Oriya be feasible?
+    - on india data portal Is that really possible to have Oriya visuals?
+    - on indian data portal Is that really possible to have Oriya visuals?
+    - Would it really be feasible to have graphics in Oriya?
+    - in oriya can i get visuals ?
+    - does indian data portal provides us facility so that i can get visuals in oriya language
+    - Is there a feature on the Indian Data Portal where I may access visuals in Oriya?
+    - Is there a function on the Indian Data Portal that allows me to view Oriya visuals?
+    - can i get graphs on indian data portal in oriya ?
+
+- intent: faq-portal-b1/illustrations-in-telugu #428
+  examples: |
+    - can i have illustrations in telugu?
+    - Is it possible to get illustrations in telugu?
+    - will it be feasible to get illustrations in telugu?
+    - Is it possible to get  illustrations in telugu?
+    - Is it possible to have illustrations in telugu?
+    - Is it possible to have visuals in telugu?
+    - will it be feasible to get visualisations in telugu?
+    - Will getting visualisations in telugu be possible?
+    - Would obtaining visuals in telugu be feasible?
+    - on india data portal Is that really possible to have telugu visuals?
+    - on indian data portal Is that really possible to have telugu visuals?
+    - Would it really be feasible to have graphics in telugu?
+    - in telugu can i get visuals ?
+    - does indian data portal provides us facility so that i can get visuals in telugu language
+    - Is there a feature on the Indian Data Portal where I may access visuals in telugu?
+    - Is there a function on the Indian Data Portal that allows me to view telugu visuals?
+    - can i get graphs on indian data portal in telugu ?
+
+- intent: faq-portal-b1/where-can-i-found-illustrations #429
+  examples: |
+    - where can i found illustrations?
+    - where will i get the illustrations
+    - how can i found the illustration?
+    - were are the illustrations?
+    - where can i find my charts?
+    - where are my visuals located?
+    - where are illustrations residing on the portal?
+    - where illustrations are kept on the portal?
+    - i want to know where we are having the visuals?
+    - please let me know where illustrations are being present?
+    - can you help me with illustrations where they are residing.
+    - i want to know where illustrations are kept on the portal?
+    - help me to find illustrations ?
+    - from where can i found illustrations
+    - can you tell me how can i found illustrations
+    - is it possible to find illustration?
+    - how can i find my charts
+    - is there any way to find my charts
+    - is it possible to find my charts
+    - from where i can find charts
+    - tell me the location of my visuals
+    - let me know where can i find illustrations on this portal
+    - can you let me know where are illustrations kept on this portal
+    - please let me know the place where i can find the illustrations
+    - do you have any idea where are illustrations kept
+    - tell me where can i find illustrations on this portal
+    - do you have idea where can i find illustrations on this portal
+    - please let me know where illustrations can be found on idp 
+
+- intent: faq-portal-b1/translate-column-names-to-other-language #431
+  examples: |
+    - can we translate the column names of datasets to other language?
+    - can we translate the datasets column names to other language
+    - is it possible to translate the column names of the dataset.
+    - can dataset column names be translated?
+    - please let me know if we can translate the dataset column names?
+    - is it feasible to translate the column names of dataset to any other language
+    - Is it possible to translate dataset columns into some other language?
+    - Is it possible to translate the dataset's field names?
+    - possible to translate the names of the columns in a dataset?
+    - can i change the column names in dataset to some other language
+    - Is it possible to alter the column names in a dataset to a different language?
+    - Is there a feature in IDP that allows us to translate the names of columns in a datatset?
+    - does IDP provides us feature to translate names of columns in a datatset
+    - can I translate the column names in a dataset?
+    - Does IDP have a feature that allows us to translate the names of columns in a datatset?
+
+- intent: faq-portal-b1/after-uploading-will-data-be-there-or-vanish-afterleaving #444
+  examples: |
+    - Once i upload new dataset will it remain there or will vanish once i leave the portal?
+    - after uploading a new dataset once i leave the portal will it remain there or will vanish?
+    - after uploading a new dataset will it remain there or will vanish once i leave the portal ?
+    - new dataset will remain there after uploading when i leave the portal?
+    - if i leave the the portal after uploading the dataset will it remain there or vanish
+    - if i upload my own dataset will it remain there or got vanished once i get away from the portal?
+    - when i leave the portal after uploading a new dataset, will it there or not?
+    - tell me when i upload data, it will remain there or not if i left the portal
+    - is it possible that the data will be there after uploading, once i left 
+    - after uploading the dataset, if i leave will it be there or not
+
+- intent: faq-portal-b1/data-available-indian-territory #445
+  examples: |
+    - Is the data only available in Indian territory?
+    - is data only accesible in indian territory?
+    - data will be accessible in indian territory only?
+    - will data be only accessible in territory of india
+    - this data is to be accesed in indian territory only?
+    - i wnat to know will this data be accesed only inside indian territory
+    - will the access to data on idp constraint to indian territory only
+    - is data on idp accessible only in indian territory
+    - will i be able to access data from outside the indian territory
+    - is data access on idp avialable only in india
+    - is there any constraint on the data accessibility outside indian territory
+    - will i be able to use data from idp outside of india
+    - can data from idp be used outside indian territory
+
+
+# - intent: faq-portal-b1/how-often-data-updated #452
+#   examples: |
+#     - how often is the data updated?
+#     - how often data is being updated?
+#     - How regularly is the information updated?
+#     - How oftenly is the information updated?
+#     - how oftenly data is being updated?
+#     - how soon is the info updated?
+#     - usually when is updated?
+#     - usually at what freq data is updated?
+#     - on what basis data is updated?
+#     - How regularly is the data updated?
+#     - what time guidelines are used to update the data
+#     - to update the data on the portal what time guidelines are used ?

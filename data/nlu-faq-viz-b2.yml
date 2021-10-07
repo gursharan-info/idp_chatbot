@@ -35,6 +35,7 @@ nlu:
     - do i share interactive / live visualisation
     - how am i supposed to share live visualisations.
     - is it possible to share live visualisations.
+    - tell me how to share the visualisation on this portal
     - Is it possible to distribute live visualisations?
     - Is it feasible to share real-time visualisations with others?
     - how am i supposed to share interactive visuals
@@ -111,6 +112,9 @@ nlu:
     - to create visuals login is required?
     - login is necessary for making visuals?
     - do we have to login first to initiate plot making?
+    - can i create visuals without logging in
+    - without logging in creating a visual is possible?
+    - without log in creating a chart is possible?
     - is it necessary to login first to make graphs?
     - can i make visuals without logging in?
     - Is a login required to create visuals?
@@ -118,9 +122,8 @@ nlu:
     - Is it necessary to log in to create visuals?
     - Is a login required to create visualisations?
     - Is a login required for constructing visuals?
-    - Is it necessary for me to be logged in in order to make a visualisation?
+    - Is it necessary for me to be logged in order to make a visualisation?
     - Is it necessary for me to be logged in before I can make a visualisation?
-    - Do I have to be logged in to create a visualisation
     - Is it required that I be logged in in order to create a visualisation?
     - Is it required that I be logged in to create a visualisation?
     - for this portal will i be supposed toI log in before I can create a visualisation?
@@ -139,6 +142,8 @@ nlu:
     - logged in to make a visualisation? Necessary ?
     - data viz not possible before login
     - data visuals. not possible before login
+    - chart making is possible without logging in?
+    - can i create visualisations without logging in
 
 
 - intent: faq-visualisation-b2/shared-visualisation-link-not-seen
@@ -268,8 +273,9 @@ nlu:
     - while on IDP necessary to choose all indicators at once?
     - while here necessary to pick all of the indicators at the same time?
     - Is it required to select all indicators at once?
-
-
+    - is it compulsory to select all indicators together
+    - i'm not sure if it is compulsory to select all indicators together
+    - do i need to select all indicators together or not
 
 - intent: faq-visualisation-b2/add-indicators-from-other-datasets
   examples: |
@@ -581,6 +587,11 @@ nlu:
     - on this portla Why are we coming up with a new metric in the first place? Is it something that everyone should have?
     - on this portal Why are we working on a new metric? Is it a must-have?
     - is creating new indicatros requried?
+    - is it necessary to creating new indicator
+    - can i skip creating indicators, is it mandatory step or not
+    - can i skip creating new indicators, is it mandatory step or not
+    - i dont like creating indicator, tell me is this compulsory or not?
+    - i dont like creating new indicator, tell me is this compulsory or not?
 
 
 - intent: faq-visualisation-b2/define-unit-new-indicator
@@ -628,6 +639,7 @@ nlu:
     - How should the unit of a new indicator be defined?
     - How should a new indicator's unit be defined?
     - What is the best way to define a new indicator's unit?
+    - there is a unit for indicators, how can i define it
     - but Wat is the best method for defining the unit of a new indicator?
     - heyyy What should a new indicator's unit be?
 
@@ -1121,6 +1133,7 @@ nlu:
     - critical to pick a location?
     - picking a location necessary?
     - specifying a location is necessory?
+    - can we skip location or we have to select it
 
 
 - intent: faq-visualisation-b2/donot-select-location-possible-visualization #76

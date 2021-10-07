@@ -1,0 +1,94 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+  
+intents:
+- nlu-faq-portal-b1-hi:
+    use_entities: true
+
+- nlu-faq-portal-b2-hi:
+    use_entities: true
+
+- nlu-faq-training-b1-pa:
+    use_entities: true
+
+- nlu-faq-portal-b3-hi:
+    use_entities : true
+
+- nlu-faq-vis-b1-hi:
+    use_entities: true
+
+- nlu-faq-training-b1-hi:
+    use_entities:  true
+
+entities:
+- language
+
+slots:
+  language:
+    type: text
+    influence_conversation: true
+
+responses: 
+  
+  utter_nlu-faq-portal-b1-hi:
+  - text: "यह हिंदी उत्तर है 1"
+
+  utter_nlu-faq-portal-b2-hi:
+  - text: "यह हिंदी उत्तर है 2"
+
+  utter_nlu-faq-training-b1-pa:
+  - text: "ਇਹ ਹੈ ਪੰਜਾਬੀ ਜਵਾਬ 1"
+
+  utter_nlu-faq-portal-b3-hi/is-paid-service:
+  - text: "अब तक यह एक सशुल्क सेवा नहीं है और पूरी तरह से खुला स्रोत है"
+
+  utter_nlu-faq-portal-b3-hi/other-indian-languages:
+  - text: "इंडिया डेटा पोर्टल छह भाषाओं में उपलब्ध है जिसमें अंग्रेजी और अन्य भारतीय भाषाएं जैसे हिंदी, बंगाली, मराठी, उड़िया और तेलुगु शामिल हैं"
+
+  utter_nlu-faq-portal-b3-hi/faced-issue-how-to-report:
+  - text: "आप फीडबैक फॉर्म भर सकते हैं या हमें लिख सकते हैं: idp@isb.edu"
+
+  utter_nlu-faq-portal-b3-hi/diff-domains-on-portal:
+  - text: "इंडिया डेटा पोर्टल में कृषि, वित्तीय समावेशन, ग्रामीण विकास, अर्थव्यवस्था, सामाजिक-आर्थिक, जलवायु आदि जैसे कई डोमेन शामिल हैं।"
+
+  utter_nlu-faq-portal-b3-hi/employment-data-on-portal:
+  - text: "रोजगार डेटा पोर्टल पर उपलब्ध है। हमारे पास एनएसएसओ रोजगार और मनरेगा रोजगार डेटा है"
+
+  utter_nlu-faq-vis-b1-hi/read-sankey-chart:
+  - text: "संकी आरेख संसाधनों के प्रवाह को दर्शाता है। सैंकी चित्र को पढ़ने और व्याख्या करने की कुंजी यह याद रखना है कि चौड़ाई प्रदर्शित मात्रा के समानुपाती होती है।"
+
+  utter_nlu-faq-vis-b1-hi/write-title-of-chart:
+  - text: "आपके विज़ुअलाइज़ेशन स्पेस के केंद्र शीर्ष पर चार्ट नाम डिस्प्ले के ठीक बगल में एक छोटा पेंसिल आइकन है। अपने चार्ट का शीर्षक बदलने के लिए इस आइकन पर क्लिक करें।"
+
+  utter_nlu-faq-vis-b1-hi/send-vis-email-id:
+  - text: "आप अपने विज़ुअलाइज़ेशन स्पेस के ऊपरी दाएं कोने पर शेयर आइकन पर क्लिक करके साझा करने योग्य लिंक को कॉपी कर सकते हैं।"
+
+  utter_nlu-faq-vis-b1-hi/change-font-titles:
+  - text: "वर्तमान में आपके शीर्षक का फ़ॉन्ट बदलना संभव नहीं है। सुझाव के लिए धन्यवाद, हम अपने उत्पाद अपडेट में इस पर विचार करेंगे"
+
+  utter_nlu-faq-vis-b1-hi/maximum-vis-on-idp:
+  - text: "आप इंडिया डेटा पोर्टल का उपयोग करके 48 विभिन्न प्रकार के विज़ुअलाइज़ेशन बना सकते हैं"
+
+  utter_nlu-faq-training-b1-hi/learn-using-portal:
+  - text: "टॉप राइट कॉर्नर टैब पर आपको ट्रेनिंग मिलेगी। ट्रेनिंग पर क्लिक करने के बाद आपको दो सबटैब मिलेंगे- वर्कशॉप और इवेंट और ऑनलाइन ट्रेनिंग। ट्यूटोरियल वीडियो खोजने के लिए ऑनलाइन प्रशिक्षण पर क्लिक करें।"
+
+  utter_nlu-faq-training-b1-hi/what-is-masterclass:
+  - text: "मास्टरक्लास पत्रकारों, छात्रों, शोधकर्ताओं, संकायों, सलाहकारों के लिए इंडियाडेटापोर्टल के बारे में जानने के लिए एक वर्चुअल ट्यूटोरियल क्लास है।"
+
+  utter_nlu-faq-training-b1-hi/training-cover:
+  - text: "प्रशिक्षण में आईडीपी में एक समाचार पत्र के लेख के आधार पर नए अलग-अलग विज़ुअलाइज़ेशन बनाने और पत्रकारों को उनकी कहानियाँ लिखने में सहायता करने के अनुभव को शामिल किया जाएगा।"
+
+  utter_nlu-faq-training-b1-hi/content-training-videos:
+  - text: "प्रशिक्षण वीडियो में भारत डेटा पोर्टल का उपयोग करने के तरीके के बारे में गहन व्याख्या शामिल है"
+
+
+actions:
+- action_language_detector
+- action_language_detector_retrieval
+
+forms: {}
+e2e_actions: []

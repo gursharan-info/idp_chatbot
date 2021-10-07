@@ -1,3 +1,6 @@
+
+
+
 from typing import Any, Text, Dict, List
 import urllib.request, json
 import os
@@ -5,13 +8,13 @@ from rasa_sdk.events import SlotSet
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 # from gensim.models import KeyedVectors
-from spellcheck import correction , master_dic_dataset_name
+from spellcheck import correction , master_dic_dataset_name,entity_mapper, dict_of_domain_ids, dataset_name_in_api
 import numpy as np
 # from gensim import models
 import time
+from textblob import TextBlob
 from sklearn.metrics.pairwise import cosine_similarity
 import sys
-
 
 dic_of_similarity = {}
 
@@ -97,7 +100,11 @@ class ActionVizFaq(Action):
         print(tracker.latest_message['text']) # to get user typed message 
 
         intent_found = json.dumps(tracker.latest_message['response_selector'][_intent]['ranking'][0]['intent_response_key'], indent=4)
-        print("retrieval we found (i.e intent response key ) ",intent_found)
+        # print('tracker latest message', tracker.latest_message['response_selector'])
+        # print(' ')
+        # print('---', tracker.latest_message['response_selector'].keys())
+        # print('   ')
+        # print("retrieval we found (i.e intent response key ) ",intent_found)
 
         # confidence of retrieval intent we found
         retrieval_intent_confidence = tracker.latest_message['response_selector'][_intent]['response']['confidence']*100
@@ -113,6 +120,8 @@ class ActionVizFaq(Action):
 
 
         #used eval to remove quotes around the string
+            # print('intent before adding the utter', intent_found)
+            # print('----', eval(intent_found))
             intent_found = f'utter_{eval(intent_found)}'
             print('after adding utter we found -- ', intent_found)
             dispatcher.utter_message(response = intent_found) # use response for defining intent name
@@ -141,6 +150,83 @@ class ActionVizFaq(Action):
         return [SlotSet(key = "intent_button", value= [str(_intent[:-3])] ) ] # setting slot values
     
 
+class ActionLanguageDetector(Action):
+
+    def name(self) -> Text:
+        return "action_language_detector"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+
+        # to get intent of user message
+        _intent=tracker.latest_message['intent'].get('name')
+        print("Intent of user message predicted by Rasa ",_intent)
+
+        text = tracker.latest_message['text'] # to get user typed message
+        lang = TextBlob(text)
+        lang = lang.detect_language()
+        print("Language of user message is ",lang)
+        if lang == _intent[-2:]:
+            # print(lang,_intent[-2:])
+            # dispatcher.utter_message(f"Your message is in {lang}")
+            ls_of_lang_intent = []
+            intent_found = json.dumps(tracker.latest_message['intent_ranking'], indent=4)
+            for lang_finder_iter in tracker.latest_message['intent_ranking']:
+                print(lang_finder_iter)
+                if lang_finder_iter['name'][-2:] == lang:
+                    ls_of_lang_intent.append(lang_finder_iter)
+            print("\n","ls_of_lang_intent",ls_of_lang_intent)
+            # print("retrieval we found (i.e intent response key ) ",intent_found)
+
+            # sorting needed to get the highest confidence intent
+            intent_found = ls_of_lang_intent[0]['name']
+            intent_found = 'utter_'+str(intent_found)
+            print('after adding utter we found -- ', intent_found)
+            dispatcher.utter_message(response=intent_found)
+        return [SlotSet('language', lang)]
+
+
+class ActionLanguageDetectorRetrieval(Action):
+
+    def name(self) -> Text:
+        return "action_language_detector_retrieval"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+        print('Language detector for Retrieval')
+        # to get intent of user message
+        _intent=tracker.latest_message['intent'].get('name')
+        print("Intent of user message predicted by Rasa ",_intent)
+
+        text = tracker.latest_message['text'] # to get user typed message
+        lang = TextBlob(text)
+        lang = lang.detect_language()
+        print("Language of user message is ",lang)
+        if lang == _intent[-2:]:
+            # print(lang,_intent[-2:])
+            # dispatcher.utter_message(f"Your message is in {lang}")
+            ls_of_lang_intent = []
+            intent_found = json.dumps(tracker.latest_message['response_selector'][_intent]['ranking'], indent=4)
+            print(intent_found)
+            intent_found = json.loads(intent_found)
+            for lang_finder_iter in intent_found:
+                print(lang_finder_iter['intent_response_key'])
+                if lang_finder_iter['intent_response_key'].split('/',1)[0][-2:] == lang:
+                    ls_of_lang_intent.append(lang_finder_iter)
+            print("\n","ls_of_lang_intent",ls_of_lang_intent)
+            
+        #     # sorting needed to get the highest confidence intent
+        print("retrieval we found (i.e intent response key ) ",ls_of_lang_intent[0]['intent_response_key'])
+        intent_found = ls_of_lang_intent[0]['intent_response_key']
+
+        intent_found = 'utter_'+str(intent_found)
+        print('after adding utter we found -- ', intent_found)
+        dispatcher.utter_message(response=intent_found)
+        return [SlotSet('language', lang)]
 
 
 class ActionDatasetName(Action):
@@ -158,8 +244,6 @@ class ActionDatasetName(Action):
             if ele in punctuations:
                 user_entity = user_entity.replace(ele, " ")
 
-        # display the unpunctuated string
-        # print(user_entity)
         return user_entity
 
     
@@ -167,9 +251,6 @@ class ActionDatasetName(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-
-        # word_vectors = KeyedVectors.load_word2vec_format("/home/ubuntu/17aug_word2vec_bot/GoogleNews-vectors-negative300.bin",binary=True)
-        # print(tracker.latest_message['text']) # to get user typed message
 
         ls_entity =tracker.latest_message['entities'] # to get entities from user message
 
@@ -190,7 +271,7 @@ class ActionDatasetName(Action):
                 # name of dataset we get after extraction
                 extracted_dataset_name = ls_entity[i]['value']
                 print(extracted_dataset_name)
-                break
+                # breaks
 
         # dictionary  conating all possible name that can be given to a dataset name
     
@@ -200,6 +281,7 @@ class ActionDatasetName(Action):
         transformed_dataset_name =0
         global master_dic_dataset_name
 
+        print("extracted dataset mame ",extracted_dataset_name)
         # converting name extracted to lower case
         if type(extracted_dataset_name)!=int:
             extracted_dataset_name = extracted_dataset_name.lower()
@@ -214,75 +296,6 @@ class ActionDatasetName(Action):
 
             transformed_dataset_name = master_dic_dataset_name[extracted_dataset_name]
 
-        # else:
-        #     if extracted_dataset_name != 0:
-        #         start_time = time.time()
-        #         # with limit ---> can't use with limit then we'll be limited to few words only
-        #         # word_vectors = models.KeyedVectors.load_word2vec_format("/home/ubuntu/17aug_word2vec_bot/GoogleNews-vectors-negative300.bin",binary= True, limit = 100000)
-                
-        #         # without limit ---> we are not using it because it will take too much time for loading and hence chatbot will give
-        #         # time out error
-        #         # word_vectors = models.KeyedVectors.load_word2vec_format("/home/ubuntu/17aug_word2vec_bot/GoogleNews-vectors-negative300.bin",binary= True)
-                
-        #         # keyed vector
-        #         # process = psutil.Process(os.getpid())
-
-                
-        #         print("phele tha ",os.system("free -g"),'\n')
-        #         # word_vectors = models.KeyedVectors.load('/home/ubuntu/17aug_word2vec_bot/GoogleNews-vectors-negative300.kv', mmap='r')
-        #         word_vectors = models.KeyedVectors.load_word2vec_format("/app/GoogleNews-vectors-negative300.bin",binary= True, limit = 50000)
-                
-        #         print("--- %s seconds ---" % (time.time() - start_time))
-        #         extracted_dataset_name = self.remove_punctuation_mark_from_user_entity(extracted_dataset_name)
-        #         print('extracted_dataset_name is', extracted_dataset_name)
-        #         extracted_dataset_name_list = extracted_dataset_name.split(' ')
-        #         try:
-        #             entity_extracted_vec = []
-        #             for word in extracted_dataset_name_list:
-        #                 if word in word_vectors.vocab:
-        #                     print(word)
-        #                     entity_extracted_vec.append(word_vectors[word])
-                    
-        #             print('length of list we got is',len(entity_extracted_vec))
-        #             entity_extracted_vec_mean = np.mean(np.array(entity_extracted_vec),axis=0).reshape(1, -1)
-        #             print('shape we got after mean is', entity_extracted_vec_mean.shape)
-        #             list_of_datasets = list(master_dic_dataset_name.keys())
-        #             for dataset_iter in list_of_datasets:
-        #                 dataset_iter = self.remove_punctuation_mark_from_user_entity(dataset_iter)
-        #                 list_dataset_iter = dataset_iter.split(' ')
-        #                 # print("dataset we have splited ")
-        #                 list_dataset_iter_vec = []
-        #                 for word in list_dataset_iter:
-        #                     # print("Inside for")
-        #                     if word in word_vectors.vocab:
-        #                         # print("If")
-        #                         list_dataset_iter_vec.append(word_vectors[word])
-
-                        
-        #                 if list_dataset_iter_vec.__len__() > 0:
-        #                     list_dataset_iter_vec_mean = np.mean(np.array(list_dataset_iter_vec),axis=0).reshape(1, -1)
-                            
-        #                     #computing similarity
-        #                     sim = cosine_similarity(entity_extracted_vec_mean, list_dataset_iter_vec_mean).item(0)
-        #                     # print(extracted_dataset_name,'-' , dataset_iter,':',sim)
-                            
-        #                     #making dic which is containing dataset name and similarity score with extracted entity
-        #                     global dic_of_similarity
-        #                     dic_of_similarity[dataset_iter] = sim
-                            
-        #            # sorted list of tuples with their cosine similairty
-        #             # print(sorted(dic_of_similarity.items(), key = lambda kv:(kv[1], kv[0])))
-        #             sorted_dic_of_similarity = sorted(dic_of_similarity.items(), key = lambda kv:(kv[1], kv[0]))
-                    
-        #             #picking the topmost dataset name 
-        #             most_similar_dataset = list(sorted_dic_of_similarity)[-1][0]
-        #             transformed_dataset_name = master_dic_dataset_name[most_similar_dataset]
-        #         except Exception as e:
-        #             print("Oops!", e.__class__, "occurred.")    
-        #             dispatcher.utter_message('Sorry but seems like there is some Misspell in Dataset Name')
-            
-        #     else:
-        #         dispatcher.utter_message(text = "Sorry i coundn't interpret dataset name, please try again with complete name of dataset")
                 
         print(f"after tranformation ---> {transformed_dataset_name}")
 
@@ -303,6 +316,7 @@ class ActionDatasetName(Action):
             dict_of_mapped_data_with_id = {}
             with urllib.request.urlopen("https://indiadataportal.com/meta_data_info") as url:
                 data = json.loads(url.read().decode())
+                # print(data[0])
                 temp_data  = json.dumps(data, indent=4, sort_keys=True)
                 temp_data = json.loads(temp_data)
 
@@ -311,6 +325,7 @@ class ActionDatasetName(Action):
  
                     # print(f"{data['dataset_name']} ---> {data['dataset_id']}")
                     dict_of_mapped_data_with_id[data['dataset_name']] = data['dataset_id']
+                # print('dict_of_mapped_data_with_id', dict_of_mapped_data_with_id)
   
 
                 # if transformed_dataset_name is present in our data we got from json file
@@ -335,10 +350,12 @@ class ActionDatasetName(Action):
                             
                             # spellcheck the entity
                             entity_iter = correction(entity_iter)
-                            if entity_iter in p.keys():
+                            if entity_iter in p.keys() and entity_iter in entity_mapper:
+                                entity_iter = entity_mapper[entity_iter]
+                                
                                 # if entity is present in p then print the value of that entity
                                 print(f"{entity_iter} ----> {p[entity_iter]}")
-                                dispatcher.utter_message(text = f"{entity_iter} is {p[entity_iter]}")
+                                dispatcher.utter_message(text = f"{entity_iter} is {p[entity_iter]} for more [click here](https://indiadataportal.com/visualize?language=English&location=India#?dataset_id={extracted_id}&tab=details-tab)")
                                 
                             
                             else:
@@ -346,12 +363,16 @@ class ActionDatasetName(Action):
                                 # return [SlotSet('dataset_name', dataset_name)]
                     
                     else:
-                        dispatcher.utter_message(text = f'Yes you can start with {temp_dataset_name}')
+                        dispatcher.utter_message(text = f'Yes you can start with {temp_dataset_name} for more [click here](https://indiadataportal.com/visualize?language=English&location=India#?dataset_id={extracted_id}&tab=details-tab)')
+
+            print(f"Returning value of {transformed_dataset_name}")
+            return [SlotSet('dataset_name', temp_dataset_name)]
+
         else:
             dispatcher.utter_message(text='Sorry but seems like there is some Misspell in Dataset Name')                
 
-        print(f"Returning value of {transformed_dataset_name}")
-        return [SlotSet('dataset_name', transformed_dataset_name)]
+        # print(f"Returning value of {transformed_dataset_name}")
+        # return [SlotSet('dataset_name', temp_dataset_name)]
        
 
 class ActionGranularityLevel(Action):
@@ -362,36 +383,160 @@ class ActionGranularityLevel(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
+            global dataset_name_in_api
             # intent of user message 
             print(tracker.get_intent_of_latest_message())
 
             print("\n","Now slots value in granular is ",tracker.slots['dataset_name'])
-
-            ls_entity =tracker.latest_message['entities'] # to get entities from user message
-            if  tracker.slots['dataset_name'] and  tracker.slots['dataset_name']!=None:
+            ls_entity = tracker.latest_message['entities'] # to get entities from user message
+            if  tracker.slots['dataset_name'] and tracker.slots['dataset_name']!=None:
                 # name of datset from slot we had
                 dataset_name_ = tracker.slots['dataset_name']
+                print('this is the dataset name which is setup as a slot value', dataset_name_)
                 dataset_name_ = dataset_name_.lower() 
-
                 # calling global dictionary
                 global master_dic_dataset_name
 
-                # if dataset name that is extracted from user message is present in our data we got from json file
+                print("Before spell check",dataset_name_)
                 # spellcheck the name of dataset
-                dataset_name_ = correction(dataset_name_)
-                corrected_dataset_name_ = dataset_name_
+                if dataset_name_ not in ['nsso','employment','non-crop','crop','foodgrains']:
+                    if dataset_name_ in dataset_name_in_api:
+                        dataset_name_ = dataset_name_
+                        print("dataset's api name is being setup as a slot value therefore no spellcheck" )
+                    else:
+                        dataset_name_ = correction(dataset_name_)
+                        corrected_dataset_name_ = dataset_name_
+                        print("dataset's api name is not setted up as a slot value therefore we will use spellcheck")
+                    # dataset_name_ = correction(dataset_name_)
+                    # corrected_dataset_name_ = dataset_name_
 
+                elif len(ls_entity)>1: # removing that entity where datset name is nsso
+
+                    print(ls_entity)
+                    removable_index = [[j,i['value']] for j,i in enumerate(ls_entity) if i['value'] in  ['NSSO','Employment','Non-Crop','Crop','Foodgrains']]
+
+          
+                    print("\n",'printing removable index --',removable_index,"\n")
+
+                    for last_check in removable_index:
+                        # there are chance when employemnt and NSSO can come together 
+                        # then to remove only NSSO dataset_name we used this last filter
+
+                        print(last_check)
+
+                        type_of_crop = last_check[1]    #i.e crop or non-crop category
+
+                        # iff NSSO found remove that corresponding dictionary from ls_entity
+                        if last_check[1]=='NSSO':
+                            removable_index = last_check[0]
+
+                            # if not NSSO then remove then EMPLOYMENT entity dictionary from ls_entity
+                        else:
+                            removable_index = last_check[0]
+    
+                    
+                    print("\n",removable_index,"\n")
+                
+                    ls_entity.pop(removable_index)
+                    print("After Pop",ls_entity)
+
+                    for iter in range(len(ls_entity)):
+                        if ls_entity[iter]['entity']=='dataset_name' :
+                            
+                            # dataset_name_list_countter =  [i for i in range(len(ls_entity)) if ls_entity[i]['entity']=='dataset_name' ]
+                            
+                            print("type of crop weather its crop or non-crop",type_of_crop)
+                            if type_of_crop=='Crop':
+
+                                print("green")
+                                dataset_name_  = ls_entity[iter]['value']
+                            
+                                if dataset_name_ == 'Agricultural Census 2010-11':
+
+                                    dataset_name_ = 'agcensus_crop'
+                                elif dataset_name_ == 'Agricultural Census 2015-16':
+                                    dataset_name_ = 'agcensus_c'
+                                elif  dataset_name_ == 'Input Survey':
+                                    dataset_name_ = 'input_crop'
+                                  
+                                else:
+                                    dataset_name_ = dataset_name_
+                                
+                                break
+                                
+                            elif  type_of_crop=='Non-Crop' :
+                                # second_removable_index = iter
+                                print("iter",iter)
+                                # ls_entity.pop(second_removable_index)
+
+                                # again we'll have to iterate to get dataset value
+                                for iter  in range(len(ls_entity)):
+                                    if ls_entity[iter]['entity']=='dataset_name' :
+                                        dataset_name_  = ls_entity[iter]['value']
+
+                                # as Non has came now just need to map to correct non option
+                                if dataset_name_ == 'Agricultural Census 2010-11':
+
+                                    dataset_name_ = 'agcensus_noncrop'
+                                elif dataset_name_ == 'Agricultural Census 2015-16':
+                                    dataset_name_ = 'agcensus_nc'
+                                elif  dataset_name_ == 'Input survey':
+                                    dataset_name_ == 'input_crop'
+                                else:
+                                    dataset_name_ = dataset_name_
+                                break
+
+                            else:
+                                dataset_name_  = ls_entity[iter]['value']
+
+                        else:
+                            continue  
+
+                    if dataset_name_ in dataset_name_in_api:
+                        dataset_name_ = dataset_name_
+                        print("dataset's api name is being setup as a slot value therefore no spellcheck" )
+                    else:
+                        dataset_name_ = correction(dataset_name_)
+                        corrected_dataset_name_ = dataset_name_
+                        print("dataset's api name is not setted up as a slot value therefore we will use spellcheck")
+                    # dataset_name_ = correction(dataset_name_)
+                    # corrected_dataset_name_ = dataset_name_
+
+                else:
+                    dataset_name_ = correction(dataset_name_)
+                print("after spellcheck ",dataset_name_)
+
+                  # initializing punctuations string
+                punc = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+                
+                # Removing punctuations in string
+                # Using loop + punctuation string
+                for ele in dataset_name_:
+                    if ele in punc:
+                        dataset_name_ = dataset_name_.replace(ele, " ")
+
+                print("Removed punctuation marks",dataset_name_)
+
+
+                # if dataset name that is extracted from user message is present in our data we got from json file
                 if dataset_name_ in master_dic_dataset_name.keys():
-        
+                    print("IN",dataset_name_)
                     dataset_name_ = master_dic_dataset_name[dataset_name_]
+                    print("OUT",dataset_name_)
+
                 extracted_ls_entity = []
                 for i in range(len(ls_entity)):
                     extracted_ls_entity.append(ls_entity[i]['entity'])
                 # extracted_ls_entity = list(filter(lambda x:x!='dataset_name', extracted_ls_entity))
-                print(f"Entites we extracted in gran {extracted_ls_entity}")
-                if 'dataset_name' in extracted_ls_entity:
-                    extracted_ls_entity.remove('dataset_name')
+                print(f"Entites we extracted in granularity is  {extracted_ls_entity}")
+
+                print(ls_entity)
+
+                # print('before removing datatset name from list - ', extracted_ls_entity)
+                # if 'dataset_name' in extracted_ls_entity :
+                #     extracted_ls_entity.remove('dataset_name')
+                #     print('after removing datatset name from list - ', extracted_ls_entity)
+
 
                 dict_of_mapped_data_with_id = {}
                 with urllib.request.urlopen("https://indiadataportal.com/meta_data_info") as url:
@@ -419,30 +564,42 @@ class ActionGranularityLevel(Action):
                         if len(extracted_ls_entity) >=1:
                             # iterating through all entites other than dataset_name
                             for entity_iter in extracted_ls_entity:
-                                print("yes i am ")
-                                # check if entity present in extracted_ls_entity is also present in p ( data in db)
-                                # spellcheck the entity
-                                entity_iter = correction(entity_iter)
+                                print("yes i am in granularity with entity as ", entity_iter)
+                                if entity_iter != 'dataset_name':
+                                    # check if entity present in extracted_ls_entity is also present in p ( data in db)
+                                    # spellcheck the entity
+                                    entity_iter = correction(entity_iter)
 
-                                if entity_iter in p.keys():
-
-                                    # if entity is present in p then print the value of that entity
-                                    print(f"{entity_iter} ----> {p[entity_iter]}")
-                                    dispatcher.utter_message(text = f" for {corrected_dataset_name_} {entity_iter} is {p[entity_iter]}")
-                                
+                                    if entity_iter in p.keys() and entity_iter in entity_mapper.keys():
+                                        new_entity_iter = entity_mapper[entity_iter]
+                                        # if entity is present in p then print the value of that entity
+                                        # if entity_iter != 'dataset_name':
+                                        print(f"{entity_iter} ----> {p[entity_iter]}")
+                                        # dispatcher.utter_message(text = f" for {corrected_dataset_name_} {new_entity_iter} is {p[entity_iter]}")
+                                        dispatcher.utter_message(text=f'{new_entity_iter} is {p[entity_iter]} for more [click here](https://indiadataportal.com/visualize?language=English&location=India#?dataset_id={extracted_id}&tab=details-tab)')
+                                        return [SlotSet('dataset_name', dataset_name_)]
+                                        # elif entity_iter == 'dataset_name':
+                                        #     print(f"Returning {dataset_name_}")
+                                        #     return [SlotSet('dataset_name', dataset_name_)] 
+                                    
+                                    else:
+                                        dispatcher.utter_message(text = 'Sorry but can you pls tell again  what feature you are looking for')
+                                        dispatcher.utter_message(text = """Ex :Like if you want to know Granularity level of a Dataset
+                                                                            say it like :- What is the Granularity level of Rainfall Data""")
                                 else:
-                                    dispatcher.utter_message(text = 'Sorry but can you pls tell again  what feature you are looking for')
-                                    dispatcher.utter_message(text = """Ex :Like if you want to know Granularity level of a Dataset
-                                                                        say it like :- What is the Granularity level of Rainfall Data""")
+                                    continue
                         else:
                             dispatcher.utter_message(text = f'Sorry but what exactly you wanted I could not get that')
                             dispatcher.utter_message(text = """Ex :Like if you want to know Granularity level of a Dataset
                                                                         say it like :- What is the Granularity level of Rainfall Data""")
-                                
+
+                    else:
+                        dispatcher.utter_message(text = f'Sorry but what exactly you wanted I could not get that')
+                        dispatcher.utter_message(text = """Ex :Like if you want to know Granularity level of a Dataset
+                                                                        say it like :- What is the Granularity level of Rainfall Data""")
 
             else:
-                dispatcher.utter_message(text = """Can you specify the Dataset Name completely and
-                what's your query reagrding it """)
+                dispatcher.utter_message(text = """Right now our datasets have the granularity level of states, districts and blocks. """)
 
 
 
@@ -454,40 +611,160 @@ class ActionSourcedata(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
+            global dataset_name_in_api
             # intent of user message 
             print(tracker.get_intent_of_latest_message())
 
-            print("\n","Now slots value in source is ",tracker.slots['dataset_name'])
-
+            print("\n","Now slots value in source name  is ",tracker.slots['dataset_name'])
             ls_entity =tracker.latest_message['entities'] # to get entities from user message
-            if  tracker.slots['dataset_name'] and  tracker.slots['dataset_name']!=None:
+            if  tracker.slots['dataset_name'] and tracker.slots['dataset_name']!=None:
                 # name of datset from slot we had
                 dataset_name_ = tracker.slots['dataset_name']
                 dataset_name_ = dataset_name_.lower() 
                 # calling global dictionary
                 global master_dic_dataset_name
 
-                # if dataset name that is extracted from user message is present in our data we got from json file
+                print("Before spell check",dataset_name_)
                 # spellcheck the name of dataset
-                dataset_name_ = correction(dataset_name_)
-                corrected_dataset_name_ = dataset_name_
+                if dataset_name_ not in ['nsso','employment','non-crop','crop','foodgrains']:
+                    if dataset_name_ in dataset_name_in_api:
+                        dataset_name_ = dataset_name_
+                        print("dataset's api name is being setup as a slot value therefore no spellcheck" )
+                    else:
+                        dataset_name_ = correction(dataset_name_)
+                        corrected_dataset_name_ = dataset_name_
+                        print("dataset's api name is not setted up as a slot value therefore we will use spellcheck")
+                    # dataset_name_ = correction(dataset_name_)
+                    # corrected_dataset_name_ = dataset_name_
 
+                else: # removing that entity where datset name is nsso
+
+                    print(ls_entity)
+                    removable_index = [[j,i['value']] for j,i in enumerate(ls_entity) if i['value'] in  ['NSSO','Employment','Non-Crop','Crop','Foodgrains']]
+
+          
+                    print("\n",removable_index,"\n")
+
+                    for last_check in removable_index:
+                        # there are chance when employemnt and NSSO can come together 
+                        # then to remove only NSSO dataset_name we used this last filter
+
+                        print(last_check)
+
+                        type_of_crop = last_check[1]
+
+                        # iff NSSO found remove that corresponding dictionary from ls_entity
+                        if last_check[1]=='NSSO':
+                            removable_index = last_check[0]
+
+                            # if not NSSO then remove then EMPLOYMENT entity dictionary from ls_entity
+                        else:
+                            removable_index = last_check[0]
+    
+                    
+                    print("\n",removable_index,"\n")
+                
+                    ls_entity.pop(removable_index)
+                    print("After Pop",ls_entity)
+
+                    for iter in range(len(ls_entity)):
+                        if ls_entity[iter]['entity']=='dataset_name' :
+                            
+                            # dataset_name_list_countter =  [i for i in range(len(ls_entity)) if ls_entity[i]['entity']=='dataset_name' ]
+                            
+                            print("type",type_of_crop)
+                            if type_of_crop=='Crop':
+
+                                print("green")
+                                dataset_name_  = ls_entity[iter]['value']
+                            
+                                if dataset_name_ == 'Agricultural Census 2010-11':
+
+                                    dataset_name_ = 'agcensus_crop'
+                                elif dataset_name_ == 'Agricultural Census 2015-16':
+                                    dataset_name_ = 'agcensus_c'
+                                elif  dataset_name_ == 'Input Survey':
+                                    dataset_name_ = 'input_crop'
+                                  
+                                else:
+                                    dataset_name_ = dataset_name_
+                                
+                                break
+                                
+                            elif  type_of_crop=='Non-Crop' :
+                                # second_removable_index = iter
+                                print("iter",iter)
+                                # ls_entity.pop(second_removable_index)
+
+                                # again we'll have to iterate to get dataset value
+                                for iter  in range(len(ls_entity)):
+                                    if ls_entity[iter]['entity']=='dataset_name' :
+                                        dataset_name_  = ls_entity[iter]['value']
+
+                                # as Non has came now just need to map to correct non option
+                                if dataset_name_ == 'Agricultural Census 2010-11':
+
+                                    dataset_name_ = 'agcensus_noncrop'
+                                elif dataset_name_ == 'Agricultural Census 2015-16':
+                                    dataset_name_ = 'agcensus_nc'
+                                elif  dataset_name_ == 'Input survey':
+                                    dataset_name_ == 'input_crop'
+                                else:
+                                    dataset_name_ = dataset_name_
+                                break
+
+                            else:
+                                dataset_name_  = ls_entity[iter]['value']
+
+                        else:
+                            continue  
+
+                    if dataset_name_ in dataset_name_in_api:
+                        dataset_name_ = dataset_name_
+                        print("dataset's api name is being setup as a slot value therefore no spellcheck" )
+                    else:
+                        dataset_name_ = correction(dataset_name_)
+                        corrected_dataset_name_ = dataset_name_
+                        print("dataset's api name is not setted up as a slot value therefore we will use spellcheck")
+                    # dataset_name_ = correction(dataset_name_)
+                    # corrected_dataset_name_ = dataset_name_
+                print("after spellcheck ",dataset_name_)
+
+                  # initializing punctuations string
+                punc = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+                
+                # Removing punctuations in string
+                # Using loop + punctuation string
+                for ele in dataset_name_:
+                    if ele in punc:
+                        dataset_name_ = dataset_name_.replace(ele, " ")
+
+                print("Removed punctuation marks",dataset_name_)
+
+
+                # if dataset name that is extracted from user message is present in our data we got from json file
                 if dataset_name_ in master_dic_dataset_name.keys():
-        
+                    print("IN",dataset_name_)
                     dataset_name_ = master_dic_dataset_name[dataset_name_]
+                    print("OUT",dataset_name_)
 
                 extracted_ls_entity = []
                 for i in range(len(ls_entity)):
                     extracted_ls_entity.append(ls_entity[i]['entity'])
                 # extracted_ls_entity = list(filter(lambda x:x!='dataset_name', extracted_ls_entity))
-                print(f"Entites we extracted in source {extracted_ls_entity}")
-                if 'dataset_name' in extracted_ls_entity:
-                    extracted_ls_entity.remove('dataset_name')
-                    print('after removing the entity dataset name- ', extracted_ls_entity)
+                print(f"Entites we extracted in source name  is  {extracted_ls_entity}")
+
+                print(ls_entity)
+
+                # print('before removing datatset name from list - ', extracted_ls_entity)
+                # if 'dataset_name' in extracted_ls_entity :
+                #     extracted_ls_entity.remove('dataset_name')
+                #     print('after removing datatset name from list - ', extracted_ls_entity)
+
 
                 dict_of_mapped_data_with_id = {}
                 with urllib.request.urlopen("https://indiadataportal.com/meta_data_info") as url:
+
                     data = json.loads(url.read().decode())
                     temp_data  = json.dumps(data, indent=4, sort_keys=True)
                     temp_data = json.loads(temp_data)
@@ -513,26 +790,39 @@ class ActionSourcedata(Action):
                         if len(extracted_ls_entity) >=1:
                             # iterating through all entites other than dataset_name
                             for entity_iter in extracted_ls_entity:
-                                print("yes i am in source")
-                                # check if entity present in extracted_ls_entity is also present in p ( data in db)
-                                # spellcheck the entity
-                                entity_iter = correction(entity_iter)
-                                print("after correction in source",entity_iter)
-                                if entity_iter in p.keys():
+                                print("yes i am in source with entity iter as", entity_iter)
+                                if entity_iter != 'dataset_name':
+                                    # check if entity present in extracted_ls_entity is also present in p ( data in db)
+                                    # spellcheck the entity
+                                    entity_iter = correction(entity_iter)
+                                    print("after correction in source",entity_iter)
 
-                                    # if entity is present in p then print the value of that entity
-                                    print(f"{entity_iter} ----> {p[entity_iter]}")
-                                    dispatcher.utter_message(text = f" for {corrected_dataset_name_} {entity_iter} is {p[entity_iter]}")
+                                    if entity_iter in p.keys() and entity_iter in entity_mapper.keys():
+                                        new_entity_iter = entity_mapper[entity_iter]
+                                        # if entity is present in p then print the value of that entity
+                                        # if entity_iter != 'dataset_name':
+                                        print(f"{entity_iter} ----> {p[entity_iter]}")
+                                        # dispatcher.utter_message(text = f" for {corrected_dataset_name_} {new_entity_iter} is {p[entity_iter]}")
+                                        dispatcher.utter_message(text=f'{new_entity_iter} is {p[entity_iter]} for more [click here](https://indiadataportal.com/visualize?language=English&location=India#?dataset_id={extracted_id}&tab=details-tab)')
+                                        return [SlotSet('dataset_name', dataset_name_)]
+                                    # elif entity_iter == 'dataset_name':
+                                    #     print(f"Returning {dataset_name_}")
+                                    #     return [SlotSet('dataset_name', dataset_name_)] 
                                 
-                                else:
-                                    dispatcher.utter_message(text = 'Sorry but can you pls tell again  what feature you are looking for')
-                                    dispatcher.utter_message(text = """Ex :Like if you want to know Granularity level of a Dataset
-                                                                        say it like :- What is the Granularity level of Rainfall Data""")
-                                                
+                                    else:
+                                        dispatcher.utter_message(text = 'Sorry but can you pls tell again  what feature you are looking for')
+                                        dispatcher.utter_message(text = """Ex :Like if you want to know Source name of a Dataset
+                                                                            say it like :- what is source name for this dataset? """)
+                                else: 
+                                    continue                
                         else:
                             dispatcher.utter_message(text = f'Sorry but what exactly you wanted I could not get that')
-                            dispatcher.utter_message(text = """Ex :Like if you want to know Source of a Dataset
-                                                                        say it like :- What is the Source of Rainfall Data""")
+                            dispatcher.utter_message(text = """Ex :Like if you want to know Source name of a Dataset
+                                                                        say it like :- what's the source name of Agriculture Wages""")
+                    else:
+                        dispatcher.utter_message(text = f'Sorry but what exactly you wanted I could not get that')
+                        dispatcher.utter_message(text = """Ex :Like if you want to know Source name of a Dataset
+                                                                        say it like :- what's the source name of Agriculture Wages""")
 
             else:
                 dispatcher.utter_message(text = "Can you tell which dataset it is")
@@ -547,39 +837,160 @@ class ActionMethodology(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
+            global dataset_name_in_api
             # intent of user message 
-            print("\n",tracker.get_intent_of_latest_message())
+            print(tracker.get_intent_of_latest_message())
 
-            print("\n","Now slots value in Methodology is ",tracker.slots['dataset_name'])
-
+            print("\n","Now slots value in methodology is ",tracker.slots['dataset_name'])
             ls_entity =tracker.latest_message['entities'] # to get entities from user message
-            if  tracker.slots['dataset_name'] and  tracker.slots['dataset_name']!=None:
+            if  tracker.slots['dataset_name'] and tracker.slots['dataset_name']!=None:
                 # name of datset from slot we had
                 dataset_name_ = tracker.slots['dataset_name']
                 dataset_name_ = dataset_name_.lower() 
-                
-
+                # calling global dictionary
                 global master_dic_dataset_name
 
+                print("Before spell check",dataset_name_)
                 # spellcheck the name of dataset
-                dataset_name_ = correction(dataset_name_)
-                corrected_dataset_name_ = dataset_name_
+                if dataset_name_ not in ['nsso','employment','non-crop','crop','foodgrains']:
+                    if dataset_name_ in dataset_name_in_api:
+                        dataset_name_ = dataset_name_
+                        print("dataset's api name is being setup as a slot value therefore no spellcheck" )
+                    else:
+                        dataset_name_ = correction(dataset_name_)
+                        corrected_dataset_name_ = dataset_name_
+                        print("dataset's api name is not setted up as a slot value therefore we will use spellcheck")
+                    # dataset_name_ = correction(dataset_name_)
+                    # corrected_dataset_name_ = dataset_name_
 
+                else: # removing that entity where datset name is nsso
+
+                    print(ls_entity)
+                    removable_index = [[j,i['value']] for j,i in enumerate(ls_entity) if i['value'] in  ['NSSO','Employment','Non-Crop','Crop','Foodgrains']]
+
+          
+                    print("\n",removable_index,"\n")
+
+                    for last_check in removable_index:
+                        # there are chance when employemnt and NSSO can come together 
+                        # then to remove only NSSO dataset_name we used this last filter
+
+                        print(last_check)
+
+                        type_of_crop = last_check[1]
+
+                        # iff NSSO found remove that corresponding dictionary from ls_entity
+                        if last_check[1]=='NSSO':
+                            removable_index = last_check[0]
+
+                            # if not NSSO then remove then EMPLOYMENT entity dictionary from ls_entity
+                        else:
+                            removable_index = last_check[0]
+    
+                    
+                    print("\n",removable_index,"\n")
+                
+                    ls_entity.pop(removable_index)
+                    print("After Pop",ls_entity)
+
+                    for iter in range(len(ls_entity)):
+                        if ls_entity[iter]['entity']=='dataset_name' :
+                            
+                            # dataset_name_list_countter =  [i for i in range(len(ls_entity)) if ls_entity[i]['entity']=='dataset_name' ]
+                            
+                            print("type",type_of_crop)
+                            if type_of_crop=='Crop':
+
+                                print("green")
+                                dataset_name_  = ls_entity[iter]['value']
+                            
+                                if dataset_name_ == 'Agricultural Census 2010-11':
+
+                                    dataset_name_ = 'agcensus_crop'
+                                elif dataset_name_ == 'Agricultural Census 2015-16':
+                                    dataset_name_ = 'agcensus_c'
+                                elif  dataset_name_ == 'Input Survey':
+                                    dataset_name_ = 'input_crop'
+                                  
+                                else:
+                                    dataset_name_ = dataset_name_
+                                
+                                break
+                                
+                            elif  type_of_crop=='Non-Crop' :
+                                # second_removable_index = iter
+                                print("iter",iter)
+                                # ls_entity.pop(second_removable_index)
+
+                                # again we'll have to iterate to get dataset value
+                                for iter  in range(len(ls_entity)):
+                                    if ls_entity[iter]['entity']=='dataset_name' :
+                                        dataset_name_  = ls_entity[iter]['value']
+
+                                # as Non has came now just need to map to correct non option
+                                if dataset_name_ == 'Agricultural Census 2010-11':
+
+                                    dataset_name_ = 'agcensus_noncrop'
+                                elif dataset_name_ == 'Agricultural Census 2015-16':
+                                    dataset_name_ = 'agcensus_nc'
+                                elif  dataset_name_ == 'Input survey':
+                                    dataset_name_ == 'input_crop'
+                                else:
+                                    dataset_name_ = dataset_name_
+                                break
+
+                            else:
+                                dataset_name_  = ls_entity[iter]['value']
+
+                        else:
+                            continue  
+
+                    if dataset_name_ in dataset_name_in_api:
+                        dataset_name_ = dataset_name_
+                        print("dataset's api name is being setup as a slot value therefore no spellcheck" )
+                    else:
+                        dataset_name_ = correction(dataset_name_)
+                        corrected_dataset_name_ = dataset_name_
+                        print("dataset's api name is not setted up as a slot value therefore we will use spellcheck")
+                    # dataset_name_ = correction(dataset_name_)
+                    # corrected_dataset_name_ = dataset_name_
+                print("after spellcheck ",dataset_name_)
+
+                  # initializing punctuations string
+                punc = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+                
+                # Removing punctuations in string
+                # Using loop + punctuation string
+                for ele in dataset_name_:
+                    if ele in punc:
+                        dataset_name_ = dataset_name_.replace(ele, " ")
+
+                print("Removed punctuation marks",dataset_name_)
+
+
+                # if dataset name that is extracted from user message is present in our data we got from json file
                 if dataset_name_ in master_dic_dataset_name.keys():
-        
+                    print("IN",dataset_name_)
                     dataset_name_ = master_dic_dataset_name[dataset_name_]
+                    print("OUT",dataset_name_)
 
                 extracted_ls_entity = []
                 for i in range(len(ls_entity)):
                     extracted_ls_entity.append(ls_entity[i]['entity'])
                 # extracted_ls_entity = list(filter(lambda x:x!='dataset_name', extracted_ls_entity))
-                print(f"Entites we extracted in Methodology {extracted_ls_entity}")
-                if 'dataset_name' in extracted_ls_entity:
-                    extracted_ls_entity.remove('dataset_name')
+                print(f"Entites we extracted in methodology is  {extracted_ls_entity}")
+
+                print(ls_entity)
+
+                # print('before removing datatset name from list - ', extracted_ls_entity)
+                # if 'dataset_name' in extracted_ls_entity :
+                #     extracted_ls_entity.remove('dataset_name')
+                #     print('after removing datatset name from list - ', extracted_ls_entity)
+
 
                 dict_of_mapped_data_with_id = {}
                 with urllib.request.urlopen("https://indiadataportal.com/meta_data_info") as url:
+
                     data = json.loads(url.read().decode())
                     temp_data  = json.dumps(data, indent=4, sort_keys=True)
                     temp_data = json.loads(temp_data)
@@ -605,25 +1016,45 @@ class ActionMethodology(Action):
                         if len(extracted_ls_entity) >=1:
                             # iterating through all entites other than dataset_name
                             for entity_iter in extracted_ls_entity:
-                                print("yes i am in methodology")
-                                # check if entity present in extracted_ls_entity is also present in p ( data in db)
-                                # spellcheck the entity
-                                entity_iter = correction(entity_iter)
-                                if entity_iter in p.keys():
-                                    # if entity is present in p then print the value of that entity
-                                    # print(f"{entity_iter} ----> {p[entity_iter]}")
-                                    dispatcher.utter_message(text = f" for {corrected_dataset_name_} {entity_iter} is {p[entity_iter]}")
-                                
+                                print("yes i am in methodology with entity iter as ", entity_iter)
+                                if entity_iter != 'dataset_name':
+                                    # check if entity present in extracted_ls_entity is also present in p ( data in db)
+                                    # spellcheck the entity
+                                    entity_iter = correction(entity_iter)
+
+                                    if entity_iter in p.keys() and entity_iter in entity_mapper.keys():
+                                        new_entity_iter = entity_mapper[entity_iter]
+                                        # if entity is present in p then print the value of that entity
+                                        print(f"{entity_iter} ----> {p[entity_iter]}")
+                                        limited_methodology = p[entity_iter]
+                                        # if entity_iter != 'dataset_name':
+
+                                        if limited_methodology!=None:
+                                            limited_methodology=limited_methodology[:350]
+                                            dispatcher.utter_message(text = f" {new_entity_iter} is {limited_methodology} for more [click here](https://indiadataportal.com/visualize?language=English&location=India#?dataset_id={extracted_id}&tab=details-tab)")
+                                            return [SlotSet('dataset_name', dataset_name_)]
+                                        else:
+
+                                            dispatcher.utter_message(text = 'It will be updated in future')
+                                            return [SlotSet('dataset_name', dataset_name_)]
+                                        # elif entity_iter == 'dataset_name':
+                                        #     print(f"Returning {dataset_name_}")
+                                        #     return [SlotSet('dataset_name', dataset_name_)] 
+                                    
+                                    else:
+                                        dispatcher.utter_message(text = 'Sorry but can you pls tell again  what feature you are looking for')
+                                        dispatcher.utter_message(text = """Ex :Like if you want to know Methodology of a Dataset
+                                                                            say it like :- What was the methodolgy adopted to make Rainfall Data""")
                                 else:
-                                    dispatcher.utter_message(text = 'Sorry but can you pls tell again  what feature you are looking for')
-                                    dispatcher.utter_message(text = """Ex :Like if you want to know Methodology of a Dataset
-                                                                        say it like :- What was the methodolgy adopted to make Rainfall Data""")
-                        
+                                    continue
                         else:
                             dispatcher.utter_message(text = f'Sorry but what exactly you wanted I could not get that')
                             dispatcher.utter_message(text = """Ex :Like if you want to know Methodology of a Dataset
                                                                         say it like :- What was the methodolgy adopted to make Rainfall Data""")
-
+                    else:
+                        dispatcher.utter_message(text = f'Sorry but what exactly you wanted I could not get that')
+                        dispatcher.utter_message(text = """Ex :Like if you want to know Methodology of a Dataset
+                                                                        say it like :- What was the methodology adopted to make Rainfall Data""")
             else:
                 dispatcher.utter_message(text = "Can you tell which dataset it is")
 
@@ -635,39 +1066,160 @@ class ActionFrequency(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
+            global dataset_name_in_api
             # intent of user message 
-            print("\n",tracker.get_intent_of_latest_message())
+            print(tracker.get_intent_of_latest_message())
 
             print("\n","Now slots value in frequency is ",tracker.slots['dataset_name'])
-
             ls_entity =tracker.latest_message['entities'] # to get entities from user message
-            if  tracker.slots['dataset_name'] and  tracker.slots['dataset_name']!=None:
+            if  tracker.slots['dataset_name'] and tracker.slots['dataset_name']!=None:
                 # name of datset from slot we had
                 dataset_name_ = tracker.slots['dataset_name']
                 dataset_name_ = dataset_name_.lower() 
-                 # calling global dictionary
+                # calling global dictionary
                 global master_dic_dataset_name
-                
+
+                print("Before spell check",dataset_name_)
                 # spellcheck the name of dataset
-                dataset_name_ = correction(dataset_name_)
-                corrected_dataset_name_ = dataset_name_
+                if dataset_name_ not in ['nsso','employment','non-crop','crop','foodgrains']:
+                    if dataset_name_ in dataset_name_in_api:
+                        dataset_name_ = dataset_name_
+                        print("dataset's api name is being setup as a slot value therefore no spellcheck" )
+                    else:
+                        dataset_name_ = correction(dataset_name_)
+                        corrected_dataset_name_ = dataset_name_
+                        print("dataset's api name is not setted up as a slot value therefore we will use spellcheck")
+                    # dataset_name_ = correction(dataset_name_)
+                    # corrected_dataset_name_ = dataset_name_
+
+                else: # removing that entity where datset name is nsso
+
+                    print(ls_entity)
+                    removable_index = [[j,i['value']] for j,i in enumerate(ls_entity) if i['value'] in  ['NSSO','Employment','Non-Crop','Crop','Foodgrains']]
+
+          
+                    print("\n",removable_index,"\n")
+
+                    for last_check in removable_index:
+                        # there are chance when employemnt and NSSO can come together 
+                        # then to remove only NSSO dataset_name we used this last filter
+
+                        print(last_check)
+
+                        type_of_crop = last_check[1]
+
+                        # iff NSSO found remove that corresponding dictionary from ls_entity
+                        if last_check[1]=='NSSO':
+                            removable_index = last_check[0]
+
+                            # if not NSSO then remove then EMPLOYMENT entity dictionary from ls_entity
+                        else:
+                            removable_index = last_check[0]
+    
+                    
+                    print("\n",removable_index,"\n")
+                
+                    ls_entity.pop(removable_index)
+                    print("After Pop",ls_entity)
+
+                    for iter in range(len(ls_entity)):
+                        if ls_entity[iter]['entity']=='dataset_name' :
+                            
+                            # dataset_name_list_countter =  [i for i in range(len(ls_entity)) if ls_entity[i]['entity']=='dataset_name' ]
+                            
+                            print("type",type_of_crop)
+                            if type_of_crop=='Crop':
+
+                                print("green")
+                                dataset_name_  = ls_entity[iter]['value']
+                            
+                                if dataset_name_ == 'Agricultural Census 2010-11':
+
+                                    dataset_name_ = 'agcensus_crop'
+                                elif dataset_name_ == 'Agricultural Census 2015-16':
+                                    dataset_name_ = 'agcensus_c'
+                                elif  dataset_name_ == 'Input Survey':
+                                    dataset_name_ = 'input_crop'
+                                  
+                                else:
+                                    dataset_name_ = dataset_name_
+                                
+                                break
+                                
+                            elif  type_of_crop=='Non-Crop' :
+                                # second_removable_index = iter
+                                print("iter",iter)
+                                # ls_entity.pop(second_removable_index)
+
+                                # again we'll have to iterate to get dataset value
+                                for iter  in range(len(ls_entity)):
+                                    if ls_entity[iter]['entity']=='dataset_name' :
+                                        dataset_name_  = ls_entity[iter]['value']
+
+                                # as Non has came now just need to map to correct non option
+                                if dataset_name_ == 'Agricultural Census 2010-11':
+
+                                    dataset_name_ = 'agcensus_noncrop'
+                                elif dataset_name_ == 'Agricultural Census 2015-16':
+                                    dataset_name_ = 'agcensus_nc'
+                                elif  dataset_name_ == 'Input survey':
+                                    dataset_name_ == 'input_crop'
+                                else:
+                                    dataset_name_ = dataset_name_
+                                break
+
+                            else:
+                                dataset_name_  = ls_entity[iter]['value']
+
+                        else:
+                            continue  
+
+                    if dataset_name_ in dataset_name_in_api:
+                        dataset_name_ = dataset_name_
+                        print("dataset's api name is being setup as a slot value therefore no spellcheck" )
+                    else:
+                        dataset_name_ = correction(dataset_name_)
+                        corrected_dataset_name_ = dataset_name_
+                        print("dataset's api name is not setted up as a slot value therefore we will use spellcheck")
+                    # dataset_name_ = correction(dataset_name_)
+                    # corrected_dataset_name_ = dataset_name_
+                print("after spellcheck ",dataset_name_)
+
+                  # initializing punctuations string
+                punc = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+                
+                # Removing punctuations in string
+                # Using loop + punctuation string
+                for ele in dataset_name_:
+                    if ele in punc:
+                        dataset_name_ = dataset_name_.replace(ele, " ")
+
+                print("Removed punctuation marks",dataset_name_)
+
 
                 # if dataset name that is extracted from user message is present in our data we got from json file
                 if dataset_name_ in master_dic_dataset_name.keys():
-        
+                    print("IN",dataset_name_)
                     dataset_name_ = master_dic_dataset_name[dataset_name_]
+                    print("OUT",dataset_name_)
 
                 extracted_ls_entity = []
                 for i in range(len(ls_entity)):
                     extracted_ls_entity.append(ls_entity[i]['entity'])
                 # extracted_ls_entity = list(filter(lambda x:x!='dataset_name', extracted_ls_entity))
-                print(f"Entites we extracted in frequency {extracted_ls_entity}")
-                if 'dataset_name' in extracted_ls_entity:
-                    extracted_ls_entity.remove('dataset_name')
+                print(f"Entites we extracted in frequency is  {extracted_ls_entity}")
+
+                print(ls_entity)
+
+                # print('before removing datatset name from list - ', extracted_ls_entity)
+                # if 'dataset_name' in extracted_ls_entity :
+                #     extracted_ls_entity.remove('dataset_name')
+                #     print('after removing datatset name from list - ', extracted_ls_entity)
+
 
                 dict_of_mapped_data_with_id = {}
                 with urllib.request.urlopen("https://indiadataportal.com/meta_data_info") as url:
+
                     data = json.loads(url.read().decode())
                     temp_data  = json.dumps(data, indent=4, sort_keys=True)
                     temp_data = json.loads(temp_data)
@@ -693,29 +1245,42 @@ class ActionFrequency(Action):
                         if len(extracted_ls_entity) >=1:
                             # iterating through all entites other than dataset_name
                             for entity_iter in extracted_ls_entity:
-                                print("yes i am in frequency")
-                                # check if entity present in extracted_ls_entity is also present in p ( data in db)
-                                # spellcheck the entity
-                                entity_iter = correction(entity_iter)                                
-                                if entity_iter in p.keys():
+                                print("yes i am in frequency with entity_iter", entity_iter)
+                                if entity_iter != 'dataset_name':
+                                    # check if entity present in extracted_ls_entity is also present in p ( data in db)
+                                    # spellcheck the entity
+                                    entity_iter = correction(entity_iter)   
 
-                                    # if entity is present in p then print the value of that entity
-                                    # print(f"{entity_iter} ----> {p[entity_iter]}")
-                                    dispatcher.utter_message(text = f" for {corrected_dataset_name_} {entity_iter} is {p[entity_iter]}")
-                                
+                                    if entity_iter in p.keys() and entity_iter in entity_mapper.keys():
+                                        new_entity_iter = entity_mapper[entity_iter]
+                                        # if entity is present in p then print the value of that entity
+                                        # if entity_iter != 'dataset_name':
+                                        print(f"{entity_iter} ----> {p[entity_iter]}")
+                                        # dispatcher.utter_message(text = f" for {corrected_dataset_name_} {new_entity_iter} is {p[entity_iter]}")
+                                        dispatcher.utter_message(text=f'{new_entity_iter} is {p[entity_iter]} for more [click here](https://indiadataportal.com/visualize?language=English&location=India#?dataset_id={extracted_id}&tab=details-tab)')
+                                        return [SlotSet('dataset_name', dataset_name_)]
+                                        # elif entity_iter == 'dataset_name':
+                                        #     print(f"Returning {dataset_name_}")
+                                        #     return [SlotSet('dataset_name', dataset_name_)] 
+                                    
+                                    else:
+                                        dispatcher.utter_message(text = 'Sorry but can you pls tell again what feature you are looking for')
+                                        dispatcher.utter_message(text = """Ex :Like if you want to know Frequqncy at which Dataset is updated
+                                                                            say it like :- how frequently does the agri wages data get updated?""")
                                 else:
-                                    dispatcher.utter_message(text = 'Sorry but can you pls tell again  what feature you are looking for')
-                                    dispatcher.utter_message(text = """Ex :Like if you want to know Frequqncy of about Dataset updation
-                                                                        say it like :- How often Rainfall Data is updated""")
-                        
+                                    continue
                         else:
                             dispatcher.utter_message(text = f'Sorry but what exactly you wanted I could not get that')
-                            dispatcher.utter_message(text = """Ex :Like if you want to know Frequqncy of about Dataset updation
-                                                                        say it like :- How often Rainfall Data is updated""")
+                            dispatcher.utter_message(text = """Ex :Like if you want to know Frequqncy at which Dataset is updated
+                                                                        say it like :- how frequently does the agri wages data get updated?""")
+                    else:
+                        dispatcher.utter_message(text = f'Sorry but what exactly you wanted I could not get that')
+                        dispatcher.utter_message(text = """Ex :Like if you want to know Frequqncy at which Dataset is updated
+                                                                        say it like :- how frequently does the agri wages data get updated?""")
             else:
-                dispatcher.utter_message(text = "Can you tell which dataset it is")
-
-
+                # dispatcher.utter_message(text = "Can you tell which dataset it is")
+                dispatcher.utter_message(text = 'India Data Portal has data from various government sources and once the data is uploaded on the source, it is updated on the portal within a short time')
+                
 class ActionLastDateUpdated(Action):
 
     def name(self) -> Text:
@@ -724,43 +1289,159 @@ class ActionLastDateUpdated(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
+            global dataset_name_in_api
             # intent of user message 
-            # print("\n",tracker.get_intent_of_latest_message())
+            print(tracker.get_intent_of_latest_message())
 
-            print("\n","Now slots value in Last date Updated is ",tracker.slots['dataset_name'])
-
+            print("\n","Now slots value in last updated date is ",tracker.slots['dataset_name'])
             ls_entity =tracker.latest_message['entities'] # to get entities from user message
-            if  tracker.slots['dataset_name'] and  tracker.slots['dataset_name']!=None:
+            if  tracker.slots['dataset_name'] and tracker.slots['dataset_name']!=None:
                 # name of datset from slot we had
                 dataset_name_ = tracker.slots['dataset_name']
                 dataset_name_ = dataset_name_.lower() 
-
                 # calling global dictionary
                 global master_dic_dataset_name
 
-
+                print("Before spell check",dataset_name_)
                 # spellcheck the name of dataset
-                dataset_name_ = correction(dataset_name_)
-                corrected_dataset_name_ = dataset_name_
+                if dataset_name_ not in ['nsso','employment','non-crop','crop','foodgrains']:
+                    # global dataset_name_in_api
+                    if dataset_name_ in dataset_name_in_api:
+                        dataset_name_ = dataset_name_
+                        print("dataset's api name is being setup as a slot value therefore no spellcheck" )
+                    else:
+                        dataset_name_ = correction(dataset_name_)
+                        corrected_dataset_name_ = dataset_name_
+                        print("dataset's api name is not setted up as a slot value therefore we will use spellcheck")
+                    # dataset_name_ = correction(dataset_name_)
+                    # corrected_dataset_name_ = dataset_name_
+
+                else: # removing that entity where datset name is nsso
+
+                    print(ls_entity)
+                    removable_index = [[j,i['value']] for j,i in enumerate(ls_entity) if i['value'] in  ['NSSO','Employment','Non-Crop','Crop','Foodgrains']]
+
+          
+                    print("\n",removable_index,"\n")
+
+                    for last_check in removable_index:
+                        # there are chance when employemnt and NSSO can come together 
+                        # then to remove only NSSO dataset_name we used this last filter
+
+                        print(last_check)
+
+                        type_of_crop = last_check[1]
+
+                        # iff NSSO found remove that corresponding dictionary from ls_entity
+                        if last_check[1]=='NSSO':
+                            removable_index = last_check[0]
+
+                            # if not NSSO then remove then EMPLOYMENT entity dictionary from ls_entity
+                        else:
+                            removable_index = last_check[0]
+    
+                    
+                    print("\n",removable_index,"\n")
                 
+                    ls_entity.pop(removable_index)
+                    print("After Pop",ls_entity)
+
+                    for iter in range(len(ls_entity)):
+                        if ls_entity[iter]['entity']=='dataset_name' :
+                            
+                            # dataset_name_list_countter =  [i for i in range(len(ls_entity)) if ls_entity[i]['entity']=='dataset_name' ]
+                            
+                            print("type",type_of_crop)
+                            if type_of_crop=='Crop':
+
+                                print("green")
+                                dataset_name_  = ls_entity[iter]['value']
+                            
+                                if dataset_name_ == 'Agricultural Census 2010-11':
+
+                                    dataset_name_ = 'agcensus_crop'
+                                elif dataset_name_ == 'Agricultural Census 2015-16':
+                                    dataset_name_ = 'agcensus_c'
+                                elif  dataset_name_ == 'Input Survey':
+                                    dataset_name_ = 'input_crop'
+                                  
+                                else:
+                                    dataset_name_ = dataset_name_
+                                
+                                break
+                                
+                            elif  type_of_crop=='Non-Crop' :
+                                # second_removable_index = iter
+                                print("iter",iter)
+                                # ls_entity.pop(second_removable_index)
+
+                                # again we'll have to iterate to get dataset value
+                                for iter  in range(len(ls_entity)):
+                                    if ls_entity[iter]['entity']=='dataset_name' :
+                                        dataset_name_  = ls_entity[iter]['value']
+
+                                # as Non has came now just need to map to correct non option
+                                if dataset_name_ == 'Agricultural Census 2010-11':
+
+                                    dataset_name_ = 'agcensus_noncrop'
+                                elif dataset_name_ == 'Agricultural Census 2015-16':
+                                    dataset_name_ = 'agcensus_nc'
+                                elif  dataset_name_ == 'Input survey':
+                                    dataset_name_ == 'input_crop'
+                                else:
+                                    dataset_name_ = dataset_name_
+                                break
+
+                            else:
+                                dataset_name_  = ls_entity[iter]['value']
+
+                        else:
+                            continue  
+                    
+                    if dataset_name_ in dataset_name_in_api:
+                        dataset_name_ = dataset_name_
+                        print('passed api check')
+                    else:
+                        dataset_name_ = correction(dataset_name_)
+                        corrected_dataset_name_ = dataset_name_
+                        print('failed api test')
+                print("after spellcheck -------",dataset_name_)
+
+                  # initializing punctuations string
+                punc = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+                
+                # Removing punctuations in string
+                # Using loop + punctuation string
+                for ele in dataset_name_:
+                    if ele in punc:
+                        dataset_name_ = dataset_name_.replace(ele, " ")
+
+                print("Removed punctuation marks",dataset_name_)
+
 
                 # if dataset name that is extracted from user message is present in our data we got from json file
                 if dataset_name_ in master_dic_dataset_name.keys():
-        
+                    print("IN",dataset_name_)
                     dataset_name_ = master_dic_dataset_name[dataset_name_]
-
+                    print("OUT",dataset_name_)
 
                 extracted_ls_entity = []
                 for i in range(len(ls_entity)):
                     extracted_ls_entity.append(ls_entity[i]['entity'])
                 # extracted_ls_entity = list(filter(lambda x:x!='dataset_name', extracted_ls_entity))
-                print(f"Entites we extracted in frequency {extracted_ls_entity}")
-                if 'dataset_name' in extracted_ls_entity:
-                    extracted_ls_entity.remove('dataset_name')
+                print(f"Entites we extracted in last updated date is  {extracted_ls_entity}")
+
+                print(ls_entity)
+
+                # print('before removing datatset name from list - ', extracted_ls_entity)
+                # if 'dataset_name' in extracted_ls_entity :
+                #     extracted_ls_entity.remove('dataset_name')
+                #     print('after removing datatset name from list - ', extracted_ls_entity)
+
 
                 dict_of_mapped_data_with_id = {}
                 with urllib.request.urlopen("https://indiadataportal.com/meta_data_info") as url:
+
                     data = json.loads(url.read().decode())
                     temp_data  = json.dumps(data, indent=4, sort_keys=True)
                     temp_data = json.loads(temp_data)
@@ -785,25 +1466,39 @@ class ActionLastDateUpdated(Action):
                         if len(extracted_ls_entity) >=1:
                             # iterating through all entites other than dataset_name
                             for entity_iter in extracted_ls_entity:
-                                print("yes i am in Last Date Updated")
-                                # check if entity present in extracted_ls_entity is also present in p ( data in db)
-                                # spellcheck the entity
-                                entity_iter = correction(entity_iter)
-                                if entity_iter in p.keys():
+                                print("yes i am in Last Date Updated with entity_iter - ", entity_iter)
+                                if entity_iter != 'dataset_name':
+                                    # check if entity present in extracted_ls_entity is also present in p ( data in db)
+                                    # spellcheck the entity
+                                    entity_iter = correction(entity_iter)
 
-                                    # if entity is present in p then print the value of that entity
-                                    # print(f"{entity_iter} ----> {p[entity_iter]}")
-                                    dispatcher.utter_message(text = f" for {corrected_dataset_name_} {entity_iter} is {p[entity_iter]}")
-                                
+                                    if entity_iter in p.keys() and entity_iter in entity_mapper.keys():
+                                        new_entity_iter = entity_mapper[entity_iter]
+                                        # if entity is present in p then print the value of that entity
+                                        # if entity_iter != 'dataset_name':
+                                        print(f"{entity_iter} ----> {p[entity_iter]}")
+                                        # dispatcher.utter_message(text = f" for {corrected_dataset_name_} {new_entity_iter} is {p[entity_iter]}")
+                                        dispatcher.utter_message(text=f'{new_entity_iter} is {p[entity_iter]} for more [click here](https://indiadataportal.com/visualize?language=English&location=India#?dataset_id={extracted_id}&tab=details-tab)')
+                                        return [SlotSet('dataset_name', dataset_name_)]
+                                    # elif entity_iter == 'dataset_name':
+                                    #     print(f"Returning {dataset_name_}")
+                                    #     # dispatcher.utter_message(text=f'{new_entity_iter} is {p[entity_iter]} for more [click here](https://indiadataportal.com/visualize?language=English&location=India#?dataset_id={extracted_id}&tab=details-tab)')
+                                    #     return [SlotSet('dataset_name', dataset_name_)]                               
+                                    else:
+                                        dispatcher.utter_message(text = 'Sorry but can you pls tell again what feature you are looking for')
+                                        dispatcher.utter_message(text = """Ex :Like if you want to know Last Date updated for a Dataset 
+                                                                        say it like :- when was the last updated data uploaded""")
                                 else:
-                                    dispatcher.utter_message(text = 'Sorry but can you pls tell again  what feature you are looking for')
-                                    dispatcher.utter_message(text = """Ex :Like if you want to know Last Date updated for a Dataset 
-                                                                        say it like :- When was this last date updated""")
+                                    continue
                         
                         else:
                             dispatcher.utter_message(text = f'Sorry but what exactly you wanted I could not get that')
                             dispatcher.utter_message(text = """Ex :Like if you want to know Last Date updated for a Dataset 
-                                                                        say it like :- When was this last date updated""")
+                                                                        say it like :- i'd like to know the last updated date of mgnrega employment""")
+                    else:
+                        dispatcher.utter_message(text = f'Sorry but what exactly you wanted I could not get that')
+                        dispatcher.utter_message(text = """Ex :Like if you want to know Last Date updated for a Dataset 
+                                                                        say it like :- i'd like to know the last updated date of mgnrega employment""")
             else:
                 dispatcher.utter_message(text = "Can you tell which dataset it is")
 
@@ -816,43 +1511,160 @@ class ActionSourceLink(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
+            global dataset_name_in_api
             # intent of user message 
-            # print("\n",tracker.get_intent_of_latest_message())
+            print(tracker.get_intent_of_latest_message())
 
-            print("\n","Now slots value in Source Link is ",tracker.slots['dataset_name'])
-
+            print("\n","Now slots value in source link is ",tracker.slots['dataset_name'])
             ls_entity =tracker.latest_message['entities'] # to get entities from user message
-            if  tracker.slots['dataset_name'] and  tracker.slots['dataset_name']!=None:
+            if  tracker.slots['dataset_name'] and tracker.slots['dataset_name']!=None:
                 # name of datset from slot we had
                 dataset_name_ = tracker.slots['dataset_name']
                 dataset_name_ = dataset_name_.lower() 
                 # calling global dictionary
                 global master_dic_dataset_name
 
+                print("Before spell check",dataset_name_)
                 # spellcheck the name of dataset
-                dataset_name_ = correction(dataset_name_)
-                corrected_dataset_name_ = dataset_name_
+                if dataset_name_ not in ['nsso','employment','non-crop','crop','foodgrains']:
+                    if dataset_name_ in dataset_name_in_api:
+                        dataset_name_ = dataset_name_
+                        print("dataset's api name is being setup as a slot value therefore no spellcheck" )
+                    else:
+                        dataset_name_ = correction(dataset_name_)
+                        corrected_dataset_name_ = dataset_name_
+                        print("dataset's api name is not setted up as a slot value therefore we will use spellcheck")
+                    # dataset_name_ = correction(dataset_name_)
+                    # corrected_dataset_name_ = dataset_name_
+
+                else: # removing that entity where datset name is nsso
+
+                    print(ls_entity)
+                    removable_index = [[j,i['value']] for j,i in enumerate(ls_entity) if i['value'] in  ['NSSO','Employment','Non-Crop','Crop','Foodgrains']]
+
+          
+                    print("\n",removable_index,"\n")
+
+                    for last_check in removable_index:
+                        # there are chance when employemnt and NSSO can come together 
+                        # then to remove only NSSO dataset_name we used this last filter
+
+                        print(last_check)
+
+                        type_of_crop = last_check[1]
+
+                        # iff NSSO found remove that corresponding dictionary from ls_entity
+                        if last_check[1]=='NSSO':
+                            removable_index = last_check[0]
+
+                            # if not NSSO then remove then EMPLOYMENT entity dictionary from ls_entity
+                        else:
+                            removable_index = last_check[0]
+    
+                    
+                    print("\n",removable_index,"\n")
+                
+                    ls_entity.pop(removable_index)
+                    print("After Pop",ls_entity)
+
+                    for iter in range(len(ls_entity)):
+                        if ls_entity[iter]['entity']=='dataset_name' :
+                            
+                            # dataset_name_list_countter =  [i for i in range(len(ls_entity)) if ls_entity[i]['entity']=='dataset_name' ]
+                            
+                            print("type",type_of_crop)
+                            if type_of_crop=='Crop':
+
+                                print("green")
+                                dataset_name_  = ls_entity[iter]['value']
+                            
+                                if dataset_name_ == 'Agricultural Census 2010-11':
+
+                                    dataset_name_ = 'agcensus_crop'
+                                elif dataset_name_ == 'Agricultural Census 2015-16':
+                                    dataset_name_ = 'agcensus_c'
+                                elif  dataset_name_ == 'Input Survey':
+                                    dataset_name_ = 'input_crop'
+                                  
+                                else:
+                                    dataset_name_ = dataset_name_
+                                
+                                break
+                                
+                            elif  type_of_crop=='Non-Crop' :
+                                # second_removable_index = iter
+                                print("iter",iter)
+                                # ls_entity.pop(second_removable_index)
+
+                                # again we'll have to iterate to get dataset value
+                                for iter  in range(len(ls_entity)):
+                                    if ls_entity[iter]['entity']=='dataset_name' :
+                                        dataset_name_  = ls_entity[iter]['value']
+
+                                # as Non has came now just need to map to correct non option
+                                if dataset_name_ == 'Agricultural Census 2010-11':
+
+                                    dataset_name_ = 'agcensus_noncrop'
+                                elif dataset_name_ == 'Agricultural Census 2015-16':
+                                    dataset_name_ = 'agcensus_nc'
+                                elif  dataset_name_ == 'Input survey':
+                                    dataset_name_ == 'input_crop'
+                                else:
+                                    dataset_name_ = dataset_name_
+                                break
+
+                            else:
+                                dataset_name_  = ls_entity[iter]['value']
+
+                        else:
+                            continue  
+
+                    if dataset_name_ in dataset_name_in_api:
+                        dataset_name_ = dataset_name_
+                        print("dataset's api name is being setup as a slot value therefore no spellcheck" )
+                    else:
+                        dataset_name_ = correction(dataset_name_)
+                        corrected_dataset_name_ = dataset_name_
+                        print("dataset's api name is not setted up as a slot value therefore we will use spellcheck")
+                    # dataset_name_ = correction(dataset_name_)
+                    # corrected_dataset_name_ = dataset_name_
+                print("after spellcheck ",dataset_name_)
+
+                  # initializing punctuations string
+                punc = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+                
+                # Removing punctuations in string
+                # Using loop + punctuation string
+                for ele in dataset_name_:
+                    if ele in punc:
+                        dataset_name_ = dataset_name_.replace(ele, " ")
+
+                print("Removed punctuation marks",dataset_name_)
+
 
                 # if dataset name that is extracted from user message is present in our data we got from json file
                 if dataset_name_ in master_dic_dataset_name.keys():
-        
+                    print("IN",dataset_name_)
                     dataset_name_ = master_dic_dataset_name[dataset_name_]
-
+                    print("OUT",dataset_name_)
 
                 extracted_ls_entity = []
                 for i in range(len(ls_entity)):
                     extracted_ls_entity.append(ls_entity[i]['entity'])
                 # extracted_ls_entity = list(filter(lambda x:x!='dataset_name', extracted_ls_entity))
-                print(f"Entites we extracted in source link {extracted_ls_entity}")
-                print('before removing datatset name from list - ', extracted_ls_entity)
-                if 'dataset_name' in extracted_ls_entity:
-                    extracted_ls_entity.remove('dataset_name')
-                    print('after removing datatset name from list - ', extracted_ls_entity)
+                print(f"Entites we extracted in source link is  {extracted_ls_entity}")
+
+                print(ls_entity)
+
+                # print('before removing datatset name from list - ', extracted_ls_entity)
+                # if 'dataset_name' in extracted_ls_entity :
+                #     extracted_ls_entity.remove('dataset_name')
+                #     print('after removing datatset name from list - ', extracted_ls_entity)
 
 
                 dict_of_mapped_data_with_id = {}
                 with urllib.request.urlopen("https://indiadataportal.com/meta_data_info") as url:
+
                     data = json.loads(url.read().decode())
                     temp_data  = json.dumps(data, indent=4, sort_keys=True)
                     temp_data = json.loads(temp_data)
@@ -860,9 +1672,10 @@ class ActionSourceLink(Action):
                         data = temp_data[i]
                         # print(f"{data['dataset_name']} ---- > {data['dataset_id']} " )
                         dict_of_mapped_data_with_id[data['dataset_name']] = data['dataset_id']
-
+                    
+                  
                     # if extracted dataset name is present in our data we got from json file
-                    if dataset_name_ in dict_of_mapped_data_with_id.keys():
+                    if dataset_name_ in list(dict_of_mapped_data_with_id.keys()):
                         
                         # extract id for that dataset name
                         extracted_id = dict_of_mapped_data_with_id[dataset_name_]
@@ -877,26 +1690,40 @@ class ActionSourceLink(Action):
                         if len(extracted_ls_entity) >=1:
                             # iterating through all entites other than dataset_name
                             for entity_iter in extracted_ls_entity:
-                                print("yes i am in Source Link")
-                                # check if entity present in extracted_ls_entity is also present in p ( data in db)
-                                # spellcheck the entity
-                                entity_iter = correction(entity_iter)
-                                if entity_iter in p.keys():
+                                print("yes i am in Source Link with entity iter as ", entity_iter)
+                                if entity_iter != 'dataset_name':
+                                    # check if entity present in extracted_ls_entity is also present in p ( data in db)
+                                    # spellcheck the entity
+                                    entity_iter = correction(entity_iter)
 
-                                    # if entity is present in p then print the value of that entity
-                                    # print(f"{entity_iter} ----> {p[entity_iter]}")
-                                    dispatcher.utter_message(text = f" for {corrected_dataset_name_} {entity_iter} is {p[entity_iter]}")
+                                    if entity_iter in p.keys() and entity_iter in entity_mapper.keys():
+                                        new_entity_iter = entity_mapper[entity_iter]
+                                        # if entity is present in p then print the value of that entity
+                                        # if entity_iter != 'dataset_name':
+                                        print(f"{entity_iter} ----> {p[entity_iter]}")
+                                        # dispatcher.utter_message(text = f" for {corrected_dataset_name_} {new_entity_iter} is {p[entity_iter]}")
+                                        dispatcher.utter_message(text=f'{new_entity_iter} is {p[entity_iter]} for more [click here](https://indiadataportal.com/visualize?language=English&location=India#?dataset_id={extracted_id}&tab=details-tab)')
+                                        return [SlotSet('dataset_name', dataset_name_)]
+                                        # elif entity_iter == 'dataset_name':
+                                        #     print(f"Returning {dataset_name_}")
+                                        #     return [SlotSet('dataset_name', dataset_name_)] 
+                                    else:
+                                        dispatcher.utter_message(text = 'Sorry but can you pls tell again  what feature you are looking for')
+                                        dispatcher.utter_message(text = """Ex :Like if you want to know Source Link for a Dataset 
+                                                                            say it like :- I need a source link for this data""")
                                 else:
-                                    dispatcher.utter_message(text = 'Sorry but can you pls tell again  what feature you are looking for')
-                                    dispatcher.utter_message(text = """Ex :Like if you want to know Source Link for a Dataset 
-                                                                        say it like :- What was the source for the dataset""")
-                        
+                                    continue
                         else:
                             dispatcher.utter_message(text = f'Sorry but what exactly you wanted I could not get that')
                             dispatcher.utter_message(text = """Ex :Like if you want to know Source Link for a Dataset 
-                                                                        say it like :- What was the source for the dataset""")
+                                                                        say it like :- Kindly give me a source link for rural wages dataset""")
+                    else:
+                        dispatcher.utter_message(text = f'Sorry but what exactly you wanted I could not get that')
+                        dispatcher.utter_message(text = """Ex :Like if you want to know Source Link for a Dataset 
+                                                                        say it like :- Kindly give me a source link for rural wages dataset""")
             else:
-                dispatcher.utter_message(text = "Can you tell which dataset it is")
+                # dispatcher.utter_message(text = "Can you tell which dataset it is")
+                dispatcher.utter_message(text='The source of the data can be found at the bottom of the image that is downloaded which can be accessed through the informations section of the dataset')
 
 
 class ActionDataExtractionPage(Action):
@@ -907,40 +1734,160 @@ class ActionDataExtractionPage(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
+            global dataset_name_in_api
             # intent of user message 
-            # print("\n",tracker.get_intent_of_latest_message())
+            print(tracker.get_intent_of_latest_message())
 
-            print("\n","Now slots value in Extraction page is ",tracker.slots['dataset_name'])
-
+            print("\n","Now slots value in data extraction page is ",tracker.slots['dataset_name'])
             ls_entity =tracker.latest_message['entities'] # to get entities from user message
-            if  tracker.slots['dataset_name'] and  tracker.slots['dataset_name']!=None:
+            if  tracker.slots['dataset_name'] and tracker.slots['dataset_name']!=None:
                 # name of datset from slot we had
                 dataset_name_ = tracker.slots['dataset_name']
                 dataset_name_ = dataset_name_.lower() 
                 # calling global dictionary
                 global master_dic_dataset_name
 
+                print("Before spell check",dataset_name_)
                 # spellcheck the name of dataset
-                dataset_name_ = correction(dataset_name_)
-                corrected_dataset_name_ = dataset_name_
+                if dataset_name_ not in ['nsso','employment','non-crop','crop','foodgrains']:
+                    if dataset_name_ in dataset_name_in_api:
+                        dataset_name_ = dataset_name_
+                        print("dataset's api name is being setup as a slot value therefore no spellcheck" )
+                    else:
+                        dataset_name_ = correction(dataset_name_)
+                        corrected_dataset_name_ = dataset_name_
+                        print("dataset's api name is not setted up as a slot value therefore we will use spellcheck")
+                    # dataset_name_ = correction(dataset_name_)
+                    # corrected_dataset_name_ = dataset_name_
+
+                else: # removing that entity where datset name is nsso
+
+                    print(ls_entity)
+                    removable_index = [[j,i['value']] for j,i in enumerate(ls_entity) if i['value'] in  ['NSSO','Employment','Non-Crop','Crop','Foodgrains']]
+
+          
+                    print("\n",removable_index,"\n")
+
+                    for last_check in removable_index:
+                        # there are chance when employemnt and NSSO can come together 
+                        # then to remove only NSSO dataset_name we used this last filter
+
+                        print(last_check)
+
+                        type_of_crop = last_check[1]
+
+                        # iff NSSO found remove that corresponding dictionary from ls_entity
+                        if last_check[1]=='NSSO':
+                            removable_index = last_check[0]
+
+                            # if not NSSO then remove then EMPLOYMENT entity dictionary from ls_entity
+                        else:
+                            removable_index = last_check[0]
+    
+                    
+                    print("\n",removable_index,"\n")
+                
+                    ls_entity.pop(removable_index)
+                    print("After Pop",ls_entity)
+
+                    for iter in range(len(ls_entity)):
+                        if ls_entity[iter]['entity']=='dataset_name' :
+                            
+                            # dataset_name_list_countter =  [i for i in range(len(ls_entity)) if ls_entity[i]['entity']=='dataset_name' ]
+                            
+                            print("type",type_of_crop)
+                            if type_of_crop=='Crop':
+
+                                print("green")
+                                dataset_name_  = ls_entity[iter]['value']
+                            
+                                if dataset_name_ == 'Agricultural Census 2010-11':
+
+                                    dataset_name_ = 'agcensus_crop'
+                                elif dataset_name_ == 'Agricultural Census 2015-16':
+                                    dataset_name_ = 'agcensus_c'
+                                elif  dataset_name_ == 'Input Survey':
+                                    dataset_name_ = 'input_crop'
+                                  
+                                else:
+                                    dataset_name_ = dataset_name_
+                                
+                                break
+                                
+                            elif  type_of_crop=='Non-Crop' :
+                                # second_removable_index = iter
+                                print("iter",iter)
+                                # ls_entity.pop(second_removable_index)
+
+                                # again we'll have to iterate to get dataset value
+                                for iter  in range(len(ls_entity)):
+                                    if ls_entity[iter]['entity']=='dataset_name' :
+                                        dataset_name_  = ls_entity[iter]['value']
+
+                                # as Non has came now just need to map to correct non option
+                                if dataset_name_ == 'Agricultural Census 2010-11':
+
+                                    dataset_name_ = 'agcensus_noncrop'
+                                elif dataset_name_ == 'Agricultural Census 2015-16':
+                                    dataset_name_ = 'agcensus_nc'
+                                elif  dataset_name_ == 'Input survey':
+                                    dataset_name_ == 'input_crop'
+                                else:
+                                    dataset_name_ = dataset_name_
+                                break
+
+                            else:
+                                dataset_name_  = ls_entity[iter]['value']
+
+                        else:
+                            continue  
+
+                    if dataset_name_ in dataset_name_in_api:
+                        dataset_name_ = dataset_name_
+                        print("dataset's api name is being setup as a slot value therefore no spellcheck" )
+                    else:
+                        dataset_name_ = correction(dataset_name_)
+                        corrected_dataset_name_ = dataset_name_
+                        print("dataset's api name is not setted up as a slot value therefore we will use spellcheck")
+                    # dataset_name_ = correction(dataset_name_)
+                    # corrected_dataset_name_ = dataset_name_
+                print("after spellcheck ",dataset_name_)
+
+                  # initializing punctuations string
+                punc = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+                
+                # Removing punctuations in string
+                # Using loop + punctuation string
+                for ele in dataset_name_:
+                    if ele in punc:
+                        dataset_name_ = dataset_name_.replace(ele, " ")
+
+                print("Removed punctuation marks",dataset_name_)
+
 
                 # if dataset name that is extracted from user message is present in our data we got from json file
                 if dataset_name_ in master_dic_dataset_name.keys():
-        
+                    print("IN",dataset_name_)
                     dataset_name_ = master_dic_dataset_name[dataset_name_]
-
+                    print("OUT",dataset_name_)
 
                 extracted_ls_entity = []
                 for i in range(len(ls_entity)):
                     extracted_ls_entity.append(ls_entity[i]['entity'])
                 # extracted_ls_entity = list(filter(lambda x:x!='dataset_name', extracted_ls_entity))
-                print(f"Entites we extracted in Extraction page {extracted_ls_entity}")
-                if 'dataset_name' in extracted_ls_entity:
-                    extracted_ls_entity.remove('dataset_name')
+                print(f"Entites we extracted in data extraction page is  {extracted_ls_entity}")
+
+                print(ls_entity)
+
+                # print('before removing datatset name from list - ', extracted_ls_entity)
+                # if 'dataset_name' in extracted_ls_entity :
+                #     extracted_ls_entity.remove('dataset_name')
+                #     print('after removing datatset name from list - ', extracted_ls_entity)
+
 
                 dict_of_mapped_data_with_id = {}
                 with urllib.request.urlopen("https://indiadataportal.com/meta_data_info") as url:
+
                     data = json.loads(url.read().decode())
                     temp_data  = json.dumps(data, indent=4, sort_keys=True)
                     temp_data = json.loads(temp_data)
@@ -965,24 +1912,728 @@ class ActionDataExtractionPage(Action):
                         if len(extracted_ls_entity) >=1:
                             # iterating through all entites other than dataset_name
                             for entity_iter in extracted_ls_entity:
-                                print("yes i am in extarct data")
-                                # check if entity present in extracted_ls_entity is also present in p ( data in db)
-                                # spellcheck the entity
-                                entity_iter = correction(entity_iter)
-                                if entity_iter in p.keys():
+                                print("yes i am in extarct data with entity iter as ", entity_iter)
+                                if entity_iter != 'dataset_name':
+                                    # check if entity present in extracted_ls_entity is also present in p ( data in db)
+                                    # spellcheck the entity
+                                    entity_iter = correction(entity_iter)
 
-                                    # if entity is present in p then print the value of that entity
-                                    # print(f"{entity_iter} ----> {p[entity_iter]}")
-                                    dispatcher.utter_message(text = f" for {corrected_dataset_name_} {entity_iter} is {p[entity_iter]}")
-                                
+                                    if entity_iter in p.keys() and entity_iter in entity_mapper.keys():
+                                        new_entity_iter = entity_mapper[entity_iter]
+                                        # if entity is present in p then print the value of that entity
+                                        # if entity_iter != 'dataset_name':
+                                        print(f"{entity_iter} ----> {p[entity_iter]}")
+                                        # dispatcher.utter_message(text = f" for {corrected_dataset_name_} {new_entity_iter} is {p[entity_iter]}")
+                                        dispatcher.utter_message(text=f'{new_entity_iter} is {p[entity_iter]} for more [click here](https://indiadataportal.com/visualize?language=English&location=India#?dataset_id={extracted_id}&tab=details-tab)')
+                                        return [SlotSet('dataset_name', dataset_name_)]
+                                        # elif entity_iter == 'dataset_name':
+                                        #     print(f"Returning {dataset_name_}")
+                                        #     return [SlotSet('dataset_name', dataset_name_)] 
+                                    
+                                    else:
+                                        dispatcher.utter_message(text = 'Sorry but can you pls tell again  what feature you are looking for')
+                                        dispatcher.utter_message(text = """Ex :Like if you want to get Data extraction page for a Dataset 
+                                                                            say it like :- where i can get the extraction page for apy data?""")
                                 else:
-                                    dispatcher.utter_message(text = 'Sorry but can you pls tell again  what feature you are looking for')
-                                    dispatcher.utter_message(text = """Ex :Like if you want to know Source Link for a Dataset 
-                                                                        say it like :- What was the source for the dataset""")
+                                    continue
                         
                         else:
                             dispatcher.utter_message(text = f'Sorry but what exactly you wanted I could not get that')
-                            dispatcher.utter_message(text = """Ex :Like if you want to know Source Link for a Dataset 
-                                                                        say it like :- What was the source for the dataset""")
+                            dispatcher.utter_message(text = """Ex :Like if you want to get Data extraction page for a Dataset 
+                                                                        say it like :- where i can get the extraction page for apy data?""")
+                    else:
+                        dispatcher.utter_message(text = f'Sorry but what exactly you wanted I could not get that')
+                        dispatcher.utter_message(text = """Ex :Like if you want to get Data extraction page for a Dataset 
+                                                                        say it like :- where i can get the extraction page for apy data?""")
             else:
                 dispatcher.utter_message(text = "Can you tell which dataset it is")
+
+class ActionDetailedSourceName(Action):
+
+    def name(self) -> Text:
+        return "action_about_data_source_name_det"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+            global dataset_name_in_api
+            # intent of user message 
+            print(tracker.get_intent_of_latest_message())
+
+            print("\n","Now slots value in source name detailed is ",tracker.slots['dataset_name'])
+            ls_entity =tracker.latest_message['entities'] # to get entities from user message
+            if  tracker.slots['dataset_name'] and tracker.slots['dataset_name']!=None:
+                # name of datset from slot we had
+                dataset_name_ = tracker.slots['dataset_name']
+                dataset_name_ = dataset_name_.lower() 
+                # calling global dictionary
+                global master_dic_dataset_name
+
+                print("Before spell check",dataset_name_)
+                # spellcheck the name of dataset
+                if dataset_name_ not in ['nsso','employment','non-crop','crop','foodgrains']:
+                    if dataset_name_ in dataset_name_in_api:
+                        dataset_name_ = dataset_name_
+                        print("dataset's api name is being setup as a slot value therefore no spellcheck" )
+                    else:
+                        dataset_name_ = correction(dataset_name_)
+                        corrected_dataset_name_ = dataset_name_
+                        print("dataset's api name is not setted up as a slot value therefore we will use spellcheck")
+                    # dataset_name_ = correction(dataset_name_)
+                    # corrected_dataset_name_ = dataset_name_
+
+                else: # removing that entity where datset name is nsso
+
+                    print(ls_entity)
+                    removable_index = [[j,i['value']] for j,i in enumerate(ls_entity) if i['value'] in  ['NSSO','Employment','Non-Crop','Crop','Foodgrains']]
+
+          
+                    print("\n",removable_index,"\n")
+
+                    for last_check in removable_index:
+                        # there are chance when employemnt and NSSO can come together 
+                        # then to remove only NSSO dataset_name we used this last filter
+
+                        print(last_check)
+
+                        type_of_crop = last_check[1]
+
+                        # iff NSSO found remove that corresponding dictionary from ls_entity
+                        if last_check[1]=='NSSO':
+                            removable_index = last_check[0]
+
+                            # if not NSSO then remove then EMPLOYMENT entity dictionary from ls_entity
+                        else:
+                            removable_index = last_check[0]
+    
+                    
+                    print("\n",removable_index,"\n")
+                
+                    ls_entity.pop(removable_index)
+                    print("After Pop",ls_entity)
+
+                    for iter in range(len(ls_entity)):
+                        if ls_entity[iter]['entity']=='dataset_name' :
+                            
+                            # dataset_name_list_countter =  [i for i in range(len(ls_entity)) if ls_entity[i]['entity']=='dataset_name' ]
+                            
+                            print("type",type_of_crop)
+                            if type_of_crop=='Crop':
+
+                                print("green")
+                                dataset_name_  = ls_entity[iter]['value']
+                            
+                                if dataset_name_ == 'Agricultural Census 2010-11':
+
+                                    dataset_name_ = 'agcensus_crop'
+                                elif dataset_name_ == 'Agricultural Census 2015-16':
+                                    dataset_name_ = 'agcensus_c'
+                                elif  dataset_name_ == 'Input Survey':
+                                    dataset_name_ = 'input_crop'
+                                  
+                                else:
+                                    dataset_name_ = dataset_name_
+                                
+                                break
+                                
+                            elif  type_of_crop=='Non-Crop' :
+                                # second_removable_index = iter
+                                print("iter",iter)
+                                # ls_entity.pop(second_removable_index)
+
+                                # again we'll have to iterate to get dataset value
+                                for iter  in range(len(ls_entity)):
+                                    if ls_entity[iter]['entity']=='dataset_name' :
+                                        dataset_name_  = ls_entity[iter]['value']
+
+                                # as Non has came now just need to map to correct non option
+                                if dataset_name_ == 'Agricultural Census 2010-11':
+
+                                    dataset_name_ = 'agcensus_noncrop'
+                                elif dataset_name_ == 'Agricultural Census 2015-16':
+                                    dataset_name_ = 'agcensus_nc'
+                                elif  dataset_name_ == 'Input survey':
+                                    dataset_name_ == 'input_crop'
+                                else:
+                                    dataset_name_ = dataset_name_
+                                break
+
+                            else:
+                                dataset_name_  = ls_entity[iter]['value']
+
+                        else:
+                            continue  
+
+                    if dataset_name_ in dataset_name_in_api:
+                        dataset_name_ = dataset_name_
+                        print("dataset's api name is being setup as a slot value therefore no spellcheck" )
+                    else:
+                        dataset_name_ = correction(dataset_name_)
+                        corrected_dataset_name_ = dataset_name_
+                        print("dataset's api name is not setted up as a slot value therefore we will use spellcheck")
+                    # dataset_name_ = correction(dataset_name_)
+                    # corrected_dataset_name_ = dataset_name_
+                print("after spellcheck ",dataset_name_)
+
+                  # initializing punctuations string
+                punc = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+                
+                # Removing punctuations in string
+                # Using loop + punctuation string
+                for ele in dataset_name_:
+                    if ele in punc:
+                        dataset_name_ = dataset_name_.replace(ele, " ")
+
+                print("Removed punctuation marks",dataset_name_)
+
+
+                # if dataset name that is extracted from user message is present in our data we got from json file
+                if dataset_name_ in master_dic_dataset_name.keys():
+                    print("IN",dataset_name_)
+                    dataset_name_ = master_dic_dataset_name[dataset_name_]
+                    print("OUT",dataset_name_)
+
+                extracted_ls_entity = []
+                for i in range(len(ls_entity)):
+                    extracted_ls_entity.append(ls_entity[i]['entity'])
+                # extracted_ls_entity = list(filter(lambda x:x!='dataset_name', extracted_ls_entity))
+                print(f"Entites we extracted in source name detailed is  {extracted_ls_entity}")
+
+                print(ls_entity)
+
+                # print('before removing datatset name from list - ', extracted_ls_entity)
+                # if 'dataset_name' in extracted_ls_entity :
+                #     extracted_ls_entity.remove('dataset_name')
+                #     print('after removing datatset name from list - ', extracted_ls_entity)
+
+
+                dict_of_mapped_data_with_id = {}
+                with urllib.request.urlopen("https://indiadataportal.com/meta_data_info") as url:
+
+                    data = json.loads(url.read().decode())
+                    temp_data  = json.dumps(data, indent=4, sort_keys=True)
+                    temp_data = json.loads(temp_data)
+                    for i in range(len(temp_data)):
+                        data = temp_data[i]
+                        # print(f"{data['dataset_name']} ---- > {data['dataset_id']} " )
+                        dict_of_mapped_data_with_id[data['dataset_name']] = data['dataset_id']
+
+                    # if extracted dataset name is present in our data we got from json file
+                    if dataset_name_ in dict_of_mapped_data_with_id.keys():
+                        
+                        # extract id for that dataset name
+                        extracted_id = dict_of_mapped_data_with_id[dataset_name_]
+
+                        for i in range(len(temp_data)):
+                                data = temp_data[i]
+                                if data['dataset_id']==extracted_id:
+                                    p = json.dumps(data)
+                                    p = json.loads(p)
+                                    # print(p,'\n')
+                        
+
+                        if len(extracted_ls_entity) >=1:
+                            # iterating through all entites other than dataset_name
+                            for entity_iter in extracted_ls_entity:
+                                print("yes i am in detailed source name with entity_iter as", entity_iter)
+                                if entity_iter != 'dataset_name':
+                                    # check if entity present in extracted_ls_entity is also present in p ( data in db)
+                                    # spellcheck the entity
+                                    entity_iter = correction(entity_iter)
+                                    print("after correction in detailed source name",entity_iter)
+
+                                    if entity_iter in p.keys() and entity_iter in entity_mapper.keys():
+                                        new_entity_iter = entity_mapper[entity_iter]
+                                        # if entity is present in p then print the value of that entity
+                                        # if entity_iter != 'dataset_name' and new_entity_iter == 'Source Name Det':
+                                        if new_entity_iter == 'Source Name Det':
+                                            new_entity_iter = 'Detailed source name'
+                                            print(f"{entity_iter} ----> {p[entity_iter]}")
+                                            # dispatcher.utter_message(text = f" for {corrected_dataset_name_} {new_entity_iter} is {p[entity_iter]}")
+                                            dispatcher.utter_message(text=f'{new_entity_iter} is {p[entity_iter]} for more [click here](https://indiadataportal.com/visualize?language=English&location=India#?dataset_id={extracted_id}&tab=details-tab)')
+                                            return [SlotSet('dataset_name', dataset_name_)]
+                                        else:
+                                            print(f"Returning {dataset_name_}")
+                                            return [SlotSet('dataset_name', dataset_name_)] 
+                                    
+                                    else:
+                                        dispatcher.utter_message(text = 'Sorry but can you pls tell again  what feature you are looking for')
+                                        dispatcher.utter_message(text = """Ex :Like if you want to know Detailed Source name of a Dataset
+                                                                            say it like :- What is the Source of Rainfall Data""")
+                                else:
+                                    continue                
+                        else:
+                            dispatcher.utter_message(text = f'Sorry but what exactly you wanted I could not get that')
+                            dispatcher.utter_message(text = """Ex :Like if you want to know Detailed Source name of a Dataset
+                                                                        say it like :- What is the Source of Rainfall Data""")
+                    else:
+                        dispatcher.utter_message(text = f'Sorry but what exactly you wanted I could not get that')
+                        dispatcher.utter_message(text = """Ex :Like if you want to know Detailed Source name of a Dataset
+                                                                        say it like :- I want to know the detailed source name for household consumption on eduaction data.""")
+            else:
+                dispatcher.utter_message(text = "Can you tell which dataset it is")
+
+class ActionDateofRetrievals(Action):
+
+    def name(self) -> Text:
+        return "action_about_data_date_of_retrievals"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+            global dataset_name_in_api
+            # intent of user message 
+            print(tracker.get_intent_of_latest_message())
+
+            print("\n","Now slots value in date of retrievals is ",tracker.slots['dataset_name'])
+            ls_entity =tracker.latest_message['entities'] # to get entities from user message
+            if  tracker.slots['dataset_name'] and tracker.slots['dataset_name']!=None:
+                # name of datset from slot we had
+                dataset_name_ = tracker.slots['dataset_name']
+                dataset_name_ = dataset_name_.lower() 
+                # calling global dictionary
+                global master_dic_dataset_name
+
+                print("Before spell check",dataset_name_)
+                # spellcheck the name of dataset
+                if dataset_name_ not in ['nsso','employment','non-crop','crop','foodgrains']:
+                    if dataset_name_ in dataset_name_in_api:
+                        dataset_name_ = dataset_name_
+                        print("dataset's api name is being setup as a slot value therefore no spellcheck" )
+                    else:
+                        dataset_name_ = correction(dataset_name_)
+                        corrected_dataset_name_ = dataset_name_
+                        print("dataset's api name is not setted up as a slot value therefore we will use spellcheck")
+                    # dataset_name_ = correction(dataset_name_)
+                    # corrected_dataset_name_ = dataset_name_
+
+                else: # removing that entity where datset name is nsso
+
+                    print(ls_entity)
+                    removable_index = [[j,i['value']] for j,i in enumerate(ls_entity) if i['value'] in  ['NSSO','Employment','Non-Crop','Crop','Foodgrains']]
+
+          
+                    print("\n",removable_index,"\n")
+
+                    for last_check in removable_index:
+                        # there are chance when employemnt and NSSO can come together 
+                        # then to remove only NSSO dataset_name we used this last filter
+
+                        print(last_check)
+
+                        type_of_crop = last_check[1]
+
+                        # iff NSSO found remove that corresponding dictionary from ls_entity
+                        if last_check[1]=='NSSO':
+                            removable_index = last_check[0]
+
+                            # if not NSSO then remove then EMPLOYMENT entity dictionary from ls_entity
+                        else:
+                            removable_index = last_check[0]
+    
+                    
+                    print("\n",removable_index,"\n")
+                
+                    ls_entity.pop(removable_index)
+                    print("After Pop",ls_entity)
+
+                    for iter in range(len(ls_entity)):
+                        if ls_entity[iter]['entity']=='dataset_name' :
+                            
+                            # dataset_name_list_countter =  [i for i in range(len(ls_entity)) if ls_entity[i]['entity']=='dataset_name' ]
+                            
+                            print("type",type_of_crop)
+                            if type_of_crop=='Crop':
+
+                                print("green")
+                                dataset_name_  = ls_entity[iter]['value']
+                            
+                                if dataset_name_ == 'Agricultural Census 2010-11':
+
+                                    dataset_name_ = 'agcensus_crop'
+                                elif dataset_name_ == 'Agricultural Census 2015-16':
+                                    dataset_name_ = 'agcensus_c'
+                                elif  dataset_name_ == 'Input Survey':
+                                    dataset_name_ = 'input_crop'
+                                  
+                                else:
+                                    dataset_name_ = dataset_name_
+                                
+                                break
+                                
+                            elif  type_of_crop=='Non-Crop' :
+                                # second_removable_index = iter
+                                print("iter",iter)
+                                # ls_entity.pop(second_removable_index)
+
+                                # again we'll have to iterate to get dataset value
+                                for iter  in range(len(ls_entity)):
+                                    if ls_entity[iter]['entity']=='dataset_name' :
+                                        dataset_name_  = ls_entity[iter]['value']
+
+                                # as Non has came now just need to map to correct non option
+                                if dataset_name_ == 'Agricultural Census 2010-11':
+
+                                    dataset_name_ = 'agcensus_noncrop'
+                                elif dataset_name_ == 'Agricultural Census 2015-16':
+                                    dataset_name_ = 'agcensus_nc'
+                                elif  dataset_name_ == 'Input survey':
+                                    dataset_name_ == 'input_crop'
+                                else:
+                                    dataset_name_ = dataset_name_
+                                break
+
+                            else:
+                                dataset_name_  = ls_entity[iter]['value']
+
+                        else:
+                            continue  
+
+                    if dataset_name_ in dataset_name_in_api:
+                        dataset_name_ = dataset_name_
+                        print("dataset's api name is being setup as a slot value therefore no spellcheck" )
+                    else:
+                        dataset_name_ = correction(dataset_name_)
+                        corrected_dataset_name_ = dataset_name_
+                        print("dataset's api name is not setted up as a slot value therefore we will use spellcheck")
+                    # dataset_name_ = correction(dataset_name_)
+                    # corrected_dataset_name_ = dataset_name_
+                print("after spellcheck ",dataset_name_)
+
+                  # initializing punctuations string
+                punc = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+                
+                # Removing punctuations in string
+                # Using loop + punctuation string
+                for ele in dataset_name_:
+                    if ele in punc:
+                        dataset_name_ = dataset_name_.replace(ele, " ")
+
+                print("Removed punctuation marks",dataset_name_)
+
+
+                # if dataset name that is extracted from user message is present in our data we got from json file
+                if dataset_name_ in master_dic_dataset_name.keys():
+                    print("IN",dataset_name_)
+                    dataset_name_ = master_dic_dataset_name[dataset_name_]
+                    print("OUT",dataset_name_)
+
+                extracted_ls_entity = []
+                for i in range(len(ls_entity)):
+                    extracted_ls_entity.append(ls_entity[i]['entity'])
+                # extracted_ls_entity = list(filter(lambda x:x!='dataset_name', extracted_ls_entity))
+                print(f"Entites we extracted in date of retrievals is  {extracted_ls_entity}")
+                
+                # as entity was extracted more than once there fore we are making set of that list
+                extracted_ls_entity = list(set(extracted_ls_entity))
+                print(f"Entites we extracted in date of retrievals after removing duplicates is  {extracted_ls_entity}")
+                print(ls_entity)
+
+                # print('before removing datatset name from list - ', extracted_ls_entity)
+                # if 'dataset_name' in extracted_ls_entity :
+                #     extracted_ls_entity.remove('dataset_name')
+                #     print('after removing datatset name from list - ', extracted_ls_entity)
+
+
+                dict_of_mapped_data_with_id = {}
+                with urllib.request.urlopen("https://indiadataportal.com/meta_data_info") as url:
+
+                    data = json.loads(url.read().decode())
+                    temp_data  = json.dumps(data, indent=4, sort_keys=True)
+                    temp_data = json.loads(temp_data)
+                    for i in range(len(temp_data)):
+                        data = temp_data[i]
+                        # print(f"{data['dataset_name']} ---- > {data['dataset_id']} " )
+                        dict_of_mapped_data_with_id[data['dataset_name']] = data['dataset_id']
+
+
+                    # if extracted dataset name is present in our data we got from json file
+                    if dataset_name_ in dict_of_mapped_data_with_id.keys():
+                        
+                        # extract id for that dataset name
+                        extracted_id = dict_of_mapped_data_with_id[dataset_name_]
+
+                        for i in range(len(temp_data)):
+                                data = temp_data[i]
+                                if data['dataset_id']==extracted_id:
+                                    p = json.dumps(data)
+                                    p = json.loads(p)
+                                    # print(p,'\n')
+                        
+
+                        if len(extracted_ls_entity) >=1:
+                            # iterating through all entites other than dataset_name
+                            for entity_iter in extracted_ls_entity:
+                                print("yes i am in date of retrievals with entity_iter - ", entity_iter)
+                                if entity_iter != 'dataset_name':
+                                    # check if entity present in extracted_ls_entity is also present in p ( data in db)
+                                    # spellcheck the entity
+                                    entity_iter = correction(entity_iter)
+                                    print("after correction in date of retrievals ",entity_iter)
+
+                                    if entity_iter in p.keys() and entity_iter in entity_mapper.keys():
+                                        new_entity_iter = entity_mapper[entity_iter]
+                                        # if entity is present in p then print the value of that entity
+                                        # if entity_iter != 'dataset_name':
+                                        print(f"{entity_iter} ----> {p[entity_iter]}")
+                                        # dispatcher.utter_message(text = f" for {corrected_dataset_name_} {new_entity_iter} is {p[entity_iter]}")
+                                        dispatcher.utter_message(text=f'{new_entity_iter} is {p[entity_iter]} for more [click here](https://indiadataportal.com/visualize?language=English&location=India#?dataset_id={extracted_id}&tab=details-tab)')
+                                        return [SlotSet('dataset_name', dataset_name_)]
+                                    # elif entity_iter == 'dataset_name':
+                                    #     print(f"Returning {dataset_name_}")
+                                    #     return [SlotSet('dataset_name', dataset_name_)] 
+                                
+                                    else:
+                                        dispatcher.utter_message(text = 'Sorry but can you pls tell again  what feature you are looking for')
+                                        dispatcher.utter_message(text = """Ex :Like if you want to know Date of Retrieval for a Dataset
+                                                                            say it like :- Can you provide me the retrieval date for foodgrain stock data""")
+                                else:
+                                    continue              
+                        else:
+                            dispatcher.utter_message(text = f'Sorry but what exactly you wanted I could not get that')
+                            dispatcher.utter_message(text = """Ex :Like if you want to know Date of Retrieval for a Dataset
+                                                                        say it like :- Can you provide me the retrieval date for foodgrain stock data""")
+                    else:
+                        dispatcher.utter_message(text = f'Sorry but what exactly you wanted I could not get that')
+                        dispatcher.utter_message(text = """Ex :Like if you want to know Date of Retrieval for a Dataset
+                                                                        say it like :- Can you provide me the retrieval date for foodgrain stock data""")
+            else:
+                dispatcher.utter_message(text = "Can you tell which dataset it is")
+# THIS PART(ActionDomainName) IS BEING HARDCODED AS DISCUSSSED WITH THE GURSHARAN ON 28TH SEPTEMBER 2021
+class ActionDomainName(Action):
+
+    def name(self) -> Text:
+        return "action_about_data_domain_name"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+            global dataset_name_in_api
+            # intent of user message 
+            print(tracker.get_intent_of_latest_message())
+            global dict_of_domain_ids
+
+            print(dict_of_domain_ids,"DOmain ids")
+            print("\n","Now slots value in domain is ",tracker.slots['dataset_name'])
+            ls_entity =tracker.latest_message['entities'] # to get entities from user message
+            if  tracker.slots['dataset_name'] and tracker.slots['dataset_name']!=None:
+                # name of datset from slot we had
+                dataset_name_ = tracker.slots['dataset_name']
+                dataset_name_ = dataset_name_.lower() 
+                # calling global dictionary
+                global master_dic_dataset_name
+
+                print("Before spell check",dataset_name_)
+                # spellcheck the name of dataset
+                if dataset_name_ not in ['nsso','employment','non-crop','crop','foodgrains']:
+                    if dataset_name_ in dataset_name_in_api:
+                        dataset_name_ = dataset_name_
+                        print("dataset's api name is being setup as a slot value therefore no spellcheck" )
+                    else:
+                        dataset_name_ = correction(dataset_name_)
+                        corrected_dataset_name_ = dataset_name_
+                        print("dataset's api name is not setted up as a slot value therefore we will use spellcheck")
+                    # dataset_name_ = correction(dataset_name_)
+                    # corrected_dataset_name_ = dataset_name_
+
+                else: # removing that entity where datset name is nsso
+
+                    print(ls_entity)
+                    removable_index = [[j,i['value']] for j,i in enumerate(ls_entity) if i['value'] in  ['NSSO','Employment','Non-Crop','Crop','Foodgrains']]
+
+          
+                    print("\n",removable_index,"\n")
+
+                    for last_check in removable_index:
+                        # there are chance when employemnt and NSSO can come together 
+                        # then to remove only NSSO dataset_name we used this last filter
+
+                        print(last_check)
+
+                        type_of_crop = last_check[1]
+
+                        # iff NSSO found remove that corresponding dictionary from ls_entity
+                        if last_check[1]=='NSSO':
+                            removable_index = last_check[0]
+
+                            # if not NSSO then remove then EMPLOYMENT entity dictionary from ls_entity
+                        else:
+                            removable_index = last_check[0]
+    
+                    
+                    print("\n",removable_index,"\n")
+                
+                    ls_entity.pop(removable_index)
+                    print("After Pop",ls_entity)
+
+                    for iter in range(len(ls_entity)):
+                        if ls_entity[iter]['entity']=='dataset_name' :
+                            
+                            # dataset_name_list_countter =  [i for i in range(len(ls_entity)) if ls_entity[i]['entity']=='dataset_name' ]
+                            
+                            print("type",type_of_crop)
+                            if type_of_crop=='Crop':
+
+                                print("green")
+                                dataset_name_  = ls_entity[iter]['value']
+                            
+                                if dataset_name_ == 'Agricultural Census 2010-11':
+
+                                    dataset_name_ = 'agcensus_crop'
+                                elif dataset_name_ == 'Agricultural Census 2015-16':
+                                    dataset_name_ = 'agcensus_c'
+                                elif  dataset_name_ == 'Input Survey':
+                                    dataset_name_ = 'input_crop'
+                                  
+                                else:
+                                    dataset_name_ = dataset_name_
+                                
+                                break
+                                
+                            elif  type_of_crop=='Non-Crop' :
+                                # second_removable_index = iter
+                                print("iter",iter)
+                                # ls_entity.pop(second_removable_index)
+
+                                # again we'll have to iterate to get dataset value
+                                for iter  in range(len(ls_entity)):
+                                    if ls_entity[iter]['entity']=='dataset_name' :
+                                        dataset_name_  = ls_entity[iter]['value']
+
+                                # as Non has came now just need to map to correct non option
+                                if dataset_name_ == 'Agricultural Census 2010-11':
+
+                                    dataset_name_ = 'agcensus_noncrop'
+                                elif dataset_name_ == 'Agricultural Census 2015-16':
+                                    dataset_name_ = 'agcensus_nc'
+                                elif  dataset_name_ == 'Input survey':
+                                    dataset_name_ == 'input_crop'
+                                else:
+                                    dataset_name_ = dataset_name_
+                                break
+
+                            else:
+                                dataset_name_  = ls_entity[iter]['value']
+
+                        else:
+                            continue  
+
+                    if dataset_name_ in dataset_name_in_api:
+                        dataset_name_ = dataset_name_
+                        print("dataset's api name is being setup as a slot value therefore no spellcheck" )
+                    else:
+                        dataset_name_ = correction(dataset_name_)
+                        corrected_dataset_name_ = dataset_name_
+                        print("dataset's api name is not setted up as a slot value therefore we will use spellcheck")
+                    # dataset_name_ = correction(dataset_name_)
+                    # corrected_dataset_name_ = dataset_name_
+                print("after spellcheck ",dataset_name_)
+
+                  # initializing punctuations string
+                punc = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+                
+                # Removing punctuations in string
+                # Using loop + punctuation string
+                for ele in dataset_name_:
+                    if ele in punc:
+                        dataset_name_ = dataset_name_.replace(ele, " ")
+
+                print("Removed punctuation marks",dataset_name_)
+
+
+                # if dataset name that is extracted from user message is present in our data we got from json file
+                if dataset_name_ in master_dic_dataset_name.keys():
+                    print("IN",dataset_name_)
+                    dataset_name_ = master_dic_dataset_name[dataset_name_]
+                    print("OUT",dataset_name_)
+
+                extracted_ls_entity = []
+                for i in range(len(ls_entity)):
+                    extracted_ls_entity.append(ls_entity[i]['entity'])
+                # extracted_ls_entity = list(filter(lambda x:x!='dataset_name', extracted_ls_entity))
+                print(f"Entites we extracted in domain is  {extracted_ls_entity}")
+                
+                # as entity was extracted more than once there fore we are making set of that list
+                extracted_ls_entity = list(set(extracted_ls_entity))
+                print(f"Entites we extracted in domain after removing duplicates is  {extracted_ls_entity}")
+                print(ls_entity)
+
+                # print('before removing datatset name from list - ', extracted_ls_entity)
+                # if 'dataset_name' in extracted_ls_entity :
+                #     extracted_ls_entity.remove('dataset_name')
+                #     print('after removing datatset name from list - ', extracted_ls_entity)
+
+
+                dict_of_mapped_data_with_id = {}
+                with urllib.request.urlopen("https://indiadataportal.com/meta_data_info") as url:
+
+                    data = json.loads(url.read().decode())
+                    temp_data  = json.dumps(data, indent=4, sort_keys=True)
+                    temp_data = json.loads(temp_data)
+                    for i in range(len(temp_data)):
+                        data = temp_data[i]
+                        # print(f"{data['dataset_name']} ---- > {data['dataset_id']} " )
+                        dict_of_mapped_data_with_id[data['dataset_name']] = data['dataset_id']
+
+
+                    # if extracted dataset name is present in our data we got from json file
+                    if dataset_name_ in dict_of_mapped_data_with_id.keys():
+                        
+                        # extract id for that dataset name
+                        extracted_id = dict_of_mapped_data_with_id[dataset_name_]
+
+                        for i in range(len(temp_data)):
+                                data = temp_data[i]
+                                if data['dataset_id']==extracted_id:
+                                    p = json.dumps(data)
+                                    p = json.loads(p)
+                                    # print(p,'\n')
+                        
+                        
+                        if len(extracted_ls_entity) >=1:
+                            # iterating through all entites other than dataset_name
+
+                            for entity_iter in extracted_ls_entity:
+                                print("yes i am in domain with entity_iter - ", entity_iter)
+                                if entity_iter != 'dataset_name':
+                                    # check if entity present in extracted_ls_entity is also present in p ( data in db)
+                                    # spellcheck the entity
+                                    entity_iter = correction(entity_iter)
+                                    print("after correction in domain ",entity_iter)
+                                    for id_for_domain in dict_of_domain_ids.keys():
+                                        # print('id for domain mapping', id_for_domain)
+                                        if id_for_domain == extracted_id:
+                                            dispatcher.utter_message(text = f'{dict_of_domain_ids[id_for_domain]} for more [click here](https://indiadataportal.com/visualize?language=English&location=India#?dataset_id={extracted_id}&tab=details-tab)')
+                                            return [SlotSet('dataset_name', dataset_name_)]
+                                        # break
+                                        else:
+                                            continue
+                                    # if entity_iter in p.keys() and entity_iter in entity_mapper.keys():
+                                    #     new_entity_iter = entity_mapper[entity_iter]
+                                    #     # if entity is present in p then print the value of that entity
+                                    #     # if entity_iter != 'dataset_name':
+                                    #     print(f"{entity_iter} ----> {p[entity_iter]}")
+                                    #     # dispatcher.utter_message(text = f" for {corrected_dataset_name_} {new_entity_iter} is {p[entity_iter]}")
+                                    #     dispatcher.utter_message(text=f'{new_entity_iter} is {p[entity_iter]} for more [click here](https://indiadataportal.com/visualize?language=English&location=India#?dataset_id={extracted_id}&tab=details-tab)')
+                                    # # elif entity_iter == 'dataset_name':
+                                    # #     print(f"Returning {dataset_name_}")
+                                    # #     return [SlotSet('dataset_name', dataset_name_)] 
+                                
+                                    # else:
+                                    #     dispatcher.utter_message(text = 'Sorry but can you pls tell again  what feature you are looking for')
+                                    #     dispatcher.utter_message(text = """Ex :Like if you want to know Date of Retrieval for a Dataset
+                                    #                                       say it like :- Can you provide me the retrieval date for foodgrain stock data""")
+                                else:
+                                    continue              
+                        else:
+                            dispatcher.utter_message(text = f'Sorry but what exactly you wanted I could not get that')
+                            dispatcher.utter_message(text = """Ex :Like if you want to know Date of Retrieval for a Dataset
+                                                                        say it like :- Can you provide me the retrieval date for foodgrain stock data""")
+                    else:
+                        dispatcher.utter_message(text = f'Sorry but what exactly you wanted I could not get that')
+                        dispatcher.utter_message(text = """Ex :Like if you want to know Date of Retrieval for a Dataset
+                                                                        say it like :- Can you provide me the retrieval date for foodgrain stock data""")
+            else:
+                dispatcher.utter_message(text = "Can you tell which dataset it is")
+
+

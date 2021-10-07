@@ -31,9 +31,6 @@ responses:
   utter_faq-visualisation-b5/What-numbers-in-brackets: #155
   - text: The number in brackets while creating a visualisation indicated the number of selection you have made in the particular category 
 
-  utter_faq-visualisation-b5/Do-have-select-filters: #156
-  - text: Yes, you have to select filters to make a visualisation
-
   utter_faq-visualisation-b5/What-JumpStartIndia-ISB: #157
   - text: Please visit this link to know more about JumpStartIndia@ISB 'https://www.isb.edu/en/research-thought-leadership/research-centres-institutes/bharti-institute-of-public-policy/JSI.html' 
 

@@ -5,7 +5,6 @@ language: en
 pipeline:
   - name: WhitespaceTokenizer
   - name: RegexFeaturizer
-  - name: CRFEntityExtractor 
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
 
@@ -14,7 +13,7 @@ pipeline:
     min_ngram: 1
     max_ngram: 4
   - name: DIETClassifier
-    entity_recognition: False
+   # entity_recognition: False
     epochs: 170
     batch_strategy: sequence # if you have a lot of training data for some intents and very little training data for others. 
 
@@ -58,7 +57,7 @@ pipeline:
 
   - name: ResponseSelector
     epochs: 170
-    retrieval_intent: faq-visualisation-b170 # from faq number 55 to 80
+    retrieval_intent: faq-visualisation-b2 # from faq number 55 to 80
 
   - name: ResponseSelector
     epochs: 170
@@ -75,6 +74,21 @@ pipeline:
   - name: ResponseSelector
     epochs: 170
     retrieval_intent: faq-visualisation-b6 # from faq number 180 to 10038
+
+
+
+#### multilingual
+  - name: ResponseSelector
+    epochs: 170
+    retrieval_intent: nlu-faq-portal-b3-hi
+
+  - name: ResponseSelector
+    epochs: 170
+    retrieval_intent: nlu-faq-vis-b1-hi
+
+  - name: ResponseSelector
+    epochs: 170
+    retrieval_intent: nlu-faq-training-b1-hi  
 
 
 

@@ -101,6 +101,9 @@ nlu:
     - are there any restrictions on number of options to be selected?
     - How many options should we select to visualise? 
     - selecting options on builder?
+    - for visualising, what number of options we have to select
+    - in order to see a visual how much options are must to be selected?
+    - how much options are required to be chosen to make a visual.
 
 - intent: faq-visualisation-b3/to-create-state-level-chart  #81
   examples: |
@@ -655,6 +658,8 @@ nlu:
     - I'm having trouble finding the graph; could you tell me where it is?
     - Where can I look for the graph if I can't see it?
     - help me in locating graph?
+    - tell me where is the graphs
+    - help me to find out the graph
 
 
 - intent: faq-visualisation-b3/what-to-select-first   #92
@@ -806,6 +811,33 @@ nlu:
     - Do I need to use filters?
     - Do I must use filters?
     - Should I use filters?
+    - Do i really have to select filters ?
+    - Is it necessary to select filters ?
+    - Is it compulsory to select filters ?
+    - Is it mandatory to select filters ?
+    - Do i have to select filter for visulisation
+    - filters selection help
+    - help filter selection
+    - trouble filter select
+    - Is it mandatory that I choose filters?
+    - Is it required that I select filters?
+    - Is it necessary for me to choose filters?
+    - Is it obligatory for me to select filters?
+    - Is it necessary for me to pick my filters?
+    - Do I have to choose filters?
+    - Is it required for me to choose filters?
+    - Is it necessary for me to select filters?
+    - Is it required that I use filters?
+    - Is there a need for me to choose filters?
+    - Is it required that I choose filters?
+    - Is it mandatory for me to use filters?
+    - Is using filters a requirement?
+    - Is it obligatory for me to choose filters?
+    - Is it required of me to select filters?
+    - Is it necessary for me to pick filters?
+    - Is it necessary that I select filters?
+    - Is it mandatory for me to select filters?
+
 
 - intent: faq-visualisation-b3/can-compare-datasets #96
   examples: |
@@ -817,6 +849,37 @@ nlu:
     - Could it be possible to compare datasets?
     - Can I make a comparison between datasets?
     - Is it possible for me to compare and analyze datasets?
+    - how can i compare datasets
+    - how am i supposed to compare datasets
+    - help me with comparing datasets
+    - does portal allows me to compare datasets?
+    - is there provision to compare datasets. 
+    - how can we compare datasets on IDP?
+    - how datasets are compared here?
+    - is there any way to comapre datasets on IDP
+    - Is it possible to compare datasets on the Indian Data Portal?
+    - Can we compare information on the Indian Data Portal?
+    - Can we compare data on the Indian Data Portal?
+    - Can we contrast data on the Indian Data Portal?
+    - any path way to comapre datasets on IDP
+    - can i ask is there any way to diffrentiate bw diffrents data sets on platform?
+    - any way we can make a contrast on dissimilar datasets on IDP
+    - can we comapre datasets on IDP?
+    - how do we compare the datasets on idp?
+    - how do you compare datasets in idp?
+    - how can we compare datasets on indian data porttal
+    - is there way to make distinction between diff. datasets ?
+    - how to differentiate between two datasets.
+    - how to diff b/w two datasets
+    - how we can compare datasets?
+    - is it possible to compare datasets here?
+    - dataset comparision feasible?
+    - Is it possible to distinguish between different datasets?
+    - Is it important to distinguish between different datasets?
+    - Is it possible to determine between different datasets?
+    - is there any feature to compare 2 different datasets
+    - is there any way to compare datasets
+    - is there any possibility to compare datasets.
 
 - intent: faq-visualisation-b3/What-are-filters #97
   examples: |

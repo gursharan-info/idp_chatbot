@@ -16,6 +16,12 @@ nlu:
     - What sorts of images might I expect to see here?
     - What sorts of images might I anticipate to see on this platform
     - which type visuals are supported by IDP
+    - max no of visualizations supported by the portal?
+    - count of visuals supported by the portal?
+    - maximum no of visuals supported on this website
+    - what different kind of visualisation can be made
+    - what are total different visulaisations that can be made.
+    - how many different kind of visualisations are supported by india data portal
     - which type visuals are supported by Indian data portal
     - which type visuals are supported by idp
     - which type infographics are supported by IDP
@@ -40,25 +46,23 @@ nlu:
 
 - intent: faq-portal-b0/frequency-data-upload #10
   examples: |
-    - How frequently is the data updated?
-    - How often is the data updated?
-    - When was the data updated?
-    - How often is the information updated?
-    - Since when was the information updated?
-    - And how soon is the information updated?
-    - How quickly is the data updated?
-    - How quickly is really the data updated?
-    - So how frequently is really the data updated?
-    - So how quickly is really the data updated?
-    - on this webiste after how much days data is updated
-    - How routinely is just the data updated?
-    - How frequent is just the data updated?
-    - How soon is just the data updated?
-    - How soon is really the data updated? 
-    - And how usually is the data updated?
-    - And how commonly is the data updated?
-    - And how commonly is the info updated?
-    - how quickly your team updates data ?
+    - How frequently is the data updated on this portal?
+    - How often is the data updated on this portal
+    - How often is the information updated on indian data portal?
+    - And how soon is the information updated on this portal?
+    - How quickly is the data updated on india data portal?
+    - How quickly is really the data updated on indian data portal
+    - So how frequently is really the data updated on this website
+    - So how quickly is really the data updated on this website
+    - on this webiste after how much days data is updated ?
+    - How routinely is just the data updated talking about IDP
+    - How frequent is the data updation on Indian data portal
+    - And how commonly is the info updated on this Indian data portal 
+    - how quickly your team updates data on this portal
+    - how frequently is information updated on this InDia data prtal
+    - on this portal how often data is updated
+    - on this website how frequently data is updated
+    - how frequently dataset on idp update
 
 - intent: faq-portal-b0/server-error #11
   examples: |
@@ -115,8 +119,11 @@ nlu:
     - This is near impossible to find material without its specific keywords.
     - This is pretty hard to find data without its specific keywords.
     - i am finding it difficult to find data without keywords related to it
-    - it is getting difficult to find data without keywords related to that domain
-    - i am not having keywords related to a particular domain and due to this i can't find info
+    - it is getting difficult to find data without keywords related to that stream
+    - i am not having keywords related to a particular stream and due to this i can't find info
+    - i can't search dataset without exact spellings
+    - Not able to search for data without correct spellings
+    - Without correct spellings, it is difficult to search for data.
 
 - intent: faq-portal-b0/help-technical-issues-portal #24
   examples: |
@@ -339,36 +346,6 @@ nlu:
     - Is there anything I would need pay for instead?
     - Is there anything I really have to pay for with this?
 
-- intent: faq-portal-b0/compare-datasets-on-idp #34
-  examples: |
-    - how can we compare datasets on IDP?
-    - how datasets are compared here?
-    - is there any way to comapre datasets on IDP
-    - Is it possible to compare datasets on the Indian Data Portal?
-    - Can we compare information on the Indian Data Portal?
-    - Can we compare data on the Indian Data Portal?
-    - Can we contrast data on the Indian Data Portal?
-    - any path way to comapre datasets on IDP
-    - can i ask is there any way to diffrentiate bw diffrents data sets on platform?
-    - any way we can make a contrast on dissimilar datasets on IDP
-    - can we comapre datasets on IDP?
-    - how do we compare the datasets on idp?
-    - how do you compare datasets in idp?
-    - how can we compare datasets on indian data porttal
-    - can you list the datasets that compare data on indian data portal
-    - can you list the datasets that compare data on idp?
-    - is there way to make distinction between diff. datasets ?
-    - how to differentiate between two datasets.
-    - how to diff b/w two datasets
-    - how we can compare datasets?
-    - is it possible to compare datasets here?
-    - dataset comparision feasible?
-    - Is it possible to distinguish between different datasets?
-    - Is it important to distinguish between different datasets?
-    - Is it possible to determine between different datasets?
-    - is there any feature to compare 2 different datasets
-    - 
-
 - intent: faq-portal-b0/about_idp #1
   examples: |
     - can you tell me something about idp.
@@ -401,18 +378,16 @@ nlu:
     - more about IDP
     - How do I find out more about IDP?
     - How do I learn about IDP?
-    - what is this
-    - why here?
     - what is indian data portal
     - what is idp
     - can you talk to me about IDP
     - I want to learn about IDP
     - What is India Data Portal used for?
-    - What is IDP?
-    - What is India Data Portal?
     - what is india data portal?
     - What really is the India Data Portal?
     - What actually is the India Data Portal?
+    - can you tell me what is india data portal
+    - can you tell me about what is indian data portal
 
 - intent: faq-portal-b0/why_idp #2
   examples: |
@@ -530,6 +505,9 @@ nlu:
     - what sector's data is present on this webiste
     - which sector's data is present on this site
     - what different sectors are covered by IDP
+    - What are the domains that the Portal addresses?
+    - What are the domains that the India data Portal addresses?
+    - What are the domains that the india data Portal addresses?
     - what different sectors are covered by Indian data portal
     - How are the data bits that are readily accessible?
     - How are the data regions that are present on webiste?
@@ -723,6 +701,10 @@ nlu:
     - how is this site useful for me
     - what are advantages of using this portal
     - what are advantages of this site to me
+    - tell me how this portal is useful to others
+    - how this portal is useful to journalists
+    - how this portal is useful for common people?
+    - how this potal adds value to our lives.
 
 - intent: faq-portal-b0/Why-need-data
   examples: |
@@ -760,6 +742,9 @@ nlu:
     - How often is the data updated?
     - how oftenly idp updates the data?
     - at what frequency the data is updated?
+    - how often is the data updated on idp
+    - how often is the data updated on india data portal
+    - how often is the data updated on indian data portal
     - How regularly is the data updated?
     - At what intervals is the data on the idp site updated?
     - At what time interval the the data on idp portal is updated?
@@ -801,6 +786,8 @@ nlu:
     - how can i save data locally
     - in what diff formats i can save the data
     - in what several formats data can be saved
+    - am i allowed to download data from idp
+    - am i allowed to download data from this website
     - tell me how can i download data in different formats
     - guide me how to save the data 
     - guide me how to save the data  locally
@@ -914,6 +901,10 @@ nlu:
     - Can I obtain email alerts when data is updated?
     - Can I recieve email alerts when data is updated?
     - Can I recieve email alerts when updates are made?
+    - on addition of new datasets on idp can i have email notification
+    - whenever new datasets are updated on this webiste  how can i have email notifications
+    - when new datasets are added on idp can i get email
+    - whenever some new datasets are added can i get email notifications for that
     - Can I recieve email alerts when data is processed?
     - Can I get notifications when data is processed?
     - Can I get text alerts when updates are made?
@@ -1035,6 +1026,9 @@ nlu:
     - what diff genres of people have accessed this website so far
     - what is the user base of this website
     - userbase of this website
+    - userbase of this India data portal
+    - what different people are using this portal
+    - with what categories of users does idp deal with
     - this portal is aimed for what kind of users
 
 - intent: faq-portal-b0/portals-impact
@@ -1106,6 +1100,11 @@ nlu:
     - what is the process of uploading news on IDP
     - what is the process of uploading news on Indiandataportal
     - how can one upload news on portal
+    - could you please explain the steps needed to be done to upload news
+    - please elaborate the process of uploading a news
+    - help me out with guided process of news updation.
+    - how can i add news on idp
+    - i want to add news on idp how to do that?
 
 - intent: faq-portal-b0/frequency-of-data-updation
   examples: |
@@ -1154,6 +1153,7 @@ nlu:
     - Is the information derived from official government websites?
     - Is the info derived from official government websites?
     - Is the info derived from official gov webistes
+    - the data that is being added to this portal is it feached only from govt instituions
     - all the information presnt here is from offical websites?
     - all the data presnt here is from offical websites?
     - all the information presnt here is from offical sources?
@@ -1161,21 +1161,28 @@ nlu:
 - intent: faq-portal-b0/hyperlink-to-source-data
   examples: |
     - Is there a hyperlink on the graph that could take me to the source of the data?
-    - Is there a link on the graph that will take me to the data source?
-    - Is there a link on the graph that will direct me to the source of the data?
+    - Is there a url on the graph that will take me to the data source?
+    - Is there a url on the diagram that will direct me to the source of the data?
     - where do i should locate on graph to get data's original source?
-    - is there a link on the graph that leads to the data source?
-    - Is there a link on the graph that will lead me to the data's source?
+    - is there a url on the graph that leads to the data source?
+    - Is there a link on the diag. that will lead me to the data's source?
     - any hyperlink that could lead to data source
+    - will i get any url for source of data on grpah made on this portal
     - any hyperlink that could lead to source of data
-    - Is there a link on the graph that will direct me to the data source?
+    - Is there a link on the diagram that will direct me to the data source?
     - Is there a link on the graph that will direct me to the source of the data?
     - Is there a link on the graph that will take me to the data's original source?
     - Is there a link on the graph that will direct me to the originating source of the data?
     - Could there be a link on the graph that will direct me to the originating source of the data?
     - Will there be a link on the graph that will direct me to the originating source of the data?
     - Will there be a connection on the graph that will direct me to the originating source of the data?
-
+    - do the graphs have any url using which we could find the data source
+    - is there any link on the image  that could take me to the data source
+    - is there any link on the diagram that could take me to the data source 
+    - can i get source link on images which can lead me towards data source
+    - can we have link on image that could direct me towards source of data
+    - is it possible to have source link on diagrams which can lead me towards data source
+ 
 # - intent: faq-portal-b0/idp-training
 #   examples: |
 #     - is there any training program available by idp?

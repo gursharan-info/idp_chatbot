@@ -28,4 +28,9 @@ responses:
     - text: Yes you can combine and compare datasets from different sectors.
     utter_faq-dataset-b1/datacard-signifi: #418
     - text: Datacard consists of one dataset with visualization. In one page we can have 4 datacards with 4 different visualizations
-
+    utter_faq-dataset-b1/how-much-granularity-parts-india:
+    - text: Right now our datasets have the granularity level of states, districts and blocks.
+    utter_faq-portal-b1/comparison-among-states-and-among-districts-available:
+    - text: In the chart builder box there are options like states and districts. Kindly select your desired option to view demographies
+    utter_faq-dataset-b1/dataset-have-data-from-diff-sector-possible-to-use-seperately:
+    - text: Yes you can use the dataset seperately

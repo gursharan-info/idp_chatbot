@@ -152,8 +152,6 @@ nlu:
     - Are the data sets available in CSV format?
     - possible to obtain CSV files?
     - viable to get CSV files of the data sets?
-    - Are CSV files for the data sets available?
-    - Are there any CSV data sets available?
     - viable to get CSV files of data?
     - viable to download data sets in CSV format?
     - practical to obtain CSV files of the data sets?
@@ -176,6 +174,11 @@ nlu:
     - Is it possible to get data in CSV format?
     - Is there a CSV format for the data sets?
     - can i download data sets in CSV format
+    - i want to download dataset from idp can i download it in .csv format
+    - i want to get this data ofline in csv format is it possible?
+    - does portal allows to download data in a form of csv
+    - for downloading a data csv format is available?
+    - can i get this data downloaded in .csv format?
 
 - intent: faq-dataset-b1/combin-datset-diff-sector #416
   examples: |
@@ -234,3 +237,58 @@ nlu:
     - indian data portal has datacard but what is this 
     - idp shows Datacard but how cna it help me
     - how is datacard helps me
+
+
+- intent: faq-dataset-b1/how-much-granularity-parts-india # 373
+  examples: |
+    - well at what granularity level we are covering parts of India for datasets.
+    - we are considering parts of india at what granularity?
+    - At what granularity regions of india are covered for collecting datasets?
+    - what's the granularity at which we are having datasets for India
+    - for india datasets are being made at what granularity level?
+    - at how much granularity we are covering parts of INDIA for datasets
+    - at what granularity level we are covering parts of India for datasets that are present here
+    - for datasets present on this webiste covering India how much granularity they are covering
+    - At what level of granularity are India's regions covered for data collection?
+    - What level of granularity does data gathering cover in India's regions?
+    - We're covering portions of India for datasets at what granularity level?
+    - At what degree of granularity are we covering parts of India for datasets?
+    - What level of detail are we covering for datasets in India?
+    - What level of detail are we covering for statistics in India?
+    - What level of granularity has been used to create datasets for India?
+    - amount of granularity has been used to create datasets for India?
+    - at what granularity level we are covering the parts od india
+
+- intent: faq-portal-b1/comparison-among-states-and-among-districts-available # 375
+  examples: |
+    - When producing visualisations, are there any comparisons available between states and districts?
+    - When making visualisations, are there any comparisons available between states and districts?
+    - When generating visualisations, are there any comparisons accessible among states and among districts?
+    - When generating visualisations, are there any comparisons possible between districts & states?
+    - While creating a visualisation, are there any comparisons available between states and districts?
+    - When formiing a visual, are there any comparisons allowed amongst states and districts?
+    - are there comparisons available among states and among districts while making visualisation
+    - Are there any state-by-state or district-by-district comparisons accessible when creating visualisations?
+    - Are there really any state and district comparisons accessible when creating visual representations?
+    - If there are any state and district contrasts accessible when creating visuals
+    - When creating a visualisation, are there any state-by-state or district-by-district comparisons available?
+    - When creating a visualisation, are there any state or local comparisons available?
+    - on this portal  are there any state or local comparisons available while creating graphs
+    - on this portal  are there any state or local comparisons available while creating graphical visuals
+
+- intent: faq-dataset-b1/dataset-have-data-from-diff-sector-possible-to-use-seperately # 386
+  examples: |
+    - Can I use data from different sectors separately if a dataset contains data from multiple sectors?
+    - Can I use data from different sectors separately if a dataset contains data from various sectors?
+    - if a dataset comprises of data from multiple sectors could that data be used seperately?
+    - dataset with data from diff sectors could be used individually?
+    - Could a dataset including data from various sectors be used separately?
+    - is it possible to use data having multiple sectors individualy
+    - do the data consisting of data of multiple sectors be used individualy
+    - can i use data individualy from dataset comprising of multuple sectors
+    - if a dataset consists of data from multiple sectors can i use data of each sector individualy
+    - do idp provide any functionality to use data separately if it consists of multiple sectors
+    - will i be able to use data separately from a dataset consisting of multiple sectors
+    - if a dataset consists of data from various sectors could that data be used individualy?
+
+    

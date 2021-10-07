@@ -49,3 +49,54 @@ nlu:
     - What does an online training curriculum entail?
     - What is an online learning curriculum, and what does it entail?
     - what is online training curriculum
+
+- intent: faq-train-b1/cost-of-idp-training
+  examples: |
+    - Does training provided by idp is free of cost?
+    - training given by idp is free?
+    - is indian data portal training offered for free?
+    - Is IDP training offered for free?
+    - Is IDP training provided free of charge?
+    - i wannna do some training but i have no money can I do
+    - Is IDP training available for free?
+    - Is there any IDP training that is free?
+    - Is IDP training free?
+    - Is IDP training expensive?
+    - Is there a cost for IDP training 
+    - Is it possible to receive free IDP training?
+    - Is there a cost associated with IDP training?
+    - Is there a fee for training done here?
+    - Is it possible to obtain IDP training for free?
+    - Is IDP training costly?
+    - Is there a way to get free IDP training?
+    - Is there any IDP training that is available for free?
+    - Is there a way to get IDP training for free?
+    - doestraining offered at no cost?
+    - Is it possible to get free IDP training?
+    - training provided free of charge? by you guys
+    - Is IDP education costly?
+    - Is your program costly?
+    - Is there a price tag attached to IDP training?
+    - Does indian data portal training come at a cost?
+    - Is there any free IDP training available?
+    - Is it possible to obtain free IDP training?
+    - Is IDP training offered for free?
+    - Is your training free?
+
+- intent: faq-train-b1/schedule-for-phy-training  #439
+  examples: |
+    - schedule for physical training
+    - timimgs for physical training?
+    - for physical trainings what are the timings?
+    - schedule for the physical training sessions?
+    - physical training sessions schedule?
+    - When are your physical training sessions?
+    - When are you going to do your physical training?
+    - What are the timeframes for physical training?
+    - When are your physical trainings?
+    - What is the schedule for physical training?
+    - any hands on physical training sessions by IDP
+    - does indian data portal offers any Physical training sessions 
+    - Is there any physical training available through the Indian Data Portal?
+    - Is the India Data Portal equipped with any physical training?
+    

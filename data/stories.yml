@@ -631,3 +631,34 @@ stories:
   - action: action_about_data_last_updated_date
   - intent: feedback-form
   - action: action_feedback
+
+
+# oct 7 - mutilingual
+- story: Multilingual stories1
+  steps:
+  - intent: nlu-faq-portal-b3-hi
+  - action: action_language_detector_retrieval
+  - slot_was_set:
+    - language: "hi"
+  - intent: feedback-form
+  - action: action_feedback
+  
+
+- story: Multilingual stories1
+  steps:
+  - intent: nlu-faq-vis-b1-hi
+  - action: action_language_detector_retrieval
+  - slot_was_set:
+    - language: "hi"
+  - intent: feedback-form
+  - action: action_feedback
+
+- story: Multilingual stories1
+  steps:
+  - intent: nlu-faq-training-b1-hi
+  - action: action_language_detector_retrieval
+  - slot_was_set:
+    - language: "hi"
+  - intent: feedback-form
+  - action: action_feedback
+  

@@ -386,3 +386,313 @@ nlu:
     - Do I have to select a value from all dimension available  on this portal
     - on IDP Do I have to select a value from all dim available  
     - on indian data portal  Do I have to select a value from all dimesion availble
+
+- intent: faq-visualisation-b1/what-steps-are-required-to-make-a-beeswarm-plot  #476
+  examples: |
+    - what steps are required to make a beeswarm plot
+    - how can i generate a beeswarm plot
+    - provide step by step instructions for making a beeswarm plot
+    - how are Beeswarm plot formed
+    - what procedure should be followed to create beeswarm plot
+    - tell me the steps required to create the beeswarm plot
+    - how to make a beeswarm plot on this web portal
+    - tell me what steps should i follow to generate a beeswarm plot
+    - steps needed to plot a beeswarm plot
+    - how to make a Beeswarm chart on idp
+    - what steps are there to make a beeswarm plot
+    - what steps should be taken to create a beeswarm chart on idp
+    - steps needed to make a Beeswarm graph
+    - how to generate a Beeswarm graph
+    - what steps should i take to generate a Beeswarm chart
+    - what steps are to generate a Beeswarm chart
+    - how to plot a beeswarm chart
+    - steps needed to create a beeswarm plot
+    - how to make a beeswarm graph
+    - what steps should i take to plot a Beeswarm plot
+    - steps to create a beeswarm graph
+    - how to create a beeswarm plot
+    - how do I create beeswarm plot
+    - how can I create a beeswarm graph on IDP?
+    - how beeswarm plot is being created
+    - how am i supposed to build a beeswarm plot?
+    - help me with beeswarm plot creation process
+    - guide me with steps to make beeswarm plot
+    - what procedure should i follow to generate the beeswarm chart
+    - want to make a beeswarm graph how am i supposed to do that?
+    - i want to make a beeswarm plot how to do that?
+
+- intent: faq-visualisation-b1/how-grouped-scatter-plot-is-being-created #477
+  examples: |
+    - how grouped scatter plot is being created
+    - what steps are required to make a grouped scatter plot
+    - how can i generate a grouped scatter plot
+    - provide step by step instructions for making a Grouped scatter plot
+    - how are grouped scatter plot formed
+    - what procedure should be followed to create grouped scatter plot
+    - tell me the steps required to create the grouped scatter plot
+    - how to make a Grouped scatter plot on this web portal
+    - tell me what steps should i follow to generate a grouped scatter plot
+    - steps needed to plot a Grouped scatter plot
+    - how to make a Grouped scatter chart on idp
+    - what steps are there to make a Grouped scatter plot
+    - what steps should be taken to create a grouped scatter chart on idp
+    - steps needed to make a Grouped scatter graph
+    - how to generate a grouped scatter graph
+    - what steps should i take to generate a Grouped scatter chart
+    - what steps are to generate a grouped scatter chart
+    - how to plot a Grouped scatter chart
+    - steps needed to create a grouped scatter plot
+    - how to make a Grouped scatter graph
+    - what steps should i take to plot a grouped scatter plot
+    - steps to create a grouped scatter graph
+    - how to create a grouped scatter plot
+    - how do I create grouped scatter plot
+    - how can I create a grouped scatter graph on IDP?
+    - how am i supposed to build a grouped scatter plot?
+    - help me with Grouped scatter plot creation process
+    - guide me with steps to make grouped scatter plot
+    - what procedure should i follow to generate the Grouped scatter chart
+    - want to make a grouped scatter graph how am i supposed to do that?
+    - i want to generate a grouped scatter plot how to do that? 
+
+
+- intent: faq-visualisation-b1/how-am-i-supposed-to-build-a-grouped-bubble-chart #478
+  examples: |
+    - how am i supposed to build a grouped bubble chart
+    - how grouped bubble chart is being created
+    - what steps are required to make a grouped bubble chart
+    - how can i generate a grouped bubble chart
+    - provide step by step instructions for making a Grouped bubble chart
+    - how are grouped Bubble chart formed
+    - what procedure should be followed to create grouped bubble chart
+    - tell me the steps required to create the grouped bubble chart
+    - how to make a Grouped Bubble chart on this web portal
+    - tell me what steps should i follow to generate a grouped bubble chart
+    - steps needed to plot a Grouped bubble chart
+    - how to make a Grouped bubble chart on idp
+    - what steps are there to make a Grouped bubble plot
+    - what steps should be taken to create a grouped bubble chart on idp
+    - steps needed to make a Grouped Bubble graph
+    - how to generate a grouped bubble graph
+    - what steps should i take to generate a Grouped bubble chart
+    - what steps are to generate a grouped bubble chart
+    - how to plot a Grouped bubble chart
+    - steps needed to create a grouped Bubble plot
+    - how to make a Grouped bubble graph
+    - what steps should i take to plot a grouped Bubble chart
+    - steps to create a grouped Bubble graph
+    - how to create a grouped bubble chart
+    - how do I create grouped bubble chart
+    - how can I create a grouped Bubble graph on IDP?
+    - help me with Grouped Bubble plot creation process
+    - guide me with steps to make grouped bubble plot
+    - what procedure should i follow to generate the Grouped Bubble chart
+    - want to make a grouped bubble graph how am i supposed to do that?
+    - i want to make a grouped bubble plot how to do that? 
+
+- intent: faq-visualisation-b1/help-me-with-treemap-plot-creation-process #479
+  examples: |
+    - help me with treemap plot creation process
+    - how am i supposed to build a treemap
+    - how treemap is being created
+    - what steps are required to make a treemap
+    - how can i generate a treemap
+    - provide step by step instructions for making a treemap
+    - how are treemap formed
+    - what procedure should be followed to create treemap
+    - tell me the steps required to create the treemap
+    - how to make a treemap on this web portal
+    - tell me what steps should i follow to generate a treemap
+    - steps needed to plot a treemap
+    - how to make a treemap on idp
+    - what steps are there to make a treemap plot
+    - what steps should be taken to create a treemap on idp
+    - steps needed to make a treemap graph
+    - how to generate a treemap graph
+    - what steps should i take to generate a treemap
+    - what steps are to generate a treemap
+    - how to plot a treemap
+    - steps needed to create a treemap plot
+    - how to make a treemap graph
+    - what steps should i take to plot a treemap
+    - steps to create a treemap graph
+    - how to create a treemap
+    - how do I create treemap
+    - how can I create a treemap graph on IDP?
+    - guide me with steps to make treemap plot
+    - what procedure should i follow to generate the treemap
+    - want to make a treemap graph how am i supposed to do that?
+    - i want to generate a tree map plot how to do that?    
+
+- intent: faq-visualisation-b1/guide-me-with-steps-to-make-sankey-plot #480
+  examples: |
+    - guide me with steps to make sankey plot
+    - help me with sankey chart creation process
+    - how am i supposed to build a sankey chart
+    - how sankey chart is being created
+    - what steps are required to make a sankey chart
+    - how can i generate a sankey chart
+    - provide step by step instructions for making a sankey chart
+    - how are sankey chart formed
+    - what procedure should be followed to create sankey chart
+    - tell me the steps required to create the sankey plot
+    - how to make a sankey graph on this web portal
+    - tell me what steps should i follow to generate a sankey chart
+    - steps needed to plot a sankey plot
+    - how to make a sankey graph on idp
+    - what steps are there to make a sankey plot
+    - what steps should be taken to create a sankey graph on idp
+    - steps needed to make a sankey graph
+    - how to generate a sankey graph
+    - what steps should i take to generate a sankey chart
+    - what steps are to generate a sankey chart
+    - how to plot a sankey chart
+    - steps needed to create a sankey plot
+    - how to make a sankey graph
+    - what steps should i take to plot a sankey chart
+    - steps to create a sankey graph
+    - how to create a sankey chart
+    - how do I create sankey chart
+    - how can I create a sankey graph on IDP?
+    - what procedure should i follow to generate the sankey chart
+    - want to make a sankey graph how am i supposed to do that?
+    - i want to make a Sunburst plot how to do that?
+
+- intent: faq-visualisation-b1/what-procedure-should-i-follow-to-generate-the-sunburst-chart #481
+  examples: |
+    - what procedure should i follow to generate the sunburst chart
+    - guide me with steps to make sunburst plot
+    - help me with sunburst chart creation process
+    - how am i supposed to build a sunburst chart
+    - how sunburst chart is being created
+    - what steps are required to make a sunburst chart
+    - how can i generate a sunburst chart
+    - provide step by step instructions for making a sunburst chart
+    - how are sunburst chart formed
+    - what procedure should be followed to create sunburst chart
+    - tell me the steps required to create the sunburst plot
+    - how to make a sunburst graph on this web portal
+    - tell me what steps should i follow to generate a sunburst chart
+    - steps needed to plot a sunburst plot
+    - how to make a sunburst graph on idp
+    - what steps are there to make a sunburst plot
+    - what steps should be taken to create a sunburst graph on idp
+    - steps needed to make a sunburst graph
+    - how to generate a sunburst graph
+    - what steps should i take to generate a sunburst chart
+    - what steps are to generate a sunburst chart
+    - how to plot a Sunburst chart
+    - steps needed to create a Sunburst plot
+    - how to make a Sunburst graph
+    - what steps should i take to plot a Sunburst chart
+    - steps to create a Sunburst graph
+    - how to create a Sunburst chart
+    - how do I create Sunburst chart
+    - how can I create a Sunburst graph on IDP?
+    - want to make a Sunburst graph how am i supposed to do that?
+    - i want to generate a Sunburst plot how to do that?
+
+- intent: faq-visualisation-b1/want-to-make-a-circle-pack-graph-how-am-i-supposed-to-do-that #482
+  examples: |
+    - want to make a circle pack graph how am i supposed to do that
+    - what procedure should i follow to generate the circle pack chart
+    - guide me with steps to make circle pack plot
+    - help me with circle pack chart creation process
+    - how am i supposed to build a circle pack chart
+    - how circle pack chart is being created
+    - what steps are required to make a circle pack chart
+    - how can i generate a circle pack chart
+    - provide step by step instructions for making a circle pack chart
+    - how are circle pack chart formed
+    - what procedure should be followed to create circle pack chart
+    - tell me the steps required to create the circle pack plot
+    - how to make a circle pack graph on this web portal
+    - tell me what steps should i follow to generate a circle pack chart
+    - steps needed to plot a circle pack plot
+    - how to make a circle pack graph on idp
+    - what steps are there to make a circle pack plot
+    - what steps should be taken to create a circle pack graph on idp
+    - steps needed to make a circle pack graph
+    - how to generate a circle pack graph
+    - what steps should i take to generate a circle pack chart
+    - what steps are to generate a circle pack chart
+    - how to plot a circle pack chart
+    - steps needed to create a circle pack plot
+    - how to make a circle pack graph
+    - what steps should i take to plot a circle pack chart
+    - steps to create a circle pack graph
+    - how to create a circle pack chart
+    - how do I create circle pack chart
+    - how can I create a circle pack graph on IDP?
+    - i want to generate circle pack graph how to do that?
+
+- intent: faq-visualisation-b1/steps-to-make-box-plot #483
+  examples: |
+    - following which steps a box plot can be made
+    - by following what steps will i be able to make a box plot
+    - want to make a box plot how am i supposed to do that
+    - what procedure should i follow to generate the box plot
+    - guide me with steps to make box plot
+    - help me with box plot creation process
+    - how am i supposed to build a box plot
+    - how box plot is being created
+    - what steps are required to make a box plot
+    - how can i generate a box plot
+    - provide step by step instructions for making a box plot
+    - how are box plot formed
+    - what procedure should be followed to create box plot
+    - tell me the steps required to create the box plot
+    - how to make a box graph on this web portal
+    - tell me what steps should i follow to generate a box plot
+    - steps needed to plot a box plot
+    - how to make a box graph on idp
+    - what steps are there to make a box plot
+    - what steps should be taken to create a box plot on idp
+    - steps needed to make a box plot
+    - how to generate a box plot
+    - what steps should i take to generate a box plot
+    - what steps are to generate a box chart
+    - how to plot a box chart
+    - steps needed to create a box plot
+    - how to make a box graph
+    - what steps should i take to plot a box chart
+    - steps to create a box graph
+    - how to create a box chart
+    - how do I create box chart
+    - how can I create a box graph on IDP?
+
+- intent: faq-visualisation-b1/what-steps-are-to-be-followed-to-generate-a-dendrogram #484
+  examples: |
+    - what steps are to be followed to generate a dendrogram
+    - by following what steps will i be able to make a dendrogram
+    - want to make a dendrogram how am i supposed to do that
+    - what procedure should i follow to generate the dendrogram
+    - guide me with steps to make dendrogram
+    - help me with dendrogram plot creation process
+    - how am i supposed to build a dendrogram plot
+    - how dendrogram plot is being created
+    - what steps are required to make a dendrogram plot
+    - how can i generate a dendrogram plot
+    - provide step by step instructions for making a dendrogram
+    - how are dendrogram formed
+    - what procedure should be followed to create dendrogram
+    - tell me the steps required to create the dendrogram
+    - how to make a dendrogram graph on this web portal
+    - tell me what steps should i follow to generate a dendrogram
+    - steps needed to plot a dendrogram plot
+    - how to make a dendrogram graph on idp
+    - what steps are there to make a dendrogram plot
+    - what steps should be taken to create a dendrogram plot on idp
+    - steps needed to make a dendrogram plot
+    - how to generate a dendrogram plot
+    - what steps should i take to generate a dendrogram
+    - what steps are to generate a dendrogram chart
+    - how to a dendrogram chart
+    - steps needed to create a dendrogram
+    - how to make a dendrogram graph
+    - what steps should i take to a dendrogram chart
+    - steps to create a dendrogram graph
+    - how to create a dendrogram chart
+    - how do I create dendrogram chart
+    - how can I create a dendrogram graph on IDP?
+    - i want to generate dendograms how to do that?

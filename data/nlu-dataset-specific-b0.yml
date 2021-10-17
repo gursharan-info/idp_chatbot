@@ -1200,6 +1200,7 @@ nlu:
     - For the [sales of fertilisers]{"entity":"dataset_name"} data, provide me with [granularity]{"entity":"granularity"}
     - Please give the [granularity]{"entity":"granularity"} for [sales of fertilisers]{"entity":"dataset_name"} 
     - could you pls tell me the [granularity level]{"entity":"granularity"} for [sales of fertilisers]{"entity":"dataset_name"} dataset
+    
 
 - intent: about_data_source_name
   examples: |
@@ -1398,6 +1399,7 @@ nlu:
       - For [sales of fertilisers]{"entity": "dataset_name"}, I'd like to know the [source name]{"entity": "source_name"}.
       - I would like to know the [source name]{"entity": "source_name"} of [sales of fertilisers]{"entity": "dataset_name"}.
       - For [sales of fertilisers]{"entity": "dataset_name"}, i wanna know the [source name]{"entity": "source_name"}.
+     
 
 - intent: about_data_methodology
   examples: |
@@ -1603,7 +1605,7 @@ nlu:
     - I want to know the [methodology]{"entity": "methodology"} used for generating [sales of fertilisers]{"entity": "dataset_name"}   
     - which [methodology]{"entity": "methodology"} used for generating [sales of fertilisers]{"entity": "dataset_name"} 
     - What [methods]{"entity": "methodology"} were employed in the development of the [Depth to Water Level]{"entity": "dataset_name"} dataset? 
-
+    
 - intent: about_data_frequency
   examples: |
     - what's the [frequency]{"entity": "frequency"} of data updation
@@ -1816,7 +1818,7 @@ nlu:
     - How [frequently]{"entity":"frequency"} is the data of the [sales of fertilisers]{"entity": "dataset_name"} updated on average?
     - do you Is data updated [frequently]{"entity":"frequency"} on the [sales of fertilisers]{"entity": "dataset_name"}?
     - How [frequently]{"entity":"frequency"} is the [sales of fertilisers]{"entity": "dataset_name"} data updated on average?
-
+    
 - intent: about_data_last_updated_date
   examples: |
     - when was the [last updated]{"entity":"last_updated_date"} data uploaded.
@@ -2020,6 +2022,8 @@ nlu:
     - tell me when was [sales of fertilisers]{"entity": "dataset_name"} dataset [last updated]{"entity":"last_updated_date"}
     - when was [sales of fertilisers]{"entity": "dataset_name"} [last updated]{"entity":"last_updated_date"}
     - I want the [last updation]{"entity":"last_updated_date"} of [sales of fertilisers]{"entity": "dataset_name"}
+    
+
 
 - intent: about_data_source_link
   examples: |
@@ -2223,7 +2227,7 @@ nlu:
     - is there any [origin url]{"entity":"source_link"} for [sales of fertilisers]{"entity":"dataset_name"} data
     - i want to visit the [origin url]{"entity":"source_link"} for [sales of fertilisers]{"entity":"dataset_name"} dataset, please provide it
     - where can i get [source link]{"entity":"source_link"} for [sales of fertilisers]{"entity":"dataset_name"} data
-
+    
 
 - intent: about_data_data_extraction_page
   examples: |
@@ -2427,6 +2431,8 @@ nlu:
     - what [extraction page]{"entity": "data_extraction_page"} link were used for [sales of fertilisers]{"entity": "dataset_name"} dataset?
     - what data [extraction page]{"entity": "data_extraction_page"} url were used for [sales of fertilisers]{"entity": "dataset_name"} dataset?
     - can you provide me the data [extraction page]{"entity": "data_extraction_page"} link for [sales of fertilisers]{"entity": "dataset_name"} dataset?
+   
+
 
 - intent: about_data_source_name_det
   examples: |
@@ -2630,7 +2636,7 @@ nlu:
     - could you provide the [detailed source name]{"entity":"source_name_det"} of [sales of fertilisers]{"entity":"dataset_name"} dataset here in the chat
     - can you tell me [detailed source name]{"entity":"source_name_det"} for [sales of fertilisers]{"entity":"dataset_name"} data
     - i want to know [detailed source name]{"entity":"source_name_det"} of [sales of fertilisers]{"entity":"dataset_name"} dataset
-
+   
 - intent: about_data_date_of_retrievals
   examples: |
     - what is its [retrieval date]{"entity":"date_of_retrievals"}
@@ -2847,7 +2853,7 @@ nlu:
     - let me know the [retrieval date]{"entity":"date_of_retrievals"} of [depth to water level]{"entity":"dataset_name"}
     - will you display the [retrieval date]{"entity":"date_of_retrievals"} for [Depth to Water Level]{"entity":"dataset_name"}
     - i would like to know the [retrieval date]{"entity":"date_of_retrievals"} for [depth to water level]{"entity":"dataset_name"} dataset
-
+    
 - intent: about_data_domain_name
   examples: |
     - what is the [domain name]{"entity":"domain_name"} for [depth to water level]{"entity":"dataset_name"}

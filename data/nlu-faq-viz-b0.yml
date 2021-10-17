@@ -370,3 +370,762 @@ nlu:
     - where is rasa x
     - how many datasets i can upload to IDP
     - how can i know more about the competitions?
+
+
+- intent: faq-visualisation-b0/how-can-i-create-a-map-on-idp #453
+  examples: |
+    - how can i create a map on idp
+    - how do I create map
+    - how to create a map plot
+    - Steps to create a map plot
+    - what steps should I take to plot a map
+    - Steps needed to create a map
+    - how to plot a map
+    - what steps are there to generate a map
+    - what steps should I take to generate a map
+    - how to generate a map
+    - steps needed to make a map plot
+    - what steps should be taken to create a map on IDP
+    - what steps are there to make a map
+    - how to make a map plot on IDP
+    - steps needed to plot a map plot
+    - tell me what steps should I follow to generate a map
+    - how to make a map chart
+    - tell me the steps required to create the map plot
+    - what procedure should be followed to create map chart
+    - how are map chart formed
+    - provide step by step instructions for making a map plot
+    - how can I generate a map
+    - what steps are required to make a map
+    - how map plot is being created
+    - how am i supposed to build a map?
+    - help me with map plot creation process
+    - guide me with steps to make map
+    - what procedure should i follow to genrate the map
+    - want to make a map how am i supposed to do that?
+    - how to make a map plot
+
+- intent: faq-visualisation-b0/how-do-i-create-infographic-chart  #454
+  examples: |
+    - how do i create infographic chart
+    - how can I create a infographic chart on IDP?
+    - how to create a infographic plot
+    - Steps to create a infographic chart
+    - what steps should I take to plot a infographic chart
+    - Steps needed to create a infographic chart
+    - how to plot a infographic chart
+    - what steps are there to generate a infographic chart
+    - what steps should I take to generate a infographic chart
+    - how to generate a infographic chart
+    - steps needed to make a infographic plot
+    - what steps should be taken to create a infographic chart on IDP
+    - what steps are there to make a infographic chart
+    - how to make a infographic chart on IDP
+    - steps needed to plot a infographic chart
+    - tell me what steps should I follow to generate a infographic chart
+    - how to make a infographic chart
+    - tell me the steps required to create the infographic plot
+    - what procedure should be followed to create infographic chart
+    - how are infographic chart formed
+    - provide step by step instructions for making a infographic chart plot
+    - how can I generate a infographic chart
+    - what steps are required to make a infographic chart
+    - how infographic plot is being created
+    - how am i supposed to build a infographic chart?
+    - help me with infographic plot creation process
+    - guide me with steps to make infographic chart
+    - what procedure should i follow to genrate the infographic chart
+    - want to make a infographic chart how am i supposed to do that?
+    - how to make a infographic chart plot
+
+- intent: faq-visualisation-b0/how-to-create-a-bar-chart #455
+  examples: |
+    - how to create a bar chart
+    - how do I create bar chart
+    - how can I create a Bar chart on IDP?
+    - Steps to create a bar plot
+    - what steps should I take to plot a Bar chart
+    - Steps needed to create a bar plot
+    - how to plot a Bar chart
+    - what steps are there to generate a bar plot
+    - what steps should I take to generate a bar chart
+    - how to generate a Bar chart
+    - steps needed to make a Bar plot
+    - what steps should be taken to create a bar chart on IDP
+    - what steps are there to make a bar graph
+    - how to make a bar chart on IDP
+    - steps needed to plot a Bar graph
+    - tell me what steps should I follow to generate a Bar graph
+    - how to make a bar chart
+    - tell me the steps required to create the Bar graph
+    - what procedure should be followed to create Bar chart
+    - how are bar chart formed
+    - provide step by step instructions for making a Bar plot
+    - how can I generate a bar chart
+    - what steps are required to make a Bar chart
+    - how bar chart is being created
+    - how am i supposed to build a Bar graph?
+    - help me with bar chart creation process
+    - guide me with steps to make Bar chart
+    - what procedure should i follow to genrate the Bar chart
+    - want to make a bar chart how am i supposed to do that?
+    - how to make a bar plot
+
+- intent: faq-visualisation-b0/steps-to-create-a-stacked-bar-plot #456
+  examples: |
+    - steps to create a stacked bar plot
+    - how to create a stacked bar plot
+    - how do I create stacked bar graph
+    - how can I create a Stacked bar plot on IDP?
+    - what steps should I take to plot a Stacked bar plot
+    - Steps needed to create a Stacked bar plot
+    - how to plot a stacked bar plot
+    - what steps are there to generate a Stacked bar plot
+    - what steps should I take to generate a Stacked bar graph
+    - how to generate a stacked bar chart
+    - steps needed to make a stacked bar plot
+    - what steps should be taken to create a Stacked bar plot on IDP
+    - what steps are there to make a Stacked bar plot
+    - how to make a stacked bar plot on IDP
+    - steps needed to plot a Stacked bar graph
+    - tell me what steps should I follow to generate a Stacked bar graph
+    - how to make a stacked bar plot
+    - tell me the steps required to create the Stacked bar plot
+    - what procedure should be followed to create stacked bar plot
+    - how are Stacked bar plot formed
+    - provide step by step instructions for making a Stacked bar plot
+    - how can I generate a stacked bar plot
+    - what steps are required to make a stacked bar plot
+    - how stacked bar plot is being created
+    - how am i supposed to build a stacked bar plot?
+    - help me with Stacked bar plot creation process
+    - guide me with steps to make stacked bar plot
+    - what procedure should i follow to genrate the Stacked bar chart
+    - want to make a stacked bar plot how am i supposed to do that?
+    - how to make a stacked bar graph
+
+- intent: faq-visualisation-b0/what-steps-should-i-take-to-plot-a-grouped-bar-plot #457
+  examples: |
+    - what steps should i take to plot a grouped bar plot
+    - steps to create a Grouped bar graph
+    - how to create a grouped bar plot
+    - how do I create grouped bar graph
+    - how can I create a Grouped bar plot on IDP?
+    - Steps needed to create a grouped bar plot
+    - how to plot a grouped bar plot
+    - what steps are there to generate a Grouped bar plot
+    - what steps should I take to generate a Grouped bar graph
+    - how to generate a grouped bar chart
+    - steps needed to make a grouped bar plot
+    - what steps should be taken to create a Grouped bar plot on IDP
+    - what steps are there to make a grouped bar plot
+    - how to make a grouped bar plot on IDP
+    - steps needed to plot a Grouped bar graph
+    - tell me what steps should I follow to generate a Grouped bar graph
+    - how to make a grouped bar plot
+    - tell me the steps required to create the Grouped bar plot
+    - what procedure should be followed to create Grouped bar plot
+    - how are grouped bar plot formed
+    - provide step by step instructions for making a Grouped bar plot
+    - how can I generate a Grouped bar plot
+    - what steps are required to make a Grouped bar plot
+    - how grouped bar plot is being created
+    - how am i supposed to build a Grouped bar plot?
+    - help me with grouped bar plot creation process
+    - guide me with steps to make Grouped bar plot
+    - what procedure should i follow to genrate the Grouped bar chart
+    - want to make a grouped bar plot how am i supposed to do that?
+    - how to make a grouped bar graph
+
+- intent: faq-visualisation-b0/how-to-make-a-frequency-histogram #458
+  examples: |
+    - how to make a frequency histogram
+    - what steps should i take to plot a Frequency Histogram chart
+    - steps to create a Frequency Histogram
+    - how to create a frequency histogram
+    - how do I create frequency histogram
+    - how can I create a frequency histogram on IDP?
+    - Steps needed to create a Frequency Histogram chart
+    - how to plot a Frequency histogram graph
+    - what steps are there to generate a Frequency Histogram
+    - what steps should I take to generate a Frequency Histogram
+    - how to generate a frequency histogram
+    - steps needed to make a frequency histogram graph
+    - what steps should be taken to create a Frequency Histogram chart on IDP
+    - what steps are there to make a Frequency histogram chart
+    - how to make a frequency Histogram on IDP
+    - steps needed to plot a frequency Histogram
+    - tell me what steps should I follow to generate a Frequency Histogram
+    - tell me the steps required to create the frequency histogram
+    - what procedure should be followed to create frequency Histogram chart
+    - how are Frequency Histogram graph formed
+    - provide step by step instructions for making a Frequency histogram
+    - how can I generate a frequency histogram chart
+    - what steps are required to make a frequency Histogram plot
+    - how Frequency Histogram is being created
+    - how am i supposed to build a Frequency histogram?
+    - help me with frequency Histogram creation process
+    - guide me with steps to make frequency histogram
+    - what procedure should i follow to genrate the frequency Histogram plot
+    - want to make a Frequency histogram chart how am i supposed to do that?
+
+- intent: faq-visualisation-b0/steps-needed-to-create-a-bin-histogram #459
+  examples: |
+    - steps needed to create a bin histogram
+    - how to make a bin histogram
+    - what steps should i take to plot a Bin Histogram chart
+    - steps to create a Bin Histogram
+    - how to create a bin histogram
+    - how do I create Bin histogram
+    - how can I create a bin Histogram on IDP?
+    - how to plot a Bin histogram graph
+    - what steps are there to generate a Bin Histogram
+    - what steps should I take to generate a Bin Histogram
+    - how to generate a bin histogram
+    - steps needed to make a bin Histogram graph
+    - what steps should be taken to create a Bin Histogram chart on IDP
+    - what steps are there to make a Bin histogram chart
+    - how to make a Bin Histogram on IDP
+    - steps needed to plot a Bin histogram
+    - tell me what steps should I follow to generate a Bin Histogram
+    - how to make a bin histogram plot
+    - tell me the steps required to create the bin Histogram
+    - what procedure should be followed to create bin Histogram chart
+    - how are Bin Histogram graph formed
+    - provide step by step instructions for making a bin Histogram
+    - how can I generate a Bin Histogram chart
+    - what steps are required to make a bin Histogram plot
+    - how Bin Histogram is being created
+    - how am i supposed to build a bin Histogram?
+    - help me with Bin Histogram creation process
+    - guide me with steps to make bin histogram
+    - what procedure should i follow to genrate the Bin histogram plot
+    - want to make a Bin histogram chart how am i supposed to do that?
+
+- intent: faq-visualisation-b0/how-to-plot-a-bar-and-area-graph #460
+  examples: |
+    - how to plot a bar and area graph
+    - steps needed to create a Bar and area chart
+    - how to make a bar and area chart plot
+    - what steps should i take to plot a Bar and area chart
+    - steps to create a bar and area
+    - how to create a Bar and area chart
+    - how do I create bar and area chart
+    - how can I create a bar and area on IDP?
+    - what steps are there to generate a Bar and area chart
+    - what steps should I take to generate a Bar and area
+    - how to generate a bar and area chart
+    - steps needed to make a bar and area graph
+    - what steps should be taken to create a Bar and area chart on IDP
+    - what steps are there to make a Bar and area chart
+    - how to make a Bar and area chart on IDP
+    - steps needed to plot a bar and area chart
+    - tell me what steps should I follow to generate a Bar and area
+    - how to make a bar and area chart
+    - tell me the steps required to create the Bar and area
+    - what procedure should be followed to create Bar and area chart
+    - how are bar and area graph formed
+    - provide step by step instructions for making a Bar and area
+    - how can I generate a bar and area chart
+    - what steps are required to make a Bar and area plot
+    - how Bar and area chart is being created
+    - how am i supposed to build a Bar and area?
+    - help me with Bar and area plot creation process
+    - guide me with steps to make bar and area chart
+    - what procedure should i follow to genrate the Bar and area plot
+    - want to make a Bar and area chart how am i supposed to do that?
+
+- intent: faq-visualisation-b0/what-steps-are-there-to-generate-a-pictograph #461
+  examples: |
+    - what steps are there to generate a pictograph
+    - how to plot a pictograph
+    - steps needed to create a pictograph chart
+    - how to make a pictograph plot
+    - what steps should i take to plot a pictograph chart
+    - steps to create a pictograph
+    - how to create a pictograph chart
+    - how do I create pictograph chart
+    - how can I create a pictograph on IDP?
+    - what steps should I take to generate a pictograph
+    - how to generate a pictograph chart
+    - steps needed to make a pictograph
+    - what steps should be taken to create a pictograph chart on IDP
+    - what steps are there to make a pictograph chart
+    - how to make a pictograph chart on IDP
+    - steps needed to plot a pictograph chart
+    - tell me what steps should I follow to generate a pictograph
+    - how to make a pictograph chart
+    - tell me the steps required to create the pictograph
+    - what procedure should be followed to create pictograph chart
+    - how are pictograph formed
+    - provide step by step instructions for making a pictograph
+    - how can I generate a pictograph chart
+    - what steps are required to make a pictograph plot
+    - how pictograph chart is being created
+    - how am i supposed to build a pictograph?
+    - help me with pictograph plot creation process
+    - guide me with steps to make pictograph chart
+    - what procedure should i follow to genrate the pictograph plot
+    - want to make a pictograph chart how am i supposed to do that?
+
+- intent: faq-visualisation-b0/what-steps-should-i-take-to-generate-a-pyramid-chart #462
+  examples: |
+    - what steps should i take to generate a pyramid chart
+    - what steps are there to generate a pyramid chart
+    - how to plot a pyramid chart
+    - steps needed to create a pyramid chart
+    - how to make a pyramid plot on this platform
+    - what steps should i take to plot a pyramid chart
+    - steps to create a pyramid graph
+    - how to create a pyramid chart
+    - how do I create pyramid chart
+    - how can I create a pyramid graph on IDP?
+    - how to generate a pyramid chart
+    - steps needed to make a pyramid graph
+    - what steps should be taken to create a pyramid chart on IDP
+    - what steps are there to make a pyramid chart
+    - how to make a pyramid chart on IDP
+    - steps needed to plot a pyramid chart
+    - tell me what steps should I follow to generate a pyramid chart
+    - how to make a pyramid chart
+    - tell me the steps required to create the pyramid chart
+    - what procedure should be followed to create pyramid chart
+    - how are pyramid graphs formed
+    - provide step by step instructions for making a pyramid chart
+    - how can I generate a pyramid chart
+    - what steps are required to make a pyramid plot
+    - how pyramid chart is being created
+    - how am i supposed to build a pyramid chart?
+    - help me with pyramid plot creation process
+    - guide me with steps to make pyramid chart
+    - what procedure should i follow to genrate the pyramid plot
+    - want to make a pyramid chart how am i supposed to do that?
+
+- intent: faq-visualisation-b0/how-to-generate-a-lollipop-graph #463
+  examples: |
+    - how to generate a lollipop graph
+    - what steps should i take to generate a lollipop chart
+    - what steps are there to generate a lollipop chart
+    - how to plot a lollipop chart
+    - steps needed to create a lollipop chart
+    - how to make a lollipop chart
+    - what steps should i take to plot a lollipop chart
+    - steps to create a lollipop graph
+    - how to create a lollipop plot
+    - how do I create lollipop plot
+    - how can I create a lollipop graph on IDP?
+    - steps needed to make a lollipop graph
+    - what steps should be taken to create a lollipop chart on IDP
+    - what steps are there to make a lollipop chart
+    - how to make a lollipop chart on IDP
+    - steps needed to plot a lollipop graph
+    - tell me what steps should I follow to generate a lollipop chart
+    - how to make a lollipop plot on this website
+    - tell me the steps required to create the lollipop chart
+    - what procedure should be followed to create lollipop chart
+    - how are lollipop graphs formed
+    - provide step by step instructions for making a lollipop chart
+    - how can I generate a lollipop chart
+    - what steps are required to make a lollipop plot
+    - how lollipop chart is being created
+    - how am i supposed to build a lollipop chart?
+    - help me with lollipop plot creation process
+    - guide me with steps to make lollipop chart
+    - what procedure should i follow to genrate the lollipop plot
+    - want to make a lollipop graph how am i supposed to do that?
+
+- intent: faq-visualisation-b0/steps-needed-to-make-a-dumbbell-graph  #464
+  examples: |
+    - steps needed to make a dumbbell graph
+    - how to generate a dumbbell graph
+    - what steps should i take to generate a dumbbell chart
+    - what steps are there to generate a dumbbell chart
+    - how to plot a dumbbell chart
+    - steps needed to create a dumbbell chart
+    - how to make a dumbbell chart
+    - what steps should i take to plot a dumbbell chart
+    - steps to create a dumbbell graph
+    - how to create a dumbbell plot
+    - how do I create dumbbell plot
+    - how can I create a dumbbell graph on IDP?
+    - what steps should be taken to create a dumbbell chart on IDP
+    - what steps are there to make a dumbbell chart
+    - how to make a dumbbell chart on IDP
+    - steps needed to plot a dumbbell graph
+    - tell me what steps should I follow to generate a dumbbell chart
+    - how to make a dumbbell plot here on this website
+    - tell me the steps required to create the dumbbell chart
+    - what procedure should be followed to create dumbbell chart
+    - how are dumbbell graphs formed
+    - provide step by step instructions for making a dumbbell chart
+    - how can I generate a dumbbell chart
+    - what steps are required to make a dumbbell plot
+    - how dumbbell chart is being created
+    - how am i supposed to build a dumbbell chart?
+    - help me with dumbbell plot creation process
+    - guide me with steps to make dumbbell chart
+    - what procedure should i follow to genrate the dumbbell plot
+    - want to make a dumbbell graph how am i supposed to do that?
+
+- intent: faq-visualisation-b0/what-steps-should-be-taken-to-create-a-grouped-lollipop-chart-on-idp #465
+  examples: |
+    - what steps should be taken to create a grouped lollipop chart on idp
+    - steps needed to make a grouped lollipop graph
+    - how to generate a grouped lollipop graph
+    - what steps should i take to generate a grouped lollipop chart
+    - what steps are there to generate a grouped lollipop chart
+    - how to plot a grouped lollipop chart
+    - steps needed to create a grouped lollipop chart
+    - how to make a grouped lollipop chart
+    - what steps should i take to plot a grouped lollipop chart
+    - steps to create a grouped lollipop graph
+    - how to create a grouped lollipop plot
+    - how do I create grouped lollipop plot
+    - how can I create a grouped lollipop graph on IDP?
+    - what steps are there to make a grouped lollipop chart
+    - how to make a grouped lollipop chart on IDP
+    - steps needed to plot a grouped lollipop graph
+    - tell me what steps should I follow to generate a grouped lollipop chart
+    - how to make a grouped lollipop plot on this portal
+    - tell me the steps required to create the grouped lollipop chart
+    - what procedure should be followed to create grouped lollipop chart
+    - how are grouped lollipop graphs formed
+    - provide step by step instructions for making a grouped lollipop chart
+    - how can I generate a grouped lollipop chart
+    - what steps are required to make a grouped lollipop plot
+    - how grouped lollipop chart is being created
+    - how am i supposed to build a grouped lollipop chart?
+    - help me with grouped lollipop plot creation process
+    - guide me with steps to make grouped lollipop chart
+    - what procedure should i follow to genrate the grouped lollipop plot
+    - want to make a grouped lollipop graph how am i supposed to do that?
+
+- intent: faq-visualisation-b0/what-steps-are-there-to-make-a-donut-chart #466
+  examples: |
+    - what steps are there to make a donut chart
+    - what steps should be taken to create a donut chart on idp
+    - steps needed to make a donut graph
+    - how to generate a donut graph
+    - what steps should i take to generate a donut chart
+    - what steps are to generate a donut plot
+    - how to plot a donut chart
+    - steps needed to create a donut chart
+    - how to make a donut chart
+    - what steps should i take to plot a donut chart
+    - steps to create a donut graph
+    - how to create a donut plot
+    - how do I create donut plot
+    - how can I create a donut graph on IDP?
+    - how to make a donut chart on IDP
+    - steps needed to plot a donut graph
+    - tell me what steps should I follow to generate a donut chart
+    - how to make a donut plot on this platform
+    - tell me the steps required to create the donut chart
+    - what procedure should be followed to create donut chart
+    - how are donut graphs formed
+    - provide step by step instructions for making a donut chart
+    - how can I generate a donut chart
+    - what steps are required to make a donut plot
+    - how donut chart is being created
+    - how am i supposed to build a donut chart?
+    - help me with donut plot creation process
+    - guide me with steps to make donut chart
+    - what procedure should i follow to genrate the donut plot
+    - want to make a donut graph how am i supposed to do that?
+
+- intent: faq-visualisation-b0/how-to-make-a-radial-bar-plot-on-idp #467
+  examples: |
+    - how to make a radial bar plot on idp
+    - what steps are there to make a radial bar chart
+    - what steps should be taken to create a radial bar chart on idp
+    - steps needed to make a radial bar graph
+    - how to generate a radial bar graph
+    - what steps should i take to generate a radial bar chart
+    - what steps are to generate a radial bar plot
+    - how to plot a radial bar chart
+    - steps needed to create a radial bar chart
+    - how to make a radial bar chart
+    - what steps should i take to plot a radial bar chart
+    - steps to create a radial bar graph
+    - how to create a radial bar plot
+    - how do I create radial bar plot
+    - how can I create a radial bar graph on IDP?
+    - steps needed to plot a radial bar graph
+    - tell me what steps should I follow to generate a radial bar chart
+    - how to make a radial bar plot here on idp portal
+    - tell me the steps required to create the radial bar chart
+    - what procedure should be followed to create radial bar chart
+    - how are radial bar graphs formed
+    - provide step by step instructions for making a radial bar chart
+    - how can I generate a radial bar chart
+    - what steps are required to make a radial bar plot
+    - how radial bar chart is being created
+    - how am i supposed to build a radial bar chart?
+    - help me with radial bar plot creation process
+    - guide me with steps to make radial bar chart
+    - what procedure should i follow to genrate the radial bar plot
+    - want to make a radial bar graph how am i supposed to do that?    
+
+- intent: faq-visualisation-b0/steps-needed-to-plot-a-circular-bar-plot #468
+  examples: |
+    - steps needed to plot a circular bar plot
+    - how to make a circular bar plot on idp
+    - what steps are there to make a circular bar chart
+    - what steps should be taken to create a circular bar chart on idp
+    - steps needed to make a circular bar graph
+    - how to generate a circular bar graph
+    - what steps should i take to generate a circular bar chart
+    - what steps are to generate a circular bar plot
+    - how to plot a circular bar chart
+    - steps needed to create a circular bar chart
+    - how to make a circular bar chart
+    - what steps should i take to plot a circular bar chart
+    - steps to create a circular bar graph
+    - how to create a circular bar plot
+    - how do I create circular bar plot
+    - how can I create a circular bar graph on IDP?
+    - tell me what steps should I follow to generate a circular bar chart
+    - how to make a circular bar graph on this website
+    - tell me the steps required to create the circular bar chart
+    - what procedure should be followed to create circular bar chart
+    - how are circular bar graphs formed
+    - provide step by step instructions for making a circular bar chart
+    - how can I generate a circular bar chart
+    - what steps are required to make a circular bar plot
+    - how circular bar chart is being created
+    - how am i supposed to build a circular bar chart?
+    - help me with circular bar plot creation process
+    - guide me with steps to make circular bar chart
+    - what procedure should i follow to genrate the circular bar plot
+    - want to make a circular bar graph how am i supposed to do that?
+
+- intent: faq-visualisation-b0/tell-me-what-steps-should-i-follow-to-generate-a-radar-chart #469
+  examples: |
+    - tell me what steps should i follow to generate a radar chart
+    - steps needed to plot a radar plot
+    - how to make a radar plot on idp
+    - what steps are there to make a radar chart
+    - what steps should be taken to create a radar chart on idp
+    - steps needed to make a radar graph
+    - how to generate a radar graph
+    - what steps should i take to generate a radar chart
+    - what steps are to generate a radar plot
+    - how to plot a radar chart
+    - steps needed to create a radar chart
+    - how to make a radar chart
+    - what steps should i take to plot a radar chart
+    - steps to create a radar graph
+    - how to create a radar plot
+    - how do I create radar plot
+    - how can I create a radar graph on IDP?
+    - how to make a radar chart here
+    - tell me the steps required to create the radar chart
+    - what procedure should be followed to create radar chart
+    - how are radar graphs formed
+    - provide step by step instructions for making a radar chart
+    - how can I generate a radar chart
+    - what steps are required to make a radar plot
+    - how radar chart is being created
+    - how am i supposed to build a radar chart?
+    - help me with radar plot creation process
+    - guide me with steps to make radar chart
+    - what procedure should i follow to genrate the radar plot
+    - want to make a radar graph how am i supposed to do that?
+
+- intent: faq-visualisation-b0/how-to-make-a-radial-stacked-bar-chart-on-this-web-portal #470
+  examples: |
+    - how to make a radial stacked bar chart on this web portal
+    - tell me what steps should i follow to generate a radial stacked bar chart
+    - steps needed to plot a radial stacked bar plot
+    - how to make a Radial stacked bar plot on idp
+    - what steps are there to make a radial stacked bar chart
+    - what steps should be taken to create a Radial stacked bar chart on idp
+    - steps needed to make a radial stacked bar graph
+    - how to generate a radial stacked bar graph
+    - what steps should i take to generate a Radial stacked bar chart
+    - what steps are to generate a Radial stacked bar plot
+    - how to plot a Radial stacked bar chart
+    - steps needed to create a Radial stacked bar chart
+    - how to make a radial stacked bar graph
+    - what steps should i take to plot a radial stacked bar chart
+    - steps to create a Radial stacked bar graph
+    - how to create a radial stacked bar plot
+    - how do I create radial stacked bar plot
+    - how can I create a radial stacked bar graph on IDP?
+    - tell me the steps required to create the radial stacked bar chart
+    - what procedure should be followed to create radial stacked bar chart
+    - how are Radial stacked bar graphs formed
+    - provide step by step instructions for making a radial stacked bar chart
+    - how can I generate a Radial stacked bar chart
+    - what steps are required to make a Radial stacked bar plot
+    - how Radial stacked bar chart is being created
+    - how am i supposed to build a radial stacked bar chart?
+    - help me with Radial stacked bar plot creation process
+    - guide me with steps to make radial stacked bar chart
+    - what procedure should i follow to genrate the Radial stacked bar plot
+    - want to make a radial stacked bar graph how am i supposed to do that?
+
+- intent: faq-visualisation-b0/tell-me-the-steps-required-to-create-the-radial-plot #471
+  examples: |
+    - tell me the steps required to create the radial plot
+    - how to make a radial plot on this web portal
+    - tell me what steps should i follow to generate a radial plot
+    - steps needed to plot a radial plot
+    - how to make a radial plot on idp
+    - what steps are there to make a radial plot
+    - what steps should be taken to create a radial plot on idp
+    - steps needed to make a radial graph
+    - how to generate a radial graph
+    - what steps should i take to generate a radial plot
+    - what steps are to generate a radial plot
+    - how to plot a radial chart
+    - steps needed to create a radial chart
+    - how to make a radial graph
+    - what steps should i take to plot a radial chart
+    - steps to create a radial graph
+    - how to create a radial plot
+    - how do I create radial plot
+    - how can I create a radial graph on IDP?
+    - what procedure should be followed to create radial plot
+    - how are radial graphs formed
+    - provide step by step instructions for making a radial plot
+    - how can I generate a radial chart
+    - what steps are required to make a radial plot
+    - how radial chart is being created
+    - how am i supposed to build a radial plot?
+    - help me with radial plot creation process
+    - guide me with steps to make radial plot
+    - what procedure should i follow to generate the radial plot
+    - want to make a radial graph how am i supposed to do that?
+
+- intent: faq-visualisation-b0/what-procedure-followed-to-create-multi-line-chart #472
+  examples: |
+    - what procedure should be followed to create multi line chart
+    - tell me the steps required to create the multi line chart
+    - how to make a multi line chart on this web portal
+    - tell me what steps should i follow to generate a multi line chart
+    - steps needed to plot a multi line chart
+    - how to make a multi line chart on idp
+    - what steps are there to make a multi line plot
+    - what steps should be taken to create a Multi line chart on idp
+    - steps needed to make a multi line graph
+    - how to generate a multi line graph
+    - what steps should i take to generate a multi line chart
+    - what steps are to generate a multi line chart
+    - how to plot a multi line chart
+    - steps needed to create a Multi line chart
+    - how to make a multi line graph
+    - what steps should i take to plot a Multi line chart
+    - steps to create a Multi line graph
+    - how to create a multi line chart
+    - how do I create multi line plot
+    - how can I create a multi line graph on IDP?
+    - how are Multi line graphs formed
+    - provide step by step instructions for making a multi line chart
+    - how can I generate a Multi line chart
+    - what steps are required to make a multi line chart
+    - how Multi line chart is being created
+    - how am i supposed to build a multi line plot?
+    - help me with Multi line plot creation process
+    - guide me with steps to make multi line plot
+    - what procedure should i follow to generate the Multi line chart
+    - want to make a Multi line graph how am i supposed to do that?
+
+- intent: faq-visualisation-b0/how-are-bar-line-chart-formed #473
+  examples: |
+    - how are bar line chart formed
+    - what procedure should be followed to create bar line chart
+    - tell me the steps required to create the bar line chart
+    - how to make a bar line chart on this web portal
+    - tell me what steps should i follow to generate a bar line chart
+    - steps needed to plot a bar line chart
+    - how to make a bar line chart on idp
+    - what steps are there to make a bar line plot
+    - what steps should be taken to create a bar line chart on idp
+    - steps needed to make a bar line graph
+    - how to generate a bar line graph
+    - what steps should i take to generate a bar line chart
+    - what steps are to generate a bar line chart
+    - how to plot a bar line chart
+    - steps needed to create a bar line chart
+    - how to make a bar line graph
+    - what steps should i take to plot a bar line chart
+    - steps to create a bar line graph
+    - how to create a bar line chart
+    - how do I create bar line plot
+    - how can I create a bar line graph on IDP?
+    - provide step by step instructions for making a bar line chart
+    - how can I generate a bar line chart
+    - what steps are required to make a bar line chart
+    - how bar line chart is being created
+    - how am i supposed to build a bar line plot?
+    - help me with bar line plot creation process
+    - guide me with steps to make bar line plot
+    - what procedure should i follow to generate the bar line chart
+    - want to make a bar line graph how am i supposed to do that?
+
+- intent: faq-visualisation-b0/provide-step-by-step-instructions-for-making-a-scatter-plot #474
+  examples: |
+    - provide step by step instructions for making a scatter plot
+    - how are scatter plot formed
+    - what procedure should be followed to create scatter plot
+    - tell me the steps required to create the scatter plot
+    - how to make a scatter plot on this web portal
+    - tell me what steps should i follow to generate a scatter plot
+    - steps needed to plot a scatter plot
+    - how to make a scatter chart on idp
+    - what steps are there to make a scatter plot
+    - what steps should be taken to create a scatter chart on idp
+    - steps needed to make a scatter graph
+    - how to generate a scatter graph
+    - what steps should i take to generate a scatter chart
+    - what steps are to generate a scatter chart
+    - how to plot a scatter chart
+    - steps needed to create a scatter plot
+    - how to make a scatter graph
+    - what steps should i take to plot a scatter plot
+    - steps to create a scatter graph
+    - how to create a scatter plot
+    - how do I create scatter plot
+    - how can I create a scatter graph on IDP?
+    - how can I generate a scatter chart
+    - what steps are required to make a scatter plot
+    - how scatter plot is being created
+    - how am i supposed to build a scatter plot?
+    - help me with scatter plot creation process
+    - guide me with steps to make scatter plot
+    - what procedure should i follow to generate the scatter chart
+    - want to make a scatter graph how am i supposed to do that?
+
+- intent: faq-visualisation-b0/how-can-i-generate-a-bubble-plot #475
+  examples: |
+    - how can i generate a bubble plot
+    - provide step by step instructions for making a bubble plot
+    - how are bubble plot formed
+    - what procedure should be followed to create bubble plot
+    - tell me the steps required to create the bubble plot
+    - how to make a bubble plot on this web portal
+    - tell me what steps should i follow to generate a bubble plot
+    - steps needed to plot a bubble plot
+    - how to make a bubble chart on idp
+    - what steps are there to make a bubble plot
+    - what steps should be taken to create a bubble chart on idp
+    - steps needed to make a bubble graph
+    - how to generate a bubble graph
+    - what steps should i take to generate a bubble chart
+    - what steps are to generate a bubble chart
+    - how to plot a bubble chart
+    - steps needed to create a bubble plot
+    - how to make a bubble graph
+    - what steps should i take to plot a bubble plot
+    - steps to create a bubble graph
+    - how to create a bubble plot
+    - how do I create bubble plot
+    - how can I create a bubble graph on IDP?
+    - what steps are required to make a bubble plot
+    - how bubble plot is being created
+    - how am i supposed to build a bubble plot?
+    - help me with bubble plot creation process
+    - guide me with steps to make bubble plot
+    - what procedure should i follow to generate the bubble chart
+    - want to make a bubble graph how am i supposed to do that?

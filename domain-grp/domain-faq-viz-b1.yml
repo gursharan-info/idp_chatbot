@@ -26,7 +26,7 @@ responses:
   utter_faq-visualisation-b1/can-we-save-viz:
   - text: On right side of the second menu bar, there is Save To button which can save your visualisation on the portal. My Graphics, saves it to your personal gallery Graphic Gallery saves it to a public gallery where you can also see visualisations saved by others
   utter_faq-visualisation-b1/can-we-export-viz:
-  - text: On top left corner of the visualisation, there is three dot icon which enable to save visualisation as png and svg
+  - text: On top right corner of the visualisation, there is a file icon where you can enable to save visualisation as png and svg
   utter_faq-visualisation-b1/can-share-viz-on-social-media:
   - text: On top right corner of the visualisation, there is a share icon (like a branch) which gives you option to share on Social media and a custom link.
   utter_faq-visualisation-b1/do-i-have-to-share-number:
@@ -35,6 +35,36 @@ responses:
   - text: IDP can share on Facebook, Linkedin, Twitter &  Instagram. Apart from that you can also copy the visualisation link and share it anywhere on the internet.
   utter_faq-visualisation-b1/select-value-from-all-dimension-nece: # 42
   - text: In some aggregatable datasets, there is no need to select a value from the dimensions. However, for non aggregatable datasets, selecting a value from the dimension you want to visualize is mandatory
+
+  utter_faq-visualisation-b1/what-steps-are-required-to-make-a-beeswarm-plot: #476
+  - text: " Choose any dataset. \ \n 2.Click on visualise. \ \n 3. Select any one indicator  \ \n 4. Select any dimensions and a particular time period.  \ \n 5. Select your preferred location. (Only or more)  \ \n 6. Go to build your chart option and select any 1 dimensions or location  \ \n 7. Click on visualise and you will get the Beeswarm chart."
+
+  utter_faq-visualisation-b1/how-grouped-scatter-plot-is-being-created: #477
+  - text: " Choose any dataset. \ \n 2.Click on visualise. \ \n 3. Select any two indicators. \ \n 4. Select any dimensions and a particular time period. \ \n 5. Select your preferred location. (Only or more) \ \n 6. Go to build your chart option and select any 1 dimensions or location \ \n 7. Click on visualise and you will get the grouped scatter chart."
+
+  utter_faq-visualisation-b1/how-am-i-supposed-to-build-a-grouped-bubble-chart: #478
+  - text: " Choose any dataset. \ \n 2.Click on visualise. \ \n 3. Select any three indicators. \ \n 4. Select any dimensions and a particular time period. \ \n 5. Select your preferred location. (Only or more) \ \n 6. Go to build your chart option and select any 1 dimensions or location \ \n 7. Click on visualise and you will get the grouped bubble chart."
+
+  utter_faq-visualisation-b1/help-me-with-treemap-plot-creation-process: #479
+  - text: " Choose any dataset. \ \n 2.Click on visualise. \ \n 3. Select any two or more indicators. \ \n 4. Select any dimensions and one or more time period. \ \n 5. Select your preferred location. (Only or more) \ \n 6. Go to build your chart option and select two or more dimensions or locations \ \n 7. Click on visualise and you will get the Treemap chart."
+
+  utter_faq-visualisation-b1/guide-me-with-steps-to-make-sankey-plot: #480
+  - text: " Choose any dataset. \ \n 2.Click on visualise. \ \n 3. Select any two or more indicators. \ \n 4. Select any dimensions and select one or more time period. \ \n 5. Select your preferred location. (Only or more) \ \n 6. Go to build your chart option and select two or more dimensions or locations \ \n 7. Click on visualise and you will get the Sankey chart."
+
+  utter_faq-visualisation-b1/what-procedure-should-i-follow-to-generate-the-sunburst-chart: #481
+  - text: " Choose any dataset. \ \n 2.Click on visualise. \ \n 3. Select any two or more indicators. \ \n 4. Select any dimensions and select one or more time period. \ \n 5. Select your preferred location. (Only or more) \ \n 6. Go to build your chart option and select two or more dimensions or locations \ \n 7. Click on visualise and you will get the Sunburst chart."
+
+  utter_faq-visualisation-b1/want-to-make-a-circle-pack-graph-how-am-i-supposed-to-do-that: #482
+  - text: " Choose any dataset. \ \n 2.Click on visualise. \ \n 3. Select any two or more indicators. \ \n 4. Select any dimensions and select one or more time period. \ \n 5. Select your preferred location. (Only or more) \ \n 6. Go to build your chart option and select two or more dimensions or locations \ \n 7. Click on visualise and you will get the Circle pack chart."
+
+  utter_faq-visualisation-b1/steps-to-make-box-plot: #483
+  - text: " Choose any dataset. \ \n 2.Click on visualise. \ \n 3. Select any one indicator. \ \n 4. Select any dimensions \ \n 4. Select one from the time period.  \ \n 5. Select any of the preferred locations \ \n 6. Go to build your chart option and select the any one dimension or location \ \n 7. Click on visualise and you will get the Box plot"
+
+
+  utter_faq-visualisation-b1/what-steps-are-to-be-followed-to-generate-a-dendrogram: #484
+  - text: >
+          " Choose any dataset. \ \n 2.Click on visualise. \ \n 3. Select any two or more indicators. \ \n 4. Select any dimensions and Select one or more time period. \ \n 5. Select your preferred location. (Only or more) \ \n 6. Go to build your chart option and select two or more dimensions or locations \ \n 7. Click on visualise and you will get the dendogram chart."
+
 actions: []
 forms: {}
 e2e_actions: []

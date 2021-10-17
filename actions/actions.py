@@ -8,7 +8,7 @@ from rasa_sdk.events import SlotSet
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 # from gensim.models import KeyedVectors
-from spellcheck import correction , master_dic_dataset_name,entity_mapper, dict_of_domain_ids, dataset_name_in_api
+from spellcheck import correction , master_dic_dataset_name,entity_mapper, dict_of_domain_ids, dataset_name_in_api, datset_name_and_ds_api_name
 import numpy as np
 # from gensim import models
 import time
@@ -251,7 +251,7 @@ class ActionDatasetName(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-
+        global datset_name_and_ds_api_name
         ls_entity =tracker.latest_message['entities'] # to get entities from user message
 
         print(ls_entity)
@@ -287,92 +287,302 @@ class ActionDatasetName(Action):
             extracted_dataset_name = extracted_dataset_name.lower()
 
             # corrected extracted_dataset_name
+
             extracted_dataset_name = correction(extracted_dataset_name)
 
             print(f'after correction {extracted_dataset_name}')
+        if  tracker.slots['dataset_name'] and tracker.slots['dataset_name']!=None:
+                # name of datset from slot we had
+                extracted_dataset_name = tracker.slots['dataset_name']
+                print('this is the dataset name which is setup as a slot value', extracted_dataset_name)
+                extracted_dataset_name = extracted_dataset_name.lower() 
+                # calling global dictionary
+                global master_dic_dataset_name
 
-        if extracted_dataset_name in master_dic_dataset_name.keys():
-            
+                print("Before spell check",extracted_dataset_name)
+                # spellcheck the name of dataset
+                if extracted_dataset_name not in ['nsso','employment','non-crop','crop','foodgrains']:
+                    print("Before spell check inside if",extracted_dataset_name)
+                    if extracted_dataset_name in dataset_name_in_api:
+                        extracted_dataset_name = extracted_dataset_name
+                        print("dataset's api name is being setup as a slot value therefore no spellcheck" )
+                    else:
+                        extracted_dataset_name = correction(extracted_dataset_name)
+                        corrected_extracted_dataset_name = extracted_dataset_name
+                        print("dataset's api name is not setted up as a slot value therefore we will use spellcheck")
+                    # extracted_dataset_name = correction(extracted_dataset_name)
+                    # corrected_extracted_dataset_name = extracted_dataset_name
+                    print("after spellcheck inside if condition  ",extracted_dataset_name)
+                # elif len(ls_entity)>1: # removing that entity where datset name is nsso
+                else:
+                    print(ls_entity)
+                    removable_index = [[j,i['value']] for j,i in enumerate(ls_entity) if i['value'] in  ['NSSO','Employment','Non-Crop','Crop','Foodgrains']]
 
-            transformed_dataset_name = master_dic_dataset_name[extracted_dataset_name]
+          
+                    print("\n",'printing removable index --',removable_index,"\n")
+
+                    for last_check in removable_index:
+                        # there are chance when employemnt and NSSO can come together 
+                        # then to remove only NSSO dataset_name we used this last filter
+
+                        print('printing last check --',last_check)
+
+                        bracket_dataset_name = last_check[1]    #i.e crop, non-crop, nsso etc category
+
+                        # iff NSSO found remove that corresponding dictionary from ls_entity
+                        if last_check[1]=='NSSO':
+                            removable_index = last_check[0]
+
+                            # if not NSSO then remove then EMPLOYMENT entity dictionary from ls_entity
+                        else:
+                            # continue
+                            removable_index = last_check[0]
+    
+                    
+                    print("\n",removable_index,"\n")
+                
+                    ls_entity.pop(removable_index)
+                    print("After Pop",ls_entity)
+
+                    for iter in range(len(ls_entity)):
+                        if ls_entity[iter]['entity']=='dataset_name' :
+                            
+                            # dataset_name_list_countter =  [i for i in range(len(ls_entity)) if ls_entity[i]['entity']=='dataset_name' ]
+                            
+                            print("word in a bracket",bracket_dataset_name)
+                            if bracket_dataset_name=='Crop':
+
+                                print("green")
+                                extracted_dataset_name  = ls_entity[iter]['value']
+                            
+                                if extracted_dataset_name == 'Agricultural Census 2010-11':
+                                    actual_extracted_dataset_name = 'Agricultural Census 2010-11 (Crop)'
+                                    extracted_dataset_name = 'agcensus_crop'
+                                elif extracted_dataset_name == 'Agricultural Census 2015-16':
+                                    actual_extracted_dataset_name = 'Agricultural Census 2015-16 (Crop)'
+                                    extracted_dataset_name = 'agcensus_c'
+                                elif  extracted_dataset_name == 'Input Survey':
+                                    actual_extracted_dataset_name = 'Input Survey (Crop)'
+                                    extracted_dataset_name = 'input_crop'
+                                  
+                                else:
+                                    actual_extracted_dataset_name = extracted_dataset_name+ '(Crop)'
+                                    extracted_dataset_name = extracted_dataset_name
+                                
+                                break
+                                
+                            elif  bracket_dataset_name=='Non-Crop' :
+                                # second_removable_index = iter
+                                print("iter",iter)
+                                # ls_entity.pop(second_removable_index)
+
+                                # again we'll have to iterate to get dataset value
+                                for iter  in range(len(ls_entity)):
+                                    if ls_entity[iter]['entity']=='dataset_name' :
+                                        extracted_dataset_name  = ls_entity[iter]['value']
+
+                                # as Non has came now just need to map to correct non option
+                                if extracted_dataset_name == 'Agricultural Census 2010-11':
+                                    actual_extracted_dataset_name = 'Agricultural Census 2010-11 (Non-Crop)'
+                                    extracted_dataset_name = 'agcensus_noncrop'
+                                elif extracted_dataset_name == 'Agricultural Census 2015-16':
+                                    actual_extracted_dataset_name = 'Agricultural Census 2015-16 (Non-Crop)'
+                                    extracted_dataset_name = 'agcensus_nc'
+                                elif  extracted_dataset_name == 'Input survey':
+                                    actual_extracted_dataset_name = 'Input Survey (Non-Crop)'
+                                    extracted_dataset_name == 'input_crop'
+                                else:
+                                    actual_extracted_dataset_name = extracted_dataset_name+ '(Non-Crop)'
+                                    extracted_dataset_name = extracted_dataset_name
+                                break
+
+                            else:
+                                extracted_dataset_name  = ls_entity[iter]['value']
+
+                        else:
+                            continue  
+                    print("Before spell check inside else",extracted_dataset_name)
+                    if extracted_dataset_name in dataset_name_in_api:
+                        extracted_dataset_name = extracted_dataset_name
+                        print("dataset's api name is being setup as a slot value therefore no spellcheck" )
+                    else:
+                        extracted_dataset_name = correction(extracted_dataset_name)
+                        corrected_extracted_dataset_name = extracted_dataset_name
+                        print("dataset's api name is not setted up as a slot value therefore we will use spellcheck")
+                    # extracted_dataset_name = correction(extracted_dataset_name)
+                    # corrected_extracted_dataset_name = extracted_dataset_name
+                    print("after spellcheck inside else condition ",extracted_dataset_name)
+               
+                if extracted_dataset_name in master_dic_dataset_name.keys():
+                    print("IN",extracted_dataset_name)
+                    actual_extracted_dataset_name = extracted_dataset_name
+                    extracted_dataset_name = master_dic_dataset_name[extracted_dataset_name]
+                    
+                    print("OUT",extracted_dataset_name)
+
+                    # transformed_dataset_name = master_dic_dataset_name[extracted_dataset_name]
 
                 
-        print(f"after tranformation ---> {transformed_dataset_name}")
+                    # print(f"after tranformation ---> {transformed_dataset_name}")
+                extracted_ls_entity = []
+                for i in range(len(ls_entity)):
+                    extracted_ls_entity.append(ls_entity[i]['entity'])
+                # extracted_ls_entity = list(filter(lambda x:x!='dataset_name', extracted_ls_entity))
+                print(f"Entity we extracted in Dataset Name is  {extracted_ls_entity}")
+
+                print(ls_entity)
+
+                # print('before removing datatset name from list - ', extracted_ls_entity)
+                # if 'dataset_name' in extracted_ls_entity :
+                #     extracted_ls_entity.remove('dataset_name')
+                #     print('after removing datatset name from list - ', extracted_ls_entity)
 
 
-        if transformed_dataset_name !=0 :
+                dict_of_mapped_data_with_id = {}
+                with urllib.request.urlopen("https://indiadataportal.com/meta_data_info") as url:
+                    data = json.loads(url.read().decode())
+                    temp_data  = json.dumps(data, indent=4, sort_keys=True)
+                    temp_data = json.loads(temp_data)
+                    for i in range(len(temp_data)):
+                        data = temp_data[i]
+                        dict_of_mapped_data_with_id[data['dataset_name']] = data['dataset_id']
+
+                    # if extracted dataset name is present in our data we got from json file
+                    if extracted_dataset_name in dict_of_mapped_data_with_id.keys():
+                        
+                        # extract id for that dataset name
+                        extracted_id = dict_of_mapped_data_with_id[extracted_dataset_name]
+
+                        for i in range(len(temp_data)):
+                                data = temp_data[i]
+                                if data['dataset_id']==extracted_id:
+                                    p = json.dumps(data)
+                                    p = json.loads(p)
+                                    # print(p,'\n')
+                        
+
+                        if len(extracted_ls_entity) >=1:
+                            # iterating through all entites other than dataset_name
+                            for entity_iter in extracted_ls_entity:
+                                print("yes i am in Dataset name with entity as ", entity_iter)
+                                if entity_iter == 'dataset_name':
+                                    # check if entity present in extracted_ls_entity is also present in p ( data in db)
+                                    # spellcheck the entity
+                                    entity_iter = correction(entity_iter)
+
+                                    if entity_iter in p.keys() and entity_iter in entity_mapper.keys():
+                                        new_entity_iter = entity_mapper[entity_iter]
+                                        # if entity is present in p then print the value of that entity
+                                        # if entity_iter != 'dataset_name':
+                                        print(f"{entity_iter} ----> {p[entity_iter]}")
+                                        # dispatcher.utter_message(text = f" for {corrected_dataset_name_} {new_entity_iter} is {p[entity_iter]}")
+                                        # dispatcher.utter_message(text=f'{new_entity_iter} is {p[entity_iter]} for more [click here](https://indiadataportal.com/visualize?language=English&location=India#?dataset_id={extracted_id}&tab=details-tab)')
+                                        if actual_extracted_dataset_name in datset_name_and_ds_api_name.keys():
+                                            actual_extracted_dataset_name = datset_name_and_ds_api_name[actual_extracted_dataset_name]
+                                        else:
+                                            actual_extracted_dataset_name = actual_extracted_dataset_name
+                                        dispatcher.utter_message(text = f'You can ask specific questions related to the {actual_extracted_dataset_name} dataset here. For complete details of dataset, you can also visit this link. [click here](https://indiadataportal.com/visualize?language=English&location=India#?dataset_id={extracted_id}&tab=details-tab)')
+                                        return [SlotSet('dataset_name', extracted_dataset_name)]
+                                        # elif entity_iter == 'dataset_name':
+                                        #     print(f"Returning {dataset_name_}")
+                                        #     return [SlotSet('dataset_name', dataset_name_)] 
+                                    
+                                    else:
+                                        dispatcher.utter_message(text = 'Sorry but can you pls tell again  what Dataset you are looking for')
+                                        # dispatcher.utter_message(text = """Ex :Like if you want to know Granularity level of a Dataset
+                                        #                                     say it like :- What is the Granularity level of Rainfall Data""")
+                                else:
+                                    continue
+                        else:
+                            dispatcher.utter_message(text = 'Sorry but what exactly you wanted I could not get that')
+                            # dispatcher.utter_message(text = """Ex :Like if you want to know Granularity level of a Dataset
+                                                                        # say it like :- What is the Granularity level of Rainfall Data""")
+
+                    else:
+                        extracted_id = dict_of_mapped_data_with_id[extracted_dataset_name]
+                        if actual_extracted_dataset_name in datset_name_and_ds_api_name.keys():
+                            actual_extracted_dataset_name = datset_name_and_ds_api_name[actual_extracted_dataset_name]
+                        else:
+                            actual_extracted_dataset_name = actual_extracted_dataset_name            
+                        dispatcher.utter_message(text = f'You can ask specific questions related to the {actual_extracted_dataset_name} dataset here. For complete details of dataset, you can also visit this link. [click here](https://indiadataportal.com/visualize?language=English&location=India#?dataset_id={extracted_id}&tab=details-tab)')
+                        return [SlotSet('dataset_name', extracted_dataset_name)]
+        else:
+            dispatcher.utter_message(text = "Sorry but seems like there is some Misspell in Dataset Name Please try again")
+
+
+        # if extracted_dataset_name !=0 :
      
-            # by defualt dataset name value will be given to slot if that was extratced from user message
-            print("\n","Now slots value is ",tracker.slots['dataset_name'])  
+        #     # by defualt dataset name value will be given to slot if that was extratced from user message
+        #     print("\n","Now slots value is ",tracker.slots['dataset_name'])  
 
-            extracted_ls_entity = []
-            for i in range(len(ls_entity)):
-                extracted_ls_entity.append(ls_entity[i]['entity'])
+        #     extracted_ls_entity = []
+        #     for i in range(len(ls_entity)):
+        #         extracted_ls_entity.append(ls_entity[i]['entity'])
 
-            extracted_ls_entity = list(filter(lambda x:x!='dataset_name', extracted_ls_entity))
-            print(f"Entites we extracted {extracted_ls_entity}")
+        #     extracted_ls_entity = list(filter(lambda x:x!='dataset_name', extracted_ls_entity))
+        #     print(f"Entites we extracted {extracted_ls_entity}")
 
 
-            dict_of_mapped_data_with_id = {}
-            with urllib.request.urlopen("https://indiadataportal.com/meta_data_info") as url:
-                data = json.loads(url.read().decode())
-                # print(data[0])
-                temp_data  = json.dumps(data, indent=4, sort_keys=True)
-                temp_data = json.loads(temp_data)
+        #     dict_of_mapped_data_with_id = {}
+        #     with urllib.request.urlopen("https://indiadataportal.com/meta_data_info") as url:
+        #         data = json.loads(url.read().decode())
+        #         # print(data[0])
+        #         temp_data  = json.dumps(data, indent=4, sort_keys=True)
+        #         temp_data = json.loads(temp_data)
 
-                for i in range(len(temp_data)):
-                    data = temp_data[i]
+        #         for i in range(len(temp_data)):
+        #             data = temp_data[i]
  
-                    # print(f"{data['dataset_name']} ---> {data['dataset_id']}")
-                    dict_of_mapped_data_with_id[data['dataset_name']] = data['dataset_id']
-                # print('dict_of_mapped_data_with_id', dict_of_mapped_data_with_id)
+        #             # print(f"{data['dataset_name']} ---> {data['dataset_id']}")
+        #             dict_of_mapped_data_with_id[data['dataset_name']] = data['dataset_id']
+        #         # print('dict_of_mapped_data_with_id', dict_of_mapped_data_with_id)
   
 
-                # if transformed_dataset_name is present in our data we got from json file
-                if transformed_dataset_name in dict_of_mapped_data_with_id.keys():
+        #         # if transformed_dataset_name is present in our data we got from json file
+        #         if extracted_dataset_name in dict_of_mapped_data_with_id.keys():
                     
-                    # extract id for that dataset name
-                    extracted_id = dict_of_mapped_data_with_id[transformed_dataset_name]
+        #             # extract id for that dataset name
+        #             extracted_id = dict_of_mapped_data_with_id[extracted_dataset_name]
 
-                    for i in range(len(temp_data)):
-                            data = temp_data[i]
-                            if data['dataset_id']==extracted_id:
-                                p = json.dumps(data)
-                                p = json.loads(p)
+        #             for i in range(len(temp_data)):
+        #                     data = temp_data[i]
+        #                     if data['dataset_id']==extracted_id:
+        #                         p = json.dumps(data)
+        #                         p = json.loads(p)
                                 
                     
 
-                    if len(extracted_ls_entity) >=1:
-                        # iterating through all entites other than dataset_name
-                        for entity_iter in extracted_ls_entity:
+        #             if len(extracted_ls_entity) >=1:
+        #                 # iterating through all entites other than dataset_name
+        #                 for entity_iter in extracted_ls_entity:
 
-                            # check if entity present in extracted_ls_entity is also present in p ( data in db)
+        #                     # check if entity present in extracted_ls_entity is also present in p ( data in db)
                             
-                            # spellcheck the entity
-                            entity_iter = correction(entity_iter)
-                            if entity_iter in p.keys() and entity_iter in entity_mapper:
-                                entity_iter = entity_mapper[entity_iter]
+        #                     # spellcheck the entity
+        #                     entity_iter = correction(entity_iter)
+        #                     if entity_iter in p.keys() and entity_iter in entity_mapper:
+        #                         entity_iter = entity_mapper[entity_iter]
                                 
-                                # if entity is present in p then print the value of that entity
-                                print(f"{entity_iter} ----> {p[entity_iter]}")
-                                dispatcher.utter_message(text = f"{entity_iter} is {p[entity_iter]} for more [click here](https://indiadataportal.com/visualize?language=English&location=India#?dataset_id={extracted_id}&tab=details-tab)")
-                                
+        #                         # if entity is present in p then print the value of that entity
+        #                         print(f"{entity_iter} ----> {p[entity_iter]}")
+        #                         dispatcher.utter_message(text = f"{entity_iter} is {p[entity_iter]} for more [click here](https://indiadataportal.com/visualize?language=English&location=India#?dataset_id={extracted_id}&tab=details-tab)")
+        #                         return [SlotSet('dataset_name', extracted_dataset_name)]
                             
-                            else:
-                                dispatcher.utter_message(text = 'Sorry but can you pls say it again')
-                                # return [SlotSet('dataset_name', dataset_name)]
+        #                     else:
+        #                         dispatcher.utter_message(text = 'Sorry but can you pls say it again')
+        #                         # return [SlotSet('dataset_name', dataset_name)]
                     
-                    else:
-                        dispatcher.utter_message(text = f'Yes you can start with {temp_dataset_name} for more [click here](https://indiadataportal.com/visualize?language=English&location=India#?dataset_id={extracted_id}&tab=details-tab)')
+        #             else:
+        #                 dispatcher.utter_message(text = f'Yes you can start with {temp_dataset_name} for more [click here](https://indiadataportal.com/visualize?language=English&location=India#?dataset_id={extracted_id}&tab=details-tab)')
+        #                 return [SlotSet('dataset_name', extracted_dataset_name)]
+        #     print(f"Returning value of {extracted_dataset_name}")
+        #     return [SlotSet('dataset_name', extracted_dataset_name)]
 
-            print(f"Returning value of {transformed_dataset_name}")
-            return [SlotSet('dataset_name', temp_dataset_name)]
+        # else:
+        #     dispatcher.utter_message(text='Sorry but seems like there is some Misspell in Dataset Name')                
 
-        else:
-            dispatcher.utter_message(text='Sorry but seems like there is some Misspell in Dataset Name')                
-
-        # print(f"Returning value of {transformed_dataset_name}")
-        # return [SlotSet('dataset_name', temp_dataset_name)]
+        # # print(f"Returning value of {transformed_dataset_name}")
+        # # return [SlotSet('dataset_name', temp_dataset_name)]
        
 
 class ActionGranularityLevel(Action):
@@ -392,7 +602,7 @@ class ActionGranularityLevel(Action):
             if  tracker.slots['dataset_name'] and tracker.slots['dataset_name']!=None:
                 # name of datset from slot we had
                 dataset_name_ = tracker.slots['dataset_name']
-                print('this is the dataset name which is setup as a slot value', dataset_name_)
+                print('this is the dataset name which is setup as a slot value------', dataset_name_)
                 dataset_name_ = dataset_name_.lower() 
                 # calling global dictionary
                 global master_dic_dataset_name
@@ -400,6 +610,7 @@ class ActionGranularityLevel(Action):
                 print("Before spell check",dataset_name_)
                 # spellcheck the name of dataset
                 if dataset_name_ not in ['nsso','employment','non-crop','crop','foodgrains']:
+                    print("Before spell check inside if",dataset_name_)
                     if dataset_name_ in dataset_name_in_api:
                         dataset_name_ = dataset_name_
                         print("dataset's api name is being setup as a slot value therefore no spellcheck" )
@@ -409,9 +620,9 @@ class ActionGranularityLevel(Action):
                         print("dataset's api name is not setted up as a slot value therefore we will use spellcheck")
                     # dataset_name_ = correction(dataset_name_)
                     # corrected_dataset_name_ = dataset_name_
-
-                elif len(ls_entity)>1: # removing that entity where datset name is nsso
-
+                    print("after spellcheck inside if condition  ",dataset_name_)
+                # elif len(ls_entity)>1: # removing that entity where datset name is nsso
+                else:
                     print(ls_entity)
                     removable_index = [[j,i['value']] for j,i in enumerate(ls_entity) if i['value'] in  ['NSSO','Employment','Non-Crop','Crop','Foodgrains']]
 
@@ -422,9 +633,9 @@ class ActionGranularityLevel(Action):
                         # there are chance when employemnt and NSSO can come together 
                         # then to remove only NSSO dataset_name we used this last filter
 
-                        print(last_check)
+                        print('printing last check --',last_check)
 
-                        type_of_crop = last_check[1]    #i.e crop or non-crop category
+                        bracket_dataset_name = last_check[1]    #i.e crop, non-crop, nsso etc category
 
                         # iff NSSO found remove that corresponding dictionary from ls_entity
                         if last_check[1]=='NSSO':
@@ -432,6 +643,7 @@ class ActionGranularityLevel(Action):
 
                             # if not NSSO then remove then EMPLOYMENT entity dictionary from ls_entity
                         else:
+                            # continue
                             removable_index = last_check[0]
     
                     
@@ -445,8 +657,8 @@ class ActionGranularityLevel(Action):
                             
                             # dataset_name_list_countter =  [i for i in range(len(ls_entity)) if ls_entity[i]['entity']=='dataset_name' ]
                             
-                            print("type of crop weather its crop or non-crop",type_of_crop)
-                            if type_of_crop=='Crop':
+                            print("word in a bracket",bracket_dataset_name)
+                            if bracket_dataset_name=='Crop':
 
                                 print("green")
                                 dataset_name_  = ls_entity[iter]['value']
@@ -464,7 +676,7 @@ class ActionGranularityLevel(Action):
                                 
                                 break
                                 
-                            elif  type_of_crop=='Non-Crop' :
+                            elif  bracket_dataset_name=='Non-Crop' :
                                 # second_removable_index = iter
                                 print("iter",iter)
                                 # ls_entity.pop(second_removable_index)
@@ -491,7 +703,7 @@ class ActionGranularityLevel(Action):
 
                         else:
                             continue  
-
+                    print("Before spell check inside else",dataset_name_)
                     if dataset_name_ in dataset_name_in_api:
                         dataset_name_ = dataset_name_
                         print("dataset's api name is being setup as a slot value therefore no spellcheck" )
@@ -501,10 +713,11 @@ class ActionGranularityLevel(Action):
                         print("dataset's api name is not setted up as a slot value therefore we will use spellcheck")
                     # dataset_name_ = correction(dataset_name_)
                     # corrected_dataset_name_ = dataset_name_
-
-                else:
-                    dataset_name_ = correction(dataset_name_)
-                print("after spellcheck ",dataset_name_)
+                    print("after spellcheck inside else condition ",dataset_name_)
+                # else:
+                #     print("Before spell check inside else condition",dataset_name_)
+                #     dataset_name_ = correction(dataset_name_)
+                #     print("after spellcheck inside else condition ",dataset_name_)
 
                   # initializing punctuations string
                 punc = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
@@ -651,7 +864,7 @@ class ActionSourcedata(Action):
 
                         print(last_check)
 
-                        type_of_crop = last_check[1]
+                        bracket_dataset_name = last_check[1]
 
                         # iff NSSO found remove that corresponding dictionary from ls_entity
                         if last_check[1]=='NSSO':
@@ -672,8 +885,8 @@ class ActionSourcedata(Action):
                             
                             # dataset_name_list_countter =  [i for i in range(len(ls_entity)) if ls_entity[i]['entity']=='dataset_name' ]
                             
-                            print("type",type_of_crop)
-                            if type_of_crop=='Crop':
+                            print("word in a bracket",bracket_dataset_name)
+                            if bracket_dataset_name=='Crop':
 
                                 print("green")
                                 dataset_name_  = ls_entity[iter]['value']
@@ -691,7 +904,7 @@ class ActionSourcedata(Action):
                                 
                                 break
                                 
-                            elif  type_of_crop=='Non-Crop' :
+                            elif  bracket_dataset_name=='Non-Crop' :
                                 # second_removable_index = iter
                                 print("iter",iter)
                                 # ls_entity.pop(second_removable_index)
@@ -877,7 +1090,7 @@ class ActionMethodology(Action):
 
                         print(last_check)
 
-                        type_of_crop = last_check[1]
+                        bracket_dataset_name = last_check[1]
 
                         # iff NSSO found remove that corresponding dictionary from ls_entity
                         if last_check[1]=='NSSO':
@@ -898,8 +1111,8 @@ class ActionMethodology(Action):
                             
                             # dataset_name_list_countter =  [i for i in range(len(ls_entity)) if ls_entity[i]['entity']=='dataset_name' ]
                             
-                            print("type",type_of_crop)
-                            if type_of_crop=='Crop':
+                            print("word in a bracket",bracket_dataset_name)
+                            if bracket_dataset_name=='Crop':
 
                                 print("green")
                                 dataset_name_  = ls_entity[iter]['value']
@@ -917,7 +1130,7 @@ class ActionMethodology(Action):
                                 
                                 break
                                 
-                            elif  type_of_crop=='Non-Crop' :
+                            elif  bracket_dataset_name=='Non-Crop' :
                                 # second_removable_index = iter
                                 print("iter",iter)
                                 # ls_entity.pop(second_removable_index)
@@ -1034,8 +1247,7 @@ class ActionMethodology(Action):
                                             dispatcher.utter_message(text = f" {new_entity_iter} is {limited_methodology} for more [click here](https://indiadataportal.com/visualize?language=English&location=India#?dataset_id={extracted_id}&tab=details-tab)")
                                             return [SlotSet('dataset_name', dataset_name_)]
                                         else:
-
-                                            dispatcher.utter_message(text = 'It will be updated in future')
+                                            dispatcher.utter_message(text = f" It will be updated in future for more [click here](https://indiadataportal.com/visualize?language=English&location=India#?dataset_id={extracted_id}&tab=details-tab)")
                                             return [SlotSet('dataset_name', dataset_name_)]
                                         # elif entity_iter == 'dataset_name':
                                         #     print(f"Returning {dataset_name_}")
@@ -1106,7 +1318,7 @@ class ActionFrequency(Action):
 
                         print(last_check)
 
-                        type_of_crop = last_check[1]
+                        bracket_dataset_name = last_check[1]
 
                         # iff NSSO found remove that corresponding dictionary from ls_entity
                         if last_check[1]=='NSSO':
@@ -1127,8 +1339,8 @@ class ActionFrequency(Action):
                             
                             # dataset_name_list_countter =  [i for i in range(len(ls_entity)) if ls_entity[i]['entity']=='dataset_name' ]
                             
-                            print("type",type_of_crop)
-                            if type_of_crop=='Crop':
+                            print("word in a bracket",bracket_dataset_name)
+                            if bracket_dataset_name=='Crop':
 
                                 print("green")
                                 dataset_name_  = ls_entity[iter]['value']
@@ -1146,7 +1358,7 @@ class ActionFrequency(Action):
                                 
                                 break
                                 
-                            elif  type_of_crop=='Non-Crop' :
+                            elif  bracket_dataset_name=='Non-Crop' :
                                 # second_removable_index = iter
                                 print("iter",iter)
                                 # ls_entity.pop(second_removable_index)
@@ -1330,7 +1542,7 @@ class ActionLastDateUpdated(Action):
 
                         print(last_check)
 
-                        type_of_crop = last_check[1]
+                        bracket_dataset_name = last_check[1]
 
                         # iff NSSO found remove that corresponding dictionary from ls_entity
                         if last_check[1]=='NSSO':
@@ -1351,8 +1563,8 @@ class ActionLastDateUpdated(Action):
                             
                             # dataset_name_list_countter =  [i for i in range(len(ls_entity)) if ls_entity[i]['entity']=='dataset_name' ]
                             
-                            print("type",type_of_crop)
-                            if type_of_crop=='Crop':
+                            print("word in a bracket",bracket_dataset_name)
+                            if bracket_dataset_name=='Crop':
 
                                 print("green")
                                 dataset_name_  = ls_entity[iter]['value']
@@ -1370,7 +1582,7 @@ class ActionLastDateUpdated(Action):
                                 
                                 break
                                 
-                            elif  type_of_crop=='Non-Crop' :
+                            elif  bracket_dataset_name=='Non-Crop' :
                                 # second_removable_index = iter
                                 print("iter",iter)
                                 # ls_entity.pop(second_removable_index)
@@ -1551,7 +1763,7 @@ class ActionSourceLink(Action):
 
                         print(last_check)
 
-                        type_of_crop = last_check[1]
+                        bracket_dataset_name = last_check[1]
 
                         # iff NSSO found remove that corresponding dictionary from ls_entity
                         if last_check[1]=='NSSO':
@@ -1572,8 +1784,8 @@ class ActionSourceLink(Action):
                             
                             # dataset_name_list_countter =  [i for i in range(len(ls_entity)) if ls_entity[i]['entity']=='dataset_name' ]
                             
-                            print("type",type_of_crop)
-                            if type_of_crop=='Crop':
+                            print("word in a bracket",bracket_dataset_name)
+                            if bracket_dataset_name=='Crop':
 
                                 print("green")
                                 dataset_name_  = ls_entity[iter]['value']
@@ -1591,7 +1803,7 @@ class ActionSourceLink(Action):
                                 
                                 break
                                 
-                            elif  type_of_crop=='Non-Crop' :
+                            elif  bracket_dataset_name=='Non-Crop' :
                                 # second_removable_index = iter
                                 print("iter",iter)
                                 # ls_entity.pop(second_removable_index)
@@ -1774,7 +1986,7 @@ class ActionDataExtractionPage(Action):
 
                         print(last_check)
 
-                        type_of_crop = last_check[1]
+                        bracket_dataset_name = last_check[1]
 
                         # iff NSSO found remove that corresponding dictionary from ls_entity
                         if last_check[1]=='NSSO':
@@ -1795,8 +2007,8 @@ class ActionDataExtractionPage(Action):
                             
                             # dataset_name_list_countter =  [i for i in range(len(ls_entity)) if ls_entity[i]['entity']=='dataset_name' ]
                             
-                            print("type",type_of_crop)
-                            if type_of_crop=='Crop':
+                            print("word in a bracket",bracket_dataset_name)
+                            if bracket_dataset_name=='Crop':
 
                                 print("green")
                                 dataset_name_  = ls_entity[iter]['value']
@@ -1814,7 +2026,7 @@ class ActionDataExtractionPage(Action):
                                 
                                 break
                                 
-                            elif  type_of_crop=='Non-Crop' :
+                            elif  bracket_dataset_name=='Non-Crop' :
                                 # second_removable_index = iter
                                 print("iter",iter)
                                 # ls_entity.pop(second_removable_index)
@@ -1996,7 +2208,7 @@ class ActionDetailedSourceName(Action):
 
                         print(last_check)
 
-                        type_of_crop = last_check[1]
+                        bracket_dataset_name = last_check[1]
 
                         # iff NSSO found remove that corresponding dictionary from ls_entity
                         if last_check[1]=='NSSO':
@@ -2017,8 +2229,8 @@ class ActionDetailedSourceName(Action):
                             
                             # dataset_name_list_countter =  [i for i in range(len(ls_entity)) if ls_entity[i]['entity']=='dataset_name' ]
                             
-                            print("type",type_of_crop)
-                            if type_of_crop=='Crop':
+                            print("word in a bracket",bracket_dataset_name)
+                            if bracket_dataset_name=='Crop':
 
                                 print("green")
                                 dataset_name_  = ls_entity[iter]['value']
@@ -2036,7 +2248,7 @@ class ActionDetailedSourceName(Action):
                                 
                                 break
                                 
-                            elif  type_of_crop=='Non-Crop' :
+                            elif  bracket_dataset_name=='Non-Crop' :
                                 # second_removable_index = iter
                                 print("iter",iter)
                                 # ls_entity.pop(second_removable_index)
@@ -2221,7 +2433,7 @@ class ActionDateofRetrievals(Action):
 
                         print(last_check)
 
-                        type_of_crop = last_check[1]
+                        bracket_dataset_name = last_check[1]
 
                         # iff NSSO found remove that corresponding dictionary from ls_entity
                         if last_check[1]=='NSSO':
@@ -2242,8 +2454,8 @@ class ActionDateofRetrievals(Action):
                             
                             # dataset_name_list_countter =  [i for i in range(len(ls_entity)) if ls_entity[i]['entity']=='dataset_name' ]
                             
-                            print("type",type_of_crop)
-                            if type_of_crop=='Crop':
+                            print("word in a bracket",bracket_dataset_name)
+                            if bracket_dataset_name=='Crop':
 
                                 print("green")
                                 dataset_name_  = ls_entity[iter]['value']
@@ -2261,7 +2473,7 @@ class ActionDateofRetrievals(Action):
                                 
                                 break
                                 
-                            elif  type_of_crop=='Non-Crop' :
+                            elif  bracket_dataset_name=='Non-Crop' :
                                 # second_removable_index = iter
                                 print("iter",iter)
                                 # ls_entity.pop(second_removable_index)
@@ -2450,7 +2662,7 @@ class ActionDomainName(Action):
 
                         print(last_check)
 
-                        type_of_crop = last_check[1]
+                        bracket_dataset_name = last_check[1]
 
                         # iff NSSO found remove that corresponding dictionary from ls_entity
                         if last_check[1]=='NSSO':
@@ -2471,8 +2683,8 @@ class ActionDomainName(Action):
                             
                             # dataset_name_list_countter =  [i for i in range(len(ls_entity)) if ls_entity[i]['entity']=='dataset_name' ]
                             
-                            print("type",type_of_crop)
-                            if type_of_crop=='Crop':
+                            print("word in a bracket",bracket_dataset_name)
+                            if bracket_dataset_name=='Crop':
 
                                 print("green")
                                 dataset_name_  = ls_entity[iter]['value']
@@ -2490,7 +2702,7 @@ class ActionDomainName(Action):
                                 
                                 break
                                 
-                            elif  type_of_crop=='Non-Crop' :
+                            elif  bracket_dataset_name=='Non-Crop' :
                                 # second_removable_index = iter
                                 print("iter",iter)
                                 # ls_entity.pop(second_removable_index)

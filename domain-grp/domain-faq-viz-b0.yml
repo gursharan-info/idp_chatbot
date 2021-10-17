@@ -72,7 +72,74 @@ responses:
   utter_please_rephrase: # for low confidences classified intents
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
 
+  utter_faq-visualisation-b0/how-can-i-create-a-map-on-idp: #453
+  - text: " 1. Choose any dataset. \ \n 2. Click on visualise. \ \n 3. Select only one indicator. \ \n 4. Select any dimensions and a particular time. \ \n 5. Select your preferred locations (One or more). \ \n 6. Go to build your chart option and select only either district or state. \ \n 7. Click on visualise and you will get the map"
 
+  utter_faq-visualisation-b0/how-do-i-create-infographic-chart: #454
+  - text: " 1. Choose any dataset. \ \n 2. Click on visualise. \ \n 3. Select only one indicator \ \n 4. Select only one dimension and a particular time. \ \n 5. Select your preferred location. (Only one) \ \n 6. Go to build your chart option and select only either district or state. \ \n 7. Click on visualise and you will get the infographic" 
+
+  utter_faq-visualisation-b0/how-to-create-a-bar-chart: #455
+  - text: " 1. Choose any dataset. \ \n 2. Click on visualise. \ \n 3. Select either one indicator or more than 3 indicators \ \n 4. Select any dimensions and a particular time. \ \n 5. Select your preferred location. (Only or more) \ \n 6. Go to build your chart option and select any one dimension or location \ \n 7. Click on visualise and you will get the bar  chart."
+
+  utter_faq-visualisation-b0/steps-to-create-a-stacked-bar-plot: #456
+  - text: " 1. Choose any dataset. \ \n 2. Click on visualise. \ \n 3. Select any one indicator \ \n 4. Select any dimensions and a particular time period. \ \n 5. Select your preferred location. (Only or more) \ \n 6. Go to build your chart option and select any two dimensions or location \ \n 7. Click on visualise and you will get the stacked bar plot."
+
+  utter_faq-visualisation-b0/what-steps-should-i-take-to-plot-a-grouped-bar-plot: #457
+  - text: " 1. Choose any dataset. \ \n 2. Click on visualise. \ \n 3. Select any one indicator \ \n 4. Select any dimensions and a particular time period. \ \n 5. Select your preferred location. (Only or more) \ \n 6. Go to build your chart option and select any two dimensions or location \ \n 7. Click on visualise and you will get the grouped bar plot."
+
+  utter_faq-visualisation-b0/how-to-make-a-frequency-histogram: #458
+  - text: " 1. Choose any dataset. \ \n 2. Click on visualise. \ \n 3. Select no indicators and dimensions. \ \n 4. Select any one of the time period. \ \n 5. Select none in the location \ \n 6. Go to build your chart option and select any one  dimension or location \ \n 7. Click on visualise and you will get the frequency histogram"
+
+  utter_faq-visualisation-b0/steps-needed-to-create-a-bin-histogram: #459
+  - text: " 1. Choose any dataset. \ \n 2. Click on visualise. \ \n 3. Select any one  indicators. \ \n 4. Select any one of the time period. \ \n 5. Select none in the location \ \n 6. Go to build your chart option and select none. \ \n 7. Click on visualise and you will get the bin histogram"
+
+  utter_faq-visualisation-b0/how-to-plot-a-bar-and-area-graph: #460
+  - text: " 1. Choose any dataset. \ \n 2. Click on visualise. \ \n 3. Select any two indicators. \ \n 4. Select any dimensions \ \n 4. Select one from the time period. \ \n 5. Select any of the preferred locations \ \n 6. Go to build your chart option and select one dimension. \ \n 7. Click on visualise and you will get the bin Bar and area chart"
+
+  utter_faq-visualisation-b0/what-steps-are-there-to-generate-a-pictograph: #461
+  - text: " 1. Choose any dataset. \ \n 2. Click on visualise. \ \n 3. Select either one indicator or more than 3 indicators \ \n 4. Select any dimensions and a particular time period. \ \n 5. Select your preferred location. (Only or more) \ \n 6. Go to build your chart option and select any one dimension or location \ \n 7. Click on visualise and you will get the pictograph."
+
+  utter_faq-visualisation-b0/what-steps-should-i-take-to-generate-a-pyramid-chart: #462
+  - text: " 1. Choose any dataset. \ \n 2. Click on visualise. \ \n 3. Select any one of the indicators. \ \n 4. Select any two dimensions \ \n 4. Select one from the time period. \ \n 5. Select none in the locations \ \n 6. Go to build your chart option and select the dimension whose two values are Selected and select either any one dimension or location. \ \n 7. Click on visualise and you will get the pyramid chart"
+
+  utter_faq-visualisation-b0/how-to-generate-a-lollipop-graph: #463
+  - text: " 1. Choose any dataset. \ \n 2. Click on visualise. \ \n 3. Select either one indicator or more than 3 indicators \ \n 4. Select any dimensions and a particular time period. \ \n 5. Select your preferred location. (Only or more) \ \n 6. Go to build your chart option and select any one dimension or location \ \n 7. Click on visualise and you will get the lollipop chart."
+
+  utter_faq-visualisation-b0/steps-needed-to-make-a-dumbbell-graph: #464
+  - text: " 1. Choose any dataset. \ \n 2. Click on visualise. \ \n 3. Select any one of the indicators. \ \n 4. Select any two dimensions \ \n 4. Select one from the time period. \ \n 5. Select none in the locations \ \n 6. Go to build your chart option and select the dimension whose two values are selected and select either any one dimension or location. \ \n 7. Click on visualise and you will get the dumble chart"
+
+  utter_faq-visualisation-b0/what-steps-should-be-taken-to-create-a-grouped-lollipop-chart-on-idp: #465
+  - text: " 1. Choose any dataset. \ \n 2. Click on visualise. \ \n 3. Select only one indicator. \ \n 4. Select any dimensions and a particular time period. \ \n 5. Select your preferred locations (One or more). \ \n 6. Go to build your chart option and select any 2 dimensions or location \ \n 7. Click on visualise and you will get the Grouped lollipop chart "
+
+  utter_faq-visualisation-b0/what-steps-are-there-to-make-a-donut-chart: #466
+  - text: " 1. Choose any dataset. \ \n 2. Click on visualise. \ \n 3. Select either one indicator or more than 3 indicators \ \n 4. Select any dimensions and a particular time period. \ \n 5. Select your preferred location. (Only or more) \ \n 6. Go to build your chart option and select any one dimension or location \ \n 7. Click on visualise and you will get the donut chart."
+
+  utter_faq-visualisation-b0/how-to-make-a-radial-bar-plot-on-idp: #467
+  - text: " 1. Choose any dataset. \ \n 2. Click on visualise. \ \n 3. Select either one indicator or more than 3 indicators \ \n 4. Select any dimensions and a particular time period. \ \n 5. Select your preferred location. (Only or more) \ \n 6. Go to build your chart option and select any one dimension or location.(Select none if you have selected more than 3 indicators) \ \n 7. Click on visualise and you will get the radial bar chart."
+  
+  utter_faq-visualisation-b0/steps-needed-to-plot-a-circular-bar-plot: #468
+  - text: " 1. Choose any dataset. \ \n 2. Click on visualise. \ \n 3. Select either one indicator or more than 3 indicators \ \n 4. Select any dimensions and a particular time period. \ \n 5. Select your preferred location. (Only or more) \ \n 6. Go to build your chart option and select any one dimension or location.(Select none if you have selected more than 3 indicators \ \n 7. Click on visualise and you will get the circular bar chart."
+
+  utter_faq-visualisation-b0/tell-me-what-steps-should-i-follow-to-generate-a-radar-chart: #469
+  - text: " 1. Choose any dataset. \ \n 2. Click on visualise. \ \n 3. Select any one indicator \ \n 4. Select any dimensions and a particular time period. \ \n 5. Select your preferred location. (Only or more) \ \n 6. Go to build your chart option and select any 2 dimensions or location \ \n 7. Click on visualise and you will get the radar plot."
+
+  utter_faq-visualisation-b0/how-to-make-a-radial-stacked-bar-chart-on-this-web-portal: #470
+  - text: " 1. Choose any dataset. \ \n 2. Click on visualise. \ \n 3. Select any one indicator \ \n 4. Select any dimensions and a particular time period. \ \n 5. Select your preferred location. (Only or more) \ \n 6. Go to build your chart option and select any 2 dimensions or location \ \n 7. Click on visualise and you will get the radial stacked bar plot."
+  
+  utter_faq-visualisation-b0/tell-me-the-steps-required-to-create-the-radial-plot: #471
+  - text: " 1. Choose any dataset. \ \n 2. Click on visualise. \ \n 3. Select either one indicator or more than 3 indicators \ \n 4. Select any dimensions and a particular time period. \ \n 5. Select your preferred location. (Only or more) \ \n 6. Go to build your chart option and select any one dimension or location.(Select none if you have selected more than 3 indicators) \ \n 7. Click on visualise and you will get the radial plot."
+  
+  utter_faq-visualisation-b0/what-procedure-followed-to-create-multi-line-chart: #472
+  - text: " 1. Choose any dataset. \ \n 2. Click on visualise. \ \n 3. Select any one indicator \ \n 4. Select any dimensions and choose multiple time period. \ \n 5. Select your preferred location. (Only or more) \ \n 6. Go to build your chart option and select any 1 dimensions or location \ \n 7. Click on visualise and you will get the multi line chart."
+
+  utter_faq-visualisation-b0/how-are-bar-line-chart-formed: #473
+  - text: " 1. Choose any dataset. \ \n 2. Click on visualise. \ \n 3. Select either one indicator or more than 3 indicators \ \n 4. Select any dimensions and a particular time period. \ \n 5. Select your preferred location. (Only or more) \ \n 6. Go to build your chart option and select any one dimension or location \ \n 7. Click on visualise and you will get the bar chart."
+  
+  utter_faq-visualisation-b0/provide-step-by-step-instructions-for-making-a-scatter-plot: #474
+  - text: " 1.Choose any dataset. \ \n 2.Click on visualise. \ \n 3. Select any two indicators. \ \n 4. Select any dimensions and a particular time period. \ \n 5. Select your preferred location. (Only or more) \ \n 6. Go to build your chart option and select none. \ \n 7. Click on visualise and you will get the scatter chart."
+
+  utter_faq-visualisation-b0/how-can-i-generate-a-bubble-plot: #475
+  - text: " 1.Choose any dataset. \ \n 2.Click on visualise. \ \n 3. Select any three indicators. \ \n 4. Select any dimensions and a particular time period. \ \n 5. Select your preferred location. (Only or more) \ \n 6. Go to build your chart option and select none. \ \n 7. Click on visualise and you will get the bubble chart."
 
 actions: 
 - action_slot_setter
